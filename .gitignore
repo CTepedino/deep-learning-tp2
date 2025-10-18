@@ -4,6 +4,9 @@
 .idea
 .idea/
 .idea/**
+.pyc
+.env
+
 
 Materias
 Materias/
