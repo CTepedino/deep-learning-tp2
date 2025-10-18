@@ -24,10 +24,9 @@ docs/
   │   │   │   ├── teoria_variables.pdf
   │   │   │   └── conceptos_basicos.pdf
   │   │   ├── ejercicios/
-  │   │   │   ├── guia_practica_1.pdf
-  │   │   │   └── problemas_resueltos.pdf
-  │   │   └── examenes/
-  │   │       └── parcial_2023.pdf
+  │   │       ├── guia_practica_1.pdf
+  │   │       └── problemas_resueltos.pdf
+  │   │   
   │   ├── Unidad_02_Distribucion_Normal/
   │   │   ├── apuntes/
   │   │   │   └── distribucion_normal.pdf

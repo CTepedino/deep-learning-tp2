@@ -128,15 +128,21 @@ class DocumentLoader:
         """
         Extrae metadata académica desde la estructura jerárquica de carpetas
         
-        Estructura esperada:
-            docs/[MATERIA]/Unidad_[NN]_[TEMA]/[TIPO]/archivo.pdf
+        Estructuras soportadas:
+            1. Estructura de 2 niveles (actual):
+               docs/[MATERIA]/[TIPO]/archivo.pdf
+               Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
+               
+            2. Estructura de 3 niveles (con unidades):
+               docs/[MATERIA]/Unidad_[NN]_[TEMA]/[TIPO]/archivo.pdf
+               Ejemplo: docs/Probabilidad_y_estadistica/Unidad_01_Variables/apuntes/teoria.pdf
         
         Args:
             content: Contenido del documento
             file_path: Ruta del archivo
             
         Returns:
-            Diccionario con metadata académica
+            Diccionario con metadata académica extraída de la ruta y contenido
         """
         metadata = {}
         
@@ -165,29 +171,51 @@ class DocumentLoader:
             # Fallback: detectar materia por keywords
             metadata['materia'] = self._detect_materia_fallback(file_path)
         
-        # NIVEL 2: Unidad/Tema (segunda carpeta)
+        # NIVEL 2: Puede ser Unidad O Tipo de documento
         if len(path_after_docs) >= 2:
-            unidad_raw = path_after_docs[1]
+            level2_raw = path_after_docs[1]
             
-            # Extraer número de unidad (ej: "Unidad_01_Variables" -> 1)
-            unit_number = self._extract_unit_number(unidad_raw)
-            if unit_number is not None:
-                metadata['unidad_numero'] = unit_number
-            
-            # Extraer tema de unidad (ej: "Unidad_01_Variables_Aleatorias" -> "Variables Aleatorias")
-            unit_topic = self._extract_unit_topic(unidad_raw)
-            metadata['unidad_tema'] = unit_topic
-            metadata['unidad'] = unit_topic  # Alias para compatibilidad
-        
-        # NIVEL 3: Tipo de documento (tercera carpeta)
-        if len(path_after_docs) >= 3:
-            tipo_raw = path_after_docs[2]
-            metadata['tipo_documento'] = tipo_raw
+            # Detectar si es una Unidad (contiene "Unidad" o números) o un Tipo de documento
+            if self._is_unit_folder(level2_raw):
+                # Es una carpeta de unidad (estructura de 3 niveles)
+                unit_number = self._extract_unit_number(level2_raw)
+                if unit_number is not None:
+                    metadata['unidad_numero'] = unit_number
+                
+                unit_topic = self._extract_unit_topic(level2_raw)
+                metadata['unidad_tema'] = unit_topic
+                
+                # NIVEL 3: Tipo de documento (cuando hay 3 niveles)
+                if len(path_after_docs) >= 3:
+                    tipo_raw = path_after_docs[2]
+                    metadata['tipo_documento'] = self._normalize_tipo_documento(tipo_raw)
+                else:
+                    # Fallback: detectar tipo desde el nombre del archivo
+                    metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
+            else:
+                # Es una carpeta de tipo de documento (estructura de 2 niveles)
+                # Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
+                metadata['tipo_documento'] = self._normalize_tipo_documento(level2_raw)
+                
+                # No hay unidad explícita, intentar detectar del nombre de archivo
+                unit_from_file = self._extract_unit_from_filename(file_path.name)
+                if unit_from_file:
+                    # Extraer número de unidad (ej: "Unidad 18" -> 18)
+                    import re
+                    unit_match = re.search(r'Unidad (\d+)', unit_from_file)
+                    if unit_match:
+                        metadata['unidad_numero'] = int(unit_match.group(1))
+                
+                # Intentar extraer el tema de la unidad del nombre de archivo
+                unit_topic_from_file = self._extract_unit_topic_from_filename(file_path.name)
+                if unit_topic_from_file:
+                    metadata['unidad_tema'] = unit_topic_from_file
         else:
-            # Fallback: detectar tipo desde el nombre del archivo
+            # Solo hay materia, detectar tipo del archivo
             metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
         
-        # Detectar nivel de dificultad sugerido del nombre de archivo
+        # Detectar nivel de dificultad sugerido del nombre de archivo 
+        # #///REVISAR COMO LO VAMOS A HACER
         filename_lower = file_path.name.lower()
         if any(word in filename_lower for word in ['basico', 'introductorio', 'intro']):
             metadata['nivel_sugerido'] = 'introductorio'
@@ -196,26 +224,251 @@ class DocumentLoader:
         elif any(word in filename_lower for word in ['intermedio', 'medio']):
             metadata['nivel_sugerido'] = 'intermedio'
         
-        # Extraer palabras clave del contenido (primeras 500 caracteres)
-        preview = content[:500].lower()
-        keywords = []
-        
-        # Palabras clave comunes en matemáticas e IA
-        keyword_list = [
-            'distribución', 'normal', 'probabilidad', 'estadística',
-            'regresión', 'correlación', 'hipótesis', 'test',
-            'clustering', 'clasificación', 'red neuronal', 'machine learning',
-            'algoritmo', 'optimización', 'gradiente'
-        ]
-        
-        for keyword in keyword_list:
-            if keyword in preview:
-                keywords.append(keyword)
-        
-        if keywords:
-            metadata['palabras_clave'] = keywords
+        # Metadata especial para exámenes
+        tipo_doc = metadata.get('tipo_documento', '')
+        if tipo_doc in ['examenes', 'parciales', 'finales']:
+            exam_metadata = self._extract_exam_metadata(file_path.name)
+            metadata.update(exam_metadata)
+            # Limpiar campos de unidad que no aplican a exámenes
+            metadata.pop('unidad_numero', None)
+            metadata.pop('unidad_tema', None)
         
         return metadata
+    
+    def _extract_exam_metadata(self, filename: str) -> Dict[str, Any]:
+        """
+        Extrae metadata específica de exámenes
+        
+        Detecta:
+        - tipo_examen: primer_parcial, segundo_parcial, final, recuperatorio
+        - año: 2023, 2022, etc.
+        - cuatrimestre: 1 o 2
+        - tema: A, B, 1, 2
+        
+        Ejemplos:
+        - "2023_Q1_2P_A.pdf" → año: 2023, cuatrimestre: 1, tipo: segundo_parcial, tema: A
+        - "Parcial1_2022_cuat2_tema1.pdf" → tipo: primer_parcial, año: 2022, cuatrimestre: 2, tema: 1
+        - "recup2019_ks_cuat2_bis_p1.pdf" → tipo: recuperatorio, año: 2019, cuatrimestre: 2
+        
+        Args:
+            filename: Nombre del archivo de examen
+            
+        Returns:
+            Diccionario con metadata del examen
+        """
+        import re
+        metadata = {}
+        filename_lower = filename.lower()
+        
+        # Detectar año (4 dígitos entre 2000-2099)
+        year_match = re.search(r'(20\d{2})', filename)
+        if year_match:
+            metadata['año'] = int(year_match.group(1))
+        
+        # Detectar cuatrimestre
+        # Patrones: Q1, Q2, cuat1, cuat2, cuatrimestre1, etc.
+        cuatrimestre_patterns = [
+            (r'q[_\s]?([12])', 1),
+            (r'cuat[rimestre]*[_\s]?([12])', 1),
+            (r'c([12])', 1),
+        ]
+        for pattern, group in cuatrimestre_patterns:
+            match = re.search(pattern, filename_lower)
+            if match:
+                metadata['cuatrimestre'] = int(match.group(group))
+                break
+        
+        # Detectar tipo de examen
+        if any(word in filename_lower for word in ['recup', 'recuperatorio', 'recuperacion']):
+            metadata['tipo_examen'] = 'recuperatorio'
+        elif any(word in filename_lower for word in ['final']):
+            metadata['tipo_examen'] = 'final'
+        elif 'parcial' in filename_lower or 'p' in filename_lower:
+            # Detectar si es primer o segundo parcial
+            # Patrones: 1P, 2P, P1, P2, parcial1, parcial2, 1er_parcial, 2do_parcial
+            if re.search(r'(?:^|[_\s])([12])[_\s]?p(?:[_\s]|$)', filename_lower):
+                match = re.search(r'(?:^|[_\s])([12])[_\s]?p(?:[_\s]|$)', filename_lower)
+                parcial_num = int(match.group(1))
+            elif re.search(r'p[_\s]?([12])(?:[_\s]|$)', filename_lower):
+                match = re.search(r'p[_\s]?([12])(?:[_\s]|$)', filename_lower)
+                parcial_num = int(match.group(1))
+            elif re.search(r'parcial[_\s]?([12])', filename_lower):
+                match = re.search(r'parcial[_\s]?([12])', filename_lower)
+                parcial_num = int(match.group(1))
+            elif re.search(r'([12])[erdo]*[_\s]?parcial', filename_lower):
+                match = re.search(r'([12])[erdo]*[_\s]?parcial', filename_lower)
+                parcial_num = int(match.group(1))
+            else:
+                parcial_num = 1  # Por defecto primer parcial
+            
+            if parcial_num == 1:
+                metadata['tipo_examen'] = 'primer_parcial'
+            elif parcial_num == 2:
+                metadata['tipo_examen'] = 'segundo_parcial'
+        
+        # Detectar tema (A, B, C, D o 1, 2, 3, 4)
+        # Patrones: tema_A, temaA, _A, tema1, tema_1
+        tema_patterns = [
+            r'tema[_\s]?([A-Da-d1-4])',
+            r'[_\s]([A-D])(?:\.|$)',  # _A.pdf
+            r'tema[_\s]?([1-4])',
+        ]
+        for pattern in tema_patterns:
+            match = re.search(pattern, filename)
+            if match:
+                tema = match.group(1).upper()
+                metadata['tema'] = tema
+                break
+        
+        return metadata
+    
+    def _is_unit_folder(self, folder_name: str) -> bool:
+        """
+        Determina si una carpeta es una carpeta de unidad o de tipo de documento
+        
+        Args:
+            folder_name: Nombre de la carpeta
+            
+        Returns:
+            True si parece ser una carpeta de unidad
+        """
+        import re
+        folder_lower = folder_name.lower()
+        
+        # Detectar patrones de unidad
+        unit_patterns = [
+            r'unidad[_\s]?\d+',  # Unidad_01, Unidad 1, unidad01
+            r'tema[_\s]?\d+',     # Tema_01, Tema 1
+            r'capitulo[_\s]?\d+', # Capitulo_01
+            r'modulo[_\s]?\d+',   # Modulo_01
+        ]
+        
+        for pattern in unit_patterns:
+            if re.search(pattern, folder_lower):
+                return True
+        
+        # Si empieza con solo números, probablemente es unidad
+        if re.match(r'^\d+[_\s]', folder_name):
+            return True
+        
+        return False
+    
+    def _normalize_tipo_documento(self, tipo_raw: str) -> str:
+        """
+        Normaliza el tipo de documento a un formato estándar
+        
+        Args:
+            tipo_raw: Tipo raw desde la carpeta
+            
+        Returns:
+            Tipo normalizado
+        """
+        tipo_lower = tipo_raw.lower()
+        
+        # Mapeo de variantes a nombres estándar
+        tipo_mapping = {
+            'apunte': 'apuntes',
+            'apuntes': 'apuntes',
+            'teorica': 'apuntes',
+            'teoricas': 'apuntes',
+            'teoria': 'apuntes',
+            'ejercicio': 'ejercicios',
+            'ejercicios': 'ejercicios',
+            'practica': 'ejercicios',
+            'practicas': 'ejercicios',
+            'guia': 'guias',
+            'guias': 'guias',
+            'examen': 'examenes',
+            'examenes': 'examenes',
+            'parcial': 'parciales',
+            'parciales': 'parciales',
+            'final': 'finales',
+            'finales': 'finales',
+            'laboratorio': 'laboratorios',
+            'laboratorios': 'laboratorios',
+            'proyecto': 'proyectos',
+            'proyectos': 'proyectos'
+        }
+        
+        return tipo_mapping.get(tipo_lower, tipo_raw)
+    
+    def _extract_unit_from_filename(self, filename: str) -> Optional[str]:
+        """
+        Intenta extraer el número o tema de unidad del nombre de archivo
+        
+        Detecta patrones como:
+        - "18 - Intervalos de Confianza.pdf" → "Unidad 18"
+        - "Unidad 5 - Tema.pdf" → "Unidad 5"
+        - "tema_3_clustering.pdf" → "Unidad 3"
+        
+        Args:
+            filename: Nombre del archivo
+            
+        Returns:
+            Número de unidad si se detecta, None si no
+        """
+        import re
+        filename_lower = filename.lower()
+        
+        # Patrón 1: Número al inicio seguido de guion o espacio
+        # Ejemplo: "18 - Intervalos.pdf", "5-Tema.pdf"
+        match = re.match(r'^(\d+)\s*[-_\s]', filename)
+        if match:
+            return f"Unidad {match.group(1)}"
+        
+        # Patrón 2: Palabras clave con número
+        # Ejemplo: "unidad 1", "tema 2", "capitulo 3"
+        patterns = [
+            r'unidad[_\s]?(\d+)',
+            r'tema[_\s]?(\d+)',
+            r'capitulo[_\s]?(\d+)',
+            r'cap[_\s]?(\d+)',
+            r'u(\d+)[_\s]',
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, filename_lower)
+            if match:
+                return f"Unidad {match.group(1)}"
+        
+        return None
+    
+    def _extract_unit_topic_from_filename(self, filename: str) -> Optional[str]:
+        """
+        Extrae el tema de la unidad del nombre de archivo
+        
+        Ejemplo: "18 - Intervalos de Confianza para la Media.pdf" 
+                 → "Intervalos de Confianza para la Media"
+        
+        Args:
+            filename: Nombre del archivo
+            
+        Returns:
+            Tema extraído o None
+        """
+        import re
+        
+        # Quitar extensión
+        name_without_ext = filename.rsplit('.', 1)[0]
+        
+        # Patrón: Número al inicio seguido de guion/espacio y texto
+        # Ejemplo: "18 - Intervalos de Confianza.pdf"
+        match = re.match(r'^\d+\s*[-_\s]+(.+)$', name_without_ext)
+        if match:
+            topic = match.group(1).strip()
+            # Limpiar caracteres extra
+            topic = re.sub(r'\s+', ' ', topic)  # Normalizar espacios
+            return topic
+        
+        # Si no tiene número al inicio pero tiene "Unidad X -" o similar
+        match = re.match(r'^(?:unidad|tema|capitulo)[_\s]?\d+\s*[-_\s]+(.+)$', 
+                        name_without_ext, re.IGNORECASE)
+        if match:
+            topic = match.group(1).strip()
+            topic = re.sub(r'\s+', ' ', topic)
+            return topic
+        
+        return None
     
     def _extract_unit_number(self, unit_name: str) -> Optional[int]:
         """
