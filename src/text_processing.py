@@ -3,11 +3,16 @@ Text Processing Module for RAG System
 Fragmentación inteligente de documentos con metadata enriquecida
 """
 
+import os
 import logging
 import re
 from typing import List, Dict, Any, Optional
+from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+
+# Cargar variables de entorno
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
@@ -19,8 +24,8 @@ class AcademicTextSplitter:
     
     def __init__(
         self,
-        chunk_size: int = 1000,
-        chunk_overlap: int = 200,
+        chunk_size: int = None,
+        chunk_overlap: int = None,
         separators: List[str] = None,
         academic_separators: bool = True
     ):
@@ -28,13 +33,14 @@ class AcademicTextSplitter:
         Inicializa el text splitter académico
         
         Args:
-            chunk_size: Tamaño máximo de cada chunk
-            chunk_overlap: Solapamiento entre chunks
+            chunk_size: Tamaño máximo de cada chunk (por defecto de CHUNK_SIZE)
+            chunk_overlap: Solapamiento entre chunks (por defecto de CHUNK_OVERLAP)
             separators: Separadores personalizados
             academic_separators: Si usar separadores específicos para documentos académicos
         """
-        self.chunk_size = chunk_size
-        self.chunk_overlap = chunk_overlap
+        # Leer valores de variables de entorno si no se especifican
+        self.chunk_size = chunk_size if chunk_size is not None else int(os.getenv('CHUNK_SIZE', '1000'))
+        self.chunk_overlap = chunk_overlap if chunk_overlap is not None else int(os.getenv('CHUNK_OVERLAP', '200'))
         
         if separators is None:
             if academic_separators:
@@ -54,8 +60,8 @@ class AcademicTextSplitter:
         
         self.text_splitter = RecursiveCharacterTextSplitter(
             separators=self.separators,
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
+            chunk_size=self.chunk_size,
+            chunk_overlap=self.chunk_overlap,
             add_start_index=True
         )
     
@@ -207,8 +213,8 @@ class AcademicTextSplitter:
 
 def split_documents(
     documents: List[Document],
-    chunk_size: int = 1000,
-    chunk_overlap: int = 200,
+    chunk_size: int = None,
+    chunk_overlap: int = None,
     academic_mode: bool = True
 ) -> List[Document]:
     """
@@ -216,13 +222,20 @@ def split_documents(
     
     Args:
         documents: Lista de documentos a fragmentar
-        chunk_size: Tamaño máximo de cada chunk
-        chunk_overlap: Solapamiento entre chunks
+        chunk_size: Tamaño máximo de cada chunk (usa variable de entorno si es None)
+        chunk_overlap: Solapamiento entre chunks (usa variable de entorno si es None)
         academic_mode: Si usar modo académico especializado
         
     Returns:
         Lista de chunks de documentos
     """
+    # Usar variables de entorno si no se especifican
+    if chunk_size is None:
+        chunk_size = int(os.getenv('CHUNK_SIZE', '1000'))
+    
+    if chunk_overlap is None:
+        chunk_overlap = int(os.getenv('CHUNK_OVERLAP', '200'))
+    
     splitter = AcademicTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
@@ -230,6 +243,10 @@ def split_documents(
     )
     
     return splitter.split_documents(documents)
+
+
+# Alias para compatibilidad con rag_pipeline.py
+TextProcessor = AcademicTextSplitter
 
 
 def analyze_chunks(chunks: List[Document]) -> Dict[str, Any]:

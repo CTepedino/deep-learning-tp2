@@ -22,7 +22,7 @@ class ExerciseGenerator:
     
     def __init__(
         self,
-        model_name: str = "gpt-4o-mini",
+        model_name: str = None,
         temperature: float = 0.7,
         max_tokens: int = 2000
     ):
@@ -30,11 +30,12 @@ class ExerciseGenerator:
         Inicializa el generador de ejercicios
         
         Args:
-            model_name: Nombre del modelo de OpenAI
+            model_name: Nombre del modelo de OpenAI (por defecto de LLM_MODEL)
             temperature: Temperatura para la generación
             max_tokens: Máximo número de tokens
         """
-        self.model_name = model_name
+        # Leer valores de variables de entorno si no se especifican
+        self.model_name = model_name or os.getenv('LLM_MODEL', 'gpt-4o-mini')
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.client = None

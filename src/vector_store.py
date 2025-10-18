@@ -22,9 +22,9 @@ class VectorStore:
     
     def __init__(
         self,
-        collection_name: str = "itba_ejercicios_collection",
-        persist_directory: str = "./data/processed/chroma_db",
-        embedding_model: str = "all-MiniLM-L6-v2",
+        collection_name: str = None,
+        persist_directory: str = None,
+        embedding_model: str = None,
         reset_collection: bool = False
     ):
         """
@@ -36,13 +36,14 @@ class VectorStore:
             embedding_model: Modelo de embeddings
             reset_collection: Si resetear la colección existente
         """
-        self.collection_name = collection_name
-        self.persist_directory = persist_directory
-        self.embedding_model = embedding_model
+        # Leer valores de variables de entorno si no se especifican
+        self.collection_name = collection_name or os.getenv('CHROMA_COLLECTION_NAME', 'itba_ejercicios_collection')
+        self.persist_directory = persist_directory or os.getenv('CHROMA_PERSIST_DIRECTORY', './data/processed/chroma_db')
+        self.embedding_model = embedding_model or os.getenv('EMBEDDING_MODEL', 'all-MiniLM-L6-v2')
         self.vectorstore = None
         
         # Crear directorio de persistencia si no existe
-        Path(persist_directory).mkdir(parents=True, exist_ok=True)
+        Path(self.persist_directory).mkdir(parents=True, exist_ok=True)
         
         self._initialize_vectorstore(reset_collection)
     
@@ -312,28 +313,21 @@ class VectorStore:
 def create_vector_store(
     collection_name: str = None,
     persist_directory: str = None,
-    embedding_model: str = "all-MiniLM-L6-v2",
+    embedding_model: str = None,
     reset_collection: bool = False
 ) -> VectorStore:
     """
     Función de conveniencia para crear un vector store con LangChain
     
     Args:
-        collection_name: Nombre de la colección
-        persist_directory: Directorio de persistencia
-        embedding_model: Modelo de embeddings
+        collection_name: Nombre de la colección (por defecto de CHROMA_COLLECTION_NAME)
+        persist_directory: Directorio de persistencia (por defecto de CHROMA_PERSIST_DIRECTORY)
+        embedding_model: Modelo de embeddings (por defecto de EMBEDDING_MODEL)
         reset_collection: Si resetear la colección
         
     Returns:
         Instancia del vector store
     """
-    # Usar valores de variables de entorno si no se especifican
-    if collection_name is None:
-        collection_name = os.getenv('CHROMA_COLLECTION_NAME', 'itba_ejercicios_collection')
-    
-    if persist_directory is None:
-        persist_directory = os.getenv('CHROMA_PERSIST_DIRECTORY', './data/processed/chroma_db')
-    
     return VectorStore(
         collection_name=collection_name,
         persist_directory=persist_directory,
@@ -349,7 +343,6 @@ if __name__ == "__main__":
     # Crear vector store
     print("Creando vector store...")
     vector_store = create_vector_store(
-        embedding_model="all-MiniLM-L6-v2",
         reset_collection=True
     )
     

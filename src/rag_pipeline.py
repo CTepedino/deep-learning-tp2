@@ -17,7 +17,7 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Imports locales
-from .data_loading import DataLoader
+from .data_loading import DocumentLoader
 from .text_processing import TextProcessor
 from .vector_store import create_vector_store
 from .retriever import create_retriever
@@ -34,12 +34,12 @@ class RAGPipeline:
     
     def __init__(
         self,
-        collection_name: str = "itba_ejercicios_collection",
-        persist_directory: str = "./data/processed/chroma_db",
-        embedding_model: str = "all-MiniLM-L6-v2",
-        generator_model_name: str = "gpt-4o",
-        chunk_size: int = 1000,
-        chunk_overlap: int = 200,
+        collection_name: str = None,
+        persist_directory: str = None,
+        embedding_model: str = None,
+        generator_model_name: str = None,
+        chunk_size: int = None,
+        chunk_overlap: int = None,
         reset_collection: bool = False
     ):
         """
@@ -54,25 +54,26 @@ class RAGPipeline:
             chunk_overlap: Overlap entre chunks
             reset_collection: Si resetear la colección
         """
-        self.collection_name = collection_name
-        self.persist_directory = persist_directory
-        self.embedding_model = embedding_model
-        self.generator_model_name = generator_model_name
-        self.chunk_size = chunk_size
-        self.chunk_overlap = chunk_overlap
+        # Leer valores de variables de entorno si no se especifican
+        self.collection_name = collection_name or os.getenv('CHROMA_COLLECTION_NAME', 'itba_ejercicios_collection')
+        self.persist_directory = persist_directory or os.getenv('CHROMA_PERSIST_DIRECTORY', './data/processed/chroma_db')
+        self.embedding_model = embedding_model or os.getenv('EMBEDDING_MODEL', 'all-MiniLM-L6-v2')
+        self.generator_model_name = generator_model_name or os.getenv('LLM_MODEL', 'gpt-4o-mini')
+        self.chunk_size = chunk_size if chunk_size is not None else int(os.getenv('CHUNK_SIZE', '1000'))
+        self.chunk_overlap = chunk_overlap if chunk_overlap is not None else int(os.getenv('CHUNK_OVERLAP', '200'))
         
         # Inicializar componentes
-        self.data_loader = DataLoader()
+        self.data_loader = DocumentLoader()
         self.text_processor = TextProcessor(
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap
+            chunk_size=self.chunk_size,
+            chunk_overlap=self.chunk_overlap
         )
         
         # Vector store
         self.vector_store = create_vector_store(
-            collection_name=collection_name,
-            persist_directory=persist_directory,
-            embedding_model=embedding_model,
+            collection_name=self.collection_name,
+            persist_directory=self.persist_directory,
+            embedding_model=self.embedding_model,
             reset_collection=reset_collection
         )
         
@@ -84,7 +85,7 @@ class RAGPipeline:
         )
         
         # Generador de ejercicios
-        self.generator = ExerciseGenerator(generator_model_name)
+        self.generator = ExerciseGenerator(self.generator_model_name)
         
         logger.info("RAGPipeline inicializado correctamente")
     
@@ -331,34 +332,27 @@ class RAGPipeline:
 def create_rag_pipeline(
     collection_name: str = None,
     persist_directory: str = None,
-    embedding_model: str = "all-MiniLM-L6-v2",
-    generator_model_name: str = "gpt-4o",
-    chunk_size: int = 1000,
-    chunk_overlap: int = 200,
+    embedding_model: str = None,
+    generator_model_name: str = None,
+    chunk_size: int = None,
+    chunk_overlap: int = None,
     reset_collection: bool = False
 ) -> RAGPipeline:
     """
     Función de conveniencia para crear un pipeline RAG con LangChain
     
     Args:
-        collection_name: Nombre de la colección
-        persist_directory: Directorio de persistencia
-        embedding_model: Modelo de embeddings
-        generator_model_name: Modelo de generación
-        chunk_size: Tamaño de chunks
-        chunk_overlap: Overlap entre chunks
+        collection_name: Nombre de la colección (por defecto de CHROMA_COLLECTION_NAME)
+        persist_directory: Directorio de persistencia (por defecto de CHROMA_PERSIST_DIRECTORY)
+        embedding_model: Modelo de embeddings (por defecto de EMBEDDING_MODEL)
+        generator_model_name: Modelo de generación (por defecto de LLM_MODEL)
+        chunk_size: Tamaño de chunks (por defecto de CHUNK_SIZE)
+        chunk_overlap: Overlap entre chunks (por defecto de CHUNK_OVERLAP)
         reset_collection: Si resetear la colección
         
     Returns:
         Instancia del pipeline RAG
     """
-    # Usar variables de entorno si no se especifican
-    if collection_name is None:
-        collection_name = os.getenv('CHROMA_COLLECTION_NAME', 'itba_ejercicios_collection')
-    
-    if persist_directory is None:
-        persist_directory = os.getenv('CHROMA_PERSIST_DIRECTORY', './data/processed/chroma_db')
-    
     return RAGPipeline(
         collection_name=collection_name,
         persist_directory=persist_directory,
@@ -377,7 +371,6 @@ if __name__ == "__main__":
     # Crear pipeline RAG
     print("Creando pipeline RAG...")
     rag_pipeline = create_rag_pipeline(
-        embedding_model="all-MiniLM-L6-v2",
         reset_collection=True
     )
     
