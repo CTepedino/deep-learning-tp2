@@ -44,7 +44,11 @@ class ExerciseGenerator:
         self._setup_prompts()
     
     def _initialize_openai_client(self):
-        """Inicializa el cliente de OpenAI"""
+        """Inicializa el cliente de OpenAI
+        
+        El modo de capacidad se configura mediante la variable de entorno OPENAI_MODE
+        (valores válidos: flex, standard, priority). Por defecto usa 'standard'. 
+        """
         try:
             from openai import OpenAI
             
@@ -52,8 +56,19 @@ class ExerciseGenerator:
             if not api_key:
                 raise ValueError("OPENAI_API_KEY no encontrada en variables de entorno")
             
+            # Leer y validar el modo de capacidad
+            mode = os.getenv('OPENAI_MODE', 'standard').lower()
+            valid_modes = {"flex", "standard", "priority"}
+            
+            if mode not in valid_modes:
+                logger.warning(f"Modo OPENAI_MODE '{mode}' no válido. Usando 'standard' por defecto.")
+                mode = 'standard'
+            
+            # Configurar headers para el modo de capacidad
+            self.extra_headers = {"x-openai-pricing-tier": mode}
+            
             self.client = OpenAI(api_key=api_key)
-            logger.info(f"Cliente OpenAI inicializado con modelo: {self.model_name}")
+            logger.info(f"Cliente OpenAI inicializado con modelo: {self.model_name} y modo: {mode}")
             
         except ImportError:
             logger.error("openai no está instalado. Instalar con: pip install openai")
@@ -309,7 +324,8 @@ Formato de respuesta (JSON):
                 model=self.model_name,
                 messages=messages,
                 temperature=self.temperature,
-                max_tokens=self.max_tokens
+                max_tokens=self.max_tokens,
+                extra_headers=self.extra_headers
             )
             
             return response.choices[0].message.content
