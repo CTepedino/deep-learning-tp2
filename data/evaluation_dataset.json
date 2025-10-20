@@ -1,0 +1,110 @@
+{
+  "samples": [
+    {
+      "question": "¿Qué es una variable aleatoria y cuál es su función en probabilidad?",
+      "ground_truth": "Una variable aleatoria es una función que asigna valores numéricos a los resultados de un experimento aleatorio. Su función es modelar fenómenos con incertidumbre de manera matemática.",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    },
+    {
+      "question": "Si X sigue una distribución binomial Bi(n,p), ¿cuál es la expresión de su varianza?",
+      "ground_truth": "La varianza de una variable aleatoria binomial X ~ Bi(n,p) es V(X) = n*p*(1-p)",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "practico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "¿Cuál es el Teorema Central del Límite y por qué es importante?",
+      "ground_truth": "El Teorema Central del Límite establece que la suma de variables aleatorias independientes e idénticamente distribuidas tiende a una distribución normal cuando n tiende a infinito. Es fundamental porque explica por qué muchos fenómenos naturales siguen distribuciones normales.",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "avanzado"
+    },
+    {
+      "question": "Si tenemos la frecuencia relativa fR = Xn/n donde Xn ~ Bi(n,p), ¿cuál es V(fR)?",
+      "ground_truth": "La varianza de la frecuencia relativa es V(fR) = V(Xn/n) = V(Xn)/n² = n*p*(1-p)/n² = p*(1-p)/n",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "practico",
+      "nivel_dificultad": "avanzado"
+    },
+    {
+      "question": "¿Qué son los procesos estocásticos?",
+      "ground_truth": "Los procesos estocásticos son colecciones de variables aleatorias indexadas por el tiempo o el espacio. Modelan fenómenos que evolucionan aleatoriamente.",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "¿Qué es un algoritmo genético y para qué se usa?",
+      "ground_truth": "Un algoritmo genético es una técnica de optimización inspirada en la evolución natural. Se usa para encontrar soluciones aproximadas a problemas de optimización mediante selección, cruce y mutación de soluciones candidatas.",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "¿Qué es una red neuronal y cuáles son sus componentes básicos?",
+      "ground_truth": "Una red neuronal es un modelo computacional inspirado en el cerebro. Sus componentes básicos son: neuronas (nodos), conexiones ponderadas (pesos), función de activación y capas (entrada, ocultas, salida).",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    },
+    {
+      "question": "¿Qué es el perceptrón y cuál es su limitación principal?",
+      "ground_truth": "El perceptrón es la red neuronal más simple, con una sola capa. Su limitación principal es que solo puede resolver problemas linealmente separables (no puede resolver XOR).",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "¿Qué es backpropagation y para qué se usa?",
+      "ground_truth": "Backpropagation es el algoritmo para entrenar redes neuronales. Calcula gradientes de la función de pérdida respecto a los pesos propagando el error hacia atrás desde la salida.",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "avanzado"
+    },
+    {
+      "question": "¿Qué es PCA (Análisis de Componentes Principales)?",
+      "ground_truth": "PCA es una técnica de reducción de dimensionalidad que encuentra las direcciones de máxima varianza en los datos. Proyecta los datos en un espacio de menor dimensión preservando la mayor cantidad de información posible.",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "Define el concepto de esperanza matemática de una variable aleatoria",
+      "ground_truth": "La esperanza matemática E[X] es el valor promedio ponderado que toma una variable aleatoria. Para variables discretas: E[X] = Σ xi*P(X=xi). Para continuas: E[X] = ∫ x*f(x)dx",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    },
+    {
+      "question": "¿Qué es un intervalo de confianza y cómo se interpreta?",
+      "ground_truth": "Un intervalo de confianza es un rango de valores que probablemente contiene el parámetro poblacional. Si decimos '95% de confianza', significa que en 95% de las muestras, el intervalo contendrá el verdadero valor del parámetro.",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "intermedio"
+    },
+    {
+      "question": "¿Qué es clustering y menciona un algoritmo común?",
+      "ground_truth": "Clustering es una técnica de aprendizaje no supervisado que agrupa datos similares. K-means es un algoritmo común que particiona datos en K grupos minimizando la distancia intra-cluster.",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    },
+    {
+      "question": "¿Qué diferencia hay entre aprendizaje supervisado y no supervisado?",
+      "ground_truth": "Aprendizaje supervisado usa datos etiquetados para predecir salidas (clasificación, regresión). Aprendizaje no supervisado encuentra patrones en datos sin etiquetas (clustering, reducción dimensional).",
+      "materia": "Sistemas de Inteligencia Artificial",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    },
+    {
+      "question": "¿Qué es la distribución normal y cuáles son sus parámetros?",
+      "ground_truth": "La distribución normal (o gaussiana) es una distribución de probabilidad continua con forma de campana. Tiene dos parámetros: media (μ) que indica el centro, y desviación estándar (σ) que indica la dispersión.",
+      "materia": "Probabilidad y estadística",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico"
+    }
+  ]
+}
+
