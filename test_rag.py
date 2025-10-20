@@ -88,25 +88,22 @@ def main():
     
     print(f"\n📊 Documentos en el sistema: {doc_count}")
     
-    if doc_count == 0:
-        print("\n⚠️  Base de datos vacía. Cargando materiales...")
-        print("   (Esto puede tomar unos minutos la primera vez)")
-        
-        # Cargar materiales de Probabilidad y estadística
-        result = rag_pipeline.load_materials(
-            data_directory="./docs/Probabilidad y estadística"
-        )
-        
-        if result.get('status') == 'error':
-            print(f"❌ Error: {result.get('message')}")
-            return
-        
-        print(f"\n✅ Carga completada:")
-        print(f"   - Documentos procesados: {result['documents_loaded']}")
-        print(f"   - Chunks generados: {result['chunks_created']}")
-        print(f"   - IDs asignados: {result['documents_added']}")
-    else:
-        print("✅ Materiales ya cargados")
+    print("\n⏳ Cargando todos los materiales...")
+    print("   (Esto puede tomar unos minutos la primera vez)")
+    
+    # Cargar todos los materiales desde docs
+    result = rag_pipeline.load_materials(
+        data_directory="./docs"
+    )
+    
+    if result.get('status') == 'error':
+        print(f"❌ Error: {result.get('message')}")
+        return
+    
+    print(f"\n✅ Carga completada:")
+    print(f"   - Documentos procesados: {result['documents_loaded']}")
+    print(f"   - Chunks generados: {result['chunks_created']}")
+    print(f"   - IDs asignados: {result['documents_added']}")
     
     # 3.1 Mostrar ejemplos de chunks
     print("\n📖 Mostrando ejemplos de chunks almacenados...")
