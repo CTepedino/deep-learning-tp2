@@ -37,33 +37,46 @@ class DocumentLoader:
             '.tex': TextLoader,  # TEX se trata como texto plano
         }
     
-    def load_documents_from_directory(
+    def load_documents(
         self, 
-        directory_path: str, 
-        metadata_extractor: Optional[callable] = None
+        directory: str, 
+        file_extensions: List[str] = None,
+        metadata_extractor: Optional[callable] = None,
+        max_documents: int = None
     ) -> List[Document]:
         """
         Carga todos los documentos de un directorio
         
         Args:
-            directory_path: Ruta del directorio
+            directory: Ruta del directorio
+            file_extensions: Lista de extensiones a procesar (opcional)
             metadata_extractor: Función para extraer metadata personalizada
+            max_documents: Número máximo de documentos a cargar (para pruebas)
             
         Returns:
             Lista de documentos con metadata
         """
         documents = []
-        directory = Path(directory_path)
+        directory = Path(directory)
         
         if not directory.exists():
-            logger.error(f"Directorio no encontrado: {directory_path}")
+            logger.error(f"Directorio no encontrado: {directory}")
             return documents
         
+        # Usar extensiones proporcionadas o las por defecto
+        extensions_to_use = file_extensions or self.supported_extensions
+        
+        document_count = 0
         for file_path in directory.rglob('*'):
-            if file_path.is_file() and file_path.suffix.lower() in self.supported_extensions:
+            if file_path.is_file() and file_path.suffix.lower() in extensions_to_use:
+                # Limitar número de documentos si se especifica
+                if max_documents and document_count >= max_documents:
+                    logger.info(f"Límite de {max_documents} documentos alcanzado")
+                    break
                 try:
                     docs = self.load_single_document(file_path, metadata_extractor)
                     documents.extend(docs)
+                    document_count += 1
                     logger.info(f"Documento cargado: {file_path}")
                 except Exception as e:
                     logger.error(f"Error cargando {file_path}: {str(e)}")
@@ -560,15 +573,19 @@ class DocumentLoader:
 
 
 def load_documents(
-    directory_path: str, 
-    use_academic_metadata: bool = True
+    directory: str, 
+    file_extensions: List[str] = None,
+    use_academic_metadata: bool = True,
+    max_documents: int = None
 ) -> List[Document]:
     """
     Función de conveniencia para cargar documentos
     
     Args:
-        directory_path: Ruta del directorio
+        directory: Ruta del directorio
+        file_extensions: Lista de extensiones a procesar
         use_academic_metadata: Si usar extractor de metadata académica
+        max_documents: Número máximo de documentos a cargar (para pruebas)
         
     Returns:
         Lista de documentos cargados
@@ -579,7 +596,54 @@ def load_documents(
     if use_academic_metadata:
         metadata_extractor = loader.extract_academic_metadata
     
-    return loader.load_documents_from_directory(directory_path, metadata_extractor)
+    return loader.load_documents(directory, file_extensions, metadata_extractor, max_documents)
+
+
+def load_documents_as_chunks(
+    directory: str,
+    file_extensions: List[str] = None,
+    use_academic_metadata: bool = True,
+    chunk_size: int = 1000,
+    chunk_overlap: int = 200,
+    max_documents: int = None
+) -> List[Dict[str, Any]]:
+    """
+    Función optimizada que carga documentos y los convierte directamente a chunks
+    
+    Args:
+        directory: Directorio a cargar
+        file_extensions: Extensiones de archivo a procesar
+        use_academic_metadata: Si usar metadata académica
+        chunk_size: Tamaño de cada chunk
+        chunk_overlap: Solapamiento entre chunks
+        max_documents: Máximo número de documentos a cargar
+        
+    Returns:
+        Lista de chunks con metadata
+    """
+    from src.text_processing import AcademicTextSplitter
+    
+    # Cargar documentos
+    documents = load_documents(
+        directory=directory,
+        file_extensions=file_extensions,
+        use_academic_metadata=use_academic_metadata,
+        max_documents=max_documents
+    )
+    
+    # Crear text splitter
+    text_splitter = AcademicTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap
+    )
+    
+    # Procesar directamente a chunks
+    chunks = text_splitter.process_documents(documents)
+    
+    logger.info(f"Documentos cargados: {len(documents)}")
+    logger.info(f"Chunks creados: {len(chunks)}")
+    
+    return chunks
 
 
 if __name__ == "__main__":

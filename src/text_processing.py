@@ -110,6 +110,28 @@ class AcademicTextSplitter:
         logger.info(f"Total chunks generados: {len(chunks)}")
         return chunks
     
+    def process_documents(self, documents: List[Document]) -> List[Dict[str, Any]]:
+        """
+        Procesa documentos y los convierte al formato esperado por el pipeline
+        
+        Args:
+            documents: Lista de documentos a procesar
+            
+        Returns:
+            Lista de diccionarios con contenido y metadata
+        """
+        chunks = self.split_documents(documents)
+        
+        # Convertir a formato esperado por el pipeline
+        processed_docs = []
+        for chunk in chunks:
+            processed_docs.append({
+                'content': chunk.page_content,
+                'metadata': chunk.metadata
+            })
+        
+        return processed_docs
+    
     def _extract_chunk_metadata(self, chunk: Document, chunk_index: int) -> Dict[str, Any]:
         """
         Extrae metadata específica de un chunk

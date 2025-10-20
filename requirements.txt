@@ -1,12 +1,16 @@
-# Core RAG con LangChain
-langchain>=0.3.0
-langchain-community>=0.3.0
-langchain-chroma>=0.2.0
-langchain-openai>=0.3.0
-langchain-text-splitters>=0.3.0
+# Core RAG con LangChain 
+langchain==0.3.27
+langchain-community==0.3.29
+langchain-chroma==0.2.6
+langchain-openai==0.3.33
+langchain-text-splitters==0.3.11
+langchain-core==0.3.75
 
-# Vector database (versión compatible con langchain-chroma)
+# Vector database
 chromadb>=1.0.20
+
+# Embeddings
+sentence-transformers==5.1.0
 
 # Document processing
 pypdf>=4.0.0

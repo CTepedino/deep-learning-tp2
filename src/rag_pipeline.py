@@ -17,7 +17,7 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Imports locales
-from .data_loading import DocumentLoader
+from .data_loading import load_documents, load_documents_as_chunks
 from .text_processing import TextProcessor
 from .vector_store import create_vector_store
 from .retriever import create_retriever
@@ -62,8 +62,7 @@ class RAGPipeline:
         self.chunk_size = chunk_size if chunk_size is not None else int(os.getenv('CHUNK_SIZE', '1000'))
         self.chunk_overlap = chunk_overlap if chunk_overlap is not None else int(os.getenv('CHUNK_OVERLAP', '200'))
         
-        # Inicializar componentes
-        self.data_loader = DocumentLoader()
+        # No necesitamos data_loader ya que usamos la función load_documents
         self.text_processor = TextProcessor(
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap
@@ -87,6 +86,9 @@ class RAGPipeline:
         # Generador de ejercicios
         self.generator = ExerciseGenerator(self.generator_model_name)
         
+        # Query utils (función importada)
+        self.query_utils = prepare_search_query
+        
         logger.info("RAGPipeline inicializado correctamente")
     
     def load_materials(
@@ -95,7 +97,7 @@ class RAGPipeline:
         file_extensions: List[str] = None
     ) -> Dict[str, Any]:
         """
-        Carga materiales académicos desde un directorio
+        Carga materiales académicos desde un directorio (optimizado)
         
         Args:
             data_directory: Directorio con los materiales
@@ -108,25 +110,25 @@ class RAGPipeline:
             if file_extensions is None:
                 file_extensions = ['.txt', '.pdf', '.tex']
             
-            # Cargar documentos
-            documents = self.data_loader.load_documents(
+            # Cargar documentos directamente como chunks (optimizado)
+            chunks = load_documents_as_chunks(
                 directory=data_directory,
-                file_extensions=file_extensions
+                file_extensions=file_extensions,
+                use_academic_metadata=True,
+                chunk_size=self.chunk_size,
+                chunk_overlap=self.chunk_overlap
             )
             
-            if not documents:
-                logger.warning(f"No se encontraron documentos en {data_directory}")
-                return {"status": "error", "message": "No documents found"}
-            
-            # Procesar texto
-            processed_docs = self.text_processor.process_documents(documents)
+            if not chunks:
+                logger.warning(f"No se encontraron chunks en {data_directory}")
+                return {"status": "error", "message": "No chunks found"}
             
             # Convertir a formato LangChain Document
             langchain_docs = []
-            for doc in processed_docs:
+            for chunk in chunks:
                 langchain_doc = Document(
-                    page_content=doc['content'],
-                    metadata=doc['metadata']
+                    page_content=chunk['content'],
+                    metadata=chunk['metadata']
                 )
                 langchain_docs.append(langchain_doc)
             
@@ -136,8 +138,7 @@ class RAGPipeline:
             # Estadísticas
             stats = {
                 "status": "success",
-                "documents_loaded": len(documents),
-                "chunks_created": len(processed_docs),
+                "chunks_created": len(chunks),
                 "documents_added": len(doc_ids),
                 "collection_info": self.vector_store.get_collection_info()
             }
@@ -168,7 +169,7 @@ class RAGPipeline:
         """
         try:
             # Preparar consulta de búsqueda
-            search_query = prepare_search_query(query_params)
+            search_query = self.query_utils(query_params)
             
             # Construir filtros si es necesario
             filter_dict = None

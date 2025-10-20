@@ -128,14 +128,18 @@ Contexto académico:
 
 Nivel de dificultad: {nivel_dificultad}
 
+IMPORTANTE: Genera un ejercicio de DESARROLLO que requiera una respuesta extensa y detallada, no de opción múltiple.
+
 Formato de respuesta (JSON):
 {{
   "ejercicios": [
     {{
-      "pregunta": "Pregunta que requiere desarrollo teórico",
-      "pista": "Pista sobre cómo abordar el problema",
-      "solucion": "Solución detallada paso a paso",
-      "puntos_clave": ["Punto clave 1", "Punto clave 2", "Punto clave 3"]
+      "enunciado": "Enunciado detallado del ejercicio de desarrollo que requiera explicación extensa",
+      "objetivos": "Objetivos de aprendizaje específicos del ejercicio",
+      "instrucciones": "Instrucciones detalladas sobre cómo resolver el ejercicio",
+      "criterios_evaluacion": "Criterios específicos para evaluar la respuesta",
+      "solucion_sugerida": "Solución detallada y completa del ejercicio",
+      "referencias": "Referencias bibliográficas relevantes para el tema"
     }}
   ]
 }}""",
@@ -190,21 +194,24 @@ Formato de respuesta (JSON):
     def generate_exercises(
         self,
         query_params: Dict[str, Any],
-        context_documents: List[Any],
-        tipo_ejercicio: str = "multiple_choice"
+        context_documents: List[Any]
     ) -> Dict[str, Any]:
         """
         Genera ejercicios basados en los parámetros y contexto
         
         Args:
-            query_params: Parámetros de la consulta (materia, unidad, cantidad, etc.)
+            query_params: Parámetros de la consulta (materia, unidad, cantidad, tipo_ejercicio, etc.)
             context_documents: Documentos recuperados como contexto
-            tipo_ejercicio: Tipo de ejercicio a generar
             
         Returns:
             Diccionario con ejercicios generados
         """
         try:
+            # Obtener tipo de ejercicio de los parámetros
+            tipo_ejercicio = query_params.get('tipo_ejercicio')
+            if not tipo_ejercicio:
+                raise ValueError("tipo_ejercicio es requerido en query_params")
+            
             # Validar tipo de ejercicio
             if tipo_ejercicio not in self.exercise_templates:
                 raise ValueError(f"Tipo de ejercicio no soportado: {tipo_ejercicio}")
@@ -350,6 +357,9 @@ Formato de respuesta (JSON):
             Lista de ejercicios procesados
         """
         try:
+            # Log de la respuesta completa para debugging
+            logger.info(f"Respuesta completa de la API: {response}")
+            
             # Extraer JSON de la respuesta
             json_start = response.find('{')
             json_end = response.rfind('}') + 1
@@ -358,6 +368,7 @@ Formato de respuesta (JSON):
                 raise ValueError("No se encontró JSON válido en la respuesta")
             
             json_str = response[json_start:json_end]
+            logger.info(f"JSON extraído: {json_str}")
             data = json.loads(json_str)
             
             # Validar estructura
@@ -374,7 +385,11 @@ Formato de respuesta (JSON):
                 if validator(exercise):
                     validated_exercises.append(exercise)
                 else:
-                    logger.warning(f"Ejercicio no válido omitido: {exercise}")
+                    # Log detallado de qué campos faltan
+                    required_fields = self._get_required_fields(tipo_ejercicio)
+                    missing_fields = [field for field in required_fields if field not in exercise]
+                    logger.warning(f"Ejercicio no válido omitido. Campos faltantes: {missing_fields}")
+                    logger.warning(f"Ejercicio completo: {exercise}")
             
             return validated_exercises
             
@@ -385,6 +400,19 @@ Formato de respuesta (JSON):
             logger.error(f"Error procesando respuesta: {str(e)}")
             raise
     
+    def _get_required_fields(self, tipo_ejercicio: str) -> List[str]:
+        """Obtiene los campos requeridos para un tipo de ejercicio"""
+        if tipo_ejercicio == "multiple_choice":
+            return ["pregunta", "opciones", "respuesta_correcta", "pista", "solucion"]
+        elif tipo_ejercicio == "desarrollo":
+            return ["enunciado", "objetivos", "instrucciones", "criterios_evaluacion", "solucion_sugerida", "referencias"]
+        elif tipo_ejercicio == "practico":
+            return ["pregunta", "pista", "solucion", "datos"]
+        elif tipo_ejercicio == "teorico":
+            return ["pregunta", "pista", "solucion", "conceptos_clave"]
+        else:
+            return []
+    
     def _validate_multiple_choice(self, exercise: Dict[str, Any]) -> bool:
         """Valida un ejercicio de opción múltiple"""
         required_fields = ["pregunta", "opciones", "respuesta_correcta", "pista", "solucion"]
@@ -392,7 +420,7 @@ Formato de respuesta (JSON):
     
     def _validate_desarrollo(self, exercise: Dict[str, Any]) -> bool:
         """Valida un ejercicio de desarrollo"""
-        required_fields = ["pregunta", "pista", "solucion", "puntos_clave"]
+        required_fields = ["enunciado", "objetivos", "instrucciones", "criterios_evaluacion", "solucion_sugerida", "referencias"]
         return all(field in exercise for field in required_fields)
     
     def _validate_practico(self, exercise: Dict[str, Any]) -> bool:

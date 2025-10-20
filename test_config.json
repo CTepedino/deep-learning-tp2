@@ -1,0 +1,62 @@
+{
+  "test_configs": [
+    {
+      "name": "Ejercicio de Desarrollo - Redes Neuronales",
+      "query_params": {
+        "materia": "Sistemas de Inteligencia Artificial",
+        "unidad": "Redes Neuronales",
+        "cantidad": 1,
+        "nivel_dificultad": "avanzado",
+        "tipo_ejercicio": "desarrollo"
+      },
+      "search_query": "redes neuronales",
+      "k_context": 5,
+      "description": "Genera un ejercicio de desarrollo avanzado sobre redes neuronales"
+    },
+    {
+      "name": "Ejercicio de Desarrollo - Hopfield",
+      "query_params": {
+        "materia": "Sistemas de Inteligencia Artificial",
+        "unidad": "Hopfield",
+        "cantidad": 1,
+        "nivel_dificultad": "avanzado",
+        "tipo_ejercicio": "desarrollo"
+      },
+      "search_query": "redes de hopfield",
+      "k_context": 5,
+      "description": "Genera un ejercicio de desarrollo avanzado sobre redes de Hopfield"
+    },
+    {
+      "name": "Ejercicio de Opción Múltiple - Perceptrón",
+      "query_params": {
+        "materia": "Sistemas de Inteligencia Artificial",
+        "unidad": "Perceptrón",
+        "cantidad": 1,
+        "nivel_dificultad": "intermedio",
+        "tipo_ejercicio": "multiple_choice"
+      },
+      "search_query": "perceptrón simple",
+      "k_context": 3,
+      "description": "Genera un ejercicio de opción múltiple sobre perceptrón"
+    },
+    {
+      "name": "Ejercicio Práctico - Backpropagation",
+      "query_params": {
+        "materia": "Sistemas de Inteligencia Artificial",
+        "unidad": "Backpropagation",
+        "cantidad": 1,
+        "nivel_dificultad": "avanzado",
+        "tipo_ejercicio": "practico"
+      },
+      "search_query": "algoritmo backpropagation",
+      "k_context": 4,
+      "description": "Genera un ejercicio práctico sobre backpropagation"
+    }
+  ],
+  "default_config": {
+    "k_context": 5,
+    "show_context_chunks": true,
+    "show_metadata": true,
+    "verbose": true
+  }
+}
