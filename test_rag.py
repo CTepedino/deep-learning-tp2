@@ -93,17 +93,28 @@ def main():
     
     # Cargar todos los materiales desde docs
     result = rag_pipeline.load_materials(
-        data_directory="./docs"
+        data_directory="./docs",
+        skip_on_error=True  # Continuar si hay errores
     )
     
-    if result.get('status') == 'error':
-        print(f"❌ Error: {result.get('message')}")
-        return
+    # Manejar diferentes estados
+    status = result.get('status')
     
-    print(f"\n✅ Carga completada:")
-    print(f"   - Documentos procesados: {result['documents_loaded']}")
-    print(f"   - Chunks generados: {result['chunks_created']}")
-    print(f"   - IDs asignados: {result['documents_added']}")
+    if status == 'error' and not result.get('can_continue'):
+        print(f"❌ Error crítico: {result.get('message')}")
+        return
+    elif status == 'partial_error':
+        print(f"\n⚠️  Error parcial al cargar nuevos documentos:")
+        print(f"   {result.get('message')}")
+        print(f"\n✅ Continuando con {result.get('existing_documents', 0)} documentos existentes")
+    elif status == 'warning':
+        print(f"\n⚠️  {result.get('message')}")
+        print(f"   Usando documentos existentes para generar ejercicios")
+    elif status == 'success':
+        print(f"\n✅ Carga completada:")
+        print(f"   - Documentos procesados: {result['documents_loaded']}")
+        print(f"   - Chunks generados: {result['chunks_created']}")
+        print(f"   - IDs asignados: {result['documents_added']}")
     
     # 3.1 Mostrar ejemplos de chunks
     print("\n📖 Mostrando ejemplos de chunks almacenados...")

@@ -8,7 +8,7 @@ import logging
 import re
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 # Cargar variables de entorno

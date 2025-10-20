@@ -214,8 +214,7 @@ class DocumentLoader:
             # Solo hay materia, detectar tipo del archivo
             metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
         
-        # Detectar nivel de dificultad sugerido del nombre de archivo 
-        # #///REVISAR COMO LO VAMOS A HACER
+        # Detectar nivel de dificultad sugerido del nombre de archivo
         filename_lower = file_path.name.lower()
         if any(word in filename_lower for word in ['basico', 'introductorio', 'intro']):
             metadata['nivel_sugerido'] = 'introductorio'

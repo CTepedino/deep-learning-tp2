@@ -1,12 +1,11 @@
 """
 RAG Pipeline Module using LangChain
-Pipeline principal de RAG usando LangChain para máxima flexibilidad
+Pipeline principal de RAG usando LangChain con LCEL (LangChain Expression Language)
 """
 
 import os
 import logging
 from typing import Dict, Any, List, Optional
-from pathlib import Path
 from dotenv import load_dotenv
 
 # Cargar variables de entorno
@@ -14,7 +13,7 @@ load_dotenv()
 
 # Imports de LangChain
 from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
 # Imports locales
 from .data_loading import DocumentLoader
@@ -87,12 +86,16 @@ class RAGPipeline:
         # Generador de ejercicios
         self.generator = ExerciseGenerator(self.generator_model_name)
         
+        # LCEL Chains (se crean bajo demanda)
+        self._rag_chains = {}
+        
         logger.info("RAGPipeline inicializado correctamente")
     
     def load_materials(
         self,
         data_directory: str,
-        file_extensions: List[str] = None
+        file_extensions: List[str] = None,
+        skip_on_error: bool = True
     ) -> Dict[str, Any]:
         """
         Carga materiales académicos desde un directorio
@@ -100,6 +103,7 @@ class RAGPipeline:
         Args:
             data_directory: Directorio con los materiales
             file_extensions: Extensiones de archivo a procesar
+            skip_on_error: Si continuar cuando hay errores en documentos individuales
             
         Returns:
             Diccionario con estadísticas de carga
@@ -116,10 +120,21 @@ class RAGPipeline:
             
             if not documents:
                 logger.warning(f"No se encontraron documentos en {data_directory}")
+                # No es un error crítico si ya hay docs en la DB
+                collection_info = self.vector_store.get_collection_info()
+                existing_count = collection_info.get('document_count', 0)
+                if existing_count > 0:
+                    return {
+                        "status": "warning",
+                        "message": f"No se encontraron nuevos documentos, pero hay {existing_count} documentos existentes",
+                        "documents_loaded": 0,
+                        "chunks_created": 0,
+                        "documents_added": 0,
+                        "existing_documents": existing_count
+                    }
                 return {"status": "error", "message": "No documents found"}
             
             # Procesar texto (fragmentar en chunks)
-            # split_documents ya devuelve objetos Document de LangChain
             processed_docs = self.text_processor.split_documents(documents)
             
             # Agregar al vector store
@@ -139,7 +154,25 @@ class RAGPipeline:
             
         except Exception as e:
             logger.error(f"Error cargando materiales: {str(e)}")
-            return {"status": "error", "message": str(e)}
+            
+            # Si skip_on_error, no abortar - reportar estado parcial
+            if skip_on_error:
+                collection_info = self.vector_store.get_collection_info()
+                existing_count = collection_info.get('document_count', 0)
+                
+                if existing_count > 0:
+                    logger.warning(f"Continuando con {existing_count} documentos existentes")
+                    return {
+                        "status": "partial_error",
+                        "message": str(e),
+                        "documents_loaded": 0,
+                        "chunks_created": 0,
+                        "documents_added": 0,
+                        "existing_documents": existing_count,
+                        "can_continue": True
+                    }
+            
+            return {"status": "error", "message": str(e), "can_continue": False}
     
     def generate_exercises(
         self,
@@ -247,6 +280,155 @@ class RAGPipeline:
         except Exception as e:
             logger.error(f"Error en búsqueda: {str(e)}")
             return []
+    
+    def create_rag_chain(
+        self,
+        tipo_ejercicio: str = "multiple_choice"
+    ):
+        """
+        Crea un LCEL chain para RAG usando el retriever nativo y el generator
+        
+        Args:
+            tipo_ejercicio: Tipo de ejercicio para el chain
+            
+        Returns:
+            Chain de LangChain (LCEL)
+        """
+        if tipo_ejercicio in self._rag_chains:
+            return self._rag_chains[tipo_ejercicio]
+        
+        try:
+            # Obtener retriever nativo
+            native_retriever = self.retriever.get_native_retriever()
+            
+            # Obtener chain del generator
+            generator_chain = self.generator.chains.get(tipo_ejercicio)
+            
+            if not generator_chain:
+                raise ValueError(f"Chain no disponible para tipo: {tipo_ejercicio}")
+            
+            # Función para formatear documentos recuperados
+            def format_docs(docs: List[Document]) -> str:
+                """Formatea documentos recuperados como contexto"""
+                context_parts = []
+                for i, doc in enumerate(docs, 1):
+                    content = doc.page_content.strip()
+                    source = doc.metadata.get("source", f"Documento {i}")
+                    context_parts.append(f"[Fuente {i}: {source}]\n{content}\n")
+                return "\n".join(context_parts)
+            
+            # Crear chain completo usando LCEL:
+            # 1. Retriever obtiene contexto
+            # 2. Se formatean los docs
+            # 3. Se pasa al generator chain
+            # Nota: El generator chain ya maneja todo el prompt y parsing
+            
+            # Chain básico: retriever -> formateador
+            rag_chain = {
+                "contexto": native_retriever | RunnableLambda(format_docs),
+                "materia": RunnablePassthrough(),
+                "tema": RunnablePassthrough(),
+                "cantidad": RunnablePassthrough(),
+                "nivel_dificultad": RunnablePassthrough()
+            }
+            
+            # Guardar en cache
+            self._rag_chains[tipo_ejercicio] = rag_chain
+            
+            logger.info(f"LCEL chain creado para tipo: {tipo_ejercicio}")
+            return rag_chain
+            
+        except Exception as e:
+            logger.error(f"Error creando LCEL chain: {str(e)}")
+            raise
+    
+    def generate_exercises_with_chain(
+        self,
+        query_params: Dict[str, Any],
+        tipo_ejercicio: str = "multiple_choice"
+    ) -> Dict[str, Any]:
+        """
+        Genera ejercicios usando LCEL chains nativos de LangChain
+        
+        Args:
+            query_params: Parámetros de la consulta
+            tipo_ejercicio: Tipo de ejercicio
+            
+        Returns:
+            Diccionario con ejercicios generados
+        """
+        try:
+            # Obtener el chain del generator directamente
+            generator_chain = self.generator.chains.get(tipo_ejercicio)
+            
+            if not generator_chain:
+                raise ValueError(f"Chain no disponible para tipo: {tipo_ejercicio}")
+            
+            # Preparar la consulta de búsqueda
+            search_query = prepare_search_query(query_params)
+            
+            # Recuperar documentos usando el retriever
+            context_docs = self.retriever.retrieve(
+                query=search_query,
+                k=5,
+                filter_dict={"materia": query_params.get("materia")} if query_params.get("materia") else None
+            )
+            
+            if not context_docs:
+                return {
+                    "status": "error",
+                    "message": "No se encontró contexto relevante"
+                }
+            
+            # Formatear contexto
+            def format_docs(docs: List[Document]) -> str:
+                context_parts = []
+                for i, doc in enumerate(docs, 1):
+                    content = doc.page_content.strip()
+                    source = doc.metadata.get("source", f"Documento {i}")
+                    context_parts.append(f"[Fuente {i}: {source}]\n{content}\n")
+                return "\n".join(context_parts)
+            
+            contexto = format_docs(context_docs)
+            
+            # Preparar variables para el chain
+            chain_input = {
+                "cantidad": query_params.get("cantidad", 1),
+                "tema": query_params.get("unidad", "tema no especificado"),
+                "materia": query_params.get("materia", "materia no especificada"),
+                "contexto": contexto,
+                "nivel_dificultad": query_params.get("nivel_dificultad", "intermedio")
+            }
+            
+            # Invocar el chain usando LCEL
+            result = generator_chain.invoke(chain_input)
+            
+            # Validar ejercicios
+            exercises = self.generator._validate_exercises(result, tipo_ejercicio)
+            
+            # Agregar metadata
+            return {
+                "ejercicios": exercises,
+                "metadata": {
+                    "materia": query_params.get("materia"),
+                    "unidad": query_params.get("unidad"),
+                    "tipo_ejercicio": tipo_ejercicio,
+                    "cantidad": query_params.get("cantidad", 1),
+                    "nivel_dificultad": query_params.get("nivel_dificultad"),
+                    "chunks_recuperados": len(context_docs),
+                    "fuentes": [doc.metadata.get("source", "desconocido") for doc in context_docs],
+                    "modelo_usado": self.generator_model_name,
+                    "metodo": "LCEL Chain"
+                },
+                "context_info": {
+                    "documents_retrieved": len(context_docs),
+                    "search_query": search_query
+                }
+            }
+            
+        except Exception as e:
+            logger.error(f"Error generando ejercicios con chain: {str(e)}")
+            return {"status": "error", "message": str(e)}
     
     def get_system_info(self) -> Dict[str, Any]:
         """

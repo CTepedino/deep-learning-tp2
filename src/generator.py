@@ -1,13 +1,17 @@
 """
 Generator Module for RAG System
-Generación de ejercicios usando OpenAI API con prompt engineering
+Generación de ejercicios usando LangChain con ChatOpenAI y PromptTemplates
 """
 
 import os
-import json
 import logging
-from typing import List, Dict, Any, Optional, Union
+from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
+
+# LangChain imports
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import JsonOutputParser
 
 # Cargar variables de entorno
 load_dotenv()
@@ -27,7 +31,7 @@ class ExerciseGenerator:
         max_tokens: int = 2000
     ):
         """
-        Inicializa el generador de ejercicios
+        Inicializa el generador de ejercicios con LangChain
         
         Args:
             model_name: Nombre del modelo de OpenAI (por defecto de LLM_MODEL)
@@ -38,25 +42,23 @@ class ExerciseGenerator:
         self.model_name = model_name or os.getenv('LLM_MODEL', 'gpt-4o-mini')
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.client = None
         
-        self._initialize_openai_client()
+        # Inicializar LLM de LangChain
+        self.llm = None
+        self._initialize_langchain_llm()
+        
+        # Configurar prompts y output parsers
         self._setup_prompts()
+        self._setup_output_parsers()
     
-    def _initialize_openai_client(self):
-        """Inicializa el cliente de OpenAI
-        
-        El modo de capacidad se configura mediante la variable de entorno OPENAI_MODE
-        (valores válidos: flex, standard, priority). Por defecto usa 'standard'. 
-        """
+    def _initialize_langchain_llm(self):
+        """Inicializa el LLM de LangChain con ChatOpenAI"""
         try:
-            from openai import OpenAI
-            
             api_key = os.getenv('OPENAI_API_KEY')
             if not api_key:
                 raise ValueError("OPENAI_API_KEY no encontrada en variables de entorno")
             
-            # Leer y validar el modo de capacidad
+            # Configurar headers adicionales si se especifica modo
             mode = os.getenv('OPENAI_MODE', 'standard').lower()
             valid_modes = {"flex", "standard", "priority"}
             
@@ -64,22 +66,28 @@ class ExerciseGenerator:
                 logger.warning(f"Modo OPENAI_MODE '{mode}' no válido. Usando 'standard' por defecto.")
                 mode = 'standard'
             
-            # Configurar headers para el modo de capacidad
-            self.extra_headers = {"x-openai-pricing-tier": mode}
+            # Crear ChatOpenAI con LangChain
+            self.llm = ChatOpenAI(
+                model=self.model_name,
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                model_kwargs={
+                    "extra_headers": {"x-openai-pricing-tier": mode}
+                }
+            )
             
-            self.client = OpenAI(api_key=api_key)
-            logger.info(f"Cliente OpenAI inicializado con modelo: {self.model_name} y modo: {mode}")
+            logger.info(f"LangChain ChatOpenAI inicializado con modelo: {self.model_name} y modo: {mode}")
             
         except ImportError:
-            logger.error("openai no está instalado. Instalar con: pip install openai")
+            logger.error("langchain-openai no está instalado. Instalar con: pip install langchain-openai")
             raise
         except Exception as e:
-            logger.error(f"Error inicializando cliente OpenAI: {str(e)}")
+            logger.error(f"Error inicializando LangChain LLM: {str(e)}")
             raise
     
     def _setup_prompts(self):
-        """Configura los templates de prompts"""
-        self.system_prompt = """Eres un experto generador de ejercicios académicos para la carrera de Ingeniería Informática del ITBA. 
+        """Configura los templates de prompts con LangChain"""
+        self.system_prompt_text = """Eres un experto generador de ejercicios académicos para la carrera de Ingeniería Informática del ITBA. 
 Tu tarea es crear ejercicios de alta calidad basados en el material académico proporcionado.
 
 REGLAS IMPORTANTES:
@@ -187,6 +195,25 @@ Formato de respuesta (JSON):
             }
         }
     
+    def _setup_output_parsers(self):
+        """Configura los output parsers de LangChain"""
+        # Parser para JSON genérico
+        self.json_parser = JsonOutputParser()
+        
+        # Crear chains para cada tipo de ejercicio usando LCEL
+        self.chains = {}
+        for tipo_ejercicio, config in self.exercise_templates.items():
+            # Crear prompt template para cada tipo
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", self.system_prompt_text),
+                ("human", config["template"])
+            ])
+            
+            # Crear chain: prompt | llm | json_parser
+            self.chains[tipo_ejercicio] = prompt | self.llm | self.json_parser
+            
+        logger.info(f"Output parsers y chains configurados para {len(self.chains)} tipos de ejercicios")
+    
     def generate_exercises(
         self,
         query_params: Dict[str, Any],
@@ -212,18 +239,18 @@ Formato de respuesta (JSON):
             # Preparar contexto
             contexto = self._prepare_context(context_documents)
             
-            # Preparar prompt
-            prompt = self._prepare_prompt(
+            # Preparar variables para el prompt
+            prompt_vars = self._prepare_prompt_variables(
                 query_params=query_params,
                 contexto=contexto,
                 tipo_ejercicio=tipo_ejercicio
             )
             
-            # Generar ejercicios
-            response = self._call_openai(prompt)
+            # Generar ejercicios usando el chain de LangChain
+            response_data = self._invoke_chain(tipo_ejercicio, prompt_vars)
             
             # Validar y procesar respuesta
-            exercises = self._process_response(response, tipo_ejercicio)
+            exercises = self._validate_exercises(response_data, tipo_ejercicio)
             
             # Agregar metadata
             result = {
@@ -268,14 +295,14 @@ Formato de respuesta (JSON):
         
         return "\n".join(context_parts)
     
-    def _prepare_prompt(
+    def _prepare_prompt_variables(
         self,
         query_params: Dict[str, Any],
         contexto: str,
         tipo_ejercicio: str
-    ) -> str:
+    ) -> Dict[str, Any]:
         """
-        Prepara el prompt para la generación
+        Prepara las variables para el prompt template de LangChain
         
         Args:
             query_params: Parámetros de la consulta
@@ -283,88 +310,71 @@ Formato de respuesta (JSON):
             tipo_ejercicio: Tipo de ejercicio
             
         Returns:
-            Prompt formateado
+            Diccionario con variables para el prompt
         """
-        template = self.exercise_templates[tipo_ejercicio]["template"]
-        
         # Extraer parámetros
         materia = query_params.get("materia", "materia no especificada")
         unidad = query_params.get("unidad", "tema no especificado")
         cantidad = query_params.get("cantidad", 1)
         nivel_dificultad = query_params.get("nivel_dificultad", "intermedio")
         
-        # Formatear prompt
-        prompt = template.format(
-            cantidad=cantidad,
-            tema=unidad,
-            materia=materia,
-            contexto=contexto,
-            nivel_dificultad=nivel_dificultad
-        )
-        
-        return prompt
+        # Retornar diccionario con variables
+        return {
+            "cantidad": cantidad,
+            "tema": unidad,
+            "materia": materia,
+            "contexto": contexto,
+            "nivel_dificultad": nivel_dificultad
+        }
     
-    def _call_openai(self, prompt: str) -> str:
+    def _invoke_chain(
+        self, 
+        tipo_ejercicio: str, 
+        prompt_vars: Dict[str, Any]
+    ) -> Dict[str, Any]:
         """
-        Llama a la API de OpenAI
+        Invoca el chain de LangChain para generar ejercicios
         
         Args:
-            prompt: Prompt a enviar
+            tipo_ejercicio: Tipo de ejercicio a generar
+            prompt_vars: Variables para el prompt
             
         Returns:
-            Respuesta de la API
+            Datos parseados de la respuesta (diccionario)
         """
         try:
-            messages = [
-                {"role": "system", "content": self.system_prompt},
-                {"role": "user", "content": prompt}
-            ]
+            # Invocar el chain usando LCEL
+            chain = self.chains[tipo_ejercicio]
+            result = chain.invoke(prompt_vars)
             
-            response = self.client.chat.completions.create(
-                model=self.model_name,
-                messages=messages,
-                temperature=self.temperature,
-                max_tokens=self.max_tokens,
-                extra_headers=self.extra_headers
-            )
-            
-            return response.choices[0].message.content
+            logger.info(f"Chain invocado exitosamente para tipo: {tipo_ejercicio}")
+            return result
             
         except Exception as e:
-            logger.error(f"Error llamando a OpenAI: {str(e)}")
+            logger.error(f"Error invocando chain de LangChain: {str(e)}")
             raise
     
-    def _process_response(
+    def _validate_exercises(
         self,
-        response: str,
+        response_data: Dict[str, Any],
         tipo_ejercicio: str
     ) -> List[Dict[str, Any]]:
         """
-        Procesa la respuesta de OpenAI
+        Valida los ejercicios generados por el chain de LangChain
         
         Args:
-            response: Respuesta de la API
+            response_data: Datos parseados por JsonOutputParser
             tipo_ejercicio: Tipo de ejercicio
             
         Returns:
-            Lista de ejercicios procesados
+            Lista de ejercicios validados
         """
         try:
-            # Extraer JSON de la respuesta
-            json_start = response.find('{')
-            json_end = response.rfind('}') + 1
-            
-            if json_start == -1 or json_end == 0:
-                raise ValueError("No se encontró JSON válido en la respuesta")
-            
-            json_str = response[json_start:json_end]
-            data = json.loads(json_str)
-            
             # Validar estructura
-            if "ejercicios" not in data:
+            if "ejercicios" not in response_data:
                 raise ValueError("Respuesta no contiene campo 'ejercicios'")
             
-            exercises = data["ejercicios"]
+            exercises = response_data["ejercicios"]
             
             # Validar cada ejercicio
             validator = self.exercise_templates[tipo_ejercicio]["validation"]
@@ -376,13 +386,11 @@ Formato de respuesta (JSON):
                 else:
                     logger.warning(f"Ejercicio no válido omitido: {exercise}")
             
+            logger.info(f"Ejercicios validados: {len(validated_exercises)} de {len(exercises)}")
             return validated_exercises
             
-        except json.JSONDecodeError as e:
-            logger.error(f"Error parseando JSON: {str(e)}")
-            raise
         except Exception as e:
-            logger.error(f"Error procesando respuesta: {str(e)}")
+            logger.error(f"Error validando ejercicios: {str(e)}")
             raise
     
     def _validate_multiple_choice(self, exercise: Dict[str, Any]) -> bool:
