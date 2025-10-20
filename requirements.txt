@@ -15,6 +15,12 @@ python-dotenv>=1.0.0
 # Generación (OpenAI)
 openai>=1.0.0
 
+# Embeddings locales (opcional - requiere Python <=3.12)
+# NOTA: Python 3.13 no soporta PyTorch todavía
+# Si usas Python 3.13, usa embedding_model="openai" en lugar de sentence-transformers
+torch>=2.0.0; python_version < '3.13'
+sentence-transformers>=2.0.0; python_version < '3.13'
+
 # Utilities (versiones compatibles)
 numpy>=1.21.0,<=2.1.0
 pandas>=1.3.0

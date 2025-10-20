@@ -51,12 +51,28 @@ class VectorStore:
         """Inicializa el vector store de LangChain con ChromaDB"""
         try:
             from langchain_chroma import Chroma
-            from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
             
-            # Configurar embeddings
-            self.embedding_function = SentenceTransformerEmbeddings(
-                model_name=self.embedding_model
-            )
+            # Configurar embeddings según el modelo especificado
+            if self.embedding_model.lower() == "openai" or self.embedding_model.startswith("text-embedding"):
+                # Usar embeddings de OpenAI
+                from langchain_openai import OpenAIEmbeddings
+                
+                # Si solo dice "openai", usar el modelo por defecto
+                if self.embedding_model.lower() == "openai":
+                    openai_model = os.getenv('OPENAI_EMBEDDING_MODEL', 'text-embedding-3-small')
+                else:
+                    # Si especifica el modelo completo (ej: "text-embedding-3-large")
+                    openai_model = self.embedding_model
+                
+                self.embedding_function = OpenAIEmbeddings(model=openai_model)
+                logger.info(f"Usando OpenAI embeddings: {openai_model}")
+            else:
+                # Usar embeddings locales con sentence-transformers
+                from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
+                self.embedding_function = SentenceTransformerEmbeddings(
+                    model_name=self.embedding_model
+                )
+                logger.info(f"Usando sentence-transformers: {self.embedding_model}")
             
             # Verificar si existe colección y resetear si es necesario
             if reset_collection and self._collection_exists():
@@ -142,6 +158,27 @@ class VectorStore:
             logger.error(f"Error agregando documentos: {str(e)}")
             raise
     
+    def _convert_filter_to_chroma_format(self, filter_dict: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Convierte filtros simples al formato que ChromaDB espera
+        
+        Args:
+            filter_dict: Diccionario simple de filtros {key: value}
+            
+        Returns:
+            Filtro en formato ChromaDB
+        """
+        if not filter_dict or len(filter_dict) == 0:
+            return None
+        
+        if len(filter_dict) == 1:
+            # Un solo filtro, formato simple
+            return filter_dict
+        
+        # Múltiples filtros, usar operador $and
+        conditions = [{key: value} for key, value in filter_dict.items()]
+        return {"$and": conditions}
+    
     def similarity_search(
         self,
         query: str,
@@ -161,11 +198,13 @@ class VectorStore:
         """
         try:
             if filter_dict:
+                # Convertir filtros al formato ChromaDB
+                chroma_filter = self._convert_filter_to_chroma_format(filter_dict)
                 # Búsqueda con filtros
                 results = self.vectorstore.similarity_search(
                     query=query,
                     k=k,
-                    filter=filter_dict
+                    filter=chroma_filter
                 )
             else:
                 # Búsqueda sin filtros
@@ -200,10 +239,12 @@ class VectorStore:
         """
         try:
             if filter_dict:
+                # Convertir filtros al formato ChromaDB
+                chroma_filter = self._convert_filter_to_chroma_format(filter_dict)
                 results = self.vectorstore.similarity_search_with_score(
                     query=query,
                     k=k,
-                    filter=filter_dict
+                    filter=chroma_filter
                 )
             else:
                 results = self.vectorstore.similarity_search_with_score(

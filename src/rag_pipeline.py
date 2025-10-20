@@ -108,30 +108,22 @@ class RAGPipeline:
             if file_extensions is None:
                 file_extensions = ['.txt', '.pdf', '.tex']
             
-            # Cargar documentos
-            documents = self.data_loader.load_documents(
-                directory=data_directory,
-                file_extensions=file_extensions
+            # Cargar documentos con metadata académica de la jerarquía de carpetas
+            documents = self.data_loader.load_documents_from_directory(
+                directory_path=data_directory,
+                metadata_extractor=self.data_loader.extract_academic_metadata
             )
             
             if not documents:
                 logger.warning(f"No se encontraron documentos en {data_directory}")
                 return {"status": "error", "message": "No documents found"}
             
-            # Procesar texto
-            processed_docs = self.text_processor.process_documents(documents)
-            
-            # Convertir a formato LangChain Document
-            langchain_docs = []
-            for doc in processed_docs:
-                langchain_doc = Document(
-                    page_content=doc['content'],
-                    metadata=doc['metadata']
-                )
-                langchain_docs.append(langchain_doc)
+            # Procesar texto (fragmentar en chunks)
+            # split_documents ya devuelve objetos Document de LangChain
+            processed_docs = self.text_processor.split_documents(documents)
             
             # Agregar al vector store
-            doc_ids = self.vector_store.add_documents(langchain_docs)
+            doc_ids = self.vector_store.add_documents(processed_docs)
             
             # Estadísticas
             stats = {
@@ -195,9 +187,11 @@ class RAGPipeline:
                 }
             
             # Generar ejercicios
+            tipo_ejercicio = query_params.get("tipo_ejercicio", "multiple_choice")
             exercises = self.generator.generate_exercises(
                 query_params=query_params,
-                context_documents=context_docs
+                context_documents=context_docs,
+                tipo_ejercicio=tipo_ejercicio
             )
             
             # Agregar información de contexto
