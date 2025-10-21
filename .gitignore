@@ -1,13 +1,71 @@
-.venv
+# Entornos virtuales
 .venv/
-.venv/**
-.idea
+.venv
+venv/
+env/
+
+# IDEs
 .idea/
-.idea/**
-.pyc
+.vscode/
+*.swp
+*.swo
+
+# Archivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Variables de entorno
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
+# Bases de datos
+*.db
+*.sqlite
+*.sqlite3
+data/processed/
 
-Materias
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Archivos de test temporales
+debug_*.py
+analyze_*.py
+
+# Archivos de configuración de test (mantener test_config.json)
+# test_config.json
+
+# Carpetas específicas del proyecto
 Materias/
-Materias/**
+Materias
+
+# Carpetas de debug y test
+data/processed/debug_*/
+data/processed/test_*/
