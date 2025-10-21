@@ -195,7 +195,10 @@ class ExerciseExporter:
                     letras = ['A', 'B', 'C', 'D']
                     for j, opcion in enumerate(ejercicio['opciones']):
                         f.write(f"  {letras[j]}) {opcion}\n")
-                    f.write(f"\nRESPUESTA CORRECTA: {ejercicio.get('respuesta_correcta', 'N/A')}\n")
+                    if include_solutions:
+                        f.write(f"\nRESPUESTA CORRECTA: {ejercicio.get('respuesta_correcta', 'N/A')}\n")
+                    else:
+                        f.write("\n")
                 
                 if ejercicio.get('datos'):
                     f.write(f"\nDATOS:\n{ejercicio['datos']}\n")
@@ -308,9 +311,10 @@ class ExerciseExporter:
                     for j, opcion in enumerate(ejercicio['opciones']):
                         story.append(Paragraph(f"&nbsp;&nbsp;{letras[j]}) {opcion}", styles['Normal']))
                     
-                    respuesta = ejercicio.get('respuesta_correcta', 'N/A')
-                    story.append(Spacer(1, 0.1 * inch))
-                    story.append(Paragraph(f"<b>Respuesta correcta:</b> {respuesta}", styles['Normal']))
+                    if include_solutions:
+                        respuesta = ejercicio.get('respuesta_correcta', 'N/A')
+                        story.append(Spacer(1, 0.1 * inch))
+                        story.append(Paragraph(f"<b>Respuesta correcta:</b> {respuesta}", styles['Normal']))
                 
                 # Datos (si existen)
                 if ejercicio.get('datos'):
@@ -424,8 +428,9 @@ class ExerciseExporter:
                         f.write(f"  \\item {opcion_latex}\n")
                     f.write("\\end{enumerate}\n\n")
                     
-                    respuesta = ejercicio.get('respuesta_correcta', 'N/A')
-                    f.write(f"\\textcolor{{darkblue}}{{\\textbf{{Respuesta correcta:}}}} {respuesta}\n\n")
+                    if include_solutions:
+                        respuesta = ejercicio.get('respuesta_correcta', 'N/A')
+                        f.write(f"\\textcolor{{darkblue}}{{\\textbf{{Respuesta correcta:}}}} {respuesta}\n\n")
                 
                 # Datos
                 if ejercicio.get('datos'):
