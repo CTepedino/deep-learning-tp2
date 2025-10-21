@@ -66,6 +66,7 @@ def main():
             
         else:
             print(f"❌ Error: {result.get('message', 'Error desconocido')}")
+            print(f"🔍 Debug - Resultado completo: {result}")
             
     except FileNotFoundError:
         print(f"❌ Error: No se encontró el archivo {config_file}")

@@ -2,8 +2,8 @@
   "materia": "Probabilidad y estadística",
   "unidad": "Variables Aleatorias", 
   "cantidad": 3,
-  "nivel_dificultad": "intermedio",
-  "tipo_ejercicio": "multiple_choice",
-  "formato": "pdf"
+  "nivel_dificultad": "avanzado",
+  "tipo_ejercicio": "desarrollo",
+  "formato": "tex"
 }
 
