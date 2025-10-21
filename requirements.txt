@@ -29,3 +29,6 @@ datasets>=2.14.0
 # Utilities (versiones compatibles)
 numpy>=1.21.0,<=2.1.0
 pandas>=1.3.0
+
+# Export (opcional para PDF)
+reportlab>=4.0.0

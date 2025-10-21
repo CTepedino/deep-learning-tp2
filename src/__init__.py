@@ -21,6 +21,7 @@ from .data_loading import DocumentLoader, load_documents
 from .text_processing import AcademicTextSplitter, split_documents
 from .evaluation import RAGEvaluator
 from .query_utils import prepare_search_query
+from .export_utils import ExerciseExporter, export_exercises
 
 __all__ = [
     # Main pipeline
@@ -39,6 +40,9 @@ __all__ = [
     'split_documents',
     'RAGEvaluator',
     'prepare_search_query',
+    # Export
+    'ExerciseExporter',
+    'export_exercises',
 ]
 
 __version__ = '2.0.0'

@@ -1,0 +1,11 @@
+================================================================================
+PISTAS DE LOS EJERCICIOS
+================================================================================
+
+Materia: Probabilidad y estadística
+Unidad: Variables Aleatorias
+
+PISTA - EJERCICIO 1
+--------------------------------------------------------------------------------
+Recuerda que la variable aleatoria que cuenta el número de éxitos en n ensayos independientes con la misma probabilidad de éxito sigue una distribución específica.
+

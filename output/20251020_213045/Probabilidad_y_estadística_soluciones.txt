@@ -1,0 +1,13 @@
+================================================================================
+SOLUCIONES DE LOS EJERCICIOS
+================================================================================
+
+Materia: Probabilidad y estadística
+Unidad: Variables Aleatorias
+
+SOLUCIÓN - EJERCICIO 1
+--------------------------------------------------------------------------------
+La variable aleatoria Xn representa la cantidad de éxitos en n repeticiones de un experimento, donde cada repetición tiene una probabilidad p de éxito y son independientes entre sí. Por lo tanto, Xn sigue una distribución Binomial, que se denota como Xn ~ Bi(n, p). Las otras opciones no son correctas porque la distribución normal es un límite para grandes n, la distribución de Poisson se utiliza para contar eventos en un intervalo de tiempo o espacio y la distribución geométrica cuenta el número de intentos hasta el primer éxito.
+
+Respuesta correcta: B
+

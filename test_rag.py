@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(Path(__file__).parent))
 
 from src.rag_pipeline import create_rag_pipeline
+from src.export_utils import export_exercises
 
 def main():
     print("\n" + "=" * 70)
@@ -165,7 +166,8 @@ def main():
         "unidad": "Variables Aleatorias",
         "cantidad": 1,
         "nivel_dificultad": "intermedio",
-        "tipo_ejercicio": "multiple_choice"
+        "tipo_ejercicio": "multiple_choice",
+        "formato": "txt"  # Puede ser: 'txt', 'pdf', 'tex'
     }
     
     print(f"\n📝 Parámetros de generación:")
@@ -264,12 +266,73 @@ def main():
     print("✅ ¡DEMO COMPLETADA EXITOSAMENTE!")
     print("=" * 70)
     
+    # Exportar ejercicios
+    print("\n" + "=" * 70)
+    print("📥 EXPORTACIÓN DE EJERCICIOS")
+    print("=" * 70)
+    
+    print("\n💾 Exportando ejercicios a archivos...")
+    
+    # Obtener formato del query_params o usar txt por defecto
+    formato_exportacion = query_params.get('formato', 'txt')
+    print(f"   Formato seleccionado: {formato_exportacion.upper()}")
+    
+    try:
+        from src.export_utils import ExerciseExporter
+        
+        exporter = ExerciseExporter(output_directory="./output")
+        
+        # Exportar TODAS las versiones (completo, ejercicio, pistas, soluciones)
+        archivos = exporter.export_all_versions(
+            result=result,
+            format=formato_exportacion
+        )
+        
+        print(f"\n✅ Se generaron {len(archivos) - 1} archivos en formato {formato_exportacion.upper()}:\n")
+        print(f"   1. 📄 Completo (todo):        {archivos['completo']}")
+        print(f"   2. 📝 Ejercicio (sin ayuda):  {archivos['ejercicio']}")
+        print(f"   3. 💡 Pistas:                 {archivos['pistas']}")
+        print(f"   4. ✅ Soluciones:             {archivos['soluciones']}")
+        
+        print(f"\n📂 Carpeta de esta sesión: {archivos['session_folder']}")
+        print(f"   Los archivos están organizados por timestamp para no pisarse")
+        
+    except ImportError as e:
+        if 'reportlab' in str(e) and formato_exportacion == 'pdf':
+            print(f"   ⚠️  Para exportar PDF necesitas: pip install reportlab")
+        else:
+            print(f"   ❌ Error de importación: {str(e)}")
+    except Exception as e:
+        print(f"   ❌ Error durante exportación: {str(e)}")
+    
     # Opciones adicionales
-    print("\n💡 Para generar más ejercicios, puedes:")
+    print("\n" + "=" * 70)
+    print("💡 PRÓXIMOS PASOS")
+    print("=" * 70)
+    print("\n📝 Para generar más ejercicios:")
     print("   - Modificar los query_params en este script")
     print("   - Probar diferentes tipos: 'desarrollo', 'practico', 'teorico'")
     print("   - Cambiar la materia a 'Sistemas de Inteligencia Artificial'")
     print("   - Ajustar la dificultad: 'basico', 'intermedio', 'avanzado'")
+    
+    print("\n📄 Formatos de exportación disponibles:")
+    print("   - 'txt': Texto plano (fácil de editar)")
+    print("   - 'tex': LaTeX (para documentos profesionales)")
+    print("   - 'pdf': PDF (listo para imprimir)")
+    print("   Cambia en query_params: 'formato': 'txt'|'pdf'|'tex'")
+    
+    print("\n📂 Estructura de archivos generados:")
+    print("   Cada ejecución crea una carpeta con timestamp en ./output/")
+    print("   Dentro encontrarás 4 archivos:")
+    print("   1. _completo: Todo el ejercicio (para docentes)")
+    print("   2. _ejercicio: Solo preguntas (para estudiantes)")
+    print("   3. _pistas: Solo las pistas (ayuda intermedia)")
+    print("   4. _soluciones: Solo las soluciones (corrección)")
+    
+    print("\n💡 Consejos:")
+    print("   - Usa .txt para edición rápida")
+    print("   - Usa .tex para documentos académicos formales")
+    print("   - Usa .pdf para distribución directa (requiere reportlab)")
 
 if __name__ == "__main__":
     main()
