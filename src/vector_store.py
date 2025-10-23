@@ -285,29 +285,7 @@ class VectorStore:
             logger.error(f"Error obteniendo información de la colección: {str(e)}")
             return {}
     
-    def delete_documents(self, ids: List[str]) -> bool:
-        """
-        Elimina documentos por IDs
-        
-        Args:
-            ids: Lista de IDs a eliminar
-            
-        Returns:
-            True si se eliminaron correctamente
-        """
-        try:
-            import chromadb
-            client = chromadb.PersistentClient(path=self.persist_directory)
-            collection = client.get_collection(self.collection_name)
-            
-            collection.delete(ids=ids)
-            logger.info(f"Documentos eliminados: {len(ids)}")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Error eliminando documentos: {str(e)}")
-            return False
-    
+ 
     def delete_all_documents(self) -> bool:
         """
         Elimina todos los documentos de la colección
@@ -334,48 +312,6 @@ class VectorStore:
             logger.error(f"Error eliminando todos los documentos: {str(e)}")
             return False
     
-    def search_by_metadata(
-        self,
-        filter_dict: Dict[str, Any],
-        limit: int = 10
-    ) -> List[Any]:
-        """
-        Búsqueda por metadata
-        
-        Args:
-            filter_dict: Filtros de metadata
-            limit: Límite de resultados
-            
-        Returns:
-            Lista de documentos que coinciden con los filtros
-        """
-        try:
-            import chromadb
-            client = chromadb.PersistentClient(path=self.persist_directory)
-            collection = client.get_collection(self.collection_name)
-            
-            results = collection.get(
-                where=filter_dict,
-                limit=limit
-            )
-            
-            # Convertir a formato de documentos LangChain
-            documents = []
-            for i, doc_id in enumerate(results['ids']):
-                from langchain_core.documents import Document
-                doc = Document(
-                    page_content=results['documents'][i],
-                    metadata=results['metadatas'][i] if results['metadatas'] else {}
-                )
-                documents.append(doc)
-            
-            logger.info(f"Búsqueda por metadata completada: {len(documents)} resultados")
-            return documents
-            
-        except Exception as e:
-            logger.error(f"Error en búsqueda por metadata: {str(e)}")
-            raise
-
 
 def create_vector_store(
     collection_name: str = None,
@@ -402,70 +338,3 @@ def create_vector_store(
         reset_collection=reset_collection
     )
 
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Crear vector store
-    print("Creando vector store...")
-    vector_store = create_vector_store(
-        reset_collection=True
-    )
-    
-    # Mostrar información de la colección
-    info = vector_store.get_collection_info()
-    print(f"Información de la colección: {info}")
-    
-    # Crear documentos de ejemplo
-    from langchain_core.documents import Document
-    
-    sample_docs = [
-        Document(
-            page_content="La distribución normal es una distribución de probabilidad continua.",
-            metadata={"materia": "Probabilidad y estadística", "tipo": "definición"}
-        ),
-        Document(
-            page_content="Calcular la probabilidad P(X < 2) para X ~ N(0, 1).",
-            metadata={"materia": "Probabilidad y estadística", "tipo": "ejercicio"}
-        ),
-        Document(
-            page_content="Los algoritmos de machine learning incluyen regresión y clasificación.",
-            metadata={"materia": "Sistemas de Inteligencia Artificial", "tipo": "concepto"}
-        )
-    ]
-    
-    # Agregar documentos
-    print("Agregando documentos...")
-    ids = vector_store.add_documents(sample_docs)
-    print(f"Documentos agregados con IDs: {ids}")
-    
-    # Búsqueda por similitud
-    print("\nBúsqueda por similitud:")
-    results = vector_store.similarity_search("distribución normal", k=2)
-    for i, doc in enumerate(results):
-        print(f"Resultado {i+1}: {doc.page_content}")
-        print(f"Metadata: {doc.metadata}")
-    
-    # Búsqueda con filtros
-    print("\nBúsqueda con filtros (solo ejercicios):")
-    filtered_results = vector_store.similarity_search(
-        "probabilidad",
-        k=2,
-        filter_dict={"tipo": "ejercicio"}
-    )
-    for i, doc in enumerate(filtered_results):
-        print(f"Resultado filtrado {i+1}: {doc.page_content}")
-    
-    # Búsqueda por metadata
-    print("\nBúsqueda por metadata:")
-    metadata_results = vector_store.search_by_metadata(
-        {"materia": "Probabilidad y estadística"},
-        limit=5
-    )
-    for i, doc in enumerate(metadata_results):
-        print(f"Por metadata {i+1}: {doc.page_content}")
-    
-    # Información final
-    final_info = vector_store.get_collection_info()
-    print(f"\nInformación final: {final_info}")

@@ -14,7 +14,7 @@ Módulos principales:
 """
 
 from .rag_pipeline import RAGPipeline, create_rag_pipeline
-from .generator import ExerciseGenerator, create_generator
+from .generator import ExerciseGenerator
 from .retriever import Retriever, create_retriever
 from .vector_store import VectorStore, create_vector_store
 from .data_loading import DocumentLoader
@@ -29,7 +29,6 @@ __all__ = [
     'create_rag_pipeline',
     # Components
     'ExerciseGenerator',
-    'create_generator',
     'Retriever',
     'create_retriever',
     'VectorStore',
