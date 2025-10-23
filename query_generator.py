@@ -21,7 +21,7 @@ class QueryBuilder:
         self.query = {}
         self.materias = [
             "Sistemas de Inteligencia Artificial",
-            "Probabilidad y Estadística"
+            "Probabilidad y estadística"
         ]
         
         self.unidades = {
@@ -49,7 +49,7 @@ class QueryBuilder:
                 "Redes Generativas Adversariales",
                 "Transformers"
             ],
-            "Probabilidad y Estadística": [
+            "Probabilidad y estadística": [
                 "Introducción",
                 "Estadística Descriptiva",
                 "Axiomas",

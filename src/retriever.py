@@ -48,7 +48,7 @@ class Retriever:
         self,
         query: str,
         k: Optional[int] = None,
-        filter_dict: Optional[Dict[str, Any]] = None,
+        filter_dict: Optional[str] = None,
         include_scores: bool = False
     ) -> List[Document]:
         """
@@ -160,78 +160,6 @@ class Retriever:
             Lista de documentos de la materia especificada
         """
         filter_dict = {"materia": materia}
-        return self.retrieve(query=query, k=k, filter_dict=filter_dict)
-    
-    def retrieve_by_tipo_documento(
-        self,
-        query: str,
-        tipo_documento: str,
-        k: Optional[int] = None
-    ) -> List[Document]:
-        """
-        Recupera documentos filtrados por tipo
-        
-        Args:
-            query: Consulta de búsqueda
-            tipo_documento: Tipo de documento a filtrar
-            k: Número de documentos a recuperar
-            
-        Returns:
-            Lista de documentos del tipo especificado
-        """
-        filter_dict = {"tipo_documento": tipo_documento}
-        return self.retrieve(query=query, k=k, filter_dict=filter_dict)
-    
-    def retrieve_by_dificultad(
-        self,
-        query: str,
-        dificultad: str,
-        k: Optional[int] = None
-    ) -> List[Document]:
-        """
-        Recupera documentos filtrados por dificultad
-        
-        Args:
-            query: Consulta de búsqueda
-            dificultad: Nivel de dificultad
-            k: Número de documentos a recuperar
-            
-        Returns:
-            Lista de documentos del nivel de dificultad especificado
-        """
-        filter_dict = {"difficulty_hint": dificultad}
-        return self.retrieve(query=query, k=k, filter_dict=filter_dict)
-    
-    def retrieve_academic_context(
-        self,
-        query: str,
-        materia: Optional[str] = None,
-        tipo_documento: Optional[str] = None,
-        dificultad: Optional[str] = None,
-        k: Optional[int] = None
-    ) -> List[Document]:
-        """
-        Recupera documentos con contexto académico específico
-        
-        Args:
-            query: Consulta de búsqueda
-            materia: Materia a filtrar
-            tipo_documento: Tipo de documento a filtrar
-            dificultad: Nivel de dificultad
-            k: Número de documentos a recuperar
-            
-        Returns:
-            Lista de documentos con el contexto académico especificado
-        """
-        filter_dict = {}
-        
-        if materia:
-            filter_dict["materia"] = materia
-        if tipo_documento:
-            filter_dict["tipo_documento"] = tipo_documento
-        if dificultad:
-            filter_dict["difficulty_hint"] = dificultad
-        
         return self.retrieve(query=query, k=k, filter_dict=filter_dict)
     
     def get_retrieval_stats(

@@ -1,6 +1,6 @@
 """
 Generator Module for RAG System
-Generación de ejercicios usando LangChain con ChatOpenAI y PromptTemplates
+Generación de ejercicios usando OpenAI directamente
 """
 
 import os
@@ -8,10 +8,12 @@ import logging
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 
+# OpenAI imports
+import openai
+
 # LangChain imports
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import JsonOutputParser
 
 # Cargar variables de entorno
 load_dotenv()
@@ -31,7 +33,7 @@ class ExerciseGenerator:
         max_tokens: int = 2000
     ):
         """
-        Inicializa el generador de ejercicios con LangChain
+        Inicializa el generador de ejercicios con OpenAI
         
         Args:
             model_name: Nombre del modelo de OpenAI (por defecto de LLM_MODEL)
@@ -196,12 +198,9 @@ Formato de respuesta (JSON):
         }
     
     def _setup_output_parsers(self):
-        """Configura los output parsers de LangChain"""
-        # Parser para JSON genérico
-        self.json_parser = JsonOutputParser()
-        
-        # Crear chains para cada tipo de ejercicio usando LCEL
-        self.chains = {}
+        """Configura los prompts sin chains"""
+        # Crear prompts para cada tipo de ejercicio (sin chains)
+        self.prompts = {}
         for tipo_ejercicio, config in self.exercise_templates.items():
             # Crear prompt template para cada tipo
             prompt = ChatPromptTemplate.from_messages([
@@ -209,10 +208,9 @@ Formato de respuesta (JSON):
                 ("human", config["template"])
             ])
             
-            # Crear chain: prompt | llm | json_parser
-            self.chains[tipo_ejercicio] = prompt | self.llm | self.json_parser
+            self.prompts[tipo_ejercicio] = prompt
             
-        logger.info(f"Output parsers y chains configurados para {len(self.chains)} tipos de ejercicios")
+        logger.info(f"Prompts configurados para {len(self.prompts)} tipos de ejercicios")
     
     def generate_exercises(
         self,
@@ -232,12 +230,19 @@ Formato de respuesta (JSON):
             Diccionario con ejercicios generados
         """
         try:
+            # Debug: mostrar información de entrada
+            logger.info(f"Generator recibió {len(context_documents)} documentos")
+            logger.info(f"Tipo de ejercicio: {tipo_ejercicio}")
+            logger.info(f"Query params: {query_params}")
+            
             # Validar tipo de ejercicio
             if tipo_ejercicio not in self.exercise_templates:
                 raise ValueError(f"Tipo de ejercicio no soportado: {tipo_ejercicio}")
             
             # Preparar contexto
             contexto = self._prepare_context(context_documents)
+            logger.info(f"Contexto preparado (longitud: {len(contexto)} caracteres)")
+            logger.info(f"Contexto: {contexto[:200]}...")
             
             # Preparar variables para el prompt
             prompt_vars = self._prepare_prompt_variables(
@@ -246,8 +251,8 @@ Formato de respuesta (JSON):
                 tipo_ejercicio=tipo_ejercicio
             )
             
-            # Generar ejercicios usando el chain de LangChain
-            response_data = self._invoke_chain(tipo_ejercicio, prompt_vars)
+            # Generar ejercicios usando el LLM directamente
+            response_data = self._invoke_llm_directly(tipo_ejercicio, prompt_vars)
             
             # Validar y procesar respuesta
             exercises = self._validate_exercises(response_data, tipo_ejercicio)
@@ -327,13 +332,13 @@ Formato de respuesta (JSON):
             "nivel_dificultad": nivel_dificultad
         }
     
-    def _invoke_chain(
+    def _invoke_llm_directly(
         self, 
         tipo_ejercicio: str, 
         prompt_vars: Dict[str, Any]
     ) -> Dict[str, Any]:
         """
-        Invoca el chain de LangChain para generar ejercicios
+        Invoca el LLM directamente para generar ejercicios
         
         Args:
             tipo_ejercicio: Tipo de ejercicio a generar
@@ -343,15 +348,39 @@ Formato de respuesta (JSON):
             Datos parseados de la respuesta (diccionario)
         """
         try:
-            # Invocar el chain usando LCEL
-            chain = self.chains[tipo_ejercicio]
-            result = chain.invoke(prompt_vars)
+            # Obtener el prompt template
+            prompt_template = self.prompts[tipo_ejercicio]
             
-            logger.info(f"Chain invocado exitosamente para tipo: {tipo_ejercicio}")
+            # Formatear el prompt con las variables
+            formatted_prompt = prompt_template.format_messages(**prompt_vars)
+            
+            # Invocar el LLM directamente
+            response = self.llm.invoke(formatted_prompt)
+            
+            # Extraer contenido de la respuesta
+            content = response.content
+            
+            # Limpiar el JSON si viene en markdown
+            if "```json" in content:
+                # Extraer solo el JSON del bloque de código
+                start = content.find("```json") + 7
+                end = content.find("```", start)
+                if end != -1:
+                    json_content = content[start:end].strip()
+                else:
+                    json_content = content[start:].strip()
+            else:
+                json_content = content
+            
+            # Parsear JSON
+            import json
+            result = json.loads(json_content)
+            
+            logger.info(f"LLM invocado exitosamente para tipo: {tipo_ejercicio}")
             return result
             
         except Exception as e:
-            logger.error(f"Error invocando chain de LangChain: {str(e)}")
+            logger.error(f"Error invocando LLM directamente: {str(e)}")
             raise
     
     def _validate_exercises(

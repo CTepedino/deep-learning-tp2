@@ -201,10 +201,6 @@ class RAGPipeline:
                 filter_dict = {}
                 if query_params.get("materia"):
                     filter_dict["materia"] = query_params["materia"]
-                if query_params.get("tipo_documento"):
-                    filter_dict["tipo_documento"] = query_params["tipo_documento"]
-                if query_params.get("nivel_dificultad"):
-                    filter_dict["difficulty_hint"] = query_params["nivel_dificultad"]
             
             # Recuperar contexto relevante
             context_docs = self.retriever.retrieve(
