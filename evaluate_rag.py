@@ -85,7 +85,7 @@ def run_evaluation(
             
             context_docs = rag_pipeline.search_materials(
                 query=search_query,
-                k=5
+                k=10
             )
             
             # Extraer contextos

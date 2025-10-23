@@ -211,13 +211,13 @@ El demo incluye:
 # Búsqueda básica
 results = rag_pipeline.search_materials(
     query="distribución normal",
-    k=5
+    k=10
 )
 
 # Búsqueda con filtros
 results = rag_pipeline.search_materials(
     query="algoritmos",
-    k=3,
+    k=10,
     filter_dict={"materia": "Sistemas de Inteligencia Artificial"}
 )
 ```

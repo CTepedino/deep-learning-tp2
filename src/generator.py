@@ -114,6 +114,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -137,6 +139,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -159,6 +163,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -181,6 +187,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -262,7 +270,10 @@ Formato de respuesta (JSON):
                 "ejercicios": exercises,
                 "metadata": {
                     "materia": query_params.get("materia"),
+                    "tipo_consulta": query_params.get("tipo_consulta"),
+                    "tipo_examen": query_params.get("tipo_examen"),
                     "unidad": query_params.get("unidad"),
+                    "consulta_libre": query_params.get("consulta_libre"),
                     "tipo_ejercicio": tipo_ejercicio,
                     "cantidad": query_params.get("cantidad", 1),
                     "nivel_dificultad": query_params.get("nivel_dificultad"),
@@ -317,19 +328,43 @@ Formato de respuesta (JSON):
         Returns:
             Diccionario con variables para el prompt
         """
-        # Extraer parámetros
-        materia = query_params.get("materia", "materia no especificada")
-        unidad = query_params.get("unidad", "tema no especificado")
+        # Extraer parámetros básicos (asegurar que sean strings)
+        materia = str(query_params.get("materia", "materia no especificada"))
         cantidad = query_params.get("cantidad", 1)
-        nivel_dificultad = query_params.get("nivel_dificultad", "intermedio")
+        nivel_dificultad = str(query_params.get("nivel_dificultad", "intermedio"))
+        
+        # Determinar tema según tipo de consulta
+        tema = "tema no especificado"
+        tipo_consulta = str(query_params.get("tipo_consulta", ""))
+        
+        if tipo_consulta == "evaluacion":
+            tipo_examen = str(query_params.get("tipo_examen", ""))
+            if tipo_examen:
+                tema = f"evaluación de {tipo_examen}"
+        elif tipo_consulta == "unidad":
+            unidad = str(query_params.get("unidad", ""))
+            if unidad:
+                tema = unidad
+        
+        # Agregar consulta libre si existe (asegurar que sea string)
+        consulta_libre = str(query_params.get("consulta_libre", ""))
+        if consulta_libre and consulta_libre != "None" and consulta_libre.strip():
+            tema += f" - {consulta_libre}"
+        
+        # Debug: verificar tipos de variables
+        logger.info(f"Variables del prompt - tema: {type(tema)} = {tema}")
+        logger.info(f"Variables del prompt - consulta_libre: {type(consulta_libre)} = {consulta_libre}")
+        logger.info(f"Variables del prompt - tipo_consulta: {type(tipo_consulta)} = {tipo_consulta}")
         
         # Retornar diccionario con variables
         return {
             "cantidad": cantidad,
-            "tema": unidad,
+            "tema": tema,
             "materia": materia,
             "contexto": contexto,
-            "nivel_dificultad": nivel_dificultad
+            "nivel_dificultad": nivel_dificultad,
+            "tipo_consulta": tipo_consulta,
+            "consulta_libre": consulta_libre
         }
     
     def _invoke_llm_directly(
@@ -350,6 +385,11 @@ Formato de respuesta (JSON):
         try:
             # Obtener el prompt template
             prompt_template = self.prompts[tipo_ejercicio]
+            
+            # Validar que todas las variables sean strings válidas
+            for key, value in prompt_vars.items():
+                if not isinstance(value, str) and key != "cantidad":
+                    prompt_vars[key] = str(value) if value is not None else ""
             
             # Formatear el prompt con las variables
             formatted_prompt = prompt_template.format_messages(**prompt_vars)
@@ -372,16 +412,72 @@ Formato de respuesta (JSON):
             else:
                 json_content = content
             
-            # Parsear JSON
-            import json
-            result = json.loads(json_content)
+            # Limpiar JSON de caracteres problemáticos
+            json_content = self._clean_json_content(json_content)
             
-            logger.info(f"LLM invocado exitosamente para tipo: {tipo_ejercicio}")
-            return result
+            # Parsear JSON con manejo de errores mejorado
+            import json
+            try:
+                result = json.loads(json_content)
+                logger.info(f"LLM invocado exitosamente para tipo: {tipo_ejercicio}")
+                return result
+            except json.JSONDecodeError as json_error:
+                logger.error(f"Error parseando JSON: {str(json_error)}")
+                logger.error(f"JSON problemático: {json_content}")
+                # Intentar reparar el JSON
+                try:
+                    # Buscar solo la parte de ejercicios
+                    if '"ejercicios"' in json_content:
+                        start = json_content.find('"ejercicios"')
+                        end = json_content.rfind('}') + 1
+                        if start != -1 and end != -1:
+                            partial_json = json_content[start-1:end]
+                            result = json.loads(partial_json)
+                            logger.info("JSON reparado exitosamente")
+                            return result
+                except:
+                    pass
+                raise json_error
             
         except Exception as e:
             logger.error(f"Error invocando LLM directamente: {str(e)}")
+            logger.error(f"JSON content que causó el error: {json_content[:500]}...")
             raise
+    
+    def _clean_json_content(self, json_content: str) -> str:
+        """
+        Limpia el contenido JSON de caracteres problemáticos
+        
+        Args:
+            json_content: Contenido JSON crudo del LLM
+            
+        Returns:
+            JSON limpio y válido
+        """
+        import re
+        
+        # Remover caracteres de control y caracteres no imprimibles
+        json_content = re.sub(r'[\x00-\x1f\x7f-\x9f]', '', json_content)
+        
+        # Escapar comillas dobles dentro de strings (pero no las que delimitan)
+        # Esto es complejo, así que mejor reemplazamos comillas problemáticas
+        json_content = json_content.replace('"', '"').replace('"', '"')
+        json_content = json_content.replace(''', "'").replace(''', "'")
+        
+        # Remover saltos de línea dentro de strings JSON
+        json_content = re.sub(r'\n(?=\s*[^"]*"[^"]*"[^"]*:)', ' ', json_content)
+        
+        # Asegurar que las comillas estén balanceadas
+        quote_count = json_content.count('"')
+        if quote_count % 2 != 0:
+            # Si hay comillas impares, agregar una al final
+            json_content += '"'
+        
+        # Remover trailing commas
+        json_content = re.sub(r',(\s*[}\]])', r'\1', json_content)
+        
+        logger.info(f"JSON limpio: {json_content[:200]}...")
+        return json_content
     
     def _validate_exercises(
         self,

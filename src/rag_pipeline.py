@@ -79,7 +79,7 @@ class RAGPipeline:
         # Retriever
         self.retriever = create_retriever(
             vector_store=self.vector_store,
-            k=5,
+            k=10,
             score_threshold=0.0
         )
         
@@ -366,7 +366,7 @@ class RAGPipeline:
             # Recuperar documentos usando el retriever
             context_docs = self.retriever.retrieve(
                 query=search_query,
-                k=5,
+                k=10,
                 filter_dict={"materia": query_params.get("materia")} if query_params.get("materia") else None
             )
             
@@ -535,69 +535,3 @@ def create_rag_pipeline(
         reset_collection=reset_collection
     )
 
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Crear pipeline RAG
-    print("Creando pipeline RAG...")
-    rag_pipeline = create_rag_pipeline(
-        reset_collection=True
-    )
-    
-    # Mostrar información del sistema
-    system_info = rag_pipeline.get_system_info()
-    print("Información del Sistema:")
-    print("=" * 50)
-    for component, info in system_info.items():
-        print(f"\n{component.upper()}:")
-        for key, value in info.items():
-            print(f"  {key}: {value}")
-    
-    # Crear documentos de ejemplo
-    from langchain_core.documents import Document
-    
-    sample_docs = [
-        Document(
-            page_content="La distribución normal es fundamental en estadística. Se usa para modelar muchos fenómenos naturales.",
-            metadata={"materia": "Probabilidad y estadística", "tipo_documento": "apunte", "difficulty_hint": "introductorio"}
-        ),
-        Document(
-            page_content="Calcular P(X < 2) para X ~ N(0, 1) usando tablas de distribución normal estándar.",
-            metadata={"materia": "Probabilidad y estadística", "tipo_documento": "ejercicio", "difficulty_hint": "intermedio"}
-        ),
-        Document(
-            page_content="Los algoritmos de clustering como K-means son importantes en machine learning.",
-            metadata={"materia": "Sistemas de Inteligencia Artificial", "tipo_documento": "concepto", "difficulty_hint": "avanzado"}
-        )
-    ]
-    
-    # Agregar documentos
-    print("\nAgregando documentos...")
-    doc_ids = rag_pipeline.vector_store.add_documents(sample_docs)
-    print(f"Documentos agregados: {len(doc_ids)}")
-    
-    # Ejemplo de generación de ejercicios
-    print("\nGenerando ejercicios...")
-    query_params = {
-        "materia": "Probabilidad y estadística",
-        "unidad": "Distribuciones continuas",
-        "tipo_ejercicio": "multiple_choice",
-        "cantidad": 2,
-        "nivel_dificultad": "intermedio"
-    }
-    
-    exercises = rag_pipeline.generate_exercises(query_params)
-    print(f"Ejercicios generados: {exercises}")
-    
-    # Ejemplo de búsqueda
-    print("\nBuscando materiales...")
-    search_results = rag_pipeline.search_materials("distribución normal", k=2)
-    for i, result in enumerate(search_results):
-        print(f"Resultado {i+1}: {result['content'][:100]}...")
-    
-    # Estadísticas de recuperación
-    print("\nEstadísticas de recuperación:")
-    stats = rag_pipeline.get_retrieval_stats("probabilidad")
-    print(f"Estadísticas: {stats}")

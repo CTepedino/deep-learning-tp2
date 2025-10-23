@@ -42,7 +42,7 @@ def main():
                     # Hacer una búsqueda de prueba
                     test_results = vector_store.similarity_search(
                         "probabilidad estadística", 
-                        k=3
+                        k=10
                     )
                     
                     if test_results:

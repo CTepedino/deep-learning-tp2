@@ -13,7 +13,19 @@ class QueryBuilder:
         self.query = {}
         self.materias = [
             "Sistemas de Inteligencia Artificial",
-            "Probabilidad y Estadística"
+            "Probabilidad y estadística"
+        ]
+        
+        self.tipos_consulta = [
+            "evaluacion",
+            "unidad"
+        ]
+        
+        self.tipos_examen = [
+            "primer_parcial",
+            "segundo_parcial", 
+            "final",
+            "recuperatorio"
         ]
         
         self.unidades = {
@@ -41,7 +53,7 @@ class QueryBuilder:
                 "Redes Generativas Adversariales",
                 "Transformers"
             ],
-            "Probabilidad y Estadística": [
+            "Probabilidad y estadística": [
                 "Introducción",
                 "Estadística Descriptiva",
                 "Axiomas",
@@ -106,6 +118,42 @@ class QueryBuilder:
                 if 1 <= opcion <= len(self.materias):
                     self.query['materia'] = self.materias[opcion - 1]
                     print(f"✅ Materia seleccionada: {self.materias[opcion - 1]}")
+                    return
+                else:
+                    print("❌ Opción inválida. Intente nuevamente.")
+            except ValueError:
+                print("❌ Por favor ingrese un número válido.")
+
+    def seleccionar_tipo_consulta(self):
+        """Permite seleccionar el tipo de consulta"""
+        print("🎯 TIPO DE CONSULTA:")
+        for i, tipo in enumerate(self.tipos_consulta, 1):
+            print(f"   {i}) {tipo}")
+        
+        while True:
+            try:
+                opcion = int(input("\n👉 Ingrese el número del tipo: "))
+                if 1 <= opcion <= len(self.tipos_consulta):
+                    self.query['tipo_consulta'] = self.tipos_consulta[opcion - 1]
+                    print(f"✅ Tipo seleccionado: {self.tipos_consulta[opcion - 1]}")
+                    return
+                else:
+                    print("❌ Opción inválida. Intente nuevamente.")
+            except ValueError:
+                print("❌ Por favor ingrese un número válido.")
+
+    def seleccionar_tipo_examen(self):
+        """Permite seleccionar el tipo de examen"""
+        print("📚 TIPO DE EXAMEN:")
+        for i, tipo in enumerate(self.tipos_examen, 1):
+            print(f"   {i}) {tipo}")
+        
+        while True:
+            try:
+                opcion = int(input("\n👉 Ingrese el número del tipo: "))
+                if 1 <= opcion <= len(self.tipos_examen):
+                    self.query['tipo_examen'] = self.tipos_examen[opcion - 1]
+                    print(f"✅ Tipo seleccionado: {self.tipos_examen[opcion - 1]}")
                     return
                 else:
                     print("❌ Opción inválida. Intente nuevamente.")
@@ -207,6 +255,19 @@ class QueryBuilder:
             except ValueError:
                 print("❌ Por favor ingrese un número válido.")
 
+    def ingresar_consulta_libre(self):
+        """Permite ingresar una consulta libre"""
+        print("💭 CONSULTA LIBRE:")
+        print("   Describe específicamente qué tipo de ejercicios necesitas")
+        print("   (ej: 'ejercicios prácticos con aplicaciones reales', 'problemas de hipótesis con datos')")
+        
+        consulta = input("\n👉 Ingresa tu consulta: ")
+        if consulta.strip():
+            self.query['consulta_libre'] = consulta.strip()
+            print(f"✅ Consulta libre: {consulta.strip()}")
+        else:
+            print("⚠️  No se ingresó consulta libre")
+
     def mostrar_resumen_final(self):
         """Muestra el resumen final de la consulta"""
         print("\n" + "="*60)
@@ -242,28 +303,39 @@ class QueryBuilder:
         print("="*60)
         
         # Paso 1: Seleccionar Materia
-        self.mostrar_paso(1, 6)
+        self.mostrar_paso(1, 8)
         self.seleccionar_materia()
         
-        # Paso 2: Seleccionar Unidad
-        self.mostrar_paso(2, 6)
-        self.seleccionar_unidad()
+        # Paso 2: Seleccionar Tipo de Consulta
+        self.mostrar_paso(2, 8)
+        self.seleccionar_tipo_consulta()
         
-        # Paso 3: Seleccionar Cantidad
-        self.mostrar_paso(3, 6)
+        # Paso 3: Seleccionar Tipo de Examen o Unidad (condicional)
+        self.mostrar_paso(3, 8)
+        if self.query.get('tipo_consulta') == 'evaluacion':
+            self.seleccionar_tipo_examen()
+        else:
+            self.seleccionar_unidad()
+        
+        # Paso 4: Seleccionar Cantidad
+        self.mostrar_paso(4, 8)
         self.seleccionar_cantidad()
         
-        # Paso 4: Seleccionar Nivel de Dificultad
-        self.mostrar_paso(4, 6)
+        # Paso 5: Seleccionar Nivel de Dificultad
+        self.mostrar_paso(5, 8)
         self.seleccionar_nivel_dificultad()
         
-        # Paso 5: Seleccionar Tipo de Ejercicio
-        self.mostrar_paso(5, 6)
+        # Paso 6: Seleccionar Tipo de Ejercicio
+        self.mostrar_paso(6, 8)
         self.seleccionar_tipo_ejercicio()
         
-        # Paso 6: Seleccionar Formato
-        self.mostrar_paso(6, 6)
+        # Paso 7: Seleccionar Formato
+        self.mostrar_paso(7, 8)
         self.seleccionar_formato()
+        
+        # Paso 8: Consulta Libre (último paso)
+        self.mostrar_paso(8, 8)
+        self.ingresar_consulta_libre()
         
         # Mostrar resumen final
         self.mostrar_resumen_final()
