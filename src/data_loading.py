@@ -97,15 +97,82 @@ class DocumentLoader:
         
         # Enriquecer metadata
         for doc in documents:
+            # Agregar metadata básica
             doc.metadata.update(self._extract_basic_metadata(file_path))
             
             # Aplicar extractor personalizado si se proporciona
             if metadata_extractor:
                 custom_metadata = metadata_extractor(doc.page_content, file_path)
                 doc.metadata.update(custom_metadata)
+            
+            # Limpiar metadata no deseada al final
+            doc.metadata = self._clean_metadata(doc.metadata)
         
         return documents
     
+    def _clean_metadata(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Limpia metadata eliminando campos no deseados del PDF
+        Mantiene campos relevantes según el tipo de documento
+        
+        Args:
+            metadata: Metadata original del documento
+            
+        Returns:
+            Metadata limpia sin campos no deseados
+        """
+        # Campos a eliminar (metadata técnica del PDF no relevante para el sistema académico)
+        fields_to_remove = {
+            # Metadata técnica del PDF
+            'creator',
+            'author', 
+            'title',
+            'producer',
+            'creationdate',
+            'moddate',
+            'keywords',
+            'subject',
+            'trapped',
+            'ptex.fullbanner',
+            'difficulty_hint'  # Campo generado automáticamente que no queremos
+        }
+        
+        # Crear nueva metadata sin los campos no deseados
+        cleaned_metadata = {}
+        for key, value in metadata.items():
+            if key not in fields_to_remove:
+                cleaned_metadata[key] = value
+        
+        # Verificar que los campos importantes estén presentes según el tipo de documento
+        tipo_doc = cleaned_metadata.get('tipo_documento', '')
+        
+        # Campos básicos que siempre deben estar
+        basic_fields = ['materia', 'tipo_documento', 'filename', 'source', 'file_type']
+        
+        # Campos específicos según tipo de documento
+        if tipo_doc in ['examenes', 'parciales', 'finales']:
+            # Para exámenes: año, cuatrimestre, tipo_examen, tema
+            exam_fields = ['año', 'cuatrimestre', 'tipo_examen', 'tema']
+            expected_fields = basic_fields + exam_fields
+        elif tipo_doc in ['apuntes', 'teoricas']:
+            # Para teóricas: unidad_tema, unidad_numero
+            theory_fields = ['unidad_tema', 'unidad_numero']
+            expected_fields = basic_fields + theory_fields
+        elif tipo_doc in ['guias', 'ejercicios']:
+            # Para guías: puede tener unidad o no
+            guide_fields = ['unidad_tema', 'unidad_numero']
+            expected_fields = basic_fields + guide_fields
+        else:
+            # Para otros tipos
+            expected_fields = basic_fields
+        
+        # Log de campos faltantes (para debugging)
+        missing_fields = [field for field in expected_fields if field not in cleaned_metadata]
+        if missing_fields:
+            logger.debug(f"Campos faltantes para {tipo_doc}: {missing_fields}")
+        
+        return cleaned_metadata
+
     def _extract_basic_metadata(self, file_path: Path) -> Dict[str, Any]:
         """
         Extrae metadata básica del archivo

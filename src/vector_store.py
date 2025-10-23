@@ -308,6 +308,32 @@ class VectorStore:
             logger.error(f"Error eliminando documentos: {str(e)}")
             return False
     
+    def delete_all_documents(self) -> bool:
+        """
+        Elimina todos los documentos de la colección
+        
+        Returns:
+            True si se eliminaron correctamente
+        """
+        try:
+            import chromadb
+            client = chromadb.PersistentClient(path=self.persist_directory)
+            collection = client.get_collection(self.collection_name)
+            
+            # Obtener todos los IDs
+            all_docs = collection.get()
+            if all_docs and all_docs['ids']:
+                collection.delete(ids=all_docs['ids'])
+                logger.info(f"Todos los documentos eliminados: {len(all_docs['ids'])}")
+            else:
+                logger.info("No hay documentos para eliminar")
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error eliminando todos los documentos: {str(e)}")
+            return False
+    
     def search_by_metadata(
         self,
         filter_dict: Dict[str, Any],
