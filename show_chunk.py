@@ -38,14 +38,14 @@ def main():
         
         # Buscar chunks por materia y tipo
         print("🔎 Buscando chunks de PROBABILIDAD Y ESTADÍSTICA...")
-        prob_theory = rag.search_materials(query="probabilidad variables aleatorias", k=2)
-        prob_guide = rag.search_materials(query="guía ejercicios probabilidad", k=2)
-        prob_exam = rag.search_materials(query="examen probabilidad estadística", k=2)
+        prob_theory = rag.search_materials(query="probabilidad variables aleatorias", k=2, filter_dict={"materia": "Probabilidad y estadística"})
+        prob_guide = rag.search_materials(query="guía ejercicios probabilidad", k=2, filter_dict={"materia": "Probabilidad y estadística"})
+        prob_exam = rag.search_materials(query="examen probabilidad estadística", k=2, filter_dict={"materia": "Probabilidad y estadística"})
         
         print("🔎 Buscando chunks de SISTEMAS DE INTELIGENCIA ARTIFICIAL...")
-        ia_theory = rag.search_materials(query="machine learning redes neuronales", k=2)
-        ia_guide = rag.search_materials(query="guía ejercicios inteligencia artificial", k=2)
-        ia_exam = rag.search_materials(query="examen inteligencia artificial", k=2)
+        ia_theory = rag.search_materials(query="machine learning redes neuronales", k=2, filter_dict="materia=Sistemas de Inteligencia Artificial")
+        ia_guide = rag.search_materials(query="guía ejercicios inteligencia artificial", k=2, filter_dict={"materia": "Sistemas de Inteligencia Artificial"})
+        ia_exam = rag.search_materials(query="examen inteligencia artificial", k=2, filter_dict={"materia": "Sistemas de Inteligencia Artificial"})
         
         # Mostrar resultados de Probabilidad y Estadística
         print("\n" + "="*60)

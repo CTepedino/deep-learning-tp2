@@ -17,7 +17,7 @@ from .rag_pipeline import RAGPipeline, create_rag_pipeline
 from .generator import ExerciseGenerator, create_generator
 from .retriever import Retriever, create_retriever
 from .vector_store import VectorStore, create_vector_store
-from .data_loading import DocumentLoader, load_documents
+from .data_loading import DocumentLoader
 from .text_processing import AcademicTextSplitter, split_documents
 from .evaluation import RAGEvaluator
 from .query_utils import prepare_search_query
@@ -35,7 +35,6 @@ __all__ = [
     'VectorStore',
     'create_vector_store',
     'DocumentLoader',
-    'load_documents',
     'AcademicTextSplitter',
     'split_documents',
     'RAGEvaluator',

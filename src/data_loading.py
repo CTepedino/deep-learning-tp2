@@ -624,39 +624,4 @@ class DocumentLoader:
             return 'documento'
 
 
-def load_documents(
-    directory_path: str, 
-    use_academic_metadata: bool = True
-) -> List[Document]:
-    """
-    Función de conveniencia para cargar documentos
-    
-    Args:
-        directory_path: Ruta del directorio
-        use_academic_metadata: Si usar extractor de metadata académica
-        
-    Returns:
-        Lista de documentos cargados
-    """
-    loader = DocumentLoader()
-    
-    metadata_extractor = None
-    if use_academic_metadata:
-        metadata_extractor = loader.extract_academic_metadata
-    
-    return loader.load_documents_from_directory(directory_path, metadata_extractor)
 
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Cargar documentos de ejemplo
-    docs = load_documents("./data/raw")
-    
-    for doc in docs[:2]:  # Mostrar primeros 2 documentos
-        print(f"Archivo: {doc.metadata.get('filename')}")
-        print(f"Materia: {doc.metadata.get('materia', 'No detectada')}")
-        print(f"Tipo: {doc.metadata.get('tipo_documento', 'No detectado')}")
-        print(f"Contenido (primeros 200 chars): {doc.page_content[:200]}...")
-        print("-" * 50)

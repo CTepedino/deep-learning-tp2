@@ -211,13 +211,8 @@ docs/apunte_probabilidad.pdf
 ### Carga de Documentos
 
 ```python
-from src.data_loading import load_documents
 
-# Cargar con metadata automática
-docs = load_documents(
-    directory_path="./docs",
-    use_academic_metadata=True
-)
+
 
 # Ver metadata extraída
 for doc in docs[:3]:

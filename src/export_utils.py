@@ -27,6 +27,34 @@ class ExerciseExporter:
         self.output_directory = Path(output_directory)
         self.output_directory.mkdir(parents=True, exist_ok=True)
     
+    def _format_multiple_choice_options(self, opciones: List[str]) -> List[str]:
+        """
+        Formatea las opciones de multiple choice, evitando duplicación de letras
+        
+        Args:
+            opciones: Lista de opciones
+            
+        Returns:
+            Lista de opciones formateadas con letras A), B), C), D)
+        """
+        letras = ['A', 'B', 'C', 'D']
+        opciones_formateadas = []
+        
+        for j, opcion in enumerate(opciones):
+            # Verificar si la opción ya tiene una letra al inicio
+            if j < len(letras) and opcion.strip().startswith(f"{letras[j]})"):
+                # Ya tiene letra, usar tal como está
+                opciones_formateadas.append(opcion)
+            elif j < len(letras) and opcion.strip().startswith(f"{letras[j]}."):
+                # Tiene formato A. en lugar de A), convertir
+                opcion_clean = opcion.strip()[2:].strip()
+                opciones_formateadas.append(f"{letras[j]}) {opcion_clean}")
+            else:
+                # No tiene letra, agregarla
+                opciones_formateadas.append(f"{letras[j]}) {opcion}")
+        
+        return opciones_formateadas
+    
     def export(
         self,
         result: Dict[str, Any],
@@ -192,9 +220,9 @@ class ExerciseExporter:
                 if 'opciones' in ejercicio:
                     # Multiple choice
                     f.write("OPCIONES:\n")
-                    letras = ['A', 'B', 'C', 'D']
-                    for j, opcion in enumerate(ejercicio['opciones']):
-                        f.write(f"  {letras[j]}) {opcion}\n")
+                    opciones_formateadas = self._format_multiple_choice_options(ejercicio['opciones'])
+                    for opcion in opciones_formateadas:
+                        f.write(f"  {opcion}\n")
                     if include_solutions:
                         f.write(f"\nRESPUESTA CORRECTA: {ejercicio.get('respuesta_correcta', 'N/A')}\n")
                     else:
@@ -307,9 +335,9 @@ class ExerciseExporter:
                 # Opciones (si es multiple choice)
                 if 'opciones' in ejercicio:
                     story.append(Paragraph("<b>Opciones:</b>", subheading_style))
-                    letras = ['A', 'B', 'C', 'D']
-                    for j, opcion in enumerate(ejercicio['opciones']):
-                        story.append(Paragraph(f"&nbsp;&nbsp;{letras[j]}) {opcion}", styles['Normal']))
+                    opciones_formateadas = self._format_multiple_choice_options(ejercicio['opciones'])
+                    for opcion in opciones_formateadas:
+                        story.append(Paragraph(f"&nbsp;&nbsp;{opcion}", styles['Normal']))
                     
                     if include_solutions:
                         respuesta = ejercicio.get('respuesta_correcta', 'N/A')
