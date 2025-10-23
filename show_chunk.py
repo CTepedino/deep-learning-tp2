@@ -36,34 +36,67 @@ def main():
         print("📦 Cargando sistema RAG...")
         rag = create_rag_pipeline()
         
-        # Buscar chunk de teoría
-        print("🔎 Buscando chunk de TEORÍA...")
-        theory_results = rag.search_materials(
-            query="probabilidad variables aleatorias",
-            k=3
-        )
+        # Buscar chunks por materia y tipo
+        print("🔎 Buscando chunks de PROBABILIDAD Y ESTADÍSTICA...")
+        prob_theory = rag.search_materials(query="probabilidad variables aleatorias", k=2)
+        prob_guide = rag.search_materials(query="guía ejercicios probabilidad", k=2)
+        prob_exam = rag.search_materials(query="examen probabilidad estadística", k=2)
         
-        # Buscar chunk de examen
-        print("🔎 Buscando chunk de EXAMEN...")
-        exam_results = rag.search_materials(
-            query="examen probabilidad estadística",
-            k=3
-        )
+        print("🔎 Buscando chunks de SISTEMAS DE INTELIGENCIA ARTIFICIAL...")
+        ia_theory = rag.search_materials(query="machine learning redes neuronales", k=2)
+        ia_guide = rag.search_materials(query="guía ejercicios inteligencia artificial", k=2)
+        ia_exam = rag.search_materials(query="examen inteligencia artificial", k=2)
         
-        if theory_results:
-            print(f"\n✅ Se encontraron {len(theory_results)} chunks de teoría")
-            show_chunk_details(theory_results[0], "CHUNK DE TEORÍA")
+        # Mostrar resultados de Probabilidad y Estadística
+        print("\n" + "="*60)
+        print("📊 PROBABILIDAD Y ESTADÍSTICA")
+        print("="*60)
+        
+        if prob_theory:
+            print(f"✅ Teoría: {len(prob_theory)} chunks")
+            show_chunk_details(prob_theory[0], "TEORÍA - PROBABILIDAD")
         else:
             print("❌ No se encontraron chunks de teoría")
         
-        if exam_results:
-            print(f"\n✅ Se encontraron {len(exam_results)} chunks de examen")
-            show_chunk_details(exam_results[0], "CHUNK DE EXAMEN")
+        if prob_guide:
+            print(f"✅ Guía: {len(prob_guide)} chunks")
+            show_chunk_details(prob_guide[0], "GUÍA - PROBABILIDAD")
+        else:
+            print("❌ No se encontraron chunks de guía")
+        
+        if prob_exam:
+            print(f"✅ Examen: {len(prob_exam)} chunks")
+            show_chunk_details(prob_exam[0], "EXAMEN - PROBABILIDAD")
         else:
             print("❌ No se encontraron chunks de examen")
         
-        if not theory_results and not exam_results:
-            print("💡 Posiblemente el ChromaDB no está inicializado")
+        # Mostrar resultados de Sistemas de IA
+        print("\n" + "="*60)
+        print("📊 SISTEMAS DE INTELIGENCIA ARTIFICIAL")
+        print("="*60)
+        
+        if ia_theory:
+            print(f"✅ Teoría: {len(ia_theory)} chunks")
+            show_chunk_details(ia_theory[0], "TEORÍA - IA")
+        else:
+            print("❌ No se encontraron chunks de teoría")
+        
+        if ia_guide:
+            print(f"✅ Guía: {len(ia_guide)} chunks")
+            show_chunk_details(ia_guide[0], "GUÍA - IA")
+        else:
+            print("❌ No se encontraron chunks de guía")
+        
+        if ia_exam:
+            print(f"✅ Examen: {len(ia_exam)} chunks")
+            show_chunk_details(ia_exam[0], "EXAMEN - IA")
+        else:
+            print("❌ No se encontraron chunks de examen")
+        
+        # Verificar si no hay nada
+        total_results = len(prob_theory) + len(prob_guide) + len(prob_exam) + len(ia_theory) + len(ia_guide) + len(ia_exam)
+        if total_results == 0:
+            print("\n💡 Posiblemente el ChromaDB no está inicializado")
             print("   Ejecuta: python initialize_chroma.py")
             
     except Exception as e:

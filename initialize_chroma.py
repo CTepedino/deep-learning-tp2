@@ -80,11 +80,8 @@ def main():
         # Mostrar errores si los hay
         if load_result.get('errors'):
             print(f"\n❌ ERRORES ENCONTRADOS ({len(load_result.get('errors', []))}):")
-            for i, error in enumerate(load_result.get('errors', [])[:5], 1):  # Mostrar solo los primeros 5
+            for i, error in enumerate(load_result.get('errors', []), 1):  # Mostrar todos los errores
                 print(f"   {i}. {error}")
-            
-            if len(load_result.get('errors', [])) > 5:
-                print(f"   ... y {len(load_result.get('errors', [])) - 5} errores más")
         
         print("\n" + "=" * 40)
         if load_result.get('status') == 'success':
