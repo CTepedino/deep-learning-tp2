@@ -1,3 +1,6 @@
+# Sistema RAG Completo con Evaluación RAGAS
+# Dependencias unificadas para el sistema RAG y evaluación
+
 # Core RAG con LangChain (LCEL incluido)
 langchain>=0.3.0
 langchain-community>=0.3.0
@@ -22,13 +25,16 @@ openai>=1.0.0
 torch>=2.0.0; python_version < '3.13'
 sentence-transformers>=2.0.0; python_version < '3.13'
 
-# Evaluation
-ragas>=0.1.9
+# Evaluation RAGAS (como en el notebook clase8_RAGAS.ipynb)
+ragas==0.1.9
 datasets>=2.14.0
 
-# Utilities (versiones compatibles)
-numpy>=1.21.0,<=2.1.0
+# Data processing
 pandas>=1.3.0
+numpy>=1.21.0,<=2.1.0
+
+# Utilities
+tqdm>=4.65.0
 
 # Export (opcional para PDF)
 reportlab>=4.0.0

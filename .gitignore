@@ -70,3 +70,7 @@ Materias
 # Carpetas de debug y test
 data/processed/debug_*/
 data/processed/test_*/
+output/
+.bin/*
+.sqlite3
+.sqlite
