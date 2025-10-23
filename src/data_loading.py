@@ -133,8 +133,7 @@ class DocumentLoader:
             'keywords',
             'subject',
             'trapped',
-            'ptex.fullbanner',
-            'difficulty_hint'  # Campo generado automáticamente que no queremos
+            'ptex.fullbanner'
         }
         
         # Crear nueva metadata sin los campos no deseados

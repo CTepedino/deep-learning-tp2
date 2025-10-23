@@ -27,7 +27,7 @@ def main():
     try:
         # Crear pipeline RAG
         print("📦 Creando pipeline RAG...")
-        rag = create_rag_pipeline()
+        rag = create_rag_pipeline(reset_collection=args.force)
         
         # Verificar si ya hay datos
         if not args.force:
@@ -38,12 +38,12 @@ def main():
         # Cargar materiales académicos
         print("\n📚 Cargando documentos académicos...")
         print("   📁 Directorio: ./docs")
-        print("   📄 Formatos: PDF")
+        print("   📄 Formatos: PDF, TXT, TEX")
         print("   ⚠️  Saltando errores: Sí")
         
         load_result = rag.load_materials(
             data_directory="./docs",
-            file_extensions=[".pdf"],
+            file_extensions=[".pdf", ".txt", ".tex"],
             skip_on_error=True
         )
         

@@ -142,8 +142,7 @@ class AcademicTextSplitter:
         if self._contains_exercises(content_lower):
             metadata['contains_exercises'] = True
         
-        # Detectar nivel de dificultad aproximado
-        metadata['difficulty_hint'] = self._estimate_difficulty(content_lower)
+       
         
         return metadata
     
@@ -179,36 +178,6 @@ class AcademicTextSplitter:
         
         return any(keyword in content for keyword in exercise_keywords)
     
-    def _estimate_difficulty(self, content: str) -> str:
-        """
-        Estima el nivel de dificultad del contenido
-        
-        Args:
-            content: Contenido del chunk
-            
-        Returns:
-            Nivel de dificultad estimado
-        """
-        # Palabras clave por nivel de dificultad
-        beginner_keywords = [
-            'básico', 'simple', 'elemental', 'introducción', 'concepto',
-            'definición', 'ejemplo', 'caso simple'
-        ]
-        
-        advanced_keywords = [
-            'avanzado', 'complejo', 'sofisticado', 'teorema', 'demostración',
-            'corolario', 'lema', 'proposición', 'análisis', 'síntesis'
-        ]
-        
-        beginner_count = sum(1 for keyword in beginner_keywords if keyword in content)
-        advanced_count = sum(1 for keyword in advanced_keywords if keyword in content)
-        
-        if advanced_count > beginner_count:
-            return 'avanzado'
-        elif beginner_count > 0:
-            return 'introductorio'
-        else:
-            return 'intermedio'
 
 
 def split_documents(
@@ -269,12 +238,7 @@ def analyze_chunks(chunks: List[Document]) -> Dict[str, Any]:
     definition_chunks = sum(1 for chunk in chunks if chunk.metadata.get('contains_definitions', False))
     exercise_chunks = sum(1 for chunk in chunks if chunk.metadata.get('contains_exercises', False))
     
-    # Contar niveles de dificultad
-    difficulty_counts = {}
-    for chunk in chunks:
-        difficulty = chunk.metadata.get('difficulty_hint', 'intermedio')
-        difficulty_counts[difficulty] = difficulty_counts.get(difficulty, 0) + 1
-    
+        
     return {
         'total_chunks': len(chunks),
         'avg_length': sum(lengths) / len(lengths),
@@ -283,7 +247,6 @@ def analyze_chunks(chunks: List[Document]) -> Dict[str, Any]:
         'math_chunks': math_chunks,
         'definition_chunks': definition_chunks,
         'exercise_chunks': exercise_chunks,
-        'difficulty_distribution': difficulty_counts
     }
 
 
