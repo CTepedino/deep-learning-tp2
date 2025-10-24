@@ -1,0 +1,370 @@
+Sistemas de Inteligencia Artificial
+Algoritmos de
+Mejoramiento Iterativo
+
+[Descripción de la imagen: un fondo blanco con hexas azules y verdes | Transcripción de la imagen: distemas de Inteligencia Artificial
+Algoritmos de
+Mejoramiento lIterativo
+
+o y
+7 N]]
+
+Algoritmos de 
+Mejoramiento Iterativo
+¿Qué significa que sean de 
+Mejoramiento Iterativo?
+
+[Descripción de la imagen: un fondo blanco con las palabras agrtm y un fondo azul y blanco con las palabras agrtm]
+
+Algoritmos de 
+Mejoramiento Iterativo
+¿Qué significa que sean de 
+Mejoramiento Iterativo?
+Parto de una solución y busco (mediante perturbaciones a 
+mi solución inicial) una solución mejor en cada paso
+
+[Descripción de la imagen: un fondo blanco con las palabras agrtm y un fondo azul y blanco con las palabras agrtm]
+
+Algoritmos de 
+Mejoramiento Iterativo
+f(s)
+s
+f: Función que evalua que tan 
+buena es una solución 
+particular
+s: Una solución a nuestro 
+problema
+El objetivo de estos algoritmos es hallar:
+s’ |    ∀s    f(s’) ≥ f(s)
+(la solución que maximiza mi función f)
+
+[Descripción de la imagen: un cartel con las palabras agrtus y la imagen de una molécula]
+
+Algoritmos de 
+Mejoramiento Iterativo
+Para hallar esta solución óptima, realizamos cambios azarosos en 
+nuestra solución original que nos den como resultado una mejor 
+solución.
+f(s)
+s
+quiero llegar acá, ¿cómo?
+Necesito modificar mi 
+solución
+
+[Descripción de la imagen: un gráfico de las palabras agritse y mgramento]
+
+Algoritmos de 
+Mejoramiento Iterativo
+Es importante definir qué es un cambio azaroso en el problema particular 
+que estoy queriendo optimizar. Necesito definir un entorno de soluciones.
+Puede ser un cambio en los 
+nodos que recorro en un grafo
+f(x)
+x
+Puede ser moverse un delta 
+en todas las dimensiones de 
+una función (¡o sólo en 
+algunas!)
+g(∇f)
+Puede ser en base a una 
+función del gradiente de una 
+función (dirección de máximo 
+crecimiento)
+s1
+s2
+s0
+s3
+s4
+Puede ser un cambio en 
+la posición de una 
+matriz
+
+[Descripción de la imagen: un gráfico con las palabras agrtus y los símbolos]
+
+Algunas 
+características
+•
+Usan muy poca memoria, incluso memoria constante.
+•
+A veces son apropiados para espacios de estados grandes o 
+infinitos, o para encontrar soluciones parciales rápidamente.
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y naranja]
+
+Travelling Salesman Problem
+Problema del Vendedor Viajero
+El Problema del Vendedor Viajero es un problema de recorrido de grafos
+donde nos dan n ciudades y la distancia entre cada una de ellas. Tenemos
+que encontrar la ruta más corta, visitando cada ciudad exactamente una
+vez y al final regresar a la ciudad de la que partimos.
+https://www.hackerrank.com/contests/bitsg-ai-lab-2/challenges/travelling-salesman-problem
+Input
+N = número de ciudades
+N lineas de la forma “label x y”
+dónde:
+label = un string
+x 
+= coordenada x de la ciudad (número real)
+y        = coordenada y de la ciudad (número real)
+Output
+Un camino óptimo con cada camino
+separado por espacios
+4
+0 0 0
+1 0 1
+2 1 0
+3 1 1
+Ejemplo 1:
+5
+0 0 0
+1 0 1
+2 1 0
+3 1 1
+4 0.5 2
+Ejemplo 2:
+
+[Descripción de la imagen: un cartel con las palabras 'tru salar' y 'problema']
+
+Travelling Salesman Problem
+Problema del Vendedor Viajero
+https://www.hackerrank.com/contests/bitsg-ai-lab-2/challenges/travelling-salesman-problem
+Tomo una solución al azar
+Por ejemplo: sol = 0-3-1-2(-0) 
+Evaluo mi solución
+f(sol) ≈ 4,83 
+Realizo cambios azarosos en mi 
+solución
+Puede ser: Elijo una ciudad y calculo las 
+permutaciones de la misma
+Por ejemplo: Elijo la ciudad 3, 
+las permutaciones son: 
+[ 3-0-1-2,    0-1-3-2,    0-2-1-3 ]
+Elijo una en base a su valuación
+sol = 0-1-3-2
+f(sol) = 4
+Freno cuando tengo una
+solución que me sirve o es la 
+mejor de su vecindad
+
+[Descripción de la imagen: una representación gráfica del problema del problema del problema]
+
+◇Se mueve constantemente en la 
+pendiente positiva.
+◇Se estanca fácilmente en 
+máximos locales.
+Hill Climbing
+f(s)
+s
+máximo local plano
+máximo local
+máximo absoluto
+ensilladura
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos de los diferentes tipos de los diferentes tipos de los diferentes tipos de los diferentes]
+
+Hill Climbing
+f(s)
+s
+Frontera: {s1, s2}
+●
+Tomar una solución al azar.
+●
+Moverse un paso arbitrario en ambas direcciones de cada 
+una de las dimensiones. Estas nuevas soluciones nos 
+generan una Frontera.
+●
+Tomar una solución de la frontera con mejor valuación.
+●
+ITERAR
+
+[Descripción de la imagen: un gráfico de una molécula con las palabras himin]
+
+Hill Climbing
+●
+Tomar una solución al azar.
+●
+Moverse un paso arbitrario en ambas direcciones de cada 
+una de las dimensiones. Estas nuevas soluciones nos 
+generan una Frontera.
+●
+Tomar una solución de la frontera con mejor valuación.
+●
+ITERAR 
+Frontera: {s1, s2 s3, s4}
+s1
+s2
+s0
+s3
+s4
+
+[Descripción de la imagen: un gráfico de una molécula con las palabras himin]
+
+Algunos tipos de
+Hill Climbing
+Simple Hill Climbing: Elige la primer solución de la frontera con 
+mejor valuación que el estado actual.
+s1
+s2
+s0
+s3
+s4
+Analiza s1 y s2, elige s2
+Steepest Hill Climbing: Siempre elige la solución de la frontera 
+con mejor valuación que el estado actual.
+s1
+s2
+s0
+s3
+s4
+Analiza s1, s2 s3 y s4, elige s3
+
+[Descripción de la imagen: un gráfico del texto y un gráfico del texto]
+
+Algunos tipos de
+Hill Climbing
+Stochastic Hill Climbing: Elige al azar una solución de la frontera 
+y, en base a que tan buena es, decide si moverse o elegir otra.
+s1
+s2
+s0
+s3
+s4
+Elige s4, decide moverse a dicha 
+solución
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'los de himining ']
+
+Hill Climbing
+¡Hill Climbing es un algoritmo del tipo Heurística Local por lo que 
+se genera una nueva frontera en cada paso! 
+(No confundir frontera de métodos de búsqueda con la frontera
+de Hill Climbing)
+Hill Climbing
+Métodos de Búsqueda
+Posibles sucesores de la 
+solución actual
+Los nodos sucesores de 
+los nodos expandidos
+
+[Descripción de la imagen: un gráfico de los diferentes tipos de logotipo]
+
+Simulated Annealing
+Parecido al Hill Climbing, pero involucra una temperatura
+(inicialmente alta). Esto provoca que al principio se puedan tomar 
+peores soluciones.
+A medida que pasan las iteraciones, esta temperatura disminuye 
+arbitrariamente según se la configure.
+Entonces cada vez que toma un nodo de Frontera, ignora su 
+valuación con una probabilidad relativa a la temperatura (y, 
+opcionalmente, también proporcional a su valuación).
+
+[Descripción de la imagen: un fondo blanco con las palabras 'sinta amia ']
+
+Simulated Annealing
+f(s)
+s
+Me lleva a un máximo local
+Me lleva a un máximo global
+Pero f(s1) < f(s2)
+
+[Descripción de la imagen: un gráfico de un diagrama con las palabras 'smutd aming ']
+
+Simulated Annealing
+Sea f(s) la función a maximizar s y E(s) su entorno.
+Definir:
+●
+s0: solución inicial.
+●
+t0: temperatura inicial ( > 0 )
+●
+⍺: función de reducción de temperatura
+●
+Nrep: Número de repeticiones
+●
+P: Criterio de parada
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco]
+
+Simulated Annealing
+• Tomar s=s0, t = t0
+• Repetir mientras que no se cumpla P:
+• Repetir Nrep veces:
+• Seccionar s’ perteneciente a E(s)
+• d = f(s’) – f(s)
+• Si d > 0:
+• Tomo s’ (es una mejor solución)
+• Si no:
+• u = rand(0, 1)
+• Si u < e^(-d/t):
+• s = s’
+• Luego de repetir Nrep veces:
+• t = ⍺(t) (reduzco la temperatura)
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que lee aneming similar]
+
+Beam Search
+Similar a Hill Climbing, pero comienza con k nodos iniciales.
+En cada paso, se generan los sucesores de los k nodos, que 
+pasarán a conformar la frontera.
+De todos los sucesores, se toman los mejores k nodos de la 
+frontera y se vuelve a repetir.
+Es diferente a k hill climbings en paralelo, ya que puede abandonar 
+rápidamente los nodos iniciales malos para tomar otros caminos 
+mejores.
+Puede converger mucho entre los k nodos, generando tan poca 
+diversidad que se elabora un hill climbing mucho más costoso.
+k se conoce como el ancho 
+del rayo o beam width
+
+[Descripción de la imagen: un gráfico del texto que dice, 'son cicatriz ']
+
+Beam Search
+f(s)
+s
+En el siguiente paso, elijo los k nodos rosas con mejor
+valución
+
+[Descripción de la imagen: un diagrama de un diagrama con las mismas líneas]
+
+Beam Search
+f(s)
+s
+Ejemplo de convergencia entre los k
+nodos
+
+[Descripción de la imagen: un diagrama de una molécula con las mismas moléculas | Transcripción de la imagen: —
+
+Beam Searchn]]
+
+Stochastic
+Beam Search
+Similar a Beam Search, pero elije a los k nodos con una 
+probabilidad proporcional a su valuación.
+De esta forma, los nodos “malos” también pueden llegar a elegirse 
+(con menor probabilidad).
+Similar al proceso de selección natural.
+f(s)
+s
+Random entre [0, 1)
+[0.00, 0.37) : s4
+[0.37, 0.61) : s1
+[0.61, 0.82) : s2
+[0.82, 1.00) : s3
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y púrpura de una molécula]
+
+Algoritmos Genéticos
+Una variante de SBS donde los estados se generan como 
+combinación de 2 o más estados previamente analizados.
+De la misma forma que la evolución natural:
+●
+Los estados corresponden a individuos.
+●
+La función que mide la valuación de estos individuos se le 
+llama aptitud.
+●
+Combinando buenos individuos aumenta la probabilidad de 
+que se generen mejores.
+
+[Descripción de la imagen: un fondo blanco con las palabras agrimo - ceritoos]
+

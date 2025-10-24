@@ -1,0 +1,973 @@
+Funciones de variable aleatoria
+ e  son variables aleatorias,  es una función real de una 
+variable real.
+Dos cuestiones a plantear:
+a) Conocido el recorrido de  , cómo obtener el de 
+b) Conocida la función de distribución de   cómo    
+    obtener la de 
+𝑌=𝐻( 𝑋)
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación]
+
+Funciones de variable aleatoria
+-2
+-1
+0
+2
+4
+0.10
+0.30
+0.35
+0.20
+0.05
+-1
+1
+3
+7
+11
+0.10
+0.30
+0.35
+0.20
+0.05
+𝑌=𝐻( 𝑋)=2 𝑋+3
+
+[Descripción de la imagen: un cuadro con un número de 1 y un número de 2 | Transcripción de la imagen: Funciones de variable aleatoria
+
+— 2 alo9]j2]a4
+
+Y =H(X)=2X+3
+
+— aaa7
+— 1000 090 05 | 020 | 005]]
+
+Funciones de variable aleatoria
+-2
+-1
+0
+2
+4
+0.10
+0.30
+0.35
+0.20
+0.05
+𝑌=𝐻( 𝑋)=𝑋2
+0
+1
+4
+16
+0.35
+0.30
+0.30
+0.05
+
+[Descripción de la imagen: un gráfico con la pendiente y la pendiente del gráfico | Transcripción de la imagen: Funciones de variable aleatoria]]
+
+Funciones de variable aleatoria
+ e  son variables aleatorias discretas,  es una función real 
+de una variable real.
+𝑌=𝐻( 𝑋)
+En general:
+𝑝𝑌( 𝑦)=𝑃(𝑌=𝑦)= ∑
+{𝑥:𝐻(𝑥)=𝑦}
+𝑝𝑋(𝑥)
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas con un bloc de notas y un bloc de notas con una nota | Transcripción de la imagen: Funciones de variable aleatoria
+
+e son variables aleatorias discretas, es una función real
+de una variable real.
+
+Y = H ()
+
+En general:
+
+PY(y):P(Y:3¡=[ 'HZ(;): JPX(X)
+
+y
+
+_
+—
+>
+>
+—
+->
+->
+-
+-
+=
+— D
+-—>
+»
+->
+->
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Funciones de variable aleatoria
+Una compañía de exploración petrolera va a perforar diez pozos y cada uno de 
+ellos tiene una probabilidad 0.1 de producir petróleo en forma comercial. A la 
+compañía le cuesta C pesos  perforar cada pozo. De un pozo comercial se puede 
+extraer petróleo por valor de 40 C pesos.
+: cantidad de pozos que producen petróleo
+𝑋Binomial(10,0.1)
+: ganancia obtenida
+𝐺=40 𝐶𝑋−10𝐶
+𝑅𝐺={𝑔: 𝑔=40𝐶𝑘−10𝑘,con𝑘=0,1,⋯,10 }
+𝑝𝐺(𝑔)=𝑃(40𝐶𝑋−10 𝐶=𝑔)=𝑃( 𝑋=𝑔+10 𝐶
+40𝐶)=(
+10
+𝑔+10𝐶
+40𝐶)
+0.1
+𝑔+10𝐶
+40𝐶0.9
+390𝐶−𝑔
+40𝐶
+
+[Descripción de la imagen: una nota con las palabras''y''en español | Transcripción de la imagen: = D»
+—>
+—>
+__ >
+-
+
+- >
+_—-
+_-
+
+- D»
+— -»
+-
+- -
+-
+
+- >
+-
+
+_-
+- ->
+- D»
+— »
+_-
+- -
+- -
+
+Funciones de variable aleatoria
+
+Una compañía de exploración petrolera va a perforar diez pozos y cada uno de
+ellos tiene una probabilidad 0.1 de producir petróleo en forma comercial. A la
+compañía le cuesta C pesos perforar cada pozo. De un pozo comercial se puede
+extraer petróleo por valor de 40 C pesos.
+
+. cantidad de pozos que producen petróleo
+
+X Binomial(10,0.1)
+
+. ganancia obtenida
+G=40C X -10C
+R;= 9:9=40Ck -10k,conk=0,1,---,10
+
+10 g+10C — 390C-g
+
+PG (g) P(40CX 10C= g) P( _ 9106 — g+10€ 0,1 ** og *€]]
+
+Funciones de variable aleatoria
+Una compañía de exploración petrolera va a perforar diez pozos y cada uno de 
+ellos tiene una probabilidad 0.1 de producir petróleo en forma comercial. A la 
+compañía le cuesta C pesos  perforar cada pozo. De un pozo comercial se puede 
+extraer petróleo por valor de 40 C pesos.
+: cantidad de pozos que producen petróleo
+𝑋Binomial(10,0.1)
+𝐺=40 𝐶𝑋−10𝐶
+E [𝐺]=E [ 40𝐶𝑋−10𝐶]=40𝐶E [ 𝑋]−10𝐶=40 𝐶100.1−10𝐶=30𝐶
+: ganancia obtenida
+
+[Descripción de la imagen: una nota con las palabras ''y'' ']
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.d.,  es una función real de una 
+variable real “escalonada”.
+ – Normal estándar
+𝑌=𝐻( 𝑋)={
+¿−1 X<−1,
+¿ 0−1< X<2,
+¿+12< X .
+-1
+0
+1
+0.1587
+0.8186
+0.0227
+
+[Descripción de la imagen: una nota con una nota que lee la ecuación | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.cC. e es una v.a.d., es una función real de una
+variable real “escalonada”.
+
+- Normal estándar
+
+¿-1X<-1,
+Y=HI(X)='¿0-1<X<2,
+¿+12<X.
+
+— aj
+— lsa | 0ss | 0927]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.d.,  es una función real de una 
+variable real “escalonada”.
+𝑌=𝐻( 𝑋)
+En general:
+𝑝𝑌( 𝑦)=𝑃(𝑌=𝑦)= ∫
+{𝑥:𝐻(𝑥)=𝑦}
+❑
+𝑓𝑋(𝑥)𝑑𝑥
+
+[Descripción de la imagen: una nota con una fórmula y una fórmula | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.cC. e es una v.a.d., es una función real de una
+variable real “escalonada”.
+
+Y = H ( X)
+En general:
+
+Py Tf
+
+HEy
+
+_
+—
+>
+>
+—
+->
+->
+-
+-
+=
+— D
+-—>
+»
+->
+->
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente.
+ – Normal estándar
+𝑌=𝐻( 𝑋)=2 𝑋+5
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(2 𝑋+5≤𝑦)=𝑃( 𝑋≤𝑦−5
+2 )=𝐹𝑋(
+𝑦−5
+2 )
+𝑓𝑌( 𝑦)= 𝑓
+𝑋( 𝑦−5
+2
+) × 1
+2
+ también tiene distribución normal pero de media 5 y desvío 
+estándar 2, i.e.,
+
+[Descripción de la imagen: una nota con una nota que dice la ecuación | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente creciente.
+— Normal estándar
+Y=HIX=2X+5
+Fy =PlY<y =P 2X+5<y =P
+
+fY(y)=fx(
+
+también tiene distribución normal pero de media 5 y desvío
+estándar 2, l.e.,
+
+_
+—
+>
+1 >
+1 >
+—
+-
+-
+=
+— -D
+-—>
+»
+1 >
+2
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente.
+ – Normal estándar
+𝑌=𝐻( 𝑋)=𝐴𝑋+ 𝐵
+ también tiene distribución normal pero de media  y desvío 
+estándar , i.e., 
+En general:
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente.
+ – Exponencial de parámetro 1
+𝑌=𝐻( 𝑋)=𝑒𝑋
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(𝑒
+𝑋≤𝑦)=𝑃( 𝑋≤ln ⁡(𝑦))=𝐹𝑋(ln ⁡(𝑦))
+𝑓𝑌( 𝑦)= 𝑓𝑋(ln ⁡( 𝑦))× 1
+𝑦=𝑒−ln ⁡(𝑦)× 1
+𝑦= 1
+𝑦× 1
+𝑦= 1
+𝑦2
+𝐹𝑌( 𝑦)=1 −𝑒−ln ( 𝑦)=1 −1
+𝑦
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas con un bloc de notas | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente creciente.
+
+— Exponencial de parámetro 1
+Y=H|X=e*
+
+Fyly =PlY <y)=Ple*
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente.
+ – Exponencial de parámetro 1
+𝑌=𝐻( 𝑋)=𝑒𝑋
+𝑓𝑌( 𝑦)={
+0
+𝑦<1
+1−1
+𝑦
+2
+𝑦>1
+𝐹𝑌(𝑦)={
+0
+𝑦≤1
+1−1
+𝑦
+𝑦≥1
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas con un bloc de notas | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente creciente.
+
+— Exponencial de parámetro 1
+
+Y =HI|X=e*
+
+v<1]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente y derivable.
+𝑌=𝐻( 𝑋)
+En general:
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(𝐻(𝑋)≤𝑦)=𝑃(𝑋≤𝐻
+−1(𝑦))=𝐹𝑋(𝐻
+−1(𝑦))
+𝑓𝑌( 𝑦)=𝑓𝑋( 𝐻
+−1(𝑦))× 𝑑
+𝑑𝑦𝐻
+−1( 𝑦)= 𝑓𝑋(𝐻
+−1(𝑦))×
+1
+𝐻
+′ (𝐻
+−1(𝑦))
+
+[Descripción de la imagen: una nota con las palabras''y''en español | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente creciente y derivable.
+
+Y=H X
+En general:
+
+Fy y =PY<y= H£í)éy)=P(XSH“(W)
+
+frly)=fxlAy))< A I y|=fx1A(y))
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente y derivable.
+ – Normal
+𝑌=𝐻( 𝑋)=𝑒𝑋
+𝑓𝑌( 𝑦)={
+0
+𝑦<0
+1
+√2 𝜋𝜎𝑦exp(−1
+2(
+ln ( 𝑦)−𝜇
+𝜎
+)
+2
+)
+𝑦>0
+ tiene distribución lognormal
+
+[Descripción de la imagen: una nota con una nota que dice la ecuación | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente creciente y derivable.
+
+- Normal
+
+Y =HI|X=e*
+
+O
+
+— _1(L
+V27z6 Y P 2
+
+tiene distribución lognormal
+
+_
+—
+>
+1 >
+1 >
+—
+-
+-
+=
+— -D
+-—>
+»
+1 >
+2
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente creciente y derivable.
+ – Normal
+𝑌=𝐻( 𝑋)=𝑒𝑋
+ tiene distribución lognormal
+ tiene distribución normal
+
+[Descripción de la imagen: un gráfico con una pendiente y un gráfico de línea con una pendiente]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua estrictamente decreciente.
+ – Uniforme entre 1 y 3
+𝑌=𝐻( 𝑋)= 1
+𝑋
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(
+1
+𝑋≤𝑦)=𝑃( 𝑋≥1
+𝑦)=1−𝐹𝑋(
+1
+𝑦)
+𝐹𝑌(𝑦)={
+3
+2 −1
+2 𝑦
+𝑦∈(
+1
+3 ,1)
+0
+𝑦∉(
+1
+3 ,1)
+𝑓𝑌( 𝑦)={
+1
+2 𝑦2
+𝑦∈(
+1
+3 ,1)
+0
+𝑦∉(
+1
+3 ,1)
+
+[Descripción de la imagen: una nota con una nota que dice, «función» | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua estrictamente decreciente.
+
+— Uniforme entre 1 y 3
+
+_
+—
+>
+>
+—
+->
+->
+-
+-
+=
+— -D
+-—>
+»
+->
+->
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua no monótona.
+𝑌=𝐻( 𝑋)=𝑋2
+𝑓𝑌( 𝑦)={
+0
+𝑦<0
+𝑒
+−𝑦/2
+√2 𝜋𝑦
+𝑦>0
+ – Normal estándar
+ tiene distribución ji-cuadrado con un 
+grado de libertad
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real continua no monótona.
+
+- Normal estándar
+
+Y =HIX=X*
+
+Ú y<0tiene distribución ji-cuadrado con un
+
+- y/2
+
+fY(.y)= e
+
+rado de libertad
+J23y]]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real continua no monótona.
+ – Normal estándar
+ tiene distribución ji-cuadrado 
+con un grado de libertad
+ – Normal estándar
+
+[Descripción de la imagen: un gráfico con una curva y un gráfico de línea con una curva]
+
+Funciones de variable aleatoria
+ es una v.a.c. e  es una v.a.c.,  es una función real de una 
+variable real: Cálculo de momentos
+E[𝑌
+𝑛]= ∑
+𝑦∈𝑅𝑌
+𝑦
+𝑛𝑝𝑌(𝑦)
+Dos maneras: Una de ellas usando la distribución obtenida de  y 
+luego la definición. 
+E [𝑌
+𝑛]=∫
+−∞
++∞
+𝑦
+𝑛𝑓𝑌(𝑦)𝑑𝑦
+La otra es usando la distribución conocida de  y la función :
+E[𝑌
+𝑛]= ∑
+𝑥∈𝑅𝑋
+(𝐻(𝑥))
+𝑛𝑝𝑋(𝑥)
+E [𝑌
+𝑛]=∫
+−∞
++∞
+(𝐻(𝑥))
+𝑛𝑓𝑋(𝑥) 𝑑𝑥
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.C. e es UNna V.a.C., eS UNA fUNCIÓN real de una
+variable real: Cálculo de momentos
+
+Dos maneras: Una de ellas usando la distribución obtenida de y
+luego la definición.
+
+EY"=Y y'prly) E[Y"]=Íy"fy(y)dy
+
+y E Ry
+La otra es usando la distribución conocida de y la función :
+
++ 00
+
+EY"= Y [Hb)py(x) — ElY=f (H0)]f dax
+
+XERX 70
+
+* .
+=
+ >
+U_>
+-
+
+1 >
+-
+->
+2
+— -D
+— »
+- »
+->
+
+1 >
+-
+
+->
+_
+2
+_=_
+-
+
+- »]]
+
+Funciones de variable aleatoria
+ – Uniforme entre 1 y 3
+𝑌=𝐻( 𝑋)= 1
+𝑋
+𝑓𝑌( 𝑦)={
+1
+2 𝑦2
+𝑦∈(
+1
+3 ,1)
+0
+𝑦∉(
+1
+3 ,1)
+E [𝑌]=∫
+−∞
++∞
+𝑦𝑓𝑌( 𝑦) 𝑑𝑦=∫
+1/ 3
+1
+𝑦
+1
+2 𝑦2 𝑑𝑦= ln ⁡(3)
+2
+E [𝑌2]=∫
+−∞
++∞
+𝑦2 𝑓𝑌( 𝑦) 𝑑𝑦=∫
+1/ 3
+1
+𝑦2
+1
+2 𝑦2 𝑑𝑦= 1
+3
+Var [ 𝑌]= 1
+3 −( ln (3 )
+2
+)
+2 ≈0.032
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas con un bloc de notas y un bloc de notas con una nota | Transcripción de la imagen: Funciones de variable aleatoria
+
+Y
+
+E[Y]=_Í y Fy dy=f y2+y2dy
+
+1/3
+
+E| Y=| yºfy(y)dy=Í NA
+
+1/3
+
+1n (
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Funciones de variable aleatoria
+ – Uniforme entre 1 y 3
+𝑌=𝐻( 𝑋)= 1
+𝑋
+E [𝑌]=∫
+−∞
++∞
+𝐻(𝑥) 𝑓𝑋( 𝑥) 𝑑𝑥=∫
+1
+3 1
+𝑥× 1
+2 𝑑𝑥= ln ⁡(3)
+2
+E [𝑌2]=∫
+−∞
++∞
+( 𝐻(𝑥))
+2 𝑓𝑋( 𝑥) 𝑑𝑥=∫
+1
+3
+1
+𝑥2 × 1
+2 𝑑𝑦= 1
+3
+Var [ 𝑌]= 1
+3 −( ln (3 )
+2
+)
+2 ≈0.032
+
+[Descripción de la imagen: función función función función función función función función función función función función función función función función función función función función función función función función función función | Transcripción de la imagen: Funciones de variable aleatoria
+
+— Uniforme entre 1 y 3
+
+Y
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Funciones de variable aleatoria
+ es una v.a.c. y  es su función de distribución
+𝑌=𝐹𝑋( 𝑋)
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(𝐹𝑋(𝑋)≤𝑦)=𝑃( 𝑋≤𝐹𝑋
+−1(𝑦))=𝐹𝑋(𝐹𝑋
+−1(𝑦))
+𝑓𝑌( 𝑦)=1 ∀𝑦∈(0,1)
+𝐹𝑌( 𝑦)=𝑦∀𝑦∈(0,1)
+𝑌
+𝑈( 0 ,1)
+
+[Descripción de la imagen: una nota con las palabras'' y y y y y y y y y y y y y y y y y | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.c. y es su función de distribución
+Y=F,X
+Fy y =P Y<y =P F:X)<y=P X<Fily) =Fy Frly)
+Fryiy=yYye (0,1;
+fy =1vyel(01
+
+> éT(O,1)
+
+-
+»
+a
+
+—
+—
+—
+—
+_=
+_=
+— D
+_=»
+
+—
+
+—
+
+_S
+
+_=
+
+_=
+
+— -D
+
+_=»
+
+- >]]
+
+Funciones de variable aleatoria
+ es una v.a.c.,  es su función de distribución y 
+𝑌=𝐹𝑋
+−1 (𝑈)
+𝐹𝑌(𝑦)=𝑃(𝑌≤𝑦)=𝑃(𝐹𝑋
+−1(𝑈)≤𝑦)=𝑃(𝑈≤𝐹𝑋(𝑦))=𝐹𝑋(𝑦)
+𝑌
+𝑋
+La función de distribución de  es la de ; a partir de valores de 
+una variable aleatoria continua con distribución uniforme en 
+(0,1) se obtienen los de una variable aleatoria continua  si se 
+usa como función de transformación la inversa de su función 
+de distribución.
+
+[Descripción de la imagen: una nota con las palabras ''y'' ']
+
+Funciones de variable aleatoria
+ es una v.a.c.,  es su función de distribución y 
+𝑌=𝐹𝑋
+−1 (𝑈)
+En este caso se considera una 
+variable aleatoria continua con 
+distribución 
+exponencial 
+de 
+parámetro 2. Se sortean 1000 
+números aleatorios (rand) y a 
+partir de ellos se generan los 
+valores de Y que serán los de la 
+variable exponencial.
+
+[Descripción de la imagen: una pantalla de ordenador con un gráfico y un gráfico | Transcripción de la imagen: Funciones de variable aleatoria
+
+es una v.a.c., es su función de distribución y
+
+G Orctave
+-
+
+File Edit Debug Window Help News
+
+»_ NE a TS —d4m
+
+Command Window
+.'I>I> 5 F X(x) =1 - exp(-L*x) entonces su inversa es y = (-1/1) *In(1—u) con u=rand
+>> N=1000;U=rand(N,1); L =27
+>> Y=(-1/1) *log (1-U) ; Á Figure 1
+-I>Z> $ muestro la distribucion empirica File Edit Help
+>> plot (sort (Y) , (1:N) /N, 'o')
+
+>> | 9 Z+ Z- ep InsertText [; Axes Grid Autoscale
+
+1
+
+En este caso se considera una
+variable aleatoria continua con 0.6
+distribución exponencial de
+parámetro 2. Se sortean 1000
+números aleatorios (rand) y a 04
+partir de ellos se generan los
+
+valores de Y que serán los de la
+
+variable exponencial.
+
+0.6]]
+

@@ -1,0 +1,264 @@
+Prueba de hipótesis sobre la 
+proporción poblacional
+Ejemplo:
+Una máquina dosificadora en una operación de producción se debe 
+ajustar si el porcentaje de envases con falta de llenado es 
+significativamente superior al 8 %. En una muestra aleatoria de 145 
+envases de la producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+¿Indican los resultados que hay que ajustar la máquina dosificadora? 
+Detalle una prueba de hipótesis adecuada. Considere un nivel de 
+significación del 5 %.
+
+[Descripción de la imagen: una nota con las palabras prote, prote y prote]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+Ejemplo:
+Una máquina dosificadora en una operación de producción se debe 
+ajustar si el porcentaje de envases con falta de llenado es 
+significativamente superior al 8 %. En una muestra aleatoria de 145 
+envases de la producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+La variable aleatoriamedida en cada envase es binaria: 0 = llenado 
+adecuado, 1 = falta de llenado. Sea  la proporción de envases con falta 
+de llenado. 
+𝐸Bernoulli(𝑝)
+
+[Descripción de la imagen: una nota con las palabras prote, prote y prote]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+Ejemplo:
+Una máquina dosificadora en una operación de producción se debe 
+ajustar si el porcentaje de envases con falta de llenado es 
+significativamente superior al 8 %. En una muestra aleatoria de 145 
+envases de la producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+ = cantidad de envases con falta de llenado de entre los 145
+𝑋Binomial(145,𝑝)
+
+[Descripción de la imagen: una nota con las palabras prociono y prociono]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+Ejemplo:
+Una máquina dosificadora en una operación de producción se debe 
+ajustar si el porcentaje de envases con falta de llenado es 
+significativamente superior al 8 %. En una muestra aleatoria de 145 
+envases de la producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+𝐻0:𝑝≤0.08
+𝐻1: 𝑝>0.08
+Si se rechaza  se concluirá que la proporción de envases con falta de 
+llenado es significativamente superior a 0.08.
+
+[Descripción de la imagen: una nota con las palabras prociono porciono]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+Sies verdadera entonces el estadístico de prueba  tiene distribución 
+binomial con parámetros y . 
+>> P=binocdf(16:18,145,0.08)
+P =
+   0.92755   0.95816   0.97708
+>> 1-P
+ans =
+   0.072451   0.041844   0.022917
+Usando la función de distribución binomial  puede encontrarse que . Si en 
+la muestra se observan 17 o más envases con falta de llenado, entonces 
+se concluye que la proporción de envases con falta de llenado es 
+significativamente mayor a  y habrá que ajustar la máquina. 
+En este ejemplo donde se observaron 18 envases en la muestra con el 
+atributo que se inspecciona. El valor p de esta prueba es que resulta . 
+En Octave:
+
+[Descripción de la imagen: una nota con las palabras "proteos de procional"]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+También se puede plantear el problema usando el estadístico proporción 
+muestral
+Si la hipótesis nula es verdadera, por el Teorema Central del Límite ( es 
+grande), la distribución de  es aproximadamente normal con parámetros
+^𝑝= 𝑋
+𝑛
+𝜇=0.08,𝜎2= 0.08∙0.92
+145
+≈0.0005
+
+[Descripción de la imagen: una nota con la palabra prociono]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+𝜇=0.08,𝜎2= 0.08∙0.92
+145
+≈0.0005
+𝑃(^𝑝>^𝑝𝑐)=1−Φ(
+´𝑝𝑐−0.08
+√0.08×0.92 √145)=0.05
+^𝑝𝑐=0.08+𝑧0.95√
+0.08×0.92
+145
+=0.1171(11.71%)
+El valor crítico que define la aceptación o rechazo se puede calcular a 
+partir de la máxima probabilidad de error de Tipo I (nivel de significación):
+
+[Descripción de la imagen: predao de pitos de pitos de pitos de pitos de pitos de pitos | Transcripción de la imagen: Prueba de hipótesis sobre la
+proporción poblacional
+
+_ ,_ 0.08-0.92 _
+u=0.08,0”=— 5 — =0.0005
+
+El valor crítico que define la aceptación o rechazo se puede calcular a
+partir de la máxima probabilidad de error de Tipo | (nivel de significación):
+
+_ D. — 0.08
+P(Pp>P,)=1-D —Pe — Mas|=0.05
+v 0.08 x 0.92
+
+D,=0.08 +z0.95x/ $=0.1171(11.71%)]]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+𝑃(^𝑝>18/145)=1−Φ(
+18/145−0.08
+√0.08×0.92 √145)=0.025
+Si la proporción en la muestra es superior a 0.1171 entonces se concluye 
+que la proporción de envases con falta de llenado es significativamente 
+mayor a 0.08 y se recomendará ajustar la máquina. Es lo que ocurre en 
+este ejemplo ya que 18/145 es superior a 0.12. El valor p de esta prueba 
+es:
+En Octave:
+>> p = 0.08; 
+>> n = 145;
+>> pobs = 18/n
+pobs =  0.12414
+>> valorP = 1-normcdf((pobs-p)*sqrt(n)/sqrt(p*(1-p)))
+valorP =  0.025050
+
+[Descripción de la imagen: una nota con las palabras prociones solloza solloza]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+Funciones de distribución de y de la  si  es verdadera. Una de ellas es 
+discontinua (binomial) y la otra es continua (la normal). Esta última 
+aproxima “bastante bien” a la primera. En el eje horizontal se representa el 
+número de envases con falta de llenado en la muestra.
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+¿Cuál es la probabilidad de decidir que la máquina no debe ser ajustada 
+cuando en realidad la verdadera proporción de envases mal llenados 
+(incompletos) es igual a 0.13?
+Es una pregunta sobre la probabilidad de error Tipo II cuando . En este 
+caso, por el Teorema Central del Límite ( es grande), la distribución de  es 
+aproximadamente normal con parámetros  
+𝜇=0.13 ,𝜎2= 0.13 ∙0.87
+145
+≈0.00078
+
+[Descripción de la imagen: una nota con las palabras proteos de prociona]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+𝜇=0.13 ,𝜎2= 0.13∙0. 87
+145
+≈0.00078
+𝛽(0.13)=𝑃(^𝑝< ^𝑝𝑐=0.1171)=Φ(
+0.1171−0.13
+√0.13×0.87 √145)=0.3221
+>> normcdf((0.1171-0.13)/sqrt(0.13*0.87/145))
+ans =  0.32208
+En Octave:
+
+[Descripción de la imagen: prede pitos de propos de propos | Transcripción de la imagen: Prueba de hipótesis sobre la
+proporción poblacional
+
+_ ,_ 0.13:0.87 _
+u=0.13,0"=—j — =0.00078
+
+0.1171—-0.13
+
+1145 |=0.3221
+/0.13 x 0.87
+
+6(0.13)=P(p<p.=0.1171)=bP
+
+En Octave:
+
+>> normcdf((0.1171-0.13)/sgrt(0.13*0.87/145))
+
+ans = 1.32208]]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+
+[Descripción de la imagen: un gráfico gráfico con una línea azul y naranja | Transcripción de la imagen: Prueba de hipótesis sobre la
+proporción poblacional
+
+Distribución de la
+rción muestral si
+
+propo
+YA “RK p =0.08 (HO verdadera)
+/
+
+| 0013 M
+a m
+
+| Distribución de la
+proporción muestral si
+p=0.13]]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+La curva de operación característica de esta prueba es la representación 
+gráfica de la probabilidad de cometer error de Tipo II que viene dada, en 
+esta prueba de cola derecha, por: 
+𝛽(𝑝)=𝑃(^𝑝<^𝑝𝑐=0.1171∨𝑝)=Φ(
+0.117 −𝑝
+√𝑝(1−𝑝) √145)
+𝛽( ^
+𝑝𝑐)=𝑃( ^𝑝< ^𝑝𝑐)=0.5
+𝛽(𝑝0 )=1 −𝛼=0.95
+𝛽(1)= 0
+
+[Descripción de la imagen: prejecees sob propos de prociones | Transcripción de la imagen: Prueba de hipótesis sobre la
+
+s proporción poblacional
+--2 La curva de operación característica de esta prueba es la representación
+
+s gráfica de la probabilidad de cometer error de Tipo I| que viene dada, en
+- esta prueba de cola derecha, por:
+
+B(p)=P(p<p,=0.1171 v;o)=cp(… v145
+
+vp(1-P)
+BUIPI=-=PUP<P-)=0-5
+S li) =1 — ax—o.95
+
+/7 C 1 » ——- E]]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+La curva de operación característica de esta prueba es la representación 
+gráfica de la probabilidad de cometer error de Tipo II que viene dada, en 
+esta prueba de cola derecha, por: 
+𝛽(𝑝)=𝑃(^𝑝<^𝑝𝑐=0.1171∨𝑝)=Φ(
+0.117 −𝑝
+√𝑝(1−𝑝) √145)
+En Octave:
+>> p = 0.08:0.001:0.18;
+>> beta = normcdf((0.1171-p)./sqrt(p.*(1-p)/145));
+>> plot(p,beta)
+
+[Descripción de la imagen: prejecees de prociones paras de prociones]
+
+Prueba de hipótesis sobre la 
+proporción poblacional
+
+[Descripción de la imagen: un gráfico con una línea que va a través de él y la línea que va a través de él]
+

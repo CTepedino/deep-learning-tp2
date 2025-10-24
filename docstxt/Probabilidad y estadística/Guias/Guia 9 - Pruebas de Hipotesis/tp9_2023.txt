@@ -1,0 +1,305 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 9
+Pruebas de hipótesis
+1. De una producción de tubos de hormigón se extrajo una muestra de tamaño 16 y se los pesó
+resultando una media muestral de 17.5 kg. La varianza del peso de un tubo es de 4 kg2 y se
+puede suponer que el peso de esos tubos tiene distribución normal con una media de 18 kg (¡eso
+lo dice el fabricante!). Considerando un nivel de significación del 5 %, ¿se puede concluir que el
+peso medio de los tubos es significativamente inferior al especificado por el fabricante?. Calcule
+el valor P de la prueba.
+2. Se supone que un nuevo procedimiento para producir cemento dará por resultado que tenga una
+resistencia a la compresión de 5000 kg/cm2 con una desviación estándar de 120 kg/cm2. Para
+poner a prueba la hipótesis nula H0: µ = 5000 frente a la alternativa H1: µ <5000 se analiza una
+muestra de 50 probetas de hormigón a las que se somete a ensayo. Se rechaza la hipótesis nula
+si la media muestral es menor que 4970 kg/cm2.
+a) Determine la probabilidad de cometer error de tipo I.
+b) Evalúe la probabilidad de cometer error tipo II para las alternativas µ = 4960 y µ = 4950.
+3. Una empresa desea iniciar una campaña de ventas de aparatos de TV. Se considera que la decisión
+de comenzar la campaña debe estar relacionada con los ingresos medios mensuales por familia,
+de modo que será afirmativa si éstos son iguales o superiores a 500 U$S y negativa cuando los
+ingresos no lleguen a esa suma.
+Un punto de vista respecto del error de tipo I (de probabilidad α) es que la empresa desea evitar
+el error de no empezar la campaña cuando debería hacerlo; no quiere perder la oportunidad de
+ganar dinero.
+El otro punto de vista es que la empresa desea evitar el error que supone iniciar la campaña
+cuando no deba hacerlo, si las familias no tienen suficiente dinero se deben evitar las pérdidas
+que acarrea una campaña inútil de ventas.
+a) El desvío estándar poblacional es 20 U$S y se extrae una muestra de 100 personas. Elaborar
+la regla de decisión al 5 % de nivel de significación de la hipótesis nula µ = 500 frente a la
+alternativa µ < 500. Calcular la probabilidad β de cometer error de tipo II de este regla de
+decisión para la alternativa µ = 495 U$S. Construir en forma aproximada la gráfica de β en
+función de µ (curva OC o de operación característica).
+b) Supongamos ahora que la empresa desea evitar el error que supone empezar la campaña
+de ventas cuando no debe hacerlo; trata de evitar las pérdidas monetarias que origina una
+campaña de ventas inútil. En este caso las hipótesis nula y alternativa son: H0: µ ≤500 y
+H1: µ > 500 respectivamente.
+En este caso el error de tipo I es el que se comete al empezar la campaña cuando no
+debería hacerse, y el error de tipo II es el que aparece cuando no se empieza debiéndose
+hacer. Obtener la regla de decisión para los mismos valores de α, n y el desvio estándar
+poblacional del ingreso. Realizar la curva OC para valores de µ entre 500 U$S y 510 U$S.
+1
+
+[Descripción de la imagen: el texto en el libro se muestra en la esquina inferior derecha]
+
+Probabilidad y Estadística 93.24
+curso 2023
+c) Obtener la regla de decisión dados α = 0.025, β(470) = 0.05, el desvío estándar del ingreso
+es 50 U$S, para el contraste de hipótesis H0: µ ≥500 y H1: µ < 500. Esto significa que la
+empresa no desea iniciar la campaña de ventas (con probabilidad 0.95) cuando los ingresos
+medios son tan bajos como 470 U$S. Representar la curva OC para alternativas entre 460
+U$S y 500 U$S.
+4. La resistencia a la rotura de cierto tipo de alambre tiene distribución normal con media 280 kg y
+desvío estándar 20 kg. Se cree que un proceso de fabricación recién desarrollado puede aumentar
+la resistencia sin modificar el desvío estándar, pero sólo se lo implantará si se tiene una razonable
+seguridad de que efectivamente es así. Se ha establecido en 0.05 la probabilidad de implantar el
+nuevo método cuando en realidad la resistencia no se modifica, y en 0.15 la probabilidad de no
+implantarlo si se incrementa en 10 kg.
+a) Establezca la hipótesis nula, la condición de rechazo y la regla de decisión.
+b) ¿Cuál es la probabilidad de implantar el nuevo método si la resistencia media aumenta en
+5 kg?.
+c) Represente gráficamente las curva OC y de potencia de este ensayo.
+5. En una pieza fabricada que ha de acoplarse a otras piezas, hay una dimensión crítica cuyo valor
+debe ser aproximadamente de 11.5 cm. La variabilidad del proceso de fabricación está dada por
+un desvío estándar de 0.1 cm. El proceso se considera bajo control si, para una muestra de n
+piezas, no hay motivos para pensar que la media es diferente de 11.5 cm.
+a) ¿Cuál deberá ser el tamaño de la muestra si se establece en 0.1 la probabilidad de revisar
+el proceso equivocadamente y en 0.05 la probabilidad de no revisarlo cuando la media es de
+11.4 cm?.
+Sugerencia: Para aproximar el cálculo suponga que la cola derecha, cuando la media es de 11.4 cm,
+tiene aproximadamente área nula. Una vez calculado el valor de n verifique que la suposición fue
+acertada.
+b) ¿Cuál es la probabilidad de revisar el proceso cuando la media es de 11.46 cm?
+6. Una compañía debe diseñar un sistema de muestreo periódico para controlar la recepción de
+grandes partidas de un producto. El proveedor desea tener la seguridad de que le rechacen a lo
+sumo el 5 % de las partidas buenas, que son aquellas que cumplen con la especificación de que la
+resistencia media mínima es de 1250 kg. A su vez, el cliente desea rechazar al menos el 90 % de las
+partidas malas, que son aquellas cuya resistencia media es inferior a 1100 kg. Ambos firman un
+contrato en el cual constan las condiciones anteriores y se establece que la decisión de rechazar o
+aceptar una partida se tomará en función del resultado de una muestra de n unidades elegidas al
+azar de la misma. Existen registros históricos por los cuales se sabe que el desvío de la resistencia
+a la rotura es de 180 kg.
+a) Indique la hipótesis nula apropiada, su condición de rechazo y la regla de decisión.
+b) Calcule la probabilidad de detectar que una partida dada resiste en promedio 1200 kg.
+c) Represente gráficamente en forma aproximada las curvas de operación característica (curva
+OC) y de potencia indicando claramente las abscisas y ordenadas de al menos tres puntos.
+2
+
+[Descripción de la imagen: un documento con el texto en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+7. El contenido de los paquetes de cereal llenados por una determinada máquina tiene una distribu-
+ción normal con desvío estándar de 30 g. Se desea establecer un control periódico del proceso de
+llenado y se establece en un 5 % la probabilidad de detener la máquina innecesariamente cuando
+el peso promedio de los paquetes es igual a 360 g (que es el peso neto indicado en el envase),
+y en 2 % la probabilidad de no realizar las correcciones necesarias en el proceso cuando el peso
+promedio de cereal difiere por caja en un 10 % del valor indicado en el envase. Indique el criterio
+de decisión y el tamaño de muestra adecuado que daría usted a la persona encargada de controlar
+el proceso.
+8. Según un fabricante, la resistencia media extrema de cierto alambre aleado de Al es de 250
+MN/m2. Un contratista adquiere un lote de alambre y pone a prueba una muestra de tamaño
+35. El valor medio y la desviación estándar obtenidos a partir de esa muestra son respectivamente
+274.4 MN/m2 y 11.2 MN/m2. ¿Es justificable que el contratista concluya que la remesa tiene
+una resistencia significativamente diferente a lo especificado por el fabricante ?. Tomar un nivel
+de significación del 5 % y suponga que la variable que se mide tiene distribución normal.
+9. Se vende una marca especial de cemento en bolsas de 50 kg. Se eligieron 11 de ellas al azar y
+se observa que su masa en kg es: 49.2 - 50.1 - 49.8 - 49.7 - 50.1 - 50.5 - 49.6 - 49.9 - 50.4 - 50.2
+- 49.7. ¿Son tales resultados consistentes con que la media del cemento en una bolsa es 50 kg?
+Suponga que el contenido de una bolsa es una variable con distribución normal. Tomar el nivel
+de significación α = 0.1.
+10. Un fabricante de lámparas eléctricas ha desarrollado un nuevo proceso de producción que él
+espera aumentará la eficiencia (se supone una variable normal) media (en lúmenes/watt) de su
+producto que hasta el momento es de 9.5. Los resultados de un experimento realizado sobre 10
+lámparas se dan a continuación: 9.28, 10.25, 11.52, 13.02, 11.58, 9.97, 11.46, 12.05, 9.87, y 10.85.
+¿Debe el fabricante concluir que la eficiencia aumentó ? Usar 5 % como nivel de significación del
+test. Usando una planilla de cálculo u otro software adecuado calcular el valor P (la probabilidad
+de que el estadístico de prueba tome valores superiores al observado, para esta prueba de hipótesis
+de cola derecha) de esta prueba de hipótesis.
+11. En una planta de armado se diseña una operación específica que toma un tiempo promedio de 5
+minutos. El gerente de planta sospecha que para una máquina en particular el tiempo promedio
+es mayor. Entonces toma una muestra de 15 tiempos de operación para esa máquina y obtiene
+los siguientes resultados (en minutos):
+5.2
+4.2
+5.7
+6.8
+6.7
+7.2
+3.3
+5.3
+6.6
+4.4
+4.8
+3.8
+3.7
+4.5
+4.7
+Puede suponerse que el tiempo para esa operación es una variable aleatoria con distribución
+normal. ¿Se encuentra la sospecha del gerente apoyada por la evidencia si se supone un nivel de
+significación del 5 %? Justifique su respuesta detallando el test de hipótesis correspondiente
+12. Tomado de EL HOMBRE ANUMERICO - . El analfabetismo matemático y sus consecuen-
+cias, Autor: John Allen Paulos - Tusquets Ed., Barcelona, 1995.
+3
+
+[Descripción de la imagen: un documento con las palabras '''' y'' ']
+
+Probabilidad y Estadística 93.24
+curso 2023
+"Supongamos que formulo la hipótesis de que por lo menos el 15 por ciento de los
+coches de determinada región son Corvette, y que después de observar el paso de mil
+coches por unos cuantos cruces representativos de dicha región sólo he visto ochenta
+Corvette. Utilizando la teoría de la probabilidad, calculo que, en el supuesto de que
+mi hipótesis sea cierta, la probabilidad de este resultado es bastante inferior al 5 por
+ciento, cifra que comúnmente se usa como nivel de significación. Así pues, se rechaza
+la hipótesis de que el 15 por ciento de los coches de la región son Corvette."
+Verificar los resultados que se comentan en el texto.
+Comentario: Hay dos tipos de errores que se pueden cometer al aplicar este test estadístico u otro cual-
+quiera y se llaman, en un derroche de imaginación, errores del Tipo I y errores del Tipo II. Se comete
+un error del Tipo I cuando se rechaza una hipótesis verdadera, y uno del Tipo II, cuando se acepta
+una hipótesis falsa. Así, si una gran cantidad de Corvette procedentes de una exposición automovilística
+atravesara la región y esto nos llevara a aceptar la hipótesis falsa de que al menos el 15 por ciento de
+los coches de la región son Corvette, estaríamos cometiendo un error del Tipo II. Por el contrario, si
+no nos hubiéramos percatado de que la mayoría de los Corvette de la región no estaban en circulación,
+sino guardados en sus garajes, al rechazar la hipótesis verdadera estaríamos cometiendo un error del Tipo I.
+13. Considere la siguiente situación. Ud. recibe una caja con 12 unidades de una pieza y desea
+ensayar la hipótesis: H0) Las 12 piezas son buenas, extrayendo una única unidad de la caja. La
+condición de rechazo, obvia, es que la pieza extraída sea defectuosa. Si la pieza extraída es buena,
+Ud. no puede rechazar la hipótesis, pero en modo alguno puede aceptarla ¿verdad?. Calcule la
+probabilidad β de cometer error de tipo II para las alternativas de que haya 1, 2, . . . , R piezas
+defectuosas en la caja. Este es un caso sencillo para ilustrar los conceptos básicos del tema de
+ensayo de hipótesis.
+14. En un experimento para determinar la efectividad de un nuevo medicamento, se ensaya en 400
+pacientes que sufren la afección que este medicamento dice curar. Si mas de 300 pero menos de
+340 pacientes se curan se concluye que el medicamento tiene una efectividad del 80
+a) Determinar la probabilidad de cometer error de tipo I.
+b) ¿Cuál es la probabilidad de cometer error de tipo II si el nuevo medicamento tiene una
+efectividad del 70 %?
+15. Se sabe que el 30 % de los automovilistas en una ciudad cruzan semáforos en rojo. Para disminuir
+este porcentaje, la municipalidad realiza una intensiva campaña publicitaria. Luego de la misma se
+quiere evaluar si la campaña tuvo éxito o no. Para tal fin se dispone, en una esquina representativa,
+una cámara de video que filma durante varias horas lo ocurrido en el semáforo. Luego de este
+lapso de tiempo, se contabilizaron 400 autos pasando por la esquina, de los cuales 92 cruzaron el
+semáforo en rojo. ¿Se puede afirmar, con una probabilidad de error del 5 %, que la campaña hizo
+descender el porcentaje inicial? Justifique detalladamente planteando una prueba de hipótesis
+adecuada.
+16. La proporción de defectuosos en un proceso es 2 %. Como se desea establecer un control sobre el
+mismo se inspeccionan con una frecuencia de una vez por hora muestras de tamaño n y se revisa
+4
+
+[Descripción de la imagen: una página del libro,'la nue de la nue de la nue de la nu]
+
+Probabilidad y Estadística 93.24
+curso 2023
+el proceso si se encuentran c ó más defectuosas entre las n. Para determinar n y c se han fijado
+un riesgo del 10 % (0.1 es la probabilidad de detener el proceso cuando en realidad no habría que
+hacerlo) y una probabilidad 0.2 de cometer el error de no detener el proceso en el caso en que el
+porcentaje de defectuosos sea de 6 %.
+a) Especifique claramente la prueba de hipótesis planteada (hipótesis nula, alternativa, nivel
+de significación, estadístico de prueba y zona de rechazo).
+b) Determine los valores de n y c.
+c) Represente gráficamente en forma aproximada las curvas de operación característica (curva
+OC) y de potencia indicando claramente las abscisas y ordenadas de al menos tres puntos.
+17. Una máquina dosificadora en una operación de producción se debe ajustar si el porcentaje de
+envases con falta de llenado es significativamente superior al 8 %. En una muestra aleatoria de
+145 envases de la producción de un día se encontraron 18 envases incompletos en su llenado.
+a) ¿Indican los resultados que hay que ajustar la máquina dosificadora? Detalle una prueba de
+hipótesis adecuada. Considere un nivel de significación del 5 %. Calcule el valor P de esta
+prueba de hipótesis (la probabilidad de que el estadístico de prueba tome valores superiores
+al observado, en esta prueba de hipótesis de cola derecha).
+b) ¿Cuál es la probabilidad de decidir que la máquina no debe ser ajustada cuando en realidad
+la verdadera proporción de envases mal llenados (incompletos) es igual a 0.13?
+c) Represente gráficamente en forma aproximada las curvas de operación característica (curva
+OC) y de potencia indicando claramente las abscisas y ordenadas de al menos tres puntos.
+18. En un diario de gran circulación de esta ciudad se publicó el resultado de una encuesta en la
+que se indicaban, para una muestra de tamaño n, varias proporciones de preferencia por varios
+equipos de fútbol. En ese reporte figuraba una ficha técnica en la que se indicaba lo siguiente:
+Tamaño de la muestra n = 9300
+Nivel de confianza 95 %
+Error máximo: 1 % (semiamplitud máxima de un intervalo de confianza ).
+En esa encuesta se indicaba que los hinchas de Boca no son la mitad mas uno dado que el
+41 % (0.403) de la muestra correspondió a hinchas de Boca. Explique el significado de esta
+afirmación analizando una prueba de hipótesis de cola izquierda. Calcule el valor P de esta prueba
+y compare con algún nivel de significación típico. En este caso el valor P es la probabilidad de
+que el estadístico de prueba tome valores inferiores al observado, por tratarse de una prueba de
+hipótesis de cola izquierda.
+19. Para estimar el rendimiento de un proceso químico, se observaron datos correspondientes a las
+últimas 10 corridas del mismo. El rendimiento promedio de estas corridas fue de 64.8 %, y el
+desvío estándar de las mismas fue de 9.8 %. El responsable del proceso está decidido a invertir en
+su mejora, sólo si recibe evidencia estadística de que el rendimiento medio del proceso es inferior
+al 70 %. Si le preguntaran a usted ¿justificaría la inversión?. Suponga que el rendimiento tiene
+distribución normal y explique detalladamente su respuesta y los criterios utilizados.
+5
+
+[Descripción de la imagen: un documento con el texto en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+20. En un proceso químico se producen en promedio, 800 toneladas de un producto químico por día.
+Las producciones diarias de una semana fueron: 805, 790, 790, 780, y 770.
+a) En base a este resultado, ¿ se puede afirmar que la producción promedio es menor a 800
+toneladas y que, por lo tanto, algo anda mal en el proceso? Decida a un nivel de significación
+del 5 %.
+b) ¿Cuál es el intervalo del 90 % de confianza para estimar la varianza de la producción diaria?
+c) ¿Qué supuestos se requieren para que sea válido el procedimiento para analizar estos datos?
+6
+
+[Descripción de la imagen: un documento con el título de la publicación]
+
+Probabilidad y Estadística 93.24
+curso 2023
+Apéndice: Una simulación en Octave.
+Optativo y recomendable para fijar conceptos.
+Suponga una prueba de hipótesis de cola derecha en la que se quiere poner a prueba la hipótesis
+nula H0: µ = µ0 frente a la hipótesis alternativa H1: µ > µ0. Suponga que la variable aleatoria
+involucrada en esta prueba tiene distribución normal de media µ y desvío estándar σ. Si se conoce el
+valor de σ entonces el estadístico de prueba es la variable aleatoria
+Z = (X −µ0) √n
+σ
+que tiene distribución normal estándar. Si al evaluar este estadístico resulta mayor que el valor crítico
+z1−α entonces se rechaza la hipótesis nula al nivel de significación 100 α %. El valor de α mide la
+probabilidad de cometer el error de tipo I. En promedio si se realizase esta prueba N veces entonces
+α N veces se rechazaría la hipótesis nula a pesar que el valor de µ no es mayor que µ0.
+Si no se conoce el valor de σ entonces se estima en cada muestra con el desvío estándar muestral
+S y asi resulta que el estadístico de prueba es la variable aleatoria
+T = (X −µ0) √n
+S
+que tiene distribución de Student con n−1 grados de libertad. Si al evaluar este estadístico resulta ma-
+yor que el valor crítico t1−α,n−1 entonces se rechaza la hipótesis nula al nivel de significación 100 α %.
+El valor de α mide la probabilidad de cometer el error de tipo I. En promedio si se realizase esta prueba
+N veces entonces α N veces se rechazaría la hipótesis nula a pesar que el valor de µ no es mayor que µ0.
+El siguiente código en Octave simula la generación de N muestras de tamaño n y determina en
+cada una de ellas la condición de rechazo en los dos casos comentados anteriormente para esta prueba
+de hipótesis de cola derecha. También se calcula la frecuencia de ocurrencia de la comisión del error
+de tipo I:
+mu = 10; sigma = 2.5;
+n = 10; N = 1000; X = mu+sigma*randn(n,N);
+XR = mean(X); S = std(X);
+Z = (XR - mu)/(sigma/sqrt(n));
+T = (XR - mu)./(S/sqrt(n));
+zc = 1.6449; tc = tinv(0.95,n-1);
+[zc tc]
+pZ = mean(Z > zc); pT = mean(T > tc);
+[pZ pT]
+Breve explicación: La matriz X de n filas y N columnas contiene números aleatorios provenientes de
+una variable aleatoria con distribución normal de media µ y desvío estándar σ. Luego se calcula para
+cada columna (que corresponde a una muestra de tamaño n) la media que se almacena en el vector
+XR; de igual manera la matriz S almacena los valores del desvío estándar de cada muestra. Se definen a
+continuación los estadísticos Z y T y se calculan los valores críticos (en este ejemplo si α = 0.05) para
+las distribuciones de probabilidad de estos estadísticos. Los valores de pZ y pT miden la frecuencia de
+ocurrencia de rechazo. En una ejecución de este código se obtuvieron estos valores:
+7
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+>> [pZ pT]
+ans =
+0.043000 0.044000
+Ambos valores resultan próximos a 0.05.
+8
+
+[Descripción de la imagen: un documento con el título del título en el título]
+

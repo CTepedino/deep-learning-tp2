@@ -1,0 +1,252 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 2
+Variables aleatorias discretas
+1. Considere el experimento de lanzar un par de dados no cargados.
+Sean las variables aleatorias X: suma de los puntos obtenidos e Y : máximo puntaje de los dos
+obtenidos. Obtenga las tablas de la función de probabilidad y la función de distribución de estas
+variables aleatorias discretas. Calcule las siguientes probabilidades:
+a) P(X < 7)
+P(2 ≤X < 8)
+P(X ≥9)
+b) P(Y ≤3)
+P(2 < Y ≤5)
+P(Y > 3)
+2. Suponga que la demanda diaria de un artículo es una variable aleatoria D con recorrido R(D) =
+{1, 2, 3, 4} y función de probabilidad pD(r) = C 2r/r! .
+a) Calcule la constante C.
+b) Obtenga y represente gráficamente la función de distribución FD.
+3.
+a) Determine el valor esperado y la varianza de las variables aleatorias X e Y del ejercicio 1.
+b) Determine el valor esperado E[D] de la variable aleatoria D de la demanda del ejercicio
+anterior.
+4. Se selecciona al azar una muestra sin reemplazo de 3 artículos de un total de 10 de los cuales
+2 son defectuosos. Si X es la variable aleatoria: número de artículos defectuosos en la muestra,
+obtenga la distribución de probabilidades de X y calcule sus parámetros característicos. ¿Cómo
+cambia el problema si el muestreo es con sustitución?
+5. Un fabricante de controladoras de discos rígidos somete cada unidad a una prueba rigurosa. De
+las controladoras recién ensambladas, el 84 % pasa la prueba sin ninguna modificación. Las que
+fallan en la prueba inicial son reelaboradas; de éstas, el 75 % pasa una segunda prueba.
+Aquellas controladoras que fallan en la segunda prueba se rehacen por segunda ocasión y se
+vuelven a probar; el 90 % de ellas pasan la prueba y el resto se desarman.
+Se define X como la variable aleatoria que corresponde al número de veces que debe reprocesarse
+una controladora seleccionada al azar.
+a) Especificar el recorrido de X y obtener la distribución de probabilidad.
+b) Calcular el valor esperado de X. ¿Cómo se interpreta este número?
+c) Calcular la varianza y el desvío estándar de X.
+d) ¿Cuál es el porcentaje de controladoras que se desarman?
+6. En una estación de servicio, la distribución de clientes que llegan cada 15 minutos tiene la
+siguiente distribución de probabilidades:
+Nro. de clientes
+0
+1
+2
+probabilidad
+0.2
+0.5
+0.3
+La probabilidad de que un cliente pague con tarjeta de crédito es 0.25, y cada cliente tiene una
+forma de pago independiente de la de los demás.
+1
+
+[Descripción de la imagen: el texto en el libro de texto se muestra en la imagen]
+
+Probabilidad y Estadística 93.24
+curso 2023
+a) Obtenga la distribución de probabilidades de la variable aleatoria Y que indica la cantidad
+de clientes que en 15 minutos pagan con tarjeta de crédito.
+b) Calcule el valor esperado y la dispersión de la variable aleatoria Y .
+7. Una organización de consumidores que evalúa automóviles nuevos reporta regularmente el número
+de defectos importantes en cada automóvil examinado. Sea X el número de defectos importantes
+en un automóvil seleccionado al azar de un cierto tipo y FX(x) la función de distribución de
+probabilidad correspondiente.
+FX(x) =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+x < 0
+0.06
+0 ≤x < 1
+0.19
+1 ≤x < 2
+0.39
+2 ≤x < 3
+0.67
+3 ≤x < 4
+0.92
+4 ≤x < 5
+0.97
+5 ≤x < 6
+1
+x ≥6
+a) Calcular las siguientes probabilidades directamente de la función dada: pX(2) = P(X = 2),
+P(X > 3), P(2 ≤X ≤5), y P(2 < X < 5).
+b) Representar graficamente pX(x).
+c) ¿Cuál es el número esperado de defectos importantes que se espera al examinar un automóvil,
+seleccionado al azar, del tipo considerado en este problema?
+8. La probabilidad de falla de un cierto tipo de componentes electrónicos es de 0.10.
+Una compañía produce con ellos dos tipos de circuitos, denominados I y II respectivamente. El
+circuito tipo I consiste en un paralelo de dos componentes. El circuito tipo II está armado con
+una serie de dos componentes. De la producción total se elige un circuito de cada tipo.
+Sea X la variable aleatoria que indica el número de circuitos que funciona cuando se prueban
+ambos.
+a) Definir la función de probabilidad pX, hallar la función de probabilidad y representar ambas
+funciones en forma gráfica.
+b) Hallar el valor esperado de X.
+9. Para la situación planteada en el problema de la demanda diaria D suponga que la utilidad U
+de la venta por artículo es 5 a (la unidad monetaria) y que cualquier artículo que no se venda
+produce una pérdida de 3 a. El fabricante produce diariamente k artículos.
+a) Obtenga la distribución de probabilidades de la utilidad neta diaria U para distintos valores
+de k (1,2,3,4,5,...) y elija el valor de k que maximice la utilidad esperada E[U].
+b) Suponga que de alguna manera se pudiese determinar cuál será la demanda de un día
+(pagando por la información, desarrollando algún tipo de campaña, etc). ¿Cuánto pagaría
+como máximo para obtener la información?
+Sugerencia: calcule la ganancia esperada considerando que se fabrica exactamente lo que se demanda.
+10. Un contratista debe elegir entre dos obras. La primera promete una ganancia de $ 240000 con una
+probabilidad de 0.75 o una pérdida de $ 60000 (por inconvenientes varios) con una probabilidad
+2
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+de 0.25. La segunda obra promete una ganancia de $ 360000 con probabilidad 0.5 o una pérdida
+de $ 90000 con probabilidad 0.5.
+a) ¿Cuál debería elegir el contratista si quiere maximizar la ganancia esperada?
+b) ¿Cuál sería la obra que elegiría si su negocio anduviera mal y quebrara a menos que lograra
+una ganancia de $ 300000 en su próxima obra?
+11. Un vendedor de diarios compra cada periódico a 40 centavos y lo vende a 1 peso y no puede
+devolver los diarios que no vendió. La demanda diaria es independiente de la del día anterior y
+tiene la siguiente distribución de probabilidades:
+cantidad demandada
+63
+64
+65
+66
+67
+68
+69
+70
+probabilidad
+0.01
+0.04
+0.06
+0.08
+0.15
+0.28
+0.22
+0.16
+¿Cuántos diarios debe adquirir diariamente si desea maximizar la ganancia esperada? (Tenga en
+cuenta que la insatisfacción de la demanda no está penalizada.)
+12. De un mazo de naipes ordinarios (52 naipes) bien barajado se extraen cinco cartas, al azar (sin
+sustitución), para una mano de poker.
+a) Obtenga la distribución de probabilidades del número de diamantes D en la mano.
+b) Determine el valor esperado y el desvío estándar de D.
+c) Calcule la probabilidad de sacar por lo menos un trebol.
+d) Calcule la probabilidad de sacar por lo menos dos ases.
+13. En una semana de trabajo se realizaron 50 facturas en un comercio. En 5 de ellas se cometió un
+error.
+a) Se eligen 10 facturas al azar. Determinar la distribución de probabilidades del número de
+facturas que contienen el error buscado. Representar graficamente la función de probabilidad
+del número de facturas que contienen el error buscado. Calcular el valor esperado y la
+varianza del número de facturas que contienen el error buscado
+b) Suponga que se eligen 10 facturas al azar y no se conoce cuantas facturas hay con errores
+entre las 50 de esa semana. Se extrae la muestra y se obtiene una factura con error. Se
+conviene en estimar la cantidad de facturas con error como el valor que maximiza la pro-
+babilidad de obtener una factura con error entre las 10. Probar (confeccionando una tabla)
+que la estimación de la cantidad de facturas con error entre las 50 es 5.
+14. De un grupo de N personas se eligen al azar a n de ellas.
+a) Calcular la probabilidad de que se encuentren las r más altas entre las n elegidas (r < n <
+N).
+b) La mitad de las N personas (N es par) habla inglés. Calcular la probabilidad de que la
+mitad de las n (n también es par) personas de la muestra aleatoria hable inglés.
+c) Suponga que N = 100. Verificar que si el muestreo se realiza con sustitución la probabilidad
+de que la mitad de las n (n es par) personas de la muestra aleatoria hable inglés viene dada
+por
+b(n) =
+n
+n
+2
+
+0.5n
+3
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+Si hg(n) es la probabilidad de que la mitad de las n (n es par) personas de la muestra
+aleatoria hable inglés, para el caso real (muestreo sin sustitución), verificar (confeccionando
+una tabla) que se cumple |hg(n) −b(n)| < 0.1 hg(n) si n < 18.
+15. Un inspector de control de calidad está inspeccionando artículos recientemente producidos para
+buscar defectos. El inspector inspecciona un artículo en una serie de etapas independientes, cada
+una con duración fija. Cuando una falla está presente, la probabilidad de que sea detectada
+durante cualquiera de las etapas es 0.90. Sea X la cantidad de etapas necesarias para detectar
+una falla presente. Obtener el recorrido de X, la función de probabilidad y calcular E[X] y
+Var(X).
+Son conocidas:
+∞
+X
+k=1
+k qk−1 =
+1
+(1 −q)2 ,
+∞
+X
+k=1
+k2 qk−1 =
+1 + q
+(1 −q)3 ,
+|q| < 1.
+16. El contenido de bolillas rojas de la caja C1 se forma como sigue: se arroja un dado y se colocan
+tantas bolillas rojas como indica el dado; luego se extraen dos bolillas (sin reemplazo) de una
+caja C2, que contiene 3 blancas y 7 rojas, y se introducen en C1. Suponga que la caja C1 está
+inicialmente vacía. Obtenga la función de probabilidad del número R de bolillas rojas que quedan
+finalmente en C1. Determine E[R].
+17. Considere la variable aleatoria X: cantidad de espadas en una mano de truco.
+a) Obtenga la función de probabilidad pX(x) y la función de distribución FX(x).
+b) Para jugar se paga $ 2 y el premio es recibir en $ el cuadrado de la cantidad de espadas
+obtenidas. Si Y es la ganancia neta calcule el valor esperado E[Y ].
+18. La probabilidad de que un cierto examen dé una reacción positiva es igual a 0.4 y las reacciones
+son independientes. Obtenga la función de probabilidad del número N de reacciones negativas
+antes de la primera reacción positiva. ¿Cuál es la probabilidad de que ocurran menos de cinco
+reacciones negativas consecutivas antes de la primera positiva?
+19. Sobre una placa I inciden partículas que, al chocar, pueden rebotar con probabilidad p1 ó atra-
+vesarla con probabilidad p2 = 1 −p1. Las partículas que atraviesan la placa I impactan contra la
+placa II (paralela a la I) con probabilidad 1 de rebotar y por lo tanto vuelven a golpear contra
+el reverso de la placa I donde valen las probabilidades p1 de rebotar en la I y p2 de atravesarla
+hacia el medio de ingreso. Obtenga la función de probabilidad de la cantidad de veces N que una
+partícula rebota contra la placa II.
+20. Un hombre tiene un llavero con 6 llaves. Ha olvidado cuál es la de su casa y las va probando una
+por una.
+a) Sea X el número de intentos necesarios hasta abrir la puerta. Halle la función de probabilidad
+de X y su valor esperado.
+b) Supongamos que este hombre está totalmente borracho y en cada intento vuelve a elegir
+una llave al azar de entre las 6, en lugar de separar las que ya probó. Halle la función de
+probabilidad de X, y extraiga conclusiones sobre los beneficios de la sobriedad.
+4
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+

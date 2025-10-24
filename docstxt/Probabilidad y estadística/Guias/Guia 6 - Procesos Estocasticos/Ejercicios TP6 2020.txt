@@ -1,0 +1,2332 @@
+Probabilidad y Estadística
+ITBA
+Ejercicios Resueltos TP6
+Índice
+1. Ejercicio 3
+2
+1.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2. Ejercicio 17
+6
+2.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2.3. Item c . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+3. Ejercicio 22
+9
+3.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.2. Item b1
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.3. Item b2
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.4. Item b3
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.5. Item b4
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3.6. Item c . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3.7. Item c1
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+3.8. Item c2
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.9. Item c3
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+3.10. Item c4
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+4. Ejercicio 25
+15
+4.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+4.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+Lucio José Pantazis
+93.24
+1
+
+[Descripción de la imagen: el índice de la escuela de Nueva York]
+
+Probabilidad y Estadística
+ITBA
+1.
+Ejercicio 3
+Enunciado
+Suponga un proceso estocástico en tiempo discreto con espacio de estados discreto denido de la siguiente
+manera:
+Xn+1 = Xn + Zn
+para n tomando los valores 0, 1, 2, ... (el tiempo discreto) y con X0 = 0. Las variables aleatorias Zn se suponen
+independientes, e igualmente distribuidas con recorrido {−2, −1, 0, 1, 2} con función de probabilidad
+pZ(z) = P(Z = z) tal que pZ(−2) = pZ(2) = 0,1, pZ(−1) = pZ(1) = 0,25 y pZ(0) = 0,3.
+a) Obtener la distribución de probabilidades de Xn para n tomando los valores 1, 2 y 3.
+b) Calcular E(Xn) y V (Xn).
+Resolución
+1.1.
+Item a
+La primer consigna nos induce a utilizar una herramienta muy útil para un análisis inicial de cualquier proceso
+estocástico: visualizar los primeros instantes de tiempo para detectar patrones en el comportamiento.
+Tenemos como dato que X0 = 0. En base a este valor inicial se desarrolla el proceso. A partir de ese momento,
+se tiene:
+Xn+1 = Xn + Zn,
+∀n ≥0
+Es decir, si n = 0:
+X1 = X0
+|{z}
+0
++ Z0 ⇒X1 = Z0
+Por lo tanto, al ser iguales como variables aleatorias, ambas son discretas y la distribución de X1 es idéntica a
+la distribución de Z0, es decir:
+RX1 = RZ0 = {−2, −1, 0, 1, 2}
+pX1(−2) = pZ0(−2) = 0,1
+pX1(−1) = pZ0(−1) = 0,25
+pX1(0) = pZ0(0) = 0,3
+pX1(1) = pZ0(1) = 0,25
+pX1(2) = pZ0(2) = 0,1
+Continuando con la ecuación que nos dene el proceso, podemos determinar cómo se comporta X2:
+X2 = X1
+|{z}
+Z0
++ Z1 ⇒X2 = Z0 + Z1
+Es decir, podemos escribir a X2 como la suma de Z1 y Z0. Por lo que su recorrido es:
+RX2 = {−4, −3, −2, −1, 0, 1, 2, 3, 4}
+Vale aclarar que como Z1 y Z0 son independientes, al cumplirse Z0 = X1, también son independientes Z1 y X1.
+Calculamos estas probabilidades puntuales, utilizando probabilidad total y comenzando por pX2(−4):
+pX2(−4) = P(X2 = −4) = P(Z1+X1 = −4) =
+2
+X
+i=−2
+P(Z1+X1 = −4, X1 = i) =
+2
+X
+i=−2
+P(Z1 = −4−i, X1 = i)
+IND
+=
+2
+X
+i=−2
+P(Z1 = −4−i)P(X1 = i)
+Notemos que de esta última suma, −4−i < −2 si i ≥−1. Es decir, P(Z1 = −4−i) = 0 si i ≥−1. Por lo tanto,
+pX2(−4) =
+2
+X
+i=−1
+P(Z1 = −4 −i)
+|
+{z
+}
+0
+P(X1 = i)+P(Z1 = −4 −(−2))P(X1 = −2)
+|
+{z
+}
+i=−2
+= P(Z1 = −2)P(X1 = −2) = 0,12 = 0,01
+Lucio José Pantazis
+93.24
+2
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+Notemos que en este cálculo, muchos términos se anulan y sólo uno de ellos es de importancia. Esto obedece a
+cierta intuición de que para que Z1 + X1 = −4, siguiendo sus recorridos se puede dar únicamente en el caso en que
+Z1 = X1 = −2. El teorema de probabilidad total nos asiste en el caso en que esta progresión de eventos no es tan
+trivial.
+Equivalentemente, obviando las probabilidades nulas, podemos proceder con el resto de las probabilidades
+puntuales:
+pX2(−3) :
+pX2(−3) =
+2
+X
+i=−2
+P(Z1 = −3 −i)P(X1 = i) = P(Z1 = −1)
+|
+{z
+}
+0,25
+P(X1 = −2)
+|
+{z
+}
+0,1
++ P(Z1 = −2)
+|
+{z
+}
+0,1
+P(X1 = −1)
+|
+{z
+}
+0,25
+= 2 · 0,25 · 0,1 = 0,05
+pX2(−2) :
+pX2(−2) = P(Z1 = 0)
+|
+{z
+}
+0,3
+P(X1 = −2)
+|
+{z
+}
+0,1
++ P(Z1 = −1)
+|
+{z
+}
+0,25
+P(X1 = −1)
+|
+{z
+}
+0,25
++ P(Z1 = −2)
+|
+{z
+}
+0,1
+P(X1 = 0)
+|
+{z
+}
+0,3
+= 2 · 0,1 · 0,3 + 0,252 = 0,1225
+pX2(−1) :
+pX2(−1) = P(Z1 = 1)
+|
+{z
+}
+0,25
+P(X1 = −2)
+|
+{z
+}
+0,1
++ P(Z1 = 0)
+|
+{z
+}
+0,3
+P(X1 = −1)
+|
+{z
+}
+0,25
++ P(Z1 = −1)
+|
+{z
+}
+0,25
+P(X1 = 0)
+|
+{z
+}
+0,3
++ P(Z1 = −2)
+|
+{z
+}
+0,1
+P(X1 = 1)
+|
+{z
+}
+0,25
+= 0,2
+Para calcular pX2(0), usaremos la simetría respecto del cero de la distribución pZ = pZ1 = pX1:
+pX2(0) =
+2
+X
+i=−2
+P(Z1 = 0 −i)P(X1 = i) =
+2
+X
+i=−2
+pZ(−i) · pZ(i) =
+2
+X
+i=−2
+p2
+Z(i) = 0,235
+pX2(1) :
+pX2(1) = P(Z1 = 2)
+|
+{z
+}
+0,1
+P(X1 = −1)
+|
+{z
+}
+0,25
++ P(Z1 = 1)
+|
+{z
+}
+0,25
+P(X1 = 0)
+|
+{z
+}
+0,3
++ P(Z1 = 0)
+|
+{z
+}
+0,3
+P(X1 = 1)
+|
+{z
+}
+0,25
++ P(Z1 = −1)
+|
+{z
+}
+0,25
+P(X1 = 2)
+|
+{z
+}
+0,1
+= 0,2
+pX2(2) :
+pX2(2) = P(Z1 = 2)
+|
+{z
+}
+0,1
+P(X1 = 0)
+|
+{z
+}
+0,3
++ P(Z1 = 1)
+|
+{z
+}
+0,25
+P(X1 = 1)
+|
+{z
+}
+0,25
++ P(Z1 = 0)
+|
+{z
+}
+0,3
+P(X1 = 2)
+|
+{z
+}
+0,1
+= 0,1225
+pX2(3) :
+pX2(3) = P(Z1 = 2)
+|
+{z
+}
+0,1
+P(X1 = 1)
+|
+{z
+}
+0,25
++ P(Z1 = 1)
+|
+{z
+}
+0,25
+P(X1 = 2)
+|
+{z
+}
+0,1
+= 0,05
+pX2(4) :
+pX2(4) = P(Z1 = 2)
+|
+{z
+}
+0,1
+P(X1 = 2)
+|
+{z
+}
+0,1
+= 0,01
+Notar que la distribución de X2 también es simétrica respecto del cero. Es decir, pX2(i) = pX2(−i) para todo i.
+Esto se debe a que se suman dos variables simétricas respecto del cero. Esto se puede generalizar a cualquier suma
+nita de variables simétricas. Por lo tanto, como:
+X3 =
+X2
+|{z}
+simétrica
++
+Z2
+|{z}
+simétrica
+Lucio José Pantazis
+93.24
+3
+
+[Descripción de la imagen: la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de | Transcripción de la imagen: Probabilidad y Estadística ITBA
+
+Notemos que en este cálculo, muchos términos se anulan y sólo uno de ellos es de importancia. Esto obedece a
+
+cierta intuición de que para que Z1 + X1 = —4, siguiendo sus recorridos se puede dar únicamente en el caso en que
+Zi = X1 = —2. El teorema de probabilidad total nos asiste en el caso en que esta progresión de eventos no es tan
+trivial.
+
+Equivalentemente, obviando las probabilidades nulas, podemos proceder con el resto de las probabilidades
+puntuales:
+
+" pX2(_3) -
+2
+Px-(-3) = Y) P(Z1 = -3 - i)P(X1 =1) = P(Z1 =-1)P(X1 = -2) + P(Z = -2)P(X1 = —1) =2-0,25 - 0,1 =0,05
+i=—92 —]ÑÑÑQ——— — ——————
+0,25 0,1 0,1 0,25
+
+Px,(—2) = P(Z1 = 0)P(X1 = —2) + P(Zi = -1)P(X1 = —1) + P(Z1 = -2)P(X1 =0) =2:0,1-0,3+0,25” = 0,1225
+
+0,25 o 0,3 0,25 0,25 0,3 o 0,25
+m Para calcular px,(0), usaremos la simetría respecto del cero de la distribución pz = pz, = Px
+2 2 2
+Px,(0) = D. P(Z1 =0 - i)P(X1 =1) = Y pz(—1) -pz(i) = Y > p2(i) =0,235
+i=—-2 i=—2 i=—2
+" Px>(1):
+px2(1) = P(Z1 = 2)P(X1 = —1) + P(Zl = 1)P(X1 = 0) —|-P(Z1 = 0)P(X1 = 1) | P(Z1 = 1)P(X1 = 2) =0,2
+———]] — — —
+0,1 0,25 0,25 0,3 0,3 0,25 0,25 0,1
+" Px>(2):
+PXo (2) = P(Z1 = 2)P(X1 = 0) + P(Zl = 1)P(X1 = 1) + P(Z1 = 0)P(X1 = 2) = 0,1225
+0,1 0,3 0,25 0,25 0,3 0,1
+" Px:(3):
+PXo (3) = P(Z1 = 2)P(X1 = 1) + P(Zl = 1)P(X1 = 2) = 0,05
+0,1 0,25 0,25 0,1
+" Px-(4):
+
+Notar que la distribución de X9 también es simétrica respecto del cero. Es decir, px, (1) = px,(—?) para todo 7.
+Esto se debe a que se suman dos variables simétricas respecto del cero. Esto se puede generalizar a cualquier suma
+finita de variables simétricas. Por lo tanto, como:
+
+X3= X2 + Z
+— —
+
+simétrica — simétrica
+
+Lucio José Pantazis 93.24 3]]
+
+Probabilidad y Estadística
+ITBA
+podemos concluir que X3 también será simétrica, y podemos reducir sus cálculos a los valores no negativos y en
+base a ellos, deducir la parte negativa. Más aún, podemos restringirnos únicamente a la parte positiva, por la
+siguiente propiedad:
+P(X3 < 0) + P(X3 = 0) + P(X3 > 0) = 1 ⇒P(X3 = 0) + 2 · P(X3 > 0) = 1 ⇒P(X3 = 0) = 1 −2 · P(X3 > 0)
+Como X3 = X2 + Z2, el recorrido será
+RX3 = {−6, −5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5, 6}
+Por el razonamiento anterior, podemos calcular únicamente pX3(k) con 1 ≤k ≤6, haciendo probabilidad total
+con los valores de X2:
+pX3(6) :
+pX3(6) =
+4
+X
+i=−4
+P(Z2 = 6 −i)P(X2 = i) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = 4)
+|
+{z
+}
+0,01
+= 0,001 = pX3(−6)
+pX3(5) :
+pX3(5) =
+4
+X
+i=−4
+P(Z2 = 5 −i)P(X2 = i) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = 3)
+|
+{z
+}
+0,05
++ P(Z2 = 1)
+|
+{z
+}
+0,25
+P(X2 = 4)
+|
+{z
+}
+0,01
+= 0,0075 = pX3(−5)
+pX3(4) :
+pX3(4) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = 2)
+|
+{z
+}
+0,1225
++ P(Z2 = 1)
+|
+{z
+}
+0,25
+P(X2 = 3)
+|
+{z
+}
+0,05
++ P(Z2 = 0)
+|
+{z
+}
+0,3
+P(X2 = 4)
+|
+{z
+}
+0,01
+= 0,02775 = pX3(−4)
+pX3(3) :
+pX3(3) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = 1)
+|
+{z
+}
+0,2
++ P(Z2 = 1)
+|
+{z
+}
+0,25
+P(X2 = 2)
+|
+{z
+}
+0,1225
++ P(Z2 = 0)
+|
+{z
+}
+0,3
+P(X2 = 3)
+|
+{z
+}
+0,05
++ P(Z2 = −1)
+|
+{z
+}
+0,25
+P(X2 = 4)
+|
+{z
+}
+0,01
+= 0,066625 = pX3(−3)
+pX3(2) :
+pX3(2) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = 0)
+|
+{z
+}
+0,235
++P(Z2 = 1)
+|
+{z
+}
+0,25
+P(X2 = 1)
+|
+{z
+}
+0,2
++P(Z2 = 0)
+|
+{z
+}
+0,3
+P(X2 = 2)
+|
+{z
+}
+0,1225
++P(Z2 = −1)
+|
+{z
+}
+0,25
+P(X2 = 3)
+|
+{z
+}
+0,05
++P(Z2 = −2)
+|
+{z
+}
+0,1
+P(X2 = 4)
+|
+{z
+}
+0,01
+pX3(2) = 0,12375 = pX3(−2)
+pX3(1) :
+pX3(1) = P(Z2 = 2)
+|
+{z
+}
+0,1
+P(X2 = −1)
+|
+{z
+}
+0,2
++P(Z2 = 1)
+|
+{z
+}
+0,25
+P(X2 = 0)
+|
+{z
+}
+0,235
++P(Z2 = 0)
+|
+{z
+}
+0,3
+P(X2 = 1)
+|
+{z
+}
+0,2
++P(Z2 = −1)
+|
+{z
+}
+0,25
+P(X2 = 2)
+|
+{z
+}
+0,1225
++P(Z2 = −2)
+|
+{z
+}
+0,1
+P(X2 = 3)
+|
+{z
+}
+0,05
+pX3(1) = 0,174375 = pX3(−1)
+Por otro lado:
+P(X3 = 0) = 1 −2 · P(X3 > 0) = 1 −2
+6
+X
+i=1
+P(X3 = i) = 1 −2(0,001 + 0,0075 + 0,02775 + 0,066625 + 0,12375 + 0,174375) = 0,198
+Comentario: Que X1 y Z0 sean iguales como variables aleatorias, es más fuerte que el hecho de que tengan la
+misma distribución. X1 = Z0 implica que siempre que Z0 tome un valor k, X1 tomará también el valor k. Es decir,
+todos los eventos que involucren a X1 son iguales a los eventos equivalentes de Z0. Sin embargo, por ejemplo, X1
+tiene la misma distribución que Z1, pero no son iguales como variables, lo que dice es que P(Z1 = k) = P(X1 = k),
+a pesar de que Z1 y X1 pueden tomar distintos valores.
+Lucio José Pantazis
+93.24
+4
+
+[Descripción de la imagen: la fórmula de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+1.2.
+Item b
+En el último ítem se pedían las distribuciones de Xn para los primeros instantes de tiempo. En este caso, nos
+piden menos datos sobre las distribuciones (valor esperado y varianza), pero para todos los instantes de tiempo.
+Para realizar este análisis, como en muchos procesos estocásticos, es de mucha utilidad expresar el proceso como
+una suma de variables, que permita analizar lo que sucede en cada instante de tiempo.
+Para expresar el proceso Xn como una suma, volvamos a algunas ecuaciones obtenidas en el ítem anterior:
+X0 = 0
+X1 = X0 + Z0 ⇒X1 = Z0
+X2 = X1 + Z1 ⇒X2 = Z0 + Z1
+X3 = X2 + Z2 ⇒X3 = Z0 + Z1 + Z2
+Podemos inducir que cada variable del proceso {Xn}n∈N se puede escribir en términos del proceso {Zn}n∈N0.
+Más aún, hemos logrado expresarlo como suma de variables independientes, del siguiente modo:
+Xn =
+n−1
+X
+i=0
+Zi,
+n ∈N
+El hecho de que sea una suma nos facilita el cálculo del valor esperado, justamente por la propiedad de linealidad:
+E(Xn) = E
+ n−1
+X
+i=0
+Zi
+!
+=
+n−1
+X
+i=0
+E(Zi)
+| {z }
+0
+= 0
+Esto tiene sentido ya que habíamos deducido que las variables Xn debían ser simétricas respecto del cero.
+Aunque esto no lo conrma (habría que calcular el coeciente de simetría), le da consistencia al resultado ya que
+si son simétricas respecto del cero, su valor esperado es nulo.
+El hecho de que sean independientes nos simplica el cálculo de la varianza, ya que la covarianza entre los
+pares de variables distintas da cero como resultado y se puede escribir la varianza de la suma como la suma de las
+varianzas:
+V (Xn) = V
+ n−1
+X
+i=0
+Zi
+!
+IND
+=
+n−1
+X
+i=0
+V (Zi)
+Como además las Zi son ídenticamente distribuidas, la varianza coincide para todos los valores de i ∈N0, es
+decir, podemos :
+V (Xn) =
+n−1
+X
+i=0
+V (Zi) =
+n−1
+X
+i=0
+V (Z0)
+|
+{z
+}
+n términos
+= n · V (Z0)
+Por lo que sólo nos resta calcular V (Z0):
+V (Z0) = E(Z2
+0) −E(Z0)
+| {z }
+0
+2 = E(Z2
+0) =
+2
+X
+i=−2
+i2P(Z0 = i) = 4 · 0,1 + 1 · 0,25 + 0 · 0,3 + 1 · 0,25 + 4 · 0,1 = 1,3
+Por lo tanto,
+V (Xn) = 1,3 · n
+Lucio José Pantazis
+93.24
+5
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+2.
+Ejercicio 17
+Enunciado
+Considere una cadena de Markov con espacio de estados E = {a, b, c} y matriz de transición de probabilidades
+dada por
+P =
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+
+a) Calcular P(X2 = a|X1 = b, X0 = c)
+b) Calcular P(X35 = a|X33 = a)
+c) Estimar P(X200 = a|X0 = b)
+Resolución
+2.1.
+Item a
+Por ser cadena de Markov, la probabilidad condicional depende únicamente del último tiempo del condicionante.
+Es decir,
+P(X2 = a|X1 = b, X0 = c) = P(X2 = a|X1 = b)
+Esta probabilidad se obtiene en la primer la y segunda columna de la matriz de transición. Es decir,
+P(X2 = a|X1 = b, X0 = c) = P(X2 = a|X1 = b) = 1
+2.2.
+Item b
+Por ser cadena de Markov homogénea, las matrices de transición se mantienen constantes para todo instante
+de tiempo n. Por lo tanto, la probabilidad pedida describe todas las formas de mantenerse en el estado a luego de
+dos pasos.
+Hay dos maneras de realizar este cálculo, una se basa en cáclulos de probabilidades básicos:
+P(X35 = a|X33 = a) = P(X35 = a, X33 = a)
+P(X33 = a)
+Por el teorema de probabilidad total, podríamos considerar todos los estados por los que puede pasar en el
+instante n = 34 para reescribir el numerador:
+P(X35 = a, X33 = a) = P(X35 = a, X34 = a, X33 = a)+P(X35 = a, X34 = b, X33 = a)+P(X35 = a, X34 = c, X33 = a)
+Cada uno de estos términos se puede reescribir del siguiente modo:
+P(X35 = a, X34 = a, X33 = a) = P(X35 = a, X34 = a, X33 = a)
+P(X34 = a, X33 = a)
+|
+{z
+}
+P(X35=a|X34=a,X33=a)
+· P(X34 = a, X33 = a)
+P(X33 = a)
+|
+{z
+}
+P(X34=a|X33=a)
+· P(X33 = a)
+Como Xn es una cadena de Markov, en el primer factor se puede prescindir del último evento del condicionante.
+Es decir,
+P(X35 = a, X34 = a, X33 = a) = P(X35 = a|X34 = a) · P(X34 = a|X33 = a) · P(X33 = a)
+Del mismo modo,
+Lucio José Pantazis
+93.24
+6
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+P(X35 = a, X34 = b, X33 = a) = P(X35 = a|X34 = b) · P(X34 = b|X33 = a) · P(X33 = a)
+P(X35 = a, X34 = c, X33 = a) = P(X35 = a|X34 = c) · P(X34 = c|X33 = a) · P(X33 = a)
+Por lo tanto, como P(X33 = a) es un factor común en el numerador y aparece en el denominador:
+P(X35 = a|X33 = a)
+=
+P(X35 = a, X33 = a)
+P(X33 = a)
+=
+P(X35 = a|X34 = a) · P(X34 = a|X33 = a) · P(X33 = a)
+P(X33 = a)
++
++
+P(X35 = a|X34 = b) · P(X34 = b|X33 = a) · P(X33 = a)
+P(X33 = a)
++
++
+P(X35 = a|X34 = c) · P(X34 = c|X33 = a) · P(X33 = a)
+P(X33 = a)
+=
+P(X35 = a|X34 = a) · P(X34 = a|X33 = a)+
++
+P(X35 = a|X34 = b) · P(X34 = b|X33 = a)+
++
+P(X35 = a|X34 = c) · P(X34 = c|X33 = a)
+=
+0,32 + 0,4 · 1 + 0,3 · 0 = 0,49
+Este desarrollo permite obtener lo intuitivo, que hay tres opciones para que el proceso se mantenga en a luego
+de dos pasos:
+a
+|{z}
+n=33
+→
+a
+|{z}
+n=34
+→
+a
+|{z}
+n=35
+a
+|{z}
+n=33
+→
+b
+|{z}
+n=34
+→
+a
+|{z}
+n=35
+a
+|{z}
+n=33
+→
+c
+|{z}
+n=34
+→
+a
+|{z}
+n=35
+y la probabilidad pedida se obtiene sumando las probabilidades respectivas a estas tres opciones.
+Otra manera más directa de resolverlo, es obteniendo la primer coordenada de la segunda potencia de la matriz
+de transiciones P:
+P 2 =
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+×
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+⇒(P 2)11 = 0,32 + 0,4 · 1 + 0,3 · 0 = 0,49
+Esta herramienta es mucho más eciente y es la que se sugiere usar en momentos donde el tiempo apremia.
+Sin embargo, el anterior desarrollo permite entender porqué esta herramienta es válida y trae aparejadas conceptos
+claves de la materia.
+Además, el procedimiento anterior sirve para cualquier proceso estocástico, las particularidades de que haya
+sido una cadena de Markov homogénea, nos simplicó las cuentas. Sin embargo, en el caso de tener un proceso más
+complejo, el cálculo de las probabilidades deberá adecuarse a dicha complejidad.
+2.3.
+Item c
+Pide estimar P(X200 = a|X0 = b), y por suerte pide estimarlo, porque sino, deberíamos calcular la potencia
+P 200 y buscar la coordenada de la segunda la y primer columna.
+Si la cadena tiene una distribución estacionaria, su primer componente estimará la probabilidad de estar en el
+estado a a largo plazo, para cualquier distribución inicial (en este caso, X0 = b).
+Para determinar la distribución estacionaria, debe existir un límite para la matriz P n a medida que n se hace
+grande. En caso de existir este límite, es una matriz con las idénticas y la distribución estacionaria coincide con
+este vector la.
+Lucio José Pantazis
+93.24
+7
+
+[Descripción de la imagen: la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de]
+
+Probabilidad y Estadística
+ITBA
+En el caso de que la cadena sea regular, esta distribución estacionaria se puede calcular hallando un autovector
+a izquierda de la matriz de transiciones P de autovalor 1.
+Para eso, primero debemos probar que la cadena es regular, es decir, que existe una potencia de P con todos
+sus valores positivos. Para lograr esto, conviene notar lo siguiente: Si P k > 0, entonces P m > 0 para todo m ≥k.
+Es decir, para hacer más eciente la búsqueda de dicha potencia, podemos tratar de buscar potencias más altas
+más rápido. Para eso, podemos hallar primero P 2 = P × P, una vez obtenido esta potencia, en vez de hallar P 3,
+podemos hallar P 4 = P 2 × P 2, luego P 8 = P 4 × P 4, y así sucesivamente hasta encontrar una potencia de la matriz
+P compuesta únicamente por valores positivos.
+Primero calculemos P 2:
+P 2 =
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+×
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+=
+
+
+0,49
+0,21
+0,3
+0,3
+0,4
+0,3
+0,3
+0,21
+0,49
+
+
+Es decir, P 2 tiene todas sus coordenadas positivas, por lo que la cadena es regular y por lo tanto, tiene sentido
+calcular ⃗π = (a, b, c) su autovector (con autovalor 1) a izquierda. Como además, tiene que ser una distribución de
+probabilidad, sus componentes deben sumar 1:
+ (a, b, c) = (a, b, c) × P
+a + b + c = 1
+
+⇒
+
+
+
+
+
+
+
+(a, b, c) = (a, b, c) ×
+
+
+0,3
+0,4
+0,3
+1
+0
+0
+0
+0,3
+0,7
+
+
+a + b + c = 1
+
+
+
+
+
+
+
+⇒
+
+
+
+
+
+
+
+a = 0,3a + b
+b = 0,4a + 0,3c
+c = 0,3a + 0,7c
+a + b + c = 1
+
+
+
+
+
+
+
+Como las primeras 3 ecuaciones son linealmente independientes, podemos prescindir de alguna de ellas:
+
+
+
+
+
+
+
+a = 0,3a + b
+b = 0,4a + 0,3c
+c = 0,3a + 0,7c
+a + b + c = 1
+
+
+
+
+
+
+
+⇒
+
+
+
+0,7a = b
+b = 0,4a + 0,3c
+a + b + c = 1
+
+
+⇒
+
+
+
+0,7a = b
+0,7a −0,4a = 0,3c
+a + 0,7a + c = 1
+
+
+⇒
+
+
+
+0,7a = b
+a = c
+1,7a + a = 1
+
+
+⇒
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b = 7
+27
+c = 10
+27
+a = 10
+27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Es decir, la distribución estacionaria es ⃗π =
+  10
+27, 7
+27, 10
+27
+
+. Sin embargo, esto no es lo pedido. Nos piden la
+probabilidad de estar a largo plazo en el estado a. Es decir,
+P(X200 = a|X0 = b) ≈10
+27
+Comentario: Que la distribución estacionaria sea π =
+  10
+27, 7
+27, 10
+27
+
+, nos permite deducir lo siguiente:
+l´ım
+n→∞P n =
+
+
+
+
+
+
+
+
+
+
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+
+
+
+
+
+
+
+
+
+
+Es decir, como la distribución inicial es ⃗π0 = (0, 1, 0) y podemos suponer que P 200 es una potencia suciente-
+mente grande, podemos aproximar esa potencia por el límite:
+⃗π0 × P 200 ≈(0, 1, 0) ×
+
+
+
+
+
+
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+
+
+
+
+
+
+=
+10
+27, 7
+27, 10
+27
+
+⇒P(X200 = a|X0 = b) ≈10
+27
+Lucio José Pantazis
+93.24
+8
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+Este resultado no aporta nada nuevo a lo ya obtenido anteriormente. Sin embargo, permite ver que la proba-
+bilidad de estar en el estado a a largo plazo es independiente de la distribución inicial. Es decir, cualquier vector
+inicial ⃗π0 = (pa, pb, pc) ≥0 con pa + pb + pc = 1, cumplirá lo mismo:
+⃗π0×P 200 ≈(pa, pb, pc)×
+
+
+
+
+
+
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+10
+27
+7
+27
+10
+27
+
+
+
+
+
+
+=
+
+(pa + pb + pc)10
+27, (pa + pb + pc) 7
+27, (pa + pb + pc)10
+27
+
+=
+10
+27, 7
+27, 10
+27
+
+⇒P(X200 = a|⃗π0) ≈10
+27
+3.
+Ejercicio 22
+Enunciado
+Considere una cadena de Markov con espacio de estados E = {0, 1, 2, 3, 4, 5, 6} y matriz de transición de
+probabilidades dada por
+P =
+
+
+
+
+
+
+
+
+
+
+1
+5
+3
+5
+0
+0
+1
+5
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+3
+0
+2
+3
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+
+
+
+
+
+
+
+
+
+
+a) Represente el diagrama de transición de estados de la cadena.
+b) Por inspección del diagrama verique que:
+1) el conjunto de estados tiene tres subconjuntos disjuntos (se denominan clases) que corresponden a estados
+comunicados entre ellos.
+2) Hay dos clases que son cerradas y recurrentes, una vez que uno de los estados de la clase cerrada es
+alcanzado entonces todos los estados subsiguientes de la cadena corresponden a esa clase.
+3) La clase restante es transiente, el proceso puede terminar saliendo de ella.
+4) Una de las clases cerradas es periódica de periodo 3, la otra no es periódica.
+c) Usando solo el álgebra del cálculo de probabilidades y la suma de alguna serie numérica demuestre que si el
+proceso comienza en:
+1) el estado 0 entonces la probabilidad de alcanzar el estado 6 es 1
+4
+2) el estado 1 entonces la probabilidad de alcanzar el estado 3 es 1.
+3) el estado 1 entonces el numero promedio de pasos hasta llegar al estado 3 es 3.
+4) el estado 1 entonces a largo plazo la probabilidad de que el proceso se encuentre en el estado 2 es 3
+8.
+Son datos
+∞
+X
+k=0
+qk =
+1
+1 −q
+|q| < 1
+∞
+X
+k=0
+kqk =
+q
+(1 −q)2
+|q| < 1
+Lucio José Pantazis
+93.24
+9
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+Resolución
+3.1.
+Item a
+El diagrama de transición es el siguiente:
+3.2.
+Item b1
+Cuando se reere a un conjunto de estados comunicados entre sí, hay que hacer hincapié en el hecho de que de
+cualquiera de los estados del conjunto, se pueda llegar con probabilidad positiva a otro estado del conjunto en un
+tiempo nito. Es decir, para dos estados i ̸= j del conjunto, tiene que existir un valor k ∈N tal que (P k)ij > 0.
+Por ejemplo, el conjunto A = {0, 1} no es una clase, ya que (P)01 = 3
+5 > 0, pero (P k)10 = 0 para todo valor
+de k ∈N. Es decir, se puede acceder al estado 1 desde el estado 0, pero no se puede acceder al estado 0 desde el
+estado 1.
+Por lo tanto, las tres clases son:
+C1 = {0}
+C2 = {1, 2, 3}
+C3 = {4, 5, 6}
+Notemos que todos los estados de estas clases están comunicadas entre sí.
+3.3.
+Item b2
+Las clases cerradas y recurrentes son C2 y C3. Esto se debe a la ausencia de echas que van de estados de C2
+al resto de los estados. Lo mismo ocurre con la clase C3.
+3.4.
+Item b3
+La otra clase, C1 es transiente ya que la probabilidad de salir de la clase es positiva. Más aún, esto puede ocurrir
+en un único paso, ya que P01 = 3
+5. Si bien calcular todos los casos en los que se sale de la clase C1 puede resultar
+complicado, lo que podemos asegurar es que la probabilidad es mayor que 3
+5 y por lo tanto, positiva.
+Lucio José Pantazis
+93.24
+10
+
+[Descripción de la imagen: el diagrama de las dos fases del modelo]
+
+Probabilidad y Estadística
+ITBA
+3.5.
+Item b4
+Se puede ver que C3 es la clase periódica, y además, de período 3. Esto se debe a lo siguiente, tomando un
+estado i ∈C3 :
+P(Xn+m = i|Xn = i) =
+ 1
+si m = 3 · k
+0
+caso contrario
+Por otro lado, C2 no es periódica, ya que las probabilidades de volver a un mismo estado deben ser siempre 0
+o 1 según el período. Sin embargo, por ejemplo:
+P(Xn+2 = 1|Xn = 1) = 1
+3 ̸∈{0, 1}
+3.6.
+Item c
+Para todos estos ítems, siguiendo la otra guía de ejercicios resueltos de la guía 6, notaremos del siguiente modo
+una serie de probabilidades (para cada par de estados i, j) que nos será de utilidad:
+qij(n) = P
+ 
+Xn = j,
+n−1
+\
+m=1
+Xm ̸= j|X0 = i
+!
+En resumidas cuentas, esta probabilidad corresponde al evento en el que se llega por primera vez al estado
+j desde el estado i en n pasos.
+Vamos a poner un par de ejemplos:
+q13(4) = P(X4 = 3, X3 ̸= 3, X2 ̸= 3, X1 ̸= 3|X0 = 1). Notemos que hay sólo una forma de que esto suceda:
+X0 = 1 →X1 = 2 →X2 = 1 →X3 = 2 →X4 = 3
+Es decir,
+q13(4) = p12 · p21 · p12 · p23 = 2
+9
+Comentario: Esta multiplicación también se puede obtener de un modo más deductivo:
+q13(4) = P(X4 = 3, X3 = 2, X2 = 1, X1 = 2|X0 = 1) = P(X4 = 3, X3 = 2, X2 = 1, X1 = 2, X0 = 1)
+P(X0 = 1)
+Multiplicando y dividiendo por los términos adecuados, podemos transformarlo en una multiplicación de
+condicionales:
+P(X4 = 3, X3 = 2, X2 = 1, X1 = 2, X0 = 1)
+P(X0 = 1)
+·P(X3 = 2, X2 = 1, X1 = 2, X0 = 1)
+P(X3 = 2, X2 = 1, X1 = 2, X0 = 1)·P(X2 = 1, X1 = 2, X0 = 1)
+P(X3 = 2, X1 = 2, X0 = 1)·P(X1 = 2, X0 = 1)
+P(X1 = 2, X0 = 1)
+P(X4 = 3|X3 = 2, X2 = 1, X1 = 2, X0 = 1) · P(X3 = 2|X2 = 1, X1 = 2, X0 = 1) · P(X2 = 1|X1 = 2, X0 = 1) · P(X1 = 2|X0 = 1)
+Por ser un proceso de Markov, las probabilidades se pueden basar únicamente en el último evento. Es decir:
+q13(4) = P(X4 = 3|X3 = 2)·P(X3 = 2|X2 = 1)·P(X2 = 1|X1 = 2)·P(X1 = 2|X0 = 1) = p23·p12·p21·p12 = 2
+9
+q03(2) = P(X2 = 3, X1 ̸= 3|X0 = 0). Notemos que esto no puede suceder, ya que el camino más rápido entre
+los estados 0 y 3 es:
+X0 = 0 →X1 = 1 →X2 = 2 →X3 = 3
+Por lo tanto, no se puede llegar en 2 pasos del estado 0 al 3, decimos que q03(2) = 0.
+Lucio José Pantazis
+93.24
+11
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+q45(4) = P(X4 = 5, X3 ̸= 5, X2 ̸= 5, X1 ̸= 5|X0 = 4). En este caso, hay un camino que llega del 4 al 5 en 4
+pasos:
+X0 = 4 →X1 = 5 →X2 = 6 →X3 = 4 →X4 = 5
+Sin embargo, no cumple la condición de que sea la primera vez que llega al estado 5 desde el estado 4. De
+este modo, q45(4) = 0, pero, como se llega en un paso del 4 al 5, q45(1) = p45 = 1.
+Por último, analicemos q06(6). Hay dos caminos para llegar del 0 al 6 en 6 pasos:
+X0 = 0 →X1 = 4 →X2 = 5 →X3 = 6 →X4 = 4 →X5 = 5 →X6 = 6
+X0 = 0 →X1 = 0 →X2 = 0 →X3 = 0 →X4 = 4 →X5 = 5 →X6 = 6
+Sin embargo, notemos que el primer camino se llega en 6 pasos, pero no por primera vez. Por lo tanto, el
+evento sólo se corresponde con el segundo camino:
+q06(6)
+=
+P(X6 = 6, X5 ̸= 6, X4 ̸= 6, X3 ̸= 6, X2 ̸= 6, X1 ̸= 6|X0 = 0)
+=
+P(X6 = 6, X5 = 5, X4 = 4, X3 = 0, X2 = 0, X1 = 0|X0 = 0)
+=
+p3
+00 · p04 · p45 · p46 =
+1
+625
+Cuando no especicamos el número de pasos, nos referimos a la probabilidad de llegar en algún momento desde
+el estado i al estado j:
+qij = P
+ +∞
+[
+k=1
+Xk = j
+X0 = i
+!
+Esta unión no es disjunta, y aquí se ve la utilidad de la denición de qij(n). Considerar los eventos en los que
+se llega por primera vez en n pasos, hace que los eventos sean mutuamente excluyentes y permite transformar
+esta probabilidad en una suma:
+qij = P
+ +∞
+[
+n=1
+Xn = j
+X0 = i
+!
+=
++∞
+X
+n=1
+qij(n)
+3.7.
+Item c1
+Con las deniciones anteriores, nos piden
+q06 =
++∞
+X
+n=1
+q06(n)
+Notemos que el proceso no puede llegar al 6 desde el 0 en menos de 3 pasos, por lo que q06(1) = q06(2) = 0:
+q06 =
++∞
+X
+n=1
+q06(n) = q06(1)
+| {z }
+0
++ q06(2)
+| {z }
+0
++
++∞
+X
+n=3
+q06(n) =
++∞
+X
+n=3
+q06(n)
+Además, el proceso no puede llegar del 0 al 6 sin pasar por el 4, entonces, la primera vez que pase por el 6 está
+vinculada con la primera vez que llegue al 4. Más aún, por la dinámica del proceso, pasa exactamente 2 pasos antes
+por el 4. Es decir:
+q06(n) = q04(n −2) · p45
+|{z}
+1
+p56
+|{z}
+1
+⇒q06 =
++∞
+X
+n=3
+q04(n −2) k=n−2
+=
++∞
+X
+k=1
+q04(k)
+Lucio José Pantazis
+93.24
+12
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+Analicemos q04(k). Sería la probabilidad de que el proceso llegue por primera vez del 0 al 4 en k pasos. Esto
+sólo se puede dar si los k −1 pasos anteriores se mantuvo en el estado 0 y luego pasó al estado 4. Es decir,
+q04(k) = pk−1
+00
+· p04 = 1
+5
+k−1
+· 1
+5 = 1
+5
+k
+⇒q06 =
++∞
+X
+k=1
+1
+5
+k
+Notemos que resultó una serie que no es exactamente la dada como dato, ya que esa serie comienza desde cero.
+Por lo tanto, sumaremos y restaremos el término pertinente:
+q06 =
+ +∞
+X
+k=1
+1
+5
+k!
++ 1
+5
+0
+−1
+5
+0
+=
+ +∞
+X
+k=0
+1
+5
+k!
+−1 =
+1
+1 −1
+5
+−1 = 1
+4
+De este modo, obtuvimos lo pedido.
+3.8.
+Item c2
+Ahora nos piden la probabilidad dada por q13:
+q13 =
++∞
+X
+n=1
+q13(n)
+Nos sería de mucha utilidad ir viendo que sucede con los primeros valores de n para ver si logramos obtener un
+patrón.
+n = 1 : notemos que no se puede llegar del estado 1 al estado 3 en 1 paso por lo que q13(1) = 0
+n = 2 : esto se puede dar si se cumple la siguiente progresión: 1 →2 →3. Entonces, q13(2) = 2
+3
+n = 3 : notemos que no se puede llegar del estado 1 al estado 3 en 3 pasos, ya que debe ciclar entre el estado
+1 y 2 para no llegar en 2 pasos, por lo que q13(3) = 0
+n = 4 : esto se puede dar si se cumple la siguiente progresión: 1 →2 →1 →2 →3. Entonces, q13(4) = 2
+9
+n = 5 : nuevamente, para evitar llegar antes al 3, debe ciclar entre 1 y 2, por lo que q13(5) = 0
+n = 6 : esto se puede dar si se cumplen dos ciclos entre 1 y 2, es decir: 1 →2 →1 →2 →1 →2 →3.
+Entonces, q13(6) = 2
+27
+Así, vamos viendo que los términos impares son nulos y sólo sobreviven los pares n = 2k. Por lo tanto,
+q13 =
++∞
+X
+n=1
+q13(n) =
++∞
+X
+k=1
+q13(2k) h=k−1
+=
++∞
+X
+h=0
+q13(2h + 2)
+Además, podemos ir viendo que para llegar por primera vez al 3 en 2h+2 pasos, tienen que haberse dado antes
+h ciclos entre los estados 1 y 2, luego pasar del 2 al 3. Cada ciclo tiene una probabilidad de 1
+3, por lo tanto:
+q13 =
++∞
+X
+h=0
+q13(2h + 2) =
++∞
+X
+h=0
+1
+3
+h
+· 2
+3 = 2
+3 ·
++∞
+X
+h=0
+1
+3
+h
+= 2
+3 ·
+1
+1 −1
+3
+= 2
+3 · 3
+2 = 1
+Lucio José Pantazis
+93.24
+13
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+3.9.
+Item c3
+Ahora debemos denir una variable aleatoria, que es la siguiente:
+T13 = Cantidad de transiciones hasta llegar por primera vez al estado 3, comenzando desde el estado 1
+Notar que el enunciado pide el valor esperado de T13. T13 es una variable discreta, y podemos deducir a partir
+de su denición, que P(T13 = n) = q13(n), ya que q13(n) representa la probabilidad de llegar del estado 1 por
+primera vez al estado 3 en n pasos. Es decir,
+E(T13) =
++∞
+X
+n=1
+n · P(T13 = n) =
++∞
+X
+n=1
+n · q13(n)
+La ventaja es que descubrimos un patrón para q13(n) en el ítem anterior. Habíamos visto que se anula para los
+impares y que para los pares, vale q13(2k) =
+1
+3
+k−1
+· 2
+3. Por lo tanto,
+E(T13) =
++∞
+X
+n=1
+n · q13(n) =
++∞
+X
+k=1
+2k ·
+1
+3
+k−1
+· 2
+3 = 4 ·
++∞
+X
+k=1
+k
+1
+3
+k
+= 4 ·
+1
+3
+(1 −1
+3)2 = 4 · 3
+4 = 3
+3.10.
+Item c4
+Por último, acá nos piden analizar una probabilidad especíca, no es que en algún momento llegue del estado
+1 al estado 2, porque eso es claramente 1. Justamente, llega del estado 1 al 2 en un paso ya que p12 = 1.
+Aquí hay que estudiar el comportamiento de la siguiente probabilidad:
+P(Xn = 2|X0 = 1),
+n →+∞
+Contar todas las posibles combinaciones a medida que n se hace muy grande puede ser muy dicultoso, justa-
+mente porque se ven dos alternativas, ciclos del tipo 1 →2 →1, o el ciclo 1 →2 →3 →1. Pero además, estos ciclos
+pueden darse de varias formas distintas y en distintos momentos para un n grande. El cálculo se hace inmanejable.
+Por lo tanto, vamos a recurrir a otra alternativa. La cadena Xn no es regular (ya que (P k)10 = 0, ∀k ∈N).
+Sin embargo, una vez en la clase C2 = {1, 2, 3}, la cadena se mantiene dentro de la clase (justamente vimos
+que es cerrada). Entonces podemos considerar una nueva cadena de Markov Yn con estos 3 estados y las mismas
+probabilidades de transición y tendrá la misma dinámica.
+Por lo tanto, consideramos Yn con espacio de estados EY = {1, 2, 3} y matriz de transición dada por:
+PY =
+
+
+0
+1
+0
+1
+3
+0
+2
+3
+1
+0
+0
+
+
+Si esta cadena es regular, tendremos una distribución estacionaria, lo que nos permite calcular:
+l´ım
+n→+∞P(Xn = 2|X0 = 1) =
+l´ım
+n→+∞P(Yn = 2|Y0 = 1)
+Veamos si Yn es regular:
+P 2
+Y =
+
+
+0
+1
+0
+1
+3
+0
+2
+3
+1
+0
+0
+
+×
+
+
+0
+1
+0
+1
+3
+0
+2
+3
+1
+0
+0
+
+=
+
+
+1
+3
+0
+2
+3
+2
+3
+1
+3
+0
+0
+1
+0
+
+⇒P 4
+Y =
+
+
+1
+3
+0
+2
+3
+2
+3
+1
+3
+0
+0
+1
+0
+
+×
+
+
+1
+3
+0
+2
+3
+2
+3
+1
+3
+0
+0
+1
+0
+
+=
+
+
+1
+9
+2
+3
+2
+9
+4
+9
+1
+9
+4
+9
+2
+3
+1
+3
+0
+
+
+Por último:
+P 8
+Y =
+
+
+1
+9
+2
+3
+2
+9
+4
+9
+1
+9
+4
+9
+2
+3
+1
+3
+0
+
+×
+
+
+1
+9
+2
+3
+2
+9
+4
+9
+1
+9
+4
+9
+2
+3
+1
+3
+0
+
+=
+
+
+37
+81
+2
+9
+26
+81
+32
+81
+37
+81
+4
+27
+2
+9
+13
+27
+8
+27
+
+> 0
+Lucio José Pantazis
+93.24
+14
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier]
+
+Probabilidad y Estadística
+ITBA
+Por lo tanto, la cadena es regular y tiene una distribución estacionaria, que coincide con el autovector a izquierda
+de PY de autovalor 1:
+ (a, b, c) = (a, b, c) × PY
+a + b + c = 1
+
+⇒
+
+
+
+
+
+
+
+(a, b, c) = (a, b, c) ×
+
+
+0
+1
+0
+1
+3
+0
+2
+3
+1
+0
+0
+
+
+a + b + c = 1
+
+
+
+
+
+
+
+⇒
+
+
+
+
+
+
+
+a = b
+3 + c
+b = a
+c = 2b
+3
+a + b + c = 1
+
+
+
+
+
+
+
+Por lo tanto,
+
+
+
+b = a
+c = 2b
+3
+b + b + 2b
+3 = 1
+
+
+⇒
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a = 3
+8
+b = 3
+8
+c = 1
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Por lo tanto, la probabilidad de que, comenzando en el estado 1, el proceso (sea Xn o Yn) esté en el estado 2 a
+largo plazo es b = 3
+8
+4.
+Ejercicio 25
+Enunciado
+Cada materia que cursa un alumno en una universidad tiene tres oportunidades para dar el examen nal.
+Suponga que la probabilidad de aprobar el examen nal es siempre p. Sea Xn la variable aleatoria que da el número
+de oportunidades que tiene el alumno en el período n. El recorrido de Xn es el conjunto {0, 1, 2, 3} siendo el valor
+cero el estado que se alcanza cuando se aprueba el examen nal (claramente un estado absorbente). El estado 3
+corresponde al que se tiene una vez aprobada la cursada. Cuando no se aprueba en la última de las instancias se
+produce una transición del estado 1 al 3 (la materia se recursa).
+a) Modelar la evolución de este proceso como una cadena de Markov obteniendo la matriz de probabilidades de
+transición de un paso.
+b) Suponga que el estado inicial es el 3. En este caso la distribución de probabilidades es (0,0,0,1). Obtener
+la distribución de probabilidades para los primeros tres períodos y conjeturar sobre su forma para todo n.
+Analizar su valor límite.
+Lucio José Pantazis
+93.24
+15
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+Resolución
+4.1.
+Item a
+El diagrama de transición de la cadena viene dada por:
+Por lo tanto, la matriz de transiciones es la siguiente:
+P =
+
+
+
+
+1
+0
+0
+0
+p
+0
+0
+1 −p
+p
+1 −p
+0
+0
+p
+0
+1 −p
+0
+
+
+
+
+4.2.
+Item b
+Nos dicen que X0 = 3, es decir:
+⃗π0 = (0, 0, 0, 1)
+Nos piden determinar ⃗π1,⃗π2,⃗π3 para determinar si hay algún patrón.
+⃗π1 = ⃗π0 × P = (0, 0, 0, 1) ×
+
+
+
+
+1
+0
+0
+0
+p
+0
+0
+1 −p
+p
+1 −p
+0
+0
+p
+0
+1 −p
+0
+
+
+
+= (p, 0, 1 −p, 0)
+⃗π2 = ⃗π1 × P = (p, 0, 1 −p, 0) ×
+
+
+
+
+1
+0
+0
+0
+p
+0
+0
+1 −p
+p
+1 −p
+0
+0
+p
+0
+1 −p
+0
+
+
+
+= (2p −p2, (1 −p)2, 0, 0)
+⃗π3 = ⃗π2 × P = (2p −p2, (1 −p)2, 0, 0) ×
+
+
+
+
+1
+0
+0
+0
+p
+0
+0
+1 −p
+p
+1 −p
+0
+0
+p
+0
+1 −p
+0
+
+
+
+= (p3 −3p2 + 3p, 0, 0, (1 −p)3)
+Lucio José Pantazis
+93.24
+16
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de | Transcripción de la imagen: Probabilidad y Estadística
+
+ITBA
+
+Resolución
+4.1. Ttema
+
+El diagrama de transición de la cadena viene dada por:
+
+Por lo tanto, la matriz de transiciones es la siguiente:
+
+1 0 0 0
+— |P 0 0 l—
+P p 1—p 0 0
+y) 0 1—p 0
+4.2. lTtem b
+Nos dicen que Xo = 3, es decir:
+To = (0,0,0,1)
+
+Nos piden determinar 71, 72, 73 para determinar si hay algún patrón.
+
+1 0 0 0
+> — _ p 0 0 1-—p
+Ti = 70 X P = (0,0,0,1) x P l-D 0 0
+y) 0 1—p 0
+1 0 0 0
+> — _ _ p 0 0 1—p
+p 0 1—p 0
+1 0 0 0
+> — — — — 2 p 0 0 1—p
+y) 0 1—p 0
+Lucio José Pantazis 93.24
+
+= (p* — 3P” + 3p,0,0, (1 —p)*)
+
+16]]
+
+Probabilidad y Estadística
+ITBA
+No parece haber un patrón muy claro en la primer coordenada. Sin embargo, el patrón es claro en los estados 1,
+2, 3. En cada intento, la probabilidad de no aprobar la materia (estado 0) es haber reprobado todas las instancias
+anteriores.
+Es decir, en el instante n, la probabilidad de no estar en el estado 0 es (1 −p)n. Por lo tanto, la probabilidad
+de estar en el estado 0 es 1 −(1 −p)n. En efecto:
+n = 0 : 1 −(1 −p)0 = 0
+n = 1 : 1 −(1 −p)1 = p
+n = 2 : 1 −(1 −p)2 = 1 −(1 −2p + p2) = 2p −p2
+n = 3 : 1 −(1 −p)3 = 1 −(1 −3p + 3p2 −p3) = p3 −3p2 + 3p
+Es decir, lo único que se altera es la cantidad de oportunidades, que se repite periódicamente cada 3 oportuni-
+dades. Por lo que dependerá del resto de dividir por 3 y podemos inferir el siguiente patrón:
+⃗πn =
+
+
+
+(1 −(1 −p)n, 0, 0, (1 −p)n)
+si n = 3k
+(1 −(1 −p)n, 0, (1 −p)n, 0)
+si n = 3k + 1
+(1 −(1 −p)n, (1 −p)n, 0, 0)
+si n = 3k + 2
+Por lo tanto, para analizar el valor límite, como (1 −p)n tiende a cero cuando n →+∞, todas las componentes
+correspondientes a los estados 1,2,3 tienden a cero. Del mismo modo, la primer coordenada tenderá a 1. Es decir,
+l´ım
+n→+∞⃗πn = (1, 0, 0, 0)
+Es decir, probabilísticamente, un alumno termina aprobando la materia, por lo que este ejercicio tiene el
+condimento especial de sembrar optimismo en nuestros alumnos.
+Lucio José Pantazis
+93.24
+17
+
+[Descripción de la imagen: el texto en el cuadro de texto está escrito en español]
+

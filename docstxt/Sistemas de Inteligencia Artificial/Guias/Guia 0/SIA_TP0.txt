@@ -1,0 +1,108 @@
+Sistemas de Inteligencia Artificial
+TP0: Introducci´on al An´alisis de Datos
+Primer Cuatrimestre 2023
+Introducci´on
+El objetivo de este TP es evaluar una funci´on que depende de varios par´ametros de entrada,
+fundamentando las conclusiones con gr´aficos pertinentes y explicando la metodolog´ıa utilizada
+para llegar a cada una. Para ello ser´a provisto un c´odigo fuente que incluye una implementaci´on
+de dicha funci´on junto con ejemplos de ejecuci´on.
+Funci´on a Evaluar
+La funci´on a evaluar es la de captura de un Pokemon, consistente en dos par´ametros de
+entrada: el Pokemon que se est´a intentando capturar y el tipo de pokebola que se pretende
+utilizar. La misma retorna un valor booleano correspondiente al resultado del intento de captura.
+El ´exito de la captura depende del estado en el que se encuentre el Pokemon y del tipo de
+pokebola que se utilice. Adem´as, algunos Pokemones son intr´ınsecamente m´as f´aciles de capturar
+que otros. Para evaluar la funci´on correctamente se deberan probar varias configuraciones de
+entrada y analizar los resultados correspondientes.
+Contexto
+Pokemon es una franquicia de videojuegos donde el jugador se dedica a armar un peque˜no
+equipo de monstruos (llamados pokemones), entrenarlos peleando contra otros pokemones con
+el objetivo de convertirse en el mejor entrenador de pokemones de la regi´on. Para conseguir
+estos pokemones el jugador tiene que explorar el medio salvaje donde estos habitan, pelear
+contra ellos y finalmente capturarlos utilizando herramientas particulares llamadas pokebolas.
+
+[Descripción de la imagen: una página del libro,'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Archivos Provistos
+Toda la implementaci´on provista se encuentra hecha en Python y contiene lo necesario para
+poder ejecutar la funci´on y evaluar sus resultados.
+pokemon.py
+Modelo de un Pokemon y la implementaci´on de un PokemonFactory para generar nuevos
+Pokemones. Cada Pokemon cuenta con propiedades que son constantes e inmutables para todos
+los miembros de la especie y otras que son mutables y corresponden al estado actual de la
+instancia.
+Propiedad
+Tipo
+Descripci´on
+current hp
+int
+Vida actual (Min: 0)
+level
+int
+Nivel de experiencia (Min: 1, Max: 100)
+status effect
+Enum(StatusEffect)
+Condici´on de salud
+Cuadro 1: Propiedades mutables de un Pokemon
+pokeball.py
+Modelo gen´erico de una pokebola y la implementaci´on concreta de 4 pokebolas distintas:
+“PokeBall”, “UltraBall”, “FastBall” y “HeavyBall”.
+pokemon.json
+Archivo con los par´ametros inmutables de 5 especies distintas de Pokemones. Cada Pokemon
+cuenta con las siguientes propiedades inmutables:
+Propiedad
+Tipo
+Descripci´on
+type
+string[2]
+Especie de Pokemon (Ej: [ROCK”, ”FIRE”] o [”FIRE, ”NONE”] )
+stats
+int[6]
+[base hp, attack, defense, Sp. attack, Sp. defense, speed]
+wieght
+float
+Peso del Pokemon
+catch rate
+int
+Dificultad de captura. (Min: 0, Max: 255)
+Cuadro 2: Propiedades inmutables de un Pokemon
+
+[Descripción de la imagen: un documento con las palabras en español]
+
+catching.py
+Implementaci´on de la funci´on attempt_catch que es la funci´on a evaluar.
+Input: Pokemon a capturar y el tipo de pokebola a utilizar
+Output: un valor de tipo boolean (attempt success) que indica si el Pokemon fue capturado
+o no y otro valor de tipo float (capture rate) que indica la probabilidad de que el pokemon
+sea capturado, dependiendo de un valor aleatorio.
+main.py
+Ejemplo de c´omo utilizar las funciones provistas.
+
+[Descripción de la imagen: una sábana blanca con las palabras'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Preguntas Gu´ıa
+Se desea evaluar qu´e factores influyen en la captura de un Pokemon teniendo en cuenta los
+par´ametros inmutables del mismo junto con la pokebola utlizada. Para ello se deber´an generar
+distintos gr´aficos que representen las respuestas a las siguientes preguntas gu´ıa:
+1. Acerca de pokebolas:
+a) Ejecutando la funci´on 100 veces, para cada Pokemon en condiciones ideales
+(HP:100 %, LVL 100) ¿Cu´al es la probabilidad de captura promedio para cada po-
+kebola?
+b) ¿Es cierto que algunas pokebolas son m´as o menos efectivas dependiendo de propie-
+dades intr´ınsecas de cada Pokemon? Justificar.
+Sugerencia: Comparar efectividad (success/total attemps) como proporci´on de la
+efectividad de la Pokebola b´asica para cada Pokemon
+2. Acerca del estado del Pokemon:
+a) ¿Las condiciones de salud tienen alg´un efecto sobre la efectividad de la captura? Si
+es as´ı, ¿Cu´al es m´as o menos efectiva?
+b) ¿C´omo afectan los puntos de vida a la efectividad de la captura?
+Sugerencia: Elegir uno o dos Pokemones y manteniendo el resto de los par´ametros
+constantes, calcular la probabilidad de captura para distintos HP %
+c) ¿Qu´e par´ametros son los que m´as afectan la probabilidad de captura?
+d) Teniendo en cuenta uno o dos pokemones distintos: ¿Qu´e combinaci´on de condiciones
+(propiedades mutables) y pokebola conviene utilizar para capturarlos?
+e) A partir del punto anterior, ¿ser´ıa efectiva otra combinaci´on de par´ametros teniendo
+en cuenta un nivel del pokemon m´as bajo (o m´as alto)?
+
+[Descripción de la imagen: una página del libro, el libro del día, mostrando una página de un poema]
+

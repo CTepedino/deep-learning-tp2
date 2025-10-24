@@ -1,0 +1,88 @@
+PROBABILIDAD Y ESTADISTICA   93.24              RECUPERATORIO SEGUNDO PARCIAL 2019 cuat2 
+INDICACIONES: Indique claramente apellido, nombre y número de legajo en cada hoja que entregue. No solicite indicaciones ni 
+aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución. Exprese con 4 decimales las probabilidades que se pida 
+calcular.    
+SUERTE...                                DURACION : 2.5  HORAS. 
+ 
+APELLIDO Y NOMBRE : ...............................…...................................................................... Nro de Legajo :................…... 
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+TOTAL 
+NOTA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos) Se genera una señal de la siguiente manera: la señal comienza en el estado 0 y cada t segundos cambia 
+a un nuevo nivel o estado. Si el nivel de la señal es 0 entonces cambia a +1 con probabilidad p, o a  -1 con 
+probabilidad  1 - p. Si el nivel es +1 entonces cambia a 0 con probabilidad r ó a -1 con probabilidad 1 – r. Si el nivel 
+de la señal es -1 entonces retorna con probabilidad q al nivel 0 ó al estado +1 con probabilidad 1 - q . 
+a) Modele el proceso como una cadena de Markov, indicando los posibles estados, el diagrama de transición y la 
+matriz de probabilidades de transición de un paso. Verifique que la cadena es regular si p = 0.6, r = 0.3 y  q  = 0.4. 
+b) Determine la distribución de probabilidades de estados para los primeros tres períodos de tiempo si el estado inicial 
+es 0, si p = 0.4, q = 1 y r = 1. Indique lo que observe. ¿Existe una distribución estacionaria de probabilidades que se 
+alcance a largo plazo independientemente del estado inicial? 
+ 
+2. (2 puntos) Midiendo rating de TV  
+a) Se desea determinar la proporción de televidentes que miran un programa de televisión con una incerteza de 1% y 
+un nivel de confianza del 95%. ¿Qué tan grande debe ser la muestra de televidentes encuestados para lograr esta 
+precisión? Explique el cálculo que realice. 
+b) Un programa de televisión ha tenido históricamente una audiencia del 5% de los televidentes. Un gerente del canal 
+ha recomendado un cambio de horario para mejorar la audiencia. Para probar esta hipótesis, se cambió de horario en 
+una oportunidad y se midió su audiencia encuestando 10 mil televidentes. El resultado fue que el 5.5% de los 
+encuestados miró el programa. Plantee una prueba de hipótesis adecuada para el problema. ¿Cuál es el valor P de la 
+prueba de hipótesis? ¿Qué puede concluir? 
+ 
+3. (2 puntos) La fábrica de adhesivos PABPAC ha desarrollado el nuevo producto ULTRAPEG. Se enviaron muestras 
+gratis a 20 posibles clientes para averiguar que volumen anual de ULTRAPEG estarán dispuestos a comprar. 
+Suponga que el volumen anual de adhesivo vendido es una variable aleatoria normal con varianza 64 kg^2. 
+a) Se analiza la muestra del volumen a consumir por esos 20 clientes y se obtiene una media muestral de 94 kilos. 
+Determine un intervalo de confianza del 90% para el volumen medio de adhesivo que se venderá. 
+b) Si la venta media fuese significativamente inferior a 100 kilos por cliente y por año se ha establecido que el 
+producto no se lance al mercado.  Para un nivel de significación del 1% detalle un test de hipótesis indicando 
+claramente la región de rechazo de la hipótesis nula y tome la decisión respecto del lanzamiento del producto en base 
+a los datos indicados en a). 
+ 
+4. (2 puntos) Los instantes en que se producen los accesos a un servidor en cierto horario diurno se pueden 
+considerar que corresponden a un proceso de Poisson con flujo de sucesos L = 2 s-1. 
+a) Se consideran 4 intervalos consecutivos de 1 s de duración. Sea Xk la variable aleatoria que mide el número de 
+accesos en el intervalo k, k = 1, 2, 3 y 4. Calcule P(X1  + X2  + X3 + X4 < 10). 
+b) Calcule aproximadamente la probabilidad de que el tiempo entre el acceso i y el acceso i + 100 sea mayor que 55 
+segundos. Detalle el planteo del cálculo de esta aproximación. 
+ 
+5. (2 puntos) Un circuito se enciende en un instante aleatorio T con distribución uniforme en (0, 24) (en horas). El 
+instante S (en horas) en que se apaga tiene, también, distribución uniforme pero en (t, 24) si T tomó el valor t.  
+a) Calcule la probabilidad de que el circuito esté encendido más de una hora. 
+b) Obtenga la función densidad de probabilidad del instante de apagado S.  
+Ayuda: 
+constante
+)
+log(
+ 
+1
+
+
+
+
+
+
+x
+c
+dx
+x
+c
+
+[Descripción de la imagen: el documento para la publicación de la publicación de la publicación de la publicación de la publicación de la publicación de]
+

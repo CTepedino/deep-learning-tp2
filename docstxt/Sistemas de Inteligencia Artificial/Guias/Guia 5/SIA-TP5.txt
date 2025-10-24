@@ -1,0 +1,34 @@
+Sistemas de Inteligencia Artiﬁcial: TP5: Deep Learning
+1. Autoencoders
+a) Implementar un Autoencoder b´asico para las im´agenes binarias de la lista de
+caracteres del archivo ”font.h”
+1) Plantear una arquitectura de red para el Codiﬁcador y Decodiﬁcar que permita
+representar los datos de entrada en un espacio latente de dos dimensiones.
+2) Describan y estudien las diferentes arquitecturas y t´ecnicas de optimizaci´on que
+fueron aplicando para permitir que la red aprenda todo el set de datos o un
+subconjunto del mismo. El objetivo es aprender los 32 patrones de 5*7
+en un espacio latente de 2 dimensiones con un error m´aximo de 1
+pixel incorrecto. En el caso de que sea un subconjunto mostrar porque no fue
+posible aprender el dataset completo.
+3) Realizar el gr´aﬁco en dos dimensiones que muestre los datos de entrada en el
+espacio latente.
+4) Mostrar c´omo la red puede generar una nueva letra que no pertenece al conjunto
+de entrenamiento.
+b) Sobre el mismo dataset, implementar una variante que implemente un ”Denoising
+Autoencoder”.
+1) Plantear una arquitectura de red conveniente para esta tarea. Explicar la
+elecci´on.
+2) Distorsionen las entradas en diferentes niveles y estudien la capacidad del
+Autoencoder de eliminar el ruido.
+2. Extender el Autoencoder anterior para que opere como un VAE, un Autoencoder
+Variacional.
+a) Elegir (o construir) un conjunto de datos nuevos (por ejemplo emojis).
+b) Modiﬁcar el autoencoder planteando un esquema variacional para poder solucionar
+el problema de la representaci´on en el espacio latente.
+c) Utilizar el Autoencoder anterior para generar una nueva muestra que ustedes
+puedan juzgar que pertenece al conjunto de datos que le presentaron al autoencoder
+(Generative Autoencoder).
+1
+
+[Descripción de la imagen: una página del libro, mostrando el texto y la imagen]
+

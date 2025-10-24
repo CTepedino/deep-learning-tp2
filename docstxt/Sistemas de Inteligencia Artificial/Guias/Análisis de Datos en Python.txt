@@ -1,0 +1,329 @@
+TRABAJOS 
+PRÁCTICOS
+Librerías útiles en Python y consejos presentación
+Sistemas de Inteligencia Artiﬁcial - 2024
+
+[Descripción de la imagen: traos prtos - bibliotecas de traos prtos]
+
+TABLA DE CONTENIDOS
+01. LIBRERÍAS ÚTILES
+02. GRÁFICOS
+03. CONFIGURACIÓN
+04.
+05.
+2
+PRESENTACIONES
+INDUSTRIA
+
+[Descripción de la imagen: conidos de mesa | Transcripción de la imagen: E >
+
+Ol. LIBRERÍAS ÚTILES
+
+O4- PRESENTACIONES
+02. GRÁFICOS
+
+05. INDUSTRIA
+
+03. CONFIGURACIÓN]]
+
+01
+LIBRERÍAS ÚTILES
+3
+
+[Descripción de la imagen: un cuadrado amarillo con las palabras liri's]
+
+4
+Operaciones rápidas en arrays
+Numpy Documentation
+import numpy as np
+pip install numpy
+
+[Descripción de la imagen: numy - matriz de código abierto]
+
+5
+Librería para manejo de datos. 
+De gran ayuda para el TP2 en el que hay manejar datasets grandes.
+Pandas Documentation
+import pandas as pd
+pip install pandas
+
+[Descripción de la imagen: una captura de pantalla con el texto 'i pandas ']
+
+6
+Matplotlib Documentation
+import matplotlib.pyplot as plt
+pip install matplotlib
+Realizar gráﬁcos
+
+[Descripción de la imagen: la nueva versión del nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo nativo | Transcripción de la imagen: matpltlib
+
+Realizar gráficos
+
+pip install matplotlib
+
+Matplotlib Documentation]]
+
+7
+import plotly.express as px
+import plotly.graph_objects as go
+pip install plotly
+Librería para realizar gráﬁcos interactivos
+Plotly Documentación
+
+[Descripción de la imagen: una captura de pantalla con el text'liora reals ' | Transcripción de la imagen: l11 PlOtI
+
+Librería para realizar gráficos interactivos
+
+pip install plotly
+
+Plotly Documentación]]
+
+8
+Librería para análisis de datos.
+Para el TP4 de Aprendizaje No Supervisado el modulo de decomposition para 
+Principal component analysis (PCA) y el de preprocessing para estandarizar features.
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+Sklearn Documentation
+
+[Descripción de la imagen: una captura de pantalla con el nombre del texto y la imagen de una persona]
+
+SCIPY
+9
+Librería de optimización. 
+Ofrece varios métodos como Powell, BFGS, Newton, entre otros. 
+En particular, usamos el de Powell para el TP5 sobre Deep Learning.
+Scipy Documentation
+from scipy.optimize import minimize
+
+[Descripción de la imagen: la pantalla con el nombre de la palabra y el nombre de la palabra]
+
+ARCADE
+10
+Librería para crear videojuegos en 2D. 
+Sirve para diseñar el tablero del Sokoban en el TP1 de Métodos de Búsqueda. Es fácil de 
+aprender y de usar
+import arcade
+pip install arcade
+Arcade Documentation
+
+[Descripción de la imagen: la pantalla con la palabra 'arce'in español]
+
+11
+Librería para crear videojuegos. 
+Sirve para diseñar el tablero del Sokoban en el TP1 de Métodos de Búsqueda. Es fácil de 
+aprender y de usar
+import pygame
+pip install pygame
+Pygame Documentation
+
+[Descripción de la imagen: una pantalla de captura de pantalla con el texto'''' y la imagen de un pájaro amarillo]
+
+02
+GRÁFICOS
+12
+
+[Descripción de la imagen: un cuadrado amarillo con la palabra '2' en él | Transcripción de la imagen: GRÁFICOS]]
+
+BOXPLOT 
+13
+Título
+
+[Descripción de la imagen: un diagrama que muestra el número de cajas en cada caja | Transcripción de la imagen: BOXPLOT
+
+total_bill
+
+Dinner
+
+Título
+
+time
+
+Lunch]]
+
+SCATTER PLOT 
+14
+Título
+
+[Descripción de la imagen: scr parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc parcela del sc | Transcripción de la imagen: SCATTER PLOT
+
+sepal_length
+
+7.5
+
+6.5
+
+5.5
+
+4.5
+
+...
+
+2.5
+
+..
+
+,uuEns »
+
+no"
+
+....nm. .
+
+..
+
+. .. "" “..
+
+Título
+*
+Ea
+. =.
+l
+b "
+l
+= ».
+[
+*
+E
+E -
+.
+E
+.
+.
+sepal_width
+
+. "n
+
+35
+
+4.5
+
+species
+e setosa
+* versicolor
+m virgínica
+
+14]]
+
+BARRAS DE ERROR 
+15
+Variable B
+Título
+Variable A
+
+[Descripción de la imagen: un gráfico de línea con el número de barras | Transcripción de la imagen: BARRAS DE ERROR
+
+Título
+4.5
+4
+as
+3
+<
+Lo,
+Q 25
+0
+()
+> 2
+1.5
+1
+1 1.5 2 25]]
+
+BARRAS DE ERROR 
+16
+PLOTLY
+Seaborn
+
+[Descripción de la imagen: bara deporte | Transcripción de la imagen: BARRAS DE ERROR
+
+Gráfico de líneas con desvío estándar sombreado Gráfico de líneas con barras de error asimétricas
+Efrective Force
+400 Ineffectve Force
+
+Tatal Force
+
+300 as
+200
+a
+e 1
+m
+E [
+a
+-100 ta
+-200
+“
+0- — — 1 5 1
+-50 o 50 100 150 200 250 30 350 40
+Crank Argle
+Gráfico de barras con barras de error
+500
+“ 4
+400
+350
+300 4
+PLOTLY =
+200
+150
+Seaborn
+100 : Trial Trlal 2 Trial 3
+1950 1952 1954 1956 1958 1960
+
+vear]]
+
+03
+ARCHIVO DE 
+CONFIGURACIÓN
+17
+
+[Descripción de la imagen: un cuadrado amarillo con las palabras ''y'' ']
+
+conﬁg.json
+18
+Nota: Similar a conﬁg.yml
+
+[Descripción de la imagen: una captura de pantalla de una pantalla negra con un borde amarillo | Transcripción de la imagen: config.json
+
+Example configurations: config. json
+
+"corpus":
+"build":
+"name":
+
+"path":
+"text_start":
+"text_end": -1,
+
+"paging": 1
+
+"postprocessing":
+
+"word_cloud":
+"count_vectorizer": false,
+"tfidf": false,
+
+"word2vec":
+
+Nota: Similar a config.yml
+
+18]]
+
+PRESENTACIONES
+19
+●
+Presentación de 25 minutos + tiempo de preguntas individuales 
+●
+Orientada a los resultados 
+●
+Evaluación de parámetros 
+●
+Gráﬁcos representativos de los resultados
+●
+Promedio de ejecuciones 
+●
+Fijar un seed particular para reproducir resultados
+●
+Conclusiones 
+●
+Entrega: repositorio incluyendo ppt, readme.md , conﬁg.json
+Github SIA Tips
+
+[Descripción de la imagen: presente unifica de presentes]
+

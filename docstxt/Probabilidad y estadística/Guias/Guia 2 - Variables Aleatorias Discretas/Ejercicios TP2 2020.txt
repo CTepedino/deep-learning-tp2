@@ -1,0 +1,453 @@
+Probabilidad y Estadística
+ITBA
+Ejercicios Resueltos TP2
+Índice
+1. Ejercicio 5
+2
+1.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.3. Item c . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.4. Item d . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2. Ejercicio 8
+4
+2.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3. Ejercicio Extra
+8
+3.1. Item a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+3.2. Item b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.3. Item c . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.4. Item d . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Lucio José Pantazis
+93.24
+1
+
+[Descripción de la imagen: el texto en el cuadro de texto se muestra en el cuadro de texto]
+
+Probabilidad y Estadística
+ITBA
+1.
+Ejercicio 5
+Enunciado
+Un fabricante de controladoras de discos rígidos somete cada unidad a una prueba rigurosa. De las controladoras
+recién ensambladas, el 84 % pasa la prueba sin ninguna modiﬁcación. Las que fallan en la prueba inicial son
+reelaboradas; de éstas, el 75 % pasa una segunda prueba. Aquellas controladoras que fallan en la segunda prueba
+se rehacen por segunda ocasión y se vuelven a probar; el 90 % de ellas pasan la prueba y el resto se desarman. Se
+deﬁne X como la variable aleatoria que corresponde al número de veces que debe reprocesarse una controladora
+seleccionada al azar.
+a) Especiﬁcar el recorrido de X y obtener la distribución de probabilidad.
+b) Calcular el valor esperado de X. ¿Cómo se interpreta este número?
+c) Calcular la varianza y el desvío estándar de X
+d) ¿Cuál es el porcentaje de controladoras que se desarman?
+Resolución
+Variable Aleatoria
+A partir de esta guía, en lo personal sugiero, además de deﬁnir eventos y datos como en la primer guía, agregar
+la deﬁnición de las variables aleatorias. En este caso, la variable aleatoria ya está deﬁnida:
+X = Cantidad de veces que se reprocesa una controladora seleccionada al azar
+Eventos
+Deﬁniremos tres eventos pero basados en la misma idea:
+Ai = La controladora seleccionada pasa la prueba i.
+(1 ≤i ≤3)
+Datos
+Para los datos hay que tener en cuenta que cada prueba sólo se llevaba a cabo si falló la anterior. Por ejemplo,
+si la controladora se sometió a la tercera prueba, es porque falló la primera y la segunda.
+P(A1) = 0,84
+P(A2| ¯
+A1) = 0,75
+P(A3| ¯
+A2 ∩¯
+A1) = 0,9
+1.1.
+Item a
+Para este problema hay que estar muy atentos al enunciado, porque se puede confundir la variable X que
+deﬁnimos previamente con:
+X = Cantidad de pruebas que falla una controladora seleccionada.
+(1)
+Sin embargo, eso puede llevar a pensar que una controladora puede llegar a reprocesarse 3 veces si falla la tercer
+prueba. Vale aclarar, que si la controladora falla la tercer prueba, no se reprocesa, se desarma.
+Por lo tanto, la variable aleatoria sigue siendo
+X = Cantidad de veces que se reprocesa una controladora seleccionada al azar
+y en consecuencia, su recorrido es RX = {0; 1; 2} ya que puede reprocesarse como máximo 2 veces.
+Lucio José Pantazis
+93.24
+2
+
+[Descripción de la imagen: una página de un libro de texto con el título del texto]
+
+Probabilidad y Estadística
+ITBA
+Nos piden la distribución de probabilidad de la variable X. Con este ﬁn, basta conocer las probabilidades de
+que la variable X tome los valores de su recorrido, es decir:
+P(X = 0)
+P(X = 1)
+P(X = 2)
+Notar que si X = 0, entonces la controladora no debió reprocesarse, eso signiﬁca que pasó la primera prueba.
+Dicho de otro modo, P(X = 0) = P(A1). Del mismo modo, si X = 1 eso signiﬁca que se reprocesó una única vez.
+Es decir, falló la primera prueba pero aprobó la segunda. Concluimos que P(X = 1) = P(A1 ∩A2) y por lo tanto,
+P(X = 2) = P(A1 ∩A2).
+Para calcular estas probabilidades, seguiremos el respectivo diagrama del árbol:
+Por lo tanto,
+P(X = 0) = P(A1) = 0,84
+P(X = 1) = P(A2 ∩A1) = P(A2|A1) · P(A1) = 0,16 · 0,75 = 0,12
+P(X = 2) = P(A2 ∩A1) = P(A2|A1) · P(A1) = 0,16 · 0,25 = 0,04
+Expresado como tabla:
+X
+0
+1
+2
+pX
+0,84
+0,12
+0,04
+Notar que todas las probabilidades suman 1.
+Lucio José Pantazis
+93.24
+3
+
+[Descripción de la imagen: el diagrama del algoritmo para el algoritmo]
+
+Probabilidad y Estadística
+ITBA
+1.2.
+Item b
+Ya teniendo el recorrido (RX = {0, 1, 2}), el valor esperado se calcula del siguiente modo:
+E(X) =
+2
+X
+i=0
+i · P(X = i) = 0 · 0,84 + 1 · 0,12 + 2 · 0,04 = 0,2
+(2)
+Esto signiﬁca que en una producción de controladores, la cantidad promedio de reprocesamientos será aproxi-
+madamente 0,2. Es decir, si se producen 100 controladores, la cantidad de reprocesamientos será aproximadamente
+20 = 0,2 · 100.
+No confundir la cantidad de reprocesamientos con la cantidad de controladoras reprocesadas. En este
+ejemplo puntual, con 20 reprocesamientos, supongamos que 5 procesadoras fueron reprocesadas más de una vez
+(es decir, dos veces). Entonces el número de controladoras reprocesadas fueron 15.
+1.3.
+Item c
+Nos piden calcular la varianza, que podemos calcular del siguiente modo:
+V (X) = E(X2)
+| {z }
+?
+−E2(X)
+| {z }
+0,22
+Por lo tanto, sólo debemos calcular E(X2):
+E(X2) =
+2
+X
+i=0
+i2 · P(X = i) = 02 · P(X = 0) + 12 · P(X = 1) + 22 · P(X = 2) = 0,12 + 0,16 = 0,28
+Recopilando estos datos, V (X) = E(X2) −E2(X) = 0,28 −0,22 = 0,24.
+Para el desvío, debemos calcular la raíz: σ(X) =
+p
+V (X) = √0,24 ≈0,4898979
+1.4.
+Item d
+Para este ítem, consideramos un nuevo evento:
+D = la controladora extraída es desarmada
+La única forma de que la controladora sea desarmada, es que falle las tres pruebas. Por lo tanto, podemos
+describir al evento D como D = A1 ∩A2 ∩A3.
+Es decir,
+P(D) = P(A1 ∩A2 ∩A3) = P(A3|A2 ∩A1) · P(A2|A1)P(A1) = 0,16 · 0,25 · 0,1 = 0,004
+Entonces, se desarman el 0,4 % de las controladoras.
+2.
+Ejercicio 8
+Enunciado
+La probabilidad de falla de un cierto tipo de componentes electrónicos es de 0.10. Una compañía produce con
+ellos dos tipos de circuitos, denominados I y II respectivamente. El circuito tipo I consiste en un paralelo de dos
+componentes. El circuito tipo II está armado con una serie de dos componentes. De la producción total se elige un
+circuito de cada tipo. Sea X la variable aleatoria que indica el número de circuitos que funciona cuando se prueban
+ambos.
+Lucio José Pantazis
+93.24
+4
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+a) Deﬁnir la función de probabilidad pX, hallar la función de probabilidad acumulada y representar ambas
+funciones en forma gráﬁca.
+b) Hallar el valor esperado de X.
+Resolución
+Variable aleatoria
+Nuevamente, aquí está deﬁnida la variable aleatoria:
+X = cantidad de circuitos que funcionan
+Sabiendo que hay dos circuitos, podemos concluir que RX = {0, 1, 2}.
+Eventos
+Podemos considerar los siguientes eventos:
+Ci = El componente i funciona. (1 ≤i ≤4)
+FI = funciona el circuito I
+FII = funciona el circuito II
+Datos
+Siguiendo la ﬁgura 1, se puede concluir que FI = C1 ∪C2 (debe funcionar alguno de los dos componentes),
+mientras que FII = C3 ∩C4 (deben funcionar ambos componentes).
+Figura 1: Descripción gráﬁca de ambos circuitos
+Por otro lado, se sabe que los eventos Ci son independientes entre sí y P(Ci) = 0,9 ⇒P(Ci) = 0,1. Además,
+como FI y FII dependen de componentes distintos, también son independientes entre sí.
+2.1.
+Item a
+Nos piden la función de probabilidad puntual pX(x), para eso, debemos sacar las probabilidades que involucran
+cada valor del recorrido de X. Es decir:
+Lucio José Pantazis
+93.24
+5
+
+[Descripción de la imagen: el diagrama del algoritmo para el algoritmo]
+
+Probabilidad y Estadística
+ITBA
+P(X = 0)
+P(X = 1)
+P(X = 2)
+Para calcular estas probabilidades, podemos pensar los eventos en función de FI y FII:
+P(X = 0) = P(FI ∩FII) IND
+= P(FI) · P(FII)
+P(X = 1) = P(FI ∩FII) + P(FI ∩FII) IND
+= P(FI) · P(FII) + P(FI) · P(FII)
+P(X = 2) = P(FI ∩FII) IND
+= P(FI) · P(FII)
+Por lo tanto, calculando P(FI) y P(FII), se pueden obtener las probabilidades de sus complementos y a partir
+de ellos construir la función de probabilidad puntual.
+P(FI) = P(C1 ∪C2) = P(C1) + P(C2) −P(C1 ∩C2) IND
+= P(C1) + P(C2) −P(C1 · C2) = 0,9 + 0,9 −0,92 = 0,99
+Por otro lado,
+P(FII) = P(C3 ∩C4) = P(C3) · (C4) = 0,92 = 0,81
+Además, de estos resultados se concluye que P(FI) = 0,01 y P(FII) = 0,19.
+Notar que la probabilidad de que funcione el circuito I es mayor que la correspondiente al circuito II. Esto
+tiene sentido ya que para que funcione el circuito II deben funcionar ambos, restringiendo más su funcionamiento.
+Por lo tanto,
+P(X = 0) = P(FI) · P(FII) = 0,01 · 0,19 = 0,0019
+P(X = 1) = P(FI) · P(FII) + P(FI) · P(FII) = 0,99 · 0,19 + 0,01 · 0,81 = 0,1962
+P(X = 2) = P(FI) · P(FII) = 0,99 · 0,81 = 0,8019
+Expresado como tabla:
+x
+0
+1
+2
+pX(x)
+0,0019
+0,1962
+0,8019
+Notar que todas estas probabilidades suman 1, dando consistencia a nuestro resultado.
+La función de probabilidad de una variable aleatoria discreta se graﬁca correspondiendo a cada punto del
+recorrido un segmento de altura igual a la probabilidad puntual respectiva. Notar que en la ﬁgura los segmentos
+más altos son los correspondientes a X = 1 y X = 2, la probabilidad P(X = 0) es tan insigniﬁcante respecto de
+las otras que no se aprecia en el gráﬁco. Sin embargo, siempre debe ser considerada.
+Lucio José Pantazis
+93.24
+6
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+Figura 2: Función de probabilidad puntual
+Además, se pide la función de desitribución acumulada. Para cualquier variable aleatoria, esta función se deﬁne
+como:
+FX(t) = P(X ≤t),
+∀t ∈R
+Si bien la la variable X tiene probabilidad cero para todo valor fuera del recorrido, esta función de distribución es
+válida para todo valor t ∈R. Es un error común considerar que sólo hay que deﬁnirla en los puntos de probabilidad
+positiva. Esto se debe a que esta función cambiará su valor únicamente en los valores del recorrido. Por lo tanto,
+para calcular FX dividiremos en casos:
+Si t < 0 ⇒FX(t) = P(X ≤t) = 0 (no se acumula ningún punto de probabilidad positiva).
+Si 0 ≤t < 1 ⇒FX(t) = P(X ≤t) = P(X = 0) = 0,0019 (el único punto de probabilidad positiva es X = 0).
+Si 1 ≤t < 2 ⇒FX(t) = P(X ≤t) = P(X = 0) + P(X = 1) = 0,1981 (los únicos valores del recorrido
+menores o iguales que t son X = 0 y X = 1).
+Si t ≥2 ⇒FX(t) = P(X ≤t) = P(X = 0) + P(X = 1) + P(X = 2) = 1 (se acumulan todos los valores del
+recorrido).
+Es decir, la función de distribución se deﬁne del siguiente modo:
+FX(t) =
+
+
+
+
+
+
+
+0
+si t < 0
+0,0019
+si 0 ≤t < 1
+0,1981
+si 1 ≤t < 2
+1
+si t ≥2
+Por lo tanto, graﬁcar FX es lo mismo que graﬁcar cualquier función en R. Este gráﬁco se ve en la Figura 3, notar
+que los saltos de esta función se dan en los puntos de probabilidad positiva, y la magnitud del salto se corresponde
+con la probabilidad respectiva.
+Lucio José Pantazis
+93.24
+7
+
+[Descripción de la imagen: la ecuación de fourier se muestra en el diagrama de abajo]
+
+Probabilidad y Estadística
+ITBA
+Figura 3: Función de distribución de X
+2.2.
+Item b
+Sabiendo que el recorrido de X es RX = {0, 1, 2}, el valor esperado se calcula del siguiente modo:
+E(X) = 0 · P(X = 0) + 1 · P(X = 1) + 2 · P(X = 2) = 0 · 0,0019 + 1 · 0,1962 + 2 · 0,8019 = 1,8
+3.
+Ejercicio Extra
+Enunciado
+Una fábrica de automotores (A) ha determinado que la cantidad de fallas en sus productos, dada por la variable
+aleatoria X, sigue la siguiente función de distribución acumulada:
+FX(t) =
+
+
+
+
+
+
+
+
+
+
+
+0
+si t < 0
+0,4
+si 0 ≤t < 1
+0,45
+si 1 ≤t < 2
+0,9
+si 2 ≤t < 3
+1
+si t ≥3
+a) Hallar pX(x) y E(X).
+b) Hallar V (X) y σ(X)
+c) Su competencia (la fábrica B) asegura que ha logrado mejorar la cantidad de fallas en sus unidades (dada
+por la variable aleatoria Y ), exponiendo la siguiente tabla de probabilidades puntuales pY (y):
+Y
+0
+1
+2
+3
+4
+5
+6
+pY
+0,55
+0,2
+0,05
+0,05
+0,05
+0,05
+0,05
+Hallar E(Y ), ¿mejora la cantidad promedio de fallas?
+d) Hallar V (Y ), σ(Y ) ¿Qué fábrica eligiría para comprar un auto?
+Lucio José Pantazis
+93.24
+8
+
+[Descripción de la imagen: el diagrama muestra el número de los dos puntos en la coordenada]
+
+Probabilidad y Estadística
+ITBA
+Resolución
+Variables aleatorias
+En este ejercicio, las variables aleatorias están deﬁnidas:
+X = Cantidad de fallas en un auto elegido al azar de la fábrica A
+Y = Cantidad de fallas en un auto elegido al azar de la fábrica B
+Eventos
+Este ejercicio en particular no requiere un evento adicional ya que alcanzan los análisis de las variables X e Y .
+Datos
+Como datos, se tienen la función de distribución de X (FX(t)) y la función de probabilidad puntual de Y
+(pY (y)).
+3.1.
+Item a
+Siguiendo lo visto en el ejercicio anterior, para una variable aleatoria discreta, la función de distribución tiene
+saltos en los valores del recorrido. Entonces, viendo FX(t), podemos deducir que RX(t) = {0, 1, 2, 3}.
+Además, el tamaño de los saltos en cada punto es igual a su probabilidad puntual. Calcularlo formalmente
+escapa a los contenidos de este curso, por lo tanto, se ofrece una alternativa simpliﬁcada, utilizando valores fuera
+del recorrido. Es decir:
+P(X = 0) = FX(0) −FX(−0,5) = 0,4 −0 = 0,4
+P(X = 1) = FX(1) −FX(0,5) = 0,45 −0,4 = 0,05
+P(X = 2) = FX(2) −FX(1,5) = 0,9 −0,45 = 0,45
+P(X = 3) = FX(3) −FX(2,5) = 1 −0,9 = 0,1
+Entonces, expresado como tabla se tiene que:
+X
+0
+1
+2
+3
+pX
+0,4
+0,05
+0,45
+0,1
+Para calcular el valor esperado, usamos la fórmula:
+E(X) = 0 · P(X = 0) + 1 · P(X = 1) + 2 · P(X = 2) + 3 · P(X = 3) = 0 · 0,4 + 1 · 0,05 + 2 · 0,45 + 3 · 0,1 = 1,25
+Es decir, el número promedio de fallas es 1.25. Esto quiere decir que en 100 autos de la fábrica A, habrá
+aproximadamente un promedio de 125 fallas, distribuidas entre los autos de la muestra.
+Lucio José Pantazis
+93.24
+9
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística
+ITBA
+3.2.
+Item b
+Para calcular la varianza, sacaremos primero E(X2):
+E(X2) = 02 ·P(X = 0)+12 ·P(X = 1)+22 ·P(X = 2)+32 ·P(X = 3) = 02 ·0,4+12 ·0,05+22 ·0,45+32 ·0,1 = 2,75
+Teniendo este dato:
+V (X) = 2,75 −1,252 = 1,1875
+Por último,
+σ(X) =
+p
+V (X) = 1,089725
+3.3.
+Item c
+Para calcular el valor esperado de Y , necesitamos su recorrido y sus probabilidades puntuales (dados como
+dato). Podemos deducir a partir de la tabla que el recorrido de Y es RY = {0, 1, 2, 3, 4, 5, 6}. Entonces, podemos
+calcular el valor esperado:
+E(Y ) =
+6
+X
+i=0
+i · P(Y = i) = 0 · 0,55 + 1 · 0,2 + 2 · 0,05 + 3 · 0,05 + 4 · 0,05 + 5 · 0,05 + 6 · 0,05 = 1,2
+Podemos concluir que la cantidad promedio de fallas es menor para los autos fabricados por B.
+3.4.
+Item d
+Para calcular la varianza, empezamos por E(Y 2):
+E(Y 2) =
+6
+X
+i=0
+i2 · P(Y = i) = 02 · 0,55 + 12 · 0,2 + 22 · 0,05 + 32 · 0,05 + 42 · 0,05 + 52 · 0,05 + 62 · 0,05 = 4,7
+Por lo tanto,
+V (Y ) = 4,7 −1,22 = 3,26 ⇒σ(Y ) = 1,8055
+Notemos que si bien el número promedio de fallas de la fábrica B es menor que aquellos de la fábrica A, la
+dispersión es mayor. Esto se puede observar en ambos recorridos RX y RY , ya que Y tiene más valores alejados de
+su media y es probable que pueda tener un número muy grande de fallas.
+Siendo la seguridad fundamental en el uso de un automóvil, sería preferible elegir un auto con el menor número
+de fallas posible, en este caso, uno proveniente de la fábrica A.
+Moraleja: Sabiendo que el común de la gente tiene el promedio como única medida de intuición estadística,
+pueden ser usados para buscar resumir erróneamente la calidad de un producto (aunque se extiende a casi cualquier
+ámbito). Sin embargo, como futuros ingenieros siempre deben ir más allá de este promedio, ya que resume demasiado
+la información. De hecho, un ingeniero siempre debe priorizar la precisión, por lo que el desvío es en algunas
+ocasiones hasta más importante que el valor esperado. Si en una comparación entre la calidad de dos productos,
+los promedios están cercanos, pero un desvío es mucho menor que el otro, el de menor desvío será un producto de
+calidad más “conﬁable”.
+Lucio José Pantazis
+93.24
+10
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+

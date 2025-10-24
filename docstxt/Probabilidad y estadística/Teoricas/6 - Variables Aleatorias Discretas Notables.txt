@@ -1,0 +1,783 @@
+Variables aleatorias discretas notables
+Caracteriza la ocurrencia o no de un suceso al realizar un 
+experimento aleatorio.
+ Variable aleatoria Bernoulli 
+Variable aleatoria Binomial
+Cuenta el número de ocurrencias de un evento de interés en una 
+serie de repeticiones independientes de un experimento aleatorio, 
+como por ejemplo al extraer una  muestra aleatoria con reposición 
+de una población.
+
+[Descripción de la imagen: vares aloraiasias notas - pantallas]
+
+Variables aleatorias discretas notables
+Variable aleatoria hipergeométrica
+Cuenta el número de elementos de cierta clase en una muestra 
+aleatoria extraída sin reposición de una población que contiene 
+elementos de esa clase.
+Variable aleatoria geométrica
+Cuenta el número de repeticiones independientes de un experimento 
+aleatorio hasta la primera ocurrencia de un evento de interés.
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variables aleatorias discretas notables
+Variable aleatoria Poisson
+Asociada a un especial proceso denominado de Poisson. Sirve 
+para contar número de ocurrencias de un hecho en un tiempo 
+dado.
+Puede usarse como aproximación a la distribución binomial.
+
+[Descripción de la imagen: variables dictas diotates]
+
+Variable aleatoria Bernoulli
+Caracteriza la ocurrencia o no de un suceso al realizar un experimento 
+aleatorio.
+𝑋Bernoulli(𝑝)
+Recorrido: 
+• 0 = “fracaso”
+• 1 = “éxito”
+
+[Descripción de la imagen: vallacioa benolli | Transcripción de la imagen: Variable aleatoria Bernoulli
+
+Caracteriza la ocurrencia o no de un suceso al realizar un experimento
+aleatorio.
+
+X Bernoulli(p)
+
+Recorrido:
+
+* (= “fracaso”
+* 1= “éxito”
+
+Ms
+“a
+*
+— N
+“d
+—
+E
+ad
+»
+a
+2
+»]]
+
+Variable aleatoria Bernoulli
+𝑋Bernoulli(𝑝)
+𝑝𝑋(1)=𝑝,𝑝𝑋(0)=1−𝑝=𝑞
+𝜇=E [ 𝑋]=0× (1−𝑝)+1×𝑝=𝑝
+E [ 𝑋2]=02× (1−𝑝)+12× 𝑝=𝑝
+𝜎2= E [ 𝑋2 ]−( E [ 𝑋] )
+2=𝑝−𝑝2=𝑝(1−𝑝)=𝑝𝑞
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas | Transcripción de la imagen: Variable aleatoria Bernoulli
+
+X Bernoulli(p)
+Px|1=P,Px 0/=1-p=q
+
+u=E X =0x1-p+1xp=p
+
+E X =0x[1-p)+1?xp=p
+
+o=E X*|-[E[X]/=p-p*=pl1-p)=pq]]
+
+Variable aleatoria binomial
+Cuenta el número de ocurrencias de un evento de interés en una serie de 
+repeticiones independientes de un experimento aleatorio, como por ejemplo 
+al extraer una  muestra aleatoria con reposición de una población.
+𝑋Binomial(𝑛,𝑝)
+Recorrido: 
+• Se realizan  experimentos idénticos e independientes con 
+igual probabilidad de éxito en cada experimento.
+•  número de éxitos en los  experimentos
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Variable aleatoria binomial
+𝑋Binomial(𝑛,𝑝)
+Recorrido: 
+𝑝𝑋(𝑘)=(
+𝑛
+𝑘)×𝑝𝑘×𝑞𝑛−𝑘∀𝑘∈𝑅𝑋
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria binomial
+
+X Binomial(n,p)
+
+Recorrido:
+
+px(k)=('¡1) xpxq “vkeR]]
+
+Variable aleatoria binomial
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico con un gráfico de línea | Transcripción de la imagen: Variable aleatoria binomial
+
+0.2 0.25 -
+0.15 - n=20 Pp= 0.3 N
+0.15 -
+016
+01F
+0.05 -
+] i 0.05 - ]
+(r i Í l Í f- — = DS — 2— i
+o 5 10 15 20 o 5 10 15 20]]
+
+Variable aleatoria binomial
+𝑋Binomial(𝑛,𝑝)
+Recorrido: 
+𝑝𝑋(𝑘)=(
+𝑛
+𝑘)×𝑝𝑘×𝑞𝑛−𝑘∀𝑘∈𝑅𝑋
+𝜇=E [ 𝑋]=∑
+𝑘=0
+𝑛
+𝑘×(
+𝑛
+𝑘)×𝑝
+𝑘×𝑞
+𝑛−𝑘
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria binomial
+
+X Binomial(n,p)
+
+Recorrido:
+
+px(k)=('¡1) xpxq” “YkeR.
+
+u=EX|=)Ykx1 xpxq
+0— K]]
+
+Variable aleatoria binomial
+𝜇=∑
+𝑘=0
+𝑛
+𝑘×(
+𝑛
+𝑘)×𝑝
+𝑘×𝑞
+𝑛−𝑘
+𝜇=∑
+𝑘=0
+𝑛
+𝑘×
+𝑛!
+𝑘!(𝑛−𝑘)!
+×𝑝
+𝑘×𝑞
+𝑛−𝑘
+𝜇=∑
+𝑘=1
+𝑛
+𝑛×(𝑛−1)!
+(𝑘−1)! (𝑛−1−(𝑘−1))! ×𝑝
+𝑘×𝑞
+𝑛−𝑘
+𝜇=𝑛×𝑝×∑
+𝑘=0
+𝑛−1
+(𝑛−1 )!
+(𝑘−1)!(𝑛−1−(𝑘−1))! ×𝑝
+𝑘−1×𝑞
+𝑛−𝑘
+𝜇=𝑛×𝑝×(𝑝+𝑞)
+𝑛−1=𝑛×𝑝
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria binomial
+
+n kaan—k
+
+Í
+K!n-kI! par
+
+n><(n 1)
+1K1 1- D
+n-1 (n 1),
+
+“="““,;0(k—1>.( 1- K- D1
+
+u=nxpx|p+q"" =nxp]]
+
+Variable aleatoria binomial
+𝑋Binomial(𝑛,𝑝)
+Recorrido: 
+𝑝𝑋(𝑘)=(
+𝑛
+𝑘)×𝑝𝑘×𝑞𝑛−𝑘∀𝑘∈𝑅𝑋
+𝜇=E [ 𝑋]=𝑛×𝑝
+𝜎2=Var [ 𝑋]=𝑛×𝑝×𝑞
+¡Demostrar!
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria binomial
+
+X Binomial(n,p)
+
+Recorrido:
+
+px(k)=('¡1) xpxq” “YkeR.
+
+u=E X =nxp
+
+o*=Var [X] —AnxXPpxq ¡Demostrar!]]
+
+Variables aleatorias discretas notables
+: número de baterías defectuosas en la muestra de tamaño 20 (como el 
+tamaño poblacional es muy grande se asume que se extrajeron con 
+reposición)
+: El lote se rechaza tras el control de calidad de las 20 baterías
+𝑃( 𝐴)=𝑃( 𝑋≥4 )=1−𝑃( 𝑋≤4 )=1−∑
+𝑘=0
+3
+(
+20
+𝑘)×𝑝
+𝑘×𝑞
+20−𝑘
+
+[Descripción de la imagen: una nota con un bloc de notas y un bloc de notas | Transcripción de la imagen: Una fábrica de baterías entrega su producto en lotes de gran tamaño (1000 baterías). El compra-
+dor habitual desea rechazar los lotes que selecciona al azar y controla 20) baterías de cada lote.
+Si encuentra 4 o más baterías delectuosas rechaza el lote entero. ¿Cuál es la probabilidad de que
+el lote sea rechazado si el porcentaje de baterías delectiosas es:
+
+a) 5%.
+
+b) 10%,
+
+c) ¿Qué sucedería con las anteriores probabilidades si el número crítico de rechazos Muera
+
+anmentado de ta g7
+
+: número de baterías defectuosas en la muestra de tamaño 20 (como el
+tamaño poblacional es muy grande se asume que se extrajeron con
+reposición)
+
+: El lote se rechaza tras el control de calidad de las 20 baterías
+
+3
+PlA=P|X>4)=1-P|X<4=1-Y 2kº x pc
+k=0]]
+
+Variables aleatorias discretas notables
+𝑃( 𝐴)=𝑃( 𝑋≥4 )=1−𝑃( 𝑋≤4 )=1−∑
+𝑘=0
+3
+(
+20
+𝑘)×𝑝
+𝑘×𝑞
+20−𝑘
+
+[Descripción de la imagen: una pantalla de ordenador que muestra una tabla con un número de números | Transcripción de la imagen: Una fábrica de baterías entrega su producto en lotes de gran tamaño (1000 baterías). El compra-
+dor habitual desea rechazar los lotes que selecciona al azar y controla 20) baterías de cada lote.
+Si encuentra 4 o más baterías delectuosas rechaza el lote entero. ¿Cuál es la probabilidad de que
+el lote sea rechazado si el porcentaje de baterías delectiosas es:
+
+a) 5%.
+
+b) 10%,
+
+c) ¿Qué sucedería con las anteriores probabilidades si el número crítico de rechazos Muera
+
+anmentado de ta g7
+
+PIA=PX>4=1-P X<4=1-
+
+N p —| PIA=PIX>=9) P(A) = PIX >=5)
+_ oo —| 0.0159 00026
+| 00432
+
+File Edit Debug Window Help MNews
+
+Command Window
+>> l-binocdf (3,20,0.05)
+= 10.015902]]
+
+Variables aleatorias discretas notables
+Esta aplicación permite calcular probabilidades 
+puntuales de variables discretas y también 
+acumuladas como en este ejemplo. Las celdas 
+claras se completan con datos y la roja 
+devuelve el resultado. Dispone de ayudas, 
+fórmulas,  así como  el valor esperado y la 
+varianza.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+
+Variable aleatoria hipergeométrica
+Cuenta el número de elementos de cierta clase en una muestra aleatoria 
+extraída sin reposición de una población que contiene elementos de esa 
+clase.
+𝑋Hipergeom é trica(𝑁, 𝑀,𝑛)
+• Una población de  individuos, divididos en 2 categorías, A 
+y B. 
+• La categoría A tiene  individuos, y la B tiene .
+• Se toma una muestra de  individuos de la población al 
+azar sin reposición.
+•  número de individuos de la clase A que salen.
+
+[Descripción de la imagen: variablee de la est envol]
+
+Variable aleatoria hipergeométrica
+𝑋Hipergeom é trica(𝑁, 𝑀,𝑛)
+Recorrido: 
+𝑝𝑋(𝑘)=(
+𝑀
+𝑘)×(
+𝑁−𝑀
+𝑛−𝑘)
+(
+𝑁
+𝑛)
+∀𝑘∈𝑅𝑋
+𝜇=E [ 𝑋]=𝑛× 𝑀
+𝑁
+𝜎
+2=Var [ 𝑋]=𝑛× 𝑀
+𝑁× 𝑁−𝑀
+𝑁
+× 𝑁−𝑛
+𝑁−1
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria hipergeométrica
+
+X Hipergeom étrica(N,M,n)
+
+Recorrido:]]
+
+Variable aleatoria hipergeométrica
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria hipergeométrica
+
+N = 100, M = 30,n=20
+
+N = 200, M= 100,n=530]]
+
+Variable aleatoria hipergeométrica
+𝑋Hipergeom é trica(𝑁, 𝑀,𝑛)
+𝜇=E [ 𝑋]=𝑛× 𝑀
+𝑁
+𝜎
+2=Var [ 𝑋]=𝑛× 𝑀
+𝑁× 𝑁−𝑀
+𝑁
+× 𝑁−𝑛
+𝑁−1
+Interesante observar: 
+•
+ es la proporción  de elementos de la clase A, el valor esperado es  
+(como en la binomial)
+•
+El factor  es menor que 1                 la varianza en este caso es 
+menor que la de una variable binomial para los mismos valores de  y .
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variable aleatoria hipergeométrica
+Relación con la binomial:
+ 
+•
+Si la población y la cantidad de individuos de cada categoría es 
+mucho más grande que el tamaño de la muestra () no hace gran 
+diferencia si la muestra se toma con o sin reposición (¡hay un 
+ejercicio en la guía!).
+•
+Se puede aproximar una variable aleatoria hipergeométrica por 
+una binomial.
+
+[Descripción de la imagen: variable alusta alusta alusta alusta alusta alusta alusta al]
+
+Variables aleatorias discretas notables
+: número de tréboles en la mano de 5 cartas  (el mazo de 52 cartas está 
+partido en 4 clases, una de ellas es tréboles)
+: número de ases en la mano de 5 cartas  (en el mazo de 52 cartas hay 
+4 ases)
+
+[Descripción de la imagen: un bloc de notas con un bloc de notas y una pluma | Transcripción de la imagen: De un mazo de naipes ordinarios (52 naipes) bien barajado se extraen cinco cartas, al azar (sin
+sustitución), para nna mano de poker.
+
+—2 Calcule la probabilidad de sacar por lo menos un trebol.
+
+3 Calcule la probabilidad de sacar por lo menos dos ases.
+
+: número de tréboles en la mano de 5 cartas (el mazo de 52 cartas está
+partido en 4 clases, una de ellas es tréboles)
+
+9
+»
+K
+
+: número de ases en la mano de 5 cartas (en el mazo de 52 cartas hay
+4 ases)]]
+
+Variables aleatorias discretas notables
+En Octave hygepdf calcula la función de 
+probabilidad y puede verse el orden de los 
+parámetros de invocación (k, N, M, n) 
+En la app mostrada se usa la misma notación 
+introducida aquí. Se puede elegir calcular la 
+probabilidad puntual o acumulada.
+
+[Descripción de la imagen: una tabla con un gráfico de barras y un gráfico de barras | Transcripción de la imagen: De un mazo de naipes ordinarios (52 naipes) bien barajado se extraen cinco cartas, al azar (sin
+sustitución), para nna mano de poker.
+
+Calenle la probabilidad de
+sacar por lo menos dos ases
+
+Probability Distributions
+
+X-HG(n,N,M)
+
+.……
+
+>> 1 — hygepdf (0,52,13,5)
+= 0.77847
+
+En Octave hygepdf calcula la función de
+probabilidad y puede verse el orden de los
+parámetros de invocación (kK, N, M, n)
+
+En la app mostrada se usa la misma notación
+introducida aquí. Se puede elegir calcular la
+probabilidad puntual o acumulada.]]
+
+Variable aleatoria geométrica
+Cuenta el número de repeticiones independientes de un experimento 
+aleatorio hasta la primera ocurrencia de un evento de interés. 
+Este es un ejemplo donde el recorrido de X no es finito, pero si 
+numerable. La condición de cierre corresponde a la suma de una 
+serie convergente.
+𝑋Geomé trica(𝑝)
+Recorrido: 
+𝑝𝑋(𝑘)=(1−𝑝)𝑘−1𝑝∀𝑘∈𝑅𝑋
+• Se realizan experimentos idénticos e independientes, 
+con igual probabilidad de éxito en cada experimento.
+•  número de intentos hasta el primer éxito (incluido).
+
+[Descripción de la imagen: variablee de variables y y y y y y y y y y y y y y y y y y y y y y y y y y y y]
+
+Variable aleatoria geométrica
+Serie geométrica
+∑
+𝑘=0
+∞
+𝑟
+𝑘=
+1
+1−𝑟si|𝑟|<1
+∑
+𝑘=1
+∞
+(1−𝑝)
+𝑘−1𝑝=𝑝∑
+𝑘=0
+∞
+(1−𝑝)
+𝑘=¿
+𝑝
+1−(1−𝑝)=1¿
+¡Tarea para la casa!:
+𝜇=E [ 𝑋]= 1
+𝑝
+𝜎
+2=Var [ 𝑋]=1−𝑝
+𝑝
+2
+
+[Descripción de la imagen: variablee alegóricaa | Transcripción de la imagen: Variable aleatoria geométrica
+
+SÍ1 T'1< 1 Serie geométrica
+
+1-r]]
+
+Variable aleatoria geométrica
+Probabilidad de la cola
+𝑃( 𝑋>𝑀)=1−𝑃( 𝑋≤𝑀)=1−∑
+𝑘=0
+∞
+(1−𝑝)
+𝑘−1𝑝=¿ (1−𝑝)
+𝑀¿
+𝑃( 𝑋>𝑀+𝑁∨𝑋>𝑀)= 𝑃(𝑋>𝑀+𝑁)
+𝑃( 𝑋>𝑀)
+=
+(1−𝑝)𝑀+ 𝑁
+(1−𝑝)
+𝑀=(1−𝑝)𝑁
+Falta de memoria
+𝑃( 𝑋>𝑀+𝑁∨𝑋>𝑀)=𝑃( 𝑋>𝑁)
+Esta propiedad se denomina de “falta de memoria”, porque la 
+condición    (un pasado) no modifica que  excedió en  a .
+
+[Descripción de la imagen: variablee de valor valor | Transcripción de la imagen: Variable aleatoria geométrica
+
+Probabilidad de la cola
+
+PX>Mi=1- P'X<M=1- k2 1-p/p=il-pM:
+
+-
+2 Falta de memoria
+a
+
+PIX>M+N|
+P X>M)
+
+a PX>M+NVX>M )=]]
+
+Variable aleatoria Poisson
+•
+Número de llamadas telefónicas que llegan a un sistema.
+•
+Número de accesos a un servidor.
+•
+Número de fotones que emite un láser.
+•
+Número de decaimientos (partículas emitidas) por una 
+sustancia radioactiva.
+Asociada a un especial proceso denominado de Poisson. Sirve 
+para contar número de ocurrencias de un hecho en un tiempo 
+dado.
+
+[Descripción de la imagen: variablee de valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Variable aleatoria Poisson
+Asociada a un especial proceso denominado de Poisson. Sirve 
+para contar número de ocurrencias de un hecho en un tiempo 
+dado.
+𝑋Poisson(𝜆)
+Recorrido: 
+𝑝𝑋(𝑘)= 𝜆𝑘
+𝑘! 𝑒
+−𝜆∀𝑘∈𝑅𝑋
+
+[Descripción de la imagen: variablee de valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Variable aleatoria Poisson
+𝑝𝑋(𝑘)= 𝜆𝑘
+𝑘! 𝑒
+−𝜆∀𝑘∈𝑅𝑋
+∑
+𝑘=0
+∞𝜆
+𝑘
+𝑘! 𝑒
+−𝜆=𝑒
+−𝜆∑
+𝑘=0
+∞𝜆
+𝑘
+𝑘!=𝑒
+−𝜆𝑒
++𝜆=1
+𝜇=E [ 𝑋]=∑
+𝑘=0
+∞
+𝑘× 𝜆
+𝑘
+𝑘! 𝑒
+−𝜆=𝜆×𝑒
+−𝜆∑
+𝑘=0
+∞
+𝜆
+𝑘−1
+(𝑘−1)!=𝜆
+𝜎2=Var [ 𝑋]=𝜆
+¡Tarea para la casa!
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria Poisson]]
+
+Variable aleatoria Poisson
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea]
+
+Variables aleatorias discretas notables
+      Variable aleatoria Poisson
+: número de errores en una página
+En Octave  poisspdf calcula la función de 
+probabilidad de la variable aleatoria de 
+Poisson mientras que poisscdf calcula la 
+función de distribución.
+𝑃( 𝑋=𝑘)= 0.52
+2! 𝑒−0.5≈0.076
+𝑃( 𝑋≥2)=1−0.50
+0! 𝑒
+−0.5−0.51
+1! 𝑒
+−0.5≈0.0902
+
+[Descripción de la imagen: una página con un número de números y un número de números | Transcripción de la imagen: Suponga que hay 300 errores distribuidas al azar a lo largo de un libro de 600 páginas.El número
+de errores por página se puede asumir una variable aleatoria con distribución de Poisson de
+parámetro A = % = .5. Caleule la probabilidad de que uña página dada contenga:
+
+a) 2 errores exactamente
+
+b) 2 6 más errores.
+
+: número de errores en una página
+
+x0.076
+
+=0.0902
+
+File Edit Debug Window Help
+JJ - | J ] |m…tnn—m—;—lí En Octave poisspdf calcula la función de
+“CommandWindow — probabilidad de la variable aleatoria de
+
+>> p0155pdf (2,0.5) Poisson mientras que poisscdf calcula la
+
+ans = 0.075816 función de distribución.
+>> l-polsscdf(1,0.5)
+= 0.090204]]
+
+Variables aleatorias discretas notables
+      Variable aleatoria Poisson
+: número de errores en una página
+
+[Descripción de la imagen: un gráfico con un gráfico de barras y un gráfico de barras | Transcripción de la imagen: Suponga que hay 300 errores distribuidas al azar a lo largo de un libro de 600 páginas.El número
+de errores por página se puede asumir una variable aleatoria con distribución de Poisson de
+parámetro A = % = .5. Caleule la probabilidad de que uña página dada contenga:
+
+a) 2 errores exactamente
+
+b) 2 6 más errores.
+
+: número de errores en una página
+
+Probability Distributions E Probability Distributions E
+
+X-Pois(A) X-Pois(2X)]]
+
+Variable aleatoria Poisson
+Bombas V1 y V2 sobre Londres en la Segunda Guerra Mundial
+Durante la Segunda Guerra Mundial  los 
+alemanes lanzaron sobre Londres las temidas 
+bombas voladoras V1 y V2.  De alrededor de 5 
+m de longitud, cargando casi 1000 Kg de 
+explosivos se lanzaban desde Calais en 
+Francia (cerca de Londres) y al acabarse el 
+combustible 
+caían 
+sobre 
+Londres 
+aproximadamente al azar.
+Un oficial de la RAF relevó una región de 144 
+Km2 de Londres dividiéndola en 576 zonas de 
+0.25 Km2 de área. Durante el conflicto cayeron 
+537 bombas en esa región.
+
+[Descripción de la imagen: bos y y sob enquida pora]
+
+Variable aleatoria Poisson
+Bombas V1 y V2 sobre Londres en la Segunda Guerra Mundial
+Si la distribución de bombas se puede suponer al azar con ese 
+promedio de  bombas por zona entonces la fracción de zonas con 0, 
+1, 2, 3, … bombas se podría modelar con la distribución de Poisson.
+donde  es la cantidad de bombas y  el promedio de bombas por 
+zona y  puede tomar los valores 0, 1, 2,  …
+La distribución de probabilidades de esta variable aleatoria depende 
+de un parámetro. Como se dispone de datos entonces ese 
+parámetro puede estimarse (dar una aproximación usando la media 
+de los datos para dar esa estimación). Recordemos que, en este 
+caso, el parámetro b es el valor esperado de la variable aleatoria.
+𝑃( 𝑋=𝑘)= 𝑏𝑘
+𝑘! 𝑒
+−𝑏
+
+[Descripción de la imagen: una nota con las palabras «variable» y «variable»]
+
+Variable aleatoria Poisson
+Bombas V1 y V2 sobre Londres en la Segunda Guerra Mundial
+Bombas en una 
+zona
+Nro de zonas
+Predicho con el 
+modelo
+0
+229
+226.7
+1
+211
+211.4
+2
+93
+98.5
+3
+35
+30.6
+4
+7
+7.1
+5 o mas
+1
+1.8
+576
+Hubo 229 zonas que no fueron impactadas por bombas, 211 con exactamente 1 y así 
+sucesivamente. Sólo 1 zona recibió 5 bombas. La suma de los productos entre las 
+dos primeras columnas da el número total de bombas caídas. La última columna se 
+calcula multiplicando el número total de zonas por la probabilidad calculada con el 
+modelo de Poisson tomando como parámetro el promedio observado de bombas por 
+zona .
+
+[Descripción de la imagen: una tabla con el número de los números en español]
+
+Variable aleatoria Poisson
+Relación con la binomial :
+ 
+Si  es grande () y  es pequeño (), se puede aproximar la 
+distribución de  por la de .
+E [ 𝑋]=𝑛𝑝=E [𝑌]
+Var [ 𝑋]=𝑛𝑝(1−𝑝)≈𝑛𝑝=Var [𝑌]
+𝑃( 𝑋≤𝑘)≈𝑃(𝑌≤𝑘)
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variable aleatoria Poisson
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria Poisson
+
+GDclaw:
+File Edit Debug Window Help MNews
+
+JJJE| J Cl [emenorecon: [c
+
+>> n= 100,p 0.05;L=n*p;
+
+>> PB=binopdf (0:n,n,p);
+
+>> PP=poisspdf (0:n,1);
+
+>> plot(0:n,ab5(P5—PP),'D—'H
+
+distribucion binomial n=100, p=0.05
+
+f&nlnmd…
+>> max (abs (PB-PP))
+ans = 2LÑ00,0045505
+
+20 40
+
+distribucion de Poisson L =5]]
+
+Variables aleatorias discretas notables
+      Variable aleatoria Poisson
+: número de retrasos cubiertos por la póliza en un año
+Una compañía de seguros garantiza pólizas de seguros individuales 
+contra retrasos aéreos de más de doce horas. Una encuesta ha 
+permitido estimar a lo largo de un año que cada persona tiene una 
+probabilidad de cada de mil de ser víctima de un retraso aéreo que 
+esté cubierto por este tipo de póliza y que la compañía aseguradora 
+podrá vender una media de cuatro mil pólizas al año.
+Se pide calcular  la probabilidad de que el número de retrasos 
+cubiertos por la póliza no pase de cuatro por año.
+Usando la aproximación de Poisson resulta:
+Usando la distribución binomial con  y   resulta también 0.62884… 
+E [ 𝑋]=4000×0.001=4
+𝑃( 𝑋≤4 )=∑
+𝑘=0
+4
+4𝑘
+𝑘! 𝑒−4 ≈0.62884
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+

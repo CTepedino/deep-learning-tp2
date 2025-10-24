@@ -1,0 +1,494 @@
+Sistemas de Inteligencia Artiﬁcial 2025
+Redes Generativas 
+Adversarias (GAN)
+
+[Descripción de la imagen: genarias rojas entrea]
+
+Generación de datos
+Cada imagen 64x64x3
+(alto, ancho, canales)
+R12288
+.
+.
+.
+.
+200
+30
+58
+220
+196
+Espacio 12288-dimensional
+Función de distribución de probabilidad
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos del gato]
+
+Sea Pdata la función de distribución de los datos
+Busco generar x’ / x’ ~ Pdata
+
+[Descripción de la imagen: una pantalla de ordenador con una imagen de una persona y una pantalla de ordenador con una imagen de una persona]
+
+¡No conocemos 
+esta 
+distribución!
+Sea Pdata la función de distribución de los datos
+Busco generar x’ / x’ ~ Pdata
+
+[Descripción de la imagen: un diagrama de un triangular con una línea de líneas que están conectadas al centro del triángulo]
+
+Generative Adversarial Network
+Ian J. Goodfellow, 
+Jean Pouget-Abadie ,
+Mehdi Mirza,
+Bing Xu,
+David Warde-Farley,
+Sherjil Ozair†,
+Aaron Courville, 
+Yoshua Bengio
+Año: 2014
+
+[Descripción de la imagen: una página de un libro con el título | Transcripción de la imagen: Generative Adversarial Network
+
+Generative Adversarial Nets
+
+Tan J. Goodfellow, Jean Pouget-Abadie; Mehdi Mirza, Bing Xu, David Warde-Farley,
+Sherjil Ozair! Aaron Courville, Yoshua Bengio*
+Département d'informatique et de recherche opérationnelle
+Université de Montréal
+Montréal, QC H3C 3J7
+
+Abstract
+
+We propose a new framework for estimating generative models via an adversar-
+ial process, in which we simultaneously train two models: a generative model G
+that captures the data distribution, and a discriminative model 7 that estimates
+the probability that a sample came from the training data rather than G. The train-
+ing procedure for G is to maximize the probability of 7 making a mistake. This
+framework corresponds to a minimax two-player game. In the space of arbitrary
+functions G and D, a unique solution exists, with G recovering the training data
+distribution and D equal to $ everywhere. In the case where G and D are defined
+by multilayer perceptrons, the entire system can be trained with backpropagation.
+There is no need for any Markov chains or unrolled approximate inference net-
+works during either training or generation of samples. Experiments demonstrate
+the potential of the framework through qualitative and quantitative evaluation of
+the generated samples.
+
+1 Introduction
+
+The promise of deep leaming is to discover rich, hierarchical models [2] that represent probability
+distributions over the kinds of data encountered in artificial intelligence applications. such as natural
+
+lan J. Goodfellow,
+Jean Pouget-Abadie ,
+Mehdi Mirza,
+
+Bing Xu,
+
+David Warde-Farley,
+Sherjil Ozairt,
+
+Aaron Courville,
+Yoshua Bengio
+
+Año: 2014]]
+
+¡Transformación!
+Imágenes: 64x64x3
+Espacio: 12288-dimensional
+Muestras de distribución 
+uniforme
+Muestras de 
+distribución de gatos
+Reconstrucción
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos de la red]
+
+¡Transformación!
+Imágenes: 64x64x3
+Espacio: 12288-dimensional
+Muestras de distribución 
+uniforme
+Muestras de 
+distribución de gatos
+Reconstrucción
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos de trans - trans | Transcripción de la imagen: Inverse Sampling Theorem
+
+Muestras de distribución M
+
+| Y U[0,1], F invertible y F = CDF(pdf()),
+uniforme
+
+X = F(Y) tiene CDF(X) = F
+
+¡Transformación! Reconstrucción
+
+GENERATIVE
+NETWORK]]
+
+Generative Adversarial Network
+REAL
+FAKE
+FEEDBACK
+Noise
+Vector
+GENERATOR
+DISCRIMINATOR
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos del gato]
+
+¿Cómo armamos el discriminador?
+
+[Descripción de la imagen: ¿Cómo hacer marketing?]
+
+Generative Adversarial Network
+Discriminador
+12228 
+neuronas
+.
+.
+.
+.
+200
+30
+58
+220
+196
+0.95
+
+[Descripción de la imagen: oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss oss | Transcripción de la imagen: Generative Adversarial Network
+
+Discriminador
+
+nnnnnnnn]]
+
+¿Cómo armamos el generador?
+
+[Descripción de la imagen: Comoo do ano do ano do ano do ano do ano do ano do ano do ano do ano do]
+
+z
+Discriminador
+Generador
+G(z)
+12228 
+neuronas
+12228 
+neuronas
+Conjunto de Datos
+pdata (?) 
+pz
+
+[Descripción de la imagen: un diagrama de un gato y un gato con la cabeza de un gato | Transcripción de la imagen: Generador Discriminador
+
+G(z)
+o o
+o o
+o o
+f(x)
+=
+1 12228 12228
+pZ ' neuronas neuronas
+o] a [|) X]]
+
+z
+Discriminador
+Generador
+G(z)
+¿Cuál es la función de costo?
+p(yi) es la probabilidad de que el discriminador diga que la etiqueta es yi.
+
+[Descripción de la imagen: un diagrama de una red con una sola capa]
+
+FUNCIÓN DE COSTO
+1
+(1 - 1)
+Quiero 
+que sea 
+lo más 
+cercano 
+a log 1
+Dato “real”
+
+[Descripción de la imagen: función función función función función función función función función función función función función función función función función función función función]
+
+FUNCIÓN DE COSTO
+0
+(1 - 0)
+Quiero 
+que sea lo 
+más 
+cercano a 
+log 1
+Dato 
+generado
+
+[Descripción de la imagen: funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional funcional | Transcripción de la imagen: = Binary Cross Entropy
+FUNCI0N DE COST0 ¡-11(71) log P(y:) + (1 — 1) log(1 — P(y)))
+
+||M2
+
+… + (1 —u)log(1 — D(r))|
+
+! l|
+
+0 (1 - 0) Quiero
+que sea lo
+más
+cercano a
+log1
+
+1
+N<
+
+Dato
+generado]]
+
+FUNCIÓN DE COSTO
+0
+(1 - 0)
+Quiero 
+que sea lo 
+más 
+cercano a 
+log 1
+Dato 
+generado
+
+[Descripción de la imagen: función función función función función función función función función función función función función función función función función función función función función función | Transcripción de la imagen: FUNCIÓN DE COSTO
+
+Lp = H(y, = —%Z[ yog(D +(1—y)l09(1—0(a:i))]]
+
+JUEGO MINIMAX (dinámica adversarial)
+2 jugadores
+D busca maximizar y G busca minimizar.
+Punto de convergencia: la salida del 
+discriminador es 0.5 para cualquier dato de 
+entrada (real o generado).
+https://arxiv.org/pdf/1406.2661.pdf
+
+[Descripción de la imagen: una interfaz informática, una interfaz informática y una interfaz informática, una interfaz informática y una interfaz informática]
+
+[Descripción de la imagen: un diagrama de los cuatroiers de una partícula de partícula | Transcripción de la imagen: D = Discriminator
+
+....... D G = Generator
+P,(x) P-(z) = Input noise distribution
+Prata (Y) = Original data distribution
+"""" Paata (T) Py(x) = Generated distribution
+
+(a) (b) (c) (d)]
+
+Demo práctica
+
+[Descripción de la imagen: la palabra demoriata sobre un fondo gris]
+
+Colapso Modal
+G(z)
+G(z)
+z
+x
+z
+x
+
+[Descripción de la imagen: un diagrama que muestra los tres ángulos diferentes de un prisma rectangular]
+
+Colapso Modal
+Fuente: https://arxiv.org/pdf/1611.02163.pdf
+
+[Descripción de la imagen: las celdas de la celda se muestran en esta imagen | Transcripción de la imagen: Colapso Modal
+
+. - - - - -
+u - - 4 - - 2 -
+. . e
+- - - - -
+Step 0 Step 5k Step 10k Step 15k Step 20k Step 25k Target
+
+Fuente: https:/arxiv.org/pdf/1611.02163.pdf]]
+
+¿Por qué ½?
+FUNCIÓN OBJETIVO
+
+[Descripción de la imagen: una pantalla de ordenador con el texto « poro » | Transcripción de la imagen: ¿P 2?
+or que /2: ']]
+
+¿Por qué ½?
+¿Cuál es el D* que maximiza?
+
+[Descripción de la imagen: un diagrama de una línea con un punto y una línea con un punto | Transcripción de la imagen: ¿Por qué Y2?
+
+PP]]
+
+¿Por qué ½?
+¿Qué pasa si reemplazo?
+
+[Descripción de la imagen: un diagrama de una fuerza | Transcripción de la imagen: ¿Por qué Y2?
+
+D =— —
+P data*)+P ,()
+
+¿Qué pasa si reemplazo?
+
+V(G,D) =- log4 + 2DJS(p
+
+data
+
+P]]
+
+¿Por qué ½?
+¿Cuándo es mínima esta expresión? (V)
+
+[Descripción de la imagen: un gráfico con el mismo número de coeficientes | Transcripción de la imagen: ¿Por qué Y2?
+
+¿Cuándo es mínima esta expresión? (V]
+
+V(G, D) — log4 + 2DJS(p |pg)
+
+data]]
+
+¿Por qué ½?
+¿Cuándo es mínima esta expresión? (V)
+Constante
+Cuando las distribuciones son iguales
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: ¿Por qué %? - —
+
+P dg ) +P(4)
+
+¿Cuándo es mínima esta expresión? (V]
+
+V(G,D ) =— log4 + 20]S(pdata|pg)
+
+m Cuando las distribuciones son iguales]]
+
+¿Por qué ½?
+¿Cuándo es mínima esta expresión? (V)
+Constante
+Cuando las distribuciones son iguales
+D* = 0.5
+
+[Descripción de la imagen: un diagrama de un fourier y un fourier | Transcripción de la imagen: P .()
+
+data
+
+P dg ) +P(4)
+
+¿Por qué Y2?
+
+¿Cuándo es mínima esta expresión? (V]
+
+V(G,D ) =— log4 + 2D]S(pdata|pg)
+
+Cuando las distribuciones son iguales]]
+
+●El enfoque se basa en Teoría de Juegos: se modela como un problema 
+con dos jugadores, minimax.
+●Permite entrenar la red iniciando con muestras de una distribución 
+simple (ej: uniforme).
+●Para la mejora de generación de nuevos datos no se realiza 
+comparación directa con los datos originales.
+●Difícil de entrenar y esta es la MAYOR desventaja. Requiere atención 
+manual para analizar las salidas de las imágenes.
+RESUMEN
+
+[Descripción de la imagen: remen el enque en el enqueo]
+
+VARIANTES: https://github.com/hindupuravinash/the-gan-zoo 
+●
+Conditional GAN
+●
+Deep Convolutional GAN (DCGAN)
+●
+Progressive Growing GAN (PGGAN)
+●
+StyleGan
+●
+…
+APLICACIONES
+●
+Traducción texto a imagen (ej: DCGAN) 
+(Lab. https://creator.nightcafe.studio/)
+●
+Traducción bordes a imagen (Pix2Pix)
+●
+Generación de imágenes (especialmente importante en el área médica)
+●
+…
+
+[Descripción de la imagen: una foto de un gato con la leyenda de un gato]
+
+Caso de Aplicación
+LINK
+LINK
+
+[Descripción de la imagen: case apiicoo proyecto degrado uso | Transcripción de la imagen: Caso de Aplicación
+
+Proyecto final de Grado: Use of generative adversarial net-
+works for the creation and manipulation of facial images in
+the context of studying false memories and its effects on
+wrongful conviction cases: implementation of StyleGAN's ge-
+nerative image modeling and style mixing properties to de-
+sign an interface for experimentation purposes
+
+Resumen
+
+Proyecto final de Grado: Controlling face's frame generation in
+StyleGAN's latent space operations: modifying faces to de-
+ceive our memory
+
+Resumen
+
+¡TBA "Innocence Project is a non-profitable organization that works in reducing
+
+wrongful convictions. In collaboration with El Laboratorio de Sueño y Me-
+moria from Instituto Tecnológico de Buenos Aires (ITBA), they are studying
+human memory in the context offace identification. They have a strong hy-
+pothesis stating that human memory heavily relies in face's frame to recog-
+
+nize faces. |f this is proved, it could mean that face recognition in police Li-]]
+
+Lección Importante! 
+GAN modela un formato o estrategia de entrenamiento no es 
+una arquitectura de red neuronal
+Esquemas que pueden reemplazar a GAN:
+- Modelos de difusión - comúnmente utilizados para 
+imágenes
+- Modelos autorregresivos (próxima clase!) - comúnmente 
+utilizados para texto.
+
+[Descripción de la imagen: le entre les entres entres entres entres entres en]
+
+The End
+GAN Lab: https://poloclub.github.io/ganlab/
+Paper original Generative Adversarial Networks: https://arxiv.org/pdf/1406.2661.pdf
+Sobre Binary Cross Entropy: 
+https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a
+Optimización y Convergencia de la red GAN:
+https://arxiv.org/pdf/1406.2661.pdf
+https://www.youtube.com/watch?v=Gib_kiXgnvA (favorito personal)
+https://srome.github.io/An-Annotated-Proof-of-Generative-Adversarial-Networks-with-Implementation-Notes/
+https://jonathan-hui.medium.com/proof-gan-optimal-point-658116a236fb
+https://arxiv.org/pdf/1705.07215.pdf
+Sobre el origen de la idea:
+https://www.technologyreview.com/2018/02/21/145289/the-ganfather-the-man-whos-given-machines-the-gift-of-imagination/
+https://www.deeplearning.ai/the-batch/ian-goodfellow-a-man-a-plan-a-gan/
+
+[Descripción de la imagen: el final - un nuevo tipo de letra | Transcripción de la imagen: The End
+
+GAN Lab: https:/poloclub.github.io/ganlab/
+
+Paper original Generative Adversarial Networks: https://arxiv.org/pdf/1406.2661.ndf
+
+Sobre Binary Cross Entropy:
+https:7towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-adac6025181a
+
+Optimización y Convergencia de la red GAN:
+
+https:/7arxiv.org/pdf/1406.2661.pdf
+https:7www. youtube com/watch?v=Gib_kiXgnvA [favorito personal)
+Fof-G tive-Ad '
+
+ttgs.//|onathan hU|.medlum com/proof-gan-optimal-point- 658116a236fb
+https:/arxiv.org/pdf/1705.07215.pdf
+
+Sobre el origen de la idea:
+
+https: //www deep|earn¡nga¡/the batch/ian-goodfellow-a-man-a-plan-a-gan/]]
+

@@ -1,0 +1,1306 @@
+Experimento aleatorio
+Ejemplos de experimentos no determinísticos o aleatorios
+E1: Se lanza un dado y se observa el número que aparece en 
+la cara superior.
+E2: Se lanza una moneda y se cuenta el número de caras 
+obtenidas.
+E3: Se consideran los artículos producidos en una línea de 
+producción y se cuenta el número de defectuosos.
+E4: Se cuenta el número de accesos a un servidor Web en 
+una hora.
+E5: Se registran las temperaturas máxima y mínima de un día.
+E6: Se mide el tiempo de duración de una lámpara LED
+¿Qué tienen en común todos estos experimentos?
+
+[Descripción de la imagen: exemento de demimios aloros]
+
+Experimento aleatorio
+Características de un experimento aleatorio
+1. Es posible repetir el experimento indefinidamente sin 
+cambiar esencialmente las condiciones en que se realiza.
+2. Aunque, en general, no podemos identificar un resultado 
+particular del experimento, se puede indicar el conjunto de 
+todos los resultados posibles (este conjunto es el ESPACIO 
+MUESTRAL del experimento).
+3. A medida que el experimento se repite, los resultados 
+parecen ocurrir en forma caprichosa. Sin embargo, como el 
+experimento se repite un gran número de veces, aparece un 
+patrón 
+de 
+regularidad. Este 
+patrón hace 
+posible 
+la 
+construcción de un modelo matemático con el cual analizar el 
+experimento.
+
+[Descripción de la imagen: exermelato carres de exemento]
+
+Sobre el álgebra de sucesos
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob | Transcripción de la imagen: Sobre el álgebra de sucesos
+
+experimento aleatorio — resultados inciertos
+
+espacio muestral de un experimento aleatorio -
+conjunto de todos los resultados posibles
+
+suceso o evento —
+conjunto de resultados posibles
+
+ACS]]
+
+Sobre el álgebra de sucesos
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob | Transcripción de la imagen: Sobre el álgebra de sucesos
+
+E,: Se lanza un dado y se observa el número que
+aparece en la cara superior
+
+d
+9
+—
+
+A1 = (2,4,6) - sale un número par
+
+9
+- »
+K]]
+
+Sobre el álgebra de sucesos
+ 
+Se imponen ciertas reglas sobre las cosas de las que 
+se desea y debe hablar
+Queremos hablar sobre la posibilidad de que salga par:
+ 
+Entonces debemos poder hablar acerca de la posibilidad de que 
+NO salga par:
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Sobre el álgebra de sucesos
+ 
+Se imponen ciertas reglas sobre las cosas de las que 
+se desea y debe hablar
+Queremos hablar sobre la posibilidad de que salga par:
+Y  queremos hablar sobre la posibilidad de que sea mayor a 3:
+ 
+ 
+Entonces debemos poder hablar acerca de la posibilidad de que 
+salga par O mayor a 3:
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Sobre el álgebra de sucesos
+ 
+Se imponen ciertas reglas sobre las cosas de las que 
+se desea y debe hablar
+Queremos hablar sobre la posibilidad de que salga par:
+Y  queremos hablar sobre la posibilidad de que sea mayor a 3:
+ 
+ 
+Entonces debemos poder hablar acerca de la posibilidad de que 
+salga par Y mayor a 3:
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Sobre el álgebra de sucesos
+Se imponen ciertas reglas sobre las cosas de las que 
+se desea y debe hablar
+Debemos poder hablar sobre la posibilidad de que salga algo:
+Debemos poder habar sobre la posibilidad de que salga nada:
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Sobre el álgebra de sucesos
+
+[Descripción de la imagen: una nota con las palabras 'sob elega suos ' | Transcripción de la imagen: Sobre el álgebra de sucesos
+
+suceso cierto
+
+suceso imposible
+
+A, B C S - sucesos asociados con cierto experimento aleatorio
+
+A ,AC no ocurrencia de A
+
+ocurrencia de los dos sucesos
+
+ocurrencia de por lo menos uno de los
+dos sucesos]]
+
+Sobre el álgebra de sucesos
+Una propiedad importante de dos sucesos:
+Dos sucesos son MUTUAMENTE EXCLUYENTES sii
+ 
+Dos sucesos son MUTUAMENTE EXCLUYENTES sii
+Es imposible que sucedan juntos
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Sobre el álgebra de sucesos
+Una propiedad importante de dos sucesos:
+En el lanzamiento de un dado, los siguientes sucesos 
+son MUTUAMENTE EXCLUYENTES
+
+[Descripción de la imagen: Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob Sob]
+
+Frecuencia relativa de un suceso
+
+[Descripción de la imagen: una nota con las palabras en español | Transcripción de la imagen: Frecuencia relativa de un suceso
+
+Sea E es un experimento aleatorio, S su espacio
+muestral y 4 C S un suceso.
+
+El experimento se repite n veces y se cuenta el número
+
+de veces n, que ocurre A4.
+
+La frecuencia relativa de A viene dada por:]]
+
+Frecuencia relativa de un suceso
+Propiedades
+
+[Descripción de la imagen: una nota con las palabras frucciva de suso props | Transcripción de la imagen: Frecuencia relativa de un suceso
+
+Propiedades
+
+* O< f(A)<1
+f(5) =1
+*SIiANB = V entonces f(AUB) = F(A) + fFCB)
+
+*JAJUB) = fA) + F(B) - FUNB)]]
+
+Probabilidad de un suceso
+Axiomática de Kolmogorov
+La probabilidad de un suceso es un número 
+real no negativo
+La probabilidad asignada al espacio muestral 
+de un experimento  aleatorio es 1.
+La probabilidad asignada a la ocurrencia de por  lo menos uno de 
+dos sucesos mutuamente excluyentes es la suma de las 
+probabilidades de cada uno de ellos.
+𝑃( 𝐴)≥0
+𝑃(𝑆)=1
+𝐴∩𝐵=∅⇒𝑃( 𝐴∪𝐵)= 𝑃( 𝐴)+𝑃(𝐵)
+
+[Descripción de la imagen: probajadde unicoo axnicat de lonoy]
+
+Probabilidad de un suceso
+Teoremas
+𝑃( 𝐴)≤1
+𝑃( 𝐴)=1−𝑃( 𝐴)
+𝑃(∅)=0
+𝑃( 𝐴∪𝐵)=𝑃( 𝐴)+ 𝑃( 𝐵) −𝑃( 𝐴∩𝐵)
+𝐴⊆𝐵⇒𝑃( 𝐴)≤𝑃( 𝐵)
+
+[Descripción de la imagen: probajadde sues teoremas p a = p = p = p = p = p = p = p = p | Transcripción de la imagen: Probabilidad de un suceso
+
+Teoremas]]
+
+Probabilidad de un suceso
+Teoremas
+𝑃( 𝐴)≤1
+𝑃( 𝐴)=1−𝑃( 𝐴)
+Demostración:
+𝐴∩∅=, 𝐴∪∅=𝐴⇒𝑃( 𝐴)=𝑃( 𝐴)+𝑃(∅)
+⇒𝑃(∅)=0
+𝑃( 𝐴)≥0 ⇒𝑃( 𝐴)=1−𝑃( 𝐴)≤1
+Demostración:
+
+[Descripción de la imagen: probajadde sues teomer a = a + a + a + a + a + a + a + a + a | Transcripción de la imagen: Probabilidad de un suceso
+
+Teoremas
+
+Demostración: P(Á)=l —P(A)
+AnG=,Au S=A>P(A)=PIA)+P(3)
+>P(9)=0
+
+Demostración: P (A) <1
+
+P(A)>0>P(A)=1-PIA)<1]]
+
+Probabilidad de un suceso
+Teoremas
+Demostración:
+𝐴∩𝐴=∅, 𝐴∪𝐴=𝑆⇒1=𝑃( 𝐴∪𝐴)=𝑃( 𝐴)+𝑃( 𝐴)
+⇒𝑃( 𝐴)=1−𝑃( 𝐴)
+𝑃(∅)=0
+El suceso imposible tiene probabilidad nula. El recíproco no 
+es verdadero. Hay sucesos posibles que tienen probabilidad 
+nula.
+
+[Descripción de la imagen: probajadde sues tec]
+
+Probabilidad de un suceso
+Teoremas
+Demostración: 𝑃( 𝐴∪𝐵)=𝑃( 𝐴)+ 𝑃( 𝐵)−𝑃( 𝐴∩𝐵)
+𝐵=( 𝐴∩𝐵) ∪( 𝐴∩𝐵)
+𝐴∪𝐵=( 𝐴∩𝐵) ∪𝐴
+( 𝐴∩𝐵)∩( 𝐴∩𝐵)=∅
+( 𝐴∩𝐵)∩𝐴=∅
+
+[Descripción de la imagen: un diagrama del área de un círculo con un radio y un radio | Transcripción de la imagen: Probabilidad de un suceso G
+Teoremas
+
+S
+
+_Demostración: P(A U B)=P(A)+P(B) —P(A DB)
+
+B=lAnB)J UuIAnB|
+
+ANBNl AnB=9
+
+M ANB EMANB S
+
+AuB=lAnBJUA
+
+ANBN A=]]
+
+Probabilidad de un suceso
+Teoremas
+Demostración: 𝑃( 𝐴∪𝐵)=𝑃( 𝐴)+ 𝑃( 𝐵)−𝑃( 𝐴∩𝐵)
+𝑃( 𝐵)=𝑃( 𝐴∩𝐵)+ 𝑃( 𝐴∩𝐵) ⇒
+𝑃( 𝐴∪𝐵)=𝑃( 𝐴∩𝐵)+ 𝑃( 𝐴)
+𝑃( 𝐴∩𝐵)=𝑃(𝐵)−𝑃( 𝐴∩𝐵)
+𝑃( 𝐴∪𝐵)=𝑃( 𝐵)−𝑃( 𝐴∩𝐵)+𝑃( 𝐴)
+
+[Descripción de la imagen: un diagrama de los tres círculos con los mismos números | Transcripción de la imagen: Probabilidad de un suceso Q
+Teoremas
+
+_Demostración: P(A U B)=P(A)+P(B) —P(A DB)
+
+PIB.=PIAnB+PIAnB>
+P AnB=PIB-PAnB
+
+M ANB EMANB S
+
+P AUB=PIAnB+P(A)
+P AUuB)=PIB-PIAnB)+P(A)]]
+
+Probabilidad de un suceso
+Teoremas
+Demostración: 𝐴⊆𝐵⇒𝑃( 𝐴)≤𝑃( 𝐵)
+𝐵=( 𝐴∩𝐵)∪( 𝐴∩𝐵)=( 𝐴∩𝐵)∪𝐴
+( 𝐴∩𝐵)∩𝐴=∅
+𝑃( 𝐵)=𝑃( 𝐴∩𝐵)+ 𝑃( 𝐴) ⇒𝑃( 𝐵) −𝑃( 𝐴)=𝑃( 𝐴∩𝐵)
+𝑃( 𝐴∩𝐵) ≥0 ⇒𝑃( 𝐵)−𝑃( 𝐴)≥0
+
+[Descripción de la imagen: probajadde sues termacin = = = = = = = = = | Transcripción de la imagen: Probabilidad de un suceso
+
+Teoremas
+
+_Demostración: AC B©P(Á)SP(B)
+
+B=lAnBlulAnBI=lAnBUA
+
+An BnA=5
+
+PIB=PIAnB+PÍA>PIB)-PIA=PÍAnB|]]
+
+Una demostración que nos deja Sheldon Cooper 
+Desigualdad de Bonferroni
+Sugerencia: La demostración es por inducción. El caso sale 
+del caso de la probabilidad de la unión de dos sucesos. 
+Analizar el caso especial del igual. 
+𝑃(¿ 𝑗=1¿𝑛𝐸𝑗)≤∑
+𝑗=1
+𝑛
+𝑃(𝐸𝑗)
+
+[Descripción de la imagen: unarosciones de seo]
+
+Probabilidad de un suceso
+Axiomática de Kolmogorov
+¿Son suficientes estos axiomas para desarrollar toda la 
+probabilidad?
+¡NO!
+Se necesitan otros dos conceptos fundamentales:
+INDEPENDENCIA
+PROBABILIDAD CONDICIONAL
+
+[Descripción de la imagen: probajade unicoo exiciciono]
+
+Independencia
+Se tiran dos dados 
+Son 36 casos posibles. La probabilidad de cada caso es 1/36.
+
+[Descripción de la imagen: un libro con Dominos y una serie de Dominos | Transcripción de la imagen: Independencia
+
+-E RA -R - -
+MO :: -- .- D. e
+Ó1010101010
+
+Son 36 casos posibles. La probabilidad de cada caso es 1/36.]]
+
+Independencia
+Se tiran dos dados 
+ en el dado blanco sale 
+ en el dado negro sale 
+  para todo 
+Como hay 6 resultados posibles para cada dado:
+Como ya vimos:
+𝑃( 𝐴𝑘∩𝐵𝑚)= 1
+36 = 1
+6 × 1
+6 =𝑃( 𝐴𝑘)× 𝑃( 𝐵𝑚)
+Intuitivamente, también sabemos que lo que sale en un dado es 
+independiente de lo que sale en el otro.
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Independencia
+Definición
+Dos eventos y  son independientes si y sólo si
+𝑃( 𝐴∩𝐵)= 𝑃( 𝐴)× 𝑃( 𝐵)
+Un par de consecuencias:
+ es independiente de todo :  
+ es independiente de todo :  
+ es independiente de                              es independiente de
+
+[Descripción de la imagen: indenciaa defa enfoence]
+
+Independencia
+Definición
+Una familia de eventos  son independientes si y sólo 
+si
+𝑃(¿𝑘∈𝐽𝐴𝑘)=∏
+𝑘∈𝐽
+𝑃(𝐴𝑘)∀𝐽⊆𝐾
+Ejemplo de 3 eventos:
+𝑃( 𝐴1 ∩𝐴2)=𝑃( 𝐴1) 𝑃( 𝐴2)
+𝑃( 𝐴1 ∩𝐴3)=𝑃( 𝐴1) 𝑃( 𝐴3)
+𝑃( 𝐴2∩𝐴3)=𝑃( 𝐴2) 𝑃( 𝐴3)
+𝑃( 𝐴1∩𝐴2∩𝐴3)=𝑃( 𝐴1) 𝑃( 𝐴2) 𝑃( 𝐴3)
+
+[Descripción de la imagen: indenciaa utamile evs entenes soi | Transcripción de la imagen: Independencia
+
+Definición
+Una familia de eventos son independientes si y sólo
+Si
+
+PikeJA, =||PA,vJCK
+
+ke]
+
+Ejemplo de 3 eventos:
+PlA,nA,=P[A,)P(A,)
+P[A nA,)=P[A,)P[A,)
+
+PlA,nA,n A;=P(A,)P[A,)P[A,]
+Pl A,nA,)=P([A,)P(A;)]]
+
+Independencia
+Importante
+Que dos eventos sean independientes o mutuamente excluyentes 
+son dos cosas diferentes. Si dos sucesos con probabilidad 
+positiva son excluyentes, no pueden ser independientes. Si son 
+independientes, no pueden ser excluyentes. 
+En muchas situaciones la independencia se supone ante la falta 
+de información de la dependencia o porque efectivamente no hay 
+dependencia por condiciones del problema.
+Si  y  son independientes, también lo son:  y ;  y; y.
+
+[Descripción de la imagen: indenciaa importate]
+
+Se tiran dos dados 
+Son 36 casos posibles. La probabilidad de cada caso es 1/36.
+                              
+Probabilidad Condicional
+
+[Descripción de la imagen: un libro con Dominos y un bloc de notas | Transcripción de la imagen: Probabilidad Condicional
+
+-E RA -R - -
+MO :: -- .- D. e
+Ó1010101010
+
+Son 36 casos posibles. La probabilidad de cada caso es 1/36.]]
+
+Probabilidad Condicional
+Se tiran dos dados y se consideran los siguientes sucesos:
+: la suma de los números obtenidos es menor que 8 
+: la suma de los números obtenidos es impar 
+𝑃(𝐵)= 1 8
+36 = 1
+2
+𝑃( 𝐴)= 21
+36 = 7
+12
+se pueden calcular, entonces :
+𝑃( 𝐴∩𝐵)= 12
+36 = 1
+3
+suma
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+casos
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+
+[Descripción de la imagen: probacional se itran de o - corros sies]
+
+Probabilidad Condicional
+Se tiran dos dados y se consideran los siguientes sucesos:
+: la suma de los números obtenidos es menor que 8 
+: la suma de los números obtenidos es impar 
+𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+=12
+18 = 2
+3
+Pregunta: de entre los casos que están en , ¿qué proporción 
+están en ?
+suma
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+casos
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+Hemos reducido el universo de casos posibles a B: es como 
+nuestro nuevo “espacio muestral”
+
+[Descripción de la imagen: probacional se itran de y - corros sies]
+
+Probabilidad Condicional
+Se tiran dos dados y se consideran los siguientes sucesos:
+: la suma de los números obtenidos es menor que 8 
+: la suma de los números obtenidos es impar 
+𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+=12
+18 = 2
+3
+Otra interpretación: si sabemos que  acontece, ¿cuál es la 
+probabilidad que  ocurra?
+suma
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+casos
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+Hemos reducido el universo de casos posibles a B: es como 
+nuestro nuevo “espacio muestral”
+
+[Descripción de la imagen: probacional se itran de o - corros sies]
+
+Probabilidad Condicional
+Definición
+La probabilidad condicional del evento  dado el 
+evento  viene dada por
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Una conclusión importante:
+𝑃( 𝐴∩𝐵)=𝑃( 𝐴|𝐵)×𝑃(𝐵)
+¿Importa que sea?
+
+[Descripción de la imagen: probacional defa la probacional defa la probacional defa defa defa defa defa defa defa defa defa defa defa defa defa defa def]
+
+Probabilidad Condicional
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Esta regla de asignación de probabilidades satisface los axiomas de 
+Kolmogorov: 
+𝑃( 𝐴∩𝐵) ≥0 , 𝑃( 𝐵)>0 ⇒𝑃( 𝐴|𝐵) ≥0
+𝑆∩𝐵=𝐵⇒𝑃(𝑆|𝐵)= 𝑃(𝑆∩𝐵)
+𝑃( 𝐵)
+= 𝑃( 𝐵)
+𝑃( 𝐵) =1
+
+[Descripción de la imagen: probaid conocy - pp | Transcripción de la imagen: Probabilidad Condicional
+
+P(AnB)
+P(B)
+
+Esta regla de asignación de probabilidades satisface los axiomas de
+Kolmogorov:
+
+PIAnB)I=0,PIB)>0>PIAIB)=0
+SnB= B=>P(SIB)—%—%—1
+
+Pl A|B)=
+
+siP(B)=0]]
+
+Probabilidad Condicional
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Esta regla de asignación de probabilidades satisface los axiomas de 
+Kolmogorov: 
+𝑃( 𝐴|𝐵) ≥0
+𝑃( 𝑆|𝐵) =1
+
+[Descripción de la imagen: una sábana blanca con una línea negra y una sábana blanca con una línea negra y una sábana blanca con una | Transcripción de la imagen: Probabilidad Condicional
+
+P(AnB)
+P(B)
+
+Esta regla de asignación de probabilidades satisface los axiomas de
+Kolmogorov:
+
+Z>= ( Al Z= )— O
+Z> (= 1 7=) — a
+
+Pl A|B)=
+
+siP(B)=0]]
+
+Probabilidad Condicional
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Esta regla de asignación de probabilidades satisface los axiomas de 
+Kolmogorov y, por tanto, algunos de los teoremas ya vistos: 
+𝑃( 𝐴|𝐵)=1 −𝑃( 𝐴|𝐵)
+𝑃( ∅|𝐵)=0
+¡Ojo!: En general, se tiene 
+𝑃( 𝐴|𝐵)≠1 −𝑃( 𝐴|𝐵)
+
+[Descripción de la imagen: probacional p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p | Transcripción de la imagen: Probabilidad Condicional
+
+P(AnB)
+P(B)
+
+Esta regla de asignación de probabilidades satisface los axiomas de
+Kolmogorov y, por tanto, algunos de los teoremas ya vistos:
+
+PlLAIB a — P(Al|Z)
+
+Pl A|B)=
+
+siP(B)=0
+
+¡Ojo!: En general, se tiene
+
+PlLAIZB) =1 — P(Al Z)]]
+
+Probabilidad Condicional
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Importante:
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+⇒𝑃( 𝐴∩𝐵)=𝑃( 𝐴|𝐵) 𝑃(𝐵)
+𝑃( 𝐵|𝐴)= 𝑃( 𝐴∩𝐵)
+𝑃( 𝐴)
+⇒𝑃( 𝐴∩𝐵)=𝑃( 𝐵|𝐴) 𝑃( 𝐴)
+⇒𝑃( 𝐴|𝐵)= 𝑃( 𝐵|𝐴) 𝑃( 𝐴)
+𝑃( 𝐵)
+⇒𝑃( 𝐵|𝐴)= 𝑃( 𝐴|𝐵) 𝑃(𝐵)
+𝑃( 𝐴)
+
+[Descripción de la imagen: un papel con una fórmula de la fórmula de la fórmula | Transcripción de la imagen: Probabilidad Condicional
+
+Importante:
+
+P(AnB)
+P(B)
+P(AnB)
+
+(A)
+
+PIAIB)= >P[AnNB)I=PIAIB)P(B)
+
+PIBIA)= >P[AnB)I=PIBIAIP(A)
+
+PIBIA)P(A)
+P()
+PILAIB) P(B)
+P(A)
+
+—= PLAIB) —
+
+— P(IBIA )—]]
+
+Probabilidad Condicional e Independencia
+𝑃( 𝐴|𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃(𝐵)
+si 𝑃(𝐵)≠0
+Si  y son independientes:
+𝑃( 𝐴∩𝐵)=𝑃( 𝐴|𝐵) 𝑃(𝐵)=𝑃( 𝐴) 𝑃(𝐵)⇒𝑃( 𝐴|𝐵)=𝑃( 𝐴)
+𝑃( 𝐴∩𝐵)=𝑃(𝐵|𝐴) 𝑃( 𝐴)=𝑃( 𝐴) 𝑃(𝐵)⇒𝑃(𝐵|𝐴)=𝑃(𝐵)
+
+[Descripción de la imagen: probabido urgencia p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p | Transcripción de la imagen: Probabilidad Condicional e Independencia
+
+P(AnB)
+
+PIA|B)= P(B)
+
+siP(B)=0
+
+a
+-
+C
+
+- " Si y son independientes:
+
+;_ : P AnNB=PABIPB=PIAP(B)>PlAIB=P(A)
+» P AnB=PBIA PA=PAP(B)>P BJA=P(B)]]
+
+Probabilidad Condicional e Independencia
+Dos tiradores  hacen  una  descarga  simultánea.  Las  probabilidades  de  hacer  
+blanco son, respectivamente, 0.6 y 0.7. Se supone que los tiros de uno y otro tirador 
+son independientes (no hay influencia alguna en el resultado del disparo de uno de 
+ellos por la performance del otro).  Calcular las probabilidades de los sucesos: a)  
+Exactamente un  tirador hace blanco.  b) Exactamente dos tiradores hacen blanco.
+: El tirador 1 hace blanco cuando dispara   
+: El tirador 2 hace blanco cuando dispara   
+: Algún tirador hace blanco       : los dos tiradores hacen blanco
+¿Cuál es la probabilidad de que ambos 
+tiradores no den en el blanco? 
+𝑃( 𝐶)=𝑃(( 𝐴∩𝐵)∪( 𝐴∩𝐵))
+ y  son m.e. 
+ y  son independientes 
+𝑃( 𝐶)=𝑃( 𝐴) 𝑃(𝐵)+𝑃( 𝐴) 𝑃( 𝐵)=0.60.3+0.4 0.7=0.46
+𝑃( 𝐷)=𝑃( 𝐴) 𝑃( 𝐵)=0.6 0.7=0.42
+
+[Descripción de la imagen: eigencia probacional]
+
+Probabilidad Condicional e Independencia
+Una máquina tiene 4 subsistemas que pueden fallar cuando se pone en marcha. 
+Esos 4 subsistemas operan en forma independiente y las probabilidades de fallar al 
+poner en marcha de los subsistemas 1 a 4 son 0.05, 0.1, 0.15 y 0.2, 
+respectivamente Determinar la probabilidad de que la máquina funcione al ponerla 
+en marcha si:
+a)  tienen que funcionar todos los subsistemas (conexión serie);
+b)  tiene que funcionar al menos uno de los subsistemas (conexión paralelo);
+c)  tienen que funcionar al menos uno de los subsistemas 1 y 2 y al menos uno de 
+los otros dos (conexión serie-paralelo).
+ el subsistema  no funciona correctamente
+𝑃(𝐴¿¿1)=0.05,𝑃( 𝐴¿¿2)=0.10, 𝑃(𝐴¿¿3)=0.15, 𝑃(𝐴¿¿4)=0.20¿ ¿¿¿
+
+[Descripción de la imagen: eigencia probacional]
+
+Probabilidad Condicional e Independencia
+a)  tienen que funcionar todos los subsistemas (conexión serie)
+Se plantea una intersección de 4 sucesos. Como es una  familia de 
+sucesos independientes también lo es cualquier familia que contenga 
+alguno de ellos y los complementarios de los restantes. Entonces una 
+intersección de unos suceso y complementarios de los restantes tiene 
+por probabilidad el producto de probabilidades como ocurre en este 
+caso.
+
+[Descripción de la imagen: probacional eigencia en energéticoos subes conos]
+
+Probabilidad Condicional e Independencia
+b)  tiene que funcionar al menos uno de los subsistemas (conexión paralelo)
+Se plantea una unión de 4 sucesos. Usando el evento complementario y 
+la independencia de los 4 sucesos se logra calcular la probabilidad 
+pedida.
+
+[Descripción de la imagen: Eigencia probacional 1]
+
+Probabilidad Condicional e Independencia
+b)  tiene que funcionar al menos uno de los subsistemas (conexión paralelo)
+Se plantea una unión de 4 sucesos. Usando el evento complementario y 
+la independencia de los 4 sucesos se logra calcular la probabilidad 
+pedida.
+
+[Descripción de la imagen: Eigencia probacional 1]
+
+Probabilidad condicional e independencia
+c)  tienen que funcionar al menos uno de los subsistemas 1 y 2 y al 
+menos uno de los otros dos (conexión serie-paralelo).
+Se plantea una  combinación de 4 sucesos. Tenga en cuenta que los 
+sucesos no son excluyentes y se usa la regla adecuada para la unión y 
+para la probabilidad de la intersección se usa la condición de la 
+independencia. Un planteo alternativo puede ser el que sigue:_
+
+[Descripción de la imagen: probacional enpena 1]
+
+En una población, el 4% de los varones y el 2% de las mujeres son  
+daltónicos. Las mujeres son el 53% de la población.  ¿Cuál es la 
+proporción de varones entre los daltónicos?
+                              
+Probabilidad Condicional y Total
+: una persona es daltónica     : mujer     : varón
+𝑃(𝐷/𝑉)=0.04 𝑃(𝐷/ 𝑀)=0.02𝑃( 𝑀)=0.53
+𝑃(𝐷∩𝑉)=𝑃(𝐷/𝑉) 𝑃(𝑉)=0.04 0.47=0.0188
+𝑃(𝐷∩𝑀)=𝑃(𝐷/ 𝑀)𝑃(𝑀)=0.020.53=0.0106
+𝑃(𝐷∩𝑉)=𝑃(𝐷/𝑉) 𝑃(𝑉)=(1−0.04)0.47=0.4512
+𝑃(𝐷∩𝑀)=𝑃(𝐷/ 𝑀) 𝑃(𝑀)=(1−0.02)0.53=0.5194
+
+[Descripción de la imagen: poabiadcional y en potables, ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys ys]
+
+En una población, el 4% de los varones y el 2% de las mujeres son  
+daltónicos. Las mujeres son el 53% de la población.  ¿Cuál es la 
+proporción de varones entre los daltónicos?
+                              
+Probabilidad Condicional y Total
+: una persona es daltónica     : mujer     : varón
+𝑃(𝐷∩𝑉)=0.0188
+𝑃(𝐷∩𝑀)=0.0106
+𝑃(𝐷∩𝑉)=0.4512
+𝑃(𝐷∩𝑀)=0.5194
+ 
+D
+D’
+ 
+V
+0.0188
+0.4512
+0.4700
+M
+0.0106
+0.5194
+0.5300
+ 
+0.0294
+0.9706
+1.0000
+(2.94%)
+PROBABILIDAD
+TOTAL
+proporción de daltónicos en la población
+
+[Descripción de la imagen: probabido y probabido y probabido probabido probabido]
+
+En una población, el 4% de los varones y el 2% de las mujeres son  
+daltónicos. Las mujeres son el 53% de la población.  ¿Cuál es la 
+proporción de varones entre los daltónicos?
+                              
+Probabilidad Condicional y Total
+: una persona es daltónica     : mujer     : varón
+𝑃(𝐷∩𝑉)=0.0188
+𝑃(𝐷∩𝑀)=0.0106
+𝑃(𝐷∩𝑉)=0.4512
+𝑃(𝐷∩𝑀)=0.5194
+ 
+D
+D’
+ 
+V
+0.0188
+0.4512
+0.4700
+M
+0.0106
+0.5194
+0.5300
+ 
+0.0294
+0.9706
+1.0000
+(63.95%)
+proporción de varones entre los daltónicos
+
+[Descripción de la imagen: una tabla con un número de números y una tabla con un número de números]
+
+Detección de una enfermedad
+    especificidad de la detección
+Consideremos los siguientes sucesos:
+: la persona está infectada de la enfermedad 
+: el test detecta la enfermedad (da positivo) 
+  
+     sensibilidad de la detección
+Lo deseable es que estas dos 
+probabilidades condicionales 
+sean próximas a 1.
+
+[Descripción de la imagen: un círculo con un círculo en el medio y un círculo en el medio]
+
+Detección de una enfermedad
+Se pueden calcular, también,  las siguientes probabilidades:
+                                  y  
+                    y       
+  probabilidad de tener la enfermedad dado que el análisis da positivo
+                     
+  probabilidad de no tener la enfermedad dado que el análisis da positivo (falsos 
+positivos)
+𝑃( 𝐴/ 𝐵)=(1– 𝑝2)(1−𝑝)/(𝑝1𝑝+(1 –𝑝2)(1−𝑝))
+𝑃(𝐵)=𝑝𝑝1+(1 –𝑝)(1−𝑝2)
+
+[Descripción de la imagen: defaciona de la defaciona de la defaciona defacion defacion defacion]
+
+Detección de una enfermedad
+Se pueden calcular las siguientes probabilidades:
+
+[Descripción de la imagen: un bloc de notas con una pluma y una pluma en él]
+
+Detección de una enfermedad
+Diagrama de árbol:
+ 
+B
+B’
+ 
+A
+p p1
+p (1 - p1)
+p
+A’
+(1 – p) (1 – p2)
+(1 – p) (1 – p2)
+1 - p
+𝑃(𝐵)=𝑝𝑝1+(1 –𝑝)(1−𝑝2)
+Probabilidad de que 
+el test dé positivo
+
+[Descripción de la imagen: p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p | Transcripción de la imagen: Detección de una enfermedad
+
+--_-_-
+A PP. p(1-p)
+
+Diagrama de árbol: 2 (1-p)(1-p) (1-p)(1-p) 1-P
+
+el test da positivo
+
+Probabilidad de que
+el test dé positivo
+
+P(B)=pp1+(1-p)(1-p2)
+
+el test da positivo]]
+
+Detección de una enfermedad
+Diagrama de árbol:
+
+[Descripción de la imagen: defa de est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Detección de una enfermedad
+
+Diagrama de árbol:
+
+tiene la enfermedad
+
+el test da positivo
+T=PP1-'"1
+
+/á
+B
+xá¡
+
+a=PP+(-P,I(-P)
+
+tiene la enfermedad
+
+1-q A
+
+B' X s=p,(1-D)/q
+s
+
+A!]]
+
+Detección de una enfermedad
+ especificidad de la detección
+Consideremos los siguientes sucesos:
+: la persona está infectada de la enfermedad 
+: el test detecta la enfermedad (da positivo) 
+𝑃( 𝐴)=0.1
+     sensibilidad de la detección
+𝑃(𝐵)=0.10.95+0.90.05=0.14
+𝑃( 𝐴/ 𝐵)=0.10.95 /0.14=0.679
+𝑃( 𝐴)=0.1
+Probabilidad “a priori”
+Probabilidad “a posteriori”
+
+[Descripción de la imagen: defa defa defa defa defa defa defa defa defa defa defa defa defa def]
+
+Detección de una enfermedad
+  probabilidad de tener la enfermedad dado que el análisis da positivo
+𝑃( 𝐴/ 𝐵)=𝑝1 𝑝/(𝑝1𝑝+(1 – 𝑝2)(1−𝑝))
+Si  alfa resulta  
+ 
+Para valores pequeños 
+de  (del orden de 0.01 ) la 
+probabilidad  de tener la 
+enfermedad dado que el 
+test 
+da 
+positivo 
+es 
+sorprendentemente 
+ 
+pequeña   incluso  para 
+valores grandes de alfa.
+Si y alfa = 0.99 entonces r 
+= 0.09 (9%)
+
+[Descripción de la imagen: defaciona de la defaciona de la defaciona defacion defaciona def]
+
+Detección de una enfermedad
+Test serológico para detectar COVID 19
+Test para detectar presencia de anticuerpos al virus
+sensibilidad del test: 0.875
+(12.5 % de las personas infectadas tienen test negativo
+especificidad del test: 0.975
+(2.5 % de las personas no infectadas tienen test positivo)
+p = 0.10  (Nueva York Junio 2020) 
+𝑃(𝐵)=0.8750.1+0.0250.9=0.11
+𝑃( 𝐴/ 𝐵)=0.875 0.1/0.11≈0.795
+𝑃( 𝐴/ 𝐵)=0.025 0.9/0.11≈0.205
+𝑃( 𝐴/ 𝐵)=0.125 0.1/0.89≈0.014
+ el test da  positivo
+ dado que el test da positivo está contagiado
+“falso positivo”
+“falso negativo”
+
+[Descripción de la imagen: tecno de untendno de untendno de untendnodtecnodtecnodtecnodnodnodnodnodnodnodnodnodnodnodnodnodnodnodnodnodnodno]
+
+Probabilidad condicional y total
+En cierta estación de servicio, el 40% de los 
+clientes utilizan gas oil (), 35% utiliza nafta super (),  
+y 25% consume nafta infinia ().
+De los clientes que consumen gas oil sólo el 30% 
+llena su tanque (evento ); de los que cargan nafta 
+super, 60% llena el tanque; de los que usan infinia, 
+el 40% llena el tanque
+
+[Descripción de la imagen: probacion y t enertone, enerton, enern, enern, enern, enern, enern, enern, enern, enern, enern, enern, enern]
+
+Probabilidad condicional y total
+Un diagrama de árbol 
+En el diagrama de árbol la suma de 
+las probabilidades de las ramas 
+que parten de un nodo suman 1. El 
+peso 
+de 
+cada 
+rama 
+es 
+la 
+probabilidad condicional del suceso 
+al final de la rama dado el suceso 
+del comienzo de esa rama. La 
+probabilidad de un suceso al final 
+del árbol es igual a la suma de los 
+productos de los pesos de cada 
+una de las ramas que terminan en 
+el suceso de interés.
+
+[Descripción de la imagen: un árbol con los nombres de los nombres de cada uno de los nombres]
+
+Probabilidad condicional y total
+ 
+La probabilidad de  es una combinación lineal convexa de 
+las probabilidades condicionales de B dado cada  miembro 
+de la partición del espacio muestral.
+La 
+proporción 
+TOTAL 
+de 
+personas 
+que 
+llenan 
+el 
+tanque 
+se 
+obtiene 
+combinando las proporciones 
+de personas que en cada 
+subpoblación 
+de 
+personas 
+(que cargan cada tipo de 
+combustible) llenan el tanque.
+
+[Descripción de la imagen: probacion y probacion y probacion probacion y probacion]
+
+Teorema de la probabilidad total
+         
+{ 𝐴𝑘}𝑘=1
+𝑛
+Partición del espacio 
+muestral 
+𝑆=¿𝑘=1¿𝑛𝐴
+𝑘
+𝐴𝑘≠∅∀𝑘
+𝐴𝑘∩𝐴𝑘=∅𝑘≠𝑗
+𝐵=¿𝑘=1¿𝑛(𝐵∩𝐴𝑘)⇒𝑃(𝐵)=𝑃(¿𝑘=1¿𝑛( 𝐵∩𝐴𝑘))=∑
+𝑘=1
+𝑛
+𝑃( 𝐵∩𝐴𝑘)
+𝑃(𝐵)=∑
+𝑘=1
+𝑛
+𝑃(𝐵|𝐴𝑘) 𝑃( 𝐴𝑘)
+
+[Descripción de la imagen: teera de probabiddata | Transcripción de la imagen: Teorema de la probabilidad total
+
+1 AO
+k 1 muestral S 1nAk
+
+A,NnA, = Ik7
+
+B=¿k=1in/BnA,>P(B)=P ¿k=1:n|BnA,)=> PIBnA,|
+
+k=1
+
+P(B)=á PIBIA,)P(A,)]]
+
+Probabilidad total y Bayes  
+         
+Teorema de la 
+probabilidad total
+Teorema de 
+Bayes
+𝑃( 𝐴𝑗|𝐵)=
+𝑃( 𝐵|𝐴𝑗) 𝑃( 𝐴𝑗)
+∑
+𝑘=1
+𝑛
+𝑃( 𝐵|𝐴𝑘) 𝑃( 𝐴𝑘)
+𝑃(𝐵)=∑
+𝑘=1
+𝑛
+𝑃(𝐵|𝐴𝑘) 𝑃( 𝐴𝑘)
+{ 𝐴𝑘}𝑘=1
+𝑛
+Partición del espacio 
+muestral 
+𝑆=¿𝑘=1¿𝑛𝐴
+𝑘
+𝐴𝑘≠∅∀𝑘
+𝐴𝑘∩𝐴𝑘=∅𝑘≠𝑗
+
+[Descripción de la imagen: un diagrama de los dos tipos del sistema topológico | Transcripción de la imagen: Probabilidad total y Bayes
+
+Dar C
+
+An A, = Ik7
+
+probabilidad total “
+-
+
+= PIBIA,|P
+k=1
+E
+; Bayes PIBIA,)P(A,
+s PIBLAIP(AD
+
+RZZ:1P(B|AR)P(AR)]]
+
+Probabilidad total y Bayes  
+         
+Teorema 
+de Bayes
+𝑃( 𝐴𝑗|𝐵)=
+𝑃( 𝐵|𝐴𝑗) 𝑃( 𝐴𝑗)
+∑
+𝑘=1
+𝑛
+𝑃( 𝐵|𝐴𝑘) 𝑃( 𝐴𝑘)
+
+[Descripción de la imagen: un chico está escribiendo en una pizarra con una pizarra | Transcripción de la imagen: Probabilidad total y Bayes
+
+Teorema 2“P(A;B)=—- — - —
+
+de Bayes > PIB[A.]P(A1)
+
+la
+.
+s
+"
+23
+2
+2
+E
+»
+*
+— »
+2
+2
+- »
+»
+»]]
+
+Una interpretación del teorema de Bayes: 
+ 
+Probabilidad  a priori: 
+probabilidad de que la 
+hipótesis H sea cierta
+Probabilidad  de 
+observar la 
+evidencia E si H es 
+cierta 
+Probabilidad  de 
+observar la evidencia E
+Probabilidad  a posteriori: 
+probabilidad de que la hipótesis H 
+sea cierta dada la evidencia E
+
+[Descripción de la imagen: un diagrama de los tres tipos del teorema]
+
+Un sistema de comunicaciones elemental consta de un transmisor 
+que envía uno de dos posibles símbolos  (0 o 1) a través de un 
+canal hasta un receptor. Ocasionalmente se producen errores en el 
+canal, de modo que un 1 aparece en el receptor como un 0 y 
+viceversa.
+        Probabilidad total y Bayes  
+0
+0
+1
+1
+𝑞
+𝑞
+1−𝑞
+1−𝑞
+
+[Descripción de la imagen: un diagrama con una línea y una línea de líneas]
+
+: “el símbolo antes de entrar en el canal es 1”, 
+: es el complemento de ;
+: es el suceso: “el símbolo a la salida del canal es 1”; 
+: es el complemento de . 
+Se supone que y que el canal es simétrico ya que . 
+        Probabilidad total y Bayes  
+0
+0
+1
+1
+𝑞
+𝑞
+1−𝑞
+1−𝑞
+
+[Descripción de la imagen: un diagrama con las líneas correspondientes y las líneas correspondientes]
+
+ Si y calcule  y  .
+ Calcule la probabilidad de que un símbolo cambie entre la 
+entrada y la salida del canal.
+        Probabilidad total y Bayes  
+0
+0
+1
+1
+𝑞
+𝑞
+1−𝑞
+1−𝑞
+
+[Descripción de la imagen: un diagrama de dos líneas paralelas con un extremo y un extremo]
+
+Probabilidad total y Bayes  
+0
+0
+1
+1
+𝑞
+𝑞
+1−𝑞
+1−𝑞
+ 
+(
+𝑃( 𝐴2)=1−𝑃( 𝐴1)=1−0.58=0.42
+𝑃( 𝐵1|𝐴1)= 𝑃( 𝐴1|𝐵1)𝑃(𝐵1)
+𝑃( 𝐴1)
+= 𝑞𝑝
+𝑃( 𝐴1)= 0.54
+0.58 ≈0.931
+𝑃( 𝐵2|𝐴1)≈0.069
+
+[Descripción de la imagen: un árbol con dos ramas y una rama | Transcripción de la imagen: Probabilidad total y Bayes
+
+/ B
+x ,
+
+1-p
+B
+
+1II/AII
+quA
+
+2
+
+(
+P[A,)=1-P([A,)=1-0.58=0.42
+
+PIAJBP(B, _
+P(BllA1)=%=PC(IZI)Z%
+
+P[B,|A,|=0.069
+
+=0.931]]
+
+Probabilidad total y Bayes  
+: el símbolo cambia entre entrada y salida
+El resultado es independiente de  
+𝑃( 𝐵1| 𝐴2 ) ≈0.143
+𝑃( 𝐵2|𝐴2)= 𝑃( 𝐴2|𝐵2) 𝑃(𝐵2)
+𝑃( 𝐴2)
+= 𝑞(1−𝑝)
+𝑃( 𝐴2) = 0.36
+0.42 ≈0.857
+𝑃( 𝐶)=𝑃( 𝐴2|𝐵1) 𝑃( 𝐵1)+𝑃( 𝐴1|𝐵2) 𝑃( 𝐵2)=(1−𝑞) 𝑝+(1−𝑞)(1−𝑝)
+𝑃( 𝐶)=(1−𝑞)=0.1
+0
+0
+1
+1
+𝑞
+𝑞
+1−𝑞
+1−𝑞
+
+[Descripción de la imagen: un diagrama de una línea con un punto y una línea con un punto | Transcripción de la imagen: Probabilidad total y Bayes
+
+1-q
+
+1 1
+q
+
+A2IB2) P (B2) …—ºm0_857
+
+Pl
+PIB:A:=—  praJ — — PíA,) 042
+
+Z7 ( 7== .| A-)-=O0O-145=>
+. el SIMbolo cambia entre entrada y salida
+P(C)=P(A2IBl)P(31)+P(A1IBz)P(Bz)=(1_Q)p+(1_Q)(1_p)
+
+PIC)=(1-qg)=0.1 El resultado es independiente de]]
+

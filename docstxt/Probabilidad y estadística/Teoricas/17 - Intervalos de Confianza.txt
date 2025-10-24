@@ -1,0 +1,543 @@
+Estimación
+Población
+Muestra
+^𝜃1
+Muestra
+^𝜃2
+Distintas muestras 
+pueden producir 
+estimaciones 
+distintas. ¡El 
+resultado de una 
+estimación es una 
+variable aleatoria!!!
+Estimador: 
+variable 
+aleatoria 
+correspondiente 
+a 
+las 
+estimaciones de  basados en una muestra al azar
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Estimación de la media
+10
+2
+Muestra 1 Muestra 2 Muestra 3 Muestra 4 Muestra 5
+9.14
+9.40
+14.23
+8.10
+9.52
+6.29
+11.87
+9.20
+9.52
+14.72
+9.39
+6.56
+10.16
+11.87
+10.89
+8.30
+8.20
+10.62
+11.72
+11.33
+10.26
+11.01
+7.34
+11.35
+6.39
+10.07
+5.84
+7.49
+10.01
+8.75
+11.22
+12.27
+11.01
+13.36
+11.39
+8.10
+9.39
+8.56
+14.27
+11.27
+14.84
+8.84
+11.72
+12.83
+11.32
+11.55
+9.31
+4.62
+9.05
+11.44
+9.92
+9.27
+9.49
+11.21
+10.70ߤƸ
+ߤൌߪൌ
+
+[Descripción de la imagen: Estciona media | Transcripción de la imagen: Estimación de la media
+
+— 914 940 1423 8101 95
+_ 99 97277 94a% 112 1070
+
+.
+*
+“d
+—
+-*
+2
+a
+9
+-—2»
+- »]]
+
+Estimación de la media
+
+[Descripción de la imagen: Estecion de media | Transcripción de la imagen: Estimación de la media
+
+D
+
+.
+*
+— N
+“d
+—
+-*
+2
+a
+_2
+9
+-—2»
+_»
+
+|=AVERAGE(E3:B12)]]
+
+Estimación de la media
+
+[Descripción de la imagen: estione media estione media]
+
+Estimación de la media
+
+[Descripción de la imagen: estion de medio de la estr | Transcripción de la imagen: Estimación de la media
+
+Distribución del estimador
+
+9.0 10.0 11.0
+
+e - Frec. Rel. — Prob.]]
+
+Estimación de la media
+𝑋𝑛= 1
+𝑛∑
+𝑘=1
+𝑛
+𝑋𝑘N(𝜇, 𝜎
+√𝑛)
+ i.i.d. y se desea estimar :
+¿Qué tan probable es que una estimación haya caído 
+cerca de la media real?
+
+[Descripción de la imagen: i, i, i, i, i, i, i, i, i, i, i, i, i, i, i]
+
+Intervalo de confianza para la media
+Se fija un nivel de confianza  alto (cercano a 1):
+¿Cómo tiene que ser  para que la probabilidad de que la 
+media  esté en  sea al menos ?
+𝑋𝑛
+∆
+∆
+
+[Descripción de la imagen: una nota con una línea que se dibuja en el centro de ella]
+
+𝑋𝑛= 1
+𝑛∑
+𝑘=1
+𝑛
+𝑋𝑘N(𝜇, 𝜎
+√𝑛)
+𝑃(|𝑋𝑛−𝜇|≤∆)=γ
+⟹∆= 𝜎
+√𝑛𝑧1+γ
+2
+Intervalo de confianza para la media
+𝑃(|𝑍|≤∆/ 𝜎
+√𝑛)=γ
+
+[Descripción de la imagen: intervalo de conanzaa | Transcripción de la imagen: Intervalo de confianza para la media
+
+N 1-d-D2=0+92
+
+N A-—YZ2 |]]
+
+∆= 𝜎
+√𝑛𝑧1+γ
+2
+Intervalo de confianza para la media
+¿Cómo tiene que ser  para que la probabilidad de que la 
+media  esté en  sea al menos ?
+
+Z(1+)/2
+0.90
+1.645
+0.95
+1.960
+0.955
+2.005
+0.99
+2.576
+
+[Descripción de la imagen: intervalo de la probaciona]
+
+𝑋𝑛± 𝜎
+√𝑛𝑧1+γ
+2
+¿Qué significa esto?
+NO significa que el error de una estimación es 
+𝜎
+√𝑛𝑧1+ γ
+2
+Lo que significa es que, si se hacen  estimaciones, en 
+aproximadamente  de ellas la media estará dentro del 
+intervalo
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de coniza para la est]
+
+Intervalo de confianza para la media
+200 intervalos de confianza de nivel de confianza 0.95; para esta 
+colección de determinaciones el 93.5 % de ellos tuvieron la propiedad 
+de que la media perteneciese a esos intervalos.
+
+[Descripción de la imagen: intervalo de la intera de la intera de la intera de la intera de la intera]
+
+Intervalo de confianza para la media
+
+[Descripción de la imagen: un gráfico con el número del número del número del número del número del número del número del número del número del número del]
+
+𝑋𝑛
+∆
+∆
+Este intervalo de confianza es bilateral
+Pero nos puede preocupar un límite inferior o un límite 
+superior
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de la est est est est est est est est est est est est est est est est est est est est est]
+
+Ejemplo 1: Nos preocupa que la tensión media de rotura de un elemento no 
+sea menor que cierto valor.
+Ejemplo 2: Una máquina llena paquetes de azúcar en la empresa Medasma. 
+El peso llenado es una variable aleatoria (es imposible llenar exactamente la 
+misma cantidad – cual adolescente, algún grano se le escapa).
+A la empresa Medasma le preocupa que el valor medio no sea superior a 
+cierta cantidad (de lo contrario, estaría perdiendo dinero).
+A la Asociación de Defensores del Consumidor de Azúcar (ADECA) le 
+preocupa que el valor medio no sea inferior a cierto número (de lo contrario, 
+el consumidor puede estar pagando de más).
+Intervalo de confianza para la media
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+𝑋𝑛
+∆
+𝑋𝑛
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧γ,+∞)
+(−∞, 𝑋𝑛+ 𝜎
+√𝑛𝑧γ)
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de coniza para la calibo | Transcripción de la imagen: Intervalo de confianza para la media]]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+ i.i.d. y se desea estimar 
+¿Y si las variables no son normales?
+Si  es grande, no hay problemas porque podemos 
+recurrir al Teorema Central del Límite
+𝑋𝑛= 1
+𝑛∑
+𝑘=1
+𝑛
+𝑋𝑘apró x. N(𝜇, 𝜎
+√𝑛)
+Usamos las mismas fórmulas.
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de la est est est est est est est est est est est est est est est est est est est est est]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+ i.i.d. y se desea estimar 
+¿Y si las variables no son normales y  no es 
+grande?
+El problema es complicado… hay que preguntarle a 
+alguien que sepa…
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de est est est est est est est est est est est est est est est est est est est est est est]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+ i.i.d. y se desea estimar 
+Está claro que no conozco , pero las fórmulas usan : 
+¿de dónde sale?
+Si  es muy grande, en muchos casos se puede 
+aproximar  por el desvío muestral .
+𝑆=√
+1
+𝑛−1∑
+𝑖=1
+𝑛
+( 𝑋𝑖−𝑋𝑛)
+2
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de esto de esto]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+ i.i.d. y se desea estimar 
+Está claro que no conozco , pero las fórmulas usan : 
+¿de dónde sale?
+Si  no es muy grande, pero las variables son normales, 
+lo vemos la próxima...
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de est est est est est est est est est est est est est est est est est est est est est est]
+
+Exactamente la misma idea es válida para la 
+proporción  de una población. Si  es grande, 
+Por eso usamos las fórmulas con y  reemplazados por  
+y  .
+Intervalo de confianza para la 
+proporción
+^𝑝(1−^𝑝)
+𝑛
+≈𝑝(1−𝑝)
+𝑛
+
+[Descripción de la imagen: una nota con las palabras en español e inglés]
+
+^𝑝
+∆
+∆
+(^𝑝−√
+^𝑝(1−^𝑝)
+𝑛
+𝑧1+γ
+2
+,^𝑝+√
+^𝑝(1−^𝑝)
+𝑛
+𝑧1+γ
+2 )
+^𝑝
+∆
+^𝑝
+∆
+(^𝑝−√
+^𝑝(1−^𝑝)
+𝑛
+𝑧γ,1)
+(0 ,^𝑝+√
+^𝑝(1−^𝑝)
+𝑛
+𝑧γ)
+Intervalo de confianza para la 
+proporción
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación | Transcripción de la imagen: Intervalo de confianza para la
+proporción]]
+
+https://www.perfil.com/noticias/politica/encuestas-bajo-imagen-alberto-fernandez-pero-mayoria
+-mantendria-cuarentena-hasta-junio.phtml
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de barras y un gráfico de barras con un gráfico de barras | Transcripción de la imagen: POLITICA / PANDEMIA Jueves 7 Mayo, 2020
+
+Encuesta: bajó la imagen de Alberto Fernández, pero
+la mayoría mantendría la cuarentena hasta junio
+
+La discusión por la liberación de presos habría sido uno de los principales factores que perjudicaron al Presidente.
+
+Si usted fuera presidente, ¿extendendería la
+CUARENTENA hasta JUNIO?
+
+No lo tengo claro ©
+
+GiIAcosse 8 ASOCIADOS S.A.
+
+Opinión Pública
+
+0% 10% 20% 30% 40% 50% 60%
+
+httos:///ww.perfil.com/noticias/politica/encuestas-bajo-imagen-alberto-fernandez-pero-mavyoria
+-mantendria-cuarentena-hasta-junio.phtml
+
+—
+-
+-
+
+2
+
+2
+E
+
+.
+E
+K
+>
+
+_2
+
+_
+
+. »
+
+- »]]
+
+[Descripción de la imagen: una nota con las palabras en español | Transcripción de la imagen: FICHA TÉCNICA
+
+Área
+ARGENTINA.
+
+Fecha de realización
+27 AL29 DE ABRIL DE 2020.
+
+[rino de muestred
+
+Ajustado por cuotas de género, edad, regiones, secciones
+electorales de la provincia de Buenos Aires, comunas de la
+Ciudad de Buenos Aires.
+
+Tamaño de la muestra
+
+2500 CASOS.
+
+[Margen de error
+
++/- 2%.
+
+Modalidad
+Cuestionario estructurado con preguntas abiertas y cerradas.
+
+Sistema de consulta
+Encuestas a dispositivos móviles.]
+
+Intervalo de confianza para la 
+proporción
+Falta el nivel de confianza  
+^𝑝
+∆
+∆
+(^𝑝−√
+^𝑝(1−^𝑝)
+𝑛
+𝑧1+γ
+2
+,^𝑝+√
+^𝑝(1−^𝑝)
+𝑛
+𝑧1+γ
+2 )
+¿Qué valor ponemos?
+
+[Descripción de la imagen: un diagrama de un círculo con una línea de simetría | Transcripción de la imagen: Intervalo de confianza para la
+proporción]]
+
+Intervalo de confianza para la 
+proporción
+Buscamos el peor caso
+𝑝(1−𝑝)≤1
+4
+
+[Descripción de la imagen: un gráfico con una curva y una curva]
+
+Intervalo de confianza para la 
+proporción
+√
+^𝑝(1−^𝑝)
+𝑛
+𝑧1+γ
+2
+≤√
+1
+4𝑛𝑧1+γ
+2
+=√
+1
+4∙2500 𝑧1+γ
+2
+=0.02
+𝑧1+ γ
+2
+=2
+1+ γ
+2
+=0.97725
+γ =0.9 54 5 ≈95 %
+
+[Descripción de la imagen: una hoja con la ecuación escrita en español | Transcripción de la imagen: Intervalo de confianza para la
+proporción
+
+1
+an X/4 4-2500 * 121700
+
+2
+
+— s _ £ -
+
+— —=— >—
+—
+
+N — y
+
+— —< II Z 7722 5
+
+y —=—0-9545=95 %6]]
+

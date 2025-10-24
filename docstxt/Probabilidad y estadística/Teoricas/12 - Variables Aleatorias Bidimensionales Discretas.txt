@@ -1,0 +1,1145 @@
+Variable aleatoria bidimensional 
+discreta
+Función de masa de probabilidad conjunta
+𝑝𝑋,𝑌(𝑥, 𝑦)=𝑃( 𝑋=𝑥,𝑌=𝑦)
+0 ≤𝑝𝑋,𝑌( 𝑥, 𝑦) ≤1
+𝑃(𝑎≤𝑋≤𝑏,𝑐≤𝑌≤𝑑)=∑
+𝑥=𝑎
+𝑏
+∑
+𝑦=𝑐
+𝑑
+𝑝𝑋,𝑌(𝑥, 𝑦)
+∑
+𝑥∈R 𝑋∑
+𝑦∈R𝑌
+𝑝𝑋,𝑌( 𝑥, 𝑦)=1
+
+[Descripción de la imagen: varleetato deseta biernial | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Función de masa de probabilidad conjunta
+
+pX,Y(X:.V)=P(X=X:Y=.V)
+
+O — 7< > (. 97)I—<l
+
+b d
+Pla<X<b,c<Y <d =2 » Pxy lX, Y
+
+x=a y=c
+
+X ERx VER;:
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+Función de probabilidad acumulada conjunta
+𝐹𝑋, 𝑌( 𝑥, 𝑦)=𝑃( 𝑋≤𝑥, 𝑌≤𝑦)
+𝐹𝑋, 𝑌( 𝑥, 𝑦)=∑
+𝛼≤𝑥∑
+𝛽≤𝑦
+𝑝𝑋,𝑌(𝛼, 𝛽)
+•  
+0 ≤𝐹𝑋, 𝑌( 𝑥, 𝑦)≤1
+• Monótonamente no decreciente en cada variable 
+• Continua por derecha en cada variable
+
+[Descripción de la imagen: varleatoria biernistai dise | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Función de probabilidad acumulada conjunta
+
+F
+
+a<x B<Y
+
+O<7 -il><. y) —<l
+
+*  Monótonamente no decreciente en cada variable
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+_—-
+_-
+—
+- D»
+-
+-
+-- -
+-
+-
+->
+-
+_-
+—
+—>
+-
+- -
+- -
+
+* Continua por derecha en cada variable]]
+
+Variable aleatoria bidimensional 
+discreta
+Función de masa de probabilidad marginal
+𝑝𝑌( 𝑦)= ∑
+𝑥∈R 𝑋
+❑
+𝑝𝑋, 𝑌( 𝑥, 𝑦)
+𝑝𝑋( 𝑥)= ∑
+𝑦∈R 𝑌
+❑
+𝑝𝑋, 𝑌( 𝑥, 𝑦)
+
+[Descripción de la imagen: varleatora biernial deseta | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Función de masa de probabilidad marginal
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+Función de masa de probabilidad condicional
+𝑝𝑋∨𝑌( 𝑥∨𝑦)= 𝑝𝑋,𝑌(𝑥, 𝑦)
+𝑝𝑌( 𝑦)
+𝑝𝑌∨𝑋( 𝑦∨𝑥)= 𝑝𝑋,𝑌(𝑥, 𝑦)
+𝑝𝑋( 𝑥)
+
+[Descripción de la imagen: varleetato deseta biliar | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Función de masa de probabilidad condicional
+
+Px-(XV y)= Py
+
+Px »y (X.wv)
+
+P.- <l Y YX) —=
+
+_
+—
+>
+1 >
+1 >
+—
+-
+-
+=
+— -D
+-—>
+1 >
+2
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Variable aleatoria bidimensional 
+discreta
+Variables aleatorias independientes
+𝑝𝑋,𝑌(𝑥, 𝑦)=𝑝𝑋( 𝑥) 𝑝𝑌( 𝑦)
+𝑝𝑋∨𝑌( 𝑥∨𝑦)=𝑝𝑋(𝑥)
+𝑝𝑌∨𝑋( 𝑦∨𝑥)=𝑝𝑌( 𝑦)
+
+[Descripción de la imagen: varleetao bienial deseta variables | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Variables aleatorias independientes
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+
+00000000]]
+
+Variable aleatoria bidimensional 
+discreta
+Valor esperado
+𝐸[𝑔( 𝑋,𝑌) ]= ∑
+𝑥∈R 𝑋∑
+𝑦∈R 𝑌
+𝑔(𝑥, 𝑦)𝑝𝑋,𝑌(𝑥, 𝑦)
+Cov ( 𝑋,𝑌)=𝐸[ 𝑋𝑌]−𝐸[ 𝑋] 𝐸[𝑌]
+Covarianza
+
+[Descripción de la imagen: varleetao bienia deseta valor | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Valor esperado
+
+E[Q(X>Y)]= Z Z g(x,y)px,y(x,y)
+
+X ERy YERy
+
+Covarianza
+
+Cov(X,Y)=El XY )- ElLX]E[Y]
+
+_
+a
+—
+! >
+1 >
+l
+—
+_=
+=
+— -D
+_=»
+1 >
+l
+_S
+-
+=
+— -D
+_=»
+- >]]
+
+Variable aleatoria bidimensional 
+discreta
+Variables independientes
+𝐸[𝑔1( 𝑋)𝑔2 (𝑌)]= ∑
+𝑥∈R 𝑋∑
+𝑦∈R𝑌
+𝑔1 (𝑥)𝑔2( 𝑦)𝑝𝑋, 𝑌(𝑥, 𝑦)
+𝐸[𝑔1( 𝑋)𝑔2 (𝑌)]= ∑
+𝑥∈R 𝑋∑
+𝑦∈R𝑌
+𝑔1 (𝑥)𝑔2( 𝑦)𝑝𝑋(𝑥)𝑝𝑌(𝑦)
+𝐸[𝑔1( 𝑋)𝑔2 (𝑌)]= ∑
+𝑥∈R 𝑋
+𝑔1 (𝑥)𝑝𝑋(𝑥) ∑
+𝑦∈R𝑌
+𝑔2 (𝑦)𝑝𝑌(𝑦)
+𝐸[𝑔1( 𝑋) 𝑔2 (𝑌)]=𝐸[𝑔1 ( 𝑋)] 𝐸[𝑔2 (𝑌)]
+
+[Descripción de la imagen: varleetaria biernial deseta varle indepentes | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Variables independientes
+
+Eg XY =2 2 9X9: VP Xy
+
+X E Ry y E Ry
+
+EgXaY =2 2 9X19:yPpxXPryI
+
+X E Ry y E Ry
+
+EgX9,Y =2 9XPyXx 2 9 VP7y
+
+X E Ry y E Ry
+
+Elg,[X)9-.(Y))=E|9,(X))E |[g9.(Y)]
+
+-
+-
+—
+E
+»_
+E_>
+1 >
+—
+
+-
+a
+_-
+=
+— -D
+- >
+- >
+—
+l >
+2
+
+-
+a
+_-
+=
+— -D
+- >
+- >
+- »]]
+
+Variable aleatoria bidimensional 
+discreta
+Cov ( 𝑋,𝑌)=𝐸[ 𝑋𝑌]−𝐸[ 𝑋] 𝐸[𝑌]
+Covarianza
+Variables independientes 
+¡OJO! En general:
+
+[Descripción de la imagen: varleatoriaa biernial diesal diesal diesal diesal diesal diesal diesal | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Covarianza
+
+Cov(X,Y)=El XY )- ElLX]E[Y]
+
+Variables independientes
+
+¡OJO! En general:
+
+/]]
+
+Variable aleatoria bidimensional 
+discreta
+𝑌=𝑎𝑋+ 𝑏    con   𝑎≠0
+Relación lineal 
+𝜇𝑌=𝑎𝜇𝑋+ 𝑏
+𝜎𝑌
+2 =𝑎2 𝜎𝑋
+2 ❑
+⇒𝜎𝑌
+❑=|𝑎|𝜎𝑋
+❑
+𝐸[ 𝑋𝑌]= 𝐸[𝑎𝑋2+𝑏𝑋]=𝑎𝐸[ 𝑋2]+𝑏𝐸[ 𝑋]
+𝐸[ 𝑋] 𝐸[𝑌]=𝑎𝜇𝑋
+2 +𝑏𝜇𝑋
+𝐂𝐨𝐯( 𝑋, 𝑌)= 𝑎𝜎𝑋
+2
+
+[Descripción de la imagen: un libro con una ecuación matemática en él | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Y —=d X + 65 con . a=
+
+E| XY|=E|aX+bX =aE|X*+bE|X]
+E| <|7 Y ]-=adaz -D u
+
+Relación lineal
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+- >
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+
+Variable aleatoria bidimensional 
+discreta
+Correlación
+𝜌𝑋,𝑌=Cov ( 𝑋,𝑌)
+𝜎𝑋𝜎𝑌
+Relación lineal 
+𝜌𝑋,𝑌∈[ −1 ,+1]
+
+[Descripción de la imagen: varleetata bierniali disetazione diore | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+Correlación
+
+Relación lineal
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+Experimento: 
+Una urna contiene 10 bolillas blancas y 5 negras. Se tira una 
+moneda al aire. Si sale cara se  agregan 10 bolillas negras a la 
+urna; si sale ceca se agregan 10 bolillas blancas. Se saca una 
+bolilla al azar y se observa el color. 
+Se definen dos variables aleatorias discretas:
+ :  vale 0 si sale ceca al arrojar la moneda y 1 si sale cara 
+ :  vale 0 si la bolilla extraída es negra y 1 si es blanca.
+
+[Descripción de la imagen: varlea alternistao dise]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+: probabilidad condicional de  dado  
+negra
+blanca
+ceca
+cara
+𝑝𝑌∨𝑋(0|0 )= 5
+25 ,𝑝𝑌∨𝑋(1|0 )= 20
+25
+𝑝𝑌∨𝑋(0|1)= 15
+25 ,𝑝𝑌∨𝑋(1|1)= 10
+25
+0.2
+0.8
+0.6
+0.4
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+: probabilidad condicional de dado
+
+negra blanca
+
+xX=0
+20 blancas
+5 negras X
+15 negras
+10 blancas
+
+vaX(OIO) vaX(1|0) g vaX(OI1) 25 vax(1|1)
+
+10
+25
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- >
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+: probabilidad conjunta de e  
+0.1
+0.4
+0.3
+0.2
+ 
+0.5
+0.5
+𝑝𝑋(𝑥)
+0.4
+0.6
+𝑝𝑌( 𝑦)
+, : probabilidades marginales de  e
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+. probabilidad conjunta de e
+
+,: probabilidades marginales de e
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+ No son independientes
+0.1
+0.4
+0.3
+0.2
+ 
+0.5
+0.5
+𝑝𝑋(𝑥)
+0.4
+0.6
+𝑝𝑌( 𝑦)
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+No son independientes]]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+𝜇𝑋=𝐸[ 𝑋]=0 ∙0.5+1 ∙0.5=0.5
+0.1
+0.4
+0.3
+0.2
+0.5
+0.5
+𝑝𝑋(𝑥)
+0.4
+0.6
+𝑝𝑌( 𝑦)
+𝐸[ 𝑋2]=0 2∙0.5 +12∙0.5=0.5
+𝜎𝑋
+2 =0.5 −0. 2 5=0. 25
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+7 = | |=0-0.5+1 -0.5=0.5
+
+E| <-2|=02-0.5+-12-0-5=0.5
+á —=0-5 — O.2Z 5S—=Q0.25
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+- >
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+𝜇𝑌=𝐸[ 𝑌] =0 ∙0. 4 +1∙0. 6=0. 6
+0.1
+0.4
+0.3
+0.2
+0.5
+0.5
+𝑝𝑋(𝑥)
+0.4
+0.6
+𝑝𝑌( 𝑦)
+𝐸[𝑌2]=02∙0. 4+1 2∙0. 6=0. 6
+𝜎𝑌
+2 =0.6 −0. 36=0. 24
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+=0 -0.4+1-0.6—=0.6
+
+=-0. A.1*=-0.66 = =0.6
+— O. 36 — 0. 2A
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+0
+1
+0
+1
+𝐸[ 𝑋𝑌]=0∙0.1+0 ∙0. 4+0∙0.3 +1∙0. 2=0.2
+0.1
+0.4
+0.3
+0.2
+0.5
+0.5
+𝑝𝑋(𝑥)
+0.4
+0.6
+𝑝𝑌( 𝑦)
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+E| XY =0-0.1+0:0.4+0:0.3+1 -0.2=0.2
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+
+Variable aleatoria bidimensional 
+discreta
+𝜇𝑋=0. 5 , 𝜎𝑋
+2 = 0.25
+𝜇𝑌=0. 6 , 𝜎𝑌
+2 =0.2 4
+𝐸[ 𝑋𝑌]= 0.2
+No son variables independientes
+No hay una relación lineal
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+£ -- —K I. = .- .- — O2 5
+-- I-66 .. = — Oo-.Zz A
+
+Z-- | = =>-_ 1 = »D). —>
+
+No son variables independientes
+
+No hay una relación lineal
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+Experimento
+Se tira un dado dos veces y se anotan los resultados 
+X1 y X2. 
+Se definen dos variables aleatorias discretas:
+X1 
+| X1 – X2|
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variable aleatoria bidimensional 
+discreta
+El recorrido de 
+El recorrido de 
+El recorrido de 
+𝑅𝑋={1,2,3,4,5,6 }
+𝑅𝑌={0,1,2,3,4,5 }
+𝑅𝑋, 𝑌=𝑅𝑋×𝑅𝑌
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+El recorrido de
+
+R = 1,2,3,4,5,6
+
+El recorrido de
+
+R, = 0,1,2,3,4,5
+
+El recorrido de
+
+RX,Y=RXXRY]]
+
+Variable aleatoria bidimensional 
+discreta
+    X2
+X1
+1
+2
+3
+4
+5
+6
+1
+2
+3
+4
+5
+6
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+5
+5
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: C
+E
+o
+(1)
+E
+[eb)
+£
+Le)
+=
+S
+o
+= o
+[
+()
+[
+le|
+S
+T
+>
+
+AMLLLLLLLLLLLLLLLLLLL
+
+' y | | y | | | |
+
+90000
+
+PN N Y]]
+
+Variable aleatoria bidimensional 
+discreta
+    X2
+X1
+1
+2
+3
+4
+5
+6
+1
+2
+3
+4
+5
+6
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+5
+5
+
+[Descripción de la imagen: un cuadro con un número de 3 y un número de 4 | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+      
+0
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+6
+: probabilidad conjunta de e
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+: probabilidad conjunta de e
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+
+[Descripción de la imagen: Un sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude sude | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+discreta
+
+[Descripción de la imagen: Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda Suda]
+
+Variable aleatoria bidimensional 
+discreta
+P ( 𝑋=1|𝑌=2) ¿P ( 𝑋=1,𝑌=2)
+P (𝑌=2)
+¿
+1
+36
+8
+36
+¿ 1
+8
+≠P ( 𝑋=1)= 1
+6
+No son variables aleatorias independientes
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+PIX=1,Y =2
+P|Y =2
+
+PIX=1/Y=2) ¿
+
+2P| X=1=
+
+No son variables aleatorias independientes]]
+
+Variable aleatoria bidimensional 
+discreta
+𝑝𝑋∨𝑌(1|2 ) ¿ 𝑝𝑋, 𝑌(1,2)
+𝑝𝑌(2 )
+¿
+1
+36
+8
+36
+¿ 1
+8
+≠𝑝𝑋(1)= 1
+6
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+discreta
+
+pXVY(…2) ¿L((12,)2)
+
+Y
+
+1
+
+.D
+
+6
+(O)
+36
+
+]]]
+

@@ -1,0 +1,465 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 5
+Mezcla de variables aleatorias, funciones de variable aleatoria y distribuciones
+conjuntas
+1. La tensión de salida V del receptor de un sistema de comunicación digital cuando se recibe un 0,
+es gaussiana (sólo ruido) con media 0 y dispersión 0.3. Cuando se recibe un 1 binario la tensión
+también tiene distribución gaussiana (ahora señal más ruido) de media 0.9 y y dispersión 0.25.
+La lógica del receptor decide que si V > 0. 50 entonces se recibió un 1 y un 0 en caso contrario.
+Si los ceros y unos llegan al sistema en igual proporción:
+a) Calcular la probabilidad de que se cometa error en la detección del bit que se decodifica,
+b) Obtener la función de distribución de V y su valor esperado.
+Construya un árbol y use el teorema de la probabilidad total para obtener la función de distribución
+de V .
+2. Dos máquinas A y B producen piezas cuyos pesos (en gramos) se pueden suponer variables
+aleatorias continuas con las siguientes funciones densidad de probabilidad: fA(x) = (16−2 x)/49
+si x ∈(1, 8) y 0 fuera de ese intervalo, y fB(x) = (2 x −2)/49 si x ∈(1, 8) y 0 fuera de ese
+intervalo. La máquina A produce el 40 % de las piezas y el resto lo produce la máquina B.
+a) Obtener las funciones de distribución y densidad de probabilidad del peso X de las piezas
+de la producción total.
+b) Determinar el valor esperado E[X] y el desvío estándar σX.
+3. La variable aleatoria discreta X tiene un recorrido y función de probabilidad como indica la
+siguiente tabla:
+xi
+-2
+-1
+1
+2
+pi
+0.1
+0.3
+0.2
+0.4
+Obtener la función de probabilidad, el valor esperado y varianza de Y si:
+a) Y = 3X
+b) Y = X2
+c) Y = 2 X3.
+4. La variable aleatoria Z tiene distribución normal standard.
+a) Obtener la distribución de probabilidades de la variable X = m + sZ donde m y s son
+constantes reales y s > 0.
+b) Obtener la función densidad de probabilidad de X = Z2.
+Sugerencia: P(X < x) = P(−√x < Z < √x).
+5. La variable aleatoria U tiene distribución uniforme en (0,1).
+1
+
+[Descripción de la imagen: el texto en el libro de texto se muestra en la imagen]
+
+Probabilidad y Estadística 93.24
+curso 2023
+a) Obtenga la distribución de probabilidades de W = U2.
+b) Demostrar que X = −1
+λ ln(1 −U), con λ > 0, es una variable aleatoria con distribución
+exponencial de parámetro λ. Realice una simulación generando 10 valores de X si λ = 5
+usando el generador de números aleatorios (en realidad pseudo-aleatorios) de su calculadora
+de mano.
+6. La variable aleatoria X tiene distribución uniforme en (1,3).
+a) Obtener las funciones densidad de probabilidad de Y = 3X + 4 y Z = eX.
+b) Calcular los valores esperados de Y y Z.
+7. El radio R de una esfera se considera una variable aleatoria continua. Supongamos que R tiene
+una función densidad de probabilidad fR(r) = 6 r (1−r)
+0 < r < 1. Obtener la función densidad
+de probabilidad del volumen V y del área A de la esfera.
+8. El beneficio total de una empresa está dado por B = 10 Q −5 Q2 (en miles de pesos) si Q es la
+cantidad vendida, que se supone es una variable aleatoria continua que toma valores entre 0 y 2
+con función densidad de probabilidad: fQ(q) = q si 0 < q < 1 y fQ(q) = −q + 2 si 1 < q < 2.
+a) Calcular la probabilidad de obtener un beneficio superior a los 3000 pesos.
+b) Calcular el valor esperado de B.
+c) Obtener la función de distribución de B.
+9. El costo C para producir una cantidad X de un producto viene dado por C(X) = (X −4)(X −
+8) + 10 (en miles de pesos). Suponga que X es una variable aleatoria continua con distribución
+uniforme en (4, 8).
+a) Calcular la probabilidad de que el costo sea mayor que 9.
+b) Calcular el valor esperado de C.
+c) Obtener la función de distribución de C.
+10. Una corriente eléctrica variable I se puede considerar como una variable aleatoria distribuida
+uniformemente en el intervalo (9, 11). Si esta corriente pasa por una resistencia de 2 ohms
+entonces la potencia disipada W viene dada por W = 2 I2.
+a) Obtener la función densidad de probabilidad de W.
+b) Calcular E[W] y Var(W).
+c) Calcular P(W > E[W]).
+11. La variable aleatoria continua X tiene una función densidad de probabilidad tal que fX(x) = x+1
+para x ∈(−1, 0) , fX(x) = −x + 1 en (0, 1) y cero fuera del intervalo (−1, 1).
+a) Obtener las funciones de distribución y densidad de probabilidad de Y = X2.
+2
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+b) Determinar E[Y ] y Var(Y ).
+12. La tabla siguiente representa la distribución de probabilidades conjunta de la variable aleatoria discreta
+(X, Y ). Calcule todas las distribuciones marginales y condicionales.
+Y\X
+1
+2
+3
+4
+5
+1
+0.1
+0.1
+0.05
+0.15
+0.1
+2
+0.05
+0.05
+0.05
+0.15
+0
+3
+0.05
+0.05
+0
+0.1
+0
+13. Considere la siguiente tabla de la función de probabilidad conjunta de las variables aleatorias
+discretas X e Y :
+Y\X
+0
+1
+2
+3
+4
+5
+0
+0
+0.01
+0.03
+0.05
+0.07
+0.09
+1
+0.01
+0.02
+0.04
+0.05
+0.06
+0.08
+2
+0.01
+0.03
+0.05
+0.05
+0.05
+0.06
+3
+0.01
+0.02
+0.04
+0.06
+0.06
+0.05
+Obtener:
+a) las distribuciones de probabilidad marginales;
+b) la distribución de probabilidades de X + Y y XY ;
+c) el valor esperado y la varianza de X + Y y de XY .
+d) la covarianza Cov(X, Y ).
+14. Dada la variable aleatoria bidimensional
+(X, Y ) = {(−2, 4), (−1, 1), (1, 1), (2, 4)}
+tal que todos los pares tienen probabilidad 1/4,
+a) obtener las distribuciones marginales de X y de Y ;
+b) calcular E[X], E[Y ], E[XY ];
+c) verificar que X e Y no son independientes (existe entre ellas una relación funcional sencilla).
+15. Una urna contiene 10 bolillas blancas y 5 negras. Se tira una moneda al aire. Si sale cara se
+agregan 10 bolillas negras a la urna; si sale ceca se agregan 10 bolillas blancas. Se saca una bolilla
+al azar y se observa el color.
+Se definen dos variables aleatorias discretas: X toma el valor 0 si sale ceca al arrojar la moneda
+y 1 si sale cara, e Y que toma el valor 0 si la bolilla extraída es negra y 1 si es blanca. Obtener:
+a) la distribución de probabilidad condicional pY/X(y/x);
+b) la función de probabilidad conjunta pX,Y (x, y);
+3
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+c) las funciones de probabilidad marginales pX(x) y pY (y);
+d) la covarianza Cov(X, Y ).
+16. Se tira un dado y se anota el número X que sale. Se tira una moneda X veces y se anota el
+número Y de caras que salen.
+a) Obtener pY/X para X tomando los valores 2, 3 y 4.
+b) Obtener la distribución conjunta de probabilidades para X tomando los valores 1, 2, 3 y 4.
+17. Si la distribución de probabilidad conjunta de la variable aleatoria bidimensional (X, Y ) viene
+dada por pX,Y (x, y) = (x + y)/30 para x ∈{0, 1, 2, 3}, y ∈{0, 1, 2}. Obtener:
+a) P(X ≤2, Y = 1);
+b) P(X > 2, Y ≤1);
+c) P(X > Y );
+d) P(X + Y = 4);
+e) P(Y = 1/X = 2);
+f ) la función de probabilidad condicional pY/X(y/x);
+g) las funciones de probabilidad de X e Y ;
+h) E[X] y E[Y ];
+i) E[X + Y ] y Var(X + Y ).
+18. Cierto supermercado tiene una caja de atención común y otra caja rápida. Supongamos que X
+es el número de clientes que están en espera en la caja común en un momento particular del
+día, y que Y es el número de clientes que están en espera en la caja rápida al mismo tiempo. La
+distribución de probabilidades conjunta de (X, Y ) se resume en la siguente tabla:
+↓X\Y →
+0
+1
+2
+3
+0
+0.08
+0.07
+0.04
+0
+1
+0.06
+0.15
+0.05
+0.04
+2
+0.05
+0.04
+0.1
+0.06
+3
+0
+0.03
+0.04
+0.07
+4
+0
+0.01
+0.05
+0.06
+a) ¿Cuál es la probabilidad de que haya exactamente un cliente en cada línea de espera?
+b) ¿Cuál es la probabilidad de que la cantidad de clientes en cada cola sea la misma?
+c) Calcular la probabilidad de que haya por lo menos dos clientes más en una cola de espera
+que en la otra.
+d) ¿Cuál es la probabilidad de que la cantidad de clientes en ambas colas sea exactamente 4?
+e) Calcular el valor esperado del número de clientes en cada caja.
+f ) ¿Son X e Y variables aleatorias independientes?
+4
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+19. Construya las tablas de la función de probabilidad de dos variables aleatorias discretas X e Y
+siendo el recorrido de ambas finito, la primera variable X de recorrido RX = {0 1 2 3 4} y
+la segunda, Y , de recorrido RY = {2 4 6 8}. Obtenga la distribución de probabilidades de la
+variable aleatoria Z = X + Y si X e Y son independientes . Extraiga conclusiones respecto de la
+función de probabilidad de Z.
+Nota: Observe como la función de probabilidad de Z se obtiene como los coeficientes de un
+polinomio que es producto de otros dos polinomios.
+20. Dos máquinas A y B, que se accionan independientemente pueden tener un cierto número de
+fallas cada día. La distribución de probabilidades del número de fallas X e Y , respectivamente
+de las máquinas A y B, es:
+Nro. de fallas k
+0
+1
+2
+3
+4
+5
+6
+P(X = k)
+0.10
+0.20
+0.30
+0.20
+0.09
+0.07
+0.04
+P(Y = k)
+0.30
+0.10
+0.10
+0.10
+0.10
+0.15
+0.15
+Expresar los sucesos que siguen en términos de X e Y y calcular sus probabilidades:
+a) A y B tienen el mismo número de fallas;
+b) el número de fallas entre ambas máquinas es menor que 4;
+c) A tiene más fallas que B;
+d) B tiene el doble de fallas que A;
+e) B tiene 4 fallas, cuando se sabe que B tiene por lo menos 2 fallas;
+f ) el número mínimo de fallas de las dos máquinas es 3.
+21. Un examen consta de dos partes. Para un estudiante seleccionado al azar se definen las variables
+aleatorias: X = número de puntos en la primera parte, Y = número de puntos en la segunda
+parte. Supongamos que la siguiente tabla muestra la distribución conjunta de X e Y :
+X\Y
+0
+5
+10
+15
+0
+0.02
+0.06
+0.02
+0.10
+5
+0.04
+0.15
+0.20
+0.10
+10
+0.01
+0.15
+0.14
+0.01
+La clasificación registrada es la suma X + Y de los puntajes obtenidos en cada parte.
+a) Hallar la distribución de probabilidades de X+Y y la esperanza de la clasificación registrada.
+b) ¿Son independientes las calificaciones de las dos partes? Justificar la respuesta.
+22. Las variables aleatorias discretas X e Y son independientes y cada una tiene distribución binomial
+de parámetros n = 3 y p = 0.5.
+a) Calcular P(2 X + 3 Y < 10) y P(X = Y ).
+b) Obtener la distribución de probabilidades de Z = X + Y . Verificar que Z tiene distribución
+binomial e identificar sus parámetros. Calcular E[Z] y Var(Z).
+5
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+23. Considere las tablas de distribución conjunta de probabilidades:
+Tabla 1
+Y\X
+-1
+0
+1
+-1
+0
+0.1
+0
+0
+0.1
+0.6
+0.1
+1
+0
+0.1
+0
+Tabla 2
+Y\X
+-1
+0
+1
+-1
+0.2
+0
+0
+0
+0
+0.6
+0
+1
+0
+0
+0.2
+Tabla 3
+Y\X
+-1
+0
+1
+-1
+0
+0
+0.2
+0
+0
+0.6
+0
+1
+0.2
+0
+0
+En cada caso, analice la independencia de las variables X e Y y calcule:
+a) E[X], E[Y ], E[XY ];
+b) Var(X) y Var(Y );
+c) Cov(X, Y ) y el coeficiente de correlación ρ(X, Y ).
+24. La función de densidad de probabilidad conjunta de (X, Y ) es
+fX,Y (x, y) =
+ a(x + y)
+0 < x < 3, 0 < y < 3
+0
+x /∈(0, 3) × (0, 3)
+a) Calcular P(1 < X < 2, 1 < Y < 2)
+b) Calcular E[X], E[Y ], σX y σY .
+25. La cantidad de combustible, en miles de litros, que contiene un tanque al principio del día es una
+variable aleatoria X, de la cual una cantidad aleatoria Y se vende durante el día. Se supone que
+el tanque no se rellena durante el día, de forma tal que la función de densidad de probabilidad
+conjunta es:
+fX,Y (x, y) =
+ 2
+0 < x < 1, 0 < y < x
+0
+en otro caso.
+6
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+a) Determine si X e Y son independientes.
+b) Calcule la probabilidad de que se hayan vendido en un día más de 500 litros, si la cantidad
+de combustible que había en el tanque al principio del día era mayor a 700 litros.
+26. Dos componentes electrónicos tienen la siguiente distribución de probabilidades conjunta para
+sus tiempos de duración X e Y :
+fX,Y (x, y) =
+ x exp[−x(1 + y)]
+0 < x, 0 < y
+0
+x < 0 o y < 0.
+a) ¿Cuál es la probabilidad de que la duración X del primer componente sea mayor que 3?
+b) Obtener las distribuciones marginales de probabilidad de cada variable y analizar si son
+independientes.
+c) Calcular la covarianza de X e Y .
+27. Se cortan chapas rectangulares de lados X (largo) e Y (ancho) que se suponen variables aleatorias
+con densidad de probabilidad conjunta
+fX,Y (x, y) =
+ k x2 y
+1 < x < 2, 1 < y < x
+0
+en otro caso.
+a) Obtenga el valor de k.
+b) Calcule la probabilidad de ocurrencia de cada uno de estos eventos: el largo es mayor que
+1.8, el largo es un 20 % mayor que el ancho y el área de la chapa es mayor a 2.
+c) Calcule el ancho y el largo medio.
+d) ¿ Son el ancho y largo variables aleatorias independientes?
+28. El precio de mercado de cierto bien se supone que es una variable aleatoria P con distribución
+uniforme en el intervalo (10, 12). La demanda D de ese producto depende del precio P con una
+densidad condicional de probabilidad dada por fD/P (d/p) = e−(d−p) d > p.
+a) Obtenga la función densidad de probabilidad de la demanda.
+b) Calcule la probabilidad de que la demanda supere 13.
+29. Considere dos dispositivos que forman parte de un sistema y sean X e Y sus tiempos de vida o
+duración (en miles de horas) hasta que fallen. Si X e Y son variables aleatorias independientes
+con distribución exponencial de parámetro λ:
+a) Obtenga la distribución de probabilidades conjunta de (X, Y ).
+b) ¿Cuál es la probabilidad de que cada dispositivo dure a lo sumo 1/λ?
+(Sugerencia: considere P(X < 1/λ, Y < 1/λ)).
+c) ¿Cuál es la probabilidad de que la duración total (X + Y ) sea a lo sumo t miles de horas?
+(Sugerencia: considere la región A = {(x, y) : x > 0, y > 0, x + y < t} e integre).
+7
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+30. Dos personas han quedado citadas en un lugar. El instante de llegada de cada una a ese lugar
+puede suponerse una variable aleatoria con distribución uniforme en (0, 30) y que esos instantes
+de llegada son independientes.
+a) Obtener la función de distribución y de densidad de probabilidad del tiempo T que una
+persona espera a la otra.
+b) Calcular el valor esperado y el desvío estándar de T.
+31. Se eligen dos números al azar en (0,1). Se supone que la elección de uno es independiente de la
+del otro. Calcular la probabilidad de que:
+a) la suma sea menor que 1;
+b) la suma de sus cuadrados sea menor que 1;
+c) su producto no exceda 2
+9.
+32. Suponga que X e Y son variables aleatorias . Demostrar que
+a) si X e Y son independientes entonces Cov(X, Y ) = ρ(X, Y ) = 0;
+b) Cov(aX + b, cY + d) = a c Cov(X, Y ) para a, b, c y d constantes;
+c) ρ(aX + b, cY + d) = ρ(X, Y ) para a, b, c y d constantes y sign(a) = sign(c);
+d) Si Y = aX + b con a y b constantes y (a ̸= 0) entonces ρ(X, Y ) = sign(a).
+8
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+

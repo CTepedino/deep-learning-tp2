@@ -1,0 +1,852 @@
+Un ejemplo
+Una agencia de protección al consumidor desea poner 
+a prueba la afirmación de un fabricante de pinturas 
+según la cual el tiempo medio de secado de su nueva 
+pintura de secado rápido es de no más de  min.  
+Para ello se pintan  tableros, con el contenido de  latas 
+distintas y se mide el tiempo medio de secado.
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Un ejemplo
+Supongamos que el valor medio de secado de los 36 
+tableros da 21 min. 
+¿Estará mintiendo el fabricante? 
+¿O es simplemente que el azar hizo que el promedio 
+sea superior en esta prueba?
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Un ejemplo
+Claramente, hay dos hipótesis posibles:
+El fabricante dice la verdad: el tiempo medio de 
+secado es menor o igual a  min
+El fabricante miente: el tiempo medio de secado es 
+superior a  min
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Un ejemplo
+Claramente, hay dos hipótesis posibles:
+Hipótesis nula: el tiempo medio de secado es menor 
+o igual a  min
+Hipótesis alternativa: el tiempo medio de secado es 
+superior a  min
+
+[Descripción de la imagen: un bloc de notas con las palabras 'uepo' y 'uepo ']
+
+Un ejemplo
+Claramente, hay dos hipótesis posibles:
+Hipótesis nula:  min
+Hipótesis alternativa:  min
+
+[Descripción de la imagen: un bloc de notas con las palabras''y''en español]
+
+Un ejemplo
+Cual jurado, debemos tomar una decisión:
+¿Dice la verdad el fabricante o miente?
+¿Es verdadera o falsa la hipótesis nula?
+Pero, sea cual sea la decisión que tomemos, el azar 
+hace podamos cometer un error.
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Errores en prueba de hipótesis
+Aceptamos 
+la hipótesis 
+nula
+Rechazamos 
+la hipótesis 
+nula
+Hipótesis nula 
+verdadera
+Error Tipo I
+Hipótesis nula falsa
+Error Tipo 
+II
+
+[Descripción de la imagen: un cuaderno con una cara sonriente en él]
+
+Probabilidades de error
+Aceptamos 
+la hipótesis 
+nula
+Rechazamos 
+la hipótesis 
+nula
+Hipótesis nula 
+verdadera
+Hipótesis nula falsa
+
+[Descripción de la imagen: probables ero programa recados | Transcripción de la imagen: Probabilidades de error
+
+Hipótesis nula
+verdadera
+
+Hipótesis nula falsa
+
+fad
+El
+3
+9
+-
+a
+d
+a
+-
+2
+.
+—
+K
+>]]
+
+Probabilidades de error
+𝛼
+𝛽
+Si siempre aceptamos la 
+hipótesis nula, , pero 
+corremos un alto riesgo 
+de equivocarnos si fuera 
+falsa (
+Si siempre 
+rechazamos la 
+hipótesis nula, , 
+entonces corremos un 
+alto riesgo de 
+equivocarnos si fuera 
+verdadera (
+Hay que buscar un 
+balance
+
+[Descripción de la imagen: probables ero - probables ero]
+
+Varias estrategias
+Existen varias posibilidades, pero todas se basan en 
+escoger un estadístico apropiado
+Recordemos que un estadístico es una función de la muestra
+Dos estrategias habituales:
+• Fijamos, de antemano, una regla de decisión que 
+garantice que la probabilidad de error de tipo I no 
+será superior a un valor  pre-fijado.
+• Simplemente reportamos qué tan probable es que 
+una muestra haya sido tan contraria a la hipótesis 
+nula: valor p.
+
+[Descripción de la imagen: varestes exos de ests]
+
+Regla de decisión
+El caso más simple es el de una variable aleatoria . 
+Supondremos que, mágicamente,  es conocido: algo 
+parecido hicimos en el caso de los intervalos de 
+confianza.
+Como en los intervalos de confianza, las fórmulas que 
+deduciremos 
+se 
+podrán 
+aplicar 
+para 
+variables 
+aleatorias arbitrarias, si la muestra es suficientemente 
+grande (¡gracias al TCL!).
+Y con muestra muy grande, hasta podremos 
+reemplazar  por  (desvío muestral).
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+Se fija en la máxima probabilidad de cometer un error 
+de tipo I que es posible admitir: nivel de significación 
+de la prueba.
+Como estadístico de prueba, se utilizará el valor 
+medio: 
+ donde  es el tamaño de la muestra.
+
+[Descripción de la imagen: rega dedicio, una palabra que se usa para describir la palabra]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+Obvio, rechazaremos la hipótesis nula si da 
+demasiado grande: ¿qué tan grande?
+𝑋𝑛
+∆
+𝜇0
+𝑥𝑐
+
+[Descripción de la imagen: rega dedicio i e = o o o o o o o o o o o o o o o o o o o o o o]
+
+Regla de decisión
+𝑋𝑛
+N ( 𝜇, 𝜎/ √𝑛)
+𝑋𝑛
+∆
+𝜇0
+𝑥𝑐
+Llamaremos a la distribución de probabilidades cuando 
+la media es  y a la función de distribución acumulada 
+de una variable aleatoria normal estándar (media 0 y 
+desvío 1).
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Regla de decisión
+𝑋𝑛
+N ( 𝜇, 𝜎/ √𝑛)
+𝑋𝑛
+∆
+𝜇0
+𝑥𝑐
+𝑃𝜇( 𝑋𝑛>𝑥𝑐)≤𝑃𝜇0 ( 𝑋𝑛>𝑥𝑐)=1−Φ(
+𝑥𝑐−𝜇0
+𝜎/√𝑛)≤𝛼𝑚
+𝑥𝑐=𝜇0+𝑧1−𝛼𝑚
+𝜎
+√𝑛
+
+[Descripción de la imagen: un diagrama de una línea con una pendiente y un punto | Transcripción de la imagen: Regla de decisión
+
+DI lzz .< /7 /72)
+ZAN]]
+
+Un ejemplo
+Una agencia de protección al consumidor desea poner 
+a prueba la afirmación de un fabricante de pinturas 
+según la cual el tiempo medio de secado de su nueva 
+pintura de secado rápido es de no más de  min.  
+Para ello se pintan  tableros, con el contenido de  latas 
+distintas y se mide el tiempo medio de secado.
+Por la experiencia previa, se sabe que el desvío en el 
+tiempo de secado es de min.
+Fijamos la máxima probabilidad de un error de tipo I 
+en .
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Un ejemplo
+Asumiendo que el tiempo de secado es una variable 
+aleatoria normal…
+𝑋𝑛
+∆
+𝜇0
+𝑥𝑐
+𝑥𝑐=𝜇0+𝑧1−𝛼𝑚
+𝜎
+√𝑛=20+1.6449 2.4
+√36=20.658
+Si el valor medio de secado de los  tableros da  min., 
+entonces debemos rechazar la hipótesis nula.
+
+[Descripción de la imagen: una línea perpendicular a la línea perpendicular a la línea perpendicular a la línea perpendicular a la línea perpendicular a la línea que es]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽( 𝜇)=𝑃𝜇( 𝑋𝑛≤𝑥𝑐)=Φ(
+𝑥𝑐−𝜇
+𝜎/√𝑛)
+𝛽( 𝜇0)=Φ(
+𝑥𝑐−𝜇0
+𝜎/√𝑛)=1− 𝛼𝑚
+Algunos valores conocidos:
+lim
+𝜇→∞𝛽( 𝜇)=0
+𝛽(𝑥𝑐)=Φ(
+𝑥𝑐−𝑥𝑐
+𝜎/√𝑛)=0.5
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Regla de decisión
+
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos
+cometiendo?
+
+Va a depender de “qué tan falsa” sea...
+
+— Y _- l— Xc — u
+
+Algunos valores conocidos:
+
+ÍC_¡u0
+s /3(U0) O'/x/n am
+X — X.
+n
+
+PIX.,|=D =0.5]]
+
+Regla de decisión
+𝑥𝑐
+1−  𝛼𝑚
+
+[Descripción de la imagen: un gráfico con una línea subiendo por el lado]
+
+Varias estrategias
+Dos estrategias habituales:
+• Fijamos, de antemano, una regla de decisión que 
+garantice que la probabilidad de error de tipo I no 
+será superior a un valor  pre-fijado.
+• Simplemente reportamos qué tan probable es que 
+una muestra haya sido tan contraria a la hipótesis 
+nula: valor p.
+
+[Descripción de la imagen: varestes ests ests, ests, ests, ests, ests, ests]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba 
+dé tan mal o peor de lo que dio.
+Es una medida de la posibilidad de que el resultado 
+observado se produzca, debido al azar, bajo la 
+hipótesis nula.
+Si el valor p es menor a , entonces la hipótesis nula 
+debería rechazarse.
+𝑃𝜇( 𝑋𝑛>𝑥𝑜𝑏𝑠)≤𝑃𝜇0 ( 𝑋𝑛>𝑥𝑜𝑏𝑠)=1−Φ(
+𝑥𝑜𝑏𝑠−𝜇0
+𝜎/√𝑛)
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Un ejemplo
+Una agencia de protección al consumidor desea poner 
+a prueba la afirmación de un fabricante de pinturas 
+según la cual el tiempo medio de secado de su nueva 
+pintura de secado rápido es de no más de  min.  
+Para ello se pintan  tableros, con el contenido de  latas 
+distintas y se mide el tiempo medio de secado.
+Por la experiencia previa, se sabe que el desvío en el 
+tiempo de secado es de min.
+Fijamos la máxima probabilidad de un error de tipo I 
+en .
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Un ejemplo
+Si el valor medio de secado de los  tableros da  min.:
+Debe rechazarse la hipótesis nula.
+V alor  p=1−Φ(
+21−20
+2.4
+√36 )
+=0.00621<𝛼𝑚
+De hecho, podría habérsela rechazado para todo , el 
+valor p.
+
+[Descripción de la imagen: una nota con las palabras en español e inglés]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇< 𝜇0
+𝐻0: 𝜇≥𝜇0
+Obvio, rechazaremos la hipótesis nula si da demasiado 
+chica: ¿qué tan chica?
+𝑋𝑛
+∆
+𝜇0
+𝑥𝑐=𝜇0−𝑧1−𝛼𝑚
+𝜎
+√𝑛
+
+[Descripción de la imagen: regcia dedicio i eso i ovo reganos i utesi o denia]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽( 𝜇)=𝑃𝜇( 𝑋𝑛≥𝑥𝑐)=1−Φ(
+𝑥𝑐−𝜇
+𝜎/ √𝑛)
+𝛽( 𝜇0)=1−Φ(
+𝑥𝑐−𝜇0
+𝜎/√𝑛)=1− 𝛼𝑚
+Algunos valores conocidos:
+lim
+𝜇→−∞𝛽( 𝜇)=0
+𝛽(𝑥𝑐)=1−Φ(
+𝑥𝑐−𝑥𝑐
+𝜎/√𝑛)=0.5
+
+[Descripción de la imagen: regcias de la est en elo | Transcripción de la imagen: Regla de decisión
+“
+
+9 Si la hipótesis nula fuera falsa: ¿qué error estaríamos
+2 cometiendo?
+
+1 s Va a depender de “qué tan falsa” sea...
+
+Blu)=P,[X,=x,=1-0|%—
+
+_2
+a
+
+_d Algunos valores conocidos:]]
+
+Regla de decisión
+𝑥𝑐
+1−  𝛼𝑚
+
+[Descripción de la imagen: un gráfico con una línea subiendo por el lado]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba 
+dé tan mal o peor de lo que dio.
+𝑃𝜇( 𝑋𝑛<𝑥𝑜𝑏𝑠)≤𝑃𝜇0 ( 𝑋𝑛<𝑥𝑜𝑏𝑠)=Φ(
+𝑥𝑜𝑏𝑠−𝜇0
+𝜎/√𝑛)
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇≠𝜇0
+𝐻0: 𝜇=𝜇0
+Obvio, rechazaremos la hipótesis nula si da demasiado 
+distinta: ¿qué tan distinta?
+𝑋𝑛
+∆
+𝜇0
+∆
+𝑥𝑐1=𝜇0−𝑧1−𝛼𝑚/ 2 𝜎
+√𝑛
+𝑥𝑐2= 𝜇0+𝑧1−𝛼𝑚/2 𝜎
+√𝑛
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽( 𝜇0)=1−Φ(
+𝑥𝑐−𝜇0
+𝜎/√𝑛)=1− 𝛼𝑚
+Algunos valores conocidos:
+lim
+𝜇→±∞𝛽( 𝜇)=0
+𝛽(𝑥𝑐1) ≈0.5
+𝛽(𝑥𝑐2)≈0.5
+
+[Descripción de la imagen: regtes de la est entrea de la est est est est est est est est est est est est]
+
+Regla de decisión
+𝑥𝑐
+1−  𝛼𝑚
+𝑥𝑐
+
+[Descripción de la imagen: un gráfico con una curva y una línea de la misma longitud]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba 
+dé tan mal o peor de lo que dio.
+𝑃𝜇0 (|𝑋𝑛−𝜇0|>∆𝑜𝑏𝑠)=1 −Φ(
+∆𝑜𝑏𝑠
+𝜎
+√𝑛)
++Φ(
+−∆𝑜𝑏𝑠
+𝜎
+√𝑛)
+∆𝑜𝑏𝑠=|𝑥𝑜𝑏𝑠−𝜇0|
+𝑃𝜇0 (|𝑋𝑛−𝜇0|>∆𝑜𝑏𝑠)=2[
+1 −Φ(
+∆𝑜𝑏𝑠
+𝜎
+√𝑛)]
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+𝐻1: 𝜇< 𝜇0
+𝐻0: 𝜇≥𝜇0
+𝐻1: 𝜇≠𝜇0
+𝐻0: 𝜇=𝜇0
+𝑋𝑛
+𝜇0+𝑧1−𝛼𝑚
+𝜎
+√𝑛
+𝜇0
+𝑋𝑛
+𝜇0−𝑧1−𝛼𝑚
+𝜎
+√𝑛
+𝜇0
+𝑋𝑛
+𝜇0−𝑧1−𝛼𝑚/ 2 𝜎
+√𝑛
+𝜇0
+𝜇0+𝑧1−𝛼𝑚/2 𝜎
+√𝑛
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Regla de decisión
+
+, es conocido.]]
+
+Valor p
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+𝐻1: 𝜇< 𝜇0
+𝐻0: 𝜇≥𝜇0
+𝐻1: 𝜇≠𝜇0
+𝐻0: 𝜇=𝜇0
+1−Φ(
+∆𝑜𝑏𝑠
+𝜎
+√𝑛)
+Φ(
+∆𝑜𝑏𝑠
+𝜎
+√𝑛)
+2[
+1 −Φ(|
+∆𝑜𝑏𝑠
+𝜎
+√𝑛|)]
+
+[Descripción de la imagen: un libro con fórmulas y fórmulas | Transcripción de la imagen: Valor p
+
+, es conocido.]]
+
+Regla de decisión
+¿No puede usarse otro estadístico de prueba además 
+de ?
+Sí, hay otro estadístico que es absolutamente 
+equivalente:
+Z= 𝑋𝑛−𝜇0
+𝜎
+√𝑛
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Regla de decisión
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+𝑍
+0
+𝑧1−𝛼𝑚
+𝐻1: 𝜇< 𝜇0
+𝐻0: 𝜇≥𝜇0
+𝑍
+0
+−𝑧1−𝛼𝑚
+𝐻1: 𝜇≠𝜇0
+𝐻0: 𝜇=𝜇0
+𝑍
+0 𝑧1−𝛼𝑚/2
+-
+
+[Descripción de la imagen: regcias de ests de ests | Transcripción de la imagen: Regla de decisión
+
+, es conocido.
+. U< U
+
+U7 U
+:UZ U
+U<
+. U— U
+.UF Uo]]
+
+Valor p
+,  es conocido. 
+𝐻1: 𝜇> 𝜇0
+𝐻0: 𝜇≤𝜇0
+𝐻1: 𝜇< 𝜇0
+𝐻0: 𝜇≥𝜇0
+𝐻1: 𝜇≠𝜇0
+𝐻0: 𝜇=𝜇0
+1−Φ (𝑧𝑜𝑏𝑠)
+Φ(𝑧𝑜𝑏𝑠)
+2[1 −Φ (|𝑧𝑜𝑏𝑠|)]
+
+[Descripción de la imagen: un libro con la palabra valor y la palabra valor | Transcripción de la imagen: Valor p
+
+, es conocido.]]
+
+Otro ejemplo
+Una máquina dosificadora en una operación de 
+producción se debe ajustar si el porcentaje de envases 
+con falta de llenado es significativamente superior al 
+8%. En una muestra aleatoria de 145 envases de la 
+producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+¿Indican los resultados que hay que ajustar la máquina 
+dosificadora? 
+Se trata de una prueba de hipótesis asociada con la 
+proporción de una población.
+
+[Descripción de la imagen: otemlo unauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu]
+
+Pruebas para la proporción
+Es muy parecido al caso de  conocido
+Sabemos que, para  grande
+^𝑝N(𝑝,√
+𝑝(1−𝑝)
+𝑛
+)
+
+[Descripción de la imagen: una nota con la palabra en español]
+
+Regla de decisión
+^𝑝
+∆
+𝑝0
+^𝑝𝑐
+^𝑝𝑐=𝑝0+𝑧1−𝛼𝑚√
+𝑝0(1−𝑝0)
+𝑛
+𝐻1: 𝑝>𝑝0
+𝐻0:𝑝≤𝑝0
+
+[Descripción de la imagen: un diagrama de una línea con un punto en ella | Transcripción de la imagen: Regla de decisión
+
+Ho:Pp<P,
+H:p>P, A
+
+AN
+
+Po Pc
+
+P0<1_P0)
+A
+
+í)º:pº+zlº¿…X/]]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽(𝑝)=𝑃𝑝( ^𝑝≤^𝑝𝑐)=Φ(
+^𝑝𝑐−𝑝
+√
+𝑝(1−𝑝)
+𝑛
+)
+𝛽(𝑝0)=1− 𝛼𝑚
+Algunos valores conocidos:
+𝛽(1)=0
+𝛽(^𝑝𝑐)=0.5
+
+[Descripción de la imagen: regcias de las recadas de las recadas de la recada]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba dé 
+tan mal o peor de lo que dio.
+V alor  p=𝑃𝑝0 ( ^𝑝> ^𝑝𝑜𝑏𝑠)=1−Φ(
+^𝑝𝑜𝑏𝑠−𝑝0
+√
+𝑝0(1−𝑝0)
+𝑛
+)
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Otro ejemplo
+Una máquina dosificadora en una operación de 
+producción se debe ajustar si el porcentaje de envases 
+con falta de llenado es significativamente superior al 
+8%. En una muestra aleatoria de 145 envases de la 
+producción de un día se encontraron 18 envases 
+incompletos en su llenado. 
+¿Indican los resultados que hay que ajustar la máquina 
+dosificadora? 
+Utilizar un nivel de significación del 5%.
+
+[Descripción de la imagen: otemlo una una una una una una una una una una una una una una una una]
+
+Otro ejemplo
+𝐻1: 𝑝>0.08
+𝐻0:𝑝≤0.08
+^𝑝𝑐=0.08+1.6449√
+0.080.92
+145
+=0.1171
+Rechazamos la hipótesis nula
+Valor  p=𝑃𝑝0 (^𝑝>0.1241)=1 −Φ(
+0.1241 −0.08
+√
+0.08 0.92
+145
+)
+=0.0251
+
+[Descripción de la imagen: una nota con la fórmula de la fórmula | Transcripción de la imagen: Otro ejemplo
+
+Ho:p<0.08
+H.:p>0.08
+0.080.92
+
+P=0.08+1.6449|——=0.1171
+
+- 9 Rechazamos la hipótesis nula
+0.1241 — 0.08
+
+| 0.08 0.92
+145
+
+' ¿30r p=P, Pp>0.1241)=1 -$
+
+=0.0251]]
+
+Otro ejemplo
+𝑥𝑐
+1−  𝛼𝑚
+
+[Descripción de la imagen: un gráfico con una curva y un gráfico de línea | Transcripción de la imagen: Otro ejemplo]]
+
+Regla de decisión
+𝐻1: 𝑝<𝑝0
+𝐻0:𝑝≥𝑝0
+^𝑝
+∆
+𝑝0
+^𝑝𝑐=𝑝0−𝑧1−𝛼𝑚√
+𝑝0(1−𝑝0)
+𝑛
+^𝑝𝑐
+
+[Descripción de la imagen: un diagrama de una línea con la pendiente y la pendiente | Transcripción de la imagen: Regla de decisión
+
+Ho:Pp=P,
+H,:p<p,]]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽(𝑝)=𝑃𝑝( ^𝑝≥^𝑝𝑐)=1−Φ(
+^𝑝𝑐−𝑝
+√
+𝑝(1−𝑝)
+𝑛
+)
+Algunos valores conocidos:
+𝛽(𝑝0)=1− 𝛼𝑚
+𝛽(0)=0
+𝛽(^𝑝𝑐)=0.5
+
+[Descripción de la imagen: regcias de la est intera]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba 
+dé tan mal o peor de lo que dio.
+V alor  p=𝑃𝑝0 ( ^𝑝< ^𝑝𝑜𝑏𝑠)=Φ(
+^𝑝𝑜𝑏𝑠−𝑝0
+√
+𝑝0(1−𝑝0)
+𝑛
+)
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Regla de decisión
+^𝑝
+∆
+𝑝0
+∆
+∆=𝑧1−𝛼𝑚/2√
+𝑝0(1−𝑝0)
+𝑛
+𝐻1: 𝑝≠𝑝0
+𝐻0:𝑝=𝑝0
+^𝑝𝑐1
+^𝑝𝑐2
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea perpendicular a la línea | Transcripción de la imagen: Regla de decisión
+
+H,:Pp=P,
+H:p7p,
+
+a
+_
+
+ó lee
+
+0.]]
+
+Regla de decisión
+Si la hipótesis nula fuera falsa: ¿qué error estaríamos 
+cometiendo?
+Va a depender de “qué tan falsa” sea…
+𝛽(𝑝0)=1− 𝛼𝑚
+𝛽(0)=𝛽(1)=0
+𝛽(^𝑝𝑐1)≈0.5 𝛽(^𝑝𝑐2)≈0.5
+
+[Descripción de la imagen: regcias de la est intera]
+
+Valor p
+El valor p se define como la probabilidad de que, si la 
+hipótesis nula es verdadera, el estadístico de prueba 
+dé tan mal o peor de lo que dio.
+𝑃𝜇0 (|^𝑝−𝑝0|>∆𝑜𝑏𝑠)=2[
+1 −Φ(
+∆𝑜𝑏𝑠
+√
+𝑝0(1−𝑝0)
+𝑛
+)]
+∆𝑜𝑏𝑠=|^𝑝𝑜𝑏𝑠−𝑝0|
+
+[Descripción de la imagen: valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor valor]
+
+Regla de decisión
+¿No puede usarse otro estadístico de prueba además 
+de ?
+Sí, hay otro estadístico que es absolutamente 
+equivalente:
+Z=
+^𝑝−𝑝0
+√
+𝑝0(1−𝑝0)
+𝑛
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Regla de decisión
+𝐻1: 𝑝>𝑝0
+𝐻0:𝑝≤𝑝0
+𝑍
+0
+𝑧1−𝛼𝑚
+𝐻1: 𝑝<𝑝0
+𝐻0:𝑝≥𝑝0
+𝑍
+0
+−𝑧1−𝛼𝑚
+𝐻1: 𝑝≠𝑝0
+𝐻0:𝑝=𝑝0
+𝑍
+0 𝑧1−𝛼𝑚/2
+-
+
+[Descripción de la imagen: un diagrama de una línea con los mismos números | Transcripción de la imagen: Regla de decisión
+
+Ho:Pp<P,
+H:p>P,
+Ho:Pp=P,
+H,:p<p,
+HOIPZPO
+H,:p7p,]]
+
+Valor p
+1−Φ (𝑧𝑜𝑏𝑠)
+Φ(𝑧𝑜𝑏𝑠)
+2[1 −Φ (|𝑧𝑜𝑏𝑠|)]
+𝐻1: 𝑝>𝑝0
+𝐻0:𝑝≤𝑝0
+𝐻1: 𝑝<𝑝0
+𝐻0:𝑝≥𝑝0
+𝐻1: 𝑝≠𝑝0
+𝐻0:𝑝=𝑝0
+
+[Descripción de la imagen: una hoja con la palabra 'valor' escrita en ella]
+

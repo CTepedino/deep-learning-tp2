@@ -1,0 +1,806 @@
+SIA - TP3
+Perceptrón Simple y 
+Multicapa 
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+Luca Bloise
+
+[Descripción de la imagen: el título del libro, 't3 peropimilly multi ']
+
+Ejercicio 1
+
+[Descripción de la imagen: logotipo de la palabra con una flecha azul | Transcripción de la imagen: EjJercicio |]]
+
+Deﬁnimos
+●
+Learning rate: 0.1
+●
+Épocas máximas: 1000
+●
+Bias y pesos iniciales: random entre -1 y 1
+
+[Descripción de la imagen: demos tasa de aprendizaje 1 esopias 100 bases enlar entre y]
+
+AND
+
+[Descripción de la imagen: una línea se dibuja en la coordenada | Transcripción de la imagen: D
+
+Epoch 1, Iteración 2]]
+
+XOR - Problema
+
+XOR - Soluciones
+Combinación de perceptrones 
+simples
+Perceptrón simple no lineal
+
+[Descripción de la imagen: xor - scions conocation de performies simples]
+
+XOR - Nuestra solución 
+●
+Transformamos la entrada
+●
+Entran dos valores y la salida es la 
+cantidad de diferencias
+●
+Buscamos una recta que divida 
+estos valores
+
+[Descripción de la imagen: x - est sucion transforma la estr]
+
+XOR
+
+[Descripción de la imagen: un gráfico con una línea de simetría y una línea de simetría | Transcripción de la imagen: XOR
+
+Epoch 1, Iteración 2
+
+e Clase+1
+
+0.5 Lo 15 2.0
+Cantidad de diferencias entre x1 y x2]]
+
+Ejercicio 2
+
+[Descripción de la imagen: la palabra 'eirio 2' se muestra en un fondo azul oscuro y verde]
+
+Parámetros
+Función de 
+activación
+Identidad (Lineal)
+Sigmoidea
+Tanh
+Learning Rate
+0.001
+Max Epochs
+100000
+Beta
+-
+1
+Inicialización de 
+pesos
+Aleatorios en (-1, 1)
+
+[Descripción de la imagen: paretoo paro paro paro paro paro paro paro paro paro paro paro paro paro]
+
+Normalización de inputs
+Función de 
+activación
+Lineal
+Sigmoidea
+Tanh
+Rango
+(-∞, +∞)
+(0, 1)
+(-1, 1)
+Para poder usar las funciones no lineales con el dataset, tenemos que normalizar las salidas al 
+rango de la función (transformación lineal)
+Luego, se hace el proceso opuesto para obtener la salida predicha en los rangos del dataset
+El error se calcula con los valores sin normalizar, a ﬁn de poder compararlo entre perceptrones
+
+[Descripción de la imagen: normale contras]
+
+Comparación de errores por epoch
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: Comparación de errores por epoch
+
+- linear
+— sigmoid
+— tanh
+
+-
+D
+a)
+E
+o
+_
+-1
+Ed
+o
+E
+U]]
+
+Comparación de errores por learning rate
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+Comparación de errores por learning rate
+Al bajar el learning 
+rate, vemos que 
+permite alcanzar un 
+menor error 
+mínimo alcanzado.
+Pero, como tarda 
+mucho más en 
+converger, para 
+valores muy bajos, 
+incluso con muchas 
+epochs no se llega al 
+error de learning 
+rates más altos.
+
+[Descripción de la imagen: comor de pres pio de la recada]
+
+Conclusiones (del aprendizaje)
+●
+El perceptrón lineal no puede aprender bien el dataset
+●
+Tanh llega a un error bajo de forma rápida
+●
+Sigmoidea tarda más epochs, pero eventualmente se acerca al error que se obtiene con 
+tanh
+●
+Un learning rate más bajo hace que eventualmente se llegue a un error muy ligeramente 
+menor, pero eso solo ocurre tras muchas épocas
+
+[Descripción de la imagen: un fondo negro con las palabras coursel diaire]
+
+Capacidad de generalización
+●
+Vamos a probar que tan bien pueden generalizar el dataset los perceptrones no lineales
+●
+Se usará K-fold cross validation, tomando como métrica el error cuadrático medio, y se 
+variara el valor de K para ver cómo inﬂuye en la capacidad de generalización
+●
+Para obtener resultados representativos, se tomará la media de 100 ejecuciones de la 
+validación, y la distribución del dataset en las particiones será aleatoria
+
+[Descripción de la imagen: un fondo negro con las palabras caad de geniza]
+
+Comparación de error de testeo según cantidad 
+de particiones
+Parámetros:
+●
+Activación: Tanh
+●
+Epochs: 100000
+●
+Learning Rate: 0.001
+
+[Descripción de la imagen: comor de esto de esto | Transcripción de la imagen: Comparación de error de testeo según cantidad
+de particiones
+
+Parámetros: - m entrenamiento
+m testeo
+
+e  Activación: Tanh
+
+e Epochs: 100000
+
+e Learning Rate:0.001 | | -
+
+E
+
+D
+[
+E
+o
+—
+[
+d
+o
+E
+u
+
+o
+[e))
+
+o
+D
+
+o
+N
+
+o
+o]]
+
+Comparación de error de testeo según cantidad 
+de particiones
+Parámetros:
+●
+Activación: Sigmoid
+●
+Epochs: 100000
+●
+Learning Rate: 0.001
+
+[Descripción de la imagen: comor de tecnos com | Transcripción de la imagen: Comparación de error de testeo según cantidad
+de particiones
+
+Parámetros: - m entrenamiento
+EN testeo
+e  Activación: Sigmoid
+e Epochs: 100000
+e Learning Rate:0.001
+
+£
+D
+v
+E
+2
+"
+r
+o
+E
+u]]
+
+Comparación de error de testeo según learning 
+rate
+Parámetros:
+●
+Activación: Tanh
+●
+Epochs: 100000
+●
+K: 28
+
+[Descripción de la imagen: comparación de la comite de l'appartente | Transcripción de la imagen: Comparación de error de testeo según learning
+rate
+
+m entrenamiento
+
+Parámetros: 6- m testeo
+
+e  Activación: Tanh
+e Epochs: 100000
+e K:28
+
+o
+o]
+
+Q
+D
+[
+E
+o
+2
+-1
+Ea
+o
+E
+u
+
+o
+[es)
+
+ha
+D
+
+o
+N
+
+o
+o
+
+0.001
+Leaming rate]]
+
+Comparación de error de testeo según epochs
+Parámetros:
+●
+Activación: Tanh
+●
+Learning Rate: 0.01
+●
+K: 28
+
+[Descripción de la imagen: un gráfico de barras con el número de los datos | Transcripción de la imagen: Comparación de error de testeo según epochs
+
+m entrenamiento
+
+Parámetros: .00 + m testeo
+
+e  Activación: Tanh
+e Learning Rate:0.01
+e K:28
+
+Q
+D
+Ú
+E
+o
+2
+-1
+p
+o
+E
+u
+
+100000.0 10000.0 5000.0 2500.0 500.0 250.0 225.0 200.0 150.0
+Leamning rate]]
+
+Conclusiones
+●
+Para este dataset, aumentar la cantidad de datos que se usan para entrenar conduce a 
+mejores predicciones para los valores faltantes
+●
+El learning rate que produce un menor error de generalización es 0.01. Bajar el learning 
+rate lo aumenta
+●
+Un número alto de epochs (al menos en el rango probado) no produce overﬁtting, pero 
+correr demasiado pocas epochs produce underﬁtting
+
+[Descripción de la imagen: crusiones para desoces, est est est est est est est est est est est est]
+
+Elección de un conjunto de entrenamiento 
+especíﬁco
+Si fuéramos a entrenar un perceptrón con una solo una parte X del dataset, debemos determinar 
+cual posible partición produce la mejor generalización
+Para esto, se pueden realizar repeticiones del K-fold cross validation con particiones aleatorias 
+del dataset, y evaluar qué partición especíﬁca provoca un menor error de entrenamiento
+En general, el dataset ideal tendrá una buena distribución de los posibles valores de salida. Un 
+conjunto de entrenamiento muy especíﬁco causara que no pueda aprender la función entera
+
+[Descripción de la imagen: elecio untue entreo espeicoo]
+
+Ejercicio 3
+
+[Descripción de la imagen: la palabra Eric sobre un fondo oscuro | Transcripción de la imagen: EjJercicio 3]]
+
+Discriminacion de paridad
+●
+Learning rate: 0.1
+●
+Épocas máximas: 1000
+●
+Funcion de transformacion: tanh
+
+[Descripción de la imagen: un fondo negro con las palabras 'diminao' y 'diminao']
+
+Matriz de confusión 
+Impar
+Par
+Impar
+500
+0
+Par
+0
+500
+100 repeticiones
+
+[Descripción de la imagen: un cuadro con el número de la tabla en el cuadro]
+
+Métricas 
+Accuracy: 100%
+Precision: 100%
+Recall: 100%
+Tasa de Verdaderos Positivos: 100%
+
+[Descripción de la imagen: precisión de las métricas 100 % precisión 100 % fracción métrica total 100 % fracción métrica 100 %]
+
+Ejercicio 3
+Discriminacion de 
+digitos
+
+[Descripción de la imagen: el logotipo del eico dios]
+
+Análisis de 
+hiperparametros
+
+[Descripción de la imagen: anals de herpanios]
+
+ReLU vs Leaky ReLU
+
+[Descripción de la imagen: un gráfico con un gráfico de línea que muestra el número de los datos | Transcripción de la imagen: ReLU vs Leaky ReLU
+
+Comparación de accuracy según función de activación
+
+-
+=
+>
+o]
+ó
+Es
+>
+o
+]
+<
+
+—e—- ReLU
+Leaky ReLU
+
+107
+Leamning rate]]
+
+Accuracy por función de activación 
+●
+Learning rate: 0.01
+●
+10 ejecuciones
+●
+1000 épocas
+●
+Sin optimizadores
+
+[Descripción de la imagen: acoray fonle accione | Transcripción de la imagen: Accuracy por función de activación
+
+Accuracy promedio por función de activación
+
+. 86.1% 86.3%
+Learning rate: 0.01
+
+10 ejecuciones
+1000 épocas
+Sin optimizadores
+
+-
+o
+>
+o]
+14
+-
+>
+]
+[a]
+<
+
+11.2% 12.1% 10.5%
+
+Leaky relu Mish Sigmoid Softplus]]
+
+Costo computacional
+Softplus: Extremadamente costosa (tardaba entre el doble y el triple de tiempo que Leaky ReLU)
+Tanh: También costosa debido a sus operaciones exponenciales
+Leaky ReLU: Barata, una resta y una multiplicación (opcional).
+Decidimos utilizar Leaky ReLU dado que preferimos priorizar la eﬁciencia sobre la poca 
+efectividad que nos otorgaba
+
+[Descripción de la imagen: cocuaoo se entreo est estr oo]
+
+Learning rates
+-
+1000 épocas
+-
+Leaky ReLU
+-
+Promedio de 10 ejecuciones
+-
+Sin optimizadores
+
+[Descripción de la imagen: - 100 % - lep - produ - optniqueses | Transcripción de la imagen: Learning rates
+
+Accuracy promedio por learnig rate
+
+- 11000épocas 86.1%
+- NLeaky ReLU
+
+- Promedio de 10 ejecuciones
+- Sinoptimizadores
+
+—
+0
+5
+—
+>
+vy
+]
+[
+>
+u
+L”]
+<]]
+
+Discriminacion de digito 
+Demostración en vivo: 
+Learning Rate: 0.001
+Funcion de activacion: Leaky ReLU
+Épocas: 1000 
+Dataset: 1000 números con ruido medio
+
+[Descripción de la imagen: diminiendo dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio dio]
+
+Inicialización de pesos
+Xavier/Glorot
+Distribución normal
+Evitar explosión o desaparición de gradientes
+
+[Descripción de la imagen: iniciativas, una nueva versión del programa]
+
+Análisis de 
+resultados
+
+[Descripción de la imagen: anals de ests]
+
+Matriz de confusión
+
+[Descripción de la imagen: un calendario con la fecha del mes | Transcripción de la imagen: Matriz de confusión
+
+Matriz de Confusión
+
+o
+D
+14
+[
+v
+Q
+u
+u
+
+[o) o]
+
+4 5
+Predicho]]
+
+Métricas 
+Accuracy: 86.50%
+
+[Descripción de la imagen: una captura de pantalla de una pantalla con el texto 'métrico ' | Transcripción de la imagen: Métricas
+
+Accuracy: 86.50%
+
+O ONDOGUBSUWNHMOO
+
+precision
+
+0.84
+0.93
+0.96
+0.73
+1.00
+0.91
+0.78
+0.96
+0.75
+0.85
+
+recall f1-score
+
+0.95
+0.76
+1.00
+0.94
+0.92
+0.59
+0.78
+1.00
+0.71
+0.88
+
+0.89
+0.84
+0.98
+0.82
+0.96
+0.71
+0.78
+0.98
+E
+0.86
+
+support
+
+22
+17
+24
+17
+13
+17
+23
+25
+17
+25]]
+
+Train \ Test
+Sin ruido
+Ruido medio
+Ruido alto
+Sin ruido
+100.00
+36.70
+19.20
+Ruido medio
+100.00
+99.70
+35.80
+Ruido alto
+47.80
+46.80
+32.10
+Accuracy segun training set y test set
+Los casos donde se testean imagenes de dataset iguales, se separa el 20% para testeo
+
+[Descripción de la imagen: Set de entrenamiento de acy se]
+
+Optimizadores
+
+[Descripción de la imagen: un gráfico con un gráfico de línea que muestra el número de diferentes tipos de datos | Transcripción de la imagen: Optimizadores
+
+Comparación de Error Promedio
+
+Configuraciones Elementos del gráfico
+=——— Leaky ReLU + Adam (Ir= Ejecuciones individuales
+Leaky ReLU + Gradient (Ir=0. Desvío estándar
+= Leaky ReLU + Momentum (Ir=0.0005)]]
+
+Optimizadores
+
+[Descripción de la imagen: un gráfico de barras con el porcentaje del porcentaje del porcentaje del porcentaje del porcentaje del porcentaje del porcentaje del porcentaje | Transcripción de la imagen: Optimizadores
+
+Comparación de Porcentaje de Acierto
+
+=
+o
++
+—
+0
+1e
+<
+v
+D
+D
+[()]
+e
+=
+0
+1O
+—
+o
+a
+
+Leaky ReLU + Adam Leaky ReLU + Gradient Leaky ReLU + Momentum
+(Ir=0.0001) (Ir=0.0005) (Ir=0.0005)
+
+Configuraciones]]
+
+Conclusiones
+●
+El modelo fue capaz de generalizar correctamente la clasiﬁcación de 
+dígitos con ruido medio, teniendo más errores con ruido alto.
+●
+La comparación entre optimizadores mostró que Adam es el que mejor 
+resultados obtuvo
+ 
+●
+Leaky ReLU demostró ser la mejor función de activación en relación 
+de costos y resultados
+
+[Descripción de la imagen: crusiones]
+
+Ejercicio 4
+
+[Descripción de la imagen: la palabra 'eiri' se muestra en medio de la imagen | Transcripción de la imagen: EjJercicio 4]]
+
+Ejercicio 4
+●
+DATASET MNIST: Colección de dígitos escritos a mano
+●
+60.000 imágenes de entrenamiento
+●
+10.000 imágenes de prueba
+
+[Descripción de la imagen: un fondo negro con las palabras eico 4]
+
+Idea inicial
+Tenemos análisis de nuestros mejores hiperparametros -> usemoslos
+
+[Descripción de la imagen: un screenshoter con el texto « idial » | Transcripción de la imagen: Idea Inicial
+
+Tenemos análisis de nuestros mejores hiperparametros -> usemoslos
+
+Configuracion del entrenamiento:
+Arquitectura: [784, 128, 64, 10]
+Learning rate: 0.0001
+
+Epocas: 30
+
+Funcion de activación: leaky relu
+Optimizador: adam]]
+
+Obstáculo
+Tiempo: resultados de 30 epocas con un subset de 10.000 entrenado a 30 epocas
+
+[Descripción de la imagen: una captura de pantalla de un fondo azul oscuro con el texto 'oetao ' | Transcripción de la imagen: Obstáculo
+
+Tiempo: resultados de 30 epocas con un subset de 10.000 entrenado a 30 epocas
+
+Precisión final en prueba: 95.35%
+
+Total de imágenes correctas: 1907/2000
+Error final: 0.003710597379931923
+
+Tiempo de entrenamiento: 388.39 segundos
+Tiempo total de ejecución: 388.93 segundos]]
+
+Nueva idea
+●
+Aprovechemos cada ejecución y guardemos los pesos y parámetros 
+de adam obtenidos
+●
+Falta decidir cuando los parámetros obtenidos son mejores que los 
+que teníamos antes
+●
+Solución errónea: Evaluar en base al conjunto de prueba si si tenía 
+mejor rendimiento
+●
+Contaminación del entrenamiento
+
+[Descripción de la imagen: nua iq arrencia cacuci y granos paras paras]
+
+Idea ﬁnal (Por ahora) 
+●
+“Simular” el conjunto de prueba
+●
+Tomar primeras 10.000 imágenes como nuestra nueva prueba 
+●
+Entrenar en base a las 50.000 restantes
+
+[Descripción de la imagen: un fondo negro con las palabras 'i'and'i ']
+
+Resultados “ﬁnales” y posible problema
+
+[Descripción de la imagen: ress de la ress de la ress de la ress de la ress de la ress de la ress de | Transcripción de la imagen: Precisión en validación: 97.85%
+
+Precisión final en prueba: 97.85%
+
+Total de imágenes correctas en prueba: 9785/10000
+Error final: 0.005508682452115342
+
+Tiempo de entrenamiento: 1059.24 segundos
+
+Tiempo total de ejecución: 1065.54 segundos
+
+Resultados “finales” y posible problema
+
+Precisión en validación: 97.92%
+
+Precisión final en prueba: 97.76%
+
+Total de imágenes correctas en prueba: 9776/10000
+Error final: 0.0025531050501176413
+
+Tiempo de entrenamiento: 192.37 segundos
+
+Tiempo total de ejecución: 198.19 segundos]]
+
+Resultados
+
+[Descripción de la imagen: un calendario con la fecha del mes | Transcripción de la imagen: Resultados
+
+Matriz de Confusión
+
+o
+D
+11
+p
+v
+Q
+n
+u]]
+
+Posibles mejoras a implementar
+●
+Variar el subset tomado como validación
+●
+Implementar paralelismo para ejecuciones más rápidas
+●
+Data augmentation
+●
+Modiﬁcar la estructura de la red a una más robusta
+
+[Descripción de la imagen: pobleemora impenter varesto comoo valor]
+
+Muchas gracias!
+
+[Descripción de la imagen: la palabra 'murasi'in blanco y azul]
+

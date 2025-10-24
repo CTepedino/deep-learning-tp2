@@ -1,0 +1,433 @@
+Sistemas de Inteligencia Artificial
+Métodos de Búsqueda
+Informados
+
+[Descripción de la imagen: fondo blanco con hexas y hexas azules y verdes]
+
+Métodos de Búsqueda 
+Informados
+
+[Descripción de la imagen: un fondo blanco con hexas azules y verdes]
+
+Heurística
+¿Por qué buscamos “a ciegas”?
+¿Tiene sentido podar caminos?
+¿Se puede estimar cuánto falta para llegar al objetivo?
+
+[Descripción de la imagen: un fondo blanco con las palabras pues doos y una hexa azul]
+
+Heurística
+Función Heurística h(e):
+●
+Costo estimado de la ruta más barata desde el estado e 
+hacia un estado meta.
+●
+Si e es estado objetivo, h(e) = 0
+●
+Si e no es un estado objetivo
+○
+Si g(a) > 0 ; ∀ a: Acción
+■
+h(e) > 0
+○
+Si g(a) ≥ 0 ; ∀ a: Acción
+■
+h(e) ≥ 0
+“Abuso de notación”
+h(n) = h(e) ; donde e es el estado representado en el nodo n.
+g(a): costo de la 
+acción a
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que dice, 'fusica ']
+
+Local Greedy
+Search
+●
+Se comienza con el nodo raíz.
+●
+Se expande, y de los recién expandidos se calcula h.
+●
+Se toma el nodo con menor h y se expande.
+●
+Si el conjunto recientemente expandido es vacío, se realiza 
+backtracking.
+●
+No es óptima.
+●
+No es completa si no evalúa repetición de estados.
+●
+Una buena función heurística reduce signiﬁcativamente su 
+complejidad temporal y espacial.
+●
+Opera siempre sobre un conjunto acotado, lo que la hace muy 
+veloz.
+
+[Descripción de la imagen: lata gris local]
+
+Global Greedy
+Search
+Generalización de Local Greedy Search
+●
+Se utiliza el Algoritmo de búsqueda genérico (DFS, BFS, 
+IDDFS, etc.), utilizando h(n) como ordenamiento de Fr.
+●
+No es óptima.
+●
+No es completa si no evalúa repetición de estados.
+●
+Una buena función heurística reduce signiﬁcativamente su 
+complejidad temporal y espacial.
+●
+Es un poco más costosa que LGS pero logra un backtracking 
+más inteligente.
+
+[Descripción de la imagen: la investigación mundial en la economía mundial]
+
+Ejemplo
+A 
+8
+B
+7
+C
+8
+D
+10
+F
+1
+G
+2
+E
+9
+H
+3
+I
+0
+index
+h(n)
+
+[Descripción de la imagen: un diagrama del mismo número de moléculas]
+
+Resumen
+Greedy Search
+●
+Busca expandir los nodos con 
+mínimo h(n), es eﬁciente pero 
+no es óptima.
+●
+Minimiza h(n)
+Uniform Cost Search
+●
+Es óptima en un gran espectro 
+de problemas, pero es 
+ineﬁciente (similar a BFS).
+●
+Minimiza g(n)
+
+[Descripción de la imagen: el diagrama del modelo molecular]
+
+Heurísticas
+●
+Una heurística es admisible si nunca sobreestima el costo 
+real. h(a) ≤ costo a la solución, para todo a.
+●
+La heurística perfecta (que estima el costo real) se denomina 
+heurística estrella : h*(n)
+
+[Descripción de la imagen: un fondo blanco con las palabras eurisia y una hexa azul]
+
+A*
+Search
+●
+Se basa en la función
+f(n) = g(n) + h(n) | costo + heurística
+●
+Ordena a los nodos en frontera según esta función.
+○
+Si dos nodos tienen igual f(n), elegir el nodo con menor 
+h(n).
+●
+Si h(n) es admisible ⇒ f(n) nunca sobreestima el costo real 
+de la mejor solución que pasa por el nodo n.
+●
+Es completa si hay una ramiﬁcación ﬁnita y el costo es mayor 
+que un ε > 0.
+●
+Es óptima si los costos de los arcos son mayores a 0.
+●
+Requiere memoria y procesamiento de heurísticas.
+A* con una heurística h1 se denomina A*1 .
+
+[Descripción de la imagen: un cartel con las palabras sern y una imagen de una molécula]
+
+¿Cuándo es
+A* óptima?
+●
+Cada nodo del grafo debe tener un número ﬁnito de 
+sucesores.
+●
+El costo de cada arista debe ser mayor que un ε > 0.
+●
+La heurística debe ser admisible.
+○
+h(n) ≤ h*(n)
+Estas tres condiciones garantizan que A* encuentre el camino 
+óptimo a la solución, si existe.
+Se deﬁne f*(n) = g(n) + h*(n)
+Que h no sea admisible no quiere decir que no sea válida, 
+simplemente quiere decir que A* no será óptima
+
+[Descripción de la imagen: un fondo blanco con las palabras,'es un opt'and'es un ']
+
+Lema 1
+En cualquier momento dado en la búsqueda de A* (bajo las 
+condiciones anteriores), existe un nodo n en Frontera que cumple 
+que:
+1.
+n está en el camino óptimo al objetivo.
+2.
+f(n) ≤ f*(n)
+En un camino óptimo no pueden existir “loops”, ya que de así 
+serlo, deberían existir acciones cuyo costo sea nulo.
+Demostración de cuando A* es óptima
+
+[Descripción de la imagen: un cartel con las palabras, 'Elo'and'elo ']
+
+Lema 1
+Caso Base: n0
+Para el nodo inicial n0
+1)
+Todos los caminos comienzan con n0, y por existir una 
+solución ⇒ n0 está en el camino óptimo al objetivo.
+2)
+ f(n0) = g(n0) + h(n0) = h(n0) ≤ h*(n0) = f*(n0)
+Deﬁnición
+g(n0) = 0
+Deﬁnición
+g(n0) = 0
+Demostración de cuando A* es óptima
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que dice, 'el caso']
+
+Lema 1
+Paso Inductivo
+1)
+La frontera en el paso K contenía a un nodo que estaba en el 
+camino óptimo. Elijo nodo ne para expandir.
+a)
+Si ne no es tal nodo, la frontera va a seguir teniendo a 
+dicho nodo ⇒ se cumple (1) y n’ = dicho nodo
+b)
+Si ne es tal nodo, A* lo expande, y alguno de sus hijos 
+debería estar en el camino óptimo ⇒ se cumple (1) 
+y n’ = ne
+2)
+ f(n’) = g(n’) + h(n’) ≤ g(n’) + h*(n’) = f*(n’)
+Deﬁnición
+h(n’) ≤ h*(n’)
+Deﬁnición
+Demostración de cuando A* es óptima
+
+[Descripción de la imagen: un diagrama de la estructura molecular de una molécula]
+
+A* debe terminar
+Partiendo de que la ramiﬁcación es ﬁnita, y el costo de las 
+reglas/acciones son siempre mayor o igual a un número mayor a 0.
+Si A* puede no terminar, entonces eventualmente llega a un punto 
+donde f(n) > f*(n) ∀ n en Frontera.
+
+[Descripción de la imagen: un fondo blanco con las palabras 'adternía' y una hexa azul]
+
+Dominancia
+de métodos de búsqueda
+●
+M1 domina a M2 si cada nodo expandido por M1 también es 
+expandido por M2 .
+●
+M1 domina estrictamente a M2 si:
+○
+M1 domina a M2
+○
+M2 no domina a M1
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco]
+
+Eficiencia
+de heurísticas
+Suponiendo h1 y h2 heurísticas admisibles, si h2 domina a h1  
+⇒ A*2 expandirá menos nodos que A*1.
+¿Por qué?
+Existirán nodos que A*1 expandió (y no llevan al camino óptimo) y 
+A*2 no, por lo que, para esos nodos:
+g(n) + h1(n) ≤ f*(n) ≤ g(n) + h2(n)
+De esta forma, como regla general conviene tomar heurísticas 
+admisibles que den el mayor valor posible.
+
+[Descripción de la imagen: feenciaa de quimica]
+
+Combinación
+de heurísticas
+Dado un conjunto de heurísticas admisibles h1, … , hm ; se puede 
+deﬁnir como una nueva heurística h’ a la combinación de ellas, 
+deﬁnida de la siguiente forma:
+h’ = Max( h1, … , hm)
+Esta nueva heurística tiene como propiedades:
+●
+Es admisible.
+●
+Domina a todas las heurísticas que la conforman.
+
+[Descripción de la imagen: conocimiento de química]
+
+Grafo de búsqueda
+Se deﬁne grafo de búsqueda a un grafo que contiene como nodos 
+los estados del problema, como aristas los costos de las acciones, 
+donde un nodo será vecino de otro cuando haya una acción que 
+conecte dichos estados.
+
+[Descripción de la imagen: un fondo blanco con las palabras,'gro de fuda'y una hexa azul]
+
+Consistencia
+de heurísticas
+Si una heurística es consistente, cada vez que A* expanda un 
+nodo, habrá encontrado un camino óptimo al mismo.
+Si una heurística es admisible, no necesariamente.
+
+[Descripción de la imagen: un fondo blanco con las palabras "constaa de chemistry"]
+
+Consistencia
+de heurísticas
+Sean ni y nj dos nodos en un grafo de búsqueda tal que nj es vecino 
+de ni ; y sea c(a, b) el COSTO de la acción desde a hasta b.
+●
+h(ni) ≤ c(ni , nj) + h(nj)
+●
+h(ng) = 0
+Si se puede demostrar esta propiedad para todo par de nodos 
+vecinos para una heurística, esta será consistente.
+●
+h consistente ⇒ h admisible   
+○
+El sentido opuesto no siempre es cierto.
+●
+También llamadas monótonas por que su demostración 
+indica que la solución parcial es de costo creciente (no 
+estrictamente).
+
+[Descripción de la imagen: conspection de conspection]
+
+Completitud
+de A*
+A* podría no terminar nunca.
+Algunas de las situaciones donde puede suceder:
+●
+La ramiﬁcación es inﬁnita para al menos 1 estado.
+●
+Existen arcos con costos ≤ 0
+●
+Los arcos tienen costos > 0, pero son asintóticamente 
+decrecientes (Paradoja de Zenon) 
+1
+1/2
+1/4
+1/8
+…
+
+[Descripción de la imagen: comidas de comidas com]
+
+Iterative Deepening A*
+(IDA*)
+Concepto inspirado en IDDFS, se realiza un corte iterativo con un 
+límite. También aquí se utiliza DFS.
+Esta búsqueda es completa y óptima bajo las mísmas condiciones 
+que A*. 
+Requiere menos memoria que A*, pero puede expandir más nodos 
+e incluso expandir muchas veces el mismo nodo (mismo problema 
+que IDDFS).
+
+[Descripción de la imagen: un fondo blanco con las palabras «terativa» y «terativa»]
+
+Iterative Deepening A*
+(IDA*)
+Algoritmo
+El límite Lím. es un threshold para f(n) = g(n) + h(n).
+●
+Inicialmente, se toma Lím. = f(n0).
+●
+Mientras que no se encuentre solución, se realiza DFS hasta 
+Lím.
+●
+Si no se encontró una solución, se toma n’ el nodo de frontera 
+con menor valor de f, y se toma este valor como el nuevo 
+límite.
+
+[Descripción de la imagen: un fondo blanco con las palabras «terativa»]
+
+Heuristic Path Algorithm
+(HPA)
+Best-First con f(n) = (1-𝔀)*g(n) + 𝔀*h(n)
+●
+𝔀 = 0
+⇒
+Uniform Cost Search
+●
+𝔀 = ½
+⇒
+A* Search
+●
+𝔀 = 1
+⇒
+Global Greedy Search
+
+[Descripción de la imagen: la primera parte de la primera parte de la primera parte de la primera parte de la | Transcripción de la imagen: Heuristic Path Algorithm
+E> (HPA)
+O
+
+Best-First con f(n) = (1-w)*g(n) + w*h(n)
+e w=0 => . Uniform Cost Search
+e w=% => . A* Search
+e w=1 => . Global Greedy Search]]
+
+Búsqueda
+de heurísticas
+Algunas de las técnicas utilizadas para encontrar heurísticas son:
+●
+Dividir al problema en sub-problemas.
+●
+Relajar las limitaciones/reglas del problema.
+●
+Tomar una heurística como el máximo de otras.
+●
+Mezclar heurísticas, contemplando la valuación de cada una 
+de ellas, sobre todo cuando atacan diferentes sub-problemas.
+
+[Descripción de la imagen: un fondo blanco con las palabras'la est est est est est est est est est est est est est est est est]
+
+Posibles heurísticas para...
+●
+8 reinas
+●
+8-puzzle
+●
+Laberinto
+●
+Senku
+●
+Sokoban
+●
+Ediﬁcios
+
+[Descripción de la imagen: el logotipo de la empresa, que es un azul y blanco hexas]
+
+Reparación
+Heurística
+Se comienza con un estado, generalmente aleatorio, donde todas 
+las variables fueron inicializadas.
+El estado inicial se encuentra en violación de una o más 
+restricciones (de no ser así, se tiene la solución).
+Se realizan operaciones sobre el estado, de modiﬁcación, para 
+tratar de solventar dichas restricciones.
+Esta técnica es útil para cuando el problema es conocer el estado 
+solución.
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'recion frcit ']
+

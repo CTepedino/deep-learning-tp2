@@ -1,0 +1,97 @@
+Instituto Tecnológico de Buenos Aires 
+ 
+Sistemas de Inteligencia Artificial 
+ 
+Trabajo Práctico 2 
+ 
+ 
+Algoritmos Genéticos
+
+[Descripción de la imagen: la portada del libro, mostrando el título de la publicación]
+
+Ejercicio 1 
+Pensar (no es necesario implementar) cómo implementarían, mediante Algoritmos 
+Genéticos, un programa que tome una imágen cuadrada y trate de representar de la mejor 
+manera posible dicha imágen en un mapa de NxN caractéres ASCII, por ejemplo como se 
+demuestra en la siguiente página: http://www.nicassio.it/daniele/AsciiArtGenetic/ 
+ 
+Ejercicio 2 
+Se busca implementar un compresor de imágenes un tanto peculiar. Deberemos implementar 
+un motor de Algoritmos Genéticos que pueda recibir una imágen, y lograr la mejor 
+aproximación a ella a través de triángulos sobre un canvas blanco. 
+ 
+Nuestros únicos parámetros (no confundir con hiperparámetros) entonces serán la imagen a 
+procesar, y T – la cantidad de triángulos que queremos utilizar para aproximar esa imágen. 
+Los triángulos deberán ser de un color uniforme pero pueden ser traslúcidos (RGBA, HSLA, 
+…). 
+ 
+ 
+ 
+Input 
+●​ Imágen 
+●​ Cantidad de triángulos 
+●​ Hiperparámetros de la implementación de Algoritmos Genéticos 
+ 
+Output 
+●​ Imágen generada 
+●​ Enumeración de triángulos (posición, color, …) 
+●​ Métricas para análisis para defender su implementación (fitness, error, generaciones, 
+etc…)
+
+[Descripción de la imagen: un cartel con las palabras "la muerte" y "la muerte"]
+
+Implementar y resolver 
+●​ Implementar los métodos de selección vistos en clase 
+○​ Elite 
+○​ Ruleta 
+○​ Universal 
+○​ Boltzmann 
+○​ Torneos (ambas versiones) 
+○​ Ranking​
+ 
+●​ Implementar ambos criterios para crear nuevas generaciones 
+○​ Tradicional 
+○​ Sesgo Joven​
+ 
+●​ Decidir de qué manera(s) terminará la ejecución (máxima cantidad de generaciones, 
+estructura, contenido, etc…) 
+ 
+●​ Justificar la estructura y la función de aptitud​
+ 
+●​ Decidir qué método(s) de cruza utilizarían en diferentes circunstancias y por qué. 
+Implementar al menos 2 métodos: 
+○​ Cruce de un punto 
+○​ Cruce de dos puntos 
+○​ Cruce uniforme 
+○​ Cruce anular​
+ 
+●​ Decidir qué método(s) de mutación utilizarían en diferentes circunstancias y por qué. 
+Implementar al menos 2 métodos: 
+○​ Gen 
+○​ MultiGen 
+○​ Uniforme 
+○​ No Uniforme  
+ 
+(!) Es posible utilizar librerías externas para el manejo de imágenes, pero no para la 
+implementación de Algoritmos Genéticos 
+ 
+ 
+ 
+Entregable (digital) 
+●​ Código fuente 
+●​ Presentación 
+●​ Un archivo README explicando cómo ejecutar el programa
+
+[Descripción de la imagen: una plantilla de curriculum vitae simple para una plantilla de curriculum vitae simple]
+
+Opcionales 
+-​
+La cantidad de triángulos parámetros es la cota máxima, y adicionalmente se recibe 
+un error mínimo para considerar la imágen una buena réplica. 
+-​
+Otros polígonos en vez de triángulos, u óvalos (x, y, rx, ry, θ). 
+-​
+Otros métodos de cruza y mutación
+
+[Descripción de la imagen: una sábana blanca con las palabras 'odo' y 'ododododo']
+

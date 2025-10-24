@@ -1,0 +1,814 @@
+Procesos Estocásticos
+Un proceso estocástico es un proceso o sistema que se 
+desarrolla o evoluciona en el tiempo (y/o en el espacio) 
+mientras que pasa por fluctuaciones al azar.
+Idea:
+Ejemplo: Jugar a la ruleta …
+
+[Descripción de la imagen: un bloc de notas con las palabras procedimientos]
+
+Procesos Estocásticos
+x_k
+0 (verde)
+1 (rojo)
+2 (negro)
+P(X=x_k)
+1/37
+18/37
+18/37
+Esta es la distribución de probabilidades de la ganancia 
+que es una variable aleatoria discreta G
+g_k
+-100
+100
+P(G=g_k)
+19/37
+18/37
+Suponga que apuesta a color en la ruleta. Ud elige el color R (rojo) ó 
+N (negro) al azar y puede salir R, N o V (verde si sale el cero). 
+Ud apuesta 100 $ y puede ganar 100$ si sale el color apostado o 
+perder su apuesta si sale cualquiera de los otros colores.  
+Jugando a color en la ruleta
+
+[Descripción de la imagen: procedimiento de la est est]
+
+Procesos Estocásticos
+Un proceso estocástico es un proceso o sistema que se 
+desarrolla o evoluciona en el tiempo (y/o en el espacio) 
+mientras que pasa por fluctuaciones al azar.
+Idea:
+Ejemplos:
+•
+: La temperatura corporal tomada en la axila izquierda en el instante 
+.
+•
+: El número de personas que han arribado a la fila de un banco 
+hasta el instante .
+•
+: La densidad lineal de masa de un alambre en un punto  (medido 
+desde uno de los extremos).
+
+[Descripción de la imagen: proceso de proceso de proceso de proceso de proceso de proceso de proceso depres]
+
+Procesos Estocásticos
+• El conjunto de variables aleatorias   se denomina un 
+proceso estocástico.
+• es el espacio del parámetro. 
+• La unión de los recorridos de las variables  se denomina el 
+espacio de estados del proceso.
+Definiciones:
+• Debemos poder hablar de la probabilidad conjunta de 
+cualquier número finito  de variables aleatorias 
+“Requisito”:
+
+[Descripción de la imagen: procesos desafiantes desafiantes]
+
+Procesos Estocásticos
+Ejemplos:
+•
+: La temperatura corporal tomada en la axila izquierda en el instante 
+.
+•
+T : espacio de parámetros continuo y de estados continuo.
+•
+: El número de personas que han arribado a la fila de un banco 
+hasta el instante .
+•
+T  espacio de parámetros continuo y de estados discreto.
+•
+: La densidad lineal de masa de un alambre en un punto  (medido 
+desde uno de los extremos).
+•
+T : espacio de parámetros continuo y de estados continuo.
+
+[Descripción de la imagen: una nota con las palabras procedimientos]
+
+Procesos Estocásticos
+El precio de una acción al cierre del día en función del día. Este es un 
+ejemplo de un proceso estocástico con espacio de estados discreto y 
+en tiempo discreto. 
+T.
+
+[Descripción de la imagen: un bloc de notas con las palabras prosa y prosa]
+
+Procesos Estocásticos
+El precio de una acción al instante t durante un día en función del 
+instante t . Este es un ejemplo de un proceso estocástico con espacio 
+de estados discreto y en tiempo continuo. 
+T.
+
+[Descripción de la imagen: un bloc de notas con las palabras prosa y prosa]
+
+Procesos Estocásticos
+El nivel de tensión de una señal al instante t en función del instante t . 
+Este es un ejemplo de un proceso estocástico con espacio de estados 
+continuo (se supone que lo es el nivel de la señal) y en tiempo 
+discreto. 
+T.
+
+[Descripción de la imagen: un bloc de notas con las palabras prosa y prosa]
+
+Procesos Estocásticos
+El nivel de tensión de una señal al instante t en función del instante t . 
+Este es un ejemplo de un proceso estocástico con espacio de estados 
+continuo (se supone que lo es el nivel de la señal) y en tiempo 
+continuo. 
+T.
+
+[Descripción de la imagen: un bloc de notas con las palabras prosa y prosa]
+
+Caminata Aleatoria
+ es la posición de una partícula en 1D que, comenzando de en , en 
+cada instante se mueve un lugar a la derecha con probabilidad  o un 
+lugar a la izquierda con probabilidad .
+T.
+Idea:
+Este es un ejemplo de un proceso estocástico con espacio de estados 
+discreto y en tiempo discreto. 
+Más formalmente:
+𝑃( 𝑋(𝑛+1 )=𝑥|𝑋(𝑛)=𝑦)={
+𝑝
+𝑥= 𝑦+1
+1−𝑝
+𝑥=𝑦−1
+0
+|𝑥−𝑦|≠1
+𝑃( 𝑋(0 )=0)=1
+
+[Descripción de la imagen: camita de est est est est est est est est est est est est est est est est est est est est]
+
+Caminata Aleatoria
+p = 0.5;
+N = 100;
+derecha = (rand(1,N) < p);
+saltos = 2*(derecha-0.5);
+x = cumsum(saltos);
+plot(0:N-1,x)
+
+[Descripción de la imagen: camia altori p = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+
+Caminata Aleatoria
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: Caminata Aleatoria
+
+, =
+F
+ME
+C
+N
+1
+,
+,]]
+
+Caminata Aleatoria
+
+[Descripción de la imagen: un libro con una fórmula y una fórmula | Transcripción de la imagen: Caminata Aleatoria
+
+Rx(0) = 103
+
+Rx(n) = (, -n + 2,-::,+n — 2,+n)]]
+
+Caminata Aleatoria
+Llamemos  al número de pasos a la derecha hasta tiempo (incluido).
+Dado  es igual al número de pasos a la derecha menos el número de 
+pasos a la izquierda, tenemos:
+𝑋(𝑛)=𝐷(𝑛) −(𝑛−𝐷(𝑛))=2 𝐷(𝑛)−𝑛
+Como  es claramente binomial con parámetros  y :
+𝑃( 𝑋(𝑛)=𝑘)=𝑃(𝐷(𝑛)= 𝑛+𝑘
+2 )=(
+𝑛
+𝑛+𝑘
+2 )𝑝
+𝑛+𝑘
+2
+(1−𝑝)
+𝑛−𝑘
+2
+si   está en el recorrido de .
+
+[Descripción de la imagen: camita de la estr]
+
+Caminata Aleatoria
+Una distribución conjunta
+𝑃( 𝑋(𝑛+1 )=𝑥, 𝑋(𝑛)= 𝑦)={
+(
+𝑛
+𝑛+ 𝑦
+2 )𝑝
+𝑛+ 𝑦+2
+2
+𝑞
+𝑛−𝑦
+2
+𝑥= 𝑦+1, 𝑦∈𝑅𝑋(𝑛)
+(
+𝑛
+𝑛+ 𝑦
+2 )𝑝
+𝑛+ 𝑦
+2 𝑞
+𝑛−𝑦+ 2
+2
+𝑥=𝑦−1, 𝑦∈𝑅𝑋(𝑛)
+0
+|𝑥−𝑦|≠1o 𝑦∉𝑅𝑋(𝑛)
+
+[Descripción de la imagen: un libro con una cubierta blanca y una cubierta marrón con las palabras canta alora | Transcripción de la imagen: Caminata Aleatoria
+
+Una distribución conjunta
+
+x=Vy+1,Vv e RX(n)
+
+x—=y-1,yv € RX…)]]
+
+Caminata Aleatoria
+Estructura de árbol
+0
+−1
++1
+−2
+0
+0
++2
+𝑞
+𝑞
+𝑞
+𝑝
+𝑝
+𝑝
+
+[Descripción de la imagen: camina aleora estrido estr | Transcripción de la imagen: Caminata Aleatoria
+
+Estructura de árbol
+
+2]]
+
+Proceso de Markov
+Se dice que un proceso estocástico es un proceso de Markov 
+sii para todo  toda secuencia  y todo 
+Es decir, sólo importa el valor más “reciente”.
+Hechos:
+•
+La caminata aleatoria es un proceso de Markov.
+•
+Asumir que se trata de un proceso de Markov simplifica mucho las 
+cosas.
+
+[Descripción de la imagen: proceso de marketing poro]
+
+Caminata Aleatoria
+Estructura de árbol
+𝑧
+𝑧−1
+𝑧+1
+z−2
+𝑧
+𝑧
+𝑧+2
+𝑞
+𝑞
+𝑞
+𝑝
+𝑝
+𝑝
+𝑃( 𝑋(𝑛)=𝑥|𝑋(𝑛−1)=y, 𝑋( 𝑛−2)=𝑧)=𝑃( 𝑋(𝑛)=𝑥|𝑋( 𝑛−1)=y )
+
+[Descripción de la imagen: camia altori estrado p x = x = x + x + x + x + x + x + x + x + x + x | Transcripción de la imagen: Caminata Aleatoria
+
+Estructura de árbol
+
+PX(n)=x1X (n-1)=y, X(n-2)=2 =P X (n)=x|X(n-1)=y|]]
+
+Caminata Aleatoria
+Ecuación de Chapman-Kolmogorov
+ 
+𝑃( 𝑋(𝑛)=𝑧∨𝑋(𝑛−2)=𝑧)=¿
+¿𝑃(𝑋(𝑛)=𝑧|𝑋(𝑛−1)=𝑧−1)×𝑃(𝑋(𝑛−1)=𝑧−1∨𝑋(𝑛−2)=𝑧)+𝑃(𝑋(𝑛)=𝑧|𝑋(𝑛−1)=𝑧+1)×𝑃(𝑋(𝑛−1)=𝑧+1∨𝑋(𝑛−2)=𝑧)
+
+[Descripción de la imagen: camia aleoriaa ecoan - kort - x - x - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y - y | Transcripción de la imagen: Caminata Aleatoria
+
+Ecuación de Chapman-Kolmogorov
+
+122740 AmEz Tn-LEze1 P XIn-1zaVI0-0]]
+
+Caminata Aleatoria
+Ecuación de Chapman-Kolmogorov
+𝑃( 𝑋(𝑛)=𝑥∨𝑋(𝑛−𝑘)=𝑧)=¿
+∑
+𝑦∈𝑅𝑋(𝑛−𝑚)
+𝑃( 𝑋(𝑛)=𝑥|𝑋(𝑛−𝑚)=y ) 𝑃( 𝑋(𝑛−𝑚)=𝑦| 𝑋(𝑛−𝑘)=𝑧)
+
+[Descripción de la imagen: camia altoria cada charnoov | Transcripción de la imagen: Caminata Aleatoria
+
+Ecuación de Chapman-Kolmogorov
+
+PX(n)=xvX(n-k)=z|=¿
+
+D PXín=x|X(n-m)=yP X(n-m)=y|X(n-k)=z
+
+yE RX(n -m)]]
+
+Procesos Estacionarios
+Se dice que un proceso estocástico es estacionario sii para 
+todo  toda secuencia  todo conjunto de valores  y todo 
+Es decir, las probabilidades “no dependen” del tiempo.
+Hechos:
+•
+La caminata aleatoria no es un proceso estacionario.
+•
+Asumir que un proceso es estacionario simplifica las cosas, pero es 
+muy fuerte.
+
+[Descripción de la imagen: procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de procedimiento de]
+
+Caminata Aleatoria
+No es un proceso estacionario
+
+[Descripción de la imagen: un libro con un bolígrafo y un bolígrafo en él]
+
+Procesos Estacionarios
+Se dice que un proceso estocástico es estacionario en sentido 
+amplio sii para todo 
+Hechos:
+•
+La caminata aleatoria no es un proceso estacionario en sentido 
+amplio.
+•
+No es una condición tan fuerte como la anterior, pero es suficiente 
+en muchos casos.
+
+[Descripción de la imagen: proceso de proceso en elargo]
+
+Caminata Aleatoria
+𝑋(𝑛)=2 𝐷(𝑛)−𝑛
+𝐸[ 𝑋(𝑛)]=2 𝐸[ 𝐷(𝑛) ]−𝑛=2𝑛𝑝−𝑛
+Var [ 𝑋(𝑛)]=4 Var [ 𝐷(𝑛)]=4𝑛𝑝(1−𝑝)
+No es un proceso estacionario en sentido amplio.
+
+[Descripción de la imagen: camitao no eso do amor | Transcripción de la imagen: Caminata Aleatoria
+
+No es un proceso estacionario en sentido amplio.
+
+Xin=2DIn-n
+
+E|XÍn))=2E DÍn)-n=2np-n
+
+Var|X[n) =4 Var DÍn)=4np(1-p)]]
+
+Incrementos Estacionarios
+Se dice que un proceso estocástico tiene incrementos 
+estacionarios sii para todo , todo , y todo 
+ 
+Es decir: la distribución de los incrementos “no depende” del 
+tiempo.
+Hecho:
+•
+La caminata aleatoria es de incrementos estacionarios.
+
+[Descripción de la imagen: incentos escantos entenos]
+
+Incrementos Independientes
+Se dice que un proceso estocástico tiene incrementos 
+independientes sii para todo  y todo conjunto de pares 
+ordenados  con  y para , las variables aleatorias
+son independientes entre sí.
+Hechos:
+•
+La caminata aleatoria es de incrementos independientes.
+•
+El proceso se puede escribir como una suma de incrementos 
+independientes: haciendo
+
+[Descripción de la imagen: incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incendentes incen]
+
+Procesos de Conteo
+Se dice que un proceso estocástico  es de conteo sii:
+1.
+ 
+2.
+  para todo 
+3.
+  
+ representa el número de eventos que ocurrieron después de  y 
+no después de .
+
+[Descripción de la imagen: cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons cons]
+
+Procesos de Conteo
+En cada instante de tiempo (discreto) se realiza un experimento. 
+Todos los experimentos son independientes y la probabilidad de 
+éxito es siempre la misma, .  cuenta la cantidad de éxitos hasta 
+el tiempo  (inclusive).
+𝑁(𝑡)∼Binomial (𝑡, 𝑝)
+Un ejemplo conocido:
+𝑅𝑁(𝑡)= {0,1, ⋯, 𝑡} ⇒𝐄=ℕ0
+
+[Descripción de la imagen: proceso de cono]
+
+Procesos de Conteo
+ 
+Un ejemplo conocido:
+𝑃( 𝑁(𝑡)=𝑘)={(
+𝑡
+𝑘)𝑝𝑘𝑞𝑡−𝑘
+𝑘∈𝑅𝑁(𝑡)
+0
+𝑘∉𝑅𝑁(𝑡)
+⇒no es  estacionario
+𝑁(𝑡)∼Binomial (𝑡, 𝑝)
+
+[Descripción de la imagen: proces contoo n = binial p n = k = k = k = k = k = k = k = k | Transcripción de la imagen: Procesos de Conteo
+
+Un ejemplo conocido:
+
+IN (£ ) — Binomial(£t£, )
+
+k e RN…
+k eRy
+
+> no es estacionario]]
+
+Procesos de Conteo
+Un ejemplo conocido:
+𝑁(𝑡2)−𝑁(𝑡1)∼Binomial(𝑡2−𝑡1 ,𝑝)
+𝑁(𝑡2+𝜏)−𝑁(𝑡1+𝜏)∼Binomial(𝑡2−𝑡1 ,𝑝)
+⇒incrementos   estacionarios
+Experimentos  independientes ⇒incrementos  independientes
+
+[Descripción de la imagen: proces contoo enfoo cono | Transcripción de la imagen: Procesos de Conteo
+
+Un ejemplo conocido:
+
+N (t.,)—-NÍ(t,)— Binomial (£,—£, ,P)
+
+N(t2+1:) —N(tl+r)N Binomial (£,—t£,,p)
+
+— incrementos estacionarios
+
+Experimentos independientes > incrementos independientes]]
+
+Procesos de Poisson
+Se dice que un proceso estocástico de conteo  es un proceso 
+de Poisson con parámetro  sii:
+1.
+Tiene incrementos independientes.
+2.
+Los incrementos son estacionarios.
+3.
+La probabilidad de que exactamente un evento ocurra en un 
+intervalo de tiempo de longitud  es .
+4.
+La probabilidad de que más de evento ocurra en un 
+intervalo de tiempo de longitud  es .
+
+[Descripción de la imagen: procese de procese de procese de procese de procese de procese de procese]
+
+Incrementos
+Se dice que un proceso estocástico tiene incrementos 
+estacionarios sii para todo , todo , y todo 
+ 
+Es decir: la distribución de los incrementos “no depende” del 
+tiempo.
+Se dice que un proceso estocástico tiene incrementos 
+independientes sii para todo  y todo conjunto de pares 
+ordenados  con  y para , las variables aleatorias
+son independientes entre sí.
+
+[Descripción de la imagen: incentos ses de unas]
+
+Procesos de Poisson
+𝑝𝑛(𝑡) ≜𝑃(𝑁(𝑡)=𝑛)
+𝑝0 (𝑡+h )=𝑃(𝑁(𝑡+h)=0)
+𝑝0 (𝑡+h )=𝑃(𝑁(𝑡+h) −𝑁(𝑡)=0)𝑃(𝑁(𝑡)=0)
+𝑝0 (𝑡+h )=𝑃(𝑁(𝑡+h) −𝑁(𝑡)=0,𝑁(𝑡)=0)
+Inc. indep.
+𝑝0 (𝑡+h )=𝑃(𝑁( h)=0)𝑃(𝑁(𝑡)=0 )
+Inc. estac.
+𝑝0 (𝑡+h )=(1−𝜆h−𝑜(h))𝑝0 (𝑡)
+𝑝0 (𝑡+h) −𝑝0 (𝑡)
+h
+=−𝜆𝑝0 (𝑡)+ 𝑜(h)
+h
+𝑑𝑝0 (𝑡)
+𝑑𝑡
+=−𝜆𝑝0 (𝑡)
+Cond. 3
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación | Transcripción de la imagen: Procesos de Poisson
+
+Prlt P(NIt)=n)
+polt+h)=P [N [t+h)=0)
+Polt+h)=P [N [t+h)-N(t)=0,N lt)=0)
+polt+h)=P(N[t+h)-N(t)=0)PIN t)=0)
+polt +h)=P (N [h]=0)P [N [t)=0|
+
+Ppolt+h)=11-4h-o(h))polt]
+
+p0(t+h) _po(t) —
+h
+
+dpoit
+
+dt
+
+Inc. indep.
+Inc. estac.
+
+Cond. 3]]
+
+Procesos de Poisson
+𝑝𝑛(𝑡) ≜𝑃(𝑁(𝑡)=𝑛)
+𝑝𝑛(𝑡+h )=𝑃( 𝑁(𝑡+h)=𝑛)
+𝑁(𝑡+h)=𝑛
+𝑁(𝑡)=𝑛
+𝑁(𝑡)=𝑛−1
+𝑁(𝑡)=𝑛−𝑘
+1−𝜆h−𝑜(h)
+𝜆h+𝑜(h)
+𝑜(h)
+
+[Descripción de la imagen: un diagrama del proceso del proceso | Transcripción de la imagen: Procesos de Poisson]]
+
+Procesos de Poisson
+𝑝𝑛(𝑡) ≜𝑃(𝑁(𝑡)=𝑛)
+𝑝𝑛(𝑡+h )=𝑃( 𝑁(𝑡+h)=𝑛)
+𝑝𝑛(𝑡+h )=(1−𝜆h−𝑜(h))𝑝𝑛(𝑡)+(𝜆h+𝑜(h )  ) 𝑝𝑛−1 (𝑡)+𝑜(h)
+𝑝𝑛(𝑡+h) −𝑝𝑛(𝑡)
+h
+=−𝜆𝑝𝑛(𝑡)+ 𝜆𝑝𝑛−1(𝑡)+ 𝑜(h)
+h
+𝑑𝑝𝑛(𝑡)
+𝑑𝑡
+=−𝜆𝑝𝑛(𝑡)+𝜆𝑝𝑛−1(𝑡)
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación | Transcripción de la imagen: Procesos de Poisson
+
+plt+h)=[1-Ah-o(h))p,[t]+[2h+o[h) )P...[t)]+0(h)
+
+O(nh)
+h
+
+=—=— /Ipn(t)+/lpn—1(t)+
+
+— = )Lpn(t)+l pn—1(t)]]
+
+Procesos de Poisson
+𝑝𝑛(𝑡) ≜𝑃(𝑁(𝑡)=𝑛)
+𝑑𝑝𝑛(𝑡)
+𝑑𝑡
+=−𝜆𝑝𝑛(𝑡)+𝜆𝑝𝑛−1(𝑡)   con𝑝𝑛(0 )=0,𝑛>0
+𝑑𝑝0 (𝑡)
+𝑑𝑡
+=−𝜆𝑝0 (𝑡)con 𝑝0( 0)=0
+
+[Descripción de la imagen: una nota con la palabra prosa | Transcripción de la imagen: Procesos de Poisson
+
+dp,it
+dt
+
+=-Ap,t+4p, ¡|t] conp,10|=0,n>0]]
+
+Procesos de Poisson
+𝑁(𝑡)
+Poisson ( 𝜆𝑡)
+𝑝𝑛(𝑡)= 𝑃(𝑁(𝑡)=𝑛)= ( 𝜆𝑡)𝑛
+𝑛! 𝑒−𝜆𝑡
+Intuitivamente,  es la tasa (media) de ocurrencia de eventos.
+En valor medio, ocurren  eventos en un tiempo  .
+
+[Descripción de la imagen: n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Procesos de Poisson
+Sea  el tiempo de ocurrencia del -ésimo evento y definamos los 
+tiempos entre eventos 
+con  y . 
+𝑇0=0
+𝑇1
+𝑇2
+𝑇3
+𝜏1
+𝜏2
+𝜏3
+
+[Descripción de la imagen: proceso de poson sea, lempe o quer e - moyeno y defas conos con]
+
+Procesos de Poisson
+ si no ocurre ningún evento en . Entonces:
+𝑃( 𝜏𝑘>𝑥)= 𝑃( 𝑁(𝑇𝑘−1+𝑥)−𝑁(𝑇𝑘−1)=0)=𝑃(𝑁( 𝑥)=0 )
+𝑃(𝜏𝑘>𝑥)= ( 𝜆𝑥)0
+0!
+𝑒−𝜆𝑥⇒𝑃(𝜏𝑘≤𝑥)=1−𝑒−𝜆𝑥
+ Los tiempos entre eventos tienen distribución exponencial
+Incrementos de  son independientes  Los tiempos entre 
+eventos son independientes entre sí.
+
+[Descripción de la imagen: proceso de poson s no requiere pares]
+
+Procesos de Poisson
+Sea  el tiempo de ocurrencia del -ésimo evento y definamos los 
+tiempos entre eventos 
+con  y . Las variables  son independientes e idénticamente 
+distribuidas (i.i.d.) con distribución exponencial de parámetro .
+𝑇0=0
+𝑇1
+𝑇2
+𝑇3
+𝜏1
+𝜏2
+𝜏3
+
+[Descripción de la imagen: proceso de poson mar, lempe o quer elo - evo ve]
+
+Procesos de Poisson
+lambda = 0.1;
+n = 10;
+tau = exprnd(1/lambda,1,n);
+T = [0 cumsum(tau)];
+t = 0:1e-3:max(T)+1;
+N = zeros(size(t));
+for k = 1:length(T)
+     N(t>=T(k)) = k-1;
+end
+plot(t,N)
+
+[Descripción de la imagen: procese procione procese procione procione procione procione procione procione procione procione procione procione procion procion procion procion]
+
+Procesos de Poisson
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud]
+
+Procesos de Poisson
+lambda=0.1; t = 25; n = 10;
+M = 1000;
+ENES = zeros(1,M);
+for k = 1:M
+     tau = exprnd(1/lambda,1,n);
+     T = [0 cumsum(tau)];
+      [a,i] = max(T(T<=t));
+      ENES(k) = i - 1; 
+end
+[n,x]=hist(ENES,0:10,1); 
+plot(x,n,’-x’,x,poisspdf(x,t*lambda),’-o’)
+
+[Descripción de la imagen: procese porson labb = = = = = = = = = = =]
+
+Procesos de Poisson
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+Procesos de Poisson
+Ejemplo:
+Los arribos de automóviles a un estacionamiento se supone 
+que, en cierta parte del día, ocurren como un proceso de 
+Poisson de parámetro  1/min. En promedio llega un automóvil 
+cada 5 min. 
+Por tratarse de este tipo de proceso  se cumple que el número 
+de automóviles  que llega en el intervalo  es una variable 
+aleatoria discreta con distribución de Poisson de parámetro , 
+mientras que los tiempos entre llegadas son variables 
+aleatorias independientes con distribución exponencial de 
+parámetro .
+
+[Descripción de la imagen: procese de procese procese procese procese procese]
+
+Procesos de Poisson
+Una simulación del proceso de Poisson. En el eje horizontal se representan las 
+llegadas de los automóviles  al estacionamiento  y en la vertical el contador de 
+llegadas.
+
+[Descripción de la imagen: proceso de poson la muscu del disip]
+
+Procesos de Poisson
+¿Cuál es la probabilidad de que  arriben más de 3 automóviles  
+en un intervalo de 15 min.?
+En el intervalo de 15 min se cumple que el número de arribos  es una 
+variable aleatoria con distribución de Poisson de parámetro 
+ 1/min  min .  
+𝑃(𝑁(15)>3)=1−𝑃(𝑁(15)≤3)=1 – exp ⁡(−3)(1+3+4.5+4.5
+En este caso se requiere calcular:
+𝑃(𝑁(15)>3)≈0.3528
+
+[Descripción de la imagen: proceso de puestan en interabble ques]
+
+Procesos de Poisson
+¿Cuál es la probabilidad de que el tiempo entre dos arribos 
+consecutivos exceda 10 min.?
+El tiempo  entre dos arribos consecutivos es una variable aleatoria 
+continua con distribución exponencial de parámetro  1/min, en 
+promedio hay un arribo cada 5 min.
+P(  𝜏 > 10 ) = exp  (−10)  0.1353
+En este caso se requiere calcular:
+
+[Descripción de la imagen: procedimiento de puestan c / eolus exidoe]
+
+Procesos de Poisson
+¿Cuál es la probabilidad de que el número de automóviles que 
+arriben en un intervalo de 20 min sea menor que 5 sabiendo que 
+fue mayor que 2?
+En el intervalo de 20 min se cumple que el número de arribos   es una 
+variable aleatoria con distribución de Poisson de parámetro 
+ 1/min  min .  
+P( 𝑁(20)<5| 𝑁(20)>2) = P( 𝑁(20)≤4| 𝑁(20)≥3 )=P( 3≤𝑁(20)𝑁20≤4 )
+1−P( 𝑁(20)≤2)
+En este caso se requiere calcular:
+P( 𝑁(20)<5| 𝑁(20)>2) = p3 +  p4
+1 – p0  – p1  – p2  0.5128
+
+[Descripción de la imagen: proceso de poson]
+
+Procesos de Poisson
+El estacionamiento abre a las 8.00 hs. ¿Cuál es la probabilidad 
+de que el quinto automóvil arribe antes de las 8.30 hs? 
+El tiempo   hasta la ocurrencia del evento  es una variable aleatoria 
+continua con distribución Gama de parámetros  y . Se verifica que
+
+[Descripción de la imagen: procese de poson el est entrer oes de la procese de poson]
+
+Procesos de Poisson
+El estacionamiento abre a las 8.00 hs. ¿Cuál es la probabilidad 
+de que el quinto automóvil arribe antes de las 8:30 hs? 
+El tiempo   hasta la ocurrencia del evento  es una variable aleatoria 
+continua con distribución Gama de parámetros  y . Se verifica que
+ 
+𝑃(T 5 < 30) =  𝑃( 𝑁(30) 5) = 1 −  𝑃( 𝑁(30)< 5)  0.7149
+En este caso se requiere calcular:
+
+[Descripción de la imagen: procedimiento de poson e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Procesos de Poisson
+¿Cuál es la probabilidad de que arriben 4 automóviles en los 
+primeros 20 min, 8 en los primeros 40 minutos y 20 en los 
+primeros 90 min?
+Las variables aleatorias , y  no son independientes y se desea  
+calcular 
+        
+Pero los incrementos son estacionarios:
+
+[Descripción de la imagen: proceso de poson o ques la probable que anos anos en]
+
+Procesos de Poisson
+A las 12 h se abre una entrada auxiliar al estacionamiento, por la 
+que entran automóviles según otro proceso de Poisson con 
+parámetro  =   1/min, en forma independiente de lo que ocurre 
+por la entrada principal.
+¿Cuál es la probabilidad de que el número total de automóviles 
+que arriban al estacionamiento durante 20 min a partir de las 12 
+h exceda 10? 
+Si  y  son, respectivamente, la cantidad de automóviles que 
+arriban por cada entrada en  entonces se pide calcular . 
+Como los procesos son independientes entonces  es una 
+variable aleatoria con distribución de Poisson  de parámetro .
+
+[Descripción de la imagen: proceso de poson a 12os de procedimientos]
+
+Procesos de Poisson
+A las 12 h se abre una entrada auxiliar al estacionamiento, por la 
+que entran automóviles según otro proceso de Poisson con 
+parámetro  =   1/min, en forma independiente de lo que ocurre 
+por la entrada principal.
+¿Cuál es la probabilidad de que el número total de automóviles 
+que arriban al estacionamiento durante 20 min a partir de las 12 
+h exceda 10? 
+Si  y  son, respectivamente, la cantidad de automóviles que 
+arriban por cada entrada en  entonces se pide calcular . 
+.
+
+[Descripción de la imagen: proceso de puestan a 12or e equidil]
+
+Procesos de Poisson
+A las 12 h se abre una entrada auxiliar al estacionamiento, por la 
+que entran automóviles según otro proceso de Poisson con 
+parámetro  =   1/min, en forma independiente de lo que ocurre 
+por la entrada principal.
+¿Cuál es la probabilidad de que arriben 5 automóviles por la 
+entrada principal y 3 por la entrada auxiliar en un intervalo de 30 
+min a partir de las 12 h.? 
+Si  y  son, respectivamente, la cantidad de automóviles que 
+arriban por cada entrada en entonces se pide calcular .
+.
+
+[Descripción de la imagen: proceso de puestan a 12or e equidil]
+
+Procesos de Poisson
+Siméon Denis Poisson
+(1781-1840)
+
+[Descripción de la imagen: una foto en blanco y negro de un hombre con un traje | Transcripción de la imagen: Siméon Denis Poisson
+(1781-1840)
+
+a
+—
+=
+»
+2
+_2
+28
+2
+>
+a
+-
+2
+»
+La
+- »]]
+

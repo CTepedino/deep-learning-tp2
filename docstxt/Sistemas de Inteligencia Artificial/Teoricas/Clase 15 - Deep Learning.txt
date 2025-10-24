@@ -1,0 +1,3122 @@
+Deep Learning
+Rodrigo Ramele
+Lab Neurotrónica
+Departamento de Ingeniería Informática
+Biomimetic Neuroscience
+
+[Descripción de la imagen: el logo de la nueva marca, la nueva marca]
+
+Control
+Mechanics
+Informatics
+Electronics
+Neuroscience
+
+[Descripción de la imagen: los cuatro elementos del centro científico | Transcripción de la imagen: Neuroscience]]
+
+The Brain
+
+[Descripción de la imagen: la lluvia por la lluvia | Transcripción de la imagen: 1he bPrain]]
+
+[Descripción de la imagen: una imagen computarizada de un cerebro]
+
+Herculano-Souzel (2009)
+Frenología
+
+[Descripción de la imagen: el cerebro y sus funciones | Transcripción de la imagen: , star-nosed
+smoky Shº: s hamster mole eastern mole
+shrew swew
+
+a ea »» “» a ” ea
+0.1769 0.3479g 04169 1.00g 0.802g 18029 0.999g
+36 M 52 M 71 M 90 M 131 M 200 M 204 M
+
+guinea pig marmoset agouti owl monkey
+
+3.759g 7.789
+
+240 M 534 M 18.365 g 15.73g
+
+857 M 1468 M
+
+capybara squirrel monkey
+capuchin monkey
+
+Thr reasor: this man la an vrreliat m tand ia Se
+cajn de de very weni ln Confogality ad Parewrn) Love , y
+1aj excecdiaky strong n Aritivoenmess Yousg ladics,
+bewarr of suck men as ia satd:
+
+Fren010gía macaque monkey
+
+Herculano-Souzel (2009)]]
+
+[Descripción de la imagen: un cerebro con un fondo negro | Transcripción de la imagen: Mark and Mary Stevens Keck Schoc
+
+PIay TOLMaging and Informatics Institute Medicine 0f]
+
+Thanks Phineas![60]
+
+[Descripción de la imagen: un cráneo y un hombre con un cuchillo | Transcripción de la imagen: 1hanks Phineas!..
+
+.1)
+
+J'u
+
+Z .-."F'l
+«]]
+
+Divisions and Broadmann Mappings
+
+[Descripción de la imagen: un cerebro con los nombres de diferentes partes]
+
+Primary Areas
+
+[Descripción de la imagen: el cerebro es una parte del cerebro humano | Transcripción de la imagen: Primary Arcas
+
+Primary motor cortex
+
+Supplementary motor area Central sulcus
+
+Premotor area Somatosensory cortex
+
+Posterior parietal cortex
+
+Visual cortex
+
+Lateral fissure]]
+
+Primary Areas
+
+[Descripción de la imagen: el cerebro es una estructura grande, colorida y compleja que es importante para el cuerpo humano | Transcripción de la imagen: Primary Areas
+
+Primary motor cortex Primary sensory cortex
+(precentral gyrus) (postcentral gyrus)
+
+Somatic motor association area
+(premotor cortex)
+
+Somatic sensory association area
+
+y —
+_ñf-'
+
+N
+d Cn
+" __ .
+
+Visual association
+area
+
+Prefrontal cortex — £
+
+Broca's area
+(production of speech)
+
+Visual cortex
+
+Auditory association area
+_ Wernicke's area
+Auditory cortex (understand speech)]]
+
+Brain Ventricles and Cerebrospinal Fluid
+
+[Descripción de la imagen: el cerebro es una gran parte del ser humano | Transcripción de la imagen: brain Ventricles and Cerebrospinal Fuid
+
+Right lateral
+Ventricie
+
+Central part of _
+left lateral ventricie Left lateral ventricie
+
+Fourth ventricie]]
+
+Hemispheres and Corpus Callosum - Network
+
+[Descripción de la imagen: Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferio izquierdo Hemisferi | Transcripción de la imagen: Hemispheres and Corpus Callosum - Network
+
+Right Left Left and Right Brain Functions
+z inear OPicemE
+l | | Science and mathl2)rder
+
+Logical Logic A
+Analytic thougb
+Corpus callosum - —
+Verbal
+Digital | Color
+
+_, É Art and music
+
+reativity Random
+
+Intuition
+Free Emotion
+
+olistic thought
+
+Right Brain Functions
+
+Brain]]
+
+Subcortical - firmware
+
+[Descripción de la imagen: el cerebro es una gran parte del cuerpo humano]
+
+Occipital - Human GPU
+
+[Descripción de la imagen: el cerebro y el cerebro están etiquetados en el hemisferio izquierdo]
+
+Frontal Area - Brocca
+Natural Language Processing
+
+[Descripción de la imagen: frontal - procesamiento de lenguaje natural broc]
+
+Frontal - Language
+
+[Descripción de la imagen: frontal región del cerebro frontal región del cerebro frontal región del cerebro frontal región frontal región frontal región frontal región frontal región frontal región frontal región frontal región frontal región | Transcripción de la imagen: — Wemicke'sarea —
+Broca's area (area 22)
+
+for speech
+(area 44,45)
+
+Angular
+gyrus
+
+temporal agyrus
+of Heschl
+(area 41) Area 42
+
+A-1 region
+
+Frontal - Language]]
+
+Frontal - Neocortex
+
+[Descripción de la imagen: la corteza frontal es la parte central del cerebro | Transcripción de la imagen: Frontal - Neocortex
+
+The prefrontal cortex as a controller
+
+o Collection of interconnected
+neocortical areas in the frontal
+lobe
+
+o Performs executive functions
+that are important for the
+conscious control of thought
+and action in accordance with X Te 7
+internal goals - e ——————]]]_———
+Dorsolateral PFC: abstract — = E
+reasoning á problem solving
+
+o  Orbitofrontal and medial cortex:
+affective é: motivational functions
+
+O
+
+hap Npubs miaaas n gowpublicacns'arh3137215-230hm]]
+
+Temporal - Pre, Motor and Somatosensorial
+
+[Descripción de la imagen: temporal - p e moracnonosal]
+
+Temporal - Hippocampus and Neurogenesis (RAM)
+Krzisch, Temprana, Mongiat 2014
+
+[Descripción de la imagen: temporal - hippaapus negenis r / m]
+
+Temporal - Tempo parietal junction
+Vestibular Apparatus
+Proprioceptive
+Ocular
+Somtosensorial
+Internal
+Model
+
+[Descripción de la imagen: temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal temporal]
+
+Neuron
+
+[Descripción de la imagen: una pared blanca con la palabra nen en ella]
+
+Neuron
+
+[Descripción de la imagen: la estructura del ne ne nem | Transcripción de la imagen: 1|
+
+% Dendrites
+
+r
+
+- Synapticcheft ' — =
+
+" RougheR. | Axonal terminal — /
+= Miilboay — a
+— Polyribosomes , — — Node of Ranvier
+— Ribosomes.. — ¿l í
+
+ol ¡||:l|:lnamtu5—'.1
+
+Myelin Sieath
+[Sctraann cl
+
+Axon hillack
+ucheus
+
+Nucheolus
+Membrane
+Mierotubiile
+
+Nucleus —
+
+Echwore cel
+
+i Microfilament
+7 >Mierotubule
+
+Dendrites]]
+
+Hodgkin-Huxley Model
+I = Cm
+dVm
+dt + gK(Vm −VK) + gNa(Vm −VNa) + gl(Vm −Vl)
+Hodgkin  1952, Abott “Theoretical Neuroscience”
+I = −(Cm
+dV
+dt ) + Ie
+A
+
+[Descripción de la imagen: un circuito con una tensión y una tensión | Transcripción de la imagen: Hodgkin-Huxley Model
+
+AV de
+E A
+dt A
+dV
+1= Cm dí r gK(Vm m VK) + gNa(Vm - VNa) + gl(Vm A Vl)
+
+Hodgkin 1952, Abott “Theoretical Neuroscience”]]
+
+Plasmatic Membrane - Na+/K+ Pumps
+Mantiene el volumen de la célula.
+Puede funcionar en reversa.
+Canal de K+ selectivo de cationes mediante afinidad de 
+terminaciones con grupos hidroxilos con el K+ deshidratado.
+Sensible al voltaje
+Determina la permeabilidad.
+
+[Descripción de la imagen: membrana pasmica - na - k - bombas | Transcripción de la imagen: Plasmatic Membrane - Na+/ K+ Pumps
+
+| - ¿
++Mantiene el volumen de la célula. Ea 3Na
++Puede funcionar en reversa. _
+
+* + *
+
+MCIKVMIOMDOOIINY
+
+.-
+
+Na” wmw*úbuwvlvw5p ;
+.
+l
+ó e y-*
+M ”
+l' ,"'
+H ATP
++
+: Interior 2K+ Pi
+1
+A +(Canal de K+ selectivo de catilones mediante afinidad de
+- terminaciones con grupos hidroxilos con el K+ deshidratado.
+Na* - -
+. +Sensible al voltaje
+Canales de «fuga»
+K--Na-
+
++Determina la permeabilidad.]]
+
+Membrane Potential
+El Na+ por los Canales de fuga positiviza el interior al 
+entrar.
+El K+ por los Canales de fuga negativiza el interior al 
+salir.
+La bomba de Na+-K+ saca 3 contra 2 (todos 
+positivos) con lo que negativiza el interior.
+V = −61⋅log CNai
++PNa+ +CKi
++PK + +CClo
+−PCl −
+CNao
++PNa+ +CKo
++PK + +CCli
+−PCl −
+⎛
+⎝
+⎜
+⎞
+⎠
+⎟
+V Na+
+V K+
+Ecuación Nerst para cada ion.
+[mv]
++61mV −94mV = −86mV −4mv= −90mv
+V Cl-
+
+[Descripción de la imagen: membre portal de la venta | Transcripción de la imagen: Membrane Potential
+
+Ecuación Nerst para cada 1on.
+
++El Na*+ por los Canales de fuga positiviza el interior al
+— entrar V=—61—log(
+
+y
+
+CNa' PNa" + CK* PK* + CCI;PCI-
+CNa;, PNa" + CK: PK* + CCI- PCI-
+
++El K+ por los Canales de fuga negativiza el interior al
+
+salir, NA
+
++61mV - 94mV = -86mV - 4mv=-9%0nwv
+
++La bomba de Na*-K* saca 3 contra 2 (todos
+— positivos) con lo que negativiza el interior]]
+
+Membrane Potential
+V = −61⋅log CNai
++PNa+ +CKi
++PK + +CClo
+−PCl −
+CNao
++PNa+ +CKo
++PK + +CCli
+−PCl −
+⎛
+⎝
+⎜
+⎞
+⎠
+⎟
+Ecuación Nerst para cada ion.
++61mV −94mV = −86mV −4mv= −90mv
+Na+
+62 log 145
+5
+= 90mV
+62 log 145
+15 = 61mV
+K+
+62 log
+5
+140 = −90mV
+Cl−−62 log 110
+4
+= −89mV
+Ca2+
+31 log 2.5
+10−4 = 136mV
+31 log
+5
+10−4 = 146mV
+Equilibrio para cada ion
+V Na+
+V K+
+[mv]
+V Cl-
+
+[Descripción de la imagen: un diagrama de un plano con un plano en la parte superior y un plano en la parte inferior | Transcripción de la imagen: Membrane Potential
+
+Equilibrio para cada 1on
+
+- 145
+Na” 62 log == = 90mV
+
+145
+62 log — = 61mV
+15
+
+S
+
+K+ 62 log— = - 90mV
+140
+- 110
+
+Cr —02 logT — — 59mV
++ 2.5
+
+Ca 31 log = 1360mV
+MO
+
+EE = 146mV
+
+Og De m
+
+Ecuación Nerst para cada 1on.
+
+CNa' PNa" + CK* PK* + CCI;PCI-
+CNa;, PNa" + CK: PK* + CCI- PCI-
+
+V=—61-log(
+
+l
+
+V Na*
+
++61mV - 94mV = -86mV - 4mv=-9%0nwv]]
+
+Action Potential
+
+[Descripción de la imagen: una caricatura de un hombre sentado en una mesa con un gato | Transcripción de la imagen: Action Potential
+
+neurons do not fire,
+tThey get firedl]]
+
+Action Potential
+Repolarizacion
+Despolarizacion
+Reposo
+Canales 
+de Fuga
+Bomba 
+de Na-K
+
+[Descripción de la imagen: un diagrama de la acción de la acción de la acción de la acción de la acción de la acción de | Transcripción de la imagen: bomba — cCompuerta
+de Na-K de activación Na*
+
+Compuerta
+de inactivación
+Reposo
+(-90 mVv)
+
+950998
+
+Canales
+de Fuga
+
+Interior
+
+Action Potential
+
+(-90 a +35 mV) (+35 a -90 mv,
+
+Activación lenta
+
+Reposo
+(+35 a -90 mV)
+
+(-90 mVv)
+
+— y +60
+Sobreestimulación “ %
+- 20 g a
+E O -10 5 E
+z * —60 g
+a2 — -80 -
+2 = -100-— $
+219 0s
+g .g Pospotencial
+g g 0.01 positivo
+00
+0,001 — Potencial de acción
+100 — Cociente
+de las conductancias
+- 10 ' — Na*
+.. - — K+
+gNE 1
+S o
+90
+í £ 01
+—
+oE
+O - 0,01
+0,005
+O 0,5 1 1,5
+
+Milisegundos
+
+TAO 1A urc 11 LITINLAN aa ial - ".ar]]
+
+Saltatory Conduction
+Vainas de mielina (oligodendrocitos, 
+células de Schwann)
+Hasta 100 m/s (sin mielina 0.25 m/s)
+
+[Descripción de la imagen: salr - conduction salr - conduction | Transcripción de la imagen: N | Á"_-___"xxÁ' — /Á'
+
+Saltatory Conduction
+
++Vainas de mielina (oligodendrocitos,
+células de Schwann)
+
+- > X +Hasta 100 m/s (sin mielina 0.25 m/s)
+
+- PA "
+
+1
+Citonlasma
+
+' de la celula de Vaina de mielina Axoplasma
+
+—
+
+N Nucieo de la celula
+N de Schwann . — — — — Ñ—— ] —Ñ—]]
+
+Nódulo de Ranvier
+ONP - m A
+
+.- - —
+— __
+
+-
+
+Nódulo de Ranvier
+
+.]]
+
+Synaptic Weights
+Synapse
+Canales por ligando (40 neurotransmisores)
+Iónico: 
+Excitatorio (Na+)
+Inhibitorio(Cl-, K+)
+Activación de Segundo Mensajero:
+Proteinas G cAMP, cGMP 
+Ccambios enzimáticos, transcripción, activación 
+de canales K+
+One-Way
+
+[Descripción de la imagen: synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis synsis sy | Transcripción de la imagen: Synaptic Werghts
+
+Synapse
+
++Canales por ligando (40 neurotransmisores)
++lónico:
+
++Excitatorio (Na”+)
+
++Inhibrtorio (Cl, K+)
++Activación de Segundo Mensajero:
+
+E rOre nastE CNR TE N E
+
++Ccambios enzimáticos, transcripción, activación
+
+de canales K+
+
++One-Way
+
+Vesiculas transmisoras
+
+;1”¡ mfº'$/¡) !r
+
+Proteínas
+receptoras
+
+Soma de la neurona
+
+Hendidura
+sináptica
+(200-300
+
+angstroms)]]
+
+Synaptic Weights
+Synapse
+https://twitter.com/i/status/1502259198603808774
+
+[Descripción de la imagen: una imagen de una sustancia dorada y verde | Transcripción de la imagen: Synaptic Werghts
+
+https:/ / twitter.com/i/status/ 1502259198603808774]]
+
+Synaptic Weights
+Synapse
+
+[Descripción de la imagen: una célula se une a una célula | Transcripción de la imagen: Synaptic Werghts]]
+
+Sumation and Propagation
+Sumatoria 
+Temporal
+Sumatoria 
+Espacial
+Corriente eléctrica 
+ionica
+Segmento inicial del axon 
+(mayor presencia de 
+canales)
+(+) Gap Junction
+(+) Ephatic Coupling
+(+) Mechanical
+
+[Descripción de la imagen: un diagrama de la estructura del ser humano]
+
+Neural Networks
+
+[Descripción de la imagen: redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes neurales redes | Transcripción de la imagen: y and
+-
+”
+
+U
+=
+.
+>
+_a
+e
+V
+v
+o »
+>
+O]]
+
+Sumation and Propagation
+Hyperpolarized pulse of current
+Refractory Period
+Rebound Spike
+Temporal Summation
+
+[Descripción de la imagen: una línea de radiación se muestra en el diagrama]
+
+Cortical Networks
+Barral J & Reyes AD (2016)
+
+[Descripción de la imagen: un diagrama de la red neuronal]
+
+Brain Imaging
+
+[Descripción de la imagen: una pared blanca con la palabra 'bri lingg ' | Transcripción de la imagen: brain Imagmng]]
+
+Medical Imaging
+
+[Descripción de la imagen: un diagrama del cerebro y sus funciones | Transcripción de la imagen: aging
+
+Medical lm
+
+EEG electrode
+X8kull
+
+TOPMNEC in Dintartralara.s]]
+
+Invasive Scanning
+Utah  Grid Microarray
+Deep Brain Stimulation
+PMT Corporation, Chanhassen, MN, USA
+Elon Musks’ Neuralink
+
+[Descripción de la imagen: una computadora y algunos componentes electrónicos | Transcripción de la imagen: Figure 3: The robotic eectrede inserter; entarged view ei the inserter-head shewn in the inset A, Loaded neecie
+pincheccartridye, B. Low-force contact brata positon sensor. C. Light modules with multipls independen: wavelengths,
+D. Needle motor E. One of four cameras focuseó 0n the needle during insertion. F. Camera witk wide angle view of
+vergical feló. G Serenscapic camenas
+
+500U?"|
+
+Elon Musks” Neuralink
+
+Deep Prain Stimulation
+
+PMT Corporation, Chanhassen, MN, USA]]
+
+Non-invasive Scanning
+
+[Descripción de la imagen: non - sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans sans | Transcripción de la imagen: Non-invasive Scanning
+
+. EEG Electroencefalográma
+
+. ECoG Electrocorticography
+
+. MEG Magnetoencefalografía
+
+. FMRI Resonancia Magnética Funcional
+
+. PET Tomografía por Emisión de Positrones
+
+. FTCD Functional TransCranial Doppler
+
+. INIR functional Near InfraRed]]
+
+Non-invasive Scanning - EEG
+
+[Descripción de la imagen: un grupo de personas con auriculares y auriculares]
+
+Non-invasive Scanning - fNIR MEG
+University of Nottingham, 2018
+Drexel University, 2016
+
+[Descripción de la imagen: dos personas usando máscaras y una está sosteniendo un cuchillo]
+
+Diffusion Tensor 
+Trachtography
+The tools for the Connectome
+
+[Descripción de la imagen: Tensorografía de difusión de la red de la conciencia]
+
+Brain GPS
+Moser, 2008
+
+[Descripción de la imagen: Mapas cerebrales y mapas cerebrales]
+
+The materialization of Statistical Mathematics
+Machine Learning
+“Learning” computers
+
+[Descripción de la imagen: lo natural de las marcas sólidas]
+
+Machine Learning Model
+
+[Transcripción de la imagen: Machine Learning Model
+
+_ Feature _ _
+Preprocessing Classification
+
+| Extracton
+Signal ¡
+
+Acquisition
+
+- Application
+| System
+” Closed
+Loop |
+Feedback
+
+Volitional
+Control]
+
+Engineering Inverse Problem
+Model
+yK[n]
+xN(t)
+̂xN(t) = f(sL(t))
+xN(t)
++ ξN
+ADC
+̂sM[n]
+sL(t)
+xN[n]
+
+[Descripción de la imagen: solución de problemas solución de problemas solución de problemas solución de problemas solución de problemas solución de problemas solución de problemas solución de problemas | Transcripción de la imagen: Engineering Inverse Problem
+
+x [n]
+
+N
+0 — O — —
+
+1 N( = fist(0) + EN ¿ u
+x (1)
+
+s (1) $In]]]
+
+What is “learning”?
+Model Free Approach
+To determine the mapping 
+between some input X and 
+some output Y by 
+“adjusting” free parameters.
+These free parameters are 
+adjusted based on an 
+Optimization Process
+
+[Descripción de la imagen: ¿Qué es aprender??????????????????????????????????]
+
+What is “learning”?
+
+[Descripción de la imagen: ¿Qué es aprender?????????????????????????????????? | Transcripción de la imagen: What1s “learning *
+
+OPTIMIZATION PROBLEMS WITH CONSTRAINTS
+
+(1) A company wants to manufacture cylindrical aluminum cans with a volume
+
+of 1000em* (1 liter). What should the radius and height of the can be to
+minimize the amount of aluminum used?
+
+Volume of a Cylinder: V = r*h
+Surface Area of a Cylinder: S = 27r? + 27rh
+
+We wish to optimize (minimize) the surface area S = 27r* + 27rh with
+respect to the constraint 7r*h = 1000. From this latter condition we have
+
+h = 1909 which gives
+
+wr2 ,
+S = 2mr* + 2nr (º) = 27r* + M
+A
+Differentiating,
+2
+S = 4nr — —0(2]0.
+r
+
+Observe that r = Vis a critical point. We solve the equation S' = 0, giving
+
+S =0
+4nr — —2030 =
+r
+2
+47 = 0(2)0
+"
+47* = 2000
+3 500
+r=
+
+n
+
+5003
+r=(_) |
+TT
+
+The derivative S is negative for r in the interval (0, (229) ' and positive for
+r > (500)'/* so we see that r = (200)'
+
+the equation h = £º—f gives h =
+
+is a minimum. For this value of r
+
+1000
+1r(5$3_9)'/3']]
+
+Terminology
+ML
+DATA
+DS
+BI
+Analytics
+ML
+DL
+Visualizations
+UX
+Business
+AI
+Analysis
+MLOps
+
+[Descripción de la imagen: un diagrama de una computadora con una gran cantidad de datos | Transcripción de la imagen: Business
+
+* * **
+
+Analysis
+
+Analytics
+
+Visualizations
+
+UX]]
+
+DL Map
+
+[Descripción de la imagen: el mapa de la d m p p p | Transcripción de la imagen: “SG¡QI!C ;_ = '"¿ UexrlplqutIsñns DalaU¡ññl¡mñm
+
+y '€B'¡os¡amii¿é Á Drobnbilítyº$lalistícs , *'Busimsslniell¡g_mce U
+PN 7 N le .ptmlwns
+— Cºº=º'1º'ºw'ºº = ——¿,,¿… w¿¡":ºfí — N —":R£';$'M:chf—:"
+
+— Bayesion — + ] .
+l —.rln(;rmcc P —."_,. =tmuing *E yEA ME
+
+s unnlitntiue
+l Anulgsis
+
+— —
+
+Umíz“8el£eamíñg-
+
+--—' _ — ? " 1—<
+"_ i “E —
+- r — _ . “ '<_
+R de = _Da NC Se E|
+xW
+
+"B¡g¡)atñcchmlogics
+
+M$GC — J?ig E
+
+0mkgfffm£o'p$_ Docber — —
+
+B' ineeri neering — -u f…Í1!U;C= . _.
+9 9 ])alalíascth¿mg…[k— TE aA
+
+- "
+— — - - _ ]
+
+- _ ÍNMSÍ…$z — -—f—__s ”5G£¿-. < 'Dulnnr(lie:!uer _ * A D=
+_ &ompu¡er : ? , |
+7 ……h< « '(; -1_: — - ul —h-
+
+— =a
+
+Qompnkr $c¡ence —”ºº"'"*
+
+_= v'*h
+1I-l
+u
+
+'ºrogmmmíng]]
+
+DL Map
+
+[Descripción de la imagen: un diagrama del proceso | Transcripción de la imagen: —DBSCAN
+
+Agglomerative
+FP Growth
+Trees
+
+Logistic
+Regression
+
+Linear Polynomial
+
+Regression Regression
+—
+“ eaming —
+- . Learning |
+Ridge/Lasso sj , !
+Regression Regression | m Classification |
+
+Dimensionality —
+
+| Machine —. ' :
+Learning m ¡
+
+Reinforcement Ensemble | .
+Lea m|ng Leamu |ng Bagging
+
+E —
+Boosting
+—
+
+-AdaBoost
+CatBoost
+
+Convolutional Neural
+Networks (CNN)
+
+' Perceptrons l
+
+m — Recurrent Neural | +Adv , | )
+Networks (RNN) ersag¡;l£lelworksá Autoencoders]]
+
+Roles
+Data Engineer
+Data Scientist
+Data Analyst
+
+[Descripción de la imagen: una persona de pie en el agua con las palabras 's O's ']
+
+Evolving Artificial Intelligence
+Statistical
+Inference
+Symbolic
+AI
+Theory of
+Learning
+Neural 
+Networks
+Computer
+Vision
+SVM
+MLP
+Machine
+Learning
+Deep
+Learning
+LDA
+CNN
+LSTM
+GANs
+Clusters
+Control
+Theory
+Autoencoders
+Datamining
+Pearson
+Fisher
+Norvig
+Hertz
+Haykin
+Goodfellow
+Mitchel
+Brunton
+Szilesky
+Vapnik
+Zaki
+Applied
+Statistics
+Transformers
+
+[Descripción de la imagen: un diagrama de un flujo de información | Transcripción de la imagen: Evolving Artificial Intelligence
+
+h
+
+Transformers
+
+— E o — ÓN =]]
+
+Emerging Technologies
+❖GANs
+❖Explanaible AI
+❖Edge AI
+❖AI PaaS
+❖Adaptive ML
+❖Emotion AI
+
+[Descripción de la imagen: energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía | Transcripción de la imagen: *
+
+Ó.Q
+
+9
+Ó.Ó
+
+GANs
+Explanaible Al
+Edge Al
+
+Al Paas
+Adaptive ML
+
+Emotion Al
+
+Emerging l echnologies
+
+Gartner Hype Cycle for
+Emerging Technologies, 2019
+
+Expectations
+
+Biochips
+AlPass *
+
+Edge Analytics,
+Autonomcus Oriving Leve!5 * . y
+Low-Esrth-Orbit Satellite Systams..
+
+Fdge Al.. — Graph Analytics
+Explainable Al —
+Personification — _
+Knowiedge Graphs - -;_-7 — Next-Generation Memory
+
+Synthetic Data —— 3D Sensing Cameras
+
+Light Cargo Delivery Drones —
+
+Iransfer Leaming — _
+
+Flying Autonomous Vehicles — —
+Augmented Intelligence
+
+Nanoscale 3D Printing
+
+— Emection Al
+
+—
+
+Autoncmous Driving Level 4
+
+Decentrelized Autonomous — —
+
+Organization —DigitalOps
+Generalive Adversarial Adaptive ML
+Networks — —
+Decentrelized Web — —
+AR Cloud-—
+
+— Immeresive Workspacee
+
+Biotech - Cultured —
+or Artificial Tissue
+
+Peak of
+Innovation Inflated Trough of Slope of Plateau of
+Trigger Expectations Disillusionment Enlightenment Productivity
+
+Time
+
+— less than ? years $ ? to5 years S 5to10 yaars C) more than 10 years — q bsalste befors plateaa As of August 2018
+
+Pleteau will be resched:]]
+
+Learning by Data
+In ML there are three approaches to force a machine to “learn”
+Supervised Learning
+Unsupervised Learning
+Reinforcement Learning
+Semi
+Supervised 
+Learning
+Self
+Supervised 
+Learning
+Classification
+Regression
+Generation
+Optimize
+
+[Descripción de la imagen: aprendizaje de datos en el mismo enfoque para hacerlo más fácil]
+
+Machine Learning Techniques
+SVM
+LDA
+LogReg
+kNN
+Autoregressive
+
+[Descripción de la imagen: un gráfico con una línea que sube a la parte superior e inferior | Transcripción de la imagen: Machine Learning l echniques
+
+*x * a
+x X * 8 8
+
+8
+ka 8
+
+a
+
+8
+£
+8
+
+* Autoregressive -]]
+
+Machine Learning Techniques
+DBSCAN
+k-means
+OPTICS
+SOM
+
+[Descripción de la imagen: un diagrama de una máquina con un gato y un ratón | Transcripción de la imagen: Machine Learning l echniques
+
+.. *
+...
+* “.
+XXX *
+.
+a-
+9 £]]
+
+Watching Dreams?
+Nishimoto,Cell 2011, Nytimes
+
+[Descripción de la imagen: un col de imágenes de personas y animales]
+
+Watching Thoughts?
+High-resolution image reconstruction with latent diffusion models from human brain activity, Takagi, Nishimoto 2022
+
+[Descripción de la imagen: un col de fotos de personas y animales]
+
+Biomimetic neuroscience
+Deep Brain
+The Revolution of Deep Learning
+
+[Descripción de la imagen: las palabras lluvia profunda se muestran en rojo y blanco]
+
+Neural Networks - McCulloch and Pitts
+
+[Descripción de la imagen: neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neural neur | Transcripción de la imagen: Neural Networks - McCulloch and Pitts
+
+Inputs  Weights
+
+f i
+
+l= e Output
+: Threshold 7
+A]]
+
+Neural Networks - MLP Multilayer Perceptron
+h = 𝜎(𝑏+ 𝑥𝑊)
+𝑜= 𝜎(𝑝+ h𝑉)
+𝑜= 𝜎(𝑝+ 𝜎(𝑏+ 𝑥𝑊)𝑉)
+
+[Descripción de la imagen: redes neuronales - m - multipersona | Transcripción de la imagen: Neural Networks - MLP Mululayer Perceptron
+
+o=o(p+o(b+xMW)V)
+
+oO = a(p+%V)
+
+7
+
+h=o(b+xW)]]
+
+Deep Learning
+(*) Turing Award 2019
+Cybernetics (McCulloch and Pits, Hebb 1949, Rosenblatt 1958)
+Connectionism (Backprop: Rumelhart and Hinton^, Hopfield^, 1986)
+Dechter 1986
+Aizenberg 2000
+Krizhevsky AlexNet 2012
+Deep Learning (Hinton, Bengio and LeCun* 2006, Ranzato 2007)
+ChatGPT (OpenAI)
+Minsky and Papert 1969
+Olshausen and Field 2005
+Fukushima Neocognitron 1980
+Distributed Representation 1986
+Beating ImageNet Krizhevsky 2012
+Playing Atari Games, Mnih 2015
+}
+Origins
+(^) Physics Nobel Prize 2024
+
+[Descripción de la imagen: ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido ácido]
+
+What Deep Learning is NOT?
+"Los algoritmos tienen además la ventaja que no se 
+cansan y pueden interactuar con el contexto a 
+velocidades supersónicas en comparación 
+con las personas"
+“Los algoritmos de IA no se programan.”
+“Nada será igual” M.Tetaz
+“Deep Learning permite reemplazar a los seres humanos.”
+“Los robots vienen a reemplazarnos.”
+“Trolley Train Problem.”
+Laura Accion, et al , “Desmistificando la Inteligencia Artificial” en “Inteligencia artificial, una mirada interdisciplinaria” , 2020
+Why the AI is so dumb, IEEE Spectrum Nov 2021
+“AGI Artificial General Intelligence.”
+“La tecnología empezó a reemplazarnos, y más nos vale sacarle provecho que quedarnos amargados por la herida que nos provoque."
+“Make decisions based on data.”
+
+[Descripción de la imagen: ¿Qué no es??????????????????????????????????]
+
+What Deep Learning is NOT?
+
+[Descripción de la imagen: ¿Qué sé? ¿Qué sé? ¿Qué sé? ¿Qué sé? ¿Qué sé? | Transcripción de la imagen: W hat Deep Learning 1s NO 1 *
+
+MIT
+T&Ch_“0lºgy Featured Topics  Newsletters £Events 1 Podcasts Sign in Subscribe
+Review
+
+ARTIFICIAL INTELLIGENCE
+
+Hundreds of Al tools have been built to catch
+
+covid. None of them helped.
+
+Some have been usedin hospitals, despite not being properly tested. But the
+pandemic could help make medical Al better.]]
+
+What Deep Learning is NOT?
+https://pulsar.uba.ar/creencias-sociales-2024-informe-6-los-argentinos-y-la-ciencia/
+
+[Descripción de la imagen: lo que hacemos lo que hacemos lo que hacemos lo que hacemos lo que hacemos lo que hacemos lo que hacemos lo que hacemos | Transcripción de la imagen: W hat Deep Learning 1s NO 1 *
+
+* El desarrollo científico no es cosa de jóvenes: el 51% de las
+personas menores de 30 años no lo ubica entre las urgencias del
+país. Las generaciones mayores lo jerarquizan más.
+
+La Inteligencia Artificial y el horizonte de lo humano: el 46% cree
+que la lA puede superar a las personas, mientras que el 52% lo
+descarta. Miedo, fascinación y futuro incierto.
+
+https:/ / pulsar.uba.ar / creencias-sociales-2024-informe-6-los-argentinos-y-la-ciencia /]]
+
+What Deep Learning is NOT?
+https://pulsar.uba.ar/creencias-sociales-2024-informe-6-los-argentinos-y-la-ciencia/
+
+[Descripción de la imagen: ¿Qué no lo es? | Transcripción de la imagen: W hat Deep Learning 1s NO 1 *
+
+Esto muestra una sociedad escéptica ante la idea de que la lA supere al
+ser humano, aunque no de manera tajante. Los más jóvenes (18-29
+años) son el único grupo donde predomina la creencia en su
+superioridad futura (55% está muy o algo de acuerdo). Esto puede
+vincularse con una mayor familiaridad tecnológica, exposición a
+narrativas digitales y una socialización en un mundo donde la lA ya
+opera cotidianamente. En cambio, a medida que se avanza en edad
+crece el escepticismo. Entre los mayores de 50 años de edad, la
+mayoría rechaza esa posibilidad (55% está poco o nada de acuerdo),
+quizás como defensa simbólica del lugar humano o por menor
+exposición y comprensión al avance de estas tecnologías.
+
+https:/ / pulsar.uba.ar / creencias-sociales-2024-informe-6-los-argentinos-y-la-ciencia /]]
+
+What Deep Learning is?
+Revolutionary Technology to move ahead the digital boundary
+Computer 
+Vision
+Natural 
+Language
+Processing
+Speech
+Recognition
+“Artificial Intelligence and Life in 2030”, Sept 2016
+
+[Descripción de la imagen: ¿Qué es lo que es lo que es lo que es lo que es lo que es lo que es lo que es lo que]
+
+Digital Boundary
+Artificial Intelligence
+Digital Automation
+Automated
+Not yet automated
+Region
+Average Human Capacity
+Superhuman
+Capacity
+Digital Boundary
+
+[Descripción de la imagen: frontera digital frontera digital frontera digital frontera digital frontera digital frontera digital]
+
+Only that ?
+https://whatisintelligence.antikythera.org/
+Computer 
+Vision
+Natural 
+Language
+Processing
+Speech
+Recognition
+Blueprints
+Thinking 
+Machine
+
+[Descripción de la imagen: un diagrama de una computadora con las palabras en él | Transcripción de la imagen: Only that *
+
+Speech
+
+Computer
+/ulon Natural
+
+Language
+
+kecognition
+
+f rocessing
+
+https:/ / whatisintelligence.antikythera.org /]]
+
+What Deep Learning is?
+Nature,Wired, The Batch, Newscientist
+
+[Descripción de la imagen: ¿Qué es un sitio web?????????????????????????????? | Transcripción de la imagen: W hat Deep Learning 1s?
+
+Magnetic control of tokamak plasmas through deep
+reinforcement learning
+
+Jonas Degrave, Federico Felici , ... Martin Riedmiller + Show authors
+
+How a Plucky Robot Found the Long-Lost Endurance
+
+Shipwreck
+Over a century ago, two dozen men were stranded in Antarctica. Here's how a robot dove 10,000 feet to glimpse their lost ship for the first
+time.
+AlphaFold AI predicts SARS-CoV-2 omicron . o
+variant might not evade antibody Alph3F()ld. a solution to a
+neutralization _ _
+Discovering faster matrix multiplication algorithms 50 year Old grand
+with reinforcement learning challenge in bi0]0gy
+________________ ——— Alhussein Fawzi -7, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes,
+N ] DeepMind's StarCraft-playing Al
+J a 39 -—9-—06 beats 99.8 per cent of human
+
+| gamers
+
+...................
+
+Competitive Coder Nature,Wired, The Batch, Newscientist]]
+
+What Deep Learning is?
+
+[Descripción de la imagen: ¿Qué es lo que es lo que es lo que es lo que es lo que es lo que es lo que es lo que es lo que es lo que es]
+
+A window to our imagination
+
+[Descripción de la imagen: un hombre en una camisa azul está de pie delante de un fondo blanco con las palabras gove2 | Transcripción de la imagen: MGoogle Veo 2
+
+CINEMATIC FO©TAGE
+
+N]]
+
+Where Deep Learning may have something to do?
+Tokyo University
+
+[Descripción de la imagen: ¿Una cámara de video con las palabras para las que tenemos algo? | Transcripción de la imagen: W here Deep Learning may have something to do?
+
+« ¡
+
+1 324 views A 0:24 /1:00 (]>) ¡¿7'
+
+Tokyo University]]
+
+Agility Robotics
+Where Deep Learning may have something to do?
+
+[Descripción de la imagen: Una mujer está usando una máquina para hacer algo]
+
+Boston Dynamics
+Where Deep Learning may have something to do?
+
+[Descripción de la imagen: ¿Un robot está de pie en una habitación con una señal que dice que estamos deseando tener algo que hacer? | Transcripción de la imagen: boston Dynamics]]
+
+Realistic Applications
+●
+Aburrido
+●
+Descuidado
+●
+Peligroso
+きつい・汚い・危険
+Rodney Brooks, “An inconvenient truth About AI”, IEEE Spectrum, Sept 2021
+Every successful deployment has either one of two expedients: 
+• It has a person somewhere in the loop, or 
+• The cost of failure, should the system blunder, is very low
+
+[Descripción de la imagen: aplicaciones realistas estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio estudio]
+
+Deep Learning
+ IEEE Spectrum Nov 2021, Why AI is harder than we think?[49]
+
+[Descripción de la imagen: en los primeros días de la revolución industrial | Transcripción de la imagen: NEW NAVY DEVICR
+LEARNS BY DOING
+
+Psychologist Shows Embryo
+of Computer Designed to
+Read and Grow Wiser
+
+WASHINGTON, July. 7 (UPI)
+—The Navy revealed the em-
+bryo of an electronic computer
+today that it expects will be
+able to walk, talk, see, write,
+reproduce itself and be .con-
+scious of its existence,
+
+The embryo—the Weather
+Bureau's $2,000,000 *704” com-
+puter—learned to differentiate
+between right and left after
+fiftty attempts in the Navy's
+demonstration for newsmen,,
+
+The service said it would use
+this principle to build the first
+of its Perceptron thinking ma-
+chines that will be able to read
+and write, It is expected to be
+finished in about a year at a
+cost of $100,000.
+
+Dr. Frank Rosenblatt, de-
+signer of the Perceptron, con-
+ducted the demonstration, He
+said -the machine would be the
+first device to think as the hu-
+man brain. As do human be-
+
+Deep Learning
+
+ings, Perceptron will make mis-
+takes at first, but will grow
+wiser as it gains experience, he
+said, '
+
+Dr: Rosenblatt, a research
+psychologist at the -Cornell
+Aeronautical Laboratory, Buf-
+falo, said Perceptrons might be
+fired to the planets as mechani-
+cal space explorers,
+
+Without Human Controls |
+
+- The Navy said the perceptron,
+
+would be the-first non-living
+mechanism “capable of receiv-
+ing, recognizing and identifying
+its surroundings without -any
+human training or control.” |
+
+The “brain” is designed to
+remember images and informa-.
+tion it has perceived itself. Ordi-
+nary computers remember only
+what is fed into them on purch
+cards or magnetic tape. . |
+
+Later Perceptrons will be able
+to recogniZe people and call out
+their names and instantly trans-
+late speech in one language to
+speech or writing in another
+language, it was predicted.
+
+Mr, Rosenblatt said in prin-
+ciple it would be possible to
+build brains that could repro-
+duce themselves on an assembly
+line and which would be con-
+scious of their existence. '
+
+1958 New York
+Times...
+
+In today's demonstration, the
+“704” was fed two cards, one
+with squares marked on the left
+side and the other with squares
+on the right side.
+
+Learng by Doing
+
+In the first fifty trials, the
+machine made no distinction be-
+tween them. It then started
+registering a “Q” for the left
+squares and “O” for the right
+
+squares. ,
+Dr. Rosenblatt said he could
+explain why the imachine
+
+learned only in highly technical
+terms. But he said the computer
+had undergone a “self-induced
+change in the wiring diagram.”
+
+The first fPerceptron will
+have about 1,000 electronic
+“association cells” receiving
+electrical impulses from an eye-
+like scanning device with 400
+photo-cells. The human brain
+has 10,000,000,000 responsive
+cells, including 100,000,000 con-
+nections with the eyes.
+
+IEEE Spectrum Nov 2021, Why Alis harder than we think?[49]]]
+
+Deep Learning
+ Why AI is harder than we think?[49]
+1956 Dartmouth AI Conference
+
+[Descripción de la imagen: salir en casa con su familia]
+
+The Four “Deep Learning” pillars
+Multiple Level of Composition
+Representational Learning
+Massive and standardized datasets 
+GPU
+ The Hardware Lottery [44]
+
+[Descripción de la imagen: los cuatro pilares de aprendizaje de dep multinivel representación de la composición aprendizaje]
+
+Why deep?
+Limitations of Machine Learning on world problems
+ Hochreiter 1991, Hinton 2006
+  Schmidhuber 2014
+
+[Descripción de la imagen: un fondo blanco con las palabras wh e p p p p p p p p p p p p]
+
+ML Problem - The Curse of Dimensionality
+
+[Descripción de la imagen: ml polo - el uso de la densidad]
+
+ML Problem - The Curse of Dimensionality
+
+[Descripción de la imagen: polo de ml – el uso de la dimensionalidad]
+
+ML Problem - The Curse of Dimensionality
+
+[Descripción de la imagen: ml polo – el uso de la densidad | Transcripción de la imagen: ML Problem - The Curse of Dimensionality
+
+Dessert: High-Dimensional Intuition Failure
+
+e In R*:
+» 4 unit-radius circles inside [—2, 2]*
+
+> circle of radius r centred at the origin,
+confined by the unit-radius circles
+
+í
+
+> distance from origin to centers: V2
+» 7r=/2-1
+
+o In R
+> 24 unit-radius spheres inside [—-2, 2]“
+
+» radius-r sphere centred at the origin,
+confined by the unit-radius spheres
+
+e J. Michael Steele, The r= 1
+Cauchy-Schwarz Master Class,
+Cambridge, 2004. > for d > 10, we have r >2
+
+If d > 10, the sphere confined by the spheres in the box, goes outside the box!
+
+Mário A. T. Figueiredo (IST £ IT) Statistical Learning: Lecture 1]]
+
+Why deep?
+“Approximation by superpositions of a sigmoidal function”, Cybenko 1989
+Universal 
+Approximation 
+Theorem
+A feedforward neural network with a single 
+hidden layer containing a finite number of 
+neurons can approximate any continuous function 
+on a compact subset of R, given appropriate 
+activation functions.
+
+[Descripción de la imagen: ¿Por qué??? ¿? ¿? ¿? ¿? ¿? ¿? ¿? ¿?? ¿??]
+
+Why deep?
+Shift Invariance
+Locality at different scales
+Limitations of ANN on real world problems
+{
+Compositional 
+Structure
+“Many natural questions on images corresponds to 
+algorithms that are compositional”
+“The unreasonable effectiveness of deep learning in artificial intelligence”, Sejinowski 2019
+ “When and why..”, Mhaskar 2017
+Shallow Network
+Deep Network
+UAT
+Difficult to train
+Difficult to find the optimal
+Difficult to generalize well
+
+[Descripción de la imagen: un diagrama de los dos tipos de la red]
+
+Why deep?
+The Curse of Dimensionality
+Local Consistency Assumption
+Interests points are Sparse
+Fundamental Credit Assignment
+Problem
+Credit Assignment Path
+Limitations of ANN on real world problems
+ Hochreiter 1991, Hinton 2006
+}
+Deep
+Fundamental Deep Learning 
+Problem
+  Schmidhuber 2014
+Vanishing or Exploding Gradients
+  “When and why..”, Mhaskar 2017
+Limitations of 
+Machine Learning 
+on world problems
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de la palabra]
+
+Add more layers
+
+[Descripción de la imagen: Los admores Los admores Los admores Los admores Los admores Los admores Los admores Los admores Los admores | Transcripción de la imagen: Add more layers
+
+%
+
+Gentlemen, our learner
+overgeneralizes because the
+C-Dimension of our Kernel
+s too high, Get some
+experts and minimze the
+structural risk in a new one.
+Rework our loss function,
+ake the next kernel stable,
+nbiased and consider using
+t margin
+
+“1
+
+NEURAL
+NETWORKS
+
+S TACK
+MORE
+LAYERS
+
+.%íí»
+
+LAYERS]]
+
+Overcoming the FDLP
+Limitations of ANN on real world problems
+ Hochreiter 1991, Hinton 2006
+}
+Fundamental Deep Learning 
+Problem
+❖Unsupervised Pretraining
+❖Greedy Layer-Wise
+❖LSTM cells
+❖Hessian Free optimization, Dropout, Xavier initialization
+❖Random weight guessing
+  Schmidhuber 2014
+
+[Descripción de la imagen: un fondo blanco con un texto rojo y negro que lee,'''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Neural Networks - Convergence Paradox
+“The unreasonable effectiveness of deep learning in artificial intelligence”, Sejinowski 2019
+
+[Descripción de la imagen: redes neuronales - parox de convergencia]
+
+Representational Learning
+Handcrafted Feature
+
+[Descripción de la imagen: un diagrama del cerebro humano y sus funciones | Transcripción de la imagen: Representational Learning
+
+Feature | : ¿
+Preprocessing E : PUIASSIICALION Y Handcrafted Feature
+-XtrTacton
+
+| Signal e ¡
+Acquisition
+
+Application
+System
+
+Loop |
+
+| Feedback
+
+Volitional
+Control]]
+
+Representational Learning
+In ML there are three approaches to force a machine to 
+“learn”
+Supervised Learning
+Unsupervised Learning
+Reinforcement Learning
+Semi
+Supervised 
+Learning
+Self
+Supervised 
+Learning
+
+[Descripción de la imagen: un diagrama del proceso de aprendizaje de una persona | Transcripción de la imagen: Representational Learning
+
+In ML there are three approaches to force a machine to
+
+“learn”
+© Supervised Learning Semi
+t Supervised
+Learning
+© Unsupervised Learning
+Selft
+
+Supervised
+Reintorcement Learning —
+
+Learning
+
+Output
+(object identity)
+
+3rd hidden laver
+
+(object parts)
+
+2nd hidden laver
+
+(corners and
+
+contours)
+
+l st hidden layer
+
+(edges)
+
+Visible laver
+( input pixels)]]
+
+Massive Datasets
+MNIST handwritten digit dataset
+Iris 10^2 , ImageNet 5000 images per category, WMT 10^9 total size,
+ImageNet Classification Error
+
+[Descripción de la imagen: fecha del instrumento msn | Transcripción de la imagen: Massive Datasets
+
+Qs Y MY S QNE
+
+ImageNet Classification Error (Top 5)
+Ka
+
+2016
+
+2015 (ResNet)
+
+2014 (VGG)
+
+)
+
+13 (ZF
+
+2011 (XRCE) 2012 (AlexNet)
+
+(GoogLeNe
+
+2014
+(GoogleNet)
+
+ImageNet Classification Error
+
+MNIST handwritten digit dataset
+
+Iris 1012 , ImageNet 5000 images per category, WMT 109 total size,]]
+
+Mammalian Brain Like?
+[18] MultiGPU ConvNet Krizhevsky 2012
+[9] GoogLeNet Szegedy 2014
+
+[Descripción de la imagen: el diagrama muestra la relación entre los dos tipos principales del modelo | Transcripción de la imagen: Connections per neuron
+
+Mammalian Brain Like?
+
+1985 2000 2015
+
+[9] GoogLeNet Szegedy 2014
+
+Number of neurons (logarit hnic scale)
+
+1950 19855 2000 2015 2056
+
+[18] MultiGPU ConvNet Krizhevsky 2012]]
+
+GPU
+CUDA
+OpenCL
+Shaders
+
+[Descripción de la imagen: cpu cpus y otros componentes | Transcripción de la imagen: — Quaramer sivinos
+
+CUDA aOpenCL
+
+Shaders
+
+Rotation
+
+axis .
+y Axis
+
+Rotation
+Plane
+
+(toward viewer]]
+
+GPUs
+Intel Movidius Neural Stick
+Google Coral Dev Board
+Nvidia Titan V
+Nvidia Jetson Tk1
+Nvidia Jetson Nano. RPi para GPU, Hardware Lottery [44]
+
+[Descripción de la imagen: cpu cpus y otros dispositivos electrónicos]
+
+Money is hardware
+
+[Descripción de la imagen: dinero es difícil en Internet | Transcripción de la imagen: Money 1s hardware
+
+ImageNet Training in 24 Minutes
+
+Yang You, Zhao Zhang, James Demmel, Kurt Keutzer, Cho-Jui Hsieh
+(Submitted on 14 Sep 2017)
+
+Finishing 90-epoch ImageNet-1k training with ResNet-50 on a NVIDIA M40 GPU takes 14 days.
+This training requires 10* 16 single precision operations in total. On the other hand, ihe world's
+current fastest supercomputer can finish 2 * 1017 single precision operations per second
+(Dongarra et al 2017). If we can make full use of the supercomputer for DNN training. we should
+be able to finish the 90-epoch ResNet-50 training in five seconds, However, the current bottieneck
+for fast DNN training is in the algorithm fevel. Specifically, the current batch size (e-g. 512) is too
+smaill to make efficient use of many processors
+
+For large-scale DNN training, we focus on using large-batch data-parallelism synchronous SGD
+without losing accuracy in the fixed epochs. The LARS algorithm (You, Gitman, Ginsburg, 2017)
+enables us to scale the batch size to extremely large case (e.g. 32K). Ve finish the 100-epoch
+ImageNet training with AlexNet in 24 minutes, which is the world record. Same as Facebook's
+result (Goyal et al 2017). we finish the 90-epoch ImageNet iraining with ResNet-50 in one hour.
+However, our hardware budget is only 1.2 million USD, which is 3.4 times lower than Facebook's
+41milion USD. — — —]]
+
+Software and Cloud Based Tools
+• Amazon: Machine Learning, DSSTNE, Orbeus
+• Facebook: TorchLibrary
+• Google: Cloud Machine Learning, TensorFlow
+• IBM: Watson Analytics, IBM SystemsML (AlchemyAPI)
+• Microsoft: Azure Machine Learning, Computational Network Toolkit (SwiftKey)
+• OpenAI
+• Theano
+• PyLearn2
+• Torch
+• DistBelief
+• Caffe
+• MXNet
+• Tensorflow
+• Keras
+https://spectrum.ieee.org/computing/software/now-you-too-can-buy-cloudbased-deep-learning
+
+[Descripción de la imagen: software software software software software software software software software software software software software software software software software software software]
+
+Keras and TensorFlow
+C/C++ 
+Numerical 
+Routines
+CUDA
+OpenMP
+Shaders
+GPU
+Python3
+NumPy
+TensorFlow
+Theano
+CNTK
+Keras
+Scikit
+CPU
+Google 
+Colab
+Python 
+Scripts
+Jupiter
+Notebooks
+R
+Scipy
+cython
+OpenCL
+OpenGL
+
+[Descripción de la imagen: un diagrama de una computadora con varios tipos diferentes | Transcripción de la imagen: Keras and lensorFlow
+
+=
+—
+EE
+=
+e
+e
+5
+ha]]
+
+Deep Learning Networks
+
+[Descripción de la imagen: redes de aprendizaje profundo redes de aprendizaje profundo redes de aprendizaje profundo redes de aprendizaje profundo redes de aprendizaje profundo redes de aprendizaje profundo redes de aprendizaje profundo]
+
+ConvNet - Convolutional Networks
+Representational Learning
+Fukushima 1980, Krizhevsky 2012
+• Pooling = downsampling
+• ReLU: Rectified Linear Neurons
+
+[Descripción de la imagen: redes de control de connet | Transcripción de la imagen: ConvNet - Convolutional Networks
+
+Convolution Pooling Convolution Pooling Fully Fully Output Predictions
++ ReLU + ReLU Connected Connected
+
+dog (0.01)
+cat (0.04)
+
+bird (0.02)
+o a
+
+s £ al C * Pooling = downsampling
+
+* ReLU: Rectified Linear Neurons
+
+Representational Learning
+
+>” An 71 44 Layer 1
+Ya. Al al E
+
+Fukushima 1980, Krizhevsky 2012]]
+
+RNN - Recurrent Neural Network
+“On the Computational Power of Neural Nets” Siegelmamn 1995, Chen 2016
+Time unfolding
+ht+1
+ht
+xt
+yt
+ht+1 = tanh(Wxhxt + Whhht)
+Whh
+Wxh
+yt+1 = g(ht)
+
+[Descripción de la imagen: un circuito con un circuito y un circuito con un circuito | Transcripción de la imagen: RNN - Recurrent Neural Network
+
+ht+1 — tanh(thx¡ + Whhht)
+
+h¡ E | ht+1 Y
+w
+Wes
+xl- -- yÍ x b ' ... "..
+Y+1 - 8 (ht) Time unfolding
+
+“On the Computational Power of Neural Nets” Siegelmamn 1995, Chen 2016]]
+
+LSTM - Long Short Term Memory
+Hochreiter & Schmidhuber 1997,   Chen 2016
+g = tanh(bg + xtUg + ht−1Vg)
+i = σ(bi + xtUi + ht−1Vi)
+f = σ(bf + xtUf + ht−1Vf)
+st = st−1 ∘f + g ∘i
+o = σ(bo + xtUo + ht−1Vo)
+ht = tanh(st) ∘o
+g ∘i
+
+[Descripción de la imagen: lsm - memoria a largo plazo lsm - memoria a largo plazo | Transcripción de la imagen: LS | M - Long Short |Term Memory
+
+= f= 0(D +xU +h, ,) : , :
+t1 o =|l0o(b + xU +h, ,V)
+input * forget
+Y gate y Y gate
+Xe | f
+g = tanh(b? + x U* + h, ¡V*) h,
+
+Hochreiter €z Schmidhuber 1997, Chen 2016]]
+
+DBN - Deep Belief Networks
+E = ∑
+i
+WijXY
+Hebian Energy Function
+Hopfield Neural Network
+Stacked Boltzmann Machine
+“Deep Belief Nets” Hinton 1995
+
+[Descripción de la imagen: dn - de - redes híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas híbridas | Transcripción de la imagen: DbN - Deep belief Nerworks
+
+N2>N3
+N1>N2
+
+N4>N1
+
+N1>N4
+
+N3>N1 N2>N4
+N3>N2 '//'
+N3>N4
+N4>N3
+
+Hoptield Neural Network
+
+basin of attraction
+
+E=> WiXY
+
+l
+
+Hebian Energy Function
+
+Stacked Boltzmann Machine
+
+“Deep Pelief Nets” Hinton 1995]]
+
+Autoencoders
+Sparse Autoencoder  
+(Kohonnen)
+Denoising Autoencoder
+Contracting Autoencoder
+Dimensionality Reduction
+PCA
+
+[Descripción de la imagen: hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper hiper]
+
+Variational Autoencoders Generators
+https://colab.research.google.com/drive/1Hobi6plfrrUQ9DCiFPZ6vaztOu5Q05ND
+
+[Descripción de la imagen: un fondo blanco con un texto rojo que lee, 'vaino autodes generador ']
+
+GAN - Generative Adversarial Networks
+Goodfellow 2014
+Playing a counterfeit game.
+min
+G max
+D V(D, G) = E[log D(x)] + E[log(1 −D(G(z))]
+G network is trained to increase the chance 
+of D assuming and output of G being valid.
+D network is trained to decrease the chance 
+of assuming G output to be valid.
+
+[Descripción de la imagen: gga - genieve aderale networks ga - genieveerale networks ga - genievevere networks ga - gen]
+
+GAN - Generative Adversarial Networks
+Mario Klingermann
+
+[Descripción de la imagen: un col de la cara de una mujer y un col de la cara de un hombre]
+
+GAN - Generative Adversarial Networks
+Ming-Yu Liu et al https://arxiv.org/pdf/1905.01723.pdf
+
+[Descripción de la imagen: ga - redes generativas de adversidades | Transcripción de la imagen: Ming-Yu Liu et al https: / / arxiv.org/ pdf/1905.01723.pdf]]
+
+Computer Art
+https://x.com/quasimondo/status/1706947023037927690?s=20
+
+[Descripción de la imagen: arte de la computadora arte de la computadora se llama gennew forma de arte | Transcripción de la imagen: Computer Art
+
+EZE COMPUTERWORLD
+
+Computer Art |
+
+; September 11, 1968
+
+s Called
+
+Genuine New Art Form
+
+Computer art, drawn by a plotter under the
+direction of a computer, has become some-
+thing of a fad this year, and at least one expert
+thinks such art represents a genuine new art
+
+The computer has definits potential as an art
+medium and should be thoroughly
+according to Dr. Thomas S. Fern, chairman of
+the Department of Art, University of Notre
+Dame. -
+
+https:/ /x.com / quasimondo / status / 1706947023037927690?s=20]]
+
+[Descripción de la imagen: una escena de una escena de la película ala y el rey | Transcripción de la imagen: a .
+a
+
+l - r —
+- E “
+| - -
+
+b
+
+"
+— U—..Mfw.
+aA
+
+e “-
+
+-
+
+_
+Ll'
+AE
+
+,
+
+)¿x)]
+
+Transformers
+Attention is all you need,  Vaswani 2017
+
+[Descripción de la imagen: un diagrama de una transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción transacción | Transcripción de la imagen: 1ranstormers
+
+TRANSFORMER
+
+s Nx'gñll
+
+/ ENCODER n DECODERNn Y
+ENCODER 3 DECODER 3
+ENCODER2 DECODER 2
+_ ENCODER 1 DECODER 1
+
+N ENCODER O | DECODER O
+
+N A
+
+INPUT Soy un estudiante — :
+Attention is all you need, Vaswani 2017]]
+
+Transformers
+Attention is all you need,  Vaswani 2017
+
+[Descripción de la imagen: transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador transformador | Transcripción de la imagen: 1ranstormers
+
+Q
+(b,7,d)
+
+Linear
+
+K
+(b,n,d)
+
+(b,n,d)
+X1| | | | | f "
+10 1 1 5 K l
+
+Attention is all you need, Vaswani 2017]]
+
+Diffusion Models
+"a bowl of soup that is a portal to another dimension as digital art"
+CLIP Contrastive Learning
+GLIDE Diffusion Model
+Transformer Model
+
+[Descripción de la imagen: difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión difusión]
+
+Diffusion Models
+High-Resolution Image Synthesis With Latent Diffusion Models, Rombach 2022
+
+[Descripción de la imagen: modelos de difusión alta - síntesis de resolución]
+
+Stable Diffusion
+
+[Descripción de la imagen: un diagrama de una gasolinera con una gasolinera y una gasolinera | Transcripción de la imagen: Stable Diffusion
+
+denoising step crossattention 1witch  skip connection concat]]
+
+Latent Stable Diffusion
+U-Net Network conditioned to a 
+Condition Embedding.  It reverses the 
+diffusion process.
+VAE Variational Autoencoder to 
+convert to and from the Latent Space.
+Condition Encoder CLIP Generate 
+Condition Embedding for the UNET
+
+[Descripción de la imagen: latente - fecha - fecha latente - fecha latente fecha latente fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha fecha | Transcripción de la imagen: Latent Stable Diffusion
+
+Latent Space
+
+to
+
+Diffusion process:
+
+Y
+Generate Ú
+
+Gaussian Noise —
+
+T la
+E “ É A
+
+Varational
+Autoencoder
+
+(VAE) Attention “ —
+Ir:
+UNet ¡
+
+! _ — Update
+
+| I imestep INput
+
+Get Noisy | ME ,
+
+Image at =.
+f. l _“
+
+Repeat N times
+
+Condition
+
+Segmentation
+
+r
+D
+'
+
+Condition
+
+Embedding
+
+| ¡Condition
+
+Encoder
+
+U-Net Network conditioned to a
+Condition Embedding. It reverses the
+diffusion process.
+
+VAE Variational Autoencoder to
+convert to and from the Latent Space.
+
+Condition Encoder CLIP Generate
+Condition Embedding for the UNET]]
+
+Residual Neural Networks and U-Nets
+U-Net: Convolutional Networks for Biomedical Image Segmentation, Ronneberger 2015
+
+[Descripción de la imagen: Redes neuronales residuales para la segmentación neuronal | Transcripción de la imagen: Timestep
+Embedding
+
+Residual Neural Networks and U-Nets
+
+—
+
+Activation Function
+
+C
+h,
+1a)
+=
+J
+u
+c
+o
++-
+e
+;
+<
+
+Activation Function
+
+570 x 570
+568 x 5658
+
+' 1283 128
+
+. -
+—
+
+Taa
+u
+
+Ju » Y
+-- de ?
+
+output
+segmentation
+
+map
+
+388 x IRB
+
+m CONV 3x3, ReLU
+= copy and crop
+$ max pool 2x2
+$ up-conv 2x2
+=» CONV 1x1
+
+U-Net: Convolutional Networks for Biomedical Image Segmentation, Ronneberger 2015]]
+
+Cross Attention
+U-Net: Convolutional Networks for Biomedical Image Segmentation, Ronneberger 2015
+
+[Descripción de la imagen: acción cruzada u - red celular para el segmento biológico | Transcripción de la imagen: Cross Attention
+
+Q
+(b,h*w,d)
+
+Reshape
+
+h_ (b,h*w,c)
+
+Y (b,h*w,)
+QK - (b,h*w,d)
+
+softmar ( — > v
+Vd
+
+V
+(b,n ,d)
+
+U-Net: Convolutional Networks ftor Biomedical Image Segmentation, Ronneberger 2015]]
+
+Conditional Encoder
+U-Net: Convolutional Networks for Biomedical Image Segmentation, Ronneberger 2015
+
+[Descripción de la imagen: un diagrama del sistema funcional funcional | Transcripción de la imagen: Conditional Encoder
+
+N
+Text Prompts — .
+v
+l a pug g— L ext — — N
+
+| añilinn Ti Ea n
+y Encoder ext Prompts ECO
+'º l a pug _0_l_0_ 0 | N
+= “ o oo
+
+Cross Entrepy
+Across Text Prompts
+
+N Images 2
+T, -r,¡,11— £l [ … . t Cross Entropy
+CLI P Probabiliti | Across Images
+Image i T, z._1n robabili esr— o | _
+, - % : ; , ,
+
+Encoder '
+
+'ll']:_¡'1¡_f'
+
+Backpropagation
+
+U-Net: Convolutional Networks for Biomedical Image Segmentation, Ronneberger 2015]]
+
+Reinforcement Learning
+Mnih 2015,Lavet 2018,Sutton 2018
+
+[Descripción de la imagen: un diagrama de una palabra o verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo verbo | Transcripción de la imagen: Reintorcement Learning
+
+reward observation action
+
+Figure 1.2: The RL problem.
+
+Mnih 2015,Lavet 2018,Sutton 2018]]
+
+Deep Reinforcement Learning
+Mnih 2015,Lavet 2018,Sutton 2018
+• Start at s:state, a:action
+• Q(s,a) based on greediest a
+• Iterate
+• Apply a
+• Get s’ 
+• Get r(s’)
+•   Q(s, a) = α[r + γ max
+a′￼Q(s′￼, a′￼) −Q(s, a)]
+Q: Deep Neural Network
+
+[Descripción de la imagen: Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo aprender Refuerzo profundo | Transcripción de la imagen: Deep Remtorcement Learning
+
+* Start at s:state, a:action
+* Q(s,a) based on greediest a »
+* lterate
+
+* Applya
+
+* Gets
+
+* Getr(s”)
+
+* 0(5,4) = alr +7 max 0(s', a) — 0(5, a)|
+
+Q: Deep Neural Network
+
+Mnih 2015,Lavet 2018,Sutton 2018]]
+
+Are our jobs been displaced by robotics?
+Noam Chomsky https://www.youtube.com/watch?v=ojzNM6tRiyc
+Income
+Dextrous
+Cognitive
+Plenty of work to be done
+Let the robot do the more 
+dangerous and boring stuff
+
+[Descripción de la imagen: son puestos de trabajo dependientes hous]
+
+Privacidad
+HIPAA
+GDPR
+Deep Fake
+Neuroderechos
+
+[Descripción de la imagen: pidad hia cpr profundo lago nerosh]
+
+What are current real risks of DL?
+Biased
+Privacy
+Accountability
+https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+DeepFake
+Cambridge
+Analytical
+Digital
+Boundary
+Lost
+Agency
+Minority
+Report
+Hacking 
+Autonomous
+Car
+Is there anything 
+unbiased?
+
+[Descripción de la imagen: un triángulo rojo con una flecha negra]
+
+Unsettled discussion
+
+[Descripción de la imagen: un post de twitter con el capt que dice, 'decision abierta' | Transcripción de la imagen: Unsettled discussion
+
+©
+
+Rodney Brooks Grodneyabrooks - 12h
+
+Anthony Jules and | explain ORobustAl's new software/hardware combo
+Grace and Carter, and how they change the way people can work in
+warehouses. Workers can control and interact with the robots whenever
+they choose to do so. Collaborative Productivity.
+
+youtube.com
+Robust.Al on Collaborative Productivity
+At Robust.Al, we make robots work for people.More
+
+| info: https://www.robust.ai/
+
+O 3 T1 16 O 58 ur
+
+Yann LeCun Evylecun - 2h
+And your perception system doesn't use deep learning, right?
+
+O 2 ti O s T
+
+Rodney Brooks Grodneyabrooks - 16m
+
+Are you trolling me Sylecun?? As always, | send you respect and sincere
+thanks for all that you have done. To answer: one component of our
+perception system is multiple model DL inference at frame rates.]]
+
+El pato de Vaucanson
+ 
+Grace Lindsay[47], Guest 2021 [52]
+Planes don’t flap their 
+wings
+Principle of multiple  realizability:
+“different substrates can nonetheless perform the same input-output
+mapping but they are not the same”.
+
+[Descripción de la imagen: una estatua de oro con un fondo negro y un fondo rojo]
+
+Functionalism vs Mechanism
+if the clockwork clock behaves 
+like the digital clock, then the 
+clockwork clock is a digital clock
+
+[Descripción de la imagen: funchm vs mecanismo el reloj mueve el reloj, luego el reloj se mueve]
+
+The ability to fit
+ 
+Collective Wisdom: 
+principles and mechanism [52]
+
+[Descripción de la imagen: la capacidad de los cubos]
+
+The ability to summarize
+Intelligence
+Abstract
+Compress
+A Theory of Abstraction in RL, David Abel
+Del Rigor de la Ciencia, Borges
+Complexity of
+The World
+
+[Descripción de la imagen: la capacidad sumarie]
+
+Connectionism vs Symbolism
+Looking back, looking ahead: Symbolism vs connections AI, Goel 2021
+System I
+System II
+Socially Situated
+Intelligence
+Embodiment
+
+[Descripción de la imagen: un diagrama de un sistema con las palabras]
+
+The Age of Data Manifolds
+
+[Descripción de la imagen: la antigüedad de los datos | Transcripción de la imagen: 1he Age of Data Manifolds
+
+a — Databases
+(Cloud / On
+Premises)
+
+Cloud Sources
+
+O a
+AAzure ”
+
+Audio/
+Video/Doacu ments
+
+WebApps,
+
+Sensors, loT ) k Social Feeds
+
+—
+
+y ¿]]
+
+https://www.robust.ai/
+
+[Descripción de la imagen: un reproductor de vídeo está reproduciendo un vídeo en un estante | Transcripción de la imagen: And now we re building a new iconic class -- Carter.
+
+D »i =) 040/4:04 0 E S 4 O
+
+Robust.Al on Collaborative Productivity
+
+https:/ /www.robust.ai /]]
+
+IEEE Spectrum DARPA Challenge
+
+[Descripción de la imagen: una motocicleta que está sentada en el suelo]
+
+Is DL++ good or bad?
+Good
+Bad
+make the world more open and connected
+Don’t be evil
+Internet will provide to everyone, access 
+To humanity’s knowledge
+
+[Descripción de la imagen: es d + g + od?????????????????????]
+
+Is DL++ good or bad?
+Technology
+Is
+Inherently
+Good
+Allows more DOF
+
+[Descripción de la imagen: es d + g + od? identidad de la tecnología buena allover hacer]
+
+Emerging Technologies
+❖GANs
+❖Explanaible AI
+❖Edge AI
+❖AI PaaS
+❖Adaptive ML
+❖Emotion AI
+
+[Descripción de la imagen: energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía energía | Transcripción de la imagen: *
+
+Ó.Q
+
+9
+Ó.Ó
+
+GANs
+Explanaible Al
+Edge Al
+
+Al Paas
+Adaptive ML
+
+Emotion Al
+
+Emerging l echnologies
+
+Gartner Hype Cycle for
+Emerging Technologies, 2019
+
+Expectations
+
+Biochips
+AlPass *
+
+Edge Analytics,
+Autonomcus Oriving Leve!5 * . y
+Low-Esrth-Orbit Satellite Systams..
+
+Fdge Al.. — Graph Analytics
+Explainable Al —
+Personification — _
+Knowiedge Graphs - -;_-7 — Next-Generation Memory
+
+Synthetic Data —— 3D Sensing Cameras
+
+Light Cargo Delivery Drones —
+
+Iransfer Leaming — _
+
+Flying Autonomous Vehicles — —
+Augmented Intelligence
+
+Nanoscale 3D Printing
+
+— Emection Al
+
+—
+
+Autoncmous Driving Level 4
+
+Decentrelized Autonomous — —
+
+Organization —DigitalOps
+Generalive Adversarial Adaptive ML
+Networks — —
+Decentrelized Web — —
+AR Cloud-—
+
+— Immeresive Workspacee
+
+Biotech - Cultured —
+or Artificial Tissue
+
+Peak of
+Innovation Inflated Trough of Slope of Plateau of
+Trigger Expectations Disillusionment Enlightenment Productivity
+
+Time
+
+— less than ? years $ ? to5 years S 5to10 yaars C) more than 10 years — q bsalste befors plateaa As of August 2018
+
+Pleteau will be resched:]]
+
+Emerging  
+Technologies
+❖Autonomic Systems
+❖Generative Design AI
+❖Causal IA
+❖Metaverse
+❖Web3/Decentralized Identity
+❖Data Observability
+
+[Descripción de la imagen: un gráfico con las palabras hyper technologies y el texto hyper technologies | Transcripción de la imagen: »,
+Q.Ó
+
+*,
+Q.Ó
+
+e,
+.
+
+e,
+De
+
+»,
+0.0
+
+O,
+Q.Ó
+
+Emerging
+1echnologies
+
+Autonomic Systems
+Generative Design Al
+
+Causal IA
+
+Metaverse
+
+Web3 / Decentralized Identity
+Data Observability
+
+Hype Cycle for Emerging Tech, 2022
+
+Expectations
+
+Soures: Sartner
+6 2027 Cartner, Inc. andjor its atilates All rights reserved, Cartner and Hype Cycls ere registered trademarks of Cartner, Inc. andits affiliates n +he L.S, 1893703
+
+Foundation Models
+Computational S:orage .
+Superapps —
+Industry Cioud Platforms —
+
+-Decentralizec Identity
+— NFT
+—Cloud Data Ecosystems
+
+Internal Talent Markstplaces —
+
+Digira Humans
+
+Dynamic Risk
+
+Governance
+Cbservability-Driven
+
+Development -
+
+Data Observability Clouc Sustainab liy
+
+Platrform Engineering -
+Causal Al …|X Metaverse
+Open Teleme:ry — |
+Minimum Viab e
+Architecture “
+Digital "wir of
+a Customer
+
+—Augmented FinOps
+Mach ne _earning
+Coce Generation
+
+—Cenerative Design Al
+
+Cybersecurity Autonomic Systems
+
+Mesh Innovation
+
+Architecture Tf¡gger
+
+Peak of
+Inflated
+Expectations
+
+Plateau of
+Productivity
+
+Troughof
+Disillusionment
+
+Slope of
+Enlightenment
+
+Time
+
+Plateau will be reached:
+
+() less tnan 2 years O 2tu5 years $ 51010 years Á More than 10 years 0) Obsolete before plateau As of August 2022
+
+gartner.com
+
+Gartner]]
+
+Applied AI
+Liveness Detection
+DS
+Retail 
+OCR de los Telegrama Electorales 
+Estado de la fruta
+Seguros de Exportaciones
+Customer Satisfaction
+NLP
+
+[Descripción de la imagen: Aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a la aplicación a]
+
+Connectionism vs Symbolism
+
+[Descripción de la imagen: el individuo frente al colectivo | Transcripción de la imagen: The Individual versus the Collective
+
+* And then came LLMs...
+
+* Suddenly those large, distributed collections of data and functions and
+gradients seemed to be acting human-like and have a “mind”—the phrase
+“Al” was retrieved —and the focus again was on an intelligent agent, for no
+particularly good reason
+
+E ACTIO "M
+$$$$$$
+
+CONFERE N|
+A!l, Science and Society]]
+
+Fallacies of Data Science
+❖Biased Cherry Picking: Selecting results that fit your claim.
+❖Data Dredging: Results of correlation was due to chance.
+❖Survivorship bias: Drawing conclusions from an incomplete set of data that survived.
+❖Perverse incentive: the incentive produces the opposite result (wrong metrics, KPIs).
+❖False causality: two things occur together, they are related (falsely)
+❖Garbage in, garbage out.
+❖Sampling bias (cross validation, bootstrapping)
+❖Gamblers fallacy: believing that when something happen the chance of happening again is 
+reduced.
+❖Unbalanced Datasets: medical images
+❖Simpsons paradox: a trend is present in a group but disappears when data is combined.
+❖Clever Hans Effect: https://arxiv.org/pdf/2006.10609.pdf
+�㍤ ➡�㍤➡�㍤
+
+[Descripción de la imagen: una casa con una bandera y un hombre de pie delante de ella]
+
+Fallacies of Data Science
+
+[Descripción de la imagen: un pedazo de papel con las palabras "falso" y "falso" | Transcripción de la imagen: Fallacies of Data Science
+
+It also muddies the origin of certain data sets. This can mean that
+
+researchers miss important features that skew the training of their models.
+
+In yet other cases, som to be picking up on the text font
+ertain hospitals used to label the scans. As a result, fonts from hospitals
+
+with more serious caseloads became predictors of covid risk.]]
+
+Machine Learning
+https://twitter.com/vardi/status/1566070939586027520?s=20&t=MHwWjzTDfRfm2d4emgIImg
+
+[Descripción de la imagen: machine learning lo que es machine learning | Transcripción de la imagen: Machine Learning
+
+Math break!
+1 .
+What number will be next?
+
+- (CJ e , O
+N Y
+
+-
+—
+
+v 1
+!g¡; 217341, because if
+f(x) = 18111/2-x"4-90555-x"3+6
+33885/2-x12-452773*+x+217331,
+
+https://twitter.com/vardi/status/1566070939586027520?s=20 £t=MHwW1Z TDfRfm2d4emglImg]]
+
+Artificial Intelligence
+https://twitter.com/ExcelHumor/status/1589098712177217538?s=20&t=w97fO1jJWtTOw8R5kLwJmQ
+
+[Descripción de la imagen: un personaje de dibujos animados con una camisa blanca y corbata naranja | Transcripción de la imagen: Arutificial Intelligence
+
+https://twitter.com/ExcelHumor/status/1589098712177217538?s=20<t=w97fO01)IWtTOw8RS5kLwJmQ]]
+
+The age of Data Manifolds
+Manifold Learning: Model Reduction in Engineering, Ryckelynck
+
+[Descripción de la imagen: el diagrama del flujo de datos en el flujo de datos | Transcripción de la imagen: 1he age of Data Manitolds
+
+a — Databases
+(Cloud / Ón
+" Premises)
+
+Cloud Sources
+
+O a
+
+Audio/
+Video/Documents
+14 Azure
+— — » E
+N AA , [
+WebApps, '
+
+Sensors, loT Social Feeds
+. K
+a ¿ I f
+
+y E
+%'%3 )
+
+y ¿
+
+Manifold Learning: Model Reduction in Engineering, Ryckelynck]]
+
+2050
+2025
+2075
+
+[Descripción de la imagen: un col de diferentes imágenes y texto]
+
+En resumen
+ 
+Sutton
+http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+Rodney Brooks
+https://rodneybrooks.com/a-better-lesson/
+
+[Descripción de la imagen: un fondo blanco con un texto rojo que lee f equinn | Transcripción de la imagen: En resumen
+
+Sutton
+
+http:/ /www.incompleteideas.net/ Incldeas / BitterLesson.html
+
+Rodney Brooks
+
+https: / / rodnevbrooks.com / a-better-lesson]]
+
+The bitter lesson
+
+[Descripción de la imagen: la amarga lección | Transcripción de la imagen: 1he bitter lesson
+
+U
+
+.+1 1
+.]]
+
+En resumen
+ 
+IEEE Spectrum March 2020
+
+[Descripción de la imagen: la portada del libro enum]
+
+En resumen
+❖Focalizado para representar datos que intrínsecamente están estructurados jerárquicamente.
+❖Las capas intermedias ofrecen contenido que tienen valor semántico (es como una salida intermedia parcial de la 
+red).  E.g.: la primer capa me separa arriba y abajo y la segunda derecha e izquierda.
+❖El "deep" implica que la cantidad de saltos en la dependencia causal es mayor.
+❖Estos layers adicionales permiten que los features los genere y encuentre la misma red (en vez de ponérselos a 
+mano).  La red hace la reducción de la dimensionalidad.
+❖Algunos ajustes a los algoritmos de arquitectura y aprendizaje que aprovechan estas arquitecturas y el 
+paralelismo.
+❖No estaríamos hablando de esto sin GPUs y sin Moore´s Law.
+❖Extraordinarios resultados en tres áreas particulares: image processing, speech recognition y natural language 
+processing.
+❖Excelentes para implementaciones Cheery-Picking en escenarios donde no existe actualmente Digitalización.
+❖El componente estocástico que tienen las redes hace muy complejo su parametrización.
+❖Limitaciones cuando la cantidad de muestras es baja[26].
+❖Inteligible Property[25]
+❖Hyperhype:  Through of Disillusionment (Gartner Hype Cycle)
+
+[Descripción de la imagen: prosewnn]
+
+どうもありがとう 
+Gracias !
+Centro Inteligencia Computacional  
+ITBA
+
+[Descripción de la imagen: un personaje de dibujos animados con una cara verde y un pelo negro]
+
+Follow up
+❖Tutorials at Conferences (e.g. ICML, NeurIPS)
+❖Two Minute Papers - Youtube Channel
+❖The Batch - Andrew NG newsletter
+❖Yannic Kilcher - Youtube Channel
+❖Arxiv Insight - Youtube Channel
+❖http://monostuff.logdown.com/posts/7835544-aprendizaje-modo-mquina
+
+[Descripción de la imagen: @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ | Transcripción de la imagen: Follow up
+
+* Tutorials at Conferences (e.g. ICML, NeurlPS)
+* Two Minute Papers - Youtube Channel
+
+* The Batch - Andrew NG newsletter
+
+* Yannic Kilcher - Youtube Channel
+
+“ Arxiv Ins1ght Youtube Channel]]
+
+[1] Alberts, Bruce, et al. Essential cell biology. Garland Science, 2013. 
+[2] Guyton and Hall, “Textbook of Medical Physiology”, 12th edition  
+[3] Izhikevich, “Dynamical systems in neuroscience··, 1st edition  
+[4] Abott & Dayan, Theoretical Neuroscience, 2012 
+[5] Ramele, R., A. J. Villar, and J. M. Santos. "A Brain Computer Interface Classification Method Based on Signal Plots." 4th Winter Conference 
+on Brain Computer Interfaces, Yongpyong, Korea, February 2015. IEEE Signal and Processing, 2016.  
+[6] Chia-Chu et al, “Slow periodic activity in the longitudinal hippocampal slice can self‐propagate non‐synaptically by a mechanism consistent 
+with ephaptic coupling”, The Physiological Society Journal, 2018 
+[7] Belousov et al, “Neuronal gap junctions: making and breaking connections during development and injury”, Trends in Neuroscience, 2012 
+[8] Khraiche, “Ultrasound induced increase in excitability of single neurons”, 2008 
+[9] Szegedy, “Going deeper with convolutions”, 2014 https://arxiv.org/abs/1409.4842 
+[10] Montufar, “On the Number of Linear Regions of Deep Neural Networks”, 2014 
+[11] Graves, “Neural Turing Machines”, 2014 
+[12] Schmidhuber, “Deep learning in neural networks: An overview”, 2015 
+[13] Goodfellow, “Deep Learning”, 2017 
+[14] Sutton, Richard S., and Andrew G. Barto. Reinforcement learning: An introduction. MIT press, 2018.
+
+[Descripción de la imagen: la bibliografía de la universidad de tecnología e ingeniería]
+
+[15] http://www.dfki.de/~klusch/DeepLearning-seminar-ss17/Topics/topics.html 
+[16] Domingos, A Few Useful Things to Know about Machine Learning, 2015 
+[17] http://deeplearning.net/ 
+[18] Krizhevsky, “ImageNet Classification with Deep Convolutional Neural Networks”, 2012 
+[19] https://www.acm.org/media-center/2019/march/turing-award-2018 
+[20] https://www.jeremyjordan.me/autoencoders/ 
+[21] MNIST Dataset http://yann.lecun.com/exdb/mnist/ 
+[22] IRIS Dataset https://archive.ics.uci.edu/ml/datasets/Iris 
+[23] AUTO MPG Dataset https://archive.ics.uci.edu/ml/datasets/Auto+MPG 
+[24] Kaggle Datasets 
+[25] M Bragg, “The Challenge of Crafting Intelligible Intelligence”, ACM Symposium on User Interface Software and Technology, 2018.  
+[26] F. Lotte et al, “A review of classification algorithms for EEG-based brain-computer interfaces: A 10 year update”, Journal of Neural 
+Engineering 15 (2018), no. 3, 031005.  
+[27] https://medium.freecodecamp.org/how-to-build-your-first-neural-network-to-predict-house-prices-with-keras-f8db83049159 
+[28] Goodfellow, “Generative Adversarial Nets”, 2014 
+[29] Coral Google Dev Board https://coral.withgoogle.com/products/dev-board/ 
+[30] Chollet, Deep Learning with Python, 2018
+
+[Descripción de la imagen: un papel blanco con un título blanco y negro]
+
+[31] Jetson TK1 Dev https://www.nvidia.com/object/jetson-tk1-embedded-dev-kit.html 
+[32] Langr, GANs in action, Manning 2019 
+[33] Reitz, The Hitchhiker’s Guide to Python!, 2016 
+[34] A Few Useful Things to Know about Machine Learning, Pedro Domingos, ACM 2010 
+[35] Data Mining and Analysis, Mohammed J.Zaki, 2010 
+[36] An Introduction to Multivariate Analysis, Everit ,2012 
+[37] https://adventuresinmachinelearning.com/keras-lstm-tutorial/ 
+[38] https://www.thestar.com/news/world/2015/04/17/how-a-toronto-professors-research-revolutionized-artificial-intelligence.html 
+[39] Ben Simon, The dark side of the alpha rhythm: FMRI evidence for induced alpha modulation during complete darkness, 2012 
+[40] https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b 
+[41] https://www.tensorflow.org/swift 
+[42] Gaussia Process https://yugeten.github.io/posts/2019/09/GP/ 
+[43] Hopfield J.J, Computing with neural circuits: a model, 1986 
+[40] Anthony Zador, A critique of pure learning and what artificial neural networks can learn from animal brains, Nature Communications 2019 
+[41] https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them/ 
+[42] Chollet, On the Measure of Intelligence
+
+[Descripción de la imagen: un papel blanco con un título blanco y negro]
+
+[43] Cybenko, G. (1989) Universal Approximation Theorem 
+[44] Sara Hooker, The Hardware Lottery, 2020, https://arxiv.org/abs/2009.06489 
+[45] https://blog.acolyer.org/2016/04/18/deep-learning-in-neural-networks-an-overview 
+[46] Thompson, R. F. & Kim, J. J. Memory systems in the brain and localization of a memory. Proc. Natl. Acad. Sci. U. S. A. 93, 13438–44 
+(1996). 
+[47] Grace Lindsay, https://aeon.co/ideas/planes-dont-flap-their-wings-does-ai-work-like-a-brain 
+[48] Jordan Guerguiev, Towards deep learning with segregated dendrites, 2017 
+[49] Melanie Mitchell, Why AI is harder than we think?, 2021, https://arxiv.org/abs/2104.12871 
+[50] Hinton, “A Fast Learning Algorithm for Deep Belief Nets”, Neural Computation, 2006 
+[51] https://medium.com/@shridhar743/a-beginners-guide-to-deep-learning-5ee814cf7706 
+[52] Guest, “On logical inference over brains, behaviour, and artificial neural networks”, 2021 
+[53] http://myselph.de/hodgkinHuxley.html 
+[54] https://twitter.com/slava__bobrov/status/1454338973606850563?s=20 
+[55] https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction 
+[56] https://www.assemblyai.com/blog/how-dall-e-2-actually-works/ 
+[57] AlphaZero for Matriz Multiplication https://www.nature.com/articles/s41586-022-05172-4 
+https://www.youtube.com/watch?v=AQrMWH8aC0Q&t=4s 
+[58] Berghel, Hal. "Malice domestic: The Cambridge analytica dystopia." Computer 51.05 (2018): 84-89. 
+[59] Sejinowski, The unreasonable effectiveness of deep learning in artificial intelligence (2019) 
+[60] https://slate.com/technology/2014/05/phineas-gage-neuroscience-case-true-story-of-famous-frontal-lobe-patient-is-better-than-textbook-
+accounts.html
+
+[Descripción de la imagen: un documento con el título y título]
+

@@ -1,0 +1,385 @@
+Mezcla de variables aleatorias
+Experimento
+Un empleado va al trabajo en subte el 70% de las veces y en 
+colectivo el 30% restante. El tiempo que tarda cuando va en 
+subte es una variable aleatoria normal con media 30 min. y 
+dispersión 5 min, mientras que el tiempo que tarda cuando va en 
+colectivo es una variable aleatoria normal con media 40 min. y 
+dispersión 8 min.
+Se definen dos variables aleatorias continuas:
+: tiempo de viaje (en min) .
+: medio de transporte; = 0 si es subte, =1 sino.
+
+[Descripción de la imagen: mez de variables exemento]
+
+Mezcla de variables aleatorias
+𝑝𝑀(𝑚)={
+0.7
+𝑚=0
+0.3
+𝑚=1
+𝑓𝑇∨𝑀(𝑡∨𝑚)={
+𝑒
+−
+(𝑡−30 )2
+50
+√2 𝜋5
+𝑚=0
+¿ 𝑒
+−
+(𝑡−40)
+2
+128
+√2 𝜋8
+𝑚=1
+𝑓𝑇, 𝑀(𝑡,𝑚)=𝑓𝑇∨𝑀(𝑡∨𝑚)𝑝𝑀(𝑚)={
+0.7 𝑒
+−
+(𝑡−30 )2
+50
+√2 𝜋5
+𝑚=0
+¿0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+𝑚=1
+
+[Descripción de la imagen: mezla variables calibos | Transcripción de la imagen: Mezcla de variables aleatorias
+
+pM(m)_ 03 m
+
+t-307
+
+=1
+
+e 5
+275
+1t-40
+
+128
+e
+
+fTVM(tV mi= |
+
+fT,M(t:m):fTVM(tvm)pM( =
+
+2
+
+¿T
+278]]
+
+Mezcla de variables aleatorias
+𝑓𝑇, 𝑀(𝑡,𝑚)=𝑓𝑇∨𝑀(𝑡∨𝑚)𝑝𝑀(𝑚)={
+0.7 𝑒
+−
+(𝑡−30 )2
+50
+√2 𝜋5
+𝑚=0
+¿0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+𝑚=1
+𝑓𝑇(𝑡)=∑
+𝑚= 0
+1
+𝑓𝑇, 𝑀(𝑡,𝑚)=0.7 𝑒
+−
+(𝑡−30)
+2
+50
+√2 𝜋5 +0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+Densidad marginal
+
+[Descripción de la imagen: variables mezla factore de est | Transcripción de la imagen: Mezcla de variables aleatorias
+
+fT,M(t,m)=f:rvm(th)l?M( =
+
+Densidad marginal
+
+t-307 t -407
+128
+
+— e_
+
+— Á — e — —
+fT(t)_m220fT,M(t,m)_o.7 NC +0.3 a]]
+
+Mezcla de variables aleatorias
+𝑓𝑇(𝑡)=∑
+𝑚= 0
+1
+𝑓𝑇, 𝑀(𝑡,𝑚)=0.7 𝑒
+−
+(𝑡−30)
+2
+50
+√2 𝜋5 +0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+
+[Descripción de la imagen: mezla variables = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = | Transcripción de la imagen: Mezcla de variables aleatorias
+
+t-307 t -407
+128
+
+_ 1 e 5 e *
+fT(t)_2 fT,M(t,m)_0'7 I2m5 s v278
+
+funcion densidad de probabilidad del tiempo de viaje]]
+
+Mezcla de variables aleatorias
+𝑓𝑇(𝑡)=∑
+𝑚= 0
+1
+𝑓𝑇, 𝑀(𝑡,𝑚)=0.7 𝑒
+−
+(𝑡−30)
+2
+50
+√2 𝜋5 +0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+𝜇𝑇=∫
+−∞
++∞
+𝑡𝑓𝑇(𝑡)𝑑𝑡=0.7∫
+−∞
++ ∞
+𝑡𝑒
+−
+( 𝑡−30)
+2
+50
+√2𝜋5 𝑑𝑡+0.3∫
+−∞
++ ∞
+𝑡𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8 𝑑𝑡
+𝜇𝑇=0.7∙30+0.3∙40=33
+𝐸[𝑇
+2]=∫
+−∞
++∞
+𝑡
+2 𝑓𝑇(𝑡)𝑑𝑡=0.7 ∙(5
+2+30
+2)+0.3∙(8
+2+4 0
+2)=1146.7
+𝜎𝑇
+2 =1146.7 −332=57.7
+𝜎𝑇
+❑≈7.6
+
+[Descripción de la imagen: variables mecleia para las siguientes | Transcripción de la imagen: _
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+- >
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >
+
+Mezcla de variables aleatorias
+
+t-307 — [t 40
+
+128
+e
+
+e 50
+————+0.3 —
+V275 v278
+
+[t-30” t —-40*
+
++00 + 00 _ 50 + 00 _ 128
+— [ tf.Itldt=0.7 [ +5 dt+0.3 f + ——dt
+!H'í£ fT() í) 5 í3 [í;8
+
+V27
+
+17-=0.7-30+0.3-40=33
+
+ET =f Y f It)dt=0.7:157+30?|+0.3-18?+40?=1146.7
+
+07=1146.7 - 33 =57.7
+
+07 =7.6]]
+
+Mezcla de variables aleatorias
+𝑓𝑇, 𝑀(𝑡,𝑚)=𝑓𝑇∨𝑀(𝑡∨𝑚)𝑝𝑀(𝑚)={
+0.7 𝑒
+−
+(𝑡−30 )2
+50
+√2 𝜋5
+𝑚=0
+¿0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8
+𝑚=1
+𝑝𝑀(𝑚)=∫
+−∞
++∞
+𝑓𝑇, 𝑀(𝑡,𝑚) 𝑑𝑡={
+∫
+−∞
++∞
+0.7 𝑒
+−
+(𝑡−30)2
+50
+√2𝜋5
+𝑑𝑡=0.7
+𝑚=0
+¿∫
+−∞
++∞
+0.3 𝑒
+−
+(𝑡−40 )
+2
+128
+√2 𝜋8 𝑑𝑡=0.3
+𝑚=1
+Función marginal de masa de probabilidad
+
+[Descripción de la imagen: variables mecleia | Transcripción de la imagen: Mezcla de variables aleatorias
+
+0
+
++00 e_ 5
+0.7 dt=0.7 1m=0
+_[o V275
+
+— 00
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Mezcla de variables aleatorias
+En general
+Una variable aleatoria continua  cuya densidad depende del valor 
+de una variable aleatoria discreta .
+𝑓𝑋∨𝑌(𝑥∨𝑦)
+𝑓𝑋,𝑌(𝑥, 𝑦)=𝑓𝑋∨𝑌(𝑥∨𝑦)𝑝𝑌(𝑦)
+𝑓𝑋(𝑥)= ∑
+𝑥∈R𝑌
+𝑓𝑋,𝑌(𝑥, 𝑦)= ∑
+𝑥∈R𝑌
+𝑓𝑋∨𝑌(𝑥∨𝑦)𝑝𝑌(𝑦)
+𝐸[𝑔( 𝑋)]= ∑
+𝑥∈R𝑌
+𝐸(𝑔( 𝑋)|𝑌=𝑦)𝑝𝑌(𝑦)= ∑
+𝑥∈R𝑌[∫
+−∞
++∞
+𝑔(𝑥)𝑓𝑋∨𝑌(𝑥∨𝑦)𝑑𝑥]𝑝𝑌( 𝑦)
+
+[Descripción de la imagen: variables mezla generale variablee | Transcripción de la imagen: Mezcla de variables aleatorias
+
+En general
+
+Una variable aleatoria continua cuya densidad depende del valor
+de una variable aleatoria discreta .
+
+fy XV y
+
+fX,Y(X,.V):]CXVY(XV.V)F)Y(.V)
+
+(X): Z fX,Y(X!y): Z fxw(xvy)py(y)
+
+XERy X ERy
+
+X=2 EglX)Y=ypyy [fg Xf xy XVy dx|py| y|
+
+XER,
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+- >
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+

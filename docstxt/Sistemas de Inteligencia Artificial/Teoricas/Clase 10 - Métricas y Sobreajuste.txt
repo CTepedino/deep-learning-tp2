@@ -1,0 +1,411 @@
+MÉTRICAS DE 
+EVALUACIÓN
+Matriz de confusión, métricas y sobreajuste. 
+Sistemas de Inteligencia Artiﬁcial - 2023
+
+[Descripción de la imagen: el logotipo de los metros de valor]
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MATRIZ DE 
+CONFUSIÓN
+03. MÉTRICAS
+04.
+2
+SOBREAJUSTE
+
+[Descripción de la imagen: tabula de contos | Transcripción de la imagen: E >
+
+Ol. INTRODUCCIÓN 03. MÉTRICAS
+
+MATRIZ DE
+02. CONFUSIÓN O4- SOBREAJUSTE]]
+
+01
+INTRODUCCIÓN
+3
+
+[Descripción de la imagen: un cuadrado amarillo con la palabra intro en español | Transcripción de la imagen: INTRODUCCIÓN]]
+
+INTRODUCCIÓN
+4
+Tenemos el error que comete el método, pero : 
+●
+¿Cuántos ejemplos del conjunto de entrenamiento clasiﬁca correctamente?
+●
+¿Cuántos ejemplos que NO pertenecen al conjunto de entrenamiento clasiﬁca 
+correctamente?
+●
+¿Qué signiﬁca “clasiﬁcar correctamente”?
+
+[Descripción de la imagen: intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro]
+
+OBJETIVO
+5
+●
+Evaluar 
+un 
+método 
+de 
+clasiﬁcación 
+con 
+métricas 
+estándar.
+●
+Comparar varios métodos de clasiﬁcación aplicados a un mismo conjunto de 
+datos.
+●
+Comparar un mismo método de clasiﬁcación aplicado a diferentes conjuntos de 
+datos.
+●
+Evaluar el efecto que produce el cambio de parámetros en un método.
+
+[Descripción de la imagen: - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - pantallas - - - - - - - - -]
+
+EVALUACIÓN
+●
+Dividir el conjunto de datos disponible en
+○
+Conjunto de Entrenamiento (training set)
+○
+Conjunto de Prueba (testing set)
+Luego, entrenar y evaluar 
+ 
+1.
+Entrenar la red con el conjunto de entrenamiento.
+2.
+Evaluar el método con el conjunto de entrenamiento.
+3.
+Evaluar el método con el conjunto de prueba
+6
+                 TRAIN
+TEST
+DATASET
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos de los diferentes tipos del texto]
+
+EVALUACIÓN
+1.
+¿Cómo sabemos si esta división es apropiada?
+2.
+¿Cómo evaluamos cuantitativamente la capacidad de clasiﬁcación?
+3.
+¿Es verdad que si E (w ) ≡ 0, entonces es un clasiﬁcador perfecto?
+7
+
+[Descripción de la imagen: evacion 1 comoos est entrer]
+
+METODOLOGÍAS
+●
+Matriz de Confusión
+●
+Métricas para la evaluación del rendimiento
+●
+Diseño del experimento para la evaluación
+8
+
+[Descripción de la imagen: metoloas matio cono de marketing]
+
+02
+MATRIZ DE 
+CONFUSIÓN
+9
+
+[Descripción de la imagen: un cuadrado amarillo con la palabra '2' en negro]
+
+MATRIZ DE CONFUSIÓN
+Tabla que permite evaluar el desempeño de un algoritmo de clasiﬁcación.
+●
+Columna → cantidad de instancias en la clase dada por el método. (Predicción)
+●
+Fila → cantidad de instancias en la clase verdadera. (Real/Actual)
+10
+Prediction
+Positive
+Negative
+Actual
+Positive
+TP
+FN
+Negative
+FP
+TN
+
+[Descripción de la imagen: matiz con contoo]
+
+EJEMPLO
+Consideremos un modelo de clasiﬁcación que fue entrenado para distinguir entre: 
+perros y  gatos.
+Se toma una muestra de 27 animales: 
+●
+15 perros
+●
+12 gatos  
+Después de clasiﬁcar se obtiene la siguiente matriz de confusión:
+11
+Perro
+Gato
+Perro
+11
+4
+Gato
+2
+10
+
+[Descripción de la imagen: emo emoco emoco emoco emoco emoco emoco emoco emoco emoco emoco]
+
+MATRIZ DE CONFUSIÓN MULTICLASE
+12
+Supongamos 
+que tenemos 
+5 clases
+
+[Descripción de la imagen: matiz consun multi-multi-multi-multi-multi-multi-multi-multi-multi-multi-multi-multi-multi-multi | Transcripción de la imagen: MATRIZ DE CONFUSIÓN MULTICLASE
+
+18
+1 o] o] o]
+16
+Supongamos "
+que tenemos
+2 o] 4 1 o] [o]
+5 clases l
+= 10
+é 3 ) 1 0 2
+8
+6
+4 o] o] o] 4 1
+4
+5 0 0 0 | I
+o]
+1 Z 3 4 5
+
+Predicción]]
+
+03
+MÉTRICAS
+13
+
+[Descripción de la imagen: un cuadrado amarillo con la palabra métricas escritas en negro | Transcripción de la imagen: 05,
+MEÉTRICAS]]
+
+MÉTRICAS
+14
+Criterios para evaluar la clasiﬁcación 
+Métricas estándar: 
+●
+Accuracy
+●
+Precision
+●
+Recall
+●
+F1-Score
+●
+Tasa de TP 
+●
+Tasa de FP
+
+[Descripción de la imagen: metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas metas]
+
+MÉTRICAS
+15
+ACCURACY
+PRECISION
+RECALL
+F1-SCORE
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos de metal | Transcripción de la imagen: MÉTRICAS
+
+ACCURACY
+
+TP+TN
+TP+TN+FN+FP
+
+RECALL
+
+TP
+TP+FN
+
+PRECISION
+
+TP
+TP+FP
+
+F1-SCORE
+
+2 * precision + recall
+
+precision + recall
+
+15]]
+
+TASAS
+16
+Tasa de Verdaderos Positivos
+Tasa de Falsos Positivos
+
+[Descripción de la imagen: tas vedroeos tas false pos tf tf tf tf tf tf tf tf tf]
+
+PROCEDIMIENTO
+17
+Teniendo los dos conjuntos de datos, el de entrenamiento y el de prueba:
+Dada una cantidad de épocas: epoch
+1.
+Calcular los w utilizando el conjunto de entrenamiento.
+2.
+Clasiﬁcar los datos del conjunto de prueba utilizando los w encontrados en el paso 1
+3.
+Calcular el valor de las métricas para los ejemplos del conjunto de entrenamiento y 
+luego para los del conjunto de prueba.
+Realizar el mismo experimento para epoch = 1, 10, 20, . . . , 300
+
+[Descripción de la imagen: un fondo blanco con las palabras poema]
+
+04
+SOBREAJUSTE
+Overﬁtting
+18
+
+[Descripción de la imagen: un cuadrado amarillo con las palabras «4» y «4» | Transcripción de la imagen: 04
+SOBREAJUSTE
+
+Overfitting]]
+
+DATASET
+19
+
+[Descripción de la imagen: datos datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales datos visuales]
+
+UNDERFITTING
+20
+
+[Descripción de la imagen: un gráfico con la línea de lo mejor y lo peor | Transcripción de la imagen: UNDEREITITING]]
+
+OVERFITTING
+21
+
+[Descripción de la imagen: un gráfico con las palabras sobre él y un gráfico de línea con las palabras sobre él]
+
+OVERFITTING / SOBREAJUSTE
+22
+En cualquier método de aprendizaje: 
+Es el efecto de sobreentrenar un algoritmo de aprendizaje con datos para los que se conoce 
+el resultado deseado.
+El método clasiﬁca con gran precisión los datos del conjunto de entrenamiento
+Pero… no puede generalizar
+
+[Descripción de la imagen: un fondo blanco con las palabras sobre él]
+
+EJEMPLO ACCURACY 
+23
+
+[Descripción de la imagen: Precisión emo Precisión emo | Transcripción de la imagen: EJEMPLO ACCURACY
+
+model accuracy
+
+— train
+— test
+0.9
+
+accuracy
+d
+o
+
+o
+=
+
+0.6
+
+o] 50 100 150 200
+epoch
+
+300
+
+23]]
+
+EJEMPLO SOBREAJUSTE
+24
+
+[Descripción de la imagen: emf emf emf emf emf emf emf emf emf emf emf emf emf emf | Transcripción de la imagen: EJEMPLO SOBREAJUSITE]]
+
+EJEMPLO SOBREAJUSTE
+25
+
+[Descripción de la imagen: un gráfico de línea con el número de empleados]
+
+CAUSAS
+26
+El sobreajuste puede deberse a diversos factores: 
+●
+Conjunto de datos de entrenamiento no balanceado.
+●
+Pocos registros en el conjunto de entrenamiento.
+●
+Conjunto de datos de entrenamiento con mucho ruido.
+
+[Descripción de la imagen: un fondo blanco con las palabras caas]
+
+¿SE PUEDE EVITAR?
+27
+Utilizamos métodos de experimentación 
+Validación Cruzada (K-Fold Cross Validation) 
+¿Cómo sabemos si la partición train/test es apropiada?
+Nota: NO es la única técnica
+
+[Descripción de la imagen: un fondo blanco con las palabras "sedeta" y "seo"]
+
+K-FOLD CROSS-VALIDATION
+28
+1.
+Se divide aleatoriamente el dataset en k partes “iguales”.
+2.
+Tomar k −1 partes y usarlas para entrenar (training_set) y el remanente como testing_set
+TAIN
+TEST
+TEST
+TEST
+TEST
+TEST
+it 0
+it 1
+it 2
+it 3
+it k-1
+
+[Descripción de la imagen: un gráfico con el número de ensayos]
+
+K-FOLD CROSS-VALIDATION
+29
+for j=1…T  (generalmente T=k)
+1.
+Entrenamiento con el j-ésimo conjunto
+2.
+Evaluación del método usando como testing set la parte separada para tal efecto.
+3.
+Se calcula alguna medida de la precisión del método. 
+Finalmente se obtienen parámetros de desempeño del promedio de las T iteraciones.
+
+[Descripción de la imagen: un fondo blanco con las palabras k - validación folcos]
+
+RESUMEN
+30
+Error alto 
+en training set
+Error alto 
+en testing set
+UNDERFITTING
+OVERFITTING
+BUEN MODELO
+SI
+SI
+NO
+NO
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos del mismo tipo del mismo tipo | Transcripción de la imagen: RESUMEN
+
+BUEN MODELO
+
+UNDERFITTING
+
+30]]
+

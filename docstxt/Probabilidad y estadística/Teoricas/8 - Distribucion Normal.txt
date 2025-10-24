@@ -1,0 +1,733 @@
+Johann Carl Friedrich Gauss (1777-1855), en 
+el billete de 10 marcos (Alemania)
+La famosa campana de Gauss  (gráfico de 
+función densidad de probabilidad) del anverso 
+del billete para el caso  en que    = 3 y  igual a 
+ 1.
+Una variable aleatoria continua tiene 
+distribución normal de parámetros  y  ( > 0) 
+con x real (el recorrido es  ) si la función 
+densidad de probabilidad es:
+
+[Descripción de la imagen: una foto de un hombre con cara y una foto de una mujer con cara]
+
+𝑓(𝑥)>0 ∀𝑥∈ℛ
+𝑓(𝑥)|𝑥|→∞
+→
+0
+∫
+−∞
+∞
+𝑓(𝑥) 𝑑𝑥=1
+𝑓′ ( 𝜇)=0 𝑦𝑓′ ′ ( 𝜇)<0 𝑓( 𝑥)≤𝑓( 𝜇) ∀𝑥∈ℛ
+¿
+𝑓(𝜇+𝑑)=𝑓( 𝜇−𝑑)∀𝑑∫
+−∞
+𝜇
+𝑓(𝑥)𝑑𝑥=¿∫
+𝜇
+∞
+𝑓(𝑥)𝑑𝑥=¿0.5¿¿
+
+[Descripción de la imagen: un diagrama de un triángulo con un triángulo rojo y un triángulo azul con un triángulo azul | Transcripción de la imagen: | r=
+- -":_
+= | " E
+I -
+[ [
+[ --'- + T f e
+TE E E— I--u-.--1'.1"i-l
+o =_. | 4 E ñ
+Ea Ki uT
+f 0.15
+— 00
+o
+— - . - 4
+
+f(u+d)=f(u—d)vdíf(x)dx=¿? fx dx=¿0.5ii
+
+h]]
+
+𝑓(𝑥)>0 ∀𝑥∈ℛ
+𝑓(𝑥)|𝑥|→∞
+→
+0
+∫
+−∞
+∞
+𝑓(𝑥) 𝑑𝑥=1
+𝑓(𝜇+𝑑)=𝑓( 𝜇−𝑑)∀𝑑∫
+−∞
+0
+𝑓(𝑥)𝑑𝑥=¿∫
+−∞
+0
+𝑓(𝑥)𝑑𝑥=¿0.5¿¿
+𝑓′ ( 𝜇)=0 𝑦𝑓′ ′ ( 𝜇)<0 𝑓( 𝑥)≤𝑓( 𝜇) ∀𝑥∈ℛ
+𝐸( 𝑋)=𝜇
+𝑓′ ′ ( 𝜇+𝜎)= 𝑓′′ (𝜇−𝜎)=0
+𝑉( 𝑋)=𝜎2𝜎( 𝑋)=𝜎
+𝛾( 𝑋)=0
+𝜅(𝑋)=3
+El parámetro  es 
+media, mediana y 
+modo.
+El parámetro  es el desvío 
+estándar de X y fija una 
+escala horizontal. Su 
+recíproca fija la escala 
+vertical.
+La función densidad de 
+probabilidad es simétrica 
+respecto de  entonces es 
+nulo el coeficiente de simetría
+El coeficiente de kurtosis 3 de la normal 
+se usa para comparar la forma de otras 
+densidades simétricas respecto de la 
+normal.
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: — - ¡ ' — " -
+"";. Ae fX>0Ovxe 2 — flxix|-.mo _…[of(><)d><—1
+
+f[u+d)=f(u—d)vdí f(x)dx=¿f fixldx=¿0.5¿L
+
+Fu)= 0yf( )<0f( ) fuyxe Z
+
+f lu+o)=f u-o)=0
+
+__/ - K El parámetro es el desvío
+
+estándar de X y fija una
+
+El parámetro N es ,
+E : : — — escala horizontal. Su
+E(X) u media, mediana y V(X)_Ó Ú(X)_Ó recíproca fija la escala
+modo. vertica
+
+La función densidad de El coeficiente de &urtos¡s 3 de la normal
+y(X): 0 probabilidad es simétrica K (X) =! se usa para comparar la forma de otras
+respecto de ft entonces es densidades simétricas respecto de la
+
+nulo el coeficiente de simetría normal.]]
+
+¿
+1
+0.683    (68.3%)
+  
+2
+0.955    (95.5 %)
+3
+0.997    (99.7 %)
+
+[Descripción de la imagen: un gráfico con un gráfico y un gráfico con un gráfico | Transcripción de la imagen: E
+F0.683 (68.3%)
+PA0.955 (95.5%)
+EN0.997 (99.7 %)]]
+
+Como el parámetro   es la media, mediana y modo
+al aumentar se traslada “la campana” .
+Este parámetro es de posición.
+Al variar el parámetro  se modifican las 
+escalas 
+horizontal y vertical. El intervalo de 
+valores de interés
+de la variable tiene ancho 6
+
+[Descripción de la imagen: un gráfico con una línea de simetría y una línea de simetría]
+
+La distribución normal es muy importante ya que permite 
+modelar muchos fenómenos naturales, sociales, fisiológicos y 
+psicológicos. En estos fenómenos hay muchas variables 
+intervinientes y ocurre que las observaciones pueden asumirse 
+que son suma de no demasiadas causas independientes (ya lo 
+veremos al presentar el teorema Central del Límite).
+Longitud del fémur izquierdo en mm en 1200 
+personas (The Goldman Osteometric  Data Set)
+Algunos ejemplos de variables asociadas a fenómenos naturales y 
+sociales pueden ser estos:
+a) Características de personas tales como el peso, estatura y 
+otras de un mismo grupo.
+b) Efecto de medicamentos en las personas
+c) El consumo de ciertos productos por un grupo de personas
+d) El cociente intelectual (IQ)
+e) El ruido de señales en telecomunicaciones
+f) Errores 
+cometidos 
+en 
+la 
+medición 
+de 
+magnitudes 
+experimentales.
+g) Otras muchas …
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea]
+
+Encontraremos esta distribución normal en muchas áreas de la estadística. La 
+distribución de probabilidades de la media de una muestra aleatoria veremos que es 
+normal si proviene de medir una variable normal y aproximadamente normal, 
+cuando la distribución de la población de la cual se extrae la muestra no es normal. 
+La distribución normal es la más extendida en estadística y muchas pruebas 
+estadísticas están basadas en la normalidad de la variable aleatoria bajo estudio. 
+En el cálculo de probabilidades, la distribución normal aparece como el límite de varias distribuciones de 
+probabilidad continuas y discretas. 
+Función de probabilidad de una variable binomial       n = 
+50, p =0.45 y función de densidad de probabilidad normal 
+de igual media y desvío estándar. La máxima diferencia de 
+ordenadas es menor que 1e-3.
+Función de densidad de probabilidad de una variable Gama (con r = 
+100, L = 0.4)  y función de densidad de probabilidad normal de igual 
+media y desvío estándar. La máxima diferencia  de ordenadas es 
+menor que 1e-2.
+
+[Descripción de la imagen: un diagrama de los cuatroiers y los cuatroiers de un cuatroier]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃(𝑎< 𝑋<𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+𝐹𝑋( 𝑥)=
+1
+𝜎√2 𝜋∫
+−∞
+𝑥
+𝑒¿¿ ¿
+La evaluación de esta integral presenta dos problemas. Sin duda el integrando es una función 
+continua por lo tanto existe su primitiva. La cuestión es que no existe una primitiva que se 
+pueda evaluar en forma exacta en un número finito de operaciones. La segunda cuestión es que 
+depende de dos parámetros y no podría reseñarse en una tabla la solución numérica de la 
+integral … 
+Hay una transformación del integrando (un cambio de variable) que permite expresar el 
+cálculo de esta función de distribución en términos de otra libre de parámetros: y esa es la que 
+se resuelve numéricamente …
+𝑍= 𝑋−𝜇
+𝜎
+Estandarización de la variable X:  la 
+variable Z se denomina estandarizada , es 
+adimensional, tiene valor esperado 0 y 
+varianza 1.
+Estandarización de la variable X:  la variable Z  mide desvíos 
+de X usando el desvío estándar como unidad de medida. Por 
+ejemplo Z = 1.5 es un desvío a la derecha de  de magnitud 
+1.5 .
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃(𝑎< 𝑋<𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+𝐹𝑋( 𝑥)=
+1
+𝜎√2 𝜋∫
+−∞
+𝑥
+𝑒¿¿ ¿
+𝑍= 𝑋−𝜇
+𝜎
+Introduciendo el cambio de variable: 
+Estandarización de la variable X:  la variable Z sugiere el 
+cambio de variable a realizar en el integrando (su cuadrado 
+está en el exponente)…
+𝑧=𝑡−𝜇
+𝜎
+𝐹𝑋(𝑥)= 1
+√2 𝜋∫
+−∞
+(𝑥−𝜇¿/𝜎
+𝑒
+−𝑧
+2/2𝑑𝑧=Φ(
+𝑥−𝜇
+𝜎)
+donde: 
+Φ (𝑧)= 1
+√2 𝜋∫
+−∞
+𝑧
+𝑒
+−𝑢
+2/2𝑑𝑢
+La función  es la función de distribución de Z y comparándola con la función F resulta ser la de una variable aleatoria normal de media  
+= 0  y   = 1. La variable aleatoria Z se denomina normal estándar y su función de distribución   está libre de parámetros.
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de | Transcripción de la imagen: valores en un intervalo?
+
+X - X —
+FX (X) 1 e¿,¿, ¿ Z- - E
+
+X-uilo
+
+f e d7=0
+
+F(& :
+
+donde:
+
+N ¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome
+
+P(a<X<b)=Í fexIdXx=F,|b)-F ylal
+
+Estandarización de la variable X: la variable Z sugiere el
+cambio de variable a realizar en el integrando (su cuadrado
+está en el exponente)...
+
+1 ( -
+(D(Z):x/2=f[ e du
+
+e — ó 4 = , . E - 5
+La función * es la función de distribución de Z y comparándola con la función Fresulta ser la de una variable aleatoria normal de media );fl
+
+= 1. La variable aleatoria Z se denomina normal estándar y su función de distribución * está libre de parámetros.]]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃(𝑎< 𝑋<𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+𝐹𝑋( 𝑥)=
+1
+𝜎√2 𝜋∫
+−∞
+𝑥
+𝑒¿¿ ¿
+𝑍= 𝑋−𝜇
+𝜎
+Estandarización de la variable X:  la variable Z se denomina 
+variable aleatoria normal estándar.
+𝐹𝑋(𝑥)= 1
+√2 𝜋∫
+−∞
+(𝑥−𝜇¿/𝜎
+𝑒
+−𝑧
+2/2𝑑𝑧=Φ(
+𝑥−𝜇
+𝜎)
+donde: 
+Φ (𝑧)= 1
+√2 𝜋∫
+−∞
+𝑧
+𝑒
+−𝑢
+2/2𝑑𝑢
+
+[Descripción de la imagen: un gráfico es un gráfico que no es un gráfico | Transcripción de la imagen: ¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome
+valores en un intervalo?
+
+P(a<X<b)=Í fexIdXx=F,|b)-F ylal
+
+- Estandarización de la variable X: la variable Z se denomina
+e ere De Z= variable aleatoria normal estándar.
+
+Funcion de distribucion normal estandar
+
+0.8
+
+06
+
+0.4
+
+8 9
+|
+—
+[
+—
+N
+valores de la funcion de distribucion normal estandar
+
+1)
+desvios tipificados]]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃(𝑎< 𝑋<𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+Supongamos que X tiene distribución normal de media 12 y desvío estándar 2. ¿ cuál es la probabilidad de
+que X sea menor que  15?
+Evaluando la función de distribución de 
+X usando una aplicación de celular, 
+Octave, la planilla de cálculo y R.
+
+[Descripción de la imagen: una captura de pantalla de un ordenador con un gráfico y un gráfico | Transcripción de la imagen: valores en un intervalo?
+
+que X sea menor que 15?
+
+K) Octave — d x
+File Edit Debug Window Help MNews
+º_ I_:
+"= Current Directory: »|
+>> normedf(15,12,2) í¡
+ans = 1L*.93319 |
+>> | |
+
+4 »|
+Editor __ Command Window |
+
+Evaluando la función de distribución de
+X usando una aplicación de celular,
+Octave, la planilla de cálculo y R.
+
+Moments
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome
+
+P(a<X<b)=Í fexIdXx=F,|b)-F ylal
+
+Supongamos que X tiene distribución normal de media 12 y desvío estándar 2. ¿ cuál es la probabilidad de
+
+J =DISTR.NORM.N(15;172;2; VERDADERO)
+
+Á B lE D E F
+
+1
+2 | 0,933 1'9-|
+
+3
+
+4
+
+O Rstudio
+
+File Edit “Code View Plots Session Build Debug Profile Tooks Help
+o - º$ a'* Go to filesfunction 7 Addmns -
+Source
+
+Console — Terminal Jobs
+
+> pnormt15,12,7)
+[1] 0.9331928
+
+>]]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃(𝑎< 𝑋<𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+Supongamos que X tiene distribución normal de media 12 y desvío estándar 2. ¿ cuál es la probabilidad de
+que X tome valores entre 10 y 15?
+Usando la distribución de la variable normal estándar 
+hay que estandarizar los valores de X:
+𝑃(𝑎<𝑋<𝑏)=𝑃(
+𝑎−𝜇
+𝜎
+<𝑍<
+𝑏−𝜇
+𝜎)=Φ(
+𝑏−𝜇
+𝜎)−Φ(
+𝑎−𝜇
+𝜎)
+)
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de una línea | Transcripción de la imagen: ¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome
+
+valores en un intervalo?
+
+P(a<X<b)=Í fexIdXx=F,|b)-F ylal
+
+Supongamos que X tiene distribución normal de media 12 y desvío estándar 2. ¿ cuál es la probabilidad de
+
+que X tome valores entre 10 y 15?
+Usando la distribución de la variable normal estándar
+
+- D »
+hay que estandarizar los valores de X:
+
+(:,. Octave
+
+File Edit Debug Window Help News |
+- UN …mt[iedmrrlh|' —|
+- D- a b'M -Ó a
+Ú
+
+Command Window
+
+» 0 0 0
+
+>> |
+d | La
+Editor _ Command Window
+Á Octave — [ x
+
+Fe Edit Debug Window Help News
+
+) e h.' IÍ] Current Cirectory: »
+Command Window m
+>> normcdfi(l.5)-normcdf(—1) -
+
+ans = 160.,77454
+
+>>]]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃( 𝑎< 𝑋<𝑏)=𝑃(
+𝑎−𝜇
+𝜎
+< 𝑍< 𝑏−𝜇
+𝜎)=Φ(
+𝑏−𝜇
+𝜎)−Φ(
+𝑎−𝜇
+𝜎)
+Existen tablas que reseñan valores de la función  en un arreglo de puntos 
+equiespaciados como muestra la figura adjunta. Es una tabla de doble 
+entrada. Por la primera columna se ingresa la parte entera y el primer 
+decimal y el segundo decimal se ubica por la primera fila. En la 
+intersección de fila y columna se obtiene el valor de .
+Φ (0.64 )≈0.7389
+
+[Descripción de la imagen: un diagrama de un gráfico con un gráfico y un gráfico con un gráfico | Transcripción de la imagen: ¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome
+
+valores en un intervalo? FUNCIÓN mmm&_uc¡úm NORMAL N(0,1)
+0.1)
+
+Pla<X<b =P| —“<Z< — =0| — -6| — = é
+15100
+D,5557
+05948
+131
+05700
+0,7054
+12189
+D, 7708
+0,7595
+08168
+1.808
+08779
+08925
+02059
+05251
+05387
+05595
+09591
+D5671
+09738
+05793
+05838
+03875
+15508
+05527
+05545
+05959
+059693
+059774
+0856
+059887
+050016
+0.5
+099958
+059971
+059060
+a TA
+099991
+0505004
+09000
+059957
+
+Existen tablas que reseñan valores de la función $ en un arreglo de puntos
+equiespaciados como muestra la figura adjunta. Es una tabla de doble
+entrada. Por la primera columna se ingresa la parte entera y el primer
+decimal y el segundo decimal se ubica por la primera fila. En la
+intersección de fila y columna se obtiene el valor de *.
+
+68 [oo 0m ea D|0.64|=0.7389
+
+00
+n
+d
+as
+n
+5
+p
+D7
+pi
+pl
+1.5
+11
+12
+13
+14
+15
+15
+17
+18
+153
+0
+PA
+4
+3
+la
+25
+25
+27
+PA
+253
+E
+H
+Ea
+EZ
+EE
+35
+16
+E
+E
+EL
+
+Mótac En al meror de la tabla só de la probabtdad de que la vañablo aladora Z con distribución MID.L1), e ast
+¡pos de bajo de| valor]]
+
+¿Cómo se calcula la probabilidad de que una variable aleatoria normal tome 
+valores en un intervalo?
+𝑃( 𝑎< 𝑋<𝑏)=𝑃(
+𝑎−𝜇
+𝜎
+< 𝑍< 𝑏−𝜇
+𝜎)=Φ(
+𝑏−𝜇
+𝜎)−Φ(
+𝑎−𝜇
+𝜎)
+Con los valores de la función  para 
+argumentos positivos alcanza.  
+¿
+¿
+Esa tabla solo reseña valores de la función  para un conjunto de valores positivos. Esto es por una propiedad de esta 
+función. Como la función densidad de la variable aleatoria normal estándar es par entonces el área a la izquierda de 
+–z  (z > 0) y el área a la derecha de z  son iguales. Esto es:
+Un resultado muy usado: 
+𝑃(−𝑎< 𝑍<𝑎)=Φ (𝑎)−Φ (−𝑎)=2Φ (𝑎)−1
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea de simetría]
+
+Para poder usar la función  hay que estandarizar los valores de la variable V.  
+Veamos un ejemplo:
+¿
+𝑝𝑟=𝑃(−𝑟<𝑍<𝑟)=Φ (𝑟)−Φ (−𝑟)=2Φ (𝑟)−1
+1
+0.8413
+0.6826
+2
+0.9773
+0.9546
+3
+0.9987
+0.9974
+El volumen V que una máquina de llenado automático dispensa en latas de una bebida gaseosa tiene distribución 
+normal de media 348 ml y desvío estándar 2.8 ml. Si se desechan todas las latas que tienen menos de 340 ml ó más 
+de 350 ml de líquido, ¿cuál es la proporción p de latas desechadas?.
+¿
+𝑝=Φ(
+340−348
+2.8
+)+1−Φ(
+350−348
+2.8
+)≈Φ (−2.88)+1−Φ(0.71)
+    (24%)
+
+[Descripción de la imagen: un gráfico se dibuja en forma de un gráfico]
+
+Hay muchas situaciones en las que se conoce una probabilidad acumulada de un valor x  de una 
+variable aleatoria normal X., esto es se conoce un valor de su función de distribución y se desea 
+conocer cual es ese valor de x . Como la función de distribución normal es continua y estrictamente 
+monótona entonces tiene función inversa y ese problema tiene solución única.
+𝐹𝑋(𝑥𝛼)=𝛼
+  se denomina el fractil  de X.
+𝐹𝑋(𝑥𝛼)=Φ(
+𝑥𝛼−𝜇
+𝜎
+)=𝛼
+  se denomina el fractil  de Z.
+𝑆𝑖Φ (𝑧𝛼)=𝛼
+Entonces se tiene:
+ 
+  se puede consultar en la misma tabla de la función de distribución normal estándar 
+(tal vez se deba interpolar) o bien con un programa o aplicación conveniente. Por 
+ejemplo:    
+ tiene una propiedad vinculada con la simetría ya comentada de la 
+función densidad normal estándar:
+𝑧𝛼=−𝑧1−𝛼
+𝑧0.95≈1.6449
+𝑧0. 05≈−1.6449
+
+[Descripción de la imagen: un diagrama del cuatroier y sus propiedades]
+
+El volumen V  que una máquina de llenado automático deposita en latas de una bebida gaseosa tiene 
+distribución normal de media 348 ml y desvío estándar 2.8 ml. 
+a) Se desean rotular todas las latas con un volumen v de manera tal que el 90 % de todas las latas tengan 
+como mínimo ese volumen. ¿Cuál es el valor de v?
+b) La media de la operación de llenado  puede ajustarse con facilidad, pero la desviación estándar sigue 
+siendo de 2.8 ml. ¿Qué valor debe darse a la media para que el 95% de todas las latas contengan más de 345 
+ml.?
+𝑃(𝑉>3 45)=0.95→1−Φ(
+345−𝜇
+2.8 )=0.95
+entonces se tiene:
+𝑣−348
+2.8
+=𝑧0.1=−1.282
+𝜇=349.6 𝑚𝑙
+𝑃(𝑉>𝑣)=0.9→1−Φ(
+𝑣−348
+2.8 )=0.9
+a) 
+𝑣=344. 4𝑚𝑙
+b) 
+345−𝜇
+2.8
+=𝑧0. 05=−1.645
+https://bookdown.org/aquintela/EBE/ejemplos-de-la-distribucion-normal.html  (2/9/2020)
+
+[Descripción de la imagen: un diagrama de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+La distribución normal es muy importante ya que permite modelar muchos fenómenos naturales, sociales, 
+fisiológicos y psicológicos. En muchas oportunidades se invoca la suposición de que un conjunto de datos 
+proviene de haber medido una variable aleatoria normal. Veamos un gráfico (qqplot) que en una primera vista 
+pueda dar plausibilidad a esa afirmación.
+distribución normal 
+estándar que se usa para 
+comparar
+ de los datos: lugar relativo de 
+un dato vs el dato en orden 
+ascendiente. Dado un dato éste 
+tiene un lugar relativo y le 
+corresponde un fractil de la 
+distribución con la que se 
+compara.
+de la normal en este caso. Si están los puntos 
+alineados entonces es indicio de normalidad en este 
+caso.
+
+[Descripción de la imagen: la disple disple disple disple disple disple disple disple di]
+
+La distribución normal es muy importante ya que permite modelar muchos fenómenos naturales, sociales, 
+fisiológicos y psicológicos. En muchas oportunidades se invoca la suposición de que un conjunto de datos 
+proviene de haber medido una variable aleatoria normal. Veamos un gráfico (qqplot) que en una primera vista 
+pueda dar plausibilidad a esa afirmación.
+ (se puede presuponer distribución normal).
+ (NO se puede presuponer distribución normal).
+
+[Descripción de la imagen: La disponibilidad disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible disponible]
+
+La distribución normal es muy importante ya que permite modelar muchos fenómenos naturales, sociales, 
+fisiológicos y psicológicos. 
+103 mujeres. Histograma de 8 clases, la función densidad de probabilidad 
+normal (para la misma media y desvío que los datos) en rojo y la curva de 
+densidad
+(kernel density plot) en azul (ajuste del histograma).
+https://www.kaggle.com/rashmiek99/head-size-vs-brain-
+weight
+
+[Descripción de la imagen: la gama e e - mailo e - mailo e mailo e mailo e mailo e mailo e]
+

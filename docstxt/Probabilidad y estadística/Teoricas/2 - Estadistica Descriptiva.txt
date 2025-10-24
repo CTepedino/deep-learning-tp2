@@ -1,0 +1,1147 @@
+Estadística Descriptiva
+Población
+Muestra
+Esperamos 
+que 
+sea 
+representativa. Para ello, 
+se toma al azar de entre 
+toda la población.
+{𝑥𝑖}𝑖=1
+𝑛
+
+[Descripción de la imagen: un diagrama de la tierra con los nombres de los planetas]
+
+Se pesan 200 monedas…
+¿Tomadas al azar?
+{𝑥𝑖}𝑖=1
+200
+Monedas de
+€ 1
+Muestra
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desriva est est estrva estrva estrva estrva est | Transcripción de la imagen: Estadística Descriptiva
+
+p 00000oDUOOA
+
+Se pesan 200 monedas...
+¿Tomadas al azar?
+
+Xili-a
+
+Muestra
+
+Monedas de
+€l
+
+-
+— >
+— -
+= -]]
+
+Dos gráficos para dar un primer vistazo de 
+los datos …
+Muestra vs. Caso 
+o Scatterplot.
+Constante 
+vs. 
+Muestra.
+Estadística Descriptiva
+
+[Descripción de la imagen: estistica deriva dosos paras paras do ests | Transcripción de la imagen: Estadística Descriptiva
+
+Dos graf¡cos para dar un primer vistazo de
+
+Ios
+
+7.5
+
+745 F
+
+d—atos
+
+O
+
+©
+
+en %
+C%©% © (%OOQ©
+
+&
+
+0 o 00*
+
+O
+
+O
+
+f¡ .'
+¡9
+©
+
+Muestra vs. Caso
+o Scatterplot.
+
+Constante
+Muestra.]]
+
+Parámetros  de tendencia central  o posició
+Media muestral o promedio de los 
+datos: 
+informa 
+sobre 
+el 
+comportamiento central, si todos 
+los datos fuesen igual a la media 
+entonces se conserva la suma. Si 
+eso no se cumple entonces habrá 
+datos mayores que la media y 
+otros menores que ella.
+Mediana: en un ordenamiento de 
+menor a mayor es el término 
+central, a diferencia de la media 
+no es sensible a los valores 
+alejados de la media.
+Cuartiles primero y tercero: en un 
+ordenamiento de menor a mayor 
+son mediana de la primera mitad 
+y de las segunda mitad de los 
+datos. 
+𝑥= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑥𝑖
+𝑚
+𝑞1 ,𝑞3
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+𝑥= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑥𝑖
+𝑚
+𝑞1 ,𝑞3
+7.52
+04
+7.518
+0
+7.5445
+7.497
+0
+Estadística Descriptiva
+Parámetros  de tendencia central  o posició
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+ametros de tendencia central o posic
+
+7.52
+04]]
+
+Rango 
+muestral: 
+la 
+distancia 
+entre el mínimo y el máximo de 
+los datos muestrales (longitud del 
+intervalo al que pertenece el 
+100% de los datos)
+Parámetros  de  variabilidad 
+Rango intercuartil: la distancia 
+entre los cuartiles primero y 
+tercero de los datos muestrales 
+(longitud del intervalo al que 
+pertenece el 50% central de los 
+datos)
+Desvío 
+estándar 
+muestral: 
+medida típica de variación de 
+estos datos, es nula si y sólo si 
+todos los datos son iguales y es 
+tanto 
+mayor 
+cuanto 
+más 
+dispersos están los datos. 
+𝐼𝑄𝑅=𝑞3−𝑞1
+𝑅=M Á X−M Í N
+𝑠=√
+1
+𝑛−1∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+2
+Estadística Descriptiva
+
+[Descripción de la imagen: Estdicta desripa para el mundo]
+
+𝑠=√
+1
+𝑛−1∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+2
+𝐼𝑄𝑅=𝑞3−𝑞1
+𝑅=M Á X−M Í N
+0.202
+00
+0.047
+50
+0.034
+81
+Estadística Descriptiva
+Parámetros  de  variabilidad
+
+[Descripción de la imagen: para los párrs. para los párrs. para los párrs. para los párrs. para los párrs. para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos para los párrafos | Transcripción de la imagen: Estadística Descriptiva
+Parámetros de variabilidad
+
+R=MÁX-MÍN 0.202
+00
+
+0.047
+50
+
+_
+>
+—
+U >
+l >
+l
+>
+—
+— -D
+—
+— -D
+—>
+l >
+l
+_>
+—
+a
+— -D
+_—>
+2]]
+
+•
+La caja central se determina 
+con los cuartiles primero (), 
+segundo () y tercero (). 
+Diagrama de caja o boxplot 
+•
+Se representan con dos rayas 
+(los 
+bigotes) 
+los 
+datos 
+inmediatoa 
+los 
+límites 
+de 
+Tuckey:  y . 
+•
+Se 
+marcan 
+como 
+outliers 
+moderados los datos fuera de 
+esos límites.
+•
+Se 
+marcan 
+como 
+outliers 
+severos los datos fuera de los 
+límites :  y . 
+Estadística Descriptiva
+
+[Descripción de la imagen: diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama diama]
+
+Parámetros  de  forma
+Coeficiente de simetría: medida típica de 
+simetría de los datos respecto de la 
+media. Es nulo si hay simetría. Si es 
+positivo se dice que los datos tienen 
+sesgo positivo y negativo en caso 
+contrario. 
+Coeficiente de curtosis: mide la forma de 
+la distribución de datos en torno del 
+promedio. Es positivo si los datos tienen 
+alta concentración en torno de la media y 
+negativo en caso contrario. Es cercano a 
+cero para el caso en que los datos 
+provengan 
+de 
+una 
+variable 
+con 
+distribución normal o Gaussiana.
+𝛾= 1
+𝑛𝑠
+3∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+3
+𝜅= 1
+𝑛𝑠
+4 ∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+4−3
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+𝛾= 1
+𝑛𝑠
+3∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+3
+𝜅= 1
+𝑛𝑠
+4 ∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝑥)
+4−3
+0.131
+74
+-
+0.1023
+7
+Estadística Descriptiva
+Parámetros  de  forma
+
+[Descripción de la imagen: estdicta desriva paras de forma | Transcripción de la imagen: Estadística Descriptiva
+Parámetros de forma]]
+
+Parámetros  de  forma – Corrección muestra pequeñ
+~𝛾=√𝑛(𝑛−1)
+𝑛−2
+𝛾
+~𝜅=
+(𝑛+1 )𝑛2
+(𝑛−1)(𝑛−2)(𝑛−3)
+(𝜅+3) −
+(𝑛−1 )2
+(𝑛−2) (𝑛−3) 3
+La corrección evita un sesgo en la 
+estimación (más sobre esto cuando 
+hablemos de estimadores).
+En el caso de la curtosis, la corrección 
+sirve sólo para variables normales.
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+metros de forma - Corrección muestra pequ
+
+x/n(n—1) La corrección evita un sesgo en la
+—— — estimación (más sobre esto cuando
+hablemos de estimadores).
+
+,
+|
+
+D
+N
+
+En el caso de la curtosis, la corrección
+sirve sólo para variables normales.
+
+-1
+
+s
+|
+
+(1c+3)—
+
+>
+.
+—
+ra
+—
+2
+>
+-
+-
+-
+—
+— -D
+-
+->
+-
+-
+-
+-
+_>
+—
+—
+-
+-
+->]]
+
+~𝛾=√𝑛(𝑛−1)
+𝑛−2
+𝛾
+~𝜅
+0.132
+74
+-
+0.0444
+2
+Estadística Descriptiva
+Parámetros  de  forma – Corrección muestra pequeñ
+
+[Descripción de la imagen: Estdicia desriva paramos de forma | Transcripción de la imagen: — Estadística Descriptiva
+
+Zarámetros de forma - Corrección muestra pequ
+— >]]
+
+Frecuencias
+Límite 
+inferior
+Límite 
+superior
+Marca Frecuencia Frec. 
+Acum.
+Frec. 
+Rel.
+Frec. Rel. 
+Acum.
+7.405
+7.435
+7.420
+1
+1
+0.005
+0.005
+7.435
+7.465
+7.450
+10
+11
+0.050
+0.055
+7.465
+7.495
+7.480
+37
+48
+0.185
+0.240
+7.495
+7.525
+7.510
+62
+110
+0.310
+0.550
+7.525
+7.555
+7.540
+61
+171
+0.305
+0.855
+7.555
+7.585
+7.570
+24
+195
+0.120
+0.975
+7.585
+7.615
+7.600
+4
+199
+0.020
+0.995
+7.615
+7.645
+7.630
+1
+200
+0.005
+1.000
+ 
+ 
+ 
+200
+ 
+1.000  
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desriva recaisa | Transcripción de la imagen: Estadística Descriptiva
+Frecuencias
+
+Límite Límite
+inferior  superior
+
+-
+»
+>
+-
+>
+>
+=
+>
+-
+>
+-
+»
+la
+- >
+»
+-
+s
+>
+-
+->
+-
+»
+la
+- >
+»
+»]]
+
+Límite 
+inferior
+Límite 
+superior
+Marca Frecuencia Frec. 
+Acum.
+Frec. 
+Rel.
+Frec. Rel. 
+Acum.
+7.405
+7.435
+7.420
+1
+1
+0.005
+0.005
+7.435
+7.465
+7.450
+10
+11
+0.050
+0.055
+7.465
+7.495
+7.480
+37
+48
+0.185
+0.240
+7.495
+7.525
+7.510
+62
+110
+0.310
+0.550
+7.525
+7.555
+7.540
+61
+171
+0.305
+0.855
+7.555
+7.585
+7.570
+24
+195
+0.120
+0.975
+7.585
+7.615
+7.600
+4
+199
+0.020
+0.995
+7.615
+7.645
+7.630
+1
+200
+0.005
+1.000
+ 
+ 
+ 
+200
+ 
+1.000  
+Estadística Descriptiva
+Frecuencias
+
+[Descripción de la imagen: estistica desriva pucas límiter | Transcripción de la imagen: Estadística Descriptiva
+Frecuencias
+
+= D
+_ -
+——>
+—>
+—>
+_——>
+—>
+—>
+—
+_-
+= ->
+- D»
+-
+- -
+-- -
+-
+—D>
+—>
+—
+_-
+- ->
+- D»
+-
+- -
+-- -
+- -]]
+
+7.42
+7.45
+7.48
+7.51
+7.54
+7.57
+7.6
+7.63
+1
+10
+37
+62
+61
+24
+4
+1
+Histograma y Polígono de Frecuencias
+Límite 
+inferior
+Límite 
+superior
+Marca Frecuencia Frec. 
+Acum.
+Frec. 
+Rel.
+Frec. Rel. 
+Acum.
+7.405
+7.435
+7.420
+1
+1
+0.005
+0.005
+7.435
+7.465
+7.450
+10
+11
+0.050
+0.055
+7.465
+7.495
+7.480
+37
+48
+0.185
+0.240
+7.495
+7.525
+7.510
+62
+110
+0.310
+0.550
+7.525
+7.555
+7.540
+61
+171
+0.305
+0.855
+7.555
+7.585
+7.570
+24
+195
+0.120
+0.975
+7.585
+7.615
+7.600
+4
+199
+0.020
+0.995
+7.615
+7.645
+7.630
+1
+200
+0.005
+1.000
+ 
+ 
+ 
+200
+ 
+1.000  
+Estadística Descriptiva
+
+[Descripción de la imagen: Estdicia desriva historias | Transcripción de la imagen: Estadística Descriptiva
+Histograma y Polígono de Frecuencias
+
+-
+_-
+—>
+-
+—>
+__—->
+——>
+—_—->
+—
+_D»
+—
+- »
+-
+-- -
+-
+-
+->
+—
+—
+- ->
+- »
+-
+-
+-]]
+
+7.42
+7.45
+7.48
+7.51
+7.54
+7.57
+7.6
+7.63
+1
+10
+37
+62
+61
+24
+4
+1
+Estadística Descriptiva
+Histograma y Polígono de Frecuencias
+
+[Descripción de la imagen: estdicia desriva historias - screenshoto | Transcripción de la imagen: Estadística Descriptiva
+Histograma y Polígono de Frecuencias
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+—
+_-
+—
+-
+-
+-
+->
+-
+-
+—>
+—
+_-
+—
+-
+-
+_-
+-
+-]]
+
+Polígono de Frecuencias Relativas Acumulad
+Límite 
+inferior
+Límite 
+superior
+Marca Frecuencia Frec. 
+Acum.
+Frec. 
+Rel.
+Frec. Rel. 
+Acum.
+7.405
+7.435
+7.420
+1
+1
+0.005
+0.005
+7.435
+7.465
+7.450
+10
+11
+0.050
+0.055
+7.465
+7.495
+7.480
+37
+48
+0.185
+0.240
+7.495
+7.525
+7.510
+62
+110
+0.310
+0.550
+7.525
+7.555
+7.540
+61
+171
+0.305
+0.855
+7.555
+7.585
+7.570
+24
+195
+0.120
+0.975
+7.585
+7.615
+7.600
+4
+199
+0.020
+0.995
+7.615
+7.645
+7.630
+1
+200
+0.005
+1.000
+ 
+ 
+ 
+200
+ 
+1.000  
+Estadística Descriptiva
+7.405
+7.435
+7.465
+7.495
+7.525
+7.555
+7.585
+7.615
+7.6
+45
+0
+0.005
+0.055
+0.240
+0.550
+0.855
+0.975
+0.995
+1.0
+
+[Descripción de la imagen: estdicia desriva | Transcripción de la imagen: Estadística Descriptiva
+gono de Frecuencias Relativas Acumul
+
+"YYY
+
+1
+
+000
+
+0000000O
+
+7.405 | 7.435 | 7.465 | 7.495 | 7.525 | 7.555 | 7.585 | 7.615
+45
+e m|]]
+
+7.405
+7.435
+7.465
+7.495
+7.525
+7.555
+7.585
+7.615
+7.6
+45
+0
+0.005
+0.055
+0.240
+0.550
+0.855
+0.975
+0.995
+1.0
+Estadística Descriptiva
+Polígono de Frecuencias Relativas Acumulad
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+ono de Frecuencias Relativas Acumule
+
+7 7.65
+Y
+
+07.4 7.45 7. 7.
+7.405 | 7.435 | 7.465 | 7.495 | 7.525 | 7.555 | 7.585 | 7.615 | 7.6
+45
+
+.6]]
+
+Datos agrupados
+      
+Intervalos
+Marcas
+Frecuencias
+(]
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desriva datos agos | Transcripción de la imagen: Estadística Descriptiva
+Datos agrupados
+
+(]]
+
+Datos agrupados
+      
+Intervalos
+Marcas
+Frecuencias
+(]
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desriva datos agos | Transcripción de la imagen: Estadística Descriptiva
+Datos agrupados
+
+(]]
+
+Parámetros característicos con datos agrupados
+𝑥= 1
+𝑛∑
+𝑘=1
+𝑚
+𝑥𝑘𝑓𝑘
+𝛾= 1
+𝑛𝑠
+3∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+3 𝑓𝑘
+𝜅= 1
+𝑛𝑠
+4 ∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+4 𝑓𝑘−3
+𝑠=√
+1
+𝑛−1∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+2 𝑓𝑘
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+
+Parámetros característicos con datos agrupados
+
+_
+>
+—
+U >
+l >
+l
+>
+—
+— -D
+—
+— -D
+—>
+l >
+l
+_>
+—
+a
+— -D
+_—>
+2]]
+
+Parámetros característicos con datos agrupados
+𝑠=√
+1
+𝑛−1∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+2 𝑓𝑘
+7.5198
+0.03519
+𝑥= 1
+𝑛∑
+𝑘=1
+𝑚
+𝑥𝑘𝑓𝑘
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+
+Parámetros característicos con datos agrupados
+
+_1X
+X=_Zxkfk
+N k=1
+
+( X, X)º f, — 0.03519
+
+_
+>
+—
+U >
+l >
+l
+>
+—
+— -D
+—
+— -D
+—>
+l >
+l
+_>
+—
+a
+— -D
+_—>
+2]]
+
+0.02201
+−0.04880
+𝛾= 1
+𝑛𝑠
+3∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+3 𝑓𝑘
+𝜅= 1
+𝑛𝑠
+4 ∑
+𝑘=1
+𝑚
+(𝑥𝑘−𝑥)
+4 𝑓𝑘−3
+Estadística Descriptiva
+Parámetros característicos con datos agrupados
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+
+Parámetros característicos con datos agrupados
+
+0.02201
+
+— 0.04880]]
+
+Datos agrupados
+      
+Intervalos
+Frecuencias
+Frec. Relativas Acum. (%)
+(]
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desriva datos | Transcripción de la imagen: Estadística Descriptiva
+Datos agrupados
+
+(]]
+
+Cuartiles con datos agrupados
+      
+Intervalos
+Frecuencias
+Frec. Relativas Acum. (%)
+𝑞1= 25−24
+55−24
+(7.525−7.495)+7.495=7.4960
+𝑞3= 75−55
+85.5−55
+(7.555−7.525)+7.525=7.5447
+𝑚= 50−24
+55−24
+(7.525−7.495)+7.495=7.5202
+Estadística Descriptiva
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Estadística Descriptiva
+Cuartiles con datos agrupados
+
+25 — 24
+4==5-24 [7.525 —7.495)+7.495=7.4960
+— 50-24
+
+= 524 17.525 — 7.495)+7.495=7.5202
+
+m
+
+7555
+q: = m(7.555 7.525)+7.525=7.5447]]
+
+Datos Completos vs. Datos Agrupados
+      
+Estadístico
+Completos
+Agrupados
+Media
+Desvío
+Coef. simetría
+Curtosis
+Primer cuartil
+Mediana
+Tercer Cuartil
+Estadística Descriptiva
+
+[Descripción de la imagen: estdica desreciva datos]
+

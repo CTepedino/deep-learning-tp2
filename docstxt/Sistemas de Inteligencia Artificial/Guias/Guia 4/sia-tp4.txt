@@ -1,0 +1,112 @@
+Aprendizaje No Supervisado
+Trabajo Pr´actico 4
+Sistemas de Inteligencia Artiﬁcial 2025
+
+[Descripción de la imagen: un libro blanco con las palabras 'aprio'in español]
+
+1.
+Ejercicio Europa
+El conjunto de datos europe.csv corresponde a caracter´ısticas econ´omicas, sociales y geogr´aﬁ-
+cas de 28 pa´ıses de Europa. Las variables son:
+Country : Nombre del pa´ıs.
+Area: ´area
+GDP: producto bruto interno.
+Inﬂation: inﬂaci´on anual.
+Life.expect: expectativa de vida media en a˜nos.
+Military: presupuesto militar.
+Pop.growth: tasa de crecimiento poblacional.
+Unemployment: tasa de desempleo.
+1.1.
+Red de Kohonen
+Implementar la red de Kohonen y aplicarla para resolver los siguientes problemas:
+Asociar pa´ıses que posean las mismas caracter´ısticas geopol´ıticas, econ´omicas y sociales.
+Realizar al menos un gr´aﬁco que muestre los resultados.
+Realizar un gr´aﬁco que muestre las distancias promedio entre neuronas vecinas.
+Analizar la cantidad de elementos que fueron asociados a cada neurona.
+1.2.
+Modelo de Oja
+Implementar una red neuronal utilizando la regla de Oja para resolver los siguientes pro-
+blemas:
+Calcular la primer componente principal para este conjunto de datos.
+Interpretar el resultado de la primer componente.
+Comparar el resultado del ejercicio de Oja con el resultado de calcular la primer compo-
+nente principal con una librer´ıa.
+
+[Descripción de la imagen: una hoja blanca con las palabras en español]
+
+2.
+Ejercicio Patrones
+2.1.
+Modelo de Hopﬁeld
+Construir patrones de letras del abecedario utilizando 1 y −1 y matrices de 5 × 5. Por
+ejemplo, con la matriz
+
+
+
+
+
+
+
+
+
+
+1
+1
+1
+1
+1
+−1
+−1
+−1
+1
+−1
+−1
+−1
+−1
+1
+−1
+1
+−1
+−1
+1
+−1
+1
+1
+1
+−1
+−1
+
+
+
+
+
+
+
+
+
+
+puede dibujarse la letra J:
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+a. Almacenar 4 patrones de letras. Implementar el modelo de Hopﬁeld para asociar matri-
+ces ruidosas de 5×5 con los patrones de las letras almacenadas. Los patrones de consulta
+deben ser alteraciones aleatorias de los patrones originales. Mostrar los resultados que se
+obtienen en cada paso hasta llegar al resultado ﬁnal.
+b. Ingresar un patr´on muy ruidoso e identiﬁcar un estado esp´ureo.
+3.
+Entrega
+Entregar por Campus la presentaci´on, el repositorio con README.md y archivo de conﬁ-
+guraci´on y el hash del commit.
+
+[Descripción de la imagen: una página de un libro con una imagen de un número de dos números]
+

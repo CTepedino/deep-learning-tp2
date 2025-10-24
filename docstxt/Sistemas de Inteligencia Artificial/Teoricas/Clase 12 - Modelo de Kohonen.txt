@@ -1,0 +1,728 @@
+APRENDIZAJE 
+NO SUPERVISADO
+Modelo de Kohonen 
+Sistemas de Inteligencia Artiﬁcial - 2023
+
+[Descripción de la imagen: el logo de la lengua española, con las palabras 'apria' y 'apria ']
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MODELO DE 
+KOHONEN
+03. MODELO DE 
+HOPFIELD
+04. COMPONENTES 
+PRINCIPALES
+05. REGLA DE OJA Y 
+SANGER
+06. BIBLIOGRAFÍA
+2
+
+[Descripción de la imagen: conidos de mesa | Transcripción de la imagen: COMPONENTES
+%' PRINCIPALES
+
+Ol. INTRODUCCIÓN
+
+-IVIODELO DE REGLA DE OJA Y
+02 KOHONEN 05- SANGER
+MODELO DE
+
+O0. BIBLIOGRAFÍA
+
+0% HOPFIELD]]
+
+02.1
+MODELO DE 
+KOHONEN
+3
+
+[Descripción de la imagen: un fondo amarillo y blanco con el texto '01 ']
+
+4
+REDES DE KOHONEN
+Aprendizaje No Supervisado 
+No existe información externa que indique si la red neuronal está operando correcta o 
+incorrectamente.
+Red de Kohonen
+Durante el proceso de aprendizaje descubre por sı́  misma 
+regularidades (patrones) en los datos de entrada.
+SOM: Mapas Auto-Organizados
+
+[Descripción de la imagen: un fondo blanco con las palabras rese kon]
+
+5
+REDES DE KOHONEN
+El autor es un investigador ﬁnlandés, Teuvo Kohonen, que publicó su idea por primera vez 
+en 1982 [1] y luego siguió trabajando mucho tiempo [2].
+
+[Descripción de la imagen: una página de captura de pantalla con el texto en la esquina inferior derecha | Transcripción de la imagen: REDES DE KOHONEN
+M
+
+El autor es un investigador finlandés, Teuvo Kohonen, que publicó su idea por primera vez
+en 1982 [1] y luego siguió trabajando mucho tiempo [2].
+
+Published: January 1982
+
+Self-organized formation of topologically correct feature
+maps
+
+Teuvo Kohonen
+
+Abstract
+
+This work contains a theoretical study and computer simulations of a new self-organizing process. The
+principal discovery is that in a simple network of adaptive physical elements which receives signals
+from a primary event space, the signal representations are automatically mapped onto a set of output
+
+responses in such a way that the responses acquire the same topological order as that of the primary
+
+events. In other words, a principle has been discovered which facilitates the automatic formation of]]
+
+6
+ARQUITECTURA
+Las neuronas están conectadas
+●
+con sı́  mismas positivamente
+●
+con las neuronas vecinas. (R=n)
+INPUT: elemento del training set
+OUTPUT: grilla/mapa (M)
+
+[Descripción de la imagen: aruteur as reurs ests cons pasimetes cons vec]
+
+7
+ARQUITECTURA
+
+[Descripción de la imagen: una captura de pantalla de una captura de pantalla de una captura de pantalla de una captura de pantalla de un | Transcripción de la imagen: ARQUITECTURA
+
+< , Search or jump to... Pull requests]]
+
+8
+APRENDIZAJE COMPETITIVO
+Las neuronas compiten unas con otras
+Objetivo → ﬁnalmente sólo una de las 
+neuronas de salida se activa 
+Las demás son forzadas a valores de 
+respuesta mínimos.
+NEURONA 
+GANADORA
+
+[Descripción de la imagen: un diagrama que muestra la ubicación de la red]
+
+9
+NEURONA GANADORA
+A lo largo del tiempo (épocas), algunas unidades toman un nivel de activación mayor 
+mientras que el nivel de las demás se anula. 
+NEURONA GANADORA 
+Dada la unidad de entrada x, la neurona que tenga vector de pesos w 
+“más parecido” a x será ganadora. 
+Aprendizaje Competitivo 
+Esto implica una clasiﬁcación 
+(las entradas parecidas van hacia la misma neurona)
+
+[Descripción de la imagen: un fondo blanco con las palabras nendada y las palabras nendada]
+
+10
+APRENDIZAJE COMPETITIVO
+El objetivo de este aprendizaje es agrupar los datos que se introducen en la 
+red. 
+El mapa nos mostrará un agrupamiento. 
+Las informaciones similares son clasiﬁcadas formando parte de la misma 
+categoría o grupo y deben activar la misma neurona de salida.
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'aprio' y 'aprio']
+
+11
+RED DE KOHONEN
+Red de una sola capa, en forma de grilla bidimensional (k × k) y en la que 
+cada neurona está conectada a todas las componentes de un vector de 
+entrada n-dimensional.
+Entonces pasa de un espacio multidimensional a un espacio bidimensional.
+
+[Descripción de la imagen: rojo konen rojo konen]
+
+12
+GRILLA
+Dimensión KxK 
+Si los datos de entrada tienen 
+dimensión N →  cada neurona de la 
+grilla tiene N conexiones.
+K
+K
+
+[Descripción de la imagen: un diagrama que muestre la dirección de una fuente de luz]
+
+13
+GRILLA RECTANGULAR
+
+[Descripción de la imagen: un diagrama de acordes de guitarra con el mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor mayor | Transcripción de la imagen: GRILLA RECTANGULAR
+
+quadratic grid
+
+Input space
+
+Output space (SOM)
+
+('=J]]
+
+14
+GRILLA HEXAGONAL
+
+[Descripción de la imagen: un diagrama de una célula y una célula | Transcripción de la imagen: GRILLA HEXAGONAL
+
+Ó EO N
+Q
+E
+ael
+4bb¡4¡bl.q¡bl?&!
+
+—Dutput space …(SÚM)
+
+yy
+
+VY
+
+E
+
+X
+AA
+
+VY YYS
+
+hexagonal grid
+
+14]]
+
+15
+VECINDARIO
+Se deﬁne un radio R, donde, para una grilla rectangular: 
+4-vecinos → R = 1 
+8-vecinos → R = sqrt(2)
+Entradas similares 
+En cada neurona se concentran datos similares, 
+Neuronas vecinas contienen datos con algún grado de similitud entre sı́ .
+
+[Descripción de la imagen: vendio se e - defo e - defo]
+
+16
+CARACTERÍSTICAS
+●
+Elegir la cantidad de neuronas de la grilla k × k.
+●
+Cada neurona de salida j ∈ {1, . . . , k² } tiene asociado un vector de pesos 
+Wj = (wj1 , . . . , wjn ) (el representante de esa neurona).
+●
+Wj de cada neurona de salida tiene la misma dimensión que los datos de entrada.
+
+[Descripción de la imagen: catastas elgirids nees de la gra]
+
+02.2
+ESTANDARIZACIÓN
+17
+
+[Descripción de la imagen: un cuadrado amarillo con la palabra estnzacion escrita en español]
+
+18
+FEATURE SCALING
+Se utiliza para escalar los datos dentro un intervalo [a; b] 
+MIN-MAX FEATURE SCALING
+Entre [0; 1 ] sería:
+
+[Descripción de la imagen: característica salo | Transcripción de la imagen: FEATURE SCALING
+
+Se utiliza para escalar los datos dentro un intervalo f[a; b|
+
+MIN-MAX FEATURE SCALING
+
+X — Xmin
+XI _ Xmam “ Xmin (b E a) u
+
+Entre [0; 1 ] sería:
+X — sz'n
+
+X= — — —
+Xmaa: Ne Xmin]]
+
+19
+ESTANDARIZACIÓN
+Tomamos las variables del conjunto P={X1, …, Xp}. Cada Xi tiene n registros. 
+Se calculan los siguientes estadísticos unidimensionales:   
+MEDIA
+DESVÍO ESTÁNDAR
+VARIABLE ESTANDARIZADA
+__
+__
+~
+Nota: También llamada Z-Score
+
+[Descripción de la imagen: estradion estradion estradion estradion estradion estradion estradion estradion estradion estradion estradion]
+
+EJEMPLO
+20
+   A
+        B
+ C
+       D
+E
+      F
+            G
+    H
+            I
+     J
+
+[Descripción de la imagen: un gráfico con el mismo número de cada uno de los números | Transcripción de la imagen: EJEMPLO
+
+Features
+
+3500
+
+3000
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+20]]
+
+EJEMPLO
+21
+Si estandarizamos las variables
+   A
+        B
+ C
+       D
+  E
+        F               G
+         H               I
+         J
+
+[Descripción de la imagen: emo - variables emedias - características | Transcripción de la imagen: EJEMPLO
+
+Si estandarizamos las variables
+
+eeeeeeee
+
+J
+
+|3¿$
+
+21]]
+
+22
+UNIT LENGTH SCALING
+Si bien todas las anteriores son formas de normalización de datos, se le suele llamar 
+“normalizar” o unit length scaling a dividir por la norma 2:
+UNIT LENGTH SCALING
+
+[Descripción de la imagen: sintøs sintøs sintøs sintøs sintøs sintøs sintøs sintøs sintøs]
+
+02.3
+ALGORITMO
+23
+
+[Descripción de la imagen: un cuadrado con la palabra aortmo en él]
+
+24
+ALGORITMO
+1.
+Xp = {x1
+p , . . . , xn
+p}, p = 1, . . . , P son los registros de entrada con dimensión n.
+2.
+Deﬁnir la cantidad de neuronas de salida: k × k.
+3.
+Inicializar los pesos Wj , j = 1, . . . , k² , cada
+Wj = (wj1 , . . . , wjn ):
+●
+Con valores aleatorios con distribución uniforme.
+●
+Con ejemplos al azar del conjunto de entrenamiento.
+4.
+Seleccionar un tamaño de entorno inicial con radio R(0).
+5.
+Seleccionar la tasa de aprendizaje inicial η(0) < 1.
+INICIALIZACIÓN
+
+[Descripción de la imagen: alqtmo 1 x = 1, y = 1, y = 1, y = 1, y = 1, y = 1, y = 1, y =, y =, y =, y, y, y, y, y]
+
+25
+ALGORITMO
+1.
+Seleccionar un registro de entrada Xp .
+2.
+Encontrar la neurona ganadora k̂  que tenga el vector de pesos Wk̂ más cercano a Xp .
+Se deﬁne una medida de similitud d
+Wk̂ = arg min {d(Xp − Wj )}
+1≤j≤N
+3.
+Actualizar los pesos de las neuronas vecinas según la regla de Kohonen.
+Se activa la neurona k̂  (nk̂ ), que es la neurona ganadora.
+ITERACIÓN i
+
+[Descripción de la imagen: alotmo 1 seca unifica]
+
+26
+ALGORITMO
+REGLA DE KOHONEN (ITERACIÓN i, paso 3)
+Está deﬁnido por el radio en la iteración, R(i), se actualiza el vecindario: 
+ 
+Nk̂ (i) = {n/||n − nk̂  || < R(i)}
+Donde: 
+●
+nk̂  es la neurona ganadora
+●
+n es una neurona
+●
+Nk̂ (i) es el vecindario
+R(0) es un dato de entrada  
+R(i) → 1 cuando i → ∞,
+aunque también puede permanecer constante durante todo el proceso.
+
+[Descripción de la imagen: alqmo recal de ponecil]
+
+27
+ACTUALIZACIÓN DE PESOS
+Actualización de los pesos del vecindario de nk̂  utilizando la Regla de Kohonen: 
+●
+Si j ∈ Nk̂ (i) → Wj
+i+1 = Wj
+i + η(i)* (Xp - Wj
+i)
+●
+Si j ɇ Nk̂ (i) → Wj
+i+1 = Wj
+i 
+Donde η(i) → 0. Por ejemplo η(i) = 1/i
+
+[Descripción de la imagen: actualizaciones de deso de la rega de la | Transcripción de la imagen: ACTUALIZACIÓN DE PESOS
+
+Actualización de los pesos del vecindario de n, utilizando la Regla de Kohonen:
+
+e SijEN.(i) » Wji+1 = Wji+ n(1)* 0P - Wji)
+e Sijé Nli)> WJ.i+1 = WJ.i
+
+Donde nf(i) » O. Por ejemplo n(i) = 1/i
+
+27]]
+
+28
+CONVERGENCIA
+¿Por qué converge? 
+    Wk̂
+i+1 − Xp
+= Wk̂
+i + η(i)(Xp − Wk̂
+i  ) − Xp 
+  
+= (1−η(i))(Wk̂
+i  − Xp )
+Entonces
+ || Wk̂
+i+1 − Xp || ≤ ||Wk̂
+i  − Xp ||
+Regla de Kohonen
+Wj
+i+1 = Wj
+i + η(i)* (Xp - 
+Wj
+i)
+Los pesos se parecen a los datos de entrada
+
+[Descripción de la imagen: cono de cono cono cono cono cono cono cono cono cono cono | Transcripción de la imagen: CONVERGENCIA Regla de Kohonen
+
+W-
+J
+
+¿Por qué converge?
+
+Wi-XP = We+n(i)0C - Wi ) P
+= (1-n(i)(W -»P)
+
+Entonces
+W i _ yp i _ Yp
+N W - X IISTIW - XI
+
+Los pesos se parecen a los datos de entrada
+
+28]]
+
+29
+SIMILITUD
+Medidas de similitud (o funciones de propagación)
+Distancia Euclı́ dea:
+Wk̂ = arg min {∥Xp − Wj ∥}
+ 1≤j≤N
+Exponencial
+Wk̂ =  arg min {e-∥Xp −Wj∥²} 
+   1≤j≤N
+ 
+Importante: estandarizar todos los vectores
+
+[Descripción de la imagen: un fondo blanco con las palabras snitu'and snitu ' | Transcripción de la imagen: SIMILITUD
+
+Medidas de similitud (0 funciones de propagación)
+
+Distancia Euclídea:
+
+W .= arg min £//XP—W. //)
+. J
+1<j<N
+
+Exponencial
+Wi.= arg min le 11 Xp Will?
+
+1<j<N
+
+)
+
+Importante: estandarizar todos los vectores
+
+29]]
+
+30
+INICIALIZACIÓN  
+Valores iniciales de los pesos
+●
+Se pueden inicializar con valores aleatorios
+Problema: algunas unidades quedan lejos de los valores iniciales y entonces nunca 
+ganan. 
+Se dice que son unidades muertas.
+●
+Para evitar eso es mejor inicializar los pesos con muestras de los datos de entrada
+
+[Descripción de la imagen: un fondo blanco con las palabras en español]
+
+31
+INICIALIZACIÓN  
+Cantidad total de iteraciones 
+En función de la cantidad de neuronas de entrada (N)
+Por ejemplo: 500*N.
+Radio del vecindario
+●
+R(0) puede ser el tamaño total de la grilla y va decreciendo hasta llegar a R = 1, donde 
+solamente se actualizan las neuronas vecinas pegadas.
+●
+Constante
+
+[Descripción de la imagen: un fondo blanco con las palabras en español e inglés]
+
+02.4
+RESULTADOS
+32
+
+[Descripción de la imagen: un cuadrado amarillo con el número del número del número del número del número del número del número]
+
+33
+VISUALIZACIÓN DE RESULTADOS
+Las neuronas de salida forman 
+una matriz
+Se puede ver en qué 
+coordenadas se encuentra la 
+neurona asociada a cada 
+ejemplo de entrenamiento.
+
+[Descripción de la imagen: visuales de ests]
+
+34
+VISUALIZACIÓN DE RESULTADOS
+Ejemplo: Se desea hacer un censo de la población teniendo en cuenta. 
+●
+Cantidad de habitantes 
+●
+Promedio de edad
+●
+Promedio de nivel de educación 
+●
+Número de autos registrados 
+●
+Número de personas desempleadas
+●
+Número de personas subempleadas 
+¿Qué ciudades son parecidas? 
+Se utiliza una Red de Kohonen de 20x20
+
+[Descripción de la imagen: visuales de ests]
+
+35
+VISUALIZACIÓN DE RESULTADOS
+Contar la cantidad de registros 
+que van a cada neurona.
+
+[Descripción de la imagen: visualiza de ests cons de ests | Transcripción de la imagen: VISUALIZACIÓN DE RESULTADOS
+
+| ÁY& Jr.7..
+
+'.I Ú.I.'
+
+Contar la cantidad de registros
+que van a cada neurona.
+
+. . A ¿ A
+A A A
+Y V Y. 4
+o . "*'%ññf[ '“'£5
+.I X ..'.… ¿... n . I.
+
+NZ v v
+***ó óoó oóo óo
+
+35]]
+
+36
+VISUALIZACIÓN DE RESULTADOS
+MATRIZ 
+U 
+(Uniﬁed Distance Matrix) 
+Para cada neurona el promedio la 
+distancia euclídea entre:
+●
+el vector de pesos de la neurona
+●
+el vector de pesos de las neuronas 
+vecinas. 
+Si el método funciona entonces deberían 
+observarse distancias pequeñas
+
+[Descripción de la imagen: visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual | Transcripción de la imagen: VISUALIZACIÓN DE RESULTADOS
+
+MATRIZ U
+(Unified Distance Matrix)
+
+Para cada neurona el promedio la
+distancia euclídea entre:
+e el vector de pesos de la neurona
+e el vector de pesos de las neuronas
+vecinas.
+
+Si el método funciona entonces deberían
+observarse distancias pequeñas
+
+H rrrorroorraoooaos
+H .00rosooooro ooo ss
+
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+
+— 27 9999-09-9-9909-0.09.09.0-
++ 27 99-9-0-09-99950.00305
+— - . 9 99-9-959-09-09.009.-0
+— - + - 772597900051 995
+oe - 97.09-99-0-9-095-05-0.9795495
++ . + - - 7 7579-7-59.9-557545
+
++ 29 729-79-9-9-9-09.00-5.
++ + + + + + + -+
+
++ + + 44404
+
++
++
++
++
++
++
++
++
++
++
++
++
++
+
+— 79797-70-0-005-
++ + 7949 4-0i0-0i-0:i
++ + + + + +
+
+-- + + + + +-s-s4
+
+36]]
+
+37
+VISUALIZACIÓN DE RESULTADOS
+OBSERVAR UNA SOLA VARIABLE
+Se observa el valor promedio de una sola variable en cada neurona
+
+[Descripción de la imagen: visualización de est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: VISUALIZACIÓN DE RESULTADOS
+
+OBSERVAR UNA SOLA VARIABLE
+Se observa el valor promedio de una sola variable en cada neurona
+
+unemployment_percent avr_education_level
+
+1A , A N í I >v EA
+»»k&rx_¿¿_ ¡¿H»¡¡.k» ./1—» va*
+woxoo.oo¿r¡w¿g xowc
+
+| ©¿.. ___.. e oxonxo¿o¿u:* £g. ...
+00 _.… …o:sszé%_:'z X 6O lIN 1'. * w€;_.Q: 0e
+
+_ A . DAO
+
+z»*r*w O
+
+A
+Ya Y V
+I 4 '$%..'I-V.YÁVA' Av]]
+
+38
+RED DE KOHONEN
+VENTAJAS
+DESVENTAJAS
+●
+Puede ser más rápida que el 
+perceptrón multicapa.
+●
+Aplicarse en casos donde el 
+conjunto de datos  no está 
+etiquetado.
+●
+Espacio multidimensional a 
+bidimensional
+●
+Si el conjunto de variables es 
+muy grande puede ser difı́ cil 
+asociarlo con un conjunto 
+bidimensional.
+●
+Solo puede realizarse con 
+variables numéricas.
+●
+No hay un criterio 
+demostrado para deﬁnir el 
+tamaño de la grilla.
+
+[Descripción de la imagen: konen rojo vs dekoren]
+
+BIBLIOGRAFÍA
+39
+[1] T. Kohonen. Self-organized formation of topologically correct feature maps. Biological 
+Cybernetics, 
+1(43):59–69, 
+1982.
+[2] T. Kohonen. The self-organizing map. Neurocomputing, pages 1–6, 1998.
+
+[Descripción de la imagen: bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bio bios bio bios bios bio bios bio bio bios bio bio bio bio bios bio bio bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bio]
+

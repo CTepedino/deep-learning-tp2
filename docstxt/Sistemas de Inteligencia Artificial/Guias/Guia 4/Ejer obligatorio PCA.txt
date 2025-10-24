@@ -1,0 +1,102 @@
+Ejercicio 
+obligatorio PCA
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+
+[Descripción de la imagen: el logotipo del proyecto, el proyecto es un triángulo azul y verde]
+
+[Descripción de la imagen: un gráfico con la misma línea y la misma línea | Transcripción de la imagen: Biplot de Países Europeos
+
+«Ereece
+
+E£roatia
+
+ain
+aPortugal | ó
+S ovenia
+
+Nited Kingdom d'eland
+ulgaria eay
+land
+
+dithuania - lovakia 77 1;“ epubl¡Ww¡tzer E
+al
+
+datvia
+
+]
+D
+S
+-
+a
+><
+o]
+s
+Ñ
+c
+]
+,
+e
+>
+e
+E
+o
+a
+o
+A
+N
+[O
+[-4
+
+uxembourg
+pustria
+celand
+
+kraine
+
+— o
+PC1 (46.10% varianza explicada)]
+
+[Descripción de la imagen: un gráfico de barras con el número de personas en cada país | Transcripción de la imagen: K
+o
+a
+Z
+o
+Q
+C
+[O
+a
+v
+D
+=
+e
+u
+-
+2Q
+E
+5
+-
+o
+(a)
+
+T2d 21095]
+
+[Descripción de la imagen: un gráfico de barras con el número de clientes en cada una de las tres columnas | Transcripción de la imagen: Contribución de cada variable al Primer Componente Principal
+
+A
+S)
+a
+]
+c
+o
+o]
+>
+-Q
+E
+5
+-
+o
+o]
+

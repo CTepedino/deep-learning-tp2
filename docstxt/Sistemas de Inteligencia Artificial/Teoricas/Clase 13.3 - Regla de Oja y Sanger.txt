@@ -1,0 +1,223 @@
+APRENDIZAJE 
+NO SUPERVISADO
+Regla de Oja y Sanger 
+Sistemas de Inteligencia Artiﬁcial - 2024
+
+[Descripción de la imagen: el logo de la lengua española, con las palabras 'arza nouvead ']
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MODELO DE 
+KOHONEN
+03. MODELO DE 
+HOPFIELD
+04.
+05.
+06.
+2
+AUTOVALORES Y 
+AUTOVECTORES
+COMPONENTES 
+PRINCIPALES
+REGLA DE OJA Y 
+SANGER
+
+[Descripción de la imagen: conidos de mesa]
+
+06.1
+COMPONENTES 
+PRINCIPALES
+Repaso
+3
+
+[Descripción de la imagen: el tipo de letra y los tipos de letra en adobe]
+
+4
+COMPONENTES PRINCIPALES
+Repaso: 
+Componentes principales
+Utilizadas para extraer caracterı́ sticas destacadas o importantes 
+de un conjunto de datos bajando la dimensión.
+
+[Descripción de la imagen: comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor]
+
+5
+COMPONENTES PRINCIPALES
+ 
+Algunos modelos de redes neuronales permiten calcular las componentes principales en 
+forma iterativa:
+●
+Ventaja: reduce costo computacional (cantidad de registros muy grande, o muchas 
+variables)
+ 
+●
+Desventaja:  Si el dataset tiene muchas variables, interpretarlo en una sola se puede 
+perder información, al reducir tan drásticamente la dimensión.
+
+[Descripción de la imagen: comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor]
+
+06
+REGLA DE OJA Y 
+SANGER
+6
+
+[Descripción de la imagen: un fondo rosado y amarillo con las palabras "listo para cantar"]
+
+7
+PERCEPTRON LINEAL SIMPLE
+Dados n datos de entrada, x1 , . . . , xn ,  una red neuronal calcula la salida
+ 
+Actualizar los pesos,
+
+[Descripción de la imagen: una hoja blanca con las palabras peponnal simple | Transcripción de la imagen: PERCEPTRON LINEAL SIMPLE
+
+Dados n datos de entrada, TELES X, una red neuronal calcula la salida
+n
+H — HH
+Ó" = Ol E T w )
+1=1
+
+Actualizar los pesos,
+
+Aw = n(C" — O )x"
+
+wín + 1) = w(n) + Aw]]
+
+8
+APRENDIZAJE HEBBIANO
+Regla de Aprendizaje Hebbiano para Aprendizaje No supervisado
+Dados m datos de entrada, x 1 , . . . , x m ,  una red neuronal calcula la salida
+ No se conoce el valor de verdad, entonces:
+
+[Descripción de la imagen: una hoja blanca con las palabras 'arni'and'arni ']
+
+9
+CONVERGENCIA
+Oja demostró que: 
+Si la red anterior converge, el vector de pesos resultante wﬁnal serı́ a un punto sobre la 
+dirección de máxima variación de los datos ( la primer componente principal.)
+Pero...
+El problema es que no converge porque el           va aumentando en cada paso y se hace tan 
+grande que produce que el algoritmo sea inestable.
+
+[Descripción de la imagen: cono de marketing cono de marketing cono cono cono cono cono cono]
+
+10
+REGLA DE OJA
+ 
+ Dr. Erkki Oja, Helsinki University of Technology, Finland
+
+[Descripción de la imagen: una pizarra blanca con un fondo rosa y una pizarra con un fondo rosa y una pizarra blanca con un]
+
+11
+REGLA DE OJA
+Utilizando el polinomio de Taylor
+
+[Descripción de la imagen: un fondo blanco con un texto en blanco y negro que dice, "'''''''''''''''''''''''''''''''''''''''''''''''' | Transcripción de la imagen: REGLA DE OJA
+
+Utilizando el polinomio de Taylor
+
+J
+
+Dr
+
+=4 + Taa
+
+w =w +n(
+
+J
+
+Orej — Yj ZJ ¡ (OTt TT)
+
+J
+u| ul
+
+N
+ul]]
+
+12
+|w| se mantiene acotado. Tiende a 1
+Luego de varias iteraciones el método converge al autovector correspondiente al mayor 
+autovalor de la matriz de correlaciones de los datos de entrada.
+Con este vector w ﬁnal se construye la primera componente principal.
+y1 = a1x1 + … + anxn  
+Los ai forman el primer autovector que sería el wﬁnal 
+CONVERGENCIA
+
+[Descripción de la imagen: cono de cono cono cono cono cono cono cono cono cono cono]
+
+13
+CONVERGENCIA
+
+[Descripción de la imagen: cono de cono de cono de cono cono cono cono cono cono | Transcripción de la imagen: CONVERGENCIA
+
+Simulación de una neurona lineal con 2 entradas y actualizando w con la regla de Oja
+
+| Winicial 04097 —*
+1 ..l.n_yalw
+
+——.¡ e ls «
+r . X W final (0.87, 0.50)
+.
+
+.
+
+13]]
+
+14
+TASA DE APRENDIZAJE
+Para asegurar la convergencia
+Como no conocemos el autovalor es mejor estandarizar todas las variables de entradas 
+y comenzar con
+
+[Descripción de la imagen: un fondo blanco con un texto rosa y negro que lee, 'ase aprnize ']
+
+15
+IMPLEMENTACIÓN
+Arquitectura 
+Es un perceptrón simple con una capa de salida
+Actualización de Pesos
+Según la Regla de Oja
+Inicialización de Pesos
+Distribución uniforme entre 0 y 1
+Tasa de Aprendizaje
+eta(0) = 0.5 y disminuye 
+o eta = 10-3
+
+[Descripción de la imagen: un fondo blanco con las palabras en español]
+
+16
+ALGORITMO
+input: X datos de dimensión N con media 0; η, w inicial con distribución uniforme entre 0 y 1
+for epoch in #epochs
+for i=1 to N
+y = inner(xi, w )   
+#calcular el output
+w += η ∗ y ∗ (xi − y ∗ w )
+#actualizar según regla de oja 
+return(w)
+
+[Descripción de la imagen: entrada alqmo x dation n media w p / dictione en v | Transcripción de la imagen: ALCORITMO
+
+input: X datos de dimensión N con media 0; n, w inicial con distribución uniforme entre O y1
+
+for epoch in Hepochs
+
+for i=ltoN
+y = inner(x, w ) Hcalcular el output
+W+=n*y*(x -y*w) — factualizar según regla de oja Aw = n(Ox"' — O2w?)
+return(w)
+
+16]]
+
+17
+REGLA DE SANGER
+Extensión de la regla de Oja
+●
+Converge a la matriz de autovectores de la matriz de covarianzas de los 
+datos.
+●
+Permite encontrar todas las componentes principales (k autovectores)
+
+[Descripción de la imagen: un fondo blanco con las palabras 'la sange']
+

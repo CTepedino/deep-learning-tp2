@@ -1,0 +1,103 @@
+PROBABILIDAD Y ESTADISTICA   93.24        PRIMER  PARCIAL  23/09/22 (UNO) 
+ 
+ 
+INDICACIONES:  Indique claramente apellido, nombre, número  de legajo y curso  en cada hoja que entregue. No solicite indicaciones 
+ni aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución.   
+SUERTE...                                DURACION : 2.5  HORAS. 
+ 
+APELLIDO Y NOMBRE : ...............................….................................................................. Nro de Legajo y curso :................…... 
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+TOTAL 
+NOTA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos) Un dispositivo electrónico tiene un tiempo de vida útil T (en miles de horas) que se supone es una 
+variable aleatoria continua con función densidad de probabilidad 
+ 
+ 
+ 
+ 
+ 
+𝑓𝑇(𝑡) =
+𝑡
+2 exp (−
+𝑡2
+4 )  𝕀(0,+∞)(𝑡)    
+ 
+a) Para el funcionamiento de un sistema S1 se conectan en serie 3 de estos dispositivos que se supone que 
+funcionan en forma independiente. Este arreglo funciona sólo si funcionan los tres. Calcular la probabilidad de este 
+sistema funcione más de 3000 horas (T = 3). 
+b) Para el funcionamiento de otro sistema S2 se colocan en paralelo 4 de los arreglos en serie del ítem previo. Este 
+sistema está operativo si al menos uno de los cuatro arreglos en paralelo funcionan. Asuma nuevamente la 
+independencia. Calcular la probabilidad de este sistema funcione más de 3000 horas. 
+ 
+Rtas: a) 0.00117     b) 0.0047 
+ 
+2. (2 puntos) Una materia se aprueba con un examen de respuesta múltiple de 5 preguntas con tres opciones de 
+respuesta para cada pregunta. Se asume que los eventos Ai: “el alumno contesta correctamente la pregunta i” son 
+independientes y que todos tienen la misma probabilidad de ocurrencia. 
+Se fijó un criterio de aprobación (cantidad de repuestas correctas C ó más) para asegurar que sean reprobados al 
+menos el 95% de los alumnos que no saben nada de la materia y responden totalmente azar. 
+a) Si un alumno estudió lo suficiente como para que la probabilidad de responder bien cada una de las preguntas 
+sea p = 0.8, ¿cuál es la probabilidad de que apruebe el examen? 
+b) Suponga que p = 0.6, ¿cuál es la probabilidad de que aprueben al menos 3 de 10 alumnos que se presenten a 
+dar el examen? 
+ 
+Rtas: a) 0.74     b) 0.72 
+ 
+ 
+ 
+ 
+3. (2 puntos) Las rutas 1 y 2 se juntan en un cruce y de allí sale la ruta 3. Las rutas 1 y 2 
+tienen la misma capacidad mientras que la 3 tiene una capacidad mucho mayor que ambas. 
+En las horas de mayor tráfico la probabilidad de congestión en la ruta 1 es 0.1 mientras que 
+para la ruta 2 es 0.3. Si la ruta 2 está congestionada la probabilidad de que lo esté la ruta 1 
+es 0.33. La ruta 3 se congestiona con probabilidad 1 si las rutas 1 y 2 lo están, con 
+probabilidad 0.15 si está congestionada exactamente una de las dos rutas, mientras que es 0.1 la probabilidad de 
+congestión en la ruta 3 si ninguna de las rutas 1 y 2 está congestionada. 
+a) Calcule la probabilidad de que haya congestión en la ruta 3. 
+b) Calcule la probabilidad de que estén congestionadas las rutas 1 y 2 dado que la ruta 3 lo está. 
+ 
+Rtas: a) 0.1992     b) 0.497
+
+[Descripción de la imagen: un documento con el texto en español]
+
+4. (2 puntos) El contenido de humedad del arroz almacenado es una variable aleatoria con distribución normal. 
+Para la variedad de arroz A el contenido de humedad tiene media 20 y desvío estándar 5. Para la variedad de 
+arroz B la probabilidad de que el contenido de humedad sea mayor que 38.25 es 0.05 y de que sea menor que 
+36.4 es 0.90. El arroz se empaqueta en cajas (las variedades no se mezclan) y se almacenan. Se puede suponer 
+que la cantidad de cajas de cada variedad es la misma. 
+a) Si una caja de arroz es extraída al azar y tiene un contenido de humedad inferior a 25, ¿cuál es la probabilidad  
+de que sea de la variedad A? 
+b)  Se toman al azar 20 cajas de arroz, ¿cuál es la probabilidad de que exactamente 10 tengan un contenido de 
+humedad inferior a 25? Suponga que el número de cajas en el depósito es muy grande. 
+ 
+ 
+Rtas: a) 0.833    b) 0.176 
+ 
+ 
+  5. (2 puntos) Una fuente binaria solo emite los símbolos -1 y 1 con probabilidades p y 1 - p respectivamente.   
+Cuando se envía -1, el receptor recibe Z = -1 + R, donde R (ruido) es una variable aleatoria continua con distribución 
+uniforme en (-2,2). Cuando se transmite 1 la salida es Z = 1 + 3 S con S también uniforme en (-1,1). Si Z > 0 el 
+receptor decide que se envió 1 y si Z < 0 , que se envió - 1. Se envía una ráfaga de 16 bits. ¿Cuál es la probabilidad 
+de que a lo sumo uno de los bits recibidos haya sido recibido con error? Suponga p = 0.45. 
+ 
+Rta:  0.028
+
+[Descripción de la imagen: una página de un documento con el texto en español]
+

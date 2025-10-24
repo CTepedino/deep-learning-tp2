@@ -1,0 +1,402 @@
+Sistemas de Inteligencia Artificial
+Agentes y Ambientes
+
+[Descripción de la imagen: el logotipo para el departamento de ciencia e ingeniería]
+
+El Agente y su Ambiente
+
+[Descripción de la imagen: un robot que está en el suelo con las palabras, 'lagery aumente ']
+
+El Agente y su Ambiente
+Sistemas de recomendación
+!
+Sistemas de detección de 
+fraude
+Agentes de inteligencia 
+artificial generativa
+
+[Descripción de la imagen: un fondo blanco con un montón de logos diferentes]
+
+El Agente y su Ambiente
+Ambiente
+?
+Agente
+Sensores
+Efectores
+Percepciones
+Acciones
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos del agente]
+
+Agentes
+Todo aquello que puede considerarse que percibe y responde o 
+actúa en un ambiente, de forma independiente (autónomo).
+
+[Descripción de la imagen: fondo blanco con hexas azules y hexas]
+
+Agente
+Racional
+Un agente es racional si realiza aquello que le permite obtener mejor 
+desempeño en su función.
+Medición del desempeño:
+●
+Determina el éxito de un agente.
+●
+Puede ser a corto o largo plazo.
+En cada posible secuencia de percepciones emprenderá aquella 
+acción que supuestamente maximice su medida de rendimiento, 
+basándose en las evidencias aportadas por la secuencia de 
+percepciones y en el conocimiento que mantiene almacenado.
+También llamados “Agentes basados en utilidad”.
+     Racionales  vs  No Racionales
+Listado de agentes vistos
+
+[Descripción de la imagen: un gráfico con las palabras «actuar racional» y «actuar racional»]
+
+Agente
+Racional
+Un agente es racional si realiza aquello que le permite obtener mejor 
+desempeño en su función.
+Medición del desempeño:
+●
+Determina el éxito de un agente.
+●
+Puede ser a corto o largo plazo.
+En cada posible secuencia de percepciones emprenderá aquella 
+acción que supuestamente maximice su medida de rendimiento, 
+basándose en las evidencias aportadas por la secuencia de 
+percepciones y en el conocimiento que mantiene almacenado.
+También llamados “Agentes basados en utilidad”.
+     Racionales  vs  No Racionales
+
+[Descripción de la imagen: un fondo blanco con las palabras '','' y'' ']
+
+Agente
+Racional
+“To prevent the game from becoming 
+impossibly difficult or too boring to 
+play, each of the ghosts were 
+programmed 
+to 
+have 
+their 
+own 
+distinct traits.
+The red ghost would directly chase 
+Pac-Man, the pink and blue ghosts 
+would position themselves in front of 
+him, and the orange ghost would be 
+random.”
+     Racionales  vs  No Racionales
+
+[Descripción de la imagen: un póster con una imagen de un pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac]
+
+Agente
+Racional
+Racionales
+     Racionales  vs  No Racionales
+No racional
+
+[Descripción de la imagen: los logos para el juego pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac pac | Transcripción de la imagen: yN
+
+Agente
+E>. Racional
+
+1UP HIGH _SCORE 2UP
+N 16440
+Racionales TT| E
+No racional
+
+a]]
+
+Agente 
+Omnisciente
+En todo momento, sabe el resultado real que producirán sus acciones 
+para toda la posteridad. 
+Es decir: 
+Un agente racional podría saber el efecto de sus acciones a corto 
+plazo, pero si no tiene en cuenta cada uno de los escenarios 
+posibles, no estamos hablando de un agente omnisciente.
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'est mimentoe ']
+
+Agente 
+Omnisciente
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+Un agente que juega al ajedrez 
+observa los posibles tableros que 
+se desprenden del tablero actual para 
+tomar una decisión.
+¿Es un agente omnisciente?
+
+[Descripción de la imagen: un gráfico de una partida de ajedrez con las palabras «agente» y «agente»]
+
+Agente 
+Omnisciente
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+Un agente que juega al ajedrez 
+observa los posibles tableros que 
+se desprenden del tablero actual para 
+tomar una decisión.
+¿Es un agente omnisciente?
+Si observa todos, SÍ.
+Si observa algunos, NO.
+
+[Descripción de la imagen: un gráfico de un juego de ajedrez con las palabras'''',''''y'']
+
+Agente
+Omnisciente
+“To prevent the game from becoming 
+impossibly difficult or too boring to 
+play, each of the ghosts were 
+programmed 
+to 
+have 
+their 
+own 
+distinct traits.
+The red ghost would directly chase 
+Pac-Man, the pink and blue ghosts 
+would position themselves in front of 
+him, and the orange ghost would be 
+random.”
+¿Es alguno omnisciente? NO
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+
+[Descripción de la imagen: el título del juego, con el título y el título del juego]
+
+A considerar!
+1.
+No siempre se sabe de antemano cuales son todas las 
+posibles secuencias.
+2.
+El número de secuencias puede ser exponencial e intratable.
+3.
+Aún conociendo todas las posibilidades armar una tabla de 
+acciones/reacciones podría ser un trabajo demasiado costoso 
+para quien realiza la arquitectura.
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+
+[Descripción de la imagen: ansicar 1os de ansicar]
+
+Sin estado interno
+●
+Tambien llamados 
+“reactivos” o “de reflejos 
+simples”.
+●
+Acción = f(Percepción)
+Con estado interno
+●
+Con cada percepción y/o 
+acción pueden alterar su 
+estado interno.
+●
+También llamados “basados 
+en modelos”
+●
+Acción = f(Percepción, Estado 
+Interno)
+Estado Interno
+     Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+                  Sin  vs  Con estado interno
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco]
+
+Tipos de Agentes
+    Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+                  Sin  vs  Con estado interno
+
+[Descripción de la imagen: las palabras oráculos vs oráculos vs oráculos vs oráculos vs oráculos vs oráculos vs oráculos]
+
+Ambientes
+Es un conjunto de componentes que conforman al entorno del 
+problema. 
+Pueden contener uno o más agentes.
+
+[Descripción de la imagen: una imagen de las palabras aments sobre un fondo blanco]
+
+Totalmente Observable / 
+Parcialmente Observable
+Un ambiente es Totalmente Observable si el agente tiene acceso a 
+todos los aspectos relevantes del ambiente para el problema. 
+Un ambiente es Parcialmente Observable caso contrario.
+En un ambiente totalmente observable, no se precisa de memoria 
+interna.
+Totalmente Observables: Ajedrez
+Parcialmente Observables: Juegos de cartas, Manejar un auto
+       Totalmente   vs  Parcialmente Obs.
+
+[Descripción de la imagen: el logotipo de la asociación farmacéutica italiana]
+
+Determinístico / 
+Estocástico
+Un ambiente es determinı́stico si el estado siguiente de un 
+ambiente se determina completamente mediante:
+●
+el estado actual y 
+●
+las acciones escogidas por los agentes.
+Un ambiente parcialmente observable puede parecer estocástico 
+para el agente.
+Determinístico Estratégico: Determinístico excepto para las 
+acciones de otros agentes.
+Determinísticos: Ajedrez
+Estocásticos: Generala, Ludo, Escaleras y Serpientes
+Estratégicos: Pac-man
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+
+[Descripción de la imagen: un fondo blanco con las palabras,'detericoo'y'detericoo']
+
+Episódico /
+Secuencial
+Episódico
+La experiencia del agente se mide en “episodios”.
+●
+Cada episodio consta de un agente que percibe y actúa.
+●
+Los episodios son independientes entre sı́.
+Secuencial
+La decisión actual puede afectar las decisiones futuras.
+Episódico: Torneo de ajedrez
+Secuencial: Partida de ajedrez
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+
+[Descripción de la imagen: un fondo blanco con las palabras epo general]
+
+Estático /
+Dinámico
+Si el ambiente es estático no cambia mientras el agente está 
+deliberando.
+Si lo que cambia es la calificación asignada al desempeño, entonces 
+es semidinámico.
+Estático: Ajedrez, Buscaminas
+Dinámico: Auto autónomo
+Semidinámico: Kahoot
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+             Estático  vs  Dinámico
+
+[Descripción de la imagen: un fondo blanco con las palabras esto diaicoo]
+
+Discreto /
+Continuo
+Un ambiente es discreto si existe una cantidad limitada de 
+percepciones y acciones distintas y claramente discernibles.
+Discreto: Pac-man
+Continuo: Auto autónomo
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+             Estático  vs  Dinámico
+             Discreto  vs  Continuo
+
+[Descripción de la imagen: un fondo blanco con las palabras diseo clinica]
+
+Amb. Conocido /
+Amb. Desconocido
+En un ambiente conocido, se conocen las consecuencias de las 
+acciones o las probabilidades en su totalidad.
+En un ambiente desconocido, el agente podrá aprenderlas o 
+estimarlas.
+Conocido: Pac-man
+Desconocido: Auto autónomo, Buscaminas
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+             Estático  vs  Dinámico
+             Discreto  vs  Continuo
+           Conocido  vs  Desconocido
+
+[Descripción de la imagen: una imagen de las palabras y símbolos de Internet]
+
+Individual /
+Multiagente
+Un ambiente multiagente es aquel que se conoce de la existencia de 
+al menos otro agente.
+Individual: Solitario
+Multiagente: Pac-man
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+             Estático  vs  Dinámico
+             Discreto  vs  Continuo
+           Conocido  vs  Desconocido
+           Individual  vs  Multiagente
+
+[Descripción de la imagen: el logotipo de la conferencia internacional en Internet]
+
+Adversariales /
+Colaborativos
+Adversariales
+Los objetivos de los agentes están en conflicto con los de otros agentes
+Colaborativos
+Los objetivos de los agentes están alineados con los de otros agentes
+Puede ser parcialmente ambos.
+Muy utilizado en Sistemas Multiagentes.
+Adversariales: Ajedrez
+Colaborativos: Drones para cosechar
+       Totalmente   vs  Parcialmente Obs.
+  Determinístico  vs  Estocástico
+          Episódico  vs  Secuencial
+             Estático  vs  Dinámico
+             Discreto  vs  Continuo
+           Conocido  vs  Desconocido
+           Individual  vs  Multiagente
+        Adversarial  vs  Colaborativo
+
+[Descripción de la imagen: un fondo blanco con las palabras adversidades, adversidades, adversidades,]
+
+Tipos de Ambientes
+1.
+        Totalmente  vs  Parcialmente   Observable
+2.
+  Determinístico  vs  Estocástico     (vs Estratégico)
+3.
+          Episódico  vs  Secuencial
+4.
+             Estático  vs  Dinámico         (vs Semidinámico)
+5.
+             Discreto  vs  Continuo
+6.
+           Conocido  vs  Desconocido
+7.
+           Individual  vs  Multiagente
+8.
+        Adversarial  vs  Colaborativo
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y blanco que dice topo anientes]
+
+Tipos de Ambientes
+1.
+        Totalmente  vs  Parcialmente   Observable
+2.
+  Determinístico  vs  Estocástico     (vs Estratégico)
+3.
+          Episódico  vs  Secuencial
+4.
+             Estático  vs  Dinámico         (vs Semidinámico)
+5.
+             Discreto  vs  Continuo
+6.
+           Conocido  vs  Desconocido
+7.
+           Individual  vs  Multiagente
+8.
+        Adversarial  vs  Colaborativo
+¡Y muchos más!
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco]
+

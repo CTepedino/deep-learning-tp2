@@ -1,0 +1,179 @@
+APRENDIZAJE 
+NO SUPERVISADO
+Autovalores y Autovectores
+Sistemas de Inteligencia Artiﬁcial - 2024
+
+[Descripción de la imagen: el logotipo del artesano nouved]
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MODELO DE 
+KOHONEN
+03. MODELO DE 
+HOPFIELD
+04. AUTOVALORES Y 
+AUTOVECTORES
+05. COMPONENTES 
+PRINCIPALES
+06. REGLA DE OJA Y 
+SANGER
+2
+
+[Descripción de la imagen: conidos de mesa]
+
+04
+AUTOVALORES Y 
+AUTOVECTORES
+¿Cómo se obtienen?
+3
+
+[Descripción de la imagen: un banner amarillo y blanco con las palabras 4 autoress autoress]
+
+4
+COMBINACIÓN LINEAL
+Sea 𝕍 un espacio vectorial sobre el cuerpo 𝕂
+El vector       es una combinación lineal de                                  cuando existen                       tales que:
+
+[Descripción de la imagen: se se se se se se se se se se se se se se se se se se se se se se se se se se | Transcripción de la imagen: COMBINACIÓN LINEAL
+
+Sea V un espacio vectorial sobre el cuerpo K
+
+El vector ) es una combinación lineal de [í, U , .., W? cuando existen a;eK, eR tales que:
+
+W = AjU1 + A9U9 + ... + AnUn]]
+
+5
+AUTOVALORES Y AUTOVECTORES
+Ejemplo:
+Sea la matriz A y el vector
+
+[Descripción de la imagen: autoress autoress autoress autoress autoress autoress autoress autosss | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+
+Ejemplo:
+Sea la matriz A y el vector Y = (£IJ, y)
+
+au
+
+— X + 2y
+Av = [x+4y]]]
+
+6
+AUTOVALORES Y AUTOVECTORES
+Si consideramos los siguientes ejemplos:
+
+[Descripción de la imagen: un fondo blanco con una imagen en blanco y negro de un fondo blanco con una imagen en blanco y negro de un]
+
+7
+AUTOVALORES Y AUTOVECTORES
+Gráﬁcamente, 
+La transformación del 
+primer cuadrante:
+
+[Descripción de la imagen: un gráfico con la pendiente y la línea del gráfico | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+
+Gráficamente,
+La transformación del
+primer cuadrante:
+
+(0. 1) (3,1)
+
+% (0,0) T (1,0) ? 1 ? ?]]
+
+8
+AUTOVALORES Y AUTOVECTORES
+●
+El vector (1, 0) se transformó en el (3, 1) y no conservó la dirección 
+●
+El vector (0, 1) se transformó en el (2, 4) y no conservó la dirección 
+●
+El vector (1, 1) se transformó en el (5, 5) y conservó la dirección con un escalamiento de 5
+Ese vector que mantuvo su dirección se denomina autovector,
+y el factor por el cual se escaló es el autovalor correspondiente.
+
+[Descripción de la imagen: autoress autoress]
+
+9
+AUTOVALORES Y AUTOVECTORES
+autovalor
+autovector
+vector que queda invariante después 
+de una transformación
+
+[Descripción de la imagen: autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores autores]
+
+10
+AUTOVALORES Y AUTOVECTORES
+Lo que es equivalente al sistema:
+Para obtener una solución no trivial:
+Polinomio característico
+Las raíces son los autovalores
+
+[Descripción de la imagen: autoress y autoress y autoress y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores y autores | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+
+AU = AU ,U£0
+(A-— ADU =0
+P(A) = det(A — AD =0
+
+X* Polinomio característico
+La Íces son los autovalores]]
+
+11
+AUTOVALORES Y AUTOVECTORES
+Los autovectores se obtienen resolviendo:
+Para cada autovalor hallado usando el polinomio característico
+
+[Descripción de la imagen: Autoress y Autoress y Autoress y Autoress y Autoress y Autoress y Autoss]
+
+12
+AUTOVALORES Y AUTOVECTORES
+Ejemplo: Calculamos los autovalores
+
+[Descripción de la imagen: una pizarra blanca con la ecuación de un número de los números | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+
+Ejemplo: Calculamos los autovalores
+J 2 1 0 I—A 2
+E [1 4] _A[0 1] _ [ 1 4—A]
+det(A — AL) =0
+
+(3-4-1)-2=0
+=
+R2-722+10=0
+
+=6]]
+
+13
+AUTOVALORES Y AUTOVECTORES
+Ejemplo: Calculamos los autovectores
+autovector 
+  con y = 1
+
+[Descripción de la imagen: una pizarra con las palabras autoress y | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+(A—- ANU =0
+
+Ejemplo: Calculamos los autovectores
+
+. (4 — 21) lí¡ N [8]
+HMEIMELO
+
+x +2y=0>5> 1= -2y ““ y = [—2]
+
+con y =|]]
+
+14
+AUTOVALORES Y AUTOVECTORES
+Ejemplo: Calculamos los autovectores
+autovector 
+  con x = 1
+
+[Descripción de la imagen: un fondo blanco con un texto en blanco y negro que lee autoress autoress | Transcripción de la imagen: AUTOVALORES Y AUTOVECTORES
+(A—- ANU =0
+
+Ejemplo: Calculamos los autovectores
+
++ — l) =h
+
+autovector —-—. — 1
+T_ Y=0>T=Y o7 U2 =
+
+1]]
+

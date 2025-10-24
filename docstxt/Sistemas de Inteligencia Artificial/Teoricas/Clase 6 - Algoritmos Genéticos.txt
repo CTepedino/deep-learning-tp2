@@ -1,0 +1,851 @@
+Sistemas de Inteligencia Artificial
+Algoritmos Genéticos
+
+[Descripción de la imagen: un logotipo para una escuela de ciencias]
+
+Antes de la 
+Revolución Industrial
+Después de la 
+Revolución Industrial
+
+[Descripción de la imagen: las tres imágenes muestran los diferentes tipos de material]
+
+Motivación
+●
+Tengo una función a optimizar y no 
+necesariamente una función de goal.
+●
+Combinando buenos estados puedo encontrar 
+mejores.
+●
+Mi problema varía en el tiempo.
+●
+Mi problema es compuesto y delegable.
+●
+Detección de esquemas.
+John H. Holland
+
+[Descripción de la imagen: un fondo blanco con un hexano azul y un hexano azul]
+
+Introducción
+●
+Algoritmo de optimización/adaptabilidad basados 
+en la mecánica de la selección natural y la evolución.
+●
+La implementación es altamente paralelizable.
+●
+Múltiples parámetros y múltiples variables.
+
+[Descripción de la imagen: un fondo blanco con las palabras en español y las palabras en español]
+
+Población
+Inicial
+Recombinación
+Selección
+[ Según Aptitud ]
+Nueva
+Población
+Mutación
+Generación 0
+Generación N
+
+[Descripción de la imagen: un diagrama que muestra los diferentes tipos del genoma]
+
+Componentes
+Básicos
+de Algoritmos Genéticos
+●
+Estructura / Arquitectura ~ Genotipo
+●
+Población Inicial
+●
+Función de adaptabilidad - ﬁtness o aptitud
+●
+Método de selección de padres
+●
+Método de cruza
+●
+Método de mutación
+●
+Método de selección de nueva generación
+○
+Se pueden usar los mismos métodos de selección de 
+padres
+●
+Condición de corte ( opcional )
+
+[Descripción de la imagen: comor de comidas de comidas]
+
+Definiciones
+
+[Descripción de la imagen: las definiciones de palabras sobre fondo blanco con hexas y hexas | Transcripción de la imagen: Definiciones
+
+.
+.<E>
+(]]
+
+Nomenclatura
+Genotipo
+[ 0/1 ] [ 0/1 ]
+[ 0/1 ] [ 0/1 ] [ 0/1 ]
+Gen Color
+Gen Forma
+“Estructura”
+
+[Descripción de la imagen: el logotipo del nuevo gen | Transcripción de la imagen: Nomenciatura
+
+E>. Genotipo
+
+“Estructura”]]
+
+Nomenclatura
+Locus
+#1
+#2
+Posición
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: (a)
+ºNomendatura
+Locus
+
+Posición]]
+
+Nomenclatura
+Cromosoma
+[ 1 ] [ 0 ]
+[ 1 ] [ 0 ] [ 1 ]
+Amarillo Patito
+Triángulo
+Representación
+En este caso el CROMOSOMA sería “10101”
+
+[Descripción de la imagen: un fondo blanco con logotipos azul y verde | Transcripción de la imagen: (a)
+Nomenciatura
+
+Cromosoma
+
+| _ Amarillo Patito __) Triángulo
+
+v
+
+[1][0] [1][O][1]
+
+Representación
+
+5?a En este caso el CROMOSOMA sería “10101”]]
+
+Nomenclatura
+Fenotipo
+Características Observables
+
+[Descripción de la imagen: el logotipo del grupo molecular]
+
+Nomenclatura
+Alelos
+[ 1 ] [ 0 ]
+Amarillo Patito
+[ 0 ] [ 1 ]
+Turquesa
+[ 0 ] [ 0 ]
+Cerúleo
+[ 0 ] [ 0 ] [ 0 ]
+Cuadrado
+[ 0 ] [ 1 ] [ 0 ]
+Octágono
+[ 0 ] [ 0 ] [ 1 ]
+Círculo
+[ 0 ] [ 1 ] [ 1 ]
+Pentágono
+[ 1 ] [ 0 ] [ 0 ]
+Paralelogramo
+[ 1 ] [ 0 ] [ 1 ]
+Triángulo
+
+[Descripción de la imagen: un diagrama de los diferentes tipos del modelo molecular | Transcripción de la imagen: xº
+
+[O][1][0] [O][1][1]
+e
+
+Amarillo Patito
+
+[1][0]
+
+Turquesa
+
+Cerúleo
+
+Paralelogramo Triángulo
+
+[1][O][0] [1][O][1]
+
+[O][0O]]]
+
+Población Inicial
+●
+Generalmente inicializados con alelos al azar
+●
+De un tamaño de población N
+●
+También llamada Población de la Generación 0
+
+[Descripción de la imagen: un fondo blanco con hexas azules y verdes y las palabras 'oabmicas']
+
+Fitness (aptitud)
+●
+Función de evaluación de los individuos.
+●
+Mientras más alto, más adaptado al problema.
+Fitness Relativo
+
+[Descripción de la imagen: finos de marketing finos de marketing finos de marketing finos de marketing]
+
+Selección
+Muestreo Directo | Elite
+●
+Selecciona los individuos con mayor aptitud.
+Muestreo Aleatorio
+●
+Selecciona individuos al azar.
+Muestreo Estocástico
+●
+Selecciona los individuos combinando la aptitud y el azar.
+
+[Descripción de la imagen: un fondo blanco con un hexal azul y un hexal azul]
+
+Teniendo que seleccionar K individuos de un conjunto de tamaño N, 
+los ordena según el ﬁtness y elije cada uno n(i) veces, según la 
+siguiente formula:
+Selección
+Elite
+Puede ser muy restrictivo, pero es muy 
+performante!
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que dice, 'seico fuego ']
+
+Selección
+Estocástica
+●
+Por Ruleta
+●
+Universal
+●
+Por Ranking
+●
+Boltzmann
+●
+Por Torneos
+○
+Determinísticos
+○
+Probabilísticos
+
+[Descripción de la imagen: el logotipo para el nuevo programa de investigación]
+
+Selección
+Por Ruleta
+Se calculan las aptitudes relativas pj . Luego, se calculan las 
+aptitudes relativas acumuladas qi de la siguiente forma:
+Se generan K números aleatorios
+y se seleccionan los K individuos xi que cumplen:
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que lee seco proteta]
+
+Ejercicio
+Aptitudes
+Individual(fi )
+Relativa (pi )
+Acumulada(qi )
+x0
+3
+0.086
+0.086
+x1
+6
+0.171
+0.257
+x2
+11
+0.314
+0.571
+x3
+14
+0.400
+0.971
+x4
+1
+0.029
+1.000
+K=3
+r0 = 0.276
+r1 = 0.095
+r2 = 0.893
+
+[Descripción de la imagen: una tabla con los nombres de las tres fórmulas | Transcripción de la imagen: w
+
+: — S Knú leatori
+EJ GFC]_C]_O yí<=?22Íer((:]cr;on2:rlgírlisí:di?id%r<laossxique cumplen: K=3
+>. G1 < yij < di q =0 r, = 0.276
+. r = 0.095
+Aptitudes
+r, = 0.893
+Individual(f.) Relativa (p.) Acumulada(a.)
+X) 3 0.086 0.086
+X, 6 0.171 0.257
+X 11 0.314 0.571
+X; 14 0.400 0.971
+x 1 0.029 1.000]]
+
+Ejercicio
+Aptitudes
+Individual
+Relativa
+Acumulada
+x0
+3
+0.086
+0.086
+x1
+6
+0.171
+0.257
+x2
+11
+0.314
+0.571
+x3
+14
+0.400
+0.971
+x4
+1
+0.029
+1.000
+K=3
+r0 = 0.276 = x2
+r1 = 0.095 = x1
+r2 = 0.893 = x3
+
+[Descripción de la imagen: una tabla con las fórmulas de las fórmulas | Transcripción de la imagen: w
+
+. . . S K nú leatori
+EJ GFC]_C]_O yí<=?22Ieer((:]cri"on2:rlgírlisí:di2d%r:aossxique cumplen: K=3
+>. 41 <j < di q =0 r= 0.276 = x,
+_ r = 0.095 = x,
+Aptitudes
+r= 0.893 = x,
+Individual Relativa Acumulada
+
+X) 3 0.086 0.086
+
+X, 6 0.171 0.257
+
+X 11 0.314 0.571
+
+Xz 14 0.400 0.971
+
+x 1 0.029 1.000]]
+
+Selección
+Universal
+Igual que en ruleta, pero la forma de calcular los rj es la siguiente:
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco y un logotipo azul y blanco | Transcripción de la imagen: —
+
+delección
+Universal
+Igual que en ruleta, pero la forma de calcular los res la siguiente:
+
+r — Uni formRandom|0, 1)
+
+T+j
+— K
+
+Ti ; jE (, (X — 1)]]
+
+Ejercicio
+Aptitudes
+Individual
+Relativa
+Acumulada
+x0
+3
+0.086
+0.086
+x1
+6
+0.171
+0.257
+x2
+11
+0.314
+0.571
+x3
+14
+0.400
+0.971
+x4
+1
+0.029
+1.000
+K=4 y r = 0.084
+
+[Descripción de la imagen: una tabla con las fórmulas de las fórmulas]
+
+Ejercicio
+Aptitudes
+Individual
+Relativa
+Acumulada
+x0
+3
+0.086
+0.086
+x1
+6
+0.171
+0.257
+x2
+11
+0.314
+0.571
+x3
+14
+0.400
+0.971
+x4
+1
+0.029
+1.000
+K=4 y r = 0.084
+r0 = 0.021
+r1 = 0.271
+r2 = 0.521
+r3 = 0.771
+
+[Descripción de la imagen: una tabla con las fórmulas de las fórmulas]
+
+Ejercicio
+Aptitudes
+Individual
+Relativa
+Acumulada
+x0
+3
+0.086
+0.086
+x1
+6
+0.171
+0.257
+x2
+11
+0.314
+0.571
+x3
+14
+0.400
+0.971
+x4
+1
+0.029
+1.000
+K=4 y r = 0.084
+r0 = 0.021 = x0
+r1 = 0.271 = x2
+r2 = 0.521 = x2
+r3 = 0.771 = x3
+
+[Descripción de la imagen: una tabla con las fórmulas de las fórmulas]
+
+Se denomina una pseudo-aptitud con una función 
+f ’ (i) como una función proporcional al ranking de ﬁtness real del 
+individuo respecto de sus pares.
+Un ejemplo de función a tomar es la siguiente:
+rank(i): ranking ordenado de mayor a menor aptitud real.
+Luego se utiliza ruleta con este pseudo-aptitud redeﬁnida.
+Selección
+Por Ranking
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que dice, 'seio poring ']
+
+Selección
+Entrópica - Boltzmann
+También se deﬁne una pseudo-aptitud, pero con la siguiente 
+función:
+Luego, se utiliza esta pseudo-aptitud ExpVal como aptitud para 
+seleccionar con el método de selección Ruleta. 
+En rigor, ExpVal es Expected Value 
+(esperanza matemática). 
+Utilizando dichos valores en ruleta se 
+logra cumplir con sus esperanzas.
+
+[Descripción de la imagen: elecon enpra - boram]
+
+Selección
+Entrópica - Boltzmann
+Ejemplo de función de decrecimiento de temperatura
+Generación (t)
+Temperatura
+k: constante
+
+[Descripción de la imagen: un gráfico gráfico con la fórmula de la fórmula]
+
+Selección
+Por Torneos Determinísticos
+1.
+De la población de tamaño N, se eligen M individuos al azar.
+2.
+De los M individuos, se elige el mejor.
+3.
+Se repite el proceso (1.) hasta conseguir los K individuos que 
+se precisan.
+
+[Descripción de la imagen: un fondo blanco con las palabras 'seon porros determinos ']
+
+Selección
+Por Torneos Probabilísticos
+1.
+Se elige un valor de Threshold en [0.5 , 1]
+2.
+De la población de tamaño N, se eligen 2 individuos al azar.
+3.
+Se toma un valor r al azar uniformemente en [0,1].
+a.
+Si r < Threshold se selecciona el más apto.
+b.
+Caso contrario, se selecciona el menos apto.
+4.
+Se repite el proceso (1.) hasta conseguir los K individuos que 
+se precisan.
+
+[Descripción de la imagen: un fondo blanco con las palabras 'seon porros probióticos ']
+
+Selección
+Por Torneos
+Ventajas
+●
+Velocidad de ejecución
+○
+No se procesa toda la población
+○
+No requiere variables intermedias, se utiliza el ﬁtness 
+directamente.
+●
+Facilidad de implementación.
+Desventaja
+●
+Según como esté conﬁgurado, puede introducir una presión 
+de selección muy alta.
+●
+No considerar todos los individuos puede afectar la eﬁciencia 
+de nuestra implementación
+
+[Descripción de la imagen: un fondo blanco con las palabras,'seio pormos'and'seio pormos ']
+
+Crossover
+(Cruza / Recombinación)
+Una vez que se seleccionan los individuos, se los aparea y se 
+realiza la recombinación de genes.
+Tipos de Crossover:
+●
+Cruce de Un Punto
+●
+Cruce de Dos Puntos
+●
+Cruce Anular
+●
+Cruce Uniforme
+
+[Descripción de la imagen: crosser - crazroni - tec conicoo]
+
+Cruce de
+Un Punto
+Se elige un locus al azar y se intercambian los alelos a partir de ese 
+locus. P = [0,S-1] ; S: Cantidad de genes
+Para estos ejercicios se 
+asume un bit por gen, lo cual 
+no siempre es correcto.
+(Muchas veces no lo es)
+X1: 011011001110
+X2: 101001110010
+X3: 011001110010
+X4: 101011001110
+P = 4
+
+[Descripción de la imagen: una pantalla de una computadora con el texto'''' y una imagen de una molécula]
+
+Cruce de
+Dos Puntos
+Se elige dos locus al azar y se intercambian los alelos entre ellos. P1 
+= [0,S-1]  ;  P2 = [0, S-1]  ; P1 ≤ P2
+X1: 011011001110
+X2: 101001110010
+X3: 011001001110
+X4: 101011110010
+P1 = 4 ; P2 = 6
+Para estos ejercicios se 
+asume un bit por gen, lo cual 
+no siempre es correcto.
+(Muchas veces no lo es)
+
+[Descripción de la imagen: una representación gráfica de una molécula con las palabras''''y'''']
+
+Cruce
+Anular
+Se elige un locus al azar P y una longitud L. Se intercambia el 
+segmento de longitud L a partir de P.
+P = [0,S-1]  ;  L = [0, ⎾S/2⏋] 
+X1: 011011001110
+X2: 101001110010
+X3: 101011001110
+X4: 011001110010
+P = 11 ; L = 5
+Para estos ejercicios se 
+asume un bit por gen, lo cual 
+no siempre es correcto.
+(Muchas veces no lo es)
+
+[Descripción de la imagen: una representación gráfica de una molécula con las palabras''''y'''']
+
+Cruce
+Uniforme
+Se produce un intercambio de alelos en cada gen con probabilidad 
+P [0, 1]. (Por lo general P = 0.5).
+X1: 0 1 1 0 1 1 0 0 1 1 1 0
+X2: 1 0 1 0 0 1 1 1 0 0 1 0
+X3: 0 1 1 0 1 1 0 0 0 1 1 0
+X4: 1 0 1 0 0 1 1 1 1 0 1 0
+Pi: > > < < > < > > < > < <
+Abuso de Notación
+Pi 
+Tiene 2 valores:
+>: Se mantienen 
+los alelos
+<: Se intercambian 
+los alelos
+Para estos ejercicios se 
+asume un bit por gen, lo cual 
+no siempre es correcto.
+(Muchas veces no lo es)
+Es el único tipo de cruce visto 
+que no mantiene correlación 
+posicional entre alelos.
+
+[Descripción de la imagen: un gráfico que muestra los diferentes tipos de código]
+
+Probabilidad de 
+Recombinación
+Es muy común también implementar Pc como una probabilidad de 
+recombinación de genes. 
+Si los genes no se recombinan, los genes de los hijos serán una 
+copia idéntica a los padres, pero pasando por la etapa de 
+mutación.
+
+[Descripción de la imagen: un fondo blanco con las palabras produde pomition]
+
+Mutación
+Se deﬁne mutación como una variación en la información genética 
+que se almacena en el cromosoma.
+Para que la mutación sea más eﬁciente, una correcta arquitectura y 
+separación de genes es necesaria.
+Motivación:
+●
+Enriquecer la diversidad genética.
+●
+Evitar máximos locales.
+●
+Mantener un grado de exploración.
+
+[Descripción de la imagen: un fondo blanco con las palabras mucion y un fondo azul y blanco con las palabras mucion]
+
+Dado una probabilidad de mutación Pm:
+Mutación de Gen: Se altera un solo gen con una probabilidad Pm.
+Mutación Multigen Limitada: Se selecciona una cantidad [1,M] 
+(azarosa) de genes para mutar, con probabilidad Pm.
+Mutación Multigen Uniforme: Cada gen tiene una probabilidad Pm 
+de ser mutado.
+Mutación Completa: Con una probabilidad Pm se mutan todos los 
+genes del individuo, acorde a la función de mutación deﬁnida para 
+cada gen.
+Mutación
+Variantes
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y verde]
+
+Mutación
+Sobre Genes
+También hace falta deﬁnir QUÉ es una mutación sobre un alelo de 
+un gen.
+Algunas posibilidades son:
+●
+Tomar un nuevo alelo aleatorio sobre el gen.
+●
+Aplicar un delta al alelo, en algún sentido y con alguna 
+distribución.
+
+[Descripción de la imagen: un fondo blanco con las palabras '','' y'' ']
+
+Convergencia
+Prematura
+Si la población converge en sus características, sin presentar más 
+variedad de la que introduce la mutación y sin haber llegado a una 
+aptitud aceptable, decimos que la población sufrió una 
+convergencia prematura.
+Esto suele provocar que la solución del método arroje un 
+subóptimo, a menos que dicho punto de convergencia sea el 
+máximo global (diﬁcil o imposible de analizar) ó que la población 
+escape de dicho máximo local por mutación (también, muy diﬁcil de 
+analizar).
+A la variedad de alelos representados en la 
+población se la llama Diversidad.
+
+[Descripción de la imagen: un fondo blanco con un texto azul y blanco que dice, 'converia parata ']
+
+Causas  de
+Convergencia Prematura
+La correcta conﬁguración es esencial para evitar una convergencia 
+prematura.
+Algunas de las causas son:
+●
+Una presión de selección muy alta*
+●
+Una probabilidad de mutación muy baja*
+●
+Un tamaño de población muy escaso*
+*) Depende del problema
+
+[Descripción de la imagen: un fondo blanco con las palabras "porque" y "porque"]
+
+Convergencia
+Prematura
+Implementamos la selección RULETA en nuestro AG. Si en una 
+población dada, la diferencia entre los más aptos y el resto es lo 
+suﬁcientemente grande, esto llevará a perdida de diversidad y a la 
+convergencia prematura.
+¿Por qué?
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'converia emuta ']
+
+Implementación
+
+[Descripción de la imagen: la palabra implementación de implementación se muestra en un hexa azul y blanco | Transcripción de la imagen: r?"
+EEE Implementación
+
+.
+.<E>
+(]]
+
+Tradicional
+Generando K hijos de K padres…
+La nueva generación se formará seleccionando N 
+individuos del conjunto de [ N (individuos de la generación 
+actual) + K (hijos) ].
+
+[Descripción de la imagen: traciona de la universidad de la universidad de sciences]
+
+Sesgo Joven
+Generando K hijos de K padres…
+●
+K > N : La nueva generación se genera 
+seleccionando N de los K hijos únicamente.
+●
+K ≤ N : La nueva generación se conformará por los K 
+hijos generados + (N-K) individuos seleccionados de 
+la generación actual.
+
+[Descripción de la imagen: un fondo blanco con formas geométricas azules y verdes]
+
+Determina la cantidad de individuos introducidos en la nueva 
+generación.
+●
+G = 1 : Toda la población es reemplazada.
+●
+G = 0 : Ningún individuo es reemplazado.
+●
+G ϵ (0,1) : La nueva generación se compone de:
+○
+(1-G) * N de individuos de la generación anterior.
+○
+G * N de los individuos generados.
+Brecha
+Generacional
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y verde que dice, 'prelaciona']
+
+Criterios de Corte
+●
+Tiempo
+●
+Cantidad de generaciones
+●
+Solución aceptable
+●
+Estructura: Una parte relevante(1) de la población no 
+cambia(2) en una cantidad de generaciones(1).
+●
+Contenido: El mejor ﬁtness no cambia(2) en una cantidad de 
+generaciones(1).
+(1)
+Parametrizable
+(2)
+Según la estructura, hay genes que se pueden deﬁnir un criterio con el cuál se 
+consideran que no cambia.
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y blanco que dice cris de core]
+
+Esquemas
+( no es necesario para el Trabajo Práctico )
+
+[Descripción de la imagen: un fondo blanco con hexas azules y verdes]
+
+Esquemas
+Es un patrón de similitud entre cromosomas.
+Ejemplo:
+El esquema
+*01001*01     representa:
+001001001
+001001101
+101001001
+101001101
+Para estos ejercicios se 
+asume un bit por gen, lo cual 
+no siempre es correcto.
+(Muchas veces no lo es)
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y verde]
+
+Órden  
+de los esquemas
+o(*01*) = 2
+o(**0*1***1) = 3
+o(011010*0) = 7
+Mientras más alto el esquema, mayor probabilidad de perderlo 
+frente a una mutación.
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y blanco]
+
+Teorema de los 
+esquemas
+Aquellos esquemas con un ﬁtness medio superior a la media 
+de la población y con un orden bajo aumentarán su presencia de 
+manera exponencial en las sucesivas generaciones.
+
+[Descripción de la imagen: un fondo blanco con las palabras,'la policion de unidades ']
+
+Bloques
+Constructivos
+Esquemas de bajo orden y con un ﬁtness alto serán elegidos, 
+recombinados y re-elegidos para ir formando cromosomas con 
+mayor ﬁtness. Llamamos a estos esquemas Bloques 
+Constructivos.
+Esto permite reducir la complejidad del problema, dividiéndolo en 
+sub-problemas.
+1.
+Optimizar esquema
+2.
+Encontrar esquemas
+3.
+Agrupar esquemas
+
+[Descripción de la imagen: un fondo blanco con formas azules y verdes]
+

@@ -1,0 +1,230 @@
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+La variable aleatoria X definida en la población es 
+continua y tiene distribución normal de media µ y 
+desvío estándar 
+Se considera una muestra aleatoria de tamaño n de  X .
+La variable aleatoria T tiene distribución t de Student, 
+con n – 1 grados de libertad. Tiene valor  esperado cero 
+y su desvío estándar es superior a 1.
+
+[Descripción de la imagen: un diagrama del número de los números en un número de los números en un número de los números en]
+
+Comparación t vs normal estándar
+Comparación de las funciones de densidad de probabilidad y de distribución de 
+las variables aleatorias normal estándar y t de Student con 5 grados de libertad
+
+[Descripción de la imagen: comor de est est est est est est est est est est est est est est est est est est est est]
+
+Comparación t vs normal estándar
+Comparación de las funciones de densidad de probabilidad y de distribución 
+de las variables aleatorias normal estándar y t de Student con 10 grados de 
+libertad
+
+[Descripción de la imagen: Comisión de la decisión de datar de datar de datar de datar de datar de datar de datar]
+
+Comparación t vs normal estándar
+Comparación de las funciones de densidad de probabilidad y de distribución de 
+las variables aleatorias normal estándar y t de Student con 30 grados de 
+libertad
+
+[Descripción de la imagen: comor de est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: T=—c- - ta-1
+
+normal estandar
+tde Student 30 gell
+
+1 T T T
+normal estandar
+0.5 tde Student 30 gell -
+0.6 7
+04 -
+0z 7
+0 l l | l
+-6 4 z a) z 4 G
+
+Comparación de las funciones de densidad de probabilidad y de distribución de
+
+las variables aleatorias normal estándar y t de Student con 30 grados de
+libertad]]
+
+Comparación t vs normal estándar
+Comparación de los fractiles de las distribuciones normal estándar y t de 
+Student con 10 y con 30 grados de libertad. Las diferencias mas importantes 
+ocurren para valores de p cercanos a 1 y si el número de grados de libertad 
+es pequeño (aún con 30 se nota la diferencia).
+
+[Descripción de la imagen: comor de fras de dibonal]
+
+Comparación t vs normal estándar
+Comparación de los fractiles 0.95 de las distribuciones normal estándar y 
+t de Student con n grados de libertad. Se representa la razón entre 
+ambos fractiles que tiende asintóticamente a 1.
+
+[Descripción de la imagen: una parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela]
+
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+Un fabricante de lámparas eléctricas ha desarrollado un  nuevo proceso de 
+producción que él espera aumentará la  eficiencia (se supone una variable 
+normal) media (en lúmenes/watt) de su producto que hasta el momento es de 
+9.5. Los resultados de un experimento realizado sobre 10 lámparas se dan a 
+continuación: 9.28, 10.25, 11.52, 13.02, 11.58, 9.97, 11.46, 12.05, 9.87, y 10.85. 
+¿Debe el fabricante concluir que la eficiencia aumentó?  Usar 5 % como nivel de 
+significación del test. Calcule el valor P de esta prueba de hipótesis
+La variable aleatoria X medida en cada lámpara es la eficiencia  (en lum/w).  Se 
+supone que tiene distribución normal. Si la afirmación del fabricante es 
+verdadera entonces el estadístico de prueba tiene distribución t de Student con 
+n-1 grados de libertad.  La hipótesis nula de esta prueba es H0 : μ  9.5 frente 
+a H1 : μ > 9.5. Si se rechaza H0 se concluirá que el nuevo proceso de 
+producción produce un aumento significativo de la eficiencia media.
+
+[Descripción de la imagen: un texto que dice, `'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+Para esta muestra de 10 lámparas la media muestral y el desvío estándar muestral 
+son, respectivamente, 10.985 y 1.149. Por consiguiente el valor observado de T es:
+Si H0 es verdadera entonces el estadístico de prueba:
+10
+/
+5.9
+S
+X
+T
+
+
+Si H0 es verdadera entonces el estadístico de prueba:
+tiene distribución de Student con 9 grados de libertad.  Si el valor observado de T en 
+una muestra excede el valor crítico del nivel 0,05 entonces se rechaza  H0. El valor 
+crítico es  
+833
+.1
+95
+.0
+,9
+
+t
+087
+.4
+10
+/
+149
+.1
+5.9
+985
+.
+10
+
+
+
+obs
+t
+Como el valor observado es superior al crítico se rechaza la hipótesis nula y se 
+concluye que la media del proceso aumentó y por consiguiente el nuevo proceso 
+mejora la eficiencia media de las lámparas.
+
+[Descripción de la imagen: un número de números está escrito en español]
+
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+El valor observado del estadistico de prueba  T es tobs  4,087. Como es mayor que el 
+crítico 1.833 entonces se rechaza H0  al nivel de significación del 5%. Para este valor 
+observado se rechaza H0 a cualquier nivel de significación mayor a 
+0014
+.0
+)
+(
+
+
+obs
+t
+T
+P
+Esta probabilidad, calculada con la función de distribución t,  se denomina valor P del 
+test, en este caso de cola derecha; y mide la probabilidad de que el estadístico de 
+prueba tome valores mayores que el observado. Para esta prueba de hipótesis la 
+condicion de rechazo puede expresarse en forma equivalente como:
+05
+.0
+95
+.0,9
+
+
+valorP
+ó
+t
+tobs
+1-tcdf(4.087,9)
+ans =  0.0013646
+Salida de Octave
+
+[Descripción de la imagen: un número de números en español]
+
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+Pantalla de salida de R donde se ingresan los datos en una tabla y luego se invoca la 
+prueba t (t.test) indicando los datos, el tipo de prueba (cola derecha – greater) y el valor 
+de la media que se indica en la hipótesis nula (mu_0).
+
+[Descripción de la imagen: una pantalla de computadora con un texto que diga: " ` " | Transcripción de la imagen: Prueba de hipótesis sobre la media poblacional con
+desvío poblacional desconocido
+
+File - Edit - View - Mic  Packages Windeas - Help
+
+]] el
+FE R Conole
+
+> x=a(9.28, 10.25, 11:572, 13.02,11.58, 9.97, 11.46, 172.05,9.87,10.685)
+> t.test(x, alternative="greater" , mu=9,5)
+
+One Sample t-test
+
+? data: x
+t = 4.0873, d£ = 9, p-value = 0.001364
+alternative hypothesis: true mean is greater than 9.5
+95 parcent confidance interval:
+10.31899 Inf
+sample estimates:
+mean of x
+10,985
+
+> |
+
+Pantalla de salida de R donde se ingresan los datos en una tabla y luego se invoca la
+
+prueba t (t.test) indicando los datos, el tipo de prueba (cola derecha — greater) y el valor
+de la media que se indica en la hipótesis nula (mu_0).]]
+
+Prueba de hipótesis sobre la media poblacional con 
+desvío poblacional desconocido 
+Regla  de decisión
+Zona de rechazo de H0
+Zona de rechazo de H0
+Zona de rechazo de H0
+Zona de rechazo de H0
+
+[Descripción de la imagen: una línea con dos iguales y uno igual | Transcripción de la imagen: Prueba de hipótesis sobre la media poblacional con
+desvío poblacional desconocido
+
+Regla de decisión
+
+X — N(u, 5), o desconocido.
+
+H0 . U < H.0 Zona de rechazo de HO
+
+—+—— —
+
+H: u >
+1: 4 - HMo 0 E
+
+H0 : ¡u 2 ¡uO Zona de rechazo de HO | |
+
+H1Í u < Ho _tn—1,1—am 0 Z
+
+H - e Zona de rechazo de HO
+0: M — M0 Zona de rechazo de HO
+
+EA
+
+Hi: HE Lo]]
+

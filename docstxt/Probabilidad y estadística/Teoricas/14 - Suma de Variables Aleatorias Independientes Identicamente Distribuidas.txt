@@ -1,0 +1,854 @@
+Suma de variables i.i.d.
+i.i.d.
+Independientes 
+Idénticamente 
+Distribuidas
+
+[Descripción de la imagen: un libro con las palabras 'snavables id ']
+
+Suma de variables i.i.d.
+•
+Dos v.a.  continuas son independientes 
+sii  
+•
+Dos v.a.  discretas son independientes 
+sii 
+•
+Si dos v.a.   (continuas o discretas) son 
+independientes, entonces
+
+[Descripción de la imagen: una nota con las palabras ','' y '']
+
+Suma de variables i.i.d.
+ v.a. i.i.d. con  y  
+E [ 𝑋+𝑌]=E[ 𝑋]+E[𝑌]=2 𝜇
+Var [ 𝑋+𝑌]=Var [ 𝑋]+Var [𝑌]+2COV [ 𝑋,𝑌]=2 𝜎2
+
+[Descripción de la imagen: una nota con las palabras y está en ella | Transcripción de la imagen: Suma de variables 1.1.d.
+
+V.a. |.1.d. con y
+
+E X+Y | =E X+E Y =2u
+
+Var | X +Y |= Var X +Var Y +2COV X, Y =20"]]
+
+Suma de variables i.i.d.
+v.a. i.i.d. con  y  
+E[∑
+𝑖=1
+𝑛
+𝑋𝑖]=?
+Var[∑
+𝑖=1
+𝑛
+𝑋𝑖]=?
+
+[Descripción de la imagen: un libro con una ecuación matemática en él | Transcripción de la imagen: Suma de variables 1.1.d.
+
+V.a. 1.1.d.con y]]
+
+Suma de variables i.i.d.
+v.a. i.i.d. con  y  
+E[∑
+𝑖=1
+𝑛
+𝑋𝑖]=𝑛𝜇
+Var[∑
+𝑖=1
+𝑛
+𝑋𝑖]=𝑛𝜎
+2
+
+[Descripción de la imagen: un libro con una ecuación matemática en él | Transcripción de la imagen: Suma de variables 1.1.d.
+
+V.a. 1.1.d.con y]]
+
+Suma de variables i.i.d.
+v.a. i.i.d. con  y  
+E [ 𝑋𝑛]=?
+Var [ 𝑋𝑛]=?
+𝑋𝑛= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑋𝑖
+Promedio
+:
+
+[Descripción de la imagen: sum variables i d | Transcripción de la imagen: Suma de variables 1.1.d.
+
+V.a. 1.1.d.con y
+
+Promedio Ín=%2 X,
+" 1=1
+
+E X, =?]]
+
+Suma de variables i.i.d.
+v.a. i.i.d. con  y  
+E [ 𝑋𝑛]=𝜇
+Var [ 𝑋𝑛]= 𝜎2
+𝑛
+𝑋𝑛= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑋𝑖
+Promedio
+:
+
+[Descripción de la imagen: suma de variables i d | Transcripción de la imagen: Suma de variables 1.1.d.
+
+V.a. 1.1.d.con y
+
+Promedio Ín=%2 X,
+" 1=1
+
+EX =u]]
+
+Suma de v.a. independientes
+Casos especiales
+
+[Descripción de la imagen: un papel en blanco con el papel en blanco del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del papel del]
+
+Suma de v.a. independientes
+¡Ojo!
+•
+Esos eran casos especiales, 
+no siempre se da
+•
+No 
+ejemplos: 
+suma 
+de 
+uniformes, 
+suma 
+de 
+exponenciales, etc.
+
+[Descripción de la imagen: una nota con las palabras 'snos' y 'snos']
+
+Suma de v.a. independientes
+¡Ojo!
+•
+Un no-ejemplo de interés:
+v.a. i.i.d., con 
+∑
+𝑖=1
+𝑛
+𝑋𝑖
+?
+
+[Descripción de la imagen: Un libro con las palabras | Transcripción de la imagen: 1 ,>uma de v.a. independientes
+¡Ojo!
+
+* Un no-ejemplo de interés:
+
+3
+
+2
+
+la V.a. 1.1.d., con
+E
+
+—< -
+
+7]]
+
+Suma de v.a. independientes
+¡Ojo!
+•
+Un no-ejemplo de interés:
+v.a. i.i.d., con 
+∑
+𝑖=1
+𝑛
+𝑋𝑖
+Bino(𝑛,𝑝)
+
+[Descripción de la imagen: un libro con un bolígrafo y un bolígrafo en él | Transcripción de la imagen: 1 ,>uma de v.a. independientes
+¡Ojo!
+
+* Un no-ejemplo de interés:
+
+3
+2
+la V.a. 1.1.d., con
+
+f Z X Bino(n,p)]]
+
+Suma de v.a. independientes
+¡Ojo!
+•
+Otro no-ejemplo de interés:
+v.a. i.i.d., con 
+𝑆𝑛=∑
+𝑖=1
+𝑛
+𝑋𝑖
+
+[Descripción de la imagen: una nota con las palabras en español | Transcripción de la imagen: 1 ,>uma de v.a. independientes
+¡Ojo!
+
+* Otro no-ejemplo de interés:
+
+3
+
+2
+
+la V.a. 1.1.d., con
+E
+
+= = >.. X,
+zÑ[d —=— 1]]
+
+Suma de v.a. independientes
+v.a. i.i.d., con 
+ Tiempo hasta el -ésimo evento de un 
+proceso de Poisson .
+P (𝑆𝑛>𝑡)=P ( 𝑁(𝑡)<𝑛)=∑
+𝑖=0
+𝑛−1 (𝜆𝑡)
+𝑖
+𝑖! 𝑒
+−𝜆𝑡
+
+[Descripción de la imagen: una nota con las palabras de, de, de y de escrito en español | Transcripción de la imagen: 1 ,>uma de v.a. independientes
+
+V.a. 1.1.d., con
+
+Tiempo hasta el -ésimo evento de un
+proceso de Polsson .
+
+Í P(Sn>t)=1º(N(¡:)<n)=ní:1 —
+
+1=0]]
+
+Suma de v.a. independientes
+v.a. i.i.d., con 
+𝑆𝑛
+Gamma(𝑛, 𝜆)
+𝑓𝑆𝑛(𝑡)= 𝜆( 𝜆𝑡)𝑛−1 𝑒−𝜆𝑡
+(𝑛−1)!
+𝑡>0
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación | Transcripción de la imagen: 1 ,>uma de v.a. independientes
+
+V.a. |.1.d., con
+Sr Gammal(72,4)
+
+fot=22 €
+
+- — n—1)! L>0]]
+
+Suma de v.a. independientes
+𝑆𝑛Gamma(𝑛,1)
+
+[Descripción de la imagen: un gráfico gráfico con el mismo número de los dos puntos]
+
+Preguntas
+
+[Descripción de la imagen: un cuaderno con una cara sonriente y un bolígrafo | Transcripción de la imagen: U
+D
+-
+e
+=
+O
+V
+| -
+Q]]
+
+Desigualdad de Markov
+Sea  una v.a. que sólo toma 
+valores no-negativos. Entonces
+𝑃( 𝑋≥𝛼)≤E[ 𝑋]
+𝛼
+
+[Descripción de la imagen: destualidade markoo]
+
+Desigualdad de Markov
+Idea de la demostración para v.a. 
+continua
+
+[Descripción de la imagen: desula de marco]
+
+Desigualdad de Chebychev
+Sea  una v.a. con  y . Entonces
+𝑃(¿ 𝑋−𝜇∨≥𝜀)≤𝜎2
+𝜀2
+
+[Descripción de la imagen: desuad cheyve se nace con y enes]
+
+Desigualdad de Chebychev
+Demostración usando desigualdad 
+de Markov
+
+[Descripción de la imagen: desuala de cheyve demora oasual de cheyve]
+
+Desigualdad de Chebychev
+Ejemplo 1: v.a. normal
+𝑃(¿ 𝑋−𝜇∨≥𝑘𝜎) ≤1
+𝑘2
+Probabilid
+ad
+Cota
+1
+0.3173
+1.0000
+2
+0.0455
+0.2500
+3
+0.0027
+0.1111
+4
+0.0001
+0.0625
+
+[Descripción de la imagen: un cuadro con un número de decimales y un cuadro con un número de decimales | Transcripción de la imagen: Desigualdad de Chebychev
+
+Ejemplo 1: v.a. normal]]
+
+Ejemplo 2: promedio
+v.a. i.i.d. con  y  
+𝑃(¿ 𝑋𝑛−𝜇∨≥𝜀)≤𝜎2
+𝑛𝜀2
+E [ 𝑋𝑛]=𝜇
+Var [ 𝑋𝑛]= 𝜎2
+𝑛
+Desigualdad de Chebychev
+
+[Descripción de la imagen: una nota con las palabras'''' y'' | Transcripción de la imagen: Desigualdad de Chebychev
+
+Ejemplo 2: promedio
+
+V.a. 1.1.d.con y
+
+Var[Ín]=%2]]
+
+Ley Débil de los Grandes Númer
+lim
+𝑛→∞𝑃(¿ 𝑋𝑛−𝜇∨≥𝜀)=0
+v.a. i.i.d. con  y . Luego, para todo  
+Decimos que  converge a  en 
+probabilidad
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Ley Débil de los Grandes Númer
+Implicancia práctica:
+Podemos 
+estimar 
+las 
+probabilidades 
+repitiendo 
+experimentos independientes un 
+gran número de veces
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Ley Débil de los Grandes Númer
+Ejemplo en Octave
+x = rand(1000,100);
+pro = cumsum(x)./(1:1000)';
+n = 1:1000;
+figure(1)
+plot(n,pro(:,1),n,pro(:,2),n,pro(:,3))
+figure(2)
+p = sum((abs(pro-0.5)>0.01)');
+plot(n,p)
+
+[Descripción de la imagen: una nota con las palabras ejep oye]
+
+Ley Débil de los Grandes Númer
+Promedio de valores de n variables  
+aleatorias uniformes en (0,1), puede 
+observarse 
+la 
+reducción 
+de 
+la 
+variabilidad al aumentar el número de 
+variables que se promedian
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+Ley Débil de los Grandes Números:
+Jacob Bernoulli (1655-1705) en una estampilla suiza de 1994, 
+creador de la ley de los grandes números
+Observen el gráfico de la tendencia del promedio hacia la media y la noción 
+de convergencia en probabilidad del promedio hacia la media en el ángulo 
+superior izquierdo.
+
+[Descripción de la imagen: ley de los grandes números]
+
+Ley Débil de los Grandes Númer
+Frecuencia relativa de que el promedio 
+de valores de n variables aleatorias 
+uniformes en (0,1) difiera de 0.5 en 
+mas de 0.01 … decrece esa frecuencia 
+con el número de sumandos con que se 
+calcula el promedio …
+
+[Descripción de la imagen: un gráfico con un gráfico de línea que muestra el número de los números de los números]
+
+Preguntas
+
+[Descripción de la imagen: un cuaderno con una cara sonriente y un bolígrafo | Transcripción de la imagen: U
+D
+-
+e
+=
+O
+V
+| -
+Q]]
+
+Teorema Central del Límite
+v.a. i.i.d. con , . Luego, para  
+grande 
+𝑋𝑛
+aprox N( 𝜇, 𝜎
+√𝑛)
+∑
+𝑖=1
+𝑛
+𝑋𝑖
+aprox
+N (𝑛𝜇,√𝑛𝜎)
+
+[Descripción de la imagen: una nota con las palabras '', '' y ' ' | Transcripción de la imagen: Teorema Central del Límite
+
+con , . Luego, para]]
+
+Teorema Central del Límite
+v.a. i.i.d. con , . Luego, para  grande 
+𝑋𝑛
+aprox N( 𝜇, 𝜎
+√𝑛)
+
+[Descripción de la imagen: una foto de un hombre con un dibujo de una casa | Transcripción de la imagen: Teorema Central del Límite
+
+v.a. 1.1.d. con, . Luego, para grande
+
+-I- -I--.-- -----Ill-- I- |
+
+.
+*
+»
+“d
+_2
+—
+-*
+»
+a
+>
+9
+-*
+_»]]
+
+Teorema Central del Límite
+v.a. i.i.d. con , . Luego, para  grande 
+𝑋𝑛
+aprox N( 𝜇, 𝜎
+√𝑛)
+R=rand(100,1000);
+M=mean(R);
+MO=sort(M);I=(1:1000)/1000;
+m=mean(MO);s=std(MO);
+z=(MO-m)/s;Fz=normcdf(z);
+plot(z,I,'ko',z,Fz,'r-')
+plot(z,abs(I-Fz),'r-')
+Superposición de la distribución empírica de 1000 valores estandarizados 
+de la media de 100 números aleatorios con distribución uniforme en (0,1) 
+y la función de distribución normal  estándar. En cuadro aparte la 
+distancia entre ambas (para este caso fue menor que 0.02).
+
+[Descripción de la imagen: un gráfico con una línea de datos y una línea de datos]
+
+Teorema Central del Límite
+𝑋𝑖
+U (0,1)
+𝑋𝑛
+aprox N(0.5,
+1
+√12𝑛)
+𝑃(¿ 𝑋𝑛−0.5∨≥𝜀)≈2(1−Φ( 𝜀√12𝑛))
+Ejemplo 1
+
+[Descripción de la imagen: una nota con la fórmula de la fórmula | Transcripción de la imagen: Teorema Central del Límite
+
+Ejemplo 1
+> ; 7 (O,.1)
+
+* PiX,-05v>e821-Ble/12n)
+
+X, N 0.5,L)]]
+
+Teorema Central del Límite
+Ejemplo 1 en Octave
+x = rand(1000,1000);
+pro = cumsum(x)./(1:1000)';
+n = 1:1000;
+p = sum((abs(pro-0.5)>0.01)')/1000;
+figure(1)
+plot(n,p,n,2*(1-normcdf(0.01*sqrt(12*n))))
+figure(2)
+semilogy(n,p,n,2*(1-normcdf(0.01*sqrt(12*n))))
+hold on
+semilogy(n,1./(12*0.01^2*n))
+
+[Descripción de la imagen: una nota con las palabras línea central | Transcripción de la imagen: Teorema Central del Límite
+
+Ejemplo 1 en Octave
+
+x = rand(1000,1000);
+
+pro = cumsum(x)./(1:1000)';
+
+n = 1:1000,
+
+p = sum( (abs(pro-0.5)>0.01)')/1006;
+
+figure(1)
+plot(n,p,n,2* (1-normcdf (0.01*sagrt(12*n))))
+figure(?2)
+
+semi Logy (n, p, n,2* (1-normcdf (0.01*sgrt(12*n))))
+hold on
+
+semi logy (n,1./(12*0.0112*n))]]
+
+Teorema Central del Límite
+Ejemplo 1 en Octave
+
+[Descripción de la imagen: un gráfico del número de los dos tipos diferentes de los mismos números | Transcripción de la imagen: — SiIMUul.
+— normal
+
+0 200 400 600 800 1000]]
+
+Teorema Central del Límite
+Ejemplo 1 en Octave
+
+[Descripción de la imagen: un gráfico con una curva y un gráfico de línea | Transcripción de la imagen: — SiIMui.
+
+— normal
+— Chebychev
+
+0 200 400 600 800 1000]]
+
+Teorema Central del Límite
+, 
+𝑆𝑛Bino(𝑛,𝑝)
+aprox N (𝑛𝑝,√𝑛𝑝(1−𝑝))
+Ejemplo 2
+
+[Descripción de la imagen: una nota con las palabras límite central | Transcripción de la imagen: Teorema Central del Límite
+
+-
+-
+E
+
+Ejemplo 2
+
+1S, Bino(n,p) NIinp,/np(l1-p)
+
+aprox]]
+
+Teorema Central del Límite
+Ejemplo 2 Octave
+n = 1000; p = 0.3;
+k = 0:n;
+pe= binopdf(k,n,p);
+pa= normcdf((k+0.5-n*p)/sqrt(n*p*(1-p)));
+pa= pa-normcdf((k-0.5-n*p)/sqrt(n*p*(1-p)));
+figure(1)
+plot(k,pe,k,pa)
+figure(2)
+plot(k,abs(pe-pa))
+
+[Descripción de la imagen: una nota con las palabras 'erp ove ']
+
+Teorema Central del Límite
+Ejemplo 2 Octave
+
+[Descripción de la imagen: un gráfico del número de los dos tipos diferentes del número de los dos tipos del número de | Transcripción de la imagen: 0.03 , |
+— bino
+0.095 == normal
+
+0.02
+
+0.015
+
+0.01
+
+0.005
+
+200 250 300 350 400]]
+
+Teorema Central del Límite
+Ejemplo 2 Octave
+
+[Descripción de la imagen: una parcela con un gráfico de línea | Transcripción de la imagen: 0.0002 |
+
+0.00015
+
+0.0001
+
+5e-05
+
+200 250 300 350 400]]
+
+p=0.01:0.01:0.99;
+for i=1:length(p)
+for j=1:length(n)
+P=binocdf(0:n(j),n(j),p(i));
+m=n(j)*p(i);s=sqrt(n(j)*p(i)*(1-p(i)));
+N=normcdf(0:n(j),m,s);
+E(i,j)=max(abs(P-N));
+end
+end
+plot(p',E,'linewidth',4)
+legend('n=50','n=100','n=150','n=200')
+Aproximación normal de la binomial
+Máxima diferencia entre 
+los valores de la función 
+de distribución binomial 
+y 
+la 
+aproximación 
+normal en función de p 
+para varios valores de 
+n. 
+Puede 
+observarse 
+que 
+en 
+regiones 
+intermedias de valores 
+de 
+p y 
+para 
+varios 
+valores crecientes de n 
+el error es menor que 
+0.1.
+
+[Descripción de la imagen: aprimonale normale normale]
+
+p=0.01:0.01:0.99;
+for i=1:length(p)
+for j=1:length(n)
+P=binocdf(0:n(j),n(j),p(i));
+m=n(j)*p(i);s=sqrt(n(j)*p(i)*(1-p(i)));
+N=normcdf(0:n(j),m,s);
+E(i,j)=max(abs(P-N));
+end
+end
+plot(p',E,'linewidth',4)
+legend('n=50','n=100','n=150','n=200')
+Aproximación normal de la binomial
+Máxima diferencia entre 
+los valores de la función 
+de distribución binomial 
+y 
+la 
+aproximación 
+normal en función de p 
+para varios valores de 
+n. 
+Puede 
+observarse 
+que 
+en 
+regiones 
+intermedias de valores 
+de 
+p y 
+para 
+varios 
+valores crecientes de n 
+el error es menor que 
+0.1.
+
+[Descripción de la imagen: aprimonale normale normale]
+
+Teorema Central del Límite
+, 
+Ejemplo 3
+𝑆𝑛aprox N (𝑛𝜆, √𝑛𝜆)
+
+[Descripción de la imagen: una nota con las palabras límite central]
+
+Teorema Central del Límite
+Ejemplo 3
+
+[Descripción de la imagen: un gráfico con una curva y una curva | Transcripción de la imagen: 0.1
+
+0.08
+
+0.06
+
+0.04
+
+0.02
+
+10
+
+— n=10
+— normal
+
+15
+
+20]]
+
+Teorema Central del Límite
+Ejemplo 3
+
+[Descripción de la imagen: un gráfico con una curva y una línea de la misma longitud | Transcripción de la imagen: 0.06
+
+0.05
+
+0.04
+
+0.03
+
+0.02
+
+0.01
+
+20
+
+30
+
+40
+
+50
+
+60
+
+— n=50
+— normal
+
+70
+
+80]]
+
+Teorema Central del Límite
+Ejemplo 3
+
+[Descripción de la imagen: un gráfico con una curva y una curva | Transcripción de la imagen: 0.05
+
+— normal
+
+0.04
+
+0.03
+
+0.02
+
+0.01
+
+60 80 100 120 140]]
+
+Supongamos que se presentan n clientes y sea Sn el tiempo necesario para 
+atenderlos. Sea Tk el tiempo de atención del cliente k con k entre 1 y n. 
+Supongamos que las variables aleatorias Tk son independientes y claramente 
+idénticamente distribuidas.  Se tiene: 
+                 
+E(Tk) = 100 1.5 = 150 ; 
+ V(Mk) = 100 1^2= 100 
+Teorema Central del Límite
+
+[Descripción de la imagen: una nota con las palabras terme enrall lite | Transcripción de la imagen: % Teorema Central del Límite
+-
+
+10. Los tiempos de servicio para los clientes que llegan a una caja de un supermercado pueden
+suponerse variables aleatorias independientes con un promedio de 1.5 minutos y una dispersión
+de 1 minuto.
+
+a) Calcular la probabilidad aproximada de que pueda atender a 100 clientes en menos de 2
+horas de tiempo total de servicio de esta caja.
+
+b) Calcular el número de clientes 7 tal que la probabilidad de dar servicio a todos en menos
+de 2 horas sea aproximadamente ().1.
+
+Supongamos que se presentan n clientes y sea S, el tiempo necesario para
+atenderlos. Sea "T, el tiempo de atención del cliente k con k entre 1 y n.
+Supongamos que las variables aleatorias T, son independientes y claramente
+1dénticamente distribuidas. Se tiene:
+
+E(Tk) = 100 1.5 = 150 ;
+V(Mk) = 100 112= 100]]
+
+Se desea calcular  p = P(S100   < 120). Se puede aproximar el valor de p usando el 
+teorema central del límite dado que puede suponerse que “n es grande”, … Para ello 
+es necesario conocer el valor esperado y la varianza de S100
+Se tiene  E(S100) = 150  y     V(S100) = 100 1 = 100 ya que los tiempos por cliente 
+son variables aleatorias independientes e idénticamente distribuidas.
+𝑝=𝑃( 𝑆1 00< 12 0) ≈Φ ¿
+Entonces usando el teorema central del límite:
+𝑝≈Φ (−3 )≈0.00135
+Teorema Central del Límite
+
+[Descripción de la imagen: una nota con las palabras centrale]
+
+Se desea calcular n tal que  p = P(S n  < 120) = 0.1. Se puede aproximar el   cálculo 
+usando el teorema central del límite suponiendo que “n es grande”, … Para ello es 
+necesario conocer el valor esperado y la varianza de Sn
+Se tiene  E(Sn) = 1.50 n  y     V(Sn) = n 1 = n  ya que los tiempos por cliente son 
+variables aleatorias independientes e idénticamente distribuidas.
+𝑃( 𝑆n< 12 0) ≈Φ ¿
+Entonces usando el teorema central del límite:
+(
+ 
+Teorema Central del Límite
+
+[Descripción de la imagen: una nota con las palabras centrale]
+
+Supongamos que se presentan n clientes y sea Sn el gasto realizado por los n 
+clientes y  Mk lo gastado por el cliente k con k entre 1 y n. Supongamos que las 
+variables aleatorias Mk 
+ 
+ son independientes y claramente idénticamente 
+distribuidas.  Se tiene: 
+                 
+m
+70
+140
+210
+P(Mk = m)
+0.3
+0.6
+0.1
+E(Mk) = (70 0.3 + 140 0.6 + 210 0.1) = 126 ; 
+ V(Mk) = 17640- 126^2 = 1764 
+Teorema Central del Límite
+
+[Descripción de la imagen: una tabla con una lista de elementos y números]
+
+Se desea calcular  p = P(S100   > 13000). Se puede aproximar el valor de p usando el 
+teorema central del límite dado que puede suponerse que “n es grande”, … Para ello 
+es necesario conocer el valor esperado y la varianza de S100
+Se tiene  E(S100) = 100 126 = 12600    y     V(S100) = 100 1764 = 176400 ya que 
+los gastos por cliente son variables aleatorias independientes e idénticamente 
+distribuidas.
+𝑝=𝑃(𝑆100>13000)=1−𝑃(𝑆100≤13000)≈1−Φ¿
+Entonces usando el teorema central del límite:
+𝑝≈1−Φ (0.9524 )=Φ (−0.9524 )≈0.1705
+Teorema Central del Límite
+
+[Descripción de la imagen: una nota con las palabras terme centrale]
+
+Preguntas
+
+[Descripción de la imagen: un cuaderno con una cara sonriente y un bolígrafo | Transcripción de la imagen: U
+D
+-
+e
+=
+O
+V
+| -
+Q]]
+
