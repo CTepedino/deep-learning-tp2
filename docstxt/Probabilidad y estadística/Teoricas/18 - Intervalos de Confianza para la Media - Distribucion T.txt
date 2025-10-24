@@ -1,0 +1,372 @@
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝜎
+√𝑛𝑧1+γ
+2
+, 𝑋𝑛+ 𝜎
+√𝑛𝑧1+γ
+2 )
+ i.i.d. y se desea estimar 
+Está claro que no se conoce , pero las fórmulas usan : 
+¿de dónde sale?
+Si  no es muy grande, pero las variables son normales, 
+hay una forma de hacerlo …
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de est est est est est est est est est est est est est est est est est est est est est est]
+
+i.i.d.
+Distribución t-Student
+𝑋𝑛= 1
+𝑛∑
+𝑘=1
+𝑛
+𝑋𝑘
+𝑆=√
+1
+𝑛−1∑
+𝑖=1
+𝑛
+( 𝑋𝑖−𝑋𝑛)
+2
+𝑇= 𝑋𝑛−𝜇
+𝑆
+√𝑛
+𝑡𝑛−1
+Distribución t-Student con  grados de libertad
+
+[Descripción de la imagen: desestructuración - desestructuración estudiante - desestructuración estudiante desestructuración estudiante desestructuración estudiante desestructuración estudiante desestructuración | Transcripción de la imagen: Distridución t-Student
+
+Distribución t-Student con grados de libertad]]
+
+i.i.d.
+Distribución t-Student
+𝑇= 𝑋𝑛−𝜇
+𝑆
+√𝑛
+𝑡𝑛−1
+𝐸[𝑇]=0
+ para 
+Simétrica
+ para 
+ para 
+ para
+
+[Descripción de la imagen: distudint - student para sinerica para sinerica para sinerica para sinerica para sinerica para sinerica | Transcripción de la imagen: Distridución t-Student
+
+1.1.d.
+
+para
+
+Simétrica]]
+
+i.i.d.
+Distribución t-Student
+𝑇= 𝑋𝑛−𝜇
+𝑆
+√𝑛
+𝑡𝑛−1
+ 
+  
+𝐸[𝑇]=0
+𝑇
+apróx.
+N(0,1)
+T.C.L.
+Gonick & Smith, The 
+Cartoon Guide to 
+Statistics
+
+[Descripción de la imagen: dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli dicli | Transcripción de la imagen: Distridución t-Student
+
+lo]
+Gonick 8 Smith, The
+Cartoon Guide to
+Statistics]]
+
+Distribución t-Student
+𝑻= 𝑿𝒏−𝝁
+𝑺
+√𝒏
+𝒕𝒏−𝟏
+Comparación de las funciones de densidad de probabilidad de las variables 
+aleatorias normal estándar y t de Student con 5 grados de libertad 
+Comparación de las funciones 
+de densidad de las variables 
+aleatorias normal estándar y t 
+de Student con 30 grados de 
+libertad
+
+[Descripción de la imagen: displeur de la distribution de la distribution de la distribution de la distribution de la distribution de la]
+
+Distribución t-Student
+𝑻= 𝑿𝒏−𝝁
+𝑺
+√𝒏
+𝒕𝒏−𝟏
+
+[Descripción de la imagen: una página con una foto de William Szemyski | Transcripción de la imagen: ..  Distribución t-Student
+
+William Sealy Gosset
+
+William Sealy Gosset ( de , conocido por su sobrenombre literario
+Student
+
+Semblanza | ]
+
+Nacido en . era hijo de Agnes Sealy Vidal y del coronel Frederic Gosset. Aasistió a la famosa escuela privada
+
+antes de estudiar y enel de Oxford. Tras graduarse en , Se InCOrporó a
+las en
+
+era un negocio agroquímico progresista y Gosset podría aplicar sus conocimientos estadísticos tanto a la destilería
+como a la granja para seleccionar las mejores variedades de . Gosset adquirió ese conocimiento mediante estudio, pruebz
+y error así como pasando dos temporadas durante 1906/7 en el laboratorio bioquímico de . Gosset y Pearson tenían
+una buena relación y este último ayudó a Gosset con la matemática de sus artículos. Pearson contribuyó a los artículos de 1908,
+pero no apreció lo suficiente su importancia. Los artículos se referían a la importancia de las pequeñas muestras para la
+destilería, mientras que el biólogo disponía normalmente de cientos de observaciones y no veía la urgencia en el desarrollo de
+métodos basados en unas pocas muestras.
+
+'Otro investigador de Guinness había publicado anteriormente un artículo que contenía secretos industriales de la destilería. Para
+evitar futuras exposiciones de información confidencial, Guinness prohibió a sus empleados la publicación de artículos
+independientemente de la información que contuviesen. Esto significaba que Gosset no podía publicar su trabajo usando su
+propio nombre. De ahí el uso de su pseudónimo Student en sus publicaciones, para evitar que su empleador lo detectara. Por
+tanto, su logro más famoso se conoce ahora como la distribución t de Student, que de otra manera hubiera sido la distribución t
+de Gosset.
+
+Gosset publicó El error probable de una media y casi todos sus artículos usando el pseudónimo Sfudent en la publicación
+creada por . Sin embargo, fue quien apreció la importancia de los trabajos de Gosset sobre Nacimiento 13 de ,ÍLII1¡'J de 1876 £
+muestras pequeñas, tras recibir correspondencia de Gosset en la que le decía le envío una copia de las Tablas de Student, ¡ya Canterbury (Reino Unido de
+que es la única persona que probablemente las use jamás!. Fisher creyó que Gosset había efectuado una "revolución lógica". Gran Bretaña e Irlanda) ?
+Fallecimiento 16 de octubre de 1937 + (61
+años)
+Beaconsfield (Reino Unido)
+
+.
+*
+*
+-
+-
+E
+*
+K
+»
+*
+.»
+K
+K
+»
+»
+»]]
+
+Distribución t-Student
+𝑻= 𝑿𝒏−𝝁
+𝑺
+√𝒏
+𝒕𝒏−𝟏
+
+[Descripción de la imagen: el parador del hombre | Transcripción de la imagen: ..  Distribución t-Student
+
+THE PROBABLE ERROR OF A MEAN
+By STUDENT
+
+Introduction
+
+Any experiment may he regarded as forming an individual of a “population”
+of experiments which might he performed under the same conditions. A series
+of experiments is a sample drawn from this population.
+
+Now any series of experiments is only of value in so far as it enables us to
+form a judement as to the statistical constants of the population to which the
+experiments belong. In a greater number of cases the question finally turns on
+the value of a mean, either directly, or as the mean difference between the two
+quantities.
+
+Tf the mimber of experiments be very large, we may have precise information
+as to the value of the mean, but if our sample be small, we have two sources of
+uncertainty: (1) owing to the “error of random sampling” the mean of our series
+of experiments deviates more or less widely from the mean of the population,
+and (2) the sample is not sufficiently large to determine what is the law of
+distribution of individuals. It is usual, however, to assume a normal distribution,
+because, in a very large number of cases, this gives an approximation so close
+that a small sample will give no real information as to the manner in which
+the population deviates from normality: since some law of distribution must
+he assumed it is better to work with a curve whose area and ordinates are
+tabled, and whose properties are well known. This assumption is accordingly
+made in the present paper, so that its conclusions are not strictly applicable to
+populations known not to be normally distributed: vet it appears probable that]]
+
+Distribución t-Student
+𝑻= 𝑿𝒏−𝝁
+𝑺
+√𝒏
+𝒕𝒏−𝟏
+Diferencia entre  las funciones 
+de distribución de las variables 
+aleatorias normal estándar y t 
+de Student con 5 grados de 
+libertad 
+Diferencia entre  las funciones 
+de distribución de las variables 
+aleatorias normal estándar y t 
+de Student con 30 grados de 
+libertad
+
+[Descripción de la imagen: distructes de ests de ests de ests de ests de ests de]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝑆
+√𝑛𝑡
+𝑛−1, 1+γ
+2
+, 𝑋𝑛+ 𝑆
+√𝑛𝑡
+𝑛−1, 1+ γ
+2 )
+ i.i.d., se desea estimar  y se desconoce 
+Intervalo de confianza para la media
+ está definido como el valor tal que  si  (t-Student con grados de 
+libertad) 
+está en tablas o lo devuelven programas de computadora
+Un hecho útil:  (por ej., )
+
+[Descripción de la imagen: intervalo de esto de esto]
+
+𝑋𝑛
+∆
+∆
+( 𝑋𝑛−𝑆
+√𝑛𝑡
+𝑛−1, 1+γ
+2
+, 𝑋𝑛+ 𝑆
+√𝑛𝑡
+𝑛−1, 1+ γ
+2 )
+𝑋𝑛
+∆
+𝑋𝑛
+∆
+( 𝑋𝑛−𝑆
+√𝑛𝑡𝑛−1,γ ,+∞)
+(−∞, 𝑋𝑛+ 𝑆
+√𝑛𝑡𝑛−1, γ)
+Intervalo de confianza para la media
+
+[Descripción de la imagen: intervalo de coniza para la est | Transcripción de la imagen: Intervalo de confianza para la media]]
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+0.900 3.078 1.886 1.638 1.533 1.476 1.440 1.415 1.397 1.383 1.372
+0.925 4.165 2.282 1.924 1.778 1.700 1.650 1.617 1.592 1.573 1.559
+0.950 6.314 2.920 2.353 2.132 2.015 1.943 1.895 1.860 1.833 1.813
+0.975 12.706 4.303 3.182 2.776 2.571 2.447 2.365 2.306 2.262 2.228
+0.990 31.821 6.965 4.541 3.747 3.365 3.143 2.998 2.897 2.821 2.764
+0.995 63.657 9.925 5.841 4.604 4.032 3.707 3.500 3.355 3.250 3.169
+Intervalo de confianza para la media
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0.900 1.325 1.3101.303 1.299 1.2961.294 1.292 1.291 1.290 1.282
+0.925 1.497 1.4771.468 1.462 1.4581.456 1.454 1.452 1.451 1.440
+0.950 1.725 1.6971.684 1.676 1.6711.667 1.664 1.662 1.660 1.645
+0.975 2.086 2.0422.021 2.009 2.0001.994 1.990 1.987 1.984 1.960
+0.990 2.528 2.4572.423 2.403 2.3902.381 2.374 2.369 2.364 2.326
+0.995 2.845 2.7502.705 2.678 2.6602.648 2.639 2.632 2.626 2.576
+
+[Descripción de la imagen: una tabla con números y números]
+
+Intervalo de confianza para la media
+Comparación de los fractiles 
+de las distribuciones normal 
+estándar y t de Student con 5  
+y  30 grados de libertad. Las 
+diferencias mas importantes 
+ocurren para valores de p 
+cercanos a 1 y si el número 
+de grados de libertad es 
+pequeño (aún con 30 se nota 
+la diferencia).
+
+[Descripción de la imagen: intervalo de coniza para la est est coniza]
+
+Intervalo de confianza para la media
+Diferencia entre los fractiles 
+de las distribuciones normal 
+estándar y t de Student con 5  
+y  30 grados de libertad. Las 
+diferencias mas importantes 
+ocurren para valores de p 
+cercanos a 1 y si el número 
+de grados de libertad es 
+pequeño (aún con 30 se nota 
+la diferencia).
+𝒕𝝊, 𝒘> 𝒛𝒘
+
+[Descripción de la imagen: intervalo de coniza para la est]
+
+Ejemplo
+Jorge compró 10 paquetes de 1 kg (nominal) de azúcar de la 
+marca MuyDulce. Los pesos de esos paquetes fueron (en 
+gramos):
+986   983   981   989   991   986   986   979   997   988
+Determine un IC con un nivel de confianza del 90% para el peso 
+medio de un paquete. ¿Qué debe asumir?
+Asumimos:
+•
+Muestra aleatoria
+•
+Distribución normal del peso de un paquete tomado al azar
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Ejemplo
+𝑥10=986.60
+𝑠=5.15
+𝑡9,0.95=1.833
+Δ=5.151.833/√10≈3.2
+𝐼𝐶=(983.4,989.8)
+Una conclusión interesante: El valor 
+nominal indicado en el paquete (1 Kg) no 
+pertenece al intervalo. Puede sospecharse 
+del fabricante.
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea]
+
+Intervalo de confianza para la media
+Un error común: No usar el fractil t y reemplazarlo por el fractil normal en el 
+cálculo de la semiamplitud del intervalo de confianza para la media poblacional de 
+una población normal cuando se desconoce la varianza poblacional. 
+Se generan 1000 intervalos de 
+confianza para la media poblacional 
+suponiendo desconocida la varianza 
+poblacional y asumiendo que las 
+muestras provienen de una población 
+normal. Se usan los fractiles t y z del 
+95%. Se calcula luego la fracción de 
+los intervalos que contienen el 
+verdadero valor de la media
+Poco mas del 90% de los intervalos obtenidos 
+con el fractil normal y un poco menos del 95 % 
+de los obtenidos con el fractil t contienen el 
+verdadero valor de la media.
+
+[Descripción de la imagen: una pantalla de ordenador con el texto en español]
+

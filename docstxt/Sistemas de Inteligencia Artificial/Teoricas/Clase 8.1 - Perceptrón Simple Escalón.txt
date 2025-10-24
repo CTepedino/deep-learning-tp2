@@ -1,0 +1,1296 @@
+Redes Neuronales
+Primer Cuatrimestre 2025
+Sistemas de Inteligencia Artificial
+Alan Pierri
+Rodrigo Ramele
+Eugenia Piñeiro
+Marina Fuster
+Luciano Bianchi
+Santiago Reyes
+Marco Scilipoti
+Paula Oseroff
+Joaquín Girod
+
+[Descripción de la imagen: un fondo blanco con las palabras neurales rojos]
+
+[Descripción de la imagen: un col de imágenes de personas y animales | Transcripción de la imagen: ALPHACO
+
+e $ BAILONDON “% WINNER I* E == Y
+, 1) £ AA $ %_—— 43 (r::.*:::&.º.£!) m E]
+
+¿Qué 
+entienden 
+por red 
+neuronal?
+
+[Descripción de la imagen: que entender por nen?????????????????????]
+
+“Una red neuronal es un tipo de algoritmo de 
+aprendizaje automático que está modelado según la 
+estructura y función del cerebro humano. 
+Consiste en una gran cantidad de nodos de 
+procesamiento 
+interconectados 
+(neuronas) 
+que 
+trabajan juntos para procesar y analizar datos 
+complejos. 
+Cada neurona recibe uno o más inputs, los procesa 
+utilizando un conjunto de pesos aprendidos y produce 
+una salida que se transmite a otras neuronas en la 
+red.”
+
+[Descripción de la imagen: un texto que dice, `'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+McCulloch y Pitts 
+introducen las bases del 
+campo de redes 
+neuronales 
+Frank Rosenblatt 
+desarrolla el algoritmo 
+del perceptrón
+1940
+1950
+1960
+1970
+1990
+2000
+2010
+2020
+2030
+Investigación declina 
+por limitaciones de 
+hardware
+Redes de Hopfield 
+(redes recurrentes)
+Redes Convolucionales
+Se desarrolla el MLP y 
+el algoritmo de 
+entrenamiento
+Redes GAN
+Autoencoder variacional
+Dall-E 2
+GPT 3
+Alpha GO
+Primeras 
+implementaciones de 
+autoencoder
+1980
+EVENTOS EN EL ÁREA DE REDES NEURONALES
+Transformers
+SORA
+GPT 4
+
+[Descripción de la imagen: un diagrama de la evolución del idioma español]
+
+McCulloch y Pitts 
+introducen las bases del 
+campo de redes 
+neuronales 
+Frank Rosenblatt 
+desarrolla el algoritmo 
+del perceptrón
+1940
+1950
+1960
+1970
+1990
+2000
+2010
+2020
+2030
+Investigación declina 
+por limitaciones de 
+hardware
+Redes de Hopfield 
+(redes recurrentes)
+Redes Convolucionales
+Se desarrolla el MLP y 
+el algoritmo de 
+entrenamiento
+Redes GAN
+Autoencoder variacional
+Dall-E 2
+GPT 3
+GPT 4
+Alpha GO
+Primeras 
+implementaciones de 
+autoencoder
+1980
+EVENTOS EN EL ÁREA DE REDES NEURONALES
+Transformers
+SORA
+LLM BOOM
+LLM Explained: The LLM Training Landscape
+
+[Descripción de la imagen: un diagrama del evento en el evento | Transcripción de la imagen: EVENTOS EN EL ÁREA DE REDES NEURONALES
+
+McCulloch y Pitts
+introducen las bases del
+campo de redes
+neuronales
+
+Investigación declina
+por limitaciones de
+
+hardware Autoencoder variacional
+
+Frank Rosenblatt Se desarrolla el MLP y Redes GAN Da(|3|-FI)ET ;
+
+desarrolla el algoritmo el algoritmo de Alpha GO GPT
+
+del perceptrón entrenamiento
+Transformers
+
+y LLM BOOM
+Redes de Hoptield
+
+Compute HW Open Source
+
+. an aa G G 6 ea G Ñ E 8 s ->1a seoe …"é::jluy&humngN ) fiddlerA ºñz? ©nuausnur….…cz
+Redes Convoluciona | asmeeveo amDa NE ó
+
+6 Arthur Rebuff.ai
+GRAFHCORE 9roq intel
+
+databrids | | -- oneyHive O Deepvind 1:! Weights e Biases WEE“'WL“ lum WHYLABS | | Guardrailsal
+
+aws =e replit truera CALYPSOAI
+GPUCIouda ClusterMgmt — | — || E mvior ) moscio” EE 1,O Peplicate | | yaporia-— 4 | | o> credo ai
+; ; stabiliy.ai — Inflection IBANANA Te TU TROJAI
+Primeras Ea 6 EE | | mHumaniop MvessL S sia N m| | arstas - O X amMILLA
+
+h l taci d C CoreWeave Ejanscale | | TOGETHER — M — _ Model p 9 Giskard
+
+|mp ementaciones de RunPod - [Lambda Optumi NOMIC — mosaic" + younet ¿stack () neptuneai together.al zcereb…w º'”““'“º"*º TRUSTIBLE l
+E AvLakera
+
+autoencoder C 1E velarniases —| | rAmo
+
+Closed Source al EVIDENTY AR
+
+HoneyHive ECA
+e
+5h anyscale 7 MONITAUR
+
+Library, Framework, Compiler
+
+( Oryrorch - Tensorflow Y 1 Al2ilabs — <nvidia. G— colhere
+
+OpenAI
+
+rotect AL
+
+Formic 3£
+ÁE —
+
+i 1 NAVER censius
+ANTHROP'C — D) DeepMind — Baidae Esuperwise
+
+aws Holistic Al
+
+)
+OpenAl ]
+oneAPI — —
+
+Ydeep M PureML
+
+le
+Ef deepset — Apache TVM MstalAl - Adept — Qsreansa — Qel — Paradigm J u mbar )
+
+" AEA
+
+LLM Explained: The LLM Training Landscape]]
+
+McCulloch y Pitts 
+introducen las bases del 
+campo de redes 
+neuronales 
+1940
+1950
+1960
+1970
+1990
+2000
+2010
+2020
+2030
+Se desarrolla el MLP y 
+el algoritmo de 
+entrenamiento
+1980
+¿QUÉ IDEAS ESTUDIAMOS DURANTE EL TP3?
+●
+Por el momento no vamos a profundizar el 
+área de “Deep Learning” (se ve más 
+adelante en la materia)
+●
+Objetivo: entender qué problemas se 
+pueden resolver, los conceptos básicos que 
+componen a una red neuronal y su 
+entrenamiento
+Frank Rosenblatt 
+desarrolla el algoritmo 
+del perceptrón
+
+[Descripción de la imagen: ques de dato entrer entrer entrer entrer en]
+
+Clase 1: modelo básico 
+de neurona (capítulo 6)
+Clase 2: modelo básico 
+de red neuronal
+(capítulo 7)
+Clase 3: métricas de 
+evaluación y sobreajuste
+(capítulo 8), métodos de 
+optimización para RN 
+(capítulo 7) + consultas 
+hora extra
+Clase 4: Backpropagation 
+II
+consultas (presenciales?)
+
+[Descripción de la imagen: cuatro tipos diferentes de las cuatro clases]
+
+DE LA CLASE DE OPTIMIZACIÓN
+APRENDIZAJE 
+AUTOMÁTICO / 
+MACHINE 
+LEARNING
+Redes 
+Neuronales
+
+[Descripción de la imagen: un diagrama de las tres fases del algoritmo | Transcripción de la imagen: DE LA CLASE DE OPTIMIZACIÓN
+
+9.1 Redefiniendo Aprendizaje
+
+El área de redes neuronales cae dentro de la frontera de lo que se denomina Aprendizaje
+Automático o Machine Learning. Puede definirse como:
+
+Definition 9.1.1 — Aprendizaje Automático. Técnicas para identificar relaciones entre datos
+(X) o mapeos (X — Y) basadas en algoritmos libres de modelo que dada una serie de parámetros
+libres que estructuran esas relaciones o mapeos, pueden ajustarse mediante algún proceso de
+optimización matemática [23].
+
+AP
+
+AUTO O/
+MACHINE
+LEARNING]]
+
+APRENDIZAJE SUPERVISADO
+APRENDIZAJE NO SUPERVISADO
+vs.
+
+[Descripción de la imagen: una tira de dibujos animados tira tira tira tira tira tira tira tira tira tira tira tira tira tira tira tira tira tira]
+
+Perceptrón Simple
+Sistemas de Inteligencia Artificial
+Segundo Cuatrimestre 2024
+Alan Pierri
+Rodrigo Ramele
+Eugenia Piñeiro
+Marina Fuster
+Luciano Bianchi
+Santiago Reyes
+Marco Scilipoti
+Paula Oseroff
+
+[Descripción de la imagen: un fondo blanco con las palabras perot simple]
+
+MODELO DE NEURONA - 1943
+
+[Descripción de la imagen: un diagrama de las neuronas nem y nem | Transcripción de la imagen: MODELO DE NEURONA - 1943
+
+_ Cono axónico
+
+. — / Sinápsis]]
+
+MODELO DE NEURONA - 1943
+Donald Hebb
+“Neurons that 
+fire together 
+wire 
+together”
+
+[Descripción de la imagen: modelo neuronas denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia denia den]
+
+Warren McCulloch & Walter Pitts 1943
+Pesos sinápticos
+Entradas
+Estado de 
+excitación
+Salida de la 
+neurona
+Función de 
+activación
+umbral
+
+[Descripción de la imagen: un diagrama de dos hombres en trajes y corbatas]
+
+FORMALIZACIÓN MATEMÁTICA
+Función de activación escalón o signo.
+
+[Descripción de la imagen: una línea con una pendiente y un punto al final | Transcripción de la imagen: FORMALIZACIÓN MATEMÁTICA
+
+0 en otro caso
+
+n
+O = e >x.w — u)
+L L
+=1
+Función de activación escalón o signo.
+1 x > O . |
+O(X) = ¿]]
+
+[Descripción de la imagen: un pez azul con aletas amarillas y una nariz negra]
+
+[Descripción de la imagen: un globo con una marca de verificación en él]
+
+Un cliente acaba de expandir su negocio 
+a Canadá. Con todo el quilombo de 
+tarifas entre Canadá y Estados Unidos, 
+le interesa saber qué candidato se 
+encuentra 
+más 
+favorecido 
+en 
+las 
+encuestas, ya que la votación de Abril 
+probablemente afecte su negocio.
+Los datos de los ciudadanos de los 
+cuales dispone son:
+-
+Edad
+-
+Ingreso económico
+Carney vs Poilievre
+
+[Descripción de la imagen: Un hombre con traje y corbata está dando un discurso]
+
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: 0.7
+
+0.6
+
+o
+U
+
+Normalized Income
+l)
+D
+
+0.3
+
+x * X Conservative
+>$< »X Liberal
+
+»x
+
+»X
+x
+»x
+o *
+»x
+»x
+*x
+»x
+
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+Normalized Age
+
+Age
+0.445
+0.349
+0.232
+0.125
+0.224
+0.23
+0.392
+0.355
+0.455
+0.289
+0.513
+0.755
+0.626
+0.703
+0.863
+0.6
+0.664
+0.802
+0.592
+0.531
+
+0.669
+0.692
+0.585
+0.438
+0.579
+0.529
+0.696
+0.641
+0.66
+
+0.51
+
+0.255
+0.522
+0.24
+
+0.342
+0.536
+0.225
+0.303
+0.565
+0.213
+0.223
+
+COO
+
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0]]
+
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: Normalized Income
+
+0.7
+
+0.6
+
+o
+u
+
+o
+N
+
+0.3
+
+0.2
+
+0.1
+
+0.2
+
+0.3
+
+0.4 0.5
+Normalized Age
+
+0.6
+
+0.7
+
+X Conservative
+»X Liberal
+
+0.8
+
+Income
+
+0.669
+0.692
+0.585
+0.438
+0.579
+0.529
+0.696
+0.641
+0.66
+
+0.51
+
+0.255
+0.522
+0.24
+
+0.342
+0.536
+0.225
+0.303
+0.565
+0.213
+0.223
+
+Party
+
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0
+-1.0]]
+
+HIPERPLANO DE SEPARACIÓN
+Problemas linealmente 
+separables
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una línea de simetría y una línea de simetría | Transcripción de la imagen: - Probl lineal t
+HIPERPLANO DE SEPARACIÓN
+
+2 ..
+— 3 -
+R —> recta de separación R O—> pl daseporación
+0.7 Z - » Ec¿nse|rvative
+»X Libera
+" *
+0.6
+»X
+E + 8
+g 0.5
+- , a
+% * 3 ::. 2
+%0'4 : +o
+z
+* t—2
+0.3 x
+
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+Normalized Age
+
+R — hiplerplano de separación]]
+
+HIPERPLANO DE SEPARACIÓN
+REPRESENTACIÓN DEL HIPERPLANO
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea que no es paralela | Transcripción de la imagen: HIPERPLANO DE SEPARACIÓN
+
+Normalized Income
+
+0.7
+
+0.6
+
+o
+u
+
+o
+D
+
+0.3
+
+Rn
+
+2 .
+R —> recta de separación
+
+X -* X Conservative
+X »X Liberal
+
+0.2 0.3 0.4 0.5 0.6 0.7 0.8
+Normalized Age
+
+—> hiplerplano de separación
+
+REPRESENTACIÓN DEL HIPERPLANO]]
+
+Proyección de un punto sobre el 
+hiperplano, correspondiente a la recta 
+que pasa por el origen:
+HIPERPLANO DE SEPARACIÓN
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea que no es paralela]
+
+Proyección de un punto sobre el 
+hiperplano, correspondiente a la recta 
+que pasa por el origen:
+Si la proyección es negativa, la clase 
+del dato será (-1), mientras que si es 
+positiva la clase será (1)
+HIPERPLANO DE SEPARACIÓN
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea que no es paralela]
+
+HIPERPLANO DE SEPARACIÓN
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea que no es paralela | Transcripción de la imagen: HIPERPLANO DE SEPARACIÓN
+
+X Conservative
+»X Liberal
+
+n
+clase = O( Y x¿.w¿) n=
+i=1
+
+1 x > 0
+—1 en otro caso
+
+0()]]
+
+¿QUÉ SUCEDE SI MODIFICAMOS EL 
+CONJUNTO DE DATOS?
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con el número de datos en español | Transcripción de la imagen: ¿QUÉ SUCEDE SI MODIFICAMOS EL
+CONJUNTO DE DATOS?
+
+Age Income Party
+
+. 0.149 0.443 1.0
+: Conservalive N " 0.298 0.553 1.0
+
+x 0.114 0.402 1.0
+
+0.7 x 0.464 0.743 1.0
+0.204 0.423 1.0
+
+0 " 0.365 0.649 1.0
+E 06 0.225 0.342 1.0
+p 0.308 0.447 1.0
+7 * 0.319 0.428 10
+% 05 0.174 0.339 1.0
+- " - 0.655 0.401 -1.0
+< x * 0.609 0.469 -1.0
+sa x - " 0.831 0.73 -1.0
+
+' "e 0.643 0.38 E
+la x 0.612 0.371 -1.0
+
+0.717 0.471 -1.0
+
+0.3 al 0.556 0.302 -1.0
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.821 0.706 -1.0
+Normalized Age 0.53 0.358 -1.0
+
+0.895 0.772 -1.0]]
+
+¿QUÉ SUCEDE SI MODIFICAMOS EL 
+CONJUNTO DE DATOS?
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con el mismo número de datos | Transcripción de la imagen: ¿QUÉ SUCEDE SI MODIFICAMOS EL
+CONJUNTO DE DATOS?
+
+Age Income Party
+
+0.149 0.443 1.0
+X Conservative *x
+A Liberel " 0.298 0.553 1.0
+x 0.114 0.402 1.0
+0.7 a 0.464 0.743 1.0
+0.204 0.423 1.0
+»x
+" 0.365 0.649 1.0
+E 0.6 0.225 0.342 1.0
+g 0.308 0.447 1.0
+7 * 0.319 0.428 10
+N
+
+g Ms 0.174 0.339 1.0
+5 " * 0.655 0.401 -1.0
+< x * 0.609 0.469 -1.0
+x i 0.831 0.73 -1.0
+
+0.4+-x *
+% 0.643 0.38 1e
+
+»x
+x 0.612 0.371 -1.0
+x x
+0.717 0.471 e
+0.3 * 0.556 0.302 -1.0
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.821 0.706 -1.0
+/ Normalized Age 0.53 0.358 -1.0
+/ 0.895 0.772 -1.0
+/
+/]]
+
+¿QUÉ SUCEDE SI MODIFICAMOS EL 
+CONJUNTO DE DATOS?
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una línea y un gráfico con una línea | Transcripción de la imagen: ¿QUÉ SUCEDE SI MODIFICAMOS EL
+CONJUNTO DE DATOS?
+
+X Conserva tive x ax + by + C — 0
+
+a x
+*
+0.7 x i
+*
+
+5 06 WXx +wXx +w =0
+E j 11 22 0
+Eo.5 |
+o x x
+z " *
+*x x
+0.4--* x H
+XX
+" . Zx¿_.w¡+ W0=0
+0.3 x i=1
+
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9
+/ Normalized Age]]
+
+¿QUÉ SUCEDE SI MODIFICAMOS EL 
+CONJUNTO DE DATOS?
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con una línea y un gráfico con una línea | Transcripción de la imagen: ¿QUÉ SUCEDE SI MODIFICAMOS EL
+CONJUNTO DE DATOS?
+
+X Conserva tive »
+»X Liberal x
+* n
+0.7 x
+clase = 0() x .W + w0)
+* l l
+v i=1
+5 0.6
+- *
+y
+Eo.5 0 1 x > O
+5 x x (X) =
+z " e — en otro caso
+»x
+0.4 * É *x
+*x »x
+x
+*x x
+
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9
+/ Normalized Age]]
+
+¿QUÉ SUCEDE SI MODIFICAMOS EL 
+CONJUNTO DE DATOS?
+Formalización del perceptrón
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con un pez azul y un pez rojo | Transcripción de la imagen: ¿QUÉ SUCEDE SI MODIFICAMOS EL
+CONJUNTO DE DATOS?
+
+n
+clase = 0( ; X. W, + wg)
+i=1
+
+0.7
+
+o
+l)
+
+0(x)= 1! X 0
+
+—1 en otro caso
+
+Normalized Income
+o
+Ul
+
+0.4
+
+Formalización del perceptrón]]
+
+¿QUÉ TENEMOS HASTA AHORA?
+●
+Modelo matemático de neurona biológica
+●
+Herramienta para resolver problemas linealmente 
+separables en Rn 
+¿QUÉ NOS FALTA?
+
+[Descripción de la imagen: que ques ques ques ques ques ques ques ques ques ques | Transcripción de la imagen: ¿QUÉ TENEMOS HASTA AHORA?
+e Modelo matemático de neurona biológica
+
+Herramienta para resolver problemas linealmente
+
+o
+separables en R"
+¿QUE NOS FALTA? l . n
+J ,E' Y r Cono axónico /'/-/%?j—;athff
+“Y ” P DN
+a * VA ¡
+í ; VA
+. | , ZA foxxx //¿; j N
+"a /N/ X//x¿ — l
+Wa4 W (/ /(f N
+a / AN
+- F » i " Axón
+C í
+N — Dendrita
+
+- Sinápsis]]
+
+REPASO
+p es la cantidad de datos.      representa el dato (0…p-1)
+Conservative
+Liberal
+
+[Descripción de la imagen: un diagrama que muestra la relación entre los dos puntos | Transcripción de la imagen: X, e(h — )
+REPASO
+
+x2
+p es la cantidad de datos. H representa el dato (0...p-1)
+x3
+Age . Income
+0.7t X * Conservative 0.445 0.669 í
+x X Liberal 0.349 0.692 1.0
+0.232 0.585 1.0
+0.6 0.125 0.438 10
+0.224 0.579 10
+- 0.23 0.529 1.0
+S 0.5 0.392 0.696 10
+7 0.355 0.641 1.0
+N
+E 0.455 0.66 10
+E£ 04 B - d|
+- EE A
+075 0.522 -1:0
+0.3 7626 0.24 10
+0.703 0.342 -1.0
+0.863 0.536 -1.0
+0'20 1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 E 025 .
+- - - l Normaliz-ed Age - - - E 0:305 )
+0.802 0.565 -1.0
+0.592 0.213 -1.0
+
+0.531 0.223 -1.0]]
+
+Frank Rosenblatt 1957
+Cada vez que la neurona recibe un estímulo, los pesos sinápticos 
+pueden actualizarse (proceso iterativo):
+¿Cómo calculamos el delta?
+tasa de aprendizaje 
+(escalar)
+salida esperada
+entrada o dato
+salida obtenida
+
+[Descripción de la imagen: ¿ Cuál es el significado de la Biblia? 1 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2]
+
+ACTUALIZACIÓN DE LOS PESOS SINÁPTICOS
+¿Cómo calculamos el delta?
+Si consideramos que la salida puede ser 1 o -1, podemos reformular:
+donde la salida de la neurona está representada por
+
+[Descripción de la imagen: actuaciones de pérdida sintos]
+
+EJEMPLO NUMÉRICO
+Conservative
+Liberal
+
+[Descripción de la imagen: el gráfico se muestra en el diagrama de abajo | Transcripción de la imagen: EJEMPLO NUMÉRICO
+
+(X, X)= (0.513,0.255) 7 =(-1)
+
+0.7t x—* X Conservative
+
+* X Liberal Age pa Income 2 Party Z
+* 1 2
+0.445 0.669 1.0
+
+0.6 F X 0.349 0.692 1.0
+" T 0.232 0.585 1.0
+E x x * 0.125 0.438 1.0
+S 05h E
+
+c 0.224 0.579 1.0
+FE 0.23 0.529 1.0
+N *
+E 0.392 0.696 1.0
+5 046 0.355 0.641 1.0
+= 0.455 0.66 1.0
+
+*
+0.3 10 x
+x ©
+*
+p XX
+0.2
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+
+Normalized Age]]
+
+EJEMPLO NUMÉRICO
+Conservative
+Liberal
+Decision Boundary: -x1 + x2 + 1 = 0
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: . ñ m
+EJEMPLO NUMÉRICO Aw = n(C —O )x
+
+nuevo anterior
+
+10 10 = w + Aw
+
+X1, X,) = (0.513,0.255) 7 = (-1)
+
+(w1, w2) = (— 1, 1) w = 1
+
+Age vs Income with Decision Boundary
+
+1.00
+x
+r| — 0- 1 0.75
+* » x
+* s * X
+0.50 - x x —
+x
+v
+x
+
+E 0.25 x »
+U
+£
+v 0.00 -
+N s
+5 =a
+o —0.25 —
+z e
+
+050| ————] —
+
+MC c —] X — Conservative
+
+'''' X — Liberal
+'''' -- Decision Boundary: -x1 +x2+1=0
+—1.0(8> "
+.0 0.2 0.4 0.0 0.8 1.0
+
+Normalized Age]]
+
+EJEMPLO NUMÉRICO
+
+[Descripción de la imagen: una fórmula para la ecuación de la ecuación | Transcripción de la imagen: . ñ m
+EJEMPLO NUMÉRICO Aw = n(C —O )x
+
+nuevo anterior
+
+w = W + Aw
+X1, X,) = (0.513,0.255) 7 = (-1)
+
+(w1, w2) = (— 1, 1) w = 1
+
+10 10 10
+O = E)(x1 Wi + % 1 Wo+ w0)
+
+0 = e(- 0.513 + 0.255 + 1) = 8(0.742) =1]]
+
+EJEMPLO NUMÉRICO
+El valor esperado es (-1)
+
+[Descripción de la imagen: una fórmula para la ecuación de la ecuación | Transcripción de la imagen: , ñ m
+EJEMPLO NUMÉRICO Aw = n(C —O )x
+
+nuevo anterior
+10 10 10 = W + Aw
+0)= (0513, 025 T =)
+
+(W1' w2) = (— 1, 1) w = 1
+
+0 = e(- 0.513 + 0.255 + 1) = 8(0.742) =1
+El valor esperado es (-1)
+
+Aw = 0,1. (-2). (0.513, 0.255)
+
+Ab = 0,1. (-2)]]
+
+EJEMPLO NUMÉRICO
+
+[Descripción de la imagen: un número de números se escribe en forma de un número | Transcripción de la imagen: . ñ m
+EJEMPLO NUMÉRICO Aw = n(C —O )x
+
+nuevo anterior
+10 10 10 = w + Aw
+0)= (0513, 025 T =)
+
+Aw = 0,1. (-2). (0.513, 0.255)
+
+Ab = 0,1. (-2)
+
+= (- 1, 1) + (- 0.1026, — 0.051)
+
+nuevo
+
+= (— 1.1026, 0.949)
+
+nuevo
+
+= 1—0.2=0.8
+
+nuevo]]
+
+EJEMPLO NUMÉRICO
+Conservative
+Liberal
+
+[Descripción de la imagen: el gráfico de regresión para el gráfico de regresión | Transcripción de la imagen: . ñ m
+EJEMPLO NUMÉRICO Aw = n(C —O )x
+
+nuevo anterior
+
+10 10 = w + Aw
+
+X1, X,) = (0.513,0.255) 7 = (-1)
+
+(W,, w,) = (- 1.1026, 0.949) — w,=0.8
+
+Age vs Income with Two Decision Boundaries
+
+x Conservative
+10 x Liberal
+
+0 = 6(— O 565 — 0 242 — 0 8) 0.75 en Decision Boundary: -x1 + x2 +1=0
+
+Decision Boundary: -1.1026*x1 + 0.949*x2 + 0.8 =0
+
+x—x— X
+
+0' = 6(0.477) =1
+
+>”
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+.
+-
+
+Normalized Income
+o
+o
+[=]
+
+1095 0.2 0.4 0.6 0.8 1.0
+Normalized Age]]
+
+GRAFICAR ACTUALIZACIÓN DE LOS PESOS SINÁPTICOS
+
+[Descripción de la imagen: una parcela con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: GRAFICAR ACTUALIZACIÓN DE LOS PESOS SINÁPTICOS
+
+Iteration 1
+
+[ N
+
+p
+|
+
+w
+l
+
+]
+l
+
+p
+o
+-
+N
+w
+.
+un]]
+
+ALGORITMO DE ENTRENAMIENTO DEL PERCEPTRÓN SIMPLE
+
+[Descripción de la imagen: algoritmo entrel deportacióne | Transcripción de la imagen: ALGORITMO DE ENTRENAMIENTO DEL PERCEPTRÓN SIMPLE
+
+Initialize weights w to small random values
+Initialize bias b to a small random value
+
+set learning rate n
+
+for a fixed number of epochs:
+For each training example p in the dataset:
+1. Calculate the weighted sum:
+D- A X S AA A - N D
+2. Compute activation given by 0:
+O(h") = O (1") = 1 if h" > 0 else O
+
+3. Update the weights and bias:
+For each weight w.:
+W: = W;: + n * (y - output) * x";
+
+Update bias:
+b=b+1n* (y - output)
+
+4. Calculate perceptron error:
+error = EG X . X)
+convergence = True if error < € else False
+
+if convergence: break
+
+End]]
+
+AGREGAR EL UMBRAL/BIAS
+Conservative
+Liberal
+
+[Descripción de la imagen: un gráfico con la regresión de las regresiones | Transcripción de la imagen: AGREGAR EL UMBRAL/BIAS
+
+= — — _ "—
+
+1.0 0.445 0.669 1.0
+
+I
+07 — X Conservative p 10 1o.349 0.692 1.0
+X X Liberal . [0.232 0.585 1.0
+x 1.0 po.125 0.438 1.0
+0.6 lo p0:224 0.579 1.0
+* x l10 Io.23 0.529 1.0
+- x x * 1 10 0.392 0.696 1.0
+S 0.5 - p 10 NE 0.641 1.0
+E p o lo.55 0.66 1.0
+% x l 1.0 10.289 0.51 1.0
+E 0.4 1.0 [0.513 0.255 -1.0
+= N 9 p0755 0.522 S
+y E 0.626 0.24 -1.0
+0.3 * l10 0.703 0.342 -1.0
+p 10 0.863 0.536 -1.0
+p lo los 0.225 E
+1.0 10.664 0.303 -1.0
+
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 I
+NuemealizadÁge " 1.0 [ 0.802 0.565 e
+1.0 po592 0.213 -1.0
+l10 0.531 0.223 En
+
+— — —]]
+
+ALGORITMO DE ENTRENAMIENTO DEL PERCEPTRÓN SIMPLE
+Calcular el error del perceptrón
+Distintas formas:
+●
+La suma del valor absoluto de los 
+errores devuelve cero
+●
+Accuracy es del 100% (para 
+problemas de clasificación)
+●
+…
+
+[Descripción de la imagen: algritoo entrel deportion simple | Transcripción de la imagen: ALGORITMO DE ENTRENAMIENTO DEL PERCEPTRÓN SIMPLE
+
+Initialize weights w to small random values
+
+set learning rate n
+
+for a fixed number of epochs:
+
+For each training example p in the dataset: Calcular el error del perceptrón
+1. Calculate the weighted sum:
+DE= Ve * X, + V N X 4 M T OE M A ... + M O Distintas formas:
+
+La suma del valor absoluto de los
+
+2. Compute activation given by 0:
+errores devuelve cero
+
+O(h") = O(h") =1 if h" > 0 else O
+
+Accuracy es del 100% (para
+problemas de clasificación)
+
+u
+
+. Update the weights and bias:
+For each weight w.:
+
+W: = W; + n * (y - output) * x";
+
+End]]
+
+¿PARA QUÉ NOS SIRVE ESTA HERRAMIENTA?
+Aprendizaje
+Refiere al proceso de entrenar un 
+perceptrón sobre un conjunto de 
+datos, con el objetivo de minimizar el 
+error o la función de costo de la red 
+sobre las entradas del conjunto de 
+datos.
+Generalización
+Refiere a la habilidad del perceptrón 
+de desempeñarse correctamente sobre 
+datos que no fueron alimentados 
+durante el entrenamiento
+
+[Descripción de la imagen: ¿Qué estremita?]
+
+RESUMEN
+●
+McCulloch y Pitts sientan las bases del modelo de 
+neurona que se utiliza en el área de redes neuronales. 
+Este modelo se denomina Perceptrón.
+●
+El modelo de McCulloch y Pitts permite resolver 
+problemas linealmente separables.
+●
+Rosenblatt provee el mecanismo que permite obtener los 
+pesos del perceptrón de manera iterativa
+●
+No es lo mismo aprendizaje que generalización
+
+[Descripción de la imagen: un fondo blanco con las palabras 'recion ']
+
+BIBLIOGRAFÍA
+Rodrigo Ramele (2024) Reglamento y Apuntes de Sistemas de Inteligencia 
+Artificial, Capítulo 6.
+McCulloch, W.S., Pitts, W. A logical calculus of the ideas immanent in nervous 
+activity. Bulletin of Mathematical Biophysics 5, 115–133 (1943). 
+https://doi.org/10.1007/BF02478259
+Rosenblatt, F. (1958). The perceptron: A probabilistic model for information 
+storage and organization in the brain. Psychological Review, 65(6), 386–408. 
+https://doi.org/10.1037/h0042519
+Łukasz Gebel (2021), Why We Need Bias in Neural Networks. 
+https://towardsdatascience.com/why-we-need-bias-in-neural-networks-db8f7e07cb98
+
+[Descripción de la imagen: bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios]
+
+[Descripción de la imagen: una taza de café y dos galletas en una tabla de madera]
+

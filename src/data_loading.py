@@ -14,6 +14,7 @@ from langchain_community.document_loaders import (
     UnstructuredFileLoader
 )
 from langchain_core.documents import Document
+from .query_utils import normalize_text
 
 logger = logging.getLogger(__name__)
 
@@ -37,46 +38,33 @@ class DocumentLoader:
             '.tex': TextLoader,  # TEX se trata como texto plano
         }
     
-    def load_documents(
+    def load_documents_from_directory(
         self, 
-        directory: str, 
-        file_extensions: List[str] = None,
-        metadata_extractor: Optional[callable] = None,
-        max_documents: int = None
+        directory_path: str, 
+        metadata_extractor: Optional[callable] = None
     ) -> List[Document]:
         """
         Carga todos los documentos de un directorio
         
         Args:
-            directory: Ruta del directorio
-            file_extensions: Lista de extensiones a procesar (opcional)
+            directory_path: Ruta del directorio
             metadata_extractor: Función para extraer metadata personalizada
-            max_documents: Número máximo de documentos a cargar (para pruebas)
             
         Returns:
             Lista de documentos con metadata
         """
         documents = []
-        directory = Path(directory)
+        directory = Path(directory_path)
         
         if not directory.exists():
-            logger.error(f"Directorio no encontrado: {directory}")
+            logger.error(f"Directorio no encontrado: {directory_path}")
             return documents
         
-        # Usar extensiones proporcionadas o las por defecto
-        extensions_to_use = file_extensions or self.supported_extensions
-        
-        document_count = 0
         for file_path in directory.rglob('*'):
-            if file_path.is_file() and file_path.suffix.lower() in extensions_to_use:
-                # Limitar número de documentos si se especifica
-                if max_documents and document_count >= max_documents:
-                    logger.info(f"Límite de {max_documents} documentos alcanzado")
-                    break
+            if file_path.is_file() and file_path.suffix.lower() in self.supported_extensions:
                 try:
                     docs = self.load_single_document(file_path, metadata_extractor)
                     documents.extend(docs)
-                    document_count += 1
                     logger.info(f"Documento cargado: {file_path}")
                 except Exception as e:
                     logger.error(f"Error cargando {file_path}: {str(e)}")
@@ -110,15 +98,81 @@ class DocumentLoader:
         
         # Enriquecer metadata
         for doc in documents:
+            # Agregar metadata básica
             doc.metadata.update(self._extract_basic_metadata(file_path))
             
             # Aplicar extractor personalizado si se proporciona
             if metadata_extractor:
                 custom_metadata = metadata_extractor(doc.page_content, file_path)
                 doc.metadata.update(custom_metadata)
+            
+            # Limpiar metadata no deseada al final
+            doc.metadata = self._clean_metadata(doc.metadata)
         
         return documents
     
+    def _clean_metadata(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Limpia metadata eliminando campos no deseados del PDF
+        Mantiene campos relevantes según el tipo de documento
+        
+        Args:
+            metadata: Metadata original del documento
+            
+        Returns:
+            Metadata limpia sin campos no deseados
+        """
+        # Campos a eliminar (metadata técnica del PDF no relevante para el sistema académico)
+        fields_to_remove = {
+            # Metadata técnica del PDF
+            'creator',
+            'author', 
+            'title',
+            'producer',
+            'creationdate',
+            'moddate',
+            'keywords',
+            'subject',
+            'trapped',
+            'ptex.fullbanner'
+        }
+        
+        # Crear nueva metadata sin los campos no deseados
+        cleaned_metadata = {}
+        for key, value in metadata.items():
+            if key not in fields_to_remove:
+                cleaned_metadata[key] = value
+        
+        # Verificar que los campos importantes estén presentes según el tipo de documento
+        tipo_doc = cleaned_metadata.get('tipo_documento', '')
+        
+        # Campos básicos que siempre deben estar
+        basic_fields = ['materia', 'tipo_documento', 'filename', 'source', 'file_type']
+        
+        # Campos específicos según tipo de documento
+        if tipo_doc in ['examenes', 'parciales', 'finales']:
+            # Para exámenes: año, cuatrimestre, tipo_examen, tema
+            exam_fields = ['año', 'cuatrimestre', 'tipo_examen', 'tema']
+            expected_fields = basic_fields + exam_fields
+        elif tipo_doc in ['apuntes', 'teoricas']:
+            # Para teóricas: unidad_tema, unidad_numero
+            theory_fields = ['unidad_tema', 'unidad_numero']
+            expected_fields = basic_fields + theory_fields
+        elif tipo_doc in ['guias', 'ejercicios']:
+            # Para guías: puede tener unidad o no
+            guide_fields = ['unidad_tema', 'unidad_numero']
+            expected_fields = basic_fields + guide_fields
+        else:
+            # Para otros tipos
+            expected_fields = basic_fields
+        
+        # Log de campos faltantes (para debugging)
+        missing_fields = [field for field in expected_fields if field not in cleaned_metadata]
+        if missing_fields:
+            logger.debug(f"Campos faltantes para {tipo_doc}: {missing_fields}")
+        
+        return cleaned_metadata
+
     def _extract_basic_metadata(self, file_path: Path) -> Dict[str, Any]:
         """
         Extrae metadata básica del archivo
@@ -176,59 +230,51 @@ class DocumentLoader:
                 path_after_docs = parts[-4:] if len(parts) >= 4 else parts
         
         # NIVEL 1: Materia (primera carpeta después de docs)
-        if len(path_after_docs) >= 1:
-            materia_raw = path_after_docs[0]
-            # Convertir guiones bajos a espacios y capitalizar
-            metadata['materia'] = materia_raw.replace('_', ' ')
-        else:
-            # Fallback: detectar materia por keywords
-            metadata['materia'] = self._detect_materia_fallback(file_path)
+        materia_raw = path_after_docs[0]
+        # Convertir guiones bajos a espacios y capitalizar
+        materia_clean = materia_raw.replace('_', ' ')
+        # Normalizar materia para búsqueda robusta
+        metadata['materia'] = normalize_text(materia_clean)
+        
         
         # NIVEL 2: Puede ser Unidad O Tipo de documento
-        if len(path_after_docs) >= 2:
-            level2_raw = path_after_docs[1]
-            
-            # Detectar si es una Unidad (contiene "Unidad" o números) o un Tipo de documento
-            if self._is_unit_folder(level2_raw):
-                # Es una carpeta de unidad (estructura de 3 niveles)
-                unit_number = self._extract_unit_number(level2_raw)
-                if unit_number is not None:
-                    metadata['unidad_numero'] = unit_number
-                
-                unit_topic = self._extract_unit_topic(level2_raw)
-                metadata['unidad_tema'] = unit_topic
-                
-                # NIVEL 3: Tipo de documento (cuando hay 3 niveles)
-                if len(path_after_docs) >= 3:
-                    tipo_raw = path_after_docs[2]
-                    metadata['tipo_documento'] = self._normalize_tipo_documento(tipo_raw)
-                else:
-                    # Fallback: detectar tipo desde el nombre del archivo
-                    metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
-            else:
-                # Es una carpeta de tipo de documento (estructura de 2 niveles)
-                # Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
-                metadata['tipo_documento'] = self._normalize_tipo_documento(level2_raw)
-                
-                # No hay unidad explícita, intentar detectar del nombre de archivo
-                unit_from_file = self._extract_unit_from_filename(file_path.name)
-                if unit_from_file:
-                    # Extraer número de unidad (ej: "Unidad 18" -> 18)
-                    import re
-                    unit_match = re.search(r'Unidad (\d+)', unit_from_file)
-                    if unit_match:
-                        metadata['unidad_numero'] = int(unit_match.group(1))
-                
-                # Intentar extraer el tema de la unidad del nombre de archivo
-                unit_topic_from_file = self._extract_unit_topic_from_filename(file_path.name)
-                if unit_topic_from_file:
-                    metadata['unidad_tema'] = unit_topic_from_file
-        else:
-            # Solo hay materia, detectar tipo del archivo
-            metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
+        level2_raw = path_after_docs[1]
         
-        # Detectar nivel de dificultad sugerido del nombre de archivo 
-        # #///REVISAR COMO LO VAMOS A HACER
+        # Detectar si es una Unidad (contiene "Unidad" o números) o un Tipo de documento
+        if self._is_unit_folder(level2_raw):
+            # Es una carpeta de unidad (estructura de 3 niveles)
+            unit_number = self._extract_unit_number(level2_raw)
+            if unit_number is not None:
+                metadata['unidad_numero'] = unit_number
+            
+            unit_topic = self._extract_unit_topic(level2_raw)
+            metadata['unidad_tema'] = unit_topic
+            
+            # NIVEL 3: Tipo de documento (cuando hay 3 niveles)
+            tipo_raw = path_after_docs[2]
+            metadata['tipo_documento'] = self._normalize_tipo_documento(tipo_raw)
+            
+        else:
+            # Es una carpeta de tipo de documento (estructura de 2 niveles)
+            # Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
+            metadata['tipo_documento'] = self._normalize_tipo_documento(level2_raw)
+            
+            # No hay unidad explícita, intentar detectar del nombre de archivo
+            unit_from_file = self._extract_unit_from_filename(file_path.name)
+            if unit_from_file:
+                # Extraer número de unidad (ej: "Unidad 18" -> 18)
+                import re
+                unit_match = re.search(r'Unidad (\d+)', unit_from_file)
+                if unit_match:
+                    metadata['unidad_numero'] = int(unit_match.group(1))
+            
+            # Intentar extraer el tema de la unidad del nombre de archivo
+            unit_topic_from_file = self._extract_unit_topic_from_filename(file_path.name)
+            if unit_topic_from_file:
+                metadata['unidad_tema'] = unit_topic_from_file
+
+        
+        # Detectar nivel de dificultad sugerido del nombre de archivo
         filename_lower = file_path.name.lower()
         if any(word in filename_lower for word in ['basico', 'introductorio', 'intro']):
             metadata['nivel_sugerido'] = 'introductorio'
@@ -515,147 +561,4 @@ class DocumentLoader:
         # Reemplazar guiones bajos por espacios
         return cleaned.replace('_', ' ')
     
-    def _detect_materia_fallback(self, file_path: Path) -> str:
-        """
-        Detecta materia por keywords cuando no está en la estructura de carpetas
-        
-        Args:
-            file_path: Ruta del archivo
-            
-        Returns:
-            Nombre de la materia detectada o 'No especificada'
-        """
-        filename_lower = file_path.name.lower()
-        parent_dir = file_path.parent.name.lower()
-        
-        # Mapeo de materias (expandible)
-        materia_keywords = {
-            'probabilidad': 'Probabilidad y estadística',
-            'estadistica': 'Probabilidad y estadística',
-            'sia': 'Sistemas de Inteligencia Artificial',
-            'inteligencia': 'Sistemas de Inteligencia Artificial',
-            'ai': 'Sistemas de Inteligencia Artificial',
-            'machine learning': 'Sistemas de Inteligencia Artificial',
-        }
-        
-        for keyword, materia in materia_keywords.items():
-            if keyword in filename_lower or keyword in parent_dir:
-                return materia
-        
-        return 'No especificada'
-    
-    def _detect_tipo_documento_fallback(self, file_path: Path) -> str:
-        """
-        Detecta tipo de documento por el nombre cuando no está en la estructura
-        
-        Args:
-            file_path: Ruta del archivo
-            
-        Returns:
-            Tipo de documento
-        """
-        filename_lower = file_path.name.lower()
-        
-        if 'apunte' in filename_lower:
-            return 'apuntes'
-        elif 'guia' in filename_lower:
-            return 'guias'
-        elif 'examen' in filename_lower:
-            return 'examenes'
-        elif 'parcial' in filename_lower:
-            return 'parciales'
-        elif 'final' in filename_lower:
-            return 'finales'
-        elif 'ejercicio' in filename_lower or 'practica' in filename_lower:
-            return 'ejercicios'
-        else:
-            return 'documento'
-
-
-def load_documents(
-    directory: str, 
-    file_extensions: List[str] = None,
-    use_academic_metadata: bool = True,
-    max_documents: int = None
-) -> List[Document]:
-    """
-    Función de conveniencia para cargar documentos
-    
-    Args:
-        directory: Ruta del directorio
-        file_extensions: Lista de extensiones a procesar
-        use_academic_metadata: Si usar extractor de metadata académica
-        max_documents: Número máximo de documentos a cargar (para pruebas)
-        
-    Returns:
-        Lista de documentos cargados
-    """
-    loader = DocumentLoader()
-    
-    metadata_extractor = None
-    if use_academic_metadata:
-        metadata_extractor = loader.extract_academic_metadata
-    
-    return loader.load_documents(directory, file_extensions, metadata_extractor, max_documents)
-
-
-def load_documents_as_chunks(
-    directory: str,
-    file_extensions: List[str] = None,
-    use_academic_metadata: bool = True,
-    chunk_size: int = 1000,
-    chunk_overlap: int = 200,
-    max_documents: int = None
-) -> List[Dict[str, Any]]:
-    """
-    Función optimizada que carga documentos y los convierte directamente a chunks
-    
-    Args:
-        directory: Directorio a cargar
-        file_extensions: Extensiones de archivo a procesar
-        use_academic_metadata: Si usar metadata académica
-        chunk_size: Tamaño de cada chunk
-        chunk_overlap: Solapamiento entre chunks
-        max_documents: Máximo número de documentos a cargar
-        
-    Returns:
-        Lista de chunks con metadata
-    """
-    from src.text_processing import AcademicTextSplitter
-    
-    # Cargar documentos
-    documents = load_documents(
-        directory=directory,
-        file_extensions=file_extensions,
-        use_academic_metadata=use_academic_metadata,
-        max_documents=max_documents
-    )
-    
-    # Crear text splitter
-    text_splitter = AcademicTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap
-    )
-    
-    # Procesar directamente a chunks
-    chunks = text_splitter.process_documents(documents)
-    
-    logger.info(f"Documentos cargados: {len(documents)}")
-    logger.info(f"Chunks creados: {len(chunks)}")
-    
-    return chunks
-
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Cargar documentos de ejemplo
-    docs = load_documents("./data/raw")
-    
-    for doc in docs[:2]:  # Mostrar primeros 2 documentos
-        print(f"Archivo: {doc.metadata.get('filename')}")
-        print(f"Materia: {doc.metadata.get('materia', 'No detectada')}")
-        print(f"Tipo: {doc.metadata.get('tipo_documento', 'No detectado')}")
-        print(f"Contenido (primeros 200 chars): {doc.page_content[:200]}...")
-        print("-" * 50)
+   

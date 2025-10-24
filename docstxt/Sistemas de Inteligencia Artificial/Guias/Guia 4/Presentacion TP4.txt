@@ -1,0 +1,1067 @@
+SIA - TP4
+Modelos de aprendizaje 
+no supervisado
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+
+[Descripción de la imagen: un fondo azul y verde con el modelo t4 de las palabras ']
+
+Introducción
+
+[Descripción de la imagen: intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro]
+
+Csv de países de Europa
+28 países:
+●
+Nombre del país
+●
+Área
+●
+Producto bruto interno
+●
+Inﬂación anual
+●
+Expectativa de vida media en años
+●
+Presupuesto militar
+●
+Tasa de crecimiento poblacional
+●
+Tasa de desempleo
+
+[Descripción de la imagen: un fondo negro con las palabras c'e e - e - e - e - e - e - e - e - e - e - e]
+
+Red de Kohonen
+
+[Descripción de la imagen: logo de kon rojo]
+
+Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+[Descripción de la imagen: un diagrama que muestra los diferentes niveles de aprendizaje | Transcripción de la imagen: Clusters de Países
+
+Greece
+
+Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+United Kingdom
+Spain
+
+Sweden
+taly
+Anland
+
+Portugal
+
+Croatia
+
+Slovenia
+
+Poland
+Hungary
+
+Bulgaria
+
+Czech Republic
+
+Denmark
+Belgium
+Austria
+
+Netherlands
+
+Ukraine
+Latvia
+
+Estonia
+
+Slovakia
+
+Lithuania
+
+Iceland
+
+Switzerland
+Luxembourg
+
+Ireland]]
+
+Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+[Descripción de la imagen: un cuadrado azul y blanco con el número de cuadrados | Transcripción de la imagen: Cantidad de Países por Neurona
+
+Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+1al
+v
+T
+e
+a
+[:]
+D
+Le
+]
+D
+-
+-
+]
+U]]
+
+Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+[Descripción de la imagen: un gráfico gráfico con un cuadrado y una escala | Transcripción de la imagen: Learning Rate inicial: 0,1
+Iteraciones: 10000
+
+u
+v
+E
+o
+45
+
+.D
+(a)]]
+
+Learning Rate inicial: 0,4
+Learning Rate inicial: 0,8
+
+[Descripción de la imagen: los dos cuadrantes del juego | Transcripción de la imagen: Ukraine
+
+Clusters de Países - Red de Kohonen
+
+Estonia
+
+O Eulgaria O Croatia
+Latvia
+
+ttaly Germany
+
+Norway — )- Finland ( svitzerland
+Swéttited Kingdom
+
+O - reland Ouxembourg
+
+Learning Rate inicial: 0,4
+
+Uithuania
+Portugal -- Hungary
+
+Slovakia
+
+Slovenia - Qeech Republic
+
+Belgium
+nmark -- Austria
+
+Netherlands
+
+Belgium
+
+Denmark Q - Austria
+
+Netherlands
+
+Buxembourg
+
+( svitzerland
+
+Clusters de Países - Red de Koho
+
+Estonia
+
+O euigaria
+Latvia
+
+Lithuanielungary
+Portugal - Qzech Republic
+
+Slovakislovenia
+
+e eland
+
+e Urraine
+
+e coatia
+
+ited Kingdom
+
+Germany
+taly — - Fnland
+
+Sweden
+
+Learning Rate inicial: 0,8]]
+
+Learning Rate inicial: 0,4
+Learning Rate inicial: 0,8
+
+[Descripción de la imagen: la misma imagen de un cuadrado con un cuadrado en el centro y un cuadrado con un cuadrado en el medio | Transcripción de la imagen: U-Matrix (Distancia entre neuronas vecinas) U-Matrix (Distancia entre neuronas vecinas)
+
+Ed
+0
+
+Distancia
+Distancia
+
+Learning Rate inicial: 0,4 Learning Rate inicial: 0,8]]
+
+Learning Rate inicial: 0,05
+Iteraciones: 10000
+
+[Descripción de la imagen: un gráfico con el texto, «aprender a escalar» | Transcripción de la imagen: Learning Rate inicial: 0,05
+Iteraciones: 10000
+
+Clusters de Países - Red de Kohonen
+
+zech Republic
+
+Latvia
+Lithuania
+
+O Hungary
+
+Slovakia
+Slovenia
+
+O Portugal
+
+O Croatia
+
+Estonia
+
+Greece Q Bulgaria
+
+Ukraine
+
+iceland
+Netherlands Qy — Austria
+Switzerland
+
+Denmark
+
+O Eelgium
+
+Ireland
+
+$ uxembourg
+
+Norway
+
+[ Italy
+
+Sweden
+Germany
+Spain Q Finland
+
+United Kingdom]]
+
+Learning Rate: 0,05
+Iteraciones: 10.000
+
+[Descripción de la imagen: un gráfico de un hexágono con el aprendizaje de texto 100 | Transcripción de la imagen: U-Matrix (Distancia entre neuronas vecinas)
+
+Learning Rate: 0,05
+Iteraciones: 10.000
+
+E
+]
+-
+S
+-
+a
+[a]
+
+>
+a]]
+
+Conclusiones
+-
+Grupos bien deﬁnidos (Ucrania y España siempre solos)
+-
+Regiones cercanas y opuestas
+-
+Kohonen como herramienta agrupadora poderosa
+-
+Buenos resultados variando el Learning Rate
+
+[Descripción de la imagen: crisios cripienos urs urs urs urs urs urs urs urs urs urs urs urs urs]
+
+Modelo de Oja
+
+[Descripción de la imagen: el logotipo para modee io]
+
+PC1 por librería
+
+[Descripción de la imagen: una captura de pantalla de un gráfico con el texto « pcr »]
+
+PC1 por regla de Oja
+Learning rate constante
+η(0) = 0.1
+E = 0.646
+
+[Descripción de la imagen: un gráfico con los siguientes datos y los siguientes datos | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+o]
+[
+L
+S
+Ú
+E
+2
+-
+6
+o]
+
+Learning rate constante
+
+n(0) = 0.1 E=0.646]]
+
+PC1 por regla de Oja
+Learning rate constante
+η(0) = 0.01
+E = 8.14 · 10-3
+Cos(θ) = 0.99185
+
+[Descripción de la imagen: los datos en el modelo de pre-negociación | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+)
+a
+l
+c
+-E
+[
+El
+-
+E
+o
+(a)
+
+Learning rate constante _ _ -3
+n(0) = 0.01 Cos(6) = 0.99185 E=8.14-:10]]
+
+PC1 por regla de Oja
+Learning rate constante
+η(0) = 0.01
+E = 8.14 · 10-3
+Cos(θ) = -0.99185
+
+[Descripción de la imagen: un gráfico con los mismos datos y un gráfico de línea con los mismos datos | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+)
+[
+l
+c
+2O
+[
+El
+-
+E
+o
+(a)
+
+Learning rate constante _ _ -3
+n(0) = 0.01 Cos(6) = -0.99185 E=8.14:10]]
+
+PC1 por regla de Oja
+Learning rate constante
+η(0) = 0.001
+E = 7.63 · 10-5
+
+[Descripción de la imagen: un gráfico con un gráfico de barras y un gráfico de barras | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+)
+[
+l
+c
+2O
+[
+El
+-
+E
+o
+(a)
+
+Learning rate constante
+
+n(0) = 0.001 E=7.63-10>]]
+
+PC1 por regla de Oja
+Learning rate constante
+η(0) = 0.0001
+E = 7.57 · 10-7
+
+[Descripción de la imagen: un gráfico con los mismos datos y un gráfico de línea con los mismos datos | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+)
+[
+l
+c
+2O
+[
+El
+-
+E
+o
+(a)
+
+Learning rate constante
+
+n(0) = 0.0001 E=7.57:107]]
+
+PC1 por regla de Oja
+Learning rate adaptativo
+η(0) = 0.001
+E = 0.423
+
+[Descripción de la imagen: un gráfico con un gráfico de barras y un gráfico de barras con un gráfico de barras]
+
+PC1 por regla de Oja
+Learning rate adaptativo
+η(0) = 0.01
+E = 1.87  · 10-5
+
+[Descripción de la imagen: un gráfico con los mismos datos y los mismos datos | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+o]
+[
+L
+S
+Ú
+E
+2
+-
+6
+o]
+
+Learning rate adaptativo
+
+n(0) = 0.01 = 1.87 -10>]]
+
+PC1 por regla de Oja
+Learning rate adaptativo
+η(0) = 0.1
+E = 1.09 · 10-8
+
+[Descripción de la imagen: un gráfico con los mismos datos y los mismos datos | Transcripción de la imagen: PC1 por regla de Oja
+
+A
+o]
+[
+L
+S
+Ú
+E
+2
+-
+6
+o]
+
+Learning rate adaptativo
+
+n(0) = 0.1 E= 1.09 . 10-8]]
+
+Resumen de los resultados
+Learning Rate
+η(0)
+E
+Constante
+0.1
+0.646
+Constante
+0.01
+8.14 · 10-3
+Constante
+0.001
+7.63 · 10-5
+Constante
+0.0001
+7.57 · 10-7
+Adaptativo
+0.1
+1.09 · 10-8
+Adaptativo
+0.01
+1.87  · 10-5
+Adaptativo
+0.001
+0.423
+
+[Descripción de la imagen: una tabla con los números de las diferentes partes | Transcripción de la imagen: Resumen de los resultados
+
+m | | E]]
+
+Otras posibilidades
+●
+Un learning rate inicial más alto causa que los pesos divergan, eventualmente 
+convirtiéndose en NaNs
+●
+Un learning rate constante más bajo podría llevar a menor error, pero requiere más 
+epochs para converger
+●
+Un learning rate adaptativo más bajo causará que los pesos no convergan a la PC1, como 
+se vio en el caso de 0.001
+●
+Se podría probar con otras funciones para actualizar el learning rate, que quizás permitan 
+converger a la PC1 con menor error
+
+[Descripción de la imagen: un fondo negro con las palabras 'croslides']
+
+Interpretación de los resultados
+●
+El GDP, la expectativa de vida y el 
+crecimiento poblacional tienen una 
+correlación (positiva) fuerte en el 
+índice
+●
+La inﬂación y el desempleo tienen 
+una correlación (negativa) en el 
+índice
+●
+Si bien el área y la inversión militar 
+tienen una correlación negativa, su 
+peso en la PC1 es bajo
+
+[Descripción de la imagen: interaciona de est est est est est est est est est est est est est est est est est est]
+
+Conclusiones
+●
+Se debe elegir un learning rate adecuado para que el modelo de Oja converga a la PC1
+●
+La regla de Oja permite calcular la PC1 sin la necesidad de almacenar y operar sobre toda 
+la matriz de datos.
+○
+Calcular la matriz de covarianza y sus autovectores y autovalores es muy costoso para datasets 
+grandes
+○
+Oja incluso permitiría actualizar los pesos a medida que llegan nuevos datos, en caso de no 
+tenerlos todos desde un principio
+
+[Descripción de la imagen: cruzes se de des unificos de unificos de unificos]
+
+Modelo de 
+Hopﬁeld
+
+[Descripción de la imagen: modele hofio - diseño de logotipo]
+
+Set de 4 letras aleatorio
+
+[Descripción de la imagen: un texto en blanco y negro que lea 'ct4 ' | Transcripción de la imagen: Set de 4 letras aleatorio
+
+Patrones de las Letras
+
+Letra J Letra A Letra L Letra E]]
+
+Convergencia letra A
+
+[Descripción de la imagen: una imagen en blanco y negro de un cuadrado con las palabras «coverciata» | Transcripción de la imagen: Convergencia letra A
+
+rón con Ruido
+
+Patrones de |
+Pati
+
+a letra A (Rtáid0: 25.0%)
+
+Patrón Original Patrón Recuperado]]
+
+Estado espurio
+
+[Descripción de la imagen: Este escables est escables est escables est cuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables estcuables | Transcripción de la imagen: Estado espurio
+
+, — Patrones de la letra L (Ruido: 25.0%) ,
+Patrón Original Patrón con Ruido Patrón Recuperado]]
+
+Recuperaciones exitosas
+10% de ruido
+
+[Descripción de la imagen: Reparaciones de coches de alquiler en els | Transcripción de la imagen: Recuperaciones exitosas
+
+Recuperaciones Exitosas por Letra
+
+9
+
+w
+1
+w
+o
+=
+p
+u
+u
+v
+-
+S
+y
+v
+v
+v
+[
+-
+-
+[
+[
+v
+D
+D
+[1:]
+D
+E
+-
+1 ]
+S)
+
+10% de ruido]]
+
+Recuperaciones exitosas
+25% de ruido
+35% de ruido
+
+[Descripción de la imagen: rehabilitación de dataria | Transcripción de la imagen: Recuperaciones exitosas
+
+Recuperaciones Exitosas por Letra Recuperaciones Exitosas por Letra
+
+Cantidad de Recuperaciones Exitosas
+
+u
+E
+D
+£
+=
+a
+u
+-
+S
+al
+E
+a
+D
+a
+5
+D
+r
+[
+E
+D
+o
+E
+D
+]
+[O)
+
+25% de ruido 35% de ruido]]
+
+Recuperaciones exitosas
+40% de ruido
+50% de ruido
+
+[Descripción de la imagen: rehabilitación de la rehabilitación de la rehabilitaciónasociacionacionacionacionacionacionacionacionacion | Transcripción de la imagen: Recuperaciones exitosas
+
+Recuperaciones Exitosas por Letra Recuperaciones Exitosas por Letra
+
+Cantidad de Recuperaciones Exitosas
+
+u
+E
+D
+2
+x
+n
+u
+D
+=
+o
+D
+s
+1-
+o
+[
+=
+D
+r
+[
+v
+D
+D
+E
+D
+=
+5
+(S)
+
+40% de ruido 50% de ruido]]
+
+Análisis de ortogonalidad
+
+[Descripción de la imagen: anis de oroada | Transcripción de la imagen: Análisis de ortogonalidad
+
+álisis de Ortogonalidad entre Letras (Valores Absolutos)
+
+Ed
+Es
+
+s
+E
+S
+E
+£
+S
+5
+S
+s
+z
+3
+s
+r
+e
+5
+S
+S
+£
+o]]
+
+Ortogonalidad E, A, L, J
+
+[Descripción de la imagen: un diagrama de un cuadrado con el número de cuadrados]
+
+Mejores set de letras
+
+[Descripción de la imagen: un gráfico que muestra el número de diferentes tipos de datos | Transcripción de la imagen: Mejores set de letras
+
+Grupo 1: C, R, T, V Grupo 2: O, R, T, V Grupo 3: L, R, T, X
+Ortogonalidad total: 0.3200 Ortogonalidad total: 0.3200 Ortogonalidad total: 0.4000]]
+
+Set elegido
+
+[Descripción de la imagen: una imagen en blanco y negro con las palabras ctt | Transcripción de la imagen: Set elegido
+
+Patrones de las Letras
+Letra C Letra R Letra T Letra V
+
+E ,]]
+
+10% de ruido
+Anterior
+Nuevo set
+
+[Descripción de la imagen: un gráfico de barras con el número de datos | Transcripción de la imagen: 10% de ruido
+
+Recuperaciones Exitosas por Letra
+Recuperaciones Exitosas por Letra 10 10
+
+Cantidad de Recuperaciones Exitosas
+
+u
+E
+a
+Sl
+Fa
+e
+a
+o
+=
+o
+o
+c
+1
+a
+=
+D
+r
+[
+v
+D
+D
+E
+D
+=
+5
+()
+
+Anterior Nuevo set]]
+
+25% de ruido
+Anterior
+Nuevo set
+
+[Descripción de la imagen: dos gráficos que muestran el número de diferentes datos | Transcripción de la imagen: 25% de ruido
+
+Recuperaciones Exitosas por Letra Recuperaciones Exitosas por Letra
+
+.
+Es
+hi
+£ u
+6i 8
+ú É
+Ú Ed
+- ú
+5 a
+S F
+El 5
+s o
+En [
+l S
+S v
+D [
+g 2
+
+y
+5 --
+o v
+= D
+E E
+S D-
+E E
+S K1
+S (S)
+(S)
+
+Anterior Nuevo set]]
+
+35% de ruido
+Anterior
+Nuevo set
+
+[Descripción de la imagen: un gráfico de barras con el número de datos | Transcripción de la imagen: 5% de ruido
+
+Recuperaciones Exitosas por Letr: Recuperaciones Exitosas por Letr:
+
+a a
+a a
+5 5
+£ £
+E E
+ú ú
+$ $
+g g
+] ]
+s s
+E E
+2 2
+E E
+3 3
+E E
+¿ ¿
+9 9
+k k
+- -
+3 3
+
+Anterior Nuevo set]]
+
+40% de ruido
+Anterior
+Nuevo set
+
+[Descripción de la imagen: un gráfico de barras con el número de datos | Transcripción de la imagen: 0% de ruido
+
+Recuperaciones Exitosas por Letr: Recuperaciones Exitosas por Letra
+
+n 2
+8 g
+E 8
+E g
+x x
+ñ ñ
+r E
+g g
+E E
+o a
+S S
+S S
+5 5
+: :
+S S
+: E
+E E
+E E
+$ s
+E E
+E E
+- A
+É É
+5 5
+o o
+
+Anterior Nuevo set]]
+
+50% de ruido
+Anterior
+Nuevo set
+
+[Descripción de la imagen: El 50 % lo hacen. | Transcripción de la imagen: 50% de ruido
+
+Recuperaciones Exitosas por Letra Recuperaciones Exitosas por Letra
+
+.
+Es
+hi
+£ u
+6i E
+ú £
+a E
+Fa u
+S E
+g c
+l .g
+E É
+S v
+7 a
+g D
+5
+
+3
+= o
+u
+] 5
+E El
+S s
+r E
+z
+E o]
+(S)
+
+Anterior Nuevo set]]
+
+Evolución del estado
+7 pixeles de ruido ~ 28%
+Paso 1 - Energía = -1.6
+Paso 2 - Energía = -6.08
+Paso 3 - Energía = -7.52
+Paso 4 - Energía = -0.72
+
+[Descripción de la imagen: una cuadrícula de cuadrados con las palabras 'evo esto ']
+
+Mejor set de 3 letras
+
+[Descripción de la imagen: un gráfico con el número de los datos | Transcripción de la imagen: Mejor set de 3 letras
+
+Grupo: C, T, V
+Ortogonalidad total: 0.1200]]
+
+Comparación distinta cantidad de patrones 
+almacenados
+(10.000 ejec)
+
+[Descripción de la imagen: comidas de la comida de la comida de la comida de la comida de la comida de la comida de la comida de la comida]
+
+Comparación distinta cantidad de patrones 
+almacenados
+(10.000 ejec)
+
+[Descripción de la imagen: comidas de la comida de la comida de la comida de la comida de la comida de la comida de la comida de la comida de la comida | Transcripción de la imagen: Comparación distinta cantidad de patrones
+almacenados
+
+Comparación de Accuracy para 'C'
+
+[C, R, T, V.Z]
+— [C,R, T, V]
+[C, T, V]
+[C, T]
+— [c]
+
+Ruido (%)
+
+(10.000 ejec)]]
+
+Capacidad teórica Hopﬁeld
+●
+Según Amit et al. (1985), el número máximo de patrones que se puede almacenar en una red según es:
+p≤ 0,138N
+Fuente: Amit, D.J., Gutfreund, H. & Sompolinsky, H. (1985). Spin-glass models of neural networks. Phys. Rev. A, 32(2), 
+1007–1018.
+
+[Descripción de la imagen: capadera infield]
+
+Utilizando regla de capacidad teórica
+Si quisiéramos almacenar un abecedario completo de 26 letras en una red de Hopﬁeld: 
+N tiene que ser mayor o igual a 13,72, tomamos N= 15
+
+[Descripción de la imagen: un fondo negro con un texto blanco que dice,'utilage de capacidad tria ']
+
+Abecedario 15x15
+●
+Letras de 225 píxeles
+
+[Descripción de la imagen: un píxel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pixel pi]
+
+25 pixeles ~ 10% ruido
+
+[Descripción de la imagen: un gráfico con el número de píxeles en azul | Transcripción de la imagen: Tasa de éxito
+
+25 pixeles - 10% ruido
+
+Tasa de éxito por letra
+
+0.8 4
+
+0.6 4
+
+0.4 1
+
+0.2 4]]
+
+50 píxeles ~ 20% ruido
+
+[Descripción de la imagen: un gráfico con el número de píxeles | Transcripción de la imagen: Tasa de éxito
+
+50 píxeles - 20% ruido
+
+Tasa de éxito por letra
+
+0.8 4
+
+0.6 4
+
+0.4 1
+
+0.2 4]]
+
+75 píxeles ~ 30% ruido
+
+[Descripción de la imagen: 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 / 7 | Transcripción de la imagen: Tasa de éxito
+
+75 píxeles - 30% ruido
+
+Tasa de éxito por letra
+
+0.8 4
+
+0.6 4
+
+0.4 1
+
+0.2 4]]
+
+100 pixeles ~ 40% ruido
+
+[Descripción de la imagen: un gráfico con el número de píxeles en azul y blanco | Transcripción de la imagen: x 100 pixeles - 40% ruido
+1.0 Tasa de éxito por letra
+
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡]]
+
+125 píxeles ~ 50% ruido
+
+[Descripción de la imagen: un gráfico de barra con el número de píxeles | Transcripción de la imagen: x 125 píxeles - 50% ruido
+
+Tasa de éxito por letra]]
+
+Conclusiones
+●
+El comportamiento de la red es sensible a la correlación entre patrones almacenados
+●
+Con bajos niveles de ruido y patrones ortogonales la red tiene un buen desempeño
+
+[Descripción de la imagen: cono de marketing cono de marketing cono cono cono cono cono cono]
+

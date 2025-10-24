@@ -1,0 +1,901 @@
+Variables aleatorias
+Gonick & Smith, 
+The Cartoon 
+Guide to 
+Statistics
+
+[Descripción de la imagen: x y y y y y y y y y y y y y y y y y y y y y y y y y y y y y y y | Transcripción de la imagen: Variables aleatorias
+
+THE KEY IVEA 15 THE RANDOM VARIABLE, WHICH WE
+WRITE AS A LARGE
+
+nA
+
+A RANDOM VARIABLE 15 DEFINED AS THE NUMERICAL OUTCOME OF A
+RANDOM EXPERIMENT.
+
+-
+-
+—>
+-
+-
+_——>
+-
+->
+—
+_D»
+—
+-
+-
+_-
+-- -
+-
+-
+—_—->
+—
+—
+—
+-
+-
+_-
+-
+-]]
+
+Variables aleatorias
+Espacio
+Muestral
+(resultados 
+del 
+experiment
+o)
+𝑋
+Reales
+
+[Descripción de la imagen: un diagrama de la función de una variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: D
+- »
+—>
+-
+—D>
+_ —->
+D
+-
+-
+-
+-
+- D»
+- D»
+- -
+-- -
+-
+D
+-
+-
+-
+—->
+- D»
+- »
+- -
+-- -
+- -
+
+Variables aleatorias
+
+X
+
+Espacio
+Muestral
+(resultados
+del
+experiment Reales
+0)]]
+
+Variables aleatorias
+Espacio
+Muestral
+𝑋−1
+Reales
+𝑎
+𝑏
+𝑃( 𝑋∈(𝑎,𝑏) )=𝑃( 𝑋−1((𝑎,𝑏)))
+
+[Descripción de la imagen: un gráfico con un punto y una línea perpendicular al punto | Transcripción de la imagen: Variables aleatorias
+
+PiX ela,b))=P(X"'(la,b))
+
+———— —
+
+b Reales]]
+
+Variables aleatorias discretas
+Gonick & 
+Smith, The 
+Cartoon 
+Guide to 
+i
+i
+
+[Descripción de la imagen: variables attoris dictas | Transcripción de la imagen: -—
+
+NAA
+
+».0000dbUUUAYOOOOOFTOLVUOVOOA
+
+Variables aleatorias discretas
+
+WE ILLUSTRATE USIN6 THE RANDOM | | THE TOSSER BESINS FLIPPING TWO
+VARIABLE X AND A MAD COIN TOSSER.| | COINS REPEATEDLY, KEEPING TRACK
+' OF THE RESULTS.
+
+. N
+N N
+¡ /=I)XX N
+
+—]]
+
+Variables aleatorias discretas
+Gonick & 
+Smith, The 
+Cartoon 
+Guide to 
+Statistics
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias discretas
+
+—
+
+— -D
+——>
+— >
+— D>
+
+2 PROBABILITY
+
+| : MOVEL OBSERVED VATA
+— "e
+Ny NUMBER OF — - = RELATIVE
+> PA 7 OCCURRENCES — FREQUENCY
+- : 45 0 260 260
+
+| : 5 1 517 517
+. 465 2 223 223
+
+- -D
+— ad Gonick €
+= Smith, The
+> Cartoon
+
+Guide to
+
+4 2 _ y 5 - O]]
+
+Variables aleatorias discretas
+Gonick & 
+Smith, The 
+Cartoon 
+Guide to
+
+[Descripción de la imagen: variables attoris dictas gonk, el garón]
+
+Variables aleatorias discretas
+Gonick & 
+Smith, The 
+Cartoon 
+Guide to 
+Statistics
+
+[Descripción de la imagen: variables y variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias discretas
+
+THE SAMPLE MEAN WAS DEFINED
+8Y THE EQUATION = 6007! NOW LET'S
+
+TWIST Y ARQUND,/
+n
+
+Z > %ZZ¡
+
+i=1
+
+Gonick
+Smith, The
+Cartoon
+Guide to
+Statistics
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variables aleatorias discretas
+
+[Descripción de la imagen: variables atrasi dictai | Transcripción de la imagen: .
+-
+-
+-
+-
+_-
+-
+->
+-
+_-
+-
+— -»
+- -
+d
+-
+-
+->
+-
+-
+-
+_-
+-
+d
+-
+
+Variables aleatorias discretas
+
+/.-._N
+
+DECAUSE EACH
+% 16 COUNTED
+Nx TIMES...]]
+
+Variables aleatorias discretas
+
+[Descripción de la imagen: variables attrias todos dependen que son variables | Transcripción de la imagen: Variables aleatorias discretas
+
+Nu
+
+e
+>
+_
+U>
+l
+-—
+_>
+_=
+— -D
+—
+— -D
+—_—>
+_-
+l
+—
+-
+-
+-
+
+SD
+S
+S
+
+d AND DEFINE THAT AS THE
+= MEAN OF THE PROBABILITY
+d > DISTRIBUTION.]]
+
+Variables aleatorias discretas
+𝑅𝑋=Recorrido  de la   variable  aleatoria
+Función de distribución de masa de probabilidad 
+𝑅𝑋=Valores  que  puede  tomar
+𝑝𝑋( 𝑥)=𝑃( 𝑋=𝑥)         ∀𝑥∈𝑅𝑋
+𝑝𝑋(𝑥)≥0         ∀𝑥∈𝑅𝑋
+𝑃( 𝑋∈𝑅𝑋)= ∑
+𝑥∈𝑅𝑋
+𝑝𝑋(𝑥)=1
+
+[Descripción de la imagen: variables attoris diotas | Transcripción de la imagen: Variables aleatorias discretas
+
+R = Recorrido de la variable aleatoria
+
+R.= Valores que puede tomar
+
+Función de distribución de masa de probabilidad
+Px X =P X=x| VxEeR,
+PpxIx)>0 vxeR,
+
+PxeRy= Y py
+
+X E Ry
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+𝜇=𝐸[ 𝑋]=∑
+𝑥𝜖𝑅𝑥
+𝑥𝑝𝑋( 𝑥)
+Media
+𝜎
+2=𝐸[( 𝑋−𝜇)
+2 ]=∑
+𝑥𝜖𝑅𝑥
+(𝑥−𝜇)
+2𝑝𝑋(𝑥)=𝐸[ 𝑋
+2] −(𝐸[ 𝑋])
+2
+Varianza
+Desvío estándar
+𝜎= √𝜎2
+Variables aleatorias discretas
+
+[Descripción de la imagen: variables attoris dictas | Transcripción de la imagen: Variables aleatorias discretas
+
+Media
+
+u=E X= 2 X Px 1X|
+
+XeR,
+
+Varianza
+
+=2 Ix-uf p X=E X -[ELJF
+
+X(RX
+
+qN
+|
+E
+<
+|
+<
+
+Desvío estándar
+
+VÓ'2
+
+—
+——>
+—>
+- >
+_»
+-——>
+-
+——-»
+»
+— »
+—_—>
+——>
+-
+——>»
+»
+_ a
+. -]]
+
+Variables aleatorias discretas
+𝜇𝑘=𝐸[ 𝑋𝑘]=∑
+𝑥𝜖𝑅𝑥
+𝑥𝑘𝑃( 𝑋=𝑥)
+𝑚𝑘=𝐸[( 𝑋−𝜇)
+𝑘]=∑
+𝑥𝜖𝑅𝑥
+(𝑥−𝜇)
+𝑘𝑃(𝑋=𝑥)
+Momentos
+Momentos centrales
+
+[Descripción de la imagen: variables attoris dictais | Transcripción de la imagen: Variables aleatorias discretas
+
+Momentos
+
+u=E X= x*PX=xl
+
+XeR,
+
+Momentos centrales
+
+m=E|X-u =3 x-uPIX=x
+
+X(RX
+
+>
+—
+—
+—
+—
+—>
+—
+— =»
+2
+— D
+—
+—
+—
+—>
+—
+2
+— -D
+—
+2]]
+
+𝛾=𝐸[( 𝑋−𝜇
+𝜎
+)
+3]
+Coeficiente de asimetría
+𝜅=𝐸[( 𝑋−𝜇
+𝜎
+)
+4]−3
+Coeficiente de curtosis
+Variables aleatorias discretas
+
+[Descripción de la imagen: variables attoris dictais | Transcripción de la imagen: Variables aleatorias discretas
+
+Coeficiente de asimetría
+
+E
+
+Coeficiente de curtosis
+
+5)=
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Recuerde que urnas y bolillas 
+son un MODELO útil para 
+resolver problemas con tal de 
+traducir los términos al 
+contexto del problema
+Muestreo sin reemplazo 
+Caso
+BBB
+NBB
+BNB
+BBN
+BNN
+NBN
+NNB
+NNN
+ X
+0
+1
+1
+1
+2
+2
+2
+3
+(6/10)(5/9)(4/8) = 120/720 = 1/6
+(4/10)(6/9)(5/8) = 120/720 = 1/6
+(6/10)(4/9)(5/8) = 120/720 = 1/6
+(6/10)(5/9)(4/8) = 120/720 = 1/6
+(6/10)(4/9)(3/8) = 72/720 = 1/10
+(4/10)(6/9)(3/8) = 72/720 = 1/10
+(4/10)(3/9)(6/8) = 72/720 = 1/10
+(4/10)(3/9)(2/8) = 24/720 = 1/30
+X = número de bolillas negras
+RX = {0,1,2,3}
+
+[Descripción de la imagen: un cuaderno con un número de números en él]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Muestreo sin reemplazo 
+ 0
+0.05
+ 0.1
+0.15
+ 0.2
+0.25
+ 0.3
+0.35
+ 0.4
+0.45
+ 0.5
+ 0
+ 0.5
+ 1
+ 1.5
+ 2
+ 2.5
+ 3
+probabilidad
+
+[Descripción de la imagen: un diagrama con el número de los números en español]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Muestreo sin reemplazo 
+  = 1.2
+= 0.56
+= 0.056
+𝛾= 𝐸[ ( 𝑋−𝜇)3 ]
+𝜎3
+=0.1336
+= 0.8192
+𝜅= 𝐸[ ( 𝑋−𝜇)4 ]
+𝜎4
+−3=−0.3878
+
+[Descripción de la imagen: un cuaderno con un número de números en él]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Muestreo sin reemplazo 
+𝜇=1.2 , 𝜎=0.7483 , 𝛾=0.1336 , 𝜅=−0.3878
+ 0
+0.05
+ 0.1
+0.15
+ 0.2
+0.25
+ 0.3
+0.35
+ 0.4
+0.45
+ 0.5
+ 0
+ 0.5
+ 1
+ 1.5
+ 2
+ 2.5
+ 3
+probabilidad
+
+[Descripción de la imagen: una hoja con un número de números en ella]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Recuerde que urnas y bolillas 
+son un MODELO útil para 
+resolver problemas con tal de 
+traducir los términos al 
+contexto del problema
+Muestreo con reemplazo 
+Caso
+BBB
+NBB
+BNB
+BBN
+BNN
+NBN
+NNB
+NNN
+ X
+0
+1
+1
+1
+2
+2
+2
+3
+(6/10)(6/10)(6/10) = 216/1000
+(4/10)(6/10)(6/10) = 144/1000
+(6/10)(4/10)(6/10) = 144/1000
+(6/10)(6/10)(4/10) = 144/1000
+(6/10)(4/10)(4/10) = 96/1000
+(4/10)(6/10)(4/10) = 96/1000
+(4/10)(4/10)(6/10) = 96/1000 (4/10)
+(4/10)(4/10) = 64/1000
+X = número de bolillas negras
+RX = {0,1,2,3}
+
+[Descripción de la imagen: un cuaderno con un número de números y un número de números]
+
+Una urna contiene 10 bolillas de las cuales hay 4 negras y 6 blancas. 
+Se extrae una muestra aleatoria de 3 ellas. ¿Cuál es la probabilidad  
+de que la muestra tenga  k bolillas negras? 
+Muestreo sin reemplazo 
+𝜇=1.2 , 𝜎=0.8485 , 𝛾=0.2357 , 𝜅=−0.6111
+0.05
+ 0.1
+0.15
+ 0.2
+0.25
+ 0.3
+0.35
+ 0.4
+0.45
+ 0
+ 0.5
+ 1
+ 1.5
+ 2
+ 2.5
+ 3
+probabilidad
+
+[Descripción de la imagen: una hoja con un número de números en ella]
+
+Una urna contiene 100 bolillas de las cuales hay 40 negras y 60 
+blancas. Se extrae una muestra aleatoria de 20 ellas. ¿Cuál es la 
+probabilidad  de que la muestra tenga  k bolillas negras? 
+Muestreo sin reemplazo 
+ 0
+0.05
+ 0.1
+0.15
+ 0.2
+0.25
+ 0
+ 5
+ 10
+ 15
+ 20
+x=0:20;
+p=hygepdf(x,100,40,20);
+𝜇=8 , 𝜎=1.9695 , 𝛾=0.0622 , 𝜅=−0.0652
+
+[Descripción de la imagen: un cuaderno con un gráfico en él y una línea de números | Transcripción de la imagen: Una urna contiene 100 bolillas de las cuales hay 40 negras y 60
+blancas. Se extrae una muestra aleatoria de 20 ellas. ¿Cuál es la
+probabilidad de que la muestra tenga k bolillas negras?
+
+p=hygepdf(x,100,40,20);
+
+U—=8,0—1.9695,7=0.0622 ,X —=—— 0.0652
+
+0.25
+
+0.2
+
+_
+—
+l >
+>
+1 >
+->
+—
+-
+-
+_>
+=
+_-
+->
+»
+->
+2
+-
+-
+_>
+=
+_-
+-
+»]]
+
+Una urna contiene 100 bolillas de las cuales hay 40 negras y 60 
+blancas. Se extrae una muestra aleatoria de 20 ellas. ¿Cuál es la 
+probabilidad  de que la muestra tenga  k bolillas negras? 
+Muestreo con reemplazo 
+x=0:20;
+p=binopdf(x,20,0.4);
+ 0
+0.02
+0.04
+0.06
+0.08
+ 0.1
+0.12
+0.14
+0.16
+0.18
+ 0
+ 5
+ 10
+ 15
+ 20
+𝜇=8 , 𝜎=2.1909 , 𝛾=0.0913 , 𝜅=−0.0917
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+1
+2
+3
+4
+5
+6
+7
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea en él | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+9
+10
+11
+12
+13
+14
+15
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea en él | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+1
+2
+3
+4
+5
+6
+7
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea en él | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+-2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+2
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+
+VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS
+-2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+2
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+
+[Descripción de la imagen: un cuaderno con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: VALOR ESPERADO, VARIANZA, SESGO Y KURTOSIS]]
+

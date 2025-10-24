@@ -1,0 +1,1434 @@
+Referencias
+Sistemas de Inteligencia artificial
+Introducci´on
+ITBA
+2025
+1/95
+
+[Descripción de la imagen: sisas inteligenia artificial truci]
+
+Referencias
+SIA 2025 - 1Q
+Clase H´ıbrida
+Ing. Eugenia Sol Pi˜neiro: Profesora/Investigadora
+Ing. Marina Fuster: Profesora/Investigadora
+Santiago Reyes: Profesor Alumno
+Ing. Alan Pierri: Bol@Utrech, Netherlands
+Ing. Luciano Bianchi: Microsoft
+Ing. Francisco Sanmartin: Profesor ATP
+Dr. Rodrigo Ramele: Profesor/Investigador
+Marco Scilipoti: Profesor Alumno
+Paula Oseroff: Profesora Alumna
+Joaquin Girod: Profesor Alumno
+2/95
+
+[Descripción de la imagen: diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas diapositivas]
+
+Referencias
+SIA 2023 - 2Q
+Clase Remota Internacional
+Horarios de las clases Mar 15-18, Jue 9-12
+Aula invertida: clases as´ıncronas.
+Cinco TPs: Grupos de 4.
+Final Obligatorio.
+3/95
+
+[Descripción de la imagen: a screenshote iniciaciona]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+¿Qu´e es la inteligencia artificial?
+En general, nosotros vivimos sin profundizar demasiado en
+qu´e es la inteligencia.
+Podemos no tener una definici´on clara y precisa de
+inteligencia, aunque s´ı confiamos en tener una idea
+aproximada de lo que es la inteligencia.
+4/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras 'presito un ingenio']
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+¿Qu´e es la inteligencia artificial?
+Para esta materia es una cuesti´on importante, dado que
+vamos a estudiar la disciplina Inteligencia Artificial
+Ser´ıa interesante saber qu´e estamos ”artificializando”.
+5/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras prusaseo a intigenia]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+¿Qu´e es la inteligencia artificial?
+Dicho en otro t´erminos:
+¿Es la inteligencia artifical una disciplina que trata de
+producir m´aquinas que emulen la inteligencia humana?
+¿o es alguna otra cosa? (y que se parece bastante a lo
+que esperar´ıamos una m´aquina inteligente haga)
+6/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'presito a intigenífico ']
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+¿Porqu´e la materia de Sistemas de IA est´a en el programa de
+Ingenier´ıa en inform´atica?
+En otras palabras: ¿porqu´e estudiamos esto?
+¿Es la inform´atica la ´unica disciplina que estudia esto?
+7/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «presito latigeria»]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+Veamos qu´e aplicaciones dicen que usan Inteligencia artificial
+Diagn´ostico m´edico
+Demostrador de teoremas
+Manejo de jurisprudencia para obtener chances de ganar
+un caso.
+Modelar sistemas usando redes neuronales artificiales
+(financieros, meteorol´ogicos, para control otros sistemas,
+etc).
+Extracci´on de informaci´on en grandes vol´umenes de datos
+(agrupamiento, relaciones entre clases).
+Visi´on por computadora (para clasificar im´agenes,
+identificar caracter´ısiticas en la imagen, etc).
+8/95
+
+[Descripción de la imagen: regteso a instigencia artificial]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+Veamos qu´e aplicaciones dicen que usan Inteligencia artificial
+Log´ıstica (determinaci´on de recorridos, asignaci´on de
+recursos, etc).
+Agentes de conversaci´on (chat-bots).
+Jugadores exitosos (ajedrez, go, backgamon, juegos de
+animaci´on por computadora, etc).
+Etc, etc, etc.
+9/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «regtass» y «regtass»]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+¿Y Uds. qu´e piensan de esto...?
+¿Son los smartphones tel´efonos inteligentes?
+¿Y los smartTV?
+¿Y las ammenities inteligentes?
+¿Y las casas inteligentes?
+¿Y los tom´ografos con IA?
+10/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'latigeia ']
+
+Referencias
+¿C´omo surgi´o la IA?
+Inicios...
+¿C´omo surgi´o todo esto?[6]
+¿A qui´en se le ocurri´o que estaban haciendo inteligencia
+artificial?
+¿Por qu´e se llama as´ı?
+11/95
+
+[Descripción de la imagen: comor do est cono do cono | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+o ¿Cómo surgió todo esto?[6]
+
+o ¿A quién se le ocurrió que estaban haciendo inteligencia
+artificial?
+o ¿Por qué se llama así?]]
+
+Referencias
+¿C´omo surgi´o la IA?
+12/95
+
+[Descripción de la imagen: un diagrama del genoma del genoma | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+LeCun CNN
+NeoCognitron 19¡59
+McCulloch e l Deep Blue vs
+Turing Pitts Turing GPS  Rosenblatt | Backprop| Kasparov AlexNet GAN ChatGPT
+1936 1943 1950 1959 1960 1986 1997 2012 2014 2022
+1948 1956 1970 1993 2013 2017 1
+Shannon Symbolism Geneña SVM, Vapnik — Variational — Attention AlphaFold
+Algorithms Autoencoder Is all
+Dartmouth You need
+AlphaGo
+AlphaChess]]
+
+Referencias
+¿C´omo surgi´o la IA?
+La IA surge de manera directa en el propio inicio de la
+materializaci´on de las computadoras digitales: WWII
+Criptoan´alisis: Bletchley Park en UK, y MAGIC en USA
+Control Remoto de Torpedos
+Se˜nales de Radares
+13/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras "la" y "la"]
+
+Referencias
+¿C´omo surgi´o la IA?
+Los inicios
+En los or´ıgenes de la computaci´on, ya con las ideas de la
+M´aquina de Turing de 1936 aparece de la mano de la
+computabilidad la idea de la automatizaci´on y su
+vinculaci´on con la inteligencia.
+14/95
+
+[Descripción de la imagen: comor de la comida | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+e En los orígenes de la computación, ya con las ideas de la
+Máquina de Turing de 1936 aparece de la mano de la
+computabilidad la idea de la automatización y su
+vinculación con la inteligencia.]]
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Qu´e ven´ıa ocurriendo entorno a este tema ?
+En 1943, Warren McCulloch y Walter Pitts proponen un
+modelo de neurona cuya salida era 1 o 0.
+Lo interesante fue que dichas neuronas organizadas en
+una estructura ¡pod´ıan resolver cualquier funci´on
+computable!
+Sin embargo, hab´ıa que calcular la forma en que estas se
+conectaban (esto es, como unas influenciaban a otras).
+15/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras '' y ' ' ']
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Qu´e ven´ıa ocurriendo entorno a este tema ?
+En 1949, Donald Hebb enuncia su conjetura acerca de
+c´omo cambia la influencia de una neurona sobre otra de
+acuerdo al estado de actividad de ambas: Regla de Hebb.
+16/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras '' y ' ' ']
+
+Referencias
+Computing Machinery and Intelligence.
+Alexander Bain, 1873
+”When two impressions concur, or closely succeed one
+another, the nerve currents find some bridge or place of
+continuity. In the cells where the currents meet there is, in
+consequence of the meeting, a strengthened connexion.”
+Hebbian Learning, 1949
+”When an axon of cell A is near enough to excite cell B and
+repeatedly or persistently takes part in firing it, some growth
+process or metabolic change takes place in one or both cells
+such that A’s efficiency, as one of the cells firing B, is
+increased.”
+17/95
+
+[Descripción de la imagen: informática informática, 7a edición, universidad de tecnología informática informática informática informática informática informática informática informática informática informática informática informática informática informática informática]
+
+Referencias
+¿C´omo surgi´o la IA?
+El Test de Turing
+En 1950, Alan Turing escribe ”Computing Machinery and
+Intelligence.”
+18/95
+
+[Descripción de la imagen: comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor comor]
+
+Referencias
+Computing Machinery and Intelligence.
+El Test de Turing
+”I propose to consider the question, Can Machines Think?”
+”An important feature of a learning machine is that its teacher
+will often be very largely ignorant of quite what is going on
+inside, although he may still be able to some extent to predict
+his pupil’s behaviour.”
+19/95
+
+[Descripción de la imagen: informática, conferencia e ingeniería informática, 7a edición, universidad de informática tecnológica, universidad de informática tecnológica]
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Porqu´e tanto entusiasmo?
+Inicio del Simbolismo: Newell and Simon (1956) crearon
+un software llamado Logic Theorist.
+Este software est´a basado en el m´etodo de ´Arbol de
+decisi´on.
+Se coloca la hip´otesis en la ra´ız del ´arbol y en cada rama
+se genera una deducci´on a partir del postulado anterior.
+En alguna de ellas se encuentra la demostraci´on de la
+hip´otesis. Lo ´unico que el programa debe hacer es seguir
+las ramas hasta encontrar la respuesta.
+20/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Porqu´e tanto entusiasmo?
+El punto importante de este antecedente fue el uso de la
+inferencia l´ogica.
+Notas:
+Se introdujo la idea de heur´ıstica que permit´ıa evitar
+tener que explorar todas las posibles ramas y elegir cuales
+eran mas prometedoras.
+Logic Theorist fue exitoso en demostrar varios teoremas
+planteados por Whitehead y Russell en Principia
+Mathematica.
+21/95
+
+[Descripción de la imagen: comor do esto do doo doo doo doo doo doo doo doo]
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth...
+Se hab´ıa empezado a crear un estado de optimismo y
+expectativas sobre la comunidad cient´ıfica respecto de los
+alcances de estos trabajos ...
+Arriba de la ola, en 1956 John McCarthy convence a
+otros investigadores como Minsky, Shannon y Rochester a
+promover una escuela de verano para tratar temas como
+aut´omatas, redes neuronales e inteligencia:
+Este el inicio de la Inteligencia Artificial: Dartmouth
+Summer Research Project on Artificial Intelligence [7].
+22/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'como' y 'como']
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth...
+”Proponemos que se lleve a cabo un estudio a lo largo de 2 meses
+sobre inteligencia artificial, con 10 personas durante el verano de
+1956 en el Dartmouth College en Hanover, New Hampshire.
+...
+Se intentar´a encontrar c´omo hacer que las m´aquinas usen el
+lenguaje, formen abstracciones y conceptos, resuelvan tipos de
+problemas ahora reservados para los humanos y se mejoren por s´ı
+mismas.
+Creemos que se puede lograr un avance significativo en uno o
+m´as de estos problemas si un grupo de cient´ıficos
+cuidadosamente seleccionados trabajan juntos durante un
+verano.”
+23/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras 'como' y 'como']
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth...
+”McCarthy has given a couple of reasons for using the term
+artificial intelligence. The first was to distinguish the subject
+matter proposed for the Dartmouth workshop from that of a prior
+volume of solicited papers, titled Automata Studies, co-edited by
+McCarthy and Shannon, which (to McCarthy’s disappointment)
+largely concerned the esoteric and rather narrow mathematical
+subject called automata theory. The second, according to
+McCarthy, was to escape association with cybernetics. Its
+concentration on analog feedback seemed misguided, and I wished
+to avoid having either to accept Norbert Wiener as a guru or
+having to argue with him”[4, 1, 3].
+24/95
+
+[Descripción de la imagen: un texto que dice, 'como ']
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth...
+25/95
+
+[Descripción de la imagen: un grupo de personas sentadas en la hierba | Transcripción de la imagen: ¿Cómo surgió la lA?
+
+Nos vemos en Dartmouth...
+
+- _ M]]
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth..[5].
+Oliver Selfridge, Nathaniel Rochester, Marvin Minsky,
+John McCarthy
+Ray Solomonoff, Unknown Guy (Peter Milner or someone
+from the future), Claude Shannon
+26/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'como' y 'como']
+
+Referencias
+¿C´omo surgi´o la IA?
+Nos vemos en Dartmouth..[5].
+Surge:Inteligencia Artificial,Cibern´etica,Machine
+Learning,Pattern recognition
+27/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'como' y 'como' | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+Nos vemos en Dartmouth..[5].
+
+o Surge:Inteligencia Artificial, Cibernética, Machine
+Learning,Pattern recognition
+
+27/95]]
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Porqu´e tanto entusiasmo? - GPS
+Simon, Shaw, and Newell in 1959 crearon una evoluci´on
+de los trabajos con Logic Theorist.
+El Resolvedor general de problemas (GPS) permiti´o
+tratar con problemas que originalmente no estaban
+descriptos en un lenguaje formal.
+La estrategia fue expresar en forma simb´olica el
+problema y luego tratarlo usando recursos similares al de
+Logic Theorist.
+Es decir, nuevamente un sistema basado en la l´ogica.
+28/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+¡Lo tenemos!
+Exist´ıa una fuerte confianza en la representaci´on
+simb´olica y la l´ogica como recursos para construir
+sistemas que emularan la inteligencia humana.
+Descomponer un objetivo en sub-objetivos y considerar
+las acciones posibles para alcanzarlos, pod´ıa representar la
+manera en que los humanos tratabamos un problema.
+29/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+¡Lo tenemos!
+Fue tal el entusiasmo que se viv´ıa en esa ´epoca que, Herbert
+Simon declaraba:
+”No es mi itenci´on sosprender o producir un shock en uds. pero, la
+forma m´as simple en que puedo resumir el estado del arte actual
+(en el mundo) es que hoy d´ıa hay m´aquinas que piensan, que
+aprenden y que crean.
+Mas a´un, sus habilidades para hacer estas cosas est´a
+increment´andose r´apidamente y en un futuro cercano, el
+conjunto de problemas que podr´an manejar co-existir´a con el
+rango de problemas que la mente humana ha tratado”.
+30/95
+
+[Descripción de la imagen: una imagen de un texto que dice 'comoo']
+
+Referencias
+¿C´omo surgi´o la IA?
+¿Lo tenemos?
+¿Es la inferencia l´ogica una herramienta construida para
+manejar formal y conscientemente una soluci´on? o ¿es el
+mecanismo innato del pensar?
+31/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras '' y ' ' ']
+
+Referencias
+¿C´omo surgi´o la IA?
+La Loter´ıa del Hardware
+Los sistemas desarrollados, basados en el m´etodo de
+resoluci´on, fueron exitosos cuando trataban con
+problemas no demasiado exigentes (i.e. algunas pocas
+decenas de axiomas o hechos o verdades) pero cuando el
+tama˜no aumentaba pod´ıan fracasar en encontrar
+una soluci´on.
+La respuesta era: el problema es que las computadoras
+son muy lentas y tienen poca memoria.
+32/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «la est»]
+
+Referencias
+¿C´omo surgi´o la IA?
+El Perceptr´on
+Inspirado en McCulloch, Pitts, y Hebb, Rosenblatt
+desarrolla un circuito biomim´etico que tiene la capacidad
+de aprender.
+33/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras '','' y'' ']
+
+Referencias
+El Perceptr´on
+34/95
+
+[Descripción de la imagen: un hombre trabajando en una computadora en una habitación | Transcripción de la imagen: erceptrón
+
+NEW NAVY DEVICE
+LEARNS BY DOING!
+
+Psychologist Shows Embryo'
+of Computer Designed to
+Read and Grow Wiser
+
+WASHINGTON, July 7 (UPI)
+—The Navy revealed the em-
+bryo of an electronie computer|
+today that It expects will bel
+ablo to walk, tall, see, write,
+reproduce ilself and be com;
+selous of ¡ts existen
+
+The “embryo—the - Weather|
+pureau's $2000,000 “704" come
+puter_—ieared.'to, differentiate
+Detween right and left-after|
+dy altempts in the Nawy'|
+demonstration for newsmen..
+
+“The service sald it would s
+enís principle to build the first|
+0f 13 Perceptron thinking ma-
+Chines that wil be able 1e read|
+And write. It is expected Lo bel
+inished in about a year at a|
+cost of $100,000
+
+Drs'Prank Rosenblatt, de
+signer of the Perceptron, con-
+Quetes he 'demonstration, He
+¡ajd-the machine would be the|
+(fist device to thinkc as the hu-
+
+Iman brain. As do human de
+
+5a r.
+E a
+|wiser as It gains experience, he|
+m
+(D aslc » reszol
+o e
+ea a
+ia Puman Cotrl "_|
+The Navy said the pemextrvm
+[ s ra
+Ve ecopinog and dentiine
+RE
+o an
+af e ea te
+o o l r
+emirras pentived de O
+oec renenbor my
+s omapredo e
+en ae ae
+
+1958 New York
+Times
+
+Tn today's demonstration, the
+TOL"“was Led. two cards, one
+h equares mariced on the lft
+Side and the other with squares
+n the rigne side.
+Learns by Doing
+
+| Tn the first Mfty trials, te
+machine made no distiction be-
+(a de del
+|
+
+|
+
+repistering a "Q for the lef
+squares and “O” for the right
+squares,
+
+Dr. Rosenblatt said he could
+explain “why the - machine
+leamned only in highly technical
+terms. But he said the computer
+had undergone a "“selt-induced
+[ehange in the wiring diagram.”
+
+The' first' Perceptron —will
+have- about 1,000 electronic
+Massociation — cels” — recelving
+
+like scanning devica with 400
+
+hoto-cells. “fhe human brain
+s 10,000,000,000 — responsive
+[celís, including 100,000,000 con-
+inections with the eyes.]]
+
+Referencias
+¿C´omo surgi´o la IA?
+Rob´otica: Inform´atica en Acci´on
+Paradoja de Moravec: el mundo real, parcialmente
+observable, estoc´astico, con infinitos estados, plantea un
+problema much´ısimo m´as complejo que cualquiera de los
+problemas l´ogicos que pudieron resolverse inicialmente. Esto
+era dif´ıcil de percibir porque para nosotros esas actividade son
+muy autom´aticas y subconcientes.
+35/95
+
+[Descripción de la imagen: una imagen de una pantalla de computadora con las palabras'''''''''''''''''''''''''''''''''']
+
+Referencias
+¿C´omo surgi´o la IA?
+Rob´otica: Inform´atica en Acci´on
+1959 Shakey (SRI Internationaltional) el primer robot
+m´ovil que ten´ıa caracter´ısticas de autonom´ıa.
+36/95
+
+[Descripción de la imagen: Un hombre está trabajando en una computadora en un laboratorio | Transcripción de la imagen: ¿Cómo surgió la lA?
+
+Robótica: Informática en Acción
+
+o 1959 Shakey (SRI Internationaltional) el primer robot
+móvil que tenía características de autonomía.]]
+
+Referencias
+¿C´omo surgi´o la IA?
+El enfoque evolutivo
+A principio de los 70, John H Holland introduce los
+algoritmos gen´eticos.
+Estos fueron una representaci´on de la teor´ıa evolutiva de
+Darwin.
+La estrategia estaba respaldada en una t´ecnica de
+optimizaci´on basada en una heur´ıstica aleatoria.
+37/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+El enfoque evolutivo
+Se define un poblaci´on de cromosomas.
+Cada cromosoma est´a formado por valores aleatorios de
+los par´ametros.
+38/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'como' y 'como' | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+El enfoque evolutivo
+
+e Se define un población de cromosomas.
+
+e Cada cromosoma está formado por valores aleatorios de
+los parámetros.
+
+cromosoma 1 cromosoma 2 cromosoma n
+
+ECE EEEER]
+
+Población de cromosomas
+
+38/95]]
+
+Referencias
+¿C´omo surgi´o la IA?
+El enfoque evolutivo
+El algortimo gen´etico itera a trav´es de generaciones.
+En cada generaci´on, los cromosomas se cruzan entre s´ı
+dando lugar a nuevos cromosomas.
+Cada vez que se cruzan, se puede aplicar dos operadores:
+- Entrecruzamiento
+- Mutaci´on
+39/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+El enfoque evolutivo
+Cuando se obtienen los cromosomas de cada generaci´on
+se evalua una Funci´on de Aptitud.
+Se seleccionan los cromosomas con mayor Aptitud y as´ı
+se forma una nueva generaci´on.
+El algortimo termina seg´un alg´un criterio, por ejemplo, el
+n´umero de generaciones en las cuales evolucion´o la
+poblaci´on.
+40/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+El enfoque evolutivo
+Pero, nuevamente, la respuesta era: el problema es que las
+computadoras son muy lentas y tienen poca memoria.
+41/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Los sistemas expertos
+En la misma ´epoca, un trabajo, denominado DENDRAL,
+realizado por Ed Feigenbaum (estudiante de Simon), B.
+Buchanan (fil´osofo que trabaja en ciencias de la computaci´on)
+y J. Lederberg (genetista) remoz´o la idea de de Logic Theorist
+o GPS pero aplicado a un campo especifico.
+42/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Los sistemas expertos
+El caso fue inferir la estructura de una mol´ecula (de una
+sustancia) vali´endose de un espectr´ometro de masa (mediante
+el bombardeo de un haz de electrones se registra la masa de
+diferentes componentes de la mol´ecula).
+43/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Los sistemas expertos
+Esta t´actica de usar informaci´on espec´ıfica (de expertos
+humanos) y a partir de ah´ı realizar inferencias l´ogicas
+tuvo much´ısima repercusi´on en varias ´areas (i.e. Mycin en
+medicina para diagn´ostico m´edico)
+44/95
+
+[Descripción de la imagen: comidas de las comidas | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+Los sistemas expertos
+
+o Esta táctica de usar información específica (de expertos
+humanos) y a partir de ahí realizar inferencias lógicas
+tuvo muchísima repercusión en varias áreas (i.e. Mycin en
+
+medicina para diagnóstico médico)]]
+
+Referencias
+¿C´omo surgi´o la IA?
+Los sistemas expertos
+Pero ¿que pasa con la representaci´on simb´olica?
+¿Qu´e ocurre con una imagen con demasiado ruido?
+¿Qu´e ocurre con una informaci´on incompleta?
+45/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras '' y ' ' ' | Transcripción de la imagen: ¿Cómo surgió la 1A?
+
+Los sistemas expertos
+
+e Pero ¿que pasa con la representación simbólica?
+e ¿Qué ocurre con una imagen con demasiado ruido?
+
+o ¿Qué ocurre con una información incompleta?
+
+45/95]]
+
+Referencias
+Deep Blue Jeopardy
+46/95
+
+[Descripción de la imagen: un hombre y una mujer sentados a una mesa con peligro]
+
+Referencias
+¿C´omo surgi´o la IA?
+El abordaje conexionista
+En 1986, Rumelhart et al en ”Procesamiento paralelo
+distribu´ıdo” introducen un nuevo enfoque.
+Tiene la particularidad de integrar el conocimiento previo
+de modelos de neuronas (Rosenblatt , 1960) y estructuras
+de neuronas (McCulloch y Pitts, 1943).
+47/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras '','' y'' ']
+
+Referencias
+¿C´omo surgi´o la IA?
+El abordaje conexionista
+La propuesta resuelve las cr´ıticas de Minsky y Pappert
+respecto al modelo de neurona de Rosenblatt .
+El perceptron multicapa tom´o mucha fuerza y el
+conexionismo se extendi´o hacia otros modelos de
+aprendizaje en redes neuronales (Hopfield, Kohonen,
+Grossberg, etc).
+48/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+El abordaje conexionista
+Este campo, que se conoce como el de Redes neuronales
+artificiales, se abri´o en dos ramas:
+- el estudio de los modelos formales y sus
+propiedades, y
+- el de modelizaci´on cuidadosa de los sistemas
+nerviosos.
+49/95
+
+[Descripción de la imagen: una imagen de una pantalla de computadora con las palabras'''''''''''''''''''''''''''''''''']
+
+Referencias
+¿C´omo surgi´o la IA?
+El abordaje conexionista
+Esta idea gener´o muchas soluciones a problemas que
+deb´ıan trabajar con datos ru´ıdosos, pero sin embargo
+fallaron a la hora de escalar a problemas un poco m´as
+complejos como el de la identificaci´on de los d´ıgitos
+manuscritos de los c´odigo postales en los servicios de
+correo f´ısico.
+La loter´ıa del hardware
+Nuevamente, la respuesta era: el problema es que las
+computadoras son muy lentas y tienen poca memoria.
+50/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras 'como' y 'como']
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje autom´atico
+La definici´on de aprendizaje est´a fuertemente vinculada
+a la definici´on de inteligencia.
+Pero por lo que vimos hasta aqu´ı, fueron varias las
+instancias y los autores que se animaron a hacer
+inteligencia artificial sin tener claramente una definici´on
+de inteligencia.
+¿Porqu´e, entonces, no hacer aprendizaje autom´atico?
+51/95
+
+[Descripción de la imagen: comor de la comida]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje autom´atico
+Se pueden encontrar en la bibliograf´ıa una variedad de
+definiciones de aprendizaje.
+Y no s´olo eso. El conjunto de t´opicos que aborda un
+curso o libro de Aprendizaje autom´atico tambi´en puede
+ser variado.
+52/95
+
+[Descripción de la imagen: Comidas do siso do siso do siso do siso do siso do siso]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje autom´atico
+No obstante, se ha englobado en Aprendizaje autom´atico
+un conjunto de m´etodos y algoritmos que se valen desde
+el teorema de Bayes (siglo XVII) hasta los arboles de
+desici´on pasando por m´etodos de programaci´on
+cuadr´atica, regresi´on y m´etodos de clasificaci´on cl´asicos.
+53/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje autom´atico
+Aprendizaje Autom´atico: t´ecnicas para identificar
+relaciones entre datos (X) o mapeos (X →Y ) basadas
+en algoritmos que dada una serie de par´ametro libres que
+estructuran esas relaciones o mapeos, pueden ajustarse
+mediante alg´un proceso de optimizaci´on matem´atica [10].
+54/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje autom´atico (Machine learning)
+Esta disciplina tom´o cuerpo propio (de hecho es una
+materia separada en el programa de Ingenier´ıa
+inform´atica) y tuvo un apogeo significativo en la primera
+d´ecada del siglo 21 asociada al procesamiento de
+informaci´on visual en im´agenes (Computer Vision CV). Y
+se lograron grandes avances significativos, pero no
+revolucionarios, justamente en el procesamiento de ese
+tipo de informaci´on.
+La loter´ıa del Hardware
+Obviamente, las computadoras son muy lentas y tienen
+poca memoria.
+55/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje profundo (Deep learning)
+La posibilidad de disponer procesadores cada vez m´as
+poderosos, expresados no s´olo por su velocidad y su
+memoria sino fundamentalmente por la cantidad de
+n´ucleos promovi´o la intensificaci´on del uso y estudio en
+redes neuronales artificiales.
+Esto di´o lugar a un t´opico muy vibrante en la actualidad
+que es el aprendizaje profundo.
+Gan´o esa loteria
+En este caso todav´ıa, pareciera que las computadoras NO
+son muy lentas y NO tienen tan poca memoria.
+56/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «com» y «com»]
+
+Referencias
+¿C´omo surgi´o la IA?
+Aprendizaje profundo (Deep learning)
+Por ejemplo, las redes GAN (Redes generativas
+antag´onicas), los autoencoders, las redes neuronales
+convolucionales han demostrado su aplicabilidad a un
+conjunto de problemas que hasta ahora no hab´ıan sido
+tratados con tanto ´exito con las redes neuronales
+artificiales y representan una tendencia de la investigaci´on
+en el ´area.
+57/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «com»]
+
+Referencias
+Inteligencia Artificial
+58/95
+
+[Descripción de la imagen: un diagrama de la red de Internet | Transcripción de la imagen: Inteligencia Artificial
+
+Cybernetics (McCulloch and Pits, Hebb 1949, Rosenblatt 1958) n Minsk AP: +1969
+Minsky and Paperf
+
+Connectionism (Backprop: Rumelhart and HintonA, Hopfield”, 1986)
+“= Olshausen and Field 2005
+Dechter 1986
+
+Aizenberg 2000
+
+Krizhevsky AlexNet 2012 Origins
+
+/ Deep Learning (Hinton, Bengio and LeCun* 2006, Ranzato 2007) - SSa E be
+
+* Distributed Representation 1986
+
+b Beating ImageNet Krizhevsky 2012
+
+b Playing Atari Games, Mnih 2015 (*) Turing Award 2019
+
+(1) Physics Nobel Prize 2024
+
+58/95]]
+
+Referencias
+Inteligencia Artificial
+59/95
+
+[Descripción de la imagen: un diagrama de la red de Internet | Transcripción de la imagen: Inteligencia Artificial
+
+//-_—_—X m Computer
+
+A Vision Control
+Statistical pplied Te Theory
+Inference Statistics LeÍÍJ:; XA
+m Datamining Machine
+Symbolic Learning
+
+Deep
+Learning
+
+L
+Neural
+Networks _
+
+59/95]]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+La tecnolog´ıa va muy lenta ...
+Ante las distintas propuestas que fueron surgiendo a lo largo
+del tiempo hay, subyacente, una idea de que lo que falta es
+m´aquinas m´as r´apidas, m´as poderosas, esto es, falta que la
+tecnolog´ıa avance ...
+60/95
+
+[Descripción de la imagen: un texto que dice, "presito la inteligencia"]
+
+Referencias
+Preguntas respecto a la inteligencia artificial
+Considermos una hip´otesis
+Permitanme considerar la hip´otesis de Tim Urban expresada en
+su p´agina ”Wait but why”[9].
+61/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras prusaseo a intigena]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+La predicci´on que nosotros tenemos acerca de c´omo
+evolucionar´a la tecnolog´ıa est´a relacionada a la
+percepci´on de c´omo evolucion´o la tecnolog´ıa en un
+per´ıodo de tiempo anterior.
+Por ejemplo, pensamos que en el siglo XXI la tecnolog´ıa
+evolucionar´a mucho y lo m´as probable que evolucione
+m´as que (en proporci´on) lo hizo en el siglo XX.
+62/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustacion al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Es decir, asumimos que hay una aceleraci´on pero
+tendemos a pensar en forma conservadora acerca de esa
+aceleraci´on.
+Consideremos la siguiente situaci´on.
+63/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Supongamos que llevamos (por ejemplo, mediante una
+m´aquina del tiempo) a una persona del a˜no 1750 al a˜no
+2000,
+y
+que podemos medir su grado de sorpresa.
+¿Qu´e aspectos motivar´ıan valorar su grado de sorpresa
+como alta?
+64/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Podemos mencionar:
+El hecho de poder viajar de un continente a otro en
+alrededor de un d´ıa,
+que podamos estar hablando con una persona al otro lado
+del mundo, m´as a´un, que la podamos estar viendo,
+que podemos intercambiar informaci´on (documentos,
+im´agenes, audio) en forma instant´anea con personas de
+todo el planeta,
+65/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustacion al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Podemos mencionar:
+que podamos saber la ubicaci´on de un objeto o ser vivo
+en coordenadas de latitud y longitud para cada instante
+de tiempo (GPS),
+que el hombre haya llegado a la luna y haya sondas que
+buscan ir m´as all´a de nuestro sistema solar,
+que varias enfermedades - presente en el siglo XVIII - ya
+tengan cura,
+entro otras muchas cosas m´as.
+66/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Sin entrar en detalle acerca de c´omo medir el grado de
+sorpresa, creo que nos animar´ıamos a decir que esta persona
+debe estar muy sorprendida.
+67/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Siguiendo con esta l´ınea especulativa, nos podemos hacer la
+siguiente pregunta:
+la persona de 1750, si quisiera provocar un grado de sorpresa
+similar al que ´el o ella siente cuando vino al 2000,
+¿a qu´e a˜no de la historia tendr´ıa que retrotraerse para producir
+que algui´en del pasado sintiera en el 1750 lo mismo que ´el
+siente cuando lleg´o al a˜no 2000?
+68/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Bueno ac´a hay bastante de subjetividad, pero se presume que
+deber´ıa retrotraerse a 12000 AC.
+69/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustacionacion]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+¿Y si la persona del a˜no 12000 AC quisiera producir lo mismo
+con algui´en de su pasado?
+70/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Quiz´as deber´ıa retrotraerse un mill´on de a˜nos atr´as, o m´as.
+71/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Esto querr´ıa decir, siempre en un espacio de especulaci´on,
+que para producir los mismos cambios se requerir´ıan cada
+vez intervalos de tiempo m´as cortos.
+Vi´endolo desde el punto de vista actual,
+¿Cu´antos a˜nos, desde el 2000, se necesitar´ıa para producir
+el mismo nivel de sorpresa que tuvo el tipo de 1750 yendo
+al 2000?
+72/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustacion al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Nuevamente aqu´ı juega mucho la subjetividad, sobre todo
+porque estamos hablando de tiempo presente,
+pero...
+... es muy probable que nuestra capacidad predictiva
+apuntar´ıa a una fecha m´as cercana que el a˜no 2250.
+73/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - Dificultad de la predicci´on
+La idea subyacente es que el desarrollo tecnol´ogico y
+cient´ıfico no se comporta en forma lineal.
+Hay una hip´otesis actual que esa no linealidad es mucho
+m´as marcada que la que nuestra intuici´on nos se˜nala.
+¿Porqu´e?
+74/95
+
+[Descripción de la imagen: alustaciones de la intigenia artificial]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+La idea subyacente es que el ser humano tard´o algo as´ı
+como unos 2 millones de a˜nos en construir una m´aquina
+que le permitiera volar,
+pero ...
+luego de eso, tard´o unos 50 a˜nos m´as para salir con un
+cohete al espacio, y desde ese momento,tardo unos 50
+a˜nos para llegar con una sonda a los confines del sistema
+solar.
+75/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+O, tard´o unos 2 millones de a˜nos para formalizar un
+sistema n´umerico, o hacer c´alculos simples,
+pero ...
+tard´o 5000 a˜nos en tener una computadora, y menos de
+80 en tener una computadora que hiciera tantos c´alculos
+por segundo como los que se estima hace el cerebro
+humano.
+76/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Wait but why - AI Superintelligence
+Consideremos que podamos describir los sistemas de
+inteligencia artificial en:
+Inteligencia artificial espec´ıfica// (Artificial Narrow
+Intelligence, ANI)
+Inteligencia artificial general// (Artificial General
+Intelligence, AGI[8])
+Inteligencia artificial superior// (Artificial Super
+Intelligence, ASI)
+77/95
+
+[Descripción de la imagen: Alusiones de la instiga artificial]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+¿Y Uds. qu´e piensan de esto...?
+Y consideremos, tambi´en, que el curso de evoluci´on de la
+inteligencia artificial estar´a dado por el orden en que
+presentamos a esos sistemas: ANI, AGI y ASI.
+78/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona al]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+Un continuo
+ANI, AGI, ASI, son milestones en este continuo. Y es en
+realidad un moving goalpost, una monta˜na inaccesible.
+79/95
+
+[Descripción de la imagen: Alusiones de la instiga artificial]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+¿Y Uds. qu´e piensan de esto...?
+La forma en que dicho curso de evoluci´on se d´e est´a
+´ıntimamente relacionado con el abordaje que se pueda tener
+para producir sistemas de inteligencia artificial.
+Vamos a mencionar tres:
+Simular el cerebro.
+Simular la evoluci´on (en la naturaleza)
+Producir sistemas que siempre se auto-mejoren.
+80/95
+
+[Descripción de la imagen: alustaciona de la intigena]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+¿Y Uds. qu´e piensan de esto...?
+Consideremos que el camino sigue la senda de producir
+sistemas que siempre se auto-mejoren.
+(Esto no deber´ıa implicar excluir la simulaci´on del cerebro
+o de la naturaleza)
+Podr´ıamos inferir que, a medida que un sistema se hace
+m´as inteligente, tiene m´as recursos para mejorar m´as a´un
+su inteligencia y, por lo tanto, el curso de ANI a ASI
+podr´ıa ser de car´acter exponencial.
+Esto es: la explosi´on de la inteligencia.
+81/95
+
+[Descripción de la imagen: alustaciona de la intigenia]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+¿Y Uds. qu´e piensan de esto...?
+Sin embargo, en cada instante, para valorar el alcance
+obtenido en ese camino deber´ıamos tener un m´etodo para
+medir la inteligencia.
+82/95
+
+[Descripción de la imagen: alustaciona de la intigena]
+
+Referencias
+Algunas especulaciones respecto a la inteligencia
+artificial
+¿Y Uds. qu´e piensan de esto...?
+Y para medir la inteligencia deber´ıamos saber qu´e es la
+inteligencia.
+83/95
+
+[Descripción de la imagen: alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustaciona alustacion al]
+
+Referencias
+Definici´on de Inteligencia artificial
+¿Algui´en se ha ocupado de esto? [2]
+Shane Legg y Marcus Hutter (2007) se hicieron est´a
+pregunta.
+En su art´ıculo ”A Collection of Definitions of Intelligence”
+ellos resumen 70 definiciones de inteligencia extraidas de
+un n´umero mayor de definiciones que encontraron en la
+bibliograf´ıa a lo largo del tiempo.
+84/95
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Referencias
+Definici´on de Inteligencia artificial
+¿Algui´en se ha ocupado de esto?
+Ellos las organizaron de acuerdo de donde proven´ıan.
+Definiciones que provienen de una organizaci´on o grupo:
+Individuos difieren unos de otros en su habilidad para
+enteder ideas complejas, adaptarse efectivamente al
+entorno, aprender a partir de la experiencia, adoptar
+varias formas de razonamiento, superar obst´aculos atrav´es
+de pensar. American Psychological Association
+85/95
+
+[Descripción de la imagen: una imagen de una pantalla de computadora con las palabras'''''''''''''''''''''''''''''''''']
+
+Referencias
+Definici´on de Inteligencia artificial
+¿Algui´en se ha ocupado de esto?
+Definiciones que provienen de una organizaci´on o grupo:
+Inteligencia es una muy general capacidad mental que,
+entre otras cosas, involucra la habilidad de razonar,
+planear, resolver problemas, pensar en forma abstracta,
+comprender ideas complejas, aprender r´apido y aprender a
+partir de la experiencia. Declaraci´on firmada por 52
+expertos.
+86/95
+
+[Descripción de la imagen: una imagen de un texto que dice, 'delione intigena artificial ']
+
+Referencias
+Definici´on de Inteligencia artificial
+¿Algui´en se ha ocupado de esto?
+Definiciones que provienen de psic´ologos:
+Inteligencia no es una ´unica habilidad sino una
+composici´on de varias funciones. El t´ermino denota
+aquella combinaci´on de habilidades requeridas para
+supervivir y avanzar en una cultura particular. A. Anastasi
+Inteligencia es lo que es medido por los test de
+inteligencia. E. Boring.
+87/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «delione intelica»]
+
+Referencias
+Definici´on de Inteligencia artificial
+¿Algui´en se ha ocupado de esto?
+Definiciones que provienen de investigadores de IA:
+”... the ability of a system to act appropriately in an
+uncertain environment, where appropriate action is that
+which increases the probability of success, and success is
+the achievement of behavioral subgoals that support the
+ultimate goal of the system.” J. S. Albus
+88/95
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras 'delione ']
+
+Referencias
+Definici´on de Inteligencia artificial
+Definici´on desde la perspectiva de la rob´otica
+Que puede ser IA:
+Un sistema que sensa, procesa y act´ua de manera que es
+adecuada en un contexto f´ısico y temporal particular.
+Requiere una corporizacion para manifestarse con
+claridad.
+Es un continuo, un ”moving goalpost”.
+Autonom´ıa: como comportamiento emergente.
+Conciencia: manifiesta comportamientos que representan
+un conocimiento sobre su propia existencia, en relaci´on al
+contexto f´ısico y temporal, y una diferenciaci´on en
+relaci´on a los otros.
+89/95
+
+[Descripción de la imagen: una imagen de una pantalla de computadora con las palabras'''''''''''''''''''''''''''''''''']
+
+Referencias
+Definici´on de Inteligencia artificial
+La Inteligencia inalcanzable
+Son trazas sobre esa monta˜na, que representan caminos
+puntuales pero que no la logran corresponder de una
+perspectiva hol´ıstica.
+Cualquier ser vivo relativamente avanzado, manifiesta un
+comportamiento mucho m´as avanzado del que puede
+ofrecer hoy cualquier agente sint´etico de IA.
+90/95
+
+[Descripción de la imagen: una montaña con un lago y una montaña en el fondo]
+
+Referencias
+Inteligencia Artificial: Automatizaci´on
+91/95
+
+[Descripción de la imagen: una imagen de la estructura del cuerpo humano | Transcripción de la imagen: Inteligencia Artificial: Automatización
+
+Superhuman
+Capacity
+Not yet automated Average Human Capacity Artificial Intelligence
+Region —— > —
+Digital Boundary
+
+Automated
+— Digital Automation
+
+91/95]]
+
+Referencias
+Linea de Tiempo de la Inteligencia Artificial
+92/95
+
+[Descripción de la imagen: una línea de longitud con el número de líneas | Transcripción de la imagen: Linea de Tiempo de la Inteligencia Artificial
+
+LeCun CNN
+NeoCognitron 1º¡59
+McCulloch e l Deep Blue vs
+Turing Pitts Turing GPS  Rosenblatt | Backprop| Kasparov AlexNet GAN ChatGPT
+1936 1943 1950 1959 1960 1986 1997 2012 2014 2022
+1948 1956 1970 1993 2013 2017 al
+
+Shannon Symbolism Cencha SVM, Vapnik Variational — Attention T
+
+Algorithms Autoencoder Is all
+
+Dartmouth You need
+AlphaGo
+AlphaChess
+
+92/95]]
+
+Referencias
+Sub-Areas ?
+Subareas de IA
+B´usqueda y planeamiento: M´etodos de b´usqueda
+Knowledge Representation and Reasoning: IBM Watson
+(sin materia).
+Machine Learning: algoritmos de optimizaci´on que ajustan
+par´ametros libres en base a datos (Aprendizaje
+Autom´atico)
+Multi-Agent Systems
+Robotics (Rob´otica Reactiva, NeuroRob´otica)
+Computer Vision (ATI) y Natural Language Processing
+(NLP) (Materia)
+93/95
+
+[Descripción de la imagen: sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona sub-zona]
+
+Referencias
+Referencias I
+[1] Brian Bloomfield. The question of artificial intelligence.
+https://www-formal.stanford.edu/jmc/reviews/
+bloomfield/bloomfield.html, 2024 (accessed Jan 10, 2025).
+[2] Fran¸cois Chollet. On the measure of intelligence. arXiv preprint
+arXiv:1911.01547, 2019.
+[3] Nils Nillson. The quest for Artificial Intelligence. Standford
+University, 2010.
+[4] Ray Solomonoff. Dartmouth archives.
+https://raysolomonoff.com/dartmouth/, 2024 (accessed Jan
+10, 2025).
+[5] IEEE Spectrum. The Meeting of the Minds that launched AI, 2023
+(accessed July 1, 2023).
+https://spectrum.ieee.org/dartmouth-ai-workshop.
+[6] Peter Stone. The Artificial Intelligence Papers. Sebtel Press, 2024.
+94/95
+
+[Descripción de la imagen: referis i bremel = bremel = bremel = bremel = bremel = bremel = br]
+
+Referencias
+Referencias II
+[7] Peter Stone, Rodney Brooks, Erik Brynjolfsson, Ryan Calo, Oren
+Etzioni, Greg Hager, Julia Hirschberg, Shivaram Kalyanakrishnan,
+Ece Kamar, Sarit Kraus, et al. Artificial intelligence and life in 2030:
+the one hundred year study on artificial intelligence. 2016.
+[8] Eliza Strickland. The turbulent past and uncertain future of ai: Is
+there a way out of ai’s boom-and-bust cycle? IEEE Spectrum,
+58(10):26–31, 2021.
+[9] Tim Urban. Wait but Why: AI Superintelligence, 2022 (accessed
+July 1, 2022). https://waitbutwhy.com/2015/01/
+artificial-intelligence-revolution-1.html.
+[10] Vladimir Vapnik. The nature of statistical learning theory. Springer
+science & business media, 1999.
+95/95
+
+[Descripción de la imagen: referis peter, peter, eros, eros, eros, eros, eros, eros, eros, eros, eros, eros, eros, eros, eros, eros, er]
+

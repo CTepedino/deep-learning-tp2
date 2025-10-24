@@ -1,0 +1,187 @@
+Trabajo Práctico N°6 
+ 
+Informe 
+ 
+Sistemas de Inteligencia Artificial 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SIA - 2025
+
+[Descripción de la imagen: traoo 6 - infino]
+
+Trabajo Práctico N°6 
+ 
+Objetivo 
+El objetivo de este trabajo práctico es escribir un informe sobre su postura frente a un 
+tema relacionado con la materia Sistemas de Inteligencia Artificial. Un “tema relacionado” 
+comprende tanto un área teórica (como Transformers o Redes Generativas Adversarias) como 
+temas de índole filosófico (véase artículos adjuntos). 
+ 
+¿Por qué realizar este trabajo?  
+Además de las habilidades técnicas, es importante ejercitar la expresión de una idea 
+de manera coherente e interesante para una audiencia. No buscamos restringir los temas, sino 
+que puedan elegir algo que les interese (dentro de los límites de la materia) y volcar en el 
+ensayo su punto de vista. Si tienen dudas sobre la temática que desean escribir, no duden en 
+mandar mail o consultar por slack. 
+ 
+Temas 
+Al final del enunciado se encuentra una sección de artículos. NO es necesario leer 
+todo. Pueden revisar algunos y elegir aquellos que más les interesen. En caso de proponer un 
+tema enviar por mail/slack. 
+ 
+Modalidad de Entrega 
+El ensayo será entregado por Campus en formato PDF. Luego, se realizará un debate 
+donde invitamos a todos a participar. Pueden escribirlo como artículo de Medium y 
+publicarlo, si así lo desean. En dicho caso, nos envían el link. 
+ 
+Restricciones 
+●​ La longitud del ensayo no debe exceder las dos carillas. 
+●​ Idioma: puede ser tanto en inglés como en español. 
+●​ Escritura coherente y sin faltas de ortografía. 
+●​ Temática pertinente a la materia. 
+●​ El trabajo es de carácter individual. 
+ 
+Fecha de entrega: 
+●​ Fecha de entrega del informe escrito: Sábado 21/06, 23.59hs. 
+●​ Fecha de debate: Jueves 26/06
+
+[Descripción de la imagen: un documento con las palabras '''' y'' ']
+
+Anexo 
+Artículos y comentarios que pueden servir como fuente de inspiración: 
+ 
+Responsible AI Practices, ¿en qué consiste y cuáles son los pilares fundamentales?   
+https://unesdoc.unesco.org/ark:/48223/pf0000381137_spa 
+A la AI le da el piné?: 
+https://www.scientificamerican.com/article/will-artificial-intelligence-ever-live-up-to-its-hyp
+e/, "They will always remain mere machines [refiriéndose a los programas de IA]. That’s my 
+guess, and my hope." ? 
+Stop calling everything AI de Michael Jordan:  este autor que se llama como el famoso 
+basquetbolista, es una figura de enorme renombre en Aprendizaje Automático.  Es uno de los 
+creadores de "Inferencia Variacional": 
+https://spectrum.ieee.org/the-institute/ieee-member-news/stop-calling-everything-ai-machinel
+earning-pioneer-says 
+Andrew Ng X-Rays the AI Hype:   Andrew Ng es uno de los dueños de Coursera, figura 
+super reconocida en Deep Learning (fue alumno de doctorado de Michael Jordan): 
+https://spectrum.ieee.org/view-from-the-valley/artificial-intelligence/machine-learning/andre
+w-ng-xrays-the-ai-hype 
+AI 2030: 
+https://onwork.edu.au/bibitem/2016-Stone,Peter-Brooks,Rodney-etal-Artificial+Intelligence+
+and+life+in+2030+the+one+hundred+year+study+on+artificial+intelligence/ 
+Why AI is so difficult?: de Melanie Mitchel, una referente en sistemas complejos y 
+algoritmos genéticos: https://arxiv.org/pdf/2104.12871.pdf 
+A critique of pure learning and what artificial neural networks can learn from animal 
+brains. de Anthony Zador (biólogo neurocientista): 
+https://www.nature.com/articles/s41467-019-11786-6 
+The dark secret at the heart of AI: El problema de la inteligibilidad en redes neuronales 
+artificiales.https://www.technologyreview.com/2017/04/11/5113/the-dark-secret-at-the-heart-
+of-ai/ 
+The Age of AI has begun https://www.gatesnotes.com/The-Age-of-AI-Has-Begun 
+¿Qué piensan de este tweet ? François Chollet: 
+https://twitter.com/fchollet/status/1389337090278658052?s=20. Este autor es un investigador 
+estupendo francés que intenta entender y plantear cómo medir la inteligencia: 
+https://arxiv.org/abs/1911.01547 
+Compendio de las limitaciones actuales de la IA:  
+https://www.forbes.com/sites/robtoews/2021/06/01/what-artificial-intelligence-still-cant-do
+
+[Descripción de la imagen: un documento con el título del artículo]
+
+¿Qué "promete" el campo de IA?: 
+https://www.technologyreview.com/2017/04/11/5113/the-dark-secret-at-the-heart-of-ai/ 
+El futuro del trabajo: 
+https://mitsloan.mit.edu/ideas-made-to-matter/why-future-ai-future-work 
+Limitaciones del campo de IA actuales: 
+https://www.forbes.com/sites/robtoews/2021/06/01/what-artificial-intelligence-still-cant-do/ 
+Hardware Lottery: The Hardware Lottery, explica el éxito detrás de los métodos actuales de 
+deep learning: https://arxiv.org/abs/2009.06489 
+Deep Learning is what you do not need https://valeman.medium.com/-86655805a676ç  
+How existential risk became a biggest meme in AI​
+https://www.technologyreview.com/2023/06/19/1075140/how-existential-risk-became-bigges
+t-meme-in-ai/  
+Thinking through the risks of AI 
+https://3quarksdaily.com/3quarksdaily/2023/04/thinking-through-the-risks-of-ai.html  
+Implicaciones éticas de generación de música con AI 
+https://www.infobae.com/tecno/2023/11/08/nostalgia-la-cancion-hecha-con-inteligencia-artifi
+cial-de-bad-bunny/  
+How Computationally Complex Is a Single Neuron?​
+https://www.wired.com/story/how-computationally-complex-is-a-single-neuron/  
+AI 100 Prize Essays​ https://ai100.stanford.edu/prize-competition 
+Should we use AI in the classroom ? https://www.mdpi.com/2227-7102/11/7/318 
+ 
+Disparadores para debatir Transformers:  
+ 
+●​ Diferencias entre distintas implementaciones de Transformers (por ejemplo GPT-2 
+GPT-3  GPT-4 y/o BERT ) ​
+ 
+●​ Uso de Transformers en juegos de estrategia Real-time (Ej : Starcraft ) ​
+ 
+●​ Sora - Creating Video from text https://openai.com/index/sora/​
+ 
+●​ Uso de Transformers en Detección de Anomalías (Spacecraft-anomaly-detection) ​
+ 
+●​ ¿Cómo funciona el Intellisense de vscode? o el Github Copilot  ​
+
+[Descripción de la imagen: un documento con el título del artículo]
+
+●​ ¿Para qué se puede usar Dall-E?  https://openai.com/dall-e-2/  ​
+ 
+●​ ¿Qué cambios hace CLIP al modelo original de Transformers?   
+https://openai.com/research/clip 
+●​ Open AI is not Open  
+https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-
+ilya-sutskever-interview 
+●​ The false promise of ChatGPT  
+https://www.almendron.com/tribuna/the-false-promise-of-chatgpt/ 
+●​ ChatGPT is a blurry JPEG image of the Web 
+https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the
+-web 
+●​ Does GPT-4 really understand what we are saying?  
+https://nautil.us/does-gpt-4-really-understand-what-were-saying-291034/ 
+●​ Aplicaciones de Transformers de forma interdisciplinaria (informática junto con otros 
+campos como por ejemplo medicina) ​
+ 
+●​ ¿Cómo funcionan los Transformers aplicados a señales de audio? (Speech T5 , Music 
+Transformer, Dubbing en películas, Whisper )​
+ 
+●​ GPT4-omni https://openai.com/index/hello-gpt-4o/ 
+ 
+Disparadores para debatir Redes Generativas Adversarias: 
+●​ Joining the dark side with Generative Adversarial Networks: 
+https://medium.com/@analog_cs/joining-the-dark-side-with-generative-adversarial-ne
+tworks-ecda6f1a80c1 
+ 
+●​ GAN Applications: 
+https://www.thedigitalspeaker.com/gans-limited-data-synthetic-content-generation-ai-i
+mpact-business/ 
+ 
+●​ Lack of data issues in AI: 
+https://broutonlab.com/blog/how-to-deal-with-lack-of-data-in-machine-learning
+
+[Descripción de la imagen: un libro blanco con las palabras '','' y'' ']
+

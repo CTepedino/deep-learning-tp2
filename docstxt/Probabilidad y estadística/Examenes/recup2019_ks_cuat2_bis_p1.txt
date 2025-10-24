@@ -1,0 +1,72 @@
+PROBABILIDAD Y ESTADISTICA   93.24               RECUPERATORIO PRIMER PARCIAL 
+2019 cuat2 
+INDICACIONES: Indique claramente apellido, nombre y número de legajo en cada hoja que entregue. No solicite indicaciones ni 
+aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución. Exprese con 4 decimales las probabilidades que se pida 
+calcular.    
+SUERTE...                                DURACION : 2.5  HORAS. 
+ 
+APELLIDO  Y NOMBRE : ...............................…...................................................................... Nro de Legajo :................…... 
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+TOTAL 
+NOTA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos) Durante su entrenamiento un tirador saca puntaje 3 en el 30% de sus tiros, obtiene 4 puntos en el 50% 
+de ellos y en el resto de los tiros saca 5 puntos (5 es el puntaje máximo que se adjudica en un tiro). En las 
+competencias se toma el máximo de los puntajes obtenidos en tres intentos como puntaje final Q. 
+a) Calcule la probabilidad de obtener 5 puntos. 
+b) Obtenga la distribución de probabilidades del puntaje Q asignado en una competencia. 
+ 
+2. (2 puntos) Se requiere que un proceso de fabricación no produzca más del 5% de artículos defectuosos. A tal 
+efecto se lo controla periódicamente examinando n artículos y si alguno de ellos es defectuoso, se detiene el proceso 
+para revisarlo. 
+a) Si el proceso de fabricación realmente está trabajando al 5% de artículos defectuosos y se examinan n = 20 
+artículos, ¿cuál es la probabilidad de detener el proceso innecesariamente?  
+b) Hallar la cantidad mínima de artículos que deberán examinarse si se desea que la probabilidad de detener el 
+proceso cuando realmente está trabajando al 6 % de defectuosos sea por lo menos 0.99. Con ese tamaño de 
+muestra, ¿cuál es la probabilidad de detener el proceso innecesariamente? 
+ 
+3. (2 puntos) El control de calidad de bolillas de rodamientos se realiza de la siguiente manera: si la bolilla cae por una 
+apertura de un tamiz de diámetro d2, pero no a través de una apertura con diámetro d1 (d1 < d2) entonces la bolilla 
+cumple con la exigencia en cuanto a calidad. Si no se cumple una de las exigencias se considera que la bolilla es 
+defectuosa. Por estudios previos se puede suponer que el diámetro de una bolilla es una variable aleatoria con 
+distribución normal de media (3 d1 + 2 d2)/5  y dispersión (d2 – d1)/5. 
+a) Calcule la probabilidad de que una bolilla cumpla con la exigencia de calidad. 
+b) Suponga que una bolilla es declarada defectuosa. Calcule la probabilidad de que no haya pasado por el tamiz de 
+diámetro d2 
+ 
+ 4. (2 puntos) La función densidad de probabilidad de la variable aleatoria continua X viene dada por:  
+  
+ 
+f(x) = c x –(c+1) si x > 1 y nula si x < 1, donde el parámetro c es positivo. 
+a) Obtenga la función densidad de probabilidad de Y = ln (X). 
+b) Se define g(z) = P({Y > a + z} / {Y > a}) con a un constante positiva y z > 0. Demuestre que g(z) es una densidad de 
+probabilidad sólo si c = 1. 
+ 
+Nota: Una primitiva de   x2 exp(-x)   es     – exp(-x) (x2 + 2 x + 2). 
+ 
+5. (2 puntos) El tiempo transcurrido hasta la primera falla de un dispositivo se puede considerar una variable aleatoria 
+con distribución exponencial de parámetro a. 
+A partir de cierto instante se ponen en funcionamiento tres dispositivos que trabajan independientemente entre sí. El 
+valor de la constante a (en 1/hora) es B, B/2 y B/3 para cada uno de los tres dispositivos respectivamente. 
+Considerando un intervalo de tiempo de T horas determine la probabilidad pT de que fallen  
+a) por lo menos un dispositivo, b) exactamente un dispositivo.
+
+[Descripción de la imagen: un documento con el texto en español]
+

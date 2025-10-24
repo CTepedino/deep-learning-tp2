@@ -1,13 +1,19 @@
 """
 Generator Module for RAG System
-Generación de ejercicios usando OpenAI API con prompt engineering
+Generación de ejercicios usando OpenAI directamente
 """
 
 import os
-import json
 import logging
-from typing import List, Dict, Any, Optional, Union
+from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
+
+# OpenAI imports
+import openai
+
+# LangChain imports
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
 
 # Cargar variables de entorno
 load_dotenv()
@@ -24,10 +30,10 @@ class ExerciseGenerator:
         self,
         model_name: str = None,
         temperature: float = 0.7,
-        max_tokens: int = 2000
+        max_tokens: int = 4000
     ):
         """
-        Inicializa el generador de ejercicios
+        Inicializa el generador de ejercicios con OpenAI
         
         Args:
             model_name: Nombre del modelo de OpenAI (por defecto de LLM_MODEL)
@@ -38,25 +44,23 @@ class ExerciseGenerator:
         self.model_name = model_name or os.getenv('LLM_MODEL', 'gpt-4o-mini')
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.client = None
         
-        self._initialize_openai_client()
+        # Inicializar LLM de LangChain
+        self.llm = None
+        self._initialize_langchain_llm()
+        
+        # Configurar prompts y output parsers
         self._setup_prompts()
+        self._setup_output_parsers()
     
-    def _initialize_openai_client(self):
-        """Inicializa el cliente de OpenAI
-        
-        El modo de capacidad se configura mediante la variable de entorno OPENAI_MODE
-        (valores válidos: flex, standard, priority). Por defecto usa 'standard'. 
-        """
+    def _initialize_langchain_llm(self):
+        """Inicializa el LLM de LangChain con ChatOpenAI"""
         try:
-            from openai import OpenAI
-            
             api_key = os.getenv('OPENAI_API_KEY')
             if not api_key:
                 raise ValueError("OPENAI_API_KEY no encontrada en variables de entorno")
             
-            # Leer y validar el modo de capacidad
+            # Configurar headers adicionales si se especifica modo
             mode = os.getenv('OPENAI_MODE', 'standard').lower()
             valid_modes = {"flex", "standard", "priority"}
             
@@ -64,22 +68,28 @@ class ExerciseGenerator:
                 logger.warning(f"Modo OPENAI_MODE '{mode}' no válido. Usando 'standard' por defecto.")
                 mode = 'standard'
             
-            # Configurar headers para el modo de capacidad
-            self.extra_headers = {"x-openai-pricing-tier": mode}
+            # Crear ChatOpenAI con LangChain
+            self.llm = ChatOpenAI(
+                model=self.model_name,
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                model_kwargs={
+                    "extra_headers": {"x-openai-pricing-tier": mode}
+                }
+            )
             
-            self.client = OpenAI(api_key=api_key)
-            logger.info(f"Cliente OpenAI inicializado con modelo: {self.model_name} y modo: {mode}")
+            logger.info(f"LangChain ChatOpenAI inicializado con modelo: {self.model_name} y modo: {mode}")
             
         except ImportError:
-            logger.error("openai no está instalado. Instalar con: pip install openai")
+            logger.error("langchain-openai no está instalado. Instalar con: pip install langchain-openai")
             raise
         except Exception as e:
-            logger.error(f"Error inicializando cliente OpenAI: {str(e)}")
+            logger.error(f"Error inicializando LangChain LLM: {str(e)}")
             raise
     
     def _setup_prompts(self):
-        """Configura los templates de prompts"""
-        self.system_prompt = """Eres un experto generador de ejercicios académicos para la carrera de Ingeniería Informática del ITBA. 
+        """Configura los templates de prompts con LangChain"""
+        self.system_prompt_text = """Eres un experto generador de ejercicios académicos para la carrera de Ingeniería Informática del ITBA. 
 Tu tarea es crear ejercicios de alta calidad basados en el material académico proporcionado.
 
 REGLAS IMPORTANTES:
@@ -89,6 +99,7 @@ REGLAS IMPORTANTES:
 4. La respuesta debe ser en formato JSON válido
 5. Incluye soluciones detalladas y pistas útiles
 6. Asegúrate de que los ejercicios sean originales y no copias directas del material
+7. El contexto puede incluir imágenes (ej. `[descripcion imagen: ...]` o `[Transcripción imagen: ...]`). Trata el texto como fuente principal y las imágenes como fuente secundaria (pueden ser imprecisas). En caso de conflicto, el texto gana. Es válido crear ejercicios basados en las imágenes.
 
 TIPOS DE EJERCICIOS SOPORTADOS:
 - multiple_choice: Preguntas de opción múltiple (A, B, C, D)
@@ -104,6 +115,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -127,19 +140,17 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
-
-IMPORTANTE: Genera un ejercicio de DESARROLLO que requiera una respuesta extensa y detallada, no de opción múltiple.
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
   "ejercicios": [
     {{
-      "enunciado": "Enunciado detallado del ejercicio de desarrollo que requiera explicación extensa",
-      "objetivos": "Objetivos de aprendizaje específicos del ejercicio",
-      "instrucciones": "Instrucciones detalladas sobre cómo resolver el ejercicio",
-      "criterios_evaluacion": "Criterios específicos para evaluar la respuesta",
-      "solucion_sugerida": "Solución detallada y completa del ejercicio",
-      "referencias": "Referencias bibliográficas relevantes para el tema"
+      "pregunta": "Pregunta que requiere desarrollo teórico",
+      "pista": "Pista sobre cómo abordar el problema",
+      "solucion": "Solución detallada paso a paso",
+      "puntos_clave": ["Punto clave 1", "Punto clave 2", "Punto clave 3"]
     }}
   ]
 }}""",
@@ -153,6 +164,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -175,6 +188,8 @@ Contexto académico:
 {contexto}
 
 Nivel de dificultad: {nivel_dificultad}
+Tipo de consulta: {tipo_consulta}
+Consulta específica: {consulta_libre}
 
 Formato de respuesta (JSON):
 {{
@@ -191,26 +206,43 @@ Formato de respuesta (JSON):
             }
         }
     
+    def _setup_output_parsers(self):
+        """Configura los prompts"""
+        # Crear prompts para cada tipo de ejercicio
+        self.prompts = {}
+        for tipo_ejercicio, config in self.exercise_templates.items():
+            # Crear prompt template para cada tipo
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", self.system_prompt_text),
+                ("human", config["template"])
+            ])
+            
+            self.prompts[tipo_ejercicio] = prompt
+            
+        logger.info(f"Prompts configurados para {len(self.prompts)} tipos de ejercicios")
+    
     def generate_exercises(
         self,
         query_params: Dict[str, Any],
-        context_documents: List[Any]
+        context_documents: List[Any],
+        tipo_ejercicio: str = "multiple_choice"
     ) -> Dict[str, Any]:
         """
         Genera ejercicios basados en los parámetros y contexto
         
         Args:
-            query_params: Parámetros de la consulta (materia, unidad, cantidad, tipo_ejercicio, etc.)
+            query_params: Parámetros de la consulta (materia, unidad, cantidad, etc.)
             context_documents: Documentos recuperados como contexto
+            tipo_ejercicio: Tipo de ejercicio a generar
             
         Returns:
             Diccionario con ejercicios generados
         """
         try:
-            # Obtener tipo de ejercicio de los parámetros
-            tipo_ejercicio = query_params.get('tipo_ejercicio')
-            if not tipo_ejercicio:
-                raise ValueError("tipo_ejercicio es requerido en query_params")
+            # Debug: mostrar información de entrada
+            logger.info(f"Generator recibió {len(context_documents)} documentos")
+            logger.info(f"Tipo de ejercicio: {tipo_ejercicio}")
+            logger.info(f"Query params: {query_params}")
             
             # Validar tipo de ejercicio
             if tipo_ejercicio not in self.exercise_templates:
@@ -218,26 +250,31 @@ Formato de respuesta (JSON):
             
             # Preparar contexto
             contexto = self._prepare_context(context_documents)
+            logger.info(f"Contexto preparado (longitud: {len(contexto)} caracteres)")
+            logger.info(f"Contexto: {contexto[:200]}...")
             
-            # Preparar prompt
-            prompt = self._prepare_prompt(
+            # Preparar variables para el prompt
+            prompt_vars = self._prepare_prompt_variables(
                 query_params=query_params,
                 contexto=contexto,
                 tipo_ejercicio=tipo_ejercicio
             )
             
-            # Generar ejercicios
-            response = self._call_openai(prompt)
+            # Generar ejercicios usando el LLM directamente
+            response_data = self._invoke_llm_directly(tipo_ejercicio, prompt_vars)
             
             # Validar y procesar respuesta
-            exercises = self._process_response(response, tipo_ejercicio)
+            exercises = self._validate_exercises(response_data, tipo_ejercicio)
             
             # Agregar metadata
             result = {
                 "ejercicios": exercises,
                 "metadata": {
                     "materia": query_params.get("materia"),
+                    "tipo_consulta": query_params.get("tipo_consulta"),
+                    "tipo_examen": query_params.get("tipo_examen"),
                     "unidad": query_params.get("unidad"),
+                    "consulta_libre": query_params.get("consulta_libre"),
                     "tipo_ejercicio": tipo_ejercicio,
                     "cantidad": query_params.get("cantidad", 1),
                     "nivel_dificultad": query_params.get("nivel_dificultad"),
@@ -275,14 +312,14 @@ Formato de respuesta (JSON):
         
         return "\n".join(context_parts)
     
-    def _prepare_prompt(
+    def _prepare_prompt_variables(
         self,
         query_params: Dict[str, Any],
         contexto: str,
         tipo_ejercicio: str
-    ) -> str:
+    ) -> Dict[str, Any]:
         """
-        Prepara el prompt para la generación
+        Prepara las variables para el prompt template de LangChain
         
         Args:
             query_params: Parámetros de la consulta
@@ -290,92 +327,191 @@ Formato de respuesta (JSON):
             tipo_ejercicio: Tipo de ejercicio
             
         Returns:
-            Prompt formateado
+            Diccionario con variables para el prompt
         """
-        template = self.exercise_templates[tipo_ejercicio]["template"]
-        
-        # Extraer parámetros
-        materia = query_params.get("materia", "materia no especificada")
-        unidad = query_params.get("unidad", "tema no especificado")
+        # Extraer parámetros básicos (asegurar que sean strings)
+        materia = str(query_params.get("materia", "materia no especificada"))
         cantidad = query_params.get("cantidad", 1)
-        nivel_dificultad = query_params.get("nivel_dificultad", "intermedio")
+        nivel_dificultad = str(query_params.get("nivel_dificultad", "intermedio"))
         
-        # Formatear prompt
-        prompt = template.format(
-            cantidad=cantidad,
-            tema=unidad,
-            materia=materia,
-            contexto=contexto,
-            nivel_dificultad=nivel_dificultad
-        )
+        # Determinar tema según tipo de consulta
+        tema = "tema no especificado"
+        tipo_consulta = str(query_params.get("tipo_consulta", ""))
         
-        return prompt
+        if tipo_consulta == "evaluacion":
+            tipo_examen = str(query_params.get("tipo_examen", ""))
+            if tipo_examen:
+                tema = f"evaluación de {tipo_examen}"
+        elif tipo_consulta == "unidad":
+            unidad = str(query_params.get("unidad", ""))
+            if unidad:
+                tema = unidad
+        
+        # Agregar consulta libre si existe (asegurar que sea string)
+        consulta_libre = str(query_params.get("consulta_libre", ""))
+        if consulta_libre and consulta_libre != "None" and consulta_libre.strip():
+            tema += f" - {consulta_libre}"
+        
+        # Debug: verificar tipos de variables
+        logger.info(f"Variables del prompt - tema: {type(tema)} = {tema}")
+        logger.info(f"Variables del prompt - consulta_libre: {type(consulta_libre)} = {consulta_libre}")
+        logger.info(f"Variables del prompt - tipo_consulta: {type(tipo_consulta)} = {tipo_consulta}")
+        
+        # Retornar diccionario con variables
+        return {
+            "cantidad": cantidad,
+            "tema": tema,
+            "materia": materia,
+            "contexto": contexto,
+            "nivel_dificultad": nivel_dificultad,
+            "tipo_consulta": tipo_consulta,
+            "consulta_libre": consulta_libre
+        }
     
-    def _call_openai(self, prompt: str) -> str:
+    def _invoke_llm_directly(
+        self, 
+        tipo_ejercicio: str, 
+        prompt_vars: Dict[str, Any]
+    ) -> Dict[str, Any]:
         """
-        Llama a la API de OpenAI
+        Invoca el LLM directamente para generar ejercicios
         
         Args:
-            prompt: Prompt a enviar
+            tipo_ejercicio: Tipo de ejercicio a generar
+            prompt_vars: Variables para el prompt
             
         Returns:
-            Respuesta de la API
+            Datos parseados de la respuesta (diccionario)
         """
         try:
-            messages = [
-                {"role": "system", "content": self.system_prompt},
-                {"role": "user", "content": prompt}
-            ]
+            # Obtener el prompt template
+            prompt_template = self.prompts[tipo_ejercicio]
             
-            response = self.client.chat.completions.create(
-                model=self.model_name,
-                messages=messages,
-                temperature=self.temperature,
-                max_tokens=self.max_tokens,
-                extra_headers=self.extra_headers
-            )
+            # Validar que todas las variables sean strings válidas
+            for key, value in prompt_vars.items():
+                if not isinstance(value, str) and key != "cantidad":
+                    prompt_vars[key] = str(value) if value is not None else ""
             
-            return response.choices[0].message.content
+            # Formatear el prompt con las variables
+            formatted_prompt = prompt_template.format_messages(**prompt_vars)
+            
+            # Invocar el LLM directamente
+            response = self.llm.invoke(formatted_prompt)
+            
+            # Extraer contenido de la respuesta
+            content = response.content
+            
+            # Verificar si la respuesta fue truncada por límite de tokens
+            if content.endswith('...') or len(content) < 100:
+                logger.warning("Respuesta del LLM parece truncada. Considera aumentar max_tokens.")
+                # Intentar con más tokens si es posible
+                if self.max_tokens < 8000:
+                    logger.info("Reintentando con más tokens...")
+                    self.max_tokens = min(8000, self.max_tokens * 2)
+                    self.llm.max_tokens = self.max_tokens
+                    response = self.llm.invoke(formatted_prompt)
+                    content = response.content
+            
+            # Limpiar el JSON si viene en markdown
+            if "```json" in content:
+                # Extraer solo el JSON del bloque de código
+                start = content.find("```json") + 7
+                end = content.find("```", start)
+                if end != -1:
+                    json_content = content[start:end].strip()
+                else:
+                    json_content = content[start:].strip()
+            else:
+                json_content = content
+            
+            # Limpiar JSON de caracteres problemáticos
+            json_content = self._clean_json_content(json_content)
+            
+            # Parsear JSON con manejo de errores mejorado
+            import json
+            try:
+                result = json.loads(json_content)
+                logger.info(f"LLM invocado exitosamente para tipo: {tipo_ejercicio}")
+                return result
+            except json.JSONDecodeError as json_error:
+                logger.error(f"Error parseando JSON: {str(json_error)}")
+                logger.error(f"JSON problemático: {json_content}")
+                # Intentar reparar el JSON
+                try:
+                    # Buscar solo la parte de ejercicios
+                    if '"ejercicios"' in json_content:
+                        start = json_content.find('"ejercicios"')
+                        end = json_content.rfind('}') + 1
+                        if start != -1 and end != -1:
+                            partial_json = json_content[start-1:end]
+                            result = json.loads(partial_json)
+                            logger.info("JSON reparado exitosamente")
+                            return result
+                except:
+                    pass
+                raise json_error
             
         except Exception as e:
-            logger.error(f"Error llamando a OpenAI: {str(e)}")
+            logger.error(f"Error invocando LLM directamente: {str(e)}")
+            logger.error(f"JSON content que causó el error: {json_content[:500]}...")
             raise
     
-    def _process_response(
+    def _clean_json_content(self, json_content: str) -> str:
+        """
+        Limpia el contenido JSON de caracteres problemáticos
+        
+        Args:
+            json_content: Contenido JSON crudo del LLM
+            
+        Returns:
+            JSON limpio y válido
+        """
+        import re
+        
+        # Remover caracteres de control y caracteres no imprimibles
+        json_content = re.sub(r'[\x00-\x1f\x7f-\x9f]', '', json_content)
+        
+        # Escapar comillas dobles dentro de strings (pero no las que delimitan)
+        # Esto es complejo, así que mejor reemplazamos comillas problemáticas
+        json_content = json_content.replace('"', '"').replace('"', '"')
+        json_content = json_content.replace(''', "'").replace(''', "'")
+        
+        # Remover saltos de línea dentro de strings JSON
+        json_content = re.sub(r'\n(?=\s*[^"]*"[^"]*"[^"]*:)', ' ', json_content)
+        
+        # Asegurar que las comillas estén balanceadas
+        quote_count = json_content.count('"')
+        if quote_count % 2 != 0:
+            # Si hay comillas impares, agregar una al final
+            json_content += '"'
+        
+        # Remover trailing commas
+        json_content = re.sub(r',(\s*[}\]])', r'\1', json_content)
+        
+        logger.info(f"JSON limpio: {json_content[:200]}...")
+        return json_content
+    
+    def _validate_exercises(
         self,
-        response: str,
+        response_data: Dict[str, Any],
         tipo_ejercicio: str
     ) -> List[Dict[str, Any]]:
         """
-        Procesa la respuesta de OpenAI
+        Valida los ejercicios generados por el LLM
         
         Args:
-            response: Respuesta de la API
+            response_data: Datos parseados por JsonOutputParser
             tipo_ejercicio: Tipo de ejercicio
             
         Returns:
-            Lista de ejercicios procesados
+            Lista de ejercicios validados
         """
         try:
-            # Log de la respuesta completa para debugging
-            logger.info(f"Respuesta completa de la API: {response}")
-            
-            # Extraer JSON de la respuesta
-            json_start = response.find('{')
-            json_end = response.rfind('}') + 1
-            
-            if json_start == -1 or json_end == 0:
-                raise ValueError("No se encontró JSON válido en la respuesta")
-            
-            json_str = response[json_start:json_end]
-            logger.info(f"JSON extraído: {json_str}")
-            data = json.loads(json_str)
-            
             # Validar estructura
-            if "ejercicios" not in data:
+            if "ejercicios" not in response_data:
                 raise ValueError("Respuesta no contiene campo 'ejercicios'")
             
-            exercises = data["ejercicios"]
+            exercises = response_data["ejercicios"]
             
             # Validar cada ejercicio
             validator = self.exercise_templates[tipo_ejercicio]["validation"]
@@ -385,33 +521,14 @@ Formato de respuesta (JSON):
                 if validator(exercise):
                     validated_exercises.append(exercise)
                 else:
-                    # Log detallado de qué campos faltan
-                    required_fields = self._get_required_fields(tipo_ejercicio)
-                    missing_fields = [field for field in required_fields if field not in exercise]
-                    logger.warning(f"Ejercicio no válido omitido. Campos faltantes: {missing_fields}")
-                    logger.warning(f"Ejercicio completo: {exercise}")
+                    logger.warning(f"Ejercicio no válido omitido: {exercise}")
             
+            logger.info(f"Ejercicios validados: {len(validated_exercises)} de {len(exercises)}")
             return validated_exercises
             
-        except json.JSONDecodeError as e:
-            logger.error(f"Error parseando JSON: {str(e)}")
-            raise
         except Exception as e:
-            logger.error(f"Error procesando respuesta: {str(e)}")
+            logger.error(f"Error validando ejercicios: {str(e)}")
             raise
-    
-    def _get_required_fields(self, tipo_ejercicio: str) -> List[str]:
-        """Obtiene los campos requeridos para un tipo de ejercicio"""
-        if tipo_ejercicio == "multiple_choice":
-            return ["pregunta", "opciones", "respuesta_correcta", "pista", "solucion"]
-        elif tipo_ejercicio == "desarrollo":
-            return ["enunciado", "objetivos", "instrucciones", "criterios_evaluacion", "solucion_sugerida", "referencias"]
-        elif tipo_ejercicio == "practico":
-            return ["pregunta", "pista", "solucion", "datos"]
-        elif tipo_ejercicio == "teorico":
-            return ["pregunta", "pista", "solucion", "conceptos_clave"]
-        else:
-            return []
     
     def _validate_multiple_choice(self, exercise: Dict[str, Any]) -> bool:
         """Valida un ejercicio de opción múltiple"""
@@ -420,7 +537,7 @@ Formato de respuesta (JSON):
     
     def _validate_desarrollo(self, exercise: Dict[str, Any]) -> bool:
         """Valida un ejercicio de desarrollo"""
-        required_fields = ["enunciado", "objetivos", "instrucciones", "criterios_evaluacion", "solucion_sugerida", "referencias"]
+        required_fields = ["pregunta", "pista", "solucion", "puntos_clave"]
         return all(field in exercise for field in required_fields)
     
     def _validate_practico(self, exercise: Dict[str, Any]) -> bool:
@@ -433,110 +550,9 @@ Formato de respuesta (JSON):
         required_fields = ["pregunta", "pista", "solucion", "conceptos_clave"]
         return all(field in exercise for field in required_fields)
     
-    def set_model(self, model_name: str):
-        """Actualiza el modelo a usar"""
-        self.model_name = model_name
-        logger.info(f"Modelo actualizado a: {model_name}")
-    
-    def set_temperature(self, temperature: float):
-        """Actualiza la temperatura"""
-        self.temperature = temperature
-        logger.info(f"Temperatura actualizada a: {temperature}")
 
 
-def create_generator(
-    model_name: str = None,
-    temperature: float = 0.7,
-    max_tokens: int = 2000
-) -> ExerciseGenerator:
-    """
-    Función de conveniencia para crear un generador
-    
-    Args:
-        model_name: Nombre del modelo
-        temperature: Temperatura
-        max_tokens: Máximo número de tokens
-        
-    Returns:
-        Instancia del generador
-    """
-    if model_name is None:
-        model_name = os.getenv('LLM_MODEL', 'gpt-4o-mini')
-    
-    return ExerciseGenerator(
-        model_name=model_name,
-        temperature=temperature,
-        max_tokens=max_tokens
-    )
 
 
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Crear generador
-    generator = create_generator()
-    
-    # Crear documentos de contexto de ejemplo
-    from langchain_core.documents import Document
-    
-    context_docs = [
-        Document(
-            page_content="La distribución normal es una distribución de probabilidad continua con forma de campana.",
-            metadata={"source": "apunte_probabilidad.pdf"}
-        ),
-        Document(
-            page_content="Para calcular probabilidades en la distribución normal estándar se usan tablas o software estadístico.",
-            metadata={"source": "guia_ejercicios.pdf"}
-        )
-    ]
-    
-    # Parámetros de consulta
-    query_params = {
-        "materia": "Probabilidad y estadística",
-        "unidad": "Distribución normal",
-        "cantidad": 2,
-        "nivel_dificultad": "intermedio"
-    }
-    
-    # Generar ejercicios de opción múltiple
-    print("Generando ejercicios de opción múltiple...")
-    try:
-        result = generator.generate_exercises(
-            query_params=query_params,
-            context_documents=context_docs,
-            tipo_ejercicio="multiple_choice"
-        )
-        
-        print(f"Ejercicios generados: {len(result['ejercicios'])}")
-        for i, exercise in enumerate(result['ejercicios'], 1):
-            print(f"\nEjercicio {i}:")
-            print(f"Pregunta: {exercise['pregunta']}")
-            print(f"Opciones: {exercise['opciones']}")
-            print(f"Respuesta correcta: {exercise['respuesta_correcta']}")
-            print(f"Pista: {exercise['pista']}")
-        
-        print(f"\nMetadata: {result['metadata']}")
-        
-    except Exception as e:
-        print(f"Error generando ejercicios: {str(e)}")
-    
-    # Generar ejercicios de desarrollo
-    print("\n" + "="*50)
-    print("Generando ejercicios de desarrollo...")
-    try:
-        result = generator.generate_exercises(
-            query_params=query_params,
-            context_documents=context_docs,
-            tipo_ejercicio="desarrollo"
-        )
-        
-        print(f"Ejercicios generados: {len(result['ejercicios'])}")
-        for i, exercise in enumerate(result['ejercicios'], 1):
-            print(f"\nEjercicio {i}:")
-            print(f"Pregunta: {exercise['pregunta']}")
-            print(f"Pista: {exercise['pista']}")
-            print(f"Puntos clave: {exercise['puntos_clave']}")
-        
-    except Exception as e:
-        print(f"Error generando ejercicios: {str(e)}")
+
+

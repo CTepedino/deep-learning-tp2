@@ -1,0 +1,130 @@
+PROBABILIDAD Y ESTADISTICA   93.24                PRIMER  PARCIAL​
+26/09/13​ 
+INDICACIONES:  Indique claramente apellido, nombre, número  de legajo y curso  en cada hoja que entregue. No solicite indicaciones 
+ni aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  cuenta 
+cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables aleatorias y su 
+distribución y comente la solución.  Exprese los resultados redondeando en 4 decimales. 
+SUERTE...                                DURACION : 2.0  HORAS. 
+ 
+ 
+1. (2 puntos)  Si Y es el tiempo hasta la falla de un componente de un sistema  
+y F(y) es la función de distribución de Y entonces P(Y > y) = 1 - F(y) es la 
+confiabilidad del componente. Suponga que un sistema tiene cuatro 
+componentes idénticos, con igual confiabilidad, conectados como indica el 
+diagrama adjunto. El sistema funciona correctamente cuando opera al menos 
+una cadena de componentes que no fallan entre A y B. Los cuatro  componentes 
+funcionan en forma independiente entre sí. 
+a) Obtenga la función densidad de probabilidad del tiempo hasta la falla T del sistema si el tiempo hasta la falla 
+de cada componente se puede suponer una variable aleatoria con distribución exponencial de media M. 
+b) Calcule la probabilidad de que el tiempo T supere a su valor esperado. 
+ 
+Solución comentada: Sea T el tiempo de funcionamiento del sistema hasta la falla, mientras que T1 y T2 son los 
+tiempos de funcionamiento hasta la falla de las ramas en paralelo. Estas dos últimas variables aleatorias tienen 
+distribución exponencial de parámetro L = 1/M. Se tiene 
+​
+FT (t) = P(T < t) = P(T1 < t) P(T2 < t) = ( 1 –  exp(-L t) exp(-L t) )2 =  ( 1 – exp(- 2 L t) )2 , t > 0. 
+La función densidad de probabilidad de T es fT (t) = 4 L (exp(- 2 L t) - exp(- 4 L t)) , t > 0. 
+Con la definición de valor esperado y sabiendo que M = 1/L es el valor esperado de una variable aleatoria 
+exponencial de parámetro L resulta que E(T) = 0.75 M.  
+La probabilidad solicitada P(T  >  E(T) ) = 1 - FT (0.75 M) ≅ 0.3965. 
+ 
+2. (3 puntos)  Cierta característica de calidad X de un artículo puede considerarse una variable aleatoria con 
+distribución normal con media  μ  y desvío estándar σ. Los artículos de la producción se clasifican en A, B ó C 
+según que el valor de X se halle a más de un σ  por debajo de μ, a menos de un σ  respecto de μ o más de un σ  
+por encima de μ. La probabilidad de que un artículo elegido al azar pase exitosamente una prueba de control de 
+calidad es 0.5; 0.9 y 0.4 para A, B y C respectivamente.  
+a) Calcule la probabilidad de que al menos 3 de una muestra de 12 artículos examinados (elegidos al azar de 
+una producción de tamaño mucho mayor) pase con éxito la prueba de control de calidad. 
+b) Aproxime el valor de la probabilidad de que más del 75 % de una muestra de n artículos aprueben el control 
+de calidad si n  tome los valores 500 y 1000. Suponga que la muestra se extrae al azar  de una producción de 
+tamaño mucho mayor.  
+ 
+Solución comentada: La probabilidad de que un artículo pase con éxito la prueba es  
+​
+​
+p = 0.9 ( 0.1587 + 0.6826) ≅ 0.7572. 
+La cantidad de artículos X que pasan la prueba de entre los n = 12 tiene distribución binomial de parámetros n y 
+p. Entonces  P (X ≥ 3) = 1 -  P (X ≤ 2) ≅ 0.9999. 
+Usando la aproximación normal para la distribución normal para pn = P (X  > 0.75 n) se tiene: 
+p500 ≅ 1 -  Φ( (0.75  500 – 0.7572 500)/( 500 0.7572 0.2428)1/2) ≅ 0.6464 y en forma análoga p1000 ≅ 0.7023. 
+ 
+ 
+3.(3 puntos)  Una  compañía de exploración petrolera va a perforar diez pozos y cada uno de ellos tiene una 
+probabilidad 0.1 de producir petróleo en forma comercial. El costo de perforación de un pozo es C pesos, 
+mientras que si el pozo  puede producir petróleo en forma comercial entonces pueden obtenerse 30 C pesos de 
+ingreso. 
+a) Obtenga la distribución de probabilidades de la ganancia (ingresos – costos) de la compañía en la explotación 
+de los 10 pozos.  
+​
+b) Calcule la probabilidad de que la compañía tenga una ganancia que sea al menos 10 veces su inversión de        
+perforación. 
+c)  Calcule el valor esperado y la dispersión de la ganancia. Sugerencia: Exprese la ganancia de la compañía en 
+función de la cantidad de pozos que producen petroleo y luego use propiedades del valor esperado y la varianza.
+
+[Descripción de la imagen: terma de terma de terma de terma de terma de]
+
+Solución comentada: Sea X el número de pozos que producen en forma comercial de entre los 10 y G la 
+ganancia obtenida por la explotación de los 10 pozos. Se tiene G = 30 C X – 10 C = H(X), donde H es una 
+función inyectiva. El recorrido de G es { -10 C, 20 C, 50 C, 80 C, 110 C, 140 C, 170 C, 200 C, 230 C, 260 C, 290 
+C}. Como X tiene distribución binomial de parámetros n =10 y p = 0.1 y H es una función inyectiva entonces  
+ 
+ 
+ 
+​
+P (G = gk) = P( X = (gk + 10C)/(30 C), con P( X = k) = Cn,k pk (1 – p) n –k, k: 0,1, …, n. 
+ 
+​
+La probabilidad de que la compañía tenga una ganancia que sea al menos 10 veces su inversión de        
+perforación es: 
+​
+​
+​
+P (G ≥ 100) = P (X > 3) ≅ 0.0126. 
+ 
+El valor esperado de G es E(G) = -10 + 30 E(X) = -10 + 30 10 0.1 = 20.  
+Para la varianza resulta  V(G) = 900 V(X) = 900 10 0.1 0.9 = 810 y asi σ(G) ≅ 28.4605. 
+ 
+ 
+  
+4. (2 puntos)  El canal de comunicación que se muestra en el 
+esquema adjunto transmite los símbolos 0 y 1 desde la 
+entrada mientras que los posibles símbolos a la salida son 0, 
+1, y E.  Sea X el símbolo que se transmite desde la entrada e 
+Y el símbolo recibido a la salida. Supongamos que se indique 
+con P(Y = y /X =x) = pyx  la probabilidad de que y se reciba 
+dado que x fue transmitido. 
+Se suponen las siguientes probabilidades: p00 = 0.8 (se recibe 
+0 dado que se transmitió 0), p10 = 0.1 (se recibe 1 dado que 
+se transmitió 0), mientras que pE0 = 0.1, p01 = 0.2, p11 = 0.75, y 
+pE1 = 0.05.  
+Si  P(X = 0) = P(X = 1) = 0.5 obtenga:  
+a) P(X = x/ Y = y) para los siguientes pares (x,y):  (0 , 0), (1, E) y (1, 1). 
+b) aproximadamente la probabilidad de que se reciban como máximo 60 símbolos E si se transmiten 1000 
+símbolos desde la entrada. Indique que supuesto considera para poder calcular esta probabilidad. 
+ 
+ 
+      Solución comentada:  
+ 
+​ ​ ​
+ 
+(x, y) 
+( 0,0 ) 
+(1, E)  
+(1, 1) 
+P(X = x / Y = y) 
+0.4/0.5 = 0.8 
+0.025/0.075 = 0.3333 
+0.375/0.425 ≅ 0.8824 
+ 
+  Sea U el número de símbolos E recibidos entre los n = 1000 enviados. Se tiene P(Y = E) = p = 0.075. La variable U 
+tiene distribución binomial de parámetros n y p si se supone independencia entre símbolos recibidos y constancia 
+de p para cada símbolo. Como n p = 75 y  n (1 – p) = 925 son ambos mayores que 10 entonces puede utilizarse la 
+aproximación normal de la binomial para aproximar la probabilidad pedida. 
+​ Resulta: 
+​ ​ ​
+​
+P (U ≤ 60) ≅ Φ( (60.5– 75)/ (1000  0.075  0.925)1/2) ≅ Φ(-1.741) ≅ 0.0409.
+
+[Descripción de la imagen: el diagrama muestra los correspondientes de los dos triángulos]
+

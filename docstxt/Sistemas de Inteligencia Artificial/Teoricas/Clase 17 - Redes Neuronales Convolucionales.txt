@@ -1,0 +1,1119 @@
+Referencias
+Sistemas de Inteligencia Artificial
+Redes Neuronales Convolucionales
+Centro de Inteligencia Computacional
+2025
+1/61
+
+[Descripción de la imagen: sisa de ingenia artificial rojo neuros conoc]
+
+Referencias
+Redes Neuronales Convolucionales
+Redes Neuronales Convolucionales
+CNN, Convolutional Neural Networks, o, ConvNet.
+Basadas alrededor de la operaci´on de convoluci´on.
+Aplicadas a procesamiento de im´agenes.
+Tremendamente exitosas y uno de los motores detr´as del
+auge de DL.
+Las CNN fueron propuestas x Fukushima y LeCun en
+1989, e iniciaron la tercer hola de las redes neuronales
+con el paper de Krizhevsky 2012
+2/61
+
+[Descripción de la imagen: rees neurones ocuables cnn neuronas nonal]
+
+Referencias
+Redes Neuronales Convolucionales
+Convoluci´on Matem´atica
+Es una operaci´on lineal
+Suponiendo que x(t) es una se˜nal unidimensional en
+funci´on del tiempo y w(t) es un n´ucleo de convoluci´on,
+s(t) =
+R
+x(k)w(t −k)dk
+s(t) = (x ∗w)(t) =< x(k), w ∗(t −k) >, donde ∗es el
+conjugado.
+(Correlaci´on s(t) =
+R
+x(k)w(t + k)dk (+ positivo))
+Convoluci´on Discreta
+s[n] = P
+k x[k]w[n −k]
+3/61
+
+[Descripción de la imagen: rees neuenes conoces conoc | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Convolución Matemática
+
+o Es una operación lineal
+
+o Suponiendo que x(t) es una señal unidimensional en
+función del tiempo y w(t) es un núcleo de convolución,
+
+o s(t) = f x(k)w(t— k)dk
+
+o s(t) = (x*w)(t) =< x(k), w*(t — k) >, donde x es el
+conjugado.
+
+o (Correlación s(t) = f x(k)w(t + k)dk (+ positivo))
+
+Convolución Discreta
+o s|n] =, x[klw[n — kl]]
+
+Referencias
+Redes Neuronales Convolucionales
+Convoluci´on
+La convoluci´on matem´atica cumple un rol primordial en el
+procesamiento de se˜nales digitales. Por ejemplo, cualquier
+filtro digital lineal puede representarse por una igualdad
+basada en convoluciones discretas.
+CCDE - Constant Coefficient Difference Equation
+PN−1
+k=0 w1[k]y[n −k] = PM−1
+k=0 w2[k]x[n −k]
+Y (z) = H(z)X(z)
+w1, w2 son kernels de convoluci´on, x, y son se˜nales
+discretas.
+X, Y son los estados del sistema y H es la funci´on de
+transferencia.
+4/61
+
+[Descripción de la imagen: rees neuness conoce]
+
+Referencias
+Redes Neuronales Convolucionales
+Convoluci´on
+x = [1]
+y = [1, 3, 2]
+5/61
+
+[Descripción de la imagen: rees neules covoluion coulos x1 y1, 2, 2 | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Convolución]]
+
+Referencias
+Convolution
+6/61
+
+[Descripción de la imagen: un gráfico con una línea de longitud y una línea de longitud | Transcripción de la imagen: Convolution
+
+signal
+
+-
+-
+E
+
+=
+
+o
+
+>
+
+=!
+
+o
+
+o
+
+result]]
+
+Referencias
+Convolution
+7/61
+
+[Descripción de la imagen: un gráfico con una línea de longitud y una línea de longitud | Transcripción de la imagen: Convolution
+
+kernel
+
+signal
+
+-
+-
+E
+
+=
+
+o
+
+>
+
+=!
+
+o
+
+o
+
+result]]
+
+Referencias
+Convolution
+8/61
+
+[Descripción de la imagen: un gráfico con una línea de longitud y una línea de longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+9/61
+
+[Descripción de la imagen: un gráfico con una línea de longitud y una línea de longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+10/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+11/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution
+
+C
+-
+>
+7
+
+convolution
+
+result]]
+
+Referencias
+Convolution
+12/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution
+
+C
+-
+>
+7
+
+convolution
+
+result]]
+
+Referencias
+Convolution
+13/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+14/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+15/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+16/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+17/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+18/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+19/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+20/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Convolution
+21/61
+
+[Descripción de la imagen: un gráfico con una línea de la misma longitud | Transcripción de la imagen: Convolution]]
+
+Referencias
+Redes Neuronales Convolucionales
+Moving Average
+windowlength = 10
+avgeeg = np.convolve(signal,
+np.ones((windowlength,))/windowlength,
+mode=’same’)
+22/61
+
+[Descripción de la imagen: media móvil de rees neueles ovolues]
+
+Referencias
+Redes Neuronales Convolucionales
+Aplicando un moving average de tama˜no 10.
+23/61
+
+[Descripción de la imagen: res neueles oculares alclar univere damo | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Aplicando un moving average de tamaño 10.
+
+Original EEG Signal Smoothed EEG Signal
+
+2000 2000
+1500 1500
+1000 1000
+500 500
+5 o 5 o
+
+$ $
+
+—500 —500
+—1000 —1000
+—1500 —1500
+—2000 —2000
+
+o 1000 2000 3000 4000 5000 — 6000 o 1000 2000 3000 4000 5000 — 6000
+
+t]]
+
+Referencias
+Redes Neuronales Convolucionales
+Padding
+valid
+same
+full
+windowlength = 10
+avgeeg = np.convolve(signal,
+np.ones((windowlength,))/windowlength,
+mode=’same’)
+24/61
+
+[Descripción de la imagen: una captura de pantalla con un texto que lee 'ree nees oiuotes ' | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Padding
+
+e valid
+
+e same
+
+o full
+
+windowlength = 10
+avgeeg = np.convolve(signal,
+np.ones ( (windowlength, )) /windowlength,
+mode=" same"?)]]
+
+Referencias
+Convoluci´on en Se˜nales
+Padding
+Se˜nal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+Valid
+[ 8, -16, 11, 1]
+Same
+[ 0, 8, -16, 11, 1, -4]
+Full
+[ -1,0, 8, -16, 11, 1, -4,1]
+25/61
+
+[Descripción de la imagen: covoluon seles padrag serie 1, 2, 2, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 y 1 | Transcripción de la imagen: Convolución en Señales
+
+Padding
+Señal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+
+Valid Same Full]]
+
+Referencias
+Convoluci´on en Se˜nales
+Padding
+Se˜nal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+Valid
+[ 8, -16, 11, 1]
+Same
+[ 0, 8, -16, 11, 1, -4]
+Full
+[ -1,0, 8, -16, 11, 1, -4,1]
+25/61
+
+[Descripción de la imagen: covoluon sets pada seriali 1, 2, 3, 2, 2, 3, 4, 4, 4, 4 | Transcripción de la imagen: Convolución en Señales
+
+Padding
+Señal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+
+Valid Same Full
+[ 8,-16, 11, 1]]]
+
+Referencias
+Convoluci´on en Se˜nales
+Padding
+Se˜nal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+Valid
+[ 8, -16, 11, 1]
+Same
+[ 0, 8, -16, 11, 1, -4]
+Full
+[ -1,0, 8, -16, 11, 1, -4,1]
+25/61
+
+[Descripción de la imagen: covoluon seles padrag seriali 1, 2, 3, 2, 3, 4, 4, 4, 4]
+
+Referencias
+Convoluci´on en Se˜nales
+Padding
+Se˜nal discreta [1,2,-5,4,2,-1], con un kernel [-1,2,-1]:
+Valid
+[ 8, -16, 11, 1]
+Same
+[ 0, 8, -16, 11, 1, -4]
+Full
+[ -1,0, 8, -16, 11, 1, -4,1]
+25/61
+
+[Descripción de la imagen: covoluon sets pada seriali 1, 2, 2, 3, 2, 2, 3, 4, 4, 4]
+
+Referencias
+Redes Neuronales Convolucionales
+Convoluci´on bidimensional
+S(i, j) = (I ∗k)(i, j) =
+X
+m
+X
+n
+I(m, n)K(i −m, j −n)
+=
+X
+m
+X
+n
+I(i −m, j −n)K(m, n)
+Filtrado por N´ucleos de Convoluci´on
+La operaci´on de filtrado b´asica en Visi´on por Computadora es
+mediante la aplicaci´on de una operaci´on de convoluci´on
+bidimensional con diferentes Kernels de convoluci´on.
+26/61
+
+[Descripción de la imagen: rees neuness conoce | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Convolución bidimensional
+
+S(1,3) =(17*kK)( ZZ/mn — m,j —n)
+=ZZI (1 — m,j —n)K(m,n)
+
+Filtrado por Núcleos de Convolución
+La operación de filtrado básica en Visión por Computadora es
+mediante la aplicación de una operación de convolución
+
+bidimensional con diferentes Kernels de convolución.]]
+
+Referencias
+Redes Neuronales Convolucionales
+En Visi´on por Computadora o An´alisis y Tratamiento de
+im´agenes, es necesario aplicar ’filtros’ a las im´agenes para
+resaltar ciertas caracter´ısticas.
+Por ejemplo, para detectar bordes horizontales o
+verticales.
+27/61
+
+[Descripción de la imagen: rees neulos visualiza contacions]
+
+Referencias
+Redes Neuronales Convolucionales
+28/61
+
+[Descripción de la imagen: res neuroles oculares | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Original
+
+[
+
+Laplacian
+
+D
+
+!
+!]]
+
+Referencias
+Redes Neuronales Convolucionales
+Filtros
+Los kernels act´uan como filtros, como por ejemplo un filtro
+gaussiano (una curva de Gauss bidimensional)
+https://twitter.com/i/status/1303489896519139328
+O tambi´en pueden ser filtros para detectar bordes verticales u
+horizontales.
+
+
+1
+0
+−1
+1
+0
+−1
+1
+0
+−1
+
+
+
+
+1
+1
+1
+0
+0
+0
+−1
+−1
+−1
+
+
+29/61
+
+[Descripción de la imagen: kes neuenes ovolues kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels kels]
+
+Referencias
+Redes Neuronales Convolucionales
+Biomimetismo
+La idea es de 1989, y busca plantear una biomimesis del propio
+esquema de la corteza visual. En ese momento no pudo ser
+implementada de manera eficiente porque el hardware
+requerido no estaba disponible.
+La visi´on de redes neuronales es que los filtros tradicionales que
+se usan en visi´on por computadora son versiones ”shallow”de
+redes neuronales convolucionales, y en la profundidad reside
+justamente uno de los ´exitos de esta alterantiva.
+30/61
+
+[Descripción de la imagen: res neuenes oculares]
+
+Referencias
+Redes Neuronales Convolucionales
+Biomimetismo
+Neocognitron [7].
+31/61
+
+[Descripción de la imagen: bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios bios]
+
+Referencias
+Redes Neuronales Convolucionales
+32/61
+
+[Descripción de la imagen: un diagrama de un neural neural | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Output
+(object identity)
+
+3rd hidden layer
+
+(object parts)
+
+' . 2nd hidden layer
+(corners and
+
+contours)
+
+1st hidden layer
+
+Visible layer
+
+(input pixels)]]
+
+Referencias
+Redes Neuronales Convolucionales
+La idea.
+Modificar una MLP de forma que realice una operaci´on
+de convoluci´on, de una capa a la otra.
+Imitar la misma idea de lo que se observa en la corteza
+visual, mediante la utilizaci´on de la convoluci´on.
+33/61
+
+[Descripción de la imagen: rees neueles ovolues]
+
+Referencias
+Redes Neuronales Convolucionales
+|
+{z
+}
+Convolution Layer
+| {z }
+Pooling
+| {z }
+Full Layer
+|
+{z
+}
+Input
+|
+{z
+}
+Output
+34/61
+
+[Descripción de la imagen: un diagrama de un neural neural | Transcripción de la imagen: Redes Neuronales Convolucionales]]
+
+Referencias
+Redes Neuronales Convolucionales
+W p,q = [w (p,q)
+ijk
+]
+i : height
+j : width, q : Layer
+k : depth, p : Filter
+Hq = [hq
+ijk]
+H : inputlayer
+h(q+1)
+ijp
+=
+Fq
+X
+r=1
+Fq
+X
+s=1
+dq
+X
+k=1
+w (p,q)
+rsk
+hq
+i+r−1,j+s−1,k
+∀i ∈{1, ..., Lq −Fq + 1}
+∀j ∈{1, ..., Bq −Fq + 1}
+∀p ∈{1, ..., dq+1}
+35/61
+
+[Descripción de la imagen: rees neuenes conocies | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+W? = [wik]
+
+¡ : height H = [hyk]
+J : width, q : Layer
+
+H : inputlayer
+k : depth, p : Filter
+
+Fq Fq dq
+
+4 w 299
+I_]p Wrek i+r—1,j+s—1,k
+
+r=1 s=1 k=1
+Vi € Í1,...,La - Fg +1)
+Vj E [1,.... Bg - Fa +1)
+VpEÍ1,..., da1)
+
+35/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+Bq
+Lq
+|{z}
+dq
+q
+p = 1
+p = 2
+p = dq+1
+|{z}
+dq+1
+Lq −Fq + 1
+Bq −Fq + 1
+Fq
+Fq
+w (p,q)
+rsk
+q + 1
+h(q+1)
+ijp
+h(q)
+ijp
+|{z}
+dq
+36/61
+
+[Descripción de la imagen: un diagrama del mecanismo de un mecanismo de un mecanismo de un mecanismo de un mecanismo de un mecanismo de | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Fq q+1
+
+36/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+Feature Maps
+37/61
+
+[Descripción de la imagen: fes neules couloises | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Feature Maps
+
+/ Z
+T
+
+OUTPUT 5
+INPUT
+
+DEPTH OF INPUT AND DEPTH DEFINED BY NUMBER
+FILTER MUST MATCH OF DIFFERENT FILTERS (5)]]
+
+Referencias
+Redes Neuronales Convolucionales
+Capa ReLU
+f (x) = x+ = max(0, x)
+(1)
+f (x) =
+ 0
+x ≤0
+x
+x > 0
+38/61
+
+[Descripción de la imagen: rees neules coulos cap rl x = x = x = x = x = x = x = x = x = x | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Capa ReLU
+
+f(x) =x" = max(0, x) (1)
+0914 0
+
+E]]
+
+Referencias
+Redes Neuronales Convolucionales
+Feature Maps
+Height
+Width
+Depth
+Caracter´ısticas
+Stride
+Border Effects
+39/61
+
+[Descripción de la imagen: res neules ouoiates femps femps femps femps femps femps femps femps fem]
+
+Referencias
+Redes Neuronales Convolucionales
+Pooling
+Pooling es similar a un downsampling.
+MaxPooling es la operaci´on m´as usada. Dada una regi´on
+de 2x2, obtener el valor m´aximo.
+Aportan a la invarianza translacional: no importa d´onde
+se de el m´aximo, se puede filtrar en la capa siguiente.
+Puede extenderse a hacer otras caracter´ısticas invariantes,
+depende como se agrupen los filtros, y los poolings
+siguientes.
+40/61
+
+[Descripción de la imagen: rees neuenes ovolues polis polis]
+
+Referencias
+Redes Neuronales Convolucionales
+Pooling
+41/61
+
+[Descripción de la imagen: un diagrama de una recal con el número de la recal | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Single depth slice
+1 W 1|2/a
+5 1 6|7 |8
+3 W 2 EO
+1 W 2 FE
+
+6|8
+314]]
+
+Referencias
+Redes Neuronales Convolucionales
+Fully Connected Layer
+Al final de la Red hay una (o m´as capas) que se encargan
+de hacer la clasificaci´on final.
+Softmax: σ( ⃗V )i =
+eVi
+PK
+j=1 eVi
+42/61
+
+[Descripción de la imagen: rees neueles conocies]
+
+Referencias
+Redes Neuronales Convolucionales
+Backpropagation
+Mantener la identificaci´on de la influencia al momento de
+retropropagar los errores
+En las capas de convoluci´on, como los pesos son
+compartidos, es necesario acumular todas las variaciones
+a la hora de actualizar los pesos. Es decir, lo mismo que
+ocurre con los en las ´epocas en el tiempo, ahora hay que
+hacerlo en el espacio.
+43/61
+
+[Descripción de la imagen: rees neuenas envioas]
+
+Referencias
+Redes Neuronales Convolucionales
+Backpropagation
+1 Supongamos una red para identificar perros, botes y
+Gokus.
+2 Red inicializada al azar, igual que siempre.
+3 Calculamos los valores de salida, capa a capa.
+4 En las capas Fully Connected es exactamente igual que el
+perceptr´on multicapa.
+5 En las capas de Pooling, solo se actualizan la contribuci´on
+de los pesos de la salida ganadora (asumiendo una
+funci´on identidad).
+6 En las capas convolucionales, hay que mantener los pesos
+de los filtros en la relaci´on espacial.
+44/61
+
+[Descripción de la imagen: res neuness ocuables]
+
+Referencias
+Redes Neuronales Convolucionales
+Backpropagation - Transposici´on basdada en un tensor
+zq+1 = W Tzq
+gq = Wgq+1
+
+
+a
+b
+c
+d
+e
+f
+g
+h
+i
+
+
+
+
+i
+h
+g
+f
+e
+d
+c
+b
+a
+
+
+w (p,q)
+ijk
+= u(k,q+1)
+rsp
+r = Fq −i + 1
+s = Fq −j + 1
+45/61
+
+[Descripción de la imagen: rees neulos baapop - trosch baden en ters | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Backpropagation - Transposición basdada en un tensor
+
+T
+Za+1 = W z)
+
+gq=qu+l
+a bc i hg
+d e f f ed
+g hi c ba
+(p.q) ,
+Wijl€ a) — u£5kpq+l)
+r=Fq-i+1
+s=Fq-j+1]]
+
+Referencias
+Redes Neuronales Convolucionales
+Sparse Matrix Representation
+46/61
+
+[Descripción de la imagen: un diagrama del sistema neural | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Sparse Matrix Representation
+
+c|d
+
+FILTER
+
+FLATTEN TO
+9-DIMENSIONAL
+VECTOR
+
+CONVERT TO 4X9
+SPARSE MATRIX C
+
+.Z —>
+
+F- [1,3,4,9,6,7,5,0,2)
+
+abocdoooo
+
+0abocdooo , MULTIPLY
+000abocdo c
+
+000 0abocd
+
+[a+3b+9c+6d, 3a+4b+6c+7d, 9a+6b+5c, 6a+7b+2d]"
+
+RESHAPE TO
+SPATIAL OUTPUT
+
+a+3b+9c+6d |3a+4b+6c+7d
+
+9a+6b+5c
+
+62+7b+2d
+
+OUTPUT
+
+46/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+Arquitecturas y Redes
+Las diferentes combinaciones de capas de convoluci´on,
+reLU, pooling y fully connected, permiten armar
+arquitecturas profundas y complejas que intentan
+solucionar diferentes problemas.
+Como siempre, la elecci´on de la arquitectura correcta no
+escapa a las generalidades de las redes neuronales. Un
+poco arte, educated guesses y prueba y error.
+Codificaci´on
+(CR) 2P(CR) 2P(CR) 2PF
+47/61
+
+[Descripción de la imagen: rees neuness conoce]
+
+Referencias
+Redes Neuronales Convolucionales
+Arquitecturas - LeNet 89
+48/61
+
+[Descripción de la imagen: res neules couloles | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Arquitecturas - LeNet 89
+
+Fully Fully Output Predictions
+n necte
+
+------- .. dog (0.01)
+r cat (0.04)
+I boat (0.94)
+_ l bird (0.02)
+
+48/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+¿ Por qu´e funcionan ?
+Matrices esparsas son mucho m´as eficientes: menos
+c´omputos.
+Parameter sharing: tied weights
+Equivariant g(f(x)) = f(g(x)) Invariante a las traslaciones
+Jerarqu´ıas Espaciales: Ingenier´ıa de Caracter´ısticas
+Jer´arquica
+49/61
+
+[Descripción de la imagen: rees neueles ocuables por fuente]
+
+Referencias
+Redes Neuronales Convolucionales
+Regularizaci´on
+Weight Dropout
+50/61
+
+[Descripción de la imagen: rerizzan caída de peso reg = = = = = = = = = = = =]
+
+Referencias
+Redes Neuronales Convolucionales
+Transfer Learning
+Pretrained FC7 Features
+51/61
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras "rees" y "rees"]
+
+Referencias
+Redes Neuronales Convolucionales
+Feature Learning
+52/61
+
+[Descripción de la imagen: una pantalla que muestra la imagen de un rostro y las palabras de un rostro | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+Feature Learning
+
+eey PE
+
+A a
+
+2A NAA e
+YE _NN SNe
+
+— RE]]
+
+Referencias
+Redes Neuronales Convolucionales
+Inteligible Property, Propiedad de Legibilidad
+Saliency Maps ∂ψ
+∂h .
+Shapley Value
+53/61
+
+[Descripción de la imagen: rees neueles conocies intileproceds intiptyproceds intiptyproceds intiptyproceds intiptyproceds intiptyproedalproedal1]
+
+Referencias
+Redes Neuronales Convolucionales
+ResNet
+54/61
+
+[Descripción de la imagen: res neules oculares | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+34-layer residual
+[ 27642 ]
+
+34-layer plain
+image
+m7 ]
+
+[
+
+VGG-19]]
+
+Referencias
+Redes Neuronales Convolucionales
+ResNet
+55/61
+
+[Descripción de la imagen: kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten kersten ke | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+D.
+weight layer
+
+x
+identity
+
+Residual Block
+
+55/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+UNet
+56/61
+
+[Descripción de la imagen: rees neules oiuoles | Transcripción de la imagen: Redes Neuronales Convolucionales
+
+input
+image » > |
+tile S
+
+output
+segmentation
+
+S lo | '
+1 m
+' =!
+|"I"I El I'ÍI'ÍI m conv 3x3, ReLU
+i 1 '
+
+copy and crop
+
+12 51 24
+D y max pool 22
+L ME 4 4 up-conv 2x2
+» » —
+
+=» conv 1x1
+
+—_—— — —o]]———]]—————" E O
+
+56/61]]
+
+Referencias
+Redes Neuronales Convolucionales
+Bloques de construcci´on
+LeNet
+AlexNet
+VGG
+57/61
+
+[Descripción de la imagen: res neules coulos blees conconconciences]
+
+Referencias
+CNN para diferentes dominios
+Dimensions
+Singlechannel
+Multichannel
+1-D
+Audio Waveforms
+Electroencephalography
+Motion Capture Markers
+2-D
+Spectrograms
+Color Image
+3-D
+Computer Tomography
+Video
+58/61
+
+[Descripción de la imagen: un diagrama de los tres tipos diferentes del cmn]
+
+Referencias
+Referencias
+Fukushima Neocognitron [3].
+LeCun 1989, LeNet Architecture [6].
+Libro de Aggarwal Neural Networks and Deep
+Learning [1].
+Gu´ıa para entender la aritm´etica de las
+convoluciones [2, 8]
+Estupendo resumen de CNN desde una perspectiva super
+variada [4]
+AlexNet 2012 [5].
+https://ujjwalkarn.me/2016/08/11/intuitive-explanation-
+convnets/
+59/61
+
+[Descripción de la imagen: referias fuma neotrol liorara redes neuronales]
+
+Referencias
+Referencias I
+[1] Charu C Aggarwal et al. Neural networks and deep learning.
+Springer, 2018.
+[2] Vincent Dumoulin and Francesco Visin. A guide to convolution
+arithmetic for deep learning. mar 2016.
+[3] Kunihiko Fukushima and Nobuaki Wake. Handwritten alphanumeric
+character recognition by the neocognitron. IEEE transactions on
+Neural Networks, 2(3):355–365, 1991.
+[4] Shengli Jiang and Victor M. Zavala. Convolutional Neural Nets:
+Foundations, Computations, and New Applications. jan 2021.
+[5] Alex Krizhevsky, Ilya Sutskever, and Geoffrey E Hinton. Imagenet
+classification with deep convolutional neural networks. In Advances in
+neural information processing systems, pages 1097–1105, 2012.
+60/61
+
+[Descripción de la imagen: ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne ne]
+
+Referencias
+Referencias II
+[6] Yann LeCun, Bernhard Boser, John S Denker, Donnie Henderson,
+Richard E Howard, Wayne Hubbard, and Lawrence D Jackel.
+Backpropagation applied to handwritten zip code recognition. Neural
+computation, 1(4):541–551, 1989.
+[7] Grace W. Lindsay. Convolutional neural networks as a model of the
+visual system: Past, present, and future. Journal of Cognitive
+Neuroscience, pages 1–15, Feb 2020.
+[8] Evan Shelhamer, Jonathan Long, and Trevor Darrell. Fully
+Convolutional Networks for Semantic Segmentation. IEEE
+Transactions on Pattern Analysis and Machine Intelligence,
+39(4):640–651, nov 2017.
+61/61
+
+[Descripción de la imagen: referis in deraru, besar, jod, dokla, dobre, besar, bak, bak, bak, bak, bak, bak, bak, bak, bak, bak, bak, bak,]
+

@@ -1,0 +1,1240 @@
+Variables aleatorias continuas
+La probabilidad es especificada por la densidad 
+•
+Se la puede entender como la densidad de un alambre: 
+si quiero saber la masa de un segmento de un 
+alambre, debo multiplicar la densidad por la longitud 
+del segmento
+𝑃(𝑥−∆
+2 < 𝑋≤𝑥+ ∆
+2 )≈𝑓
+𝑋
+(𝑥)∙∆
+La probabilidad de un punto es 0
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variables aleatorias continuas
+Gonick & Smith, The 
+Cartoon Guide to 
+Statistics
+
+[Descripción de la imagen: un dibujo de dibujos animados de un hombre tocando la guitarra | Transcripción de la imagen: IN 6ENERAL, THE PROBABILITY
+DENSITY WON'T BE 50 SIMPLE,
+AND COMPUTING THE AREAS CAN
+BE FAR FROM TRIVIAL
+
+a b
+
+WE HAVE TO USE CALCULUS
+NOTATION TO DESCRIBE THE
+AREA UNDER THE CURVE A(2).
+THIS SYMBOL 15 READ “THE
+INTEGRAL OF £ FROM a TO b”
+
+b
+
+Gonick é Smith, The
+Cartoon Guide to
+Statistics]]
+
+Variables aleatorias continuas
+𝑃(𝑎< 𝑋≤𝑏)=∫
+𝑎
+𝑏
+𝑓𝑋(𝑥)𝑑𝑥
+𝑓𝑋(𝑥)≥0
+∫
+−∞
++∞
+𝑓𝑋(𝑥)𝑑𝑥=1
+
+[Descripción de la imagen: variables attoris conas | Transcripción de la imagen: Variables aleatorias continuas
+
+P(a<Xsb)=Í foixidx]]
+
+Variables aleatorias continuas
+Función de distribución (acumulada)
+𝐹𝑋(𝑥)=𝑃( 𝑋≤𝑥)=∫
+−∞
+𝒙
+𝑓𝑋(𝑠)𝑑𝑠
+Propiedades válidas para v.a.c. y v.a.d:
+lim
+𝑥→−∞𝐹𝑋(𝑥)=0
+lim
+𝑥→+∞𝐹𝑋( 𝑥)=1
+𝑥1<𝑥2 ⇒𝐹𝑋(𝑥1)≤𝐹𝑋(𝑥2)
+𝑃(𝑎< 𝑋≤𝑏)=𝐹𝑋(𝑏)−𝐹𝑋(𝑎)
+Comportamiento asintótico
+No decreciente
+𝐹𝑋:ℝ→[0,1]
+Definida para todos los reales
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias continuas
+
+Función de distribución (acumulada)
+FX(X):P(XSX)ZJ fysids
+
+Pla<X <b)=F,|b)-F la
+Propiedades válidas para v.a.c. y v.a.d:
+
+Fx:R - |[0,1] Definida para todos los reales
+
+lim F.(X)=0
+X - — Comportamiento asintótico
+lin F.Ix)=1
+
+X — +OOO
+
+X,<X,= F x|X,)< F x|XNo decreciente
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variables aleatorias continuas
+Función de distribución (acumulada)
+𝐹𝑋(𝑥)=𝑃( 𝑋≤𝑥)=∫
+−∞
+𝒙
+𝑓𝑋(𝑠)𝑑𝑠
+Propiedades solo válidas para v.a.c. :
+lim
+𝑥→𝑎𝐹𝑋(𝑥)= 𝐹𝑋(𝑎)
+𝑑𝐹𝑋( 𝑥)
+𝑑𝑥
+= 𝑓𝑋( 𝑥)
+Continua
+La derivada (donde existe) es 
+igual a la densidad
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias continuas
+
+Función de distribución (acumulada)
+X
+FX(X):P(XSX)ZI fysids
+Propiedades solo válidas para v.a.c. :
+liní Fyx=Fxla Continua
+
+La derivada (donde existe) es
+igual a la densidad
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variables aleatorias continuas
+𝐸[ 𝑋]≈∑
+𝑘=−∞
+∞
+𝑘∆𝑥∙𝑃(𝑘∆𝑥−∆𝑥
+2 < 𝑋≤𝑘∆𝑥+∆𝑥
+2 )
+∆𝑥
+∆𝑥
+𝐸[ 𝑋]≈∑
+𝑘=−∞
+∞
+𝑘∆𝑥∙𝑓𝑋(𝑥)∆𝑥∆𝑥→0
+→
+∫
+−∞
++∞
+𝑥∙𝑓𝑋(𝑥)𝑑𝑥
+
+[Descripción de la imagen: variables attoris conas | Transcripción de la imagen: Variables aleatorias continuas
+
+ElX) Y kAx-P kAx—A—2X<XSI<AX+A2—X
+k=-0
+
+E X Í kAx—fx(x)AxAx; 0?x—fx(x)dx
+
+-
+>
+E
+—
+—
+_=_
+—
+2
+— -D
+—>
+—
+—
+_=_
+—
+2
+— -D
+—>
+. »]]
+
+Variables aleatorias continuas
+𝜇𝑘=𝐸[ 𝑋
+𝑘]=∫
+−∞
++ ∞
+𝑥
+𝑘𝑓𝑋(𝑥) 𝑑𝑥
+𝑚𝑘=𝐸[( 𝑋−𝜇)
+𝑘]=∫
+−∞
++∞
+(𝑥−𝜇)
+𝑘𝑓𝑋(𝑥)𝑑𝑥
+Momentos
+Momentos centrales
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias continuas
+
+Momentos
+1ZE |X"= f * fxixlax
+
+Momentos centrales
+
++00
+
+»
+- >
+—>
+—
+—
+—>
+—
+— =»
+2
+— D
+—
+—
+—
+—>
+—
+2
+—
+—
+_»]]
+
+𝜇=E [ 𝑋]=∫
+−∞
++ ∞
+𝑥𝑓𝑋( 𝑥) 𝑑𝑥
+Media
+𝜎
+2= E [( 𝑋−𝜇)
+2]=∫
+−∞
++∞
+(𝑥−𝜇)
+2 𝑓𝑋(𝑥)𝑑𝑥=E [ 𝑋
+2]−( E[ 𝑋])
+2
+Varianza
+Desvío estándar
+𝜎= √𝜎2
+Variables aleatorias continuas
+
+[Descripción de la imagen: variables altoris conas | Transcripción de la imagen: Variables aleatorias continuas
+
+Media
+
++ 00
+
+u=E|X)= | xfxx|dx
+
+— 00
+
+Varianza
+
++00
+
+=f x-u) fylx|dx=ElX*)-[ELX]?
+
+— 00
+
+íN
+=
+De
+|
+<
+
+Desvío estándar
+
+VÓ'2
+
+- »
+-
+_——>
+_—>
+= -
+_—_>
+_=
+— »
+»
+_-
+= -
+— —
+_—_>
+20
+_-
+»
+—
+- -
+
+a]]
+
+𝛾=𝐸[( 𝑋−𝜇
+𝜎
+)
+3]
+Coeficiente de asimetría
+𝜅=𝐸[( 𝑋−𝜇
+𝜎
+)
+4]−3
+Coeficiente de curtosis
+Variables aleatorias continuas
+
+[Descripción de la imagen: variables y y y y y y y y y y y y y y y y y y y y y y | Transcripción de la imagen: Variables aleatorias continuas
+
+Coeficiente de asimetría
+
+E
+
+Coeficiente de curtosis
+
+5)=
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variables aleatorias continuas
+
+[Descripción de la imagen: un gráfico gráfico con los mismos valores y los mismos valores]
+
+Variables aleatorias continuas
+∫
+𝟎
+𝟏𝟎𝟎
+𝑘(100−𝑥) 𝑑𝑥=1⇒𝑘=0.0002
+𝑃( 𝑋>30 )= ∫
+𝟑𝟎
+𝟏𝟎𝟎
+𝑘(100−𝑥)𝑑𝑥=0.49
+𝑃(30< 𝑋<70)=∫
+𝟑𝟎
+𝟕𝟎
+𝑘(100−𝑥)𝑑𝑥=0.40
+
+[Descripción de la imagen: un cuaderno con un pedazo de papel y un pedazo de papel con un pedazo de papel | Transcripción de la imagen: El porcentaje de alcohol X de un cierto compuesto se puede considerar una variable
+aleatoria continua con función densidad de probabilidad: fx (1) = E(100—x) re (0,100) y
+nula fuera de ese intervalo.
+
+a) Halle el valor de k Represente gráficamente fx
+
+b) ¡¿Cuál es la probabilidad de que el porcentaje de alconol sea superior a 307
+
+c) ¿Cuál es la probabilidad de que el porcentaje de aleohol en el compuesto esté compren-
+dido entre 30 y 707
+
+d) Si el porcentaje de alcohol es inferior a 70, ¿cuál es la probabilidad de que supere 307
+
+e) Dados los sucesos A = [X > 30); B =1X < 70); ¿son Á y D sucesos independientes?
+
+149
+100 k 100
+
+f k1100-x|dx=1>k=0.0002
+0
+
+100
+PIX>30|= f k[100-x|dx=0.49
+30
+
+70
+Pl30<X<70|= | kK1100-x|dx=0.40
+30]]
+
+Variables aleatorias continuas
+𝑃( 𝐴)=𝑃( 𝑋>30 )= ∫
+𝟑𝟎
+𝟏𝟎𝟎
+𝑘(100−𝑥)𝑑𝑥=0.49
+𝑃( 𝐴∩𝐵)= 𝑃(30< 𝑋<70)=∫
+𝟑𝟎
+𝟕𝟎
+𝑘(100−𝑥) 𝑑𝑥=0.40
+𝑃( 𝑋>30∨𝑋<70 )=𝑃( 𝐴∨𝐵)= 𝑃( 𝐴∩𝐵)
+𝑃( 𝐵)
+≈0.44
+𝑃( 𝐵)=𝑃( 𝑋<70 )=∫
+𝟎
+𝟕𝟎
+𝑘(100−𝑥) 𝑑𝑥=0.91
+
+[Descripción de la imagen: un cuaderno con un número de números en él | Transcripción de la imagen: El porcentaje de alcohol X de un cierto compuesto se puede considerar una variable
+aleatoria continua con función densidad de probabilidad: fx (1) = E(100—x) re (0,100) y
+nula fuera de ese intervalo.
+
+a) Halle el valor de k Represente gráficamente fx
+b) ¿Cuál es la probabilidad de que el porcentaje de alconol sea superior a 307
+
+c) ¿Cuál es la probabilidad de que el porcentaje de aleohol en el compuesto esté compren-
+dido entre 30 y 707
+
+d) Si el porcentaje de alcohol es inferior a 70, ¿cuál es la probabilidad de que supere 307
+e) Dados los sucesos A = [X > 30); B =1X < 70); ¿son Á y D sucesos independientes?
+
+100
+
+PA =PIX>30)= | kl100-x|dx=0.49
+- 70
+PIB)=P[X<70)= | k[100-x) dx=0.91
+O
+
+70
+P[AnB)=Pl30<X<70)= f k1100 - x)dx=0.4C
+
+30
+
+PIAnB)
+
+PIX>30V X<70 =PILAVB)= PIB)
+
+= 0.44
+
+—
+D
+-
+E
+1 >
+l >
+—
+-
+
+—>
+
+2
+—
+-
+- >
+- »
+l >
+2
+-
+
+_>
+
+2
+
+—
+-
+
+- >
+
+-]]
+
+Variables aleatorias continuas
+𝑃( 𝐴)=𝑃( 𝑋>30 )= ∫
+𝟑𝟎
+𝟏𝟎𝟎
+𝑘(100−𝑥)𝑑𝑥=0.49
+𝑃( 𝐴∩𝐵)= 𝑃(30< 𝑋<70)=∫
+𝟑𝟎
+𝟕𝟎
+𝑘(100−𝑥) 𝑑𝑥=0.40
+𝑃( 𝐴∩𝐵)=0.4≠0.4459=𝑃( 𝐴) 𝑃(𝐵)∴𝐴y 𝐵no sonindependientes
+𝑃( 𝐵)=𝑃( 𝑋<70 )=∫
+𝟎
+𝟕𝟎
+𝑘(100−𝑥) 𝑑𝑥=0.91
+
+[Descripción de la imagen: un cuaderno con un número de números y un número de números | Transcripción de la imagen: El porcentaje de alcohol X de un cierto compuesto se puede considerar una variable
+aleatoria continua con función densidad de probabilidad: fx (1) = E(100—x) re (0,100) y
+nula fuera de ese intervalo.
+
+a) Halle el valor de k Represente gráficamente fx
+b) ¿Cuál es la probabilidad de que el porcentaje de alconol sea superior a 307
+
+c) ¿Cuál es la probabilidad de que el porcentaje de aleohol en el compuesto esté compren-
+dido entre 30 y 707
+
+d) Si el porcentaje de alcohol es inferior a 70, ¿cuál es la probabilidad de que supere 307
+e) Dados los sucesos A = [X > 30); B =1X < 70); ¿son Á y D sucesos independientes?
+
+100
+
+PA =PIX>30)= | kl100-x|dx=0.49
+- 70
+PIB)=P[X<70)= | k[100-x) dx=0.91
+O
+
+70
+P[AnB)=Pl30<X<70)= f k1100 - x)dx=0.4C
+
+30
+
+PIAnB|=0.4-0.4459=P | A|PI[B).*. A y Bno sonindependientes
+
+—
+D
+-
+E
+1 >
+l >
+—
+-
+
+—>
+
+2
+—
+-
+- >
+- »
+l >
+2
+-
+
+_>
+
+2
+
+—
+-
+
+- >
+
+-]]
+
+Variables aleatorias continuas
+E [ 𝑋]=∫
+−∞
++∞
+𝑥𝑓𝑋(𝑥)𝑑𝑥=∫
+0
+100
+𝑥𝑘(100−𝑥)𝑑𝑥=100
+3
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias continuas
+
+El porcentaje de alcohol X de un cierto compuesto se puede considerar una variable
+aleatoria continua con función densidad de probabilidad: fx (T) = k(100 — r) re (0,100) y
+nula fuera de ese intervalo. : , ..
+
+Halle el porcentaje medio de alcohol en el compuesto.
+
++00 100
+
+100
+
+EÍX]=f fo(x)dx=f xk(100—x)dx=í
+
+— 00 0
+
+169]]
+
+Variables aleatorias continuas
+E [ 𝑋
+2]=∫
+−∞
++∞
+𝑥
+2 𝑓𝑋(𝑥)𝑑𝑥=∫
+0
+100
+𝑥
+2𝑘(100−𝑥)𝑑𝑥=5000
+3
+Var [ 𝑋]=E [ 𝑋2]−( E [ 𝑋] )
+2= 5000
+3
+−10 000
+9
+=5 000
+9
+𝜎𝑋=√
+5000
+9
+≈23.57
+Es interesante observar que en este caso 
+el intervalo con centro en  y semiamplitud 
+el triple del desvío estándar incluye al 
+recorrido de . Entonces la probabilidad de 
+que  tome valores en ese intervalo es 1.
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variables aleatorias continuas
+
+100
+
+E[Xº]—f X fylxidx= fx k1100- x)dx-%ºº
+
+— 00
+
+5000 10000 5 000
+var[X]=E X*|-(E[LX]) =5 --—9 =9
+
+0 = 5%00 8 23,57
+
+Es interesante observar que en este caso
+el intervalo con centro en y semiamplitud
+el triple del desvío estándar incluye al
+100/3 recorrido de . Entonces la probabilidad de
+
+que tome valores en ese intervalo es 1.
+104.04
+
+= D»
+—>
+—>
+__ >
+-
+
+- >
+_—-
+_-
+
+- D»
+— -»
+-
+- -
+-
+
+- >
+-
+
+_-
+- ->
+- D»
+— »
+_-
+- -
+- -]]
+
+Variables aleatorias continuas
+𝐹𝑋( 𝑥)={
+0
+𝑥≤0
+0.0001 𝑥(200 −𝑥)
+0 ≤𝑥≤100
+1
+𝑥≥100
+𝐹𝑋(𝑥)=∫
+0
+𝒙
+𝑘(100−𝑠)𝑑𝑠=0.0001 𝑥(200−𝑥)
+
+[Descripción de la imagen: variables attoris x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x | Transcripción de la imagen: Variables aleatorias continuas
+
+O x<0
+Fx|x)=10.0001 x (200 -x) O<x<100
+1 x =>100]]
+
+Variable aleatoria uniforme
+Una variable aleatoria continua tiene distribución uniforme en el 
+intervalo (a, b) si:
+La uniformidad caracteriza a una 
+variable continua que toma valores 
+al 
+azar 
+en 
+un 
+intervalo. 
+La 
+probabilidad de que esta variable 
+tome valores en un intervalo incluido 
+en  de longitud  no depende de , y 
+vale .
+𝑋𝑈(𝑎,𝑏)
+𝑓𝑋(𝑥)={
+1
+𝑏−𝑎
+𝑥∈(𝑎,𝑏)
+0
+𝑥∉(𝑎,𝑏)
+
+[Descripción de la imagen: variablee aluste disoribor e]
+
+Variable aleatoria uniforme
+Una variable aleatoria continua tiene distribución uniforme en el 
+intervalo (a, b) si:
+𝑋𝑈(𝑎,𝑏)
+𝐹𝑋( 𝑥)={
+0
+𝑥≤𝑎
+𝑥−𝑎
+𝑏−𝑎
+𝑎≤𝑥≤𝑏
+1
+𝑥≥𝑏
+
+[Descripción de la imagen: variablee aluste distubiona distubiona | Transcripción de la imagen: Variable aleatoria uniforme
+
+Una variable aleatoria continua tiene distribución uniforme en el
+intervalo (a, b) si:
+
+0 x<a
+X Ula,b) Fxlx= 2— a<x<b
+
+b-—a
+1 x>Db]]
+
+Variable aleatoria uniforme
+E [ 𝑋
+𝑛]=∫
+𝑎
+𝑏
+𝑥
+𝑛
+𝑏−𝑎𝑑𝑥= 1
+𝑛+1
+𝑏
+𝑛+1−𝑎
+𝑛+1
+𝑏−𝑎
+∀𝑛∈ℕ
+0
+𝜇=E [ 𝑋]= 𝑎+𝑏
+2
+𝜎
+2=Var [ 𝑋]=E [ 𝑋
+2]−(E [ 𝑋])
+2=1
+3
+𝑏3−𝑎3
+𝑏−𝑎−(
+𝑎+𝑏
+2 )
+2
+𝜎2=Var [ 𝑋]=
+(𝑏−𝑎)2
+12
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria uniforme
+
+n+1 n+l
+dx=——- b —
+
+- vneN
+n+1 hb-a
+
+b-af
+
+o =Var X |=
+12
+
+»
+>
+—
+—
+__
+_
+—
+- -
+=
+— -D
+- »
+—
+__
+_
+—
+=
+— -D
+- »
+»]]
+
+Variable aleatoria uniforme
+Histograma para la 
+muestra de 10000 
+números aleatorios 
+obtenidos con rand 
+en Octave.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria uniforme
+
+Command Window
+>> n=10000; X=rand(n,1):
+>—>
+
+Histograma para la
+muestra de 10000
+números aleatorios
+obtenidos con rand
+en Octave.
+
+».
+a
+->
+>
++
+>
+-
+-
+—
+-
+a
+a
+a
+a
+-
+>”
+-
+- "
+—
+-
+2
+—
+“-
+_-
+- »]]
+
+Variable aleatoria uniforme
+Boxplot 
+y 
+diagrama 
+constante vs valor para la 
+muestra de 10000 números 
+aleatorios 
+obtenidos 
+con 
+rand en Octave.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+
+Variable aleatoria uniforme
+Distribución empírica 
+de los 10000 números 
+aleatorios en (0,1)
+Diagrama QQ de los datos 
+vs los cuantiles de una 
+variable aleatoria uniforme,
+
+[Descripción de la imagen: variablee de valor y y y y y y y y y y y y y y y y y y y y y y y y y y y y y]
+
+Variable aleatoria exponencial
+Una variable aleatoria continua tiene distribución exponencial com 
+parámetro  si:
+𝑋exp(𝑎,𝑏)
+𝑓𝑋(𝑥)={
+0
+𝑥≤0
+𝜆𝑒
+−𝜆𝑥
+𝑥>0
+La variable aleatoria continua 
+con distribución exponencial 
+modela tiempos de espera, 
+tiempos entre eventos, tiempos 
+entre fallas, distancias entre 
+fallas, etc.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+
+Variable aleatoria exponencial
+Una variable aleatoria continua tiene distribución exponencial com 
+parámetro  si:
+𝑋exp(𝑎,𝑏)
+𝐹𝑋(𝑥)={
+0
+𝑥≤0
+1−𝑒
+−𝜆𝑥
+𝑥≥0
+
+[Descripción de la imagen: variablee aletata ejerctorii exexional | Transcripción de la imagen: Variable aleatoria exponencial
+
+Una variable aleatoria continua tiene distribución exponencial com
+parámetro si:
+
+X expla,b) FylXx)=
+
+— 0 x<0
+1-e * x>0]]
+
+Variable aleatoria exponencial
+E [ 𝑋
+𝑛]=∫
+0
+∞
+𝑥
+𝑛𝜆𝑒
+−𝜆𝑥𝑑𝑥=𝑛!
+𝜆
+𝑛∀𝑛∈ℕ
+0
+𝜇=E [ 𝑋]=1
+𝜆
+𝜎2=Var [ 𝑋]=E [ 𝑋2]−(E [ 𝑋])
+2= 2
+𝜆2−1
+𝜆2 = 1
+𝜆2
+𝜎= 1
+𝜆
+¡El desvío estándar de una variable 
+aleatoria 
+continua 
+con 
+distribución 
+exponencial es igual al valor esperado!  
+Esta es una variable aleatoria con gran 
+desvío estándar relativo…
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria exponencial
+
+E[X”]=f x”)te_“dx=g—ívn EN
+0
+
+M=E[X]=%
+
+0'2=Var[X]=ElX2]—(E[X])2=%_%=%
+
+¡El desvío estándar de una variable
+aleatoria continua con — distribución
+exponencial es igual al valor esperado!
+
+Esta es una variable aleatoria con gran
+desvío estándar relativo...
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+- D»
+
+— ->
+
+— -
+
+- -]]
+
+Variable aleatoria exponencial
+Una propiedad muy especial: “Falta de memoria”
+Si   fuese el tiempo hasta la aparición de una falla, se tiene que 
+la probabilidad de que el tiempo de buen funcionamiento 
+exceda en  a cierto tiempo   sabiendo justamente que ese 
+tiempo fue excedido (esa es la falta de memoria) es la misma 
+probabilidad de que exceda , ¡independientemente de ! 
+𝑃( 𝑋>𝑎+𝑑|𝑋>𝑎)=𝑃(𝑋>𝑑)∀𝑎,𝑑>0
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+
+Variable aleatoria exponencial
+Una propiedad muy especial: “Falta de memoria”
+𝑃( 𝑋>𝑎+𝑑|𝑋>𝑎)= 𝑃( 𝑋>𝑎+𝑑)
+𝑃( 𝑋>𝑎)
+=1−𝐹𝑋(𝑎+𝑑)
+1−𝐹𝑋(𝑎) = 𝑒
+−𝜆(𝑎+𝑑)
+𝑒
+−𝜆𝑎
+𝑃( 𝑋>𝑎+𝑑|𝑋>𝑎)=𝑒−𝜆𝑑=𝑃( 𝑋>𝑑)
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria exponencial
+
+Una propiedad muy especial: “Falta de memoria”
+
+PiX>a+d) 1-Fx(a+d) e *
+
+P X>a+d|X>a)= PX>a 1-F,la) e
+
+P X>a+d|X>a=e =P X>d
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+_-
+- ->
+- D»
+— »
+_-
+- -]]
+
+Variable aleatoria exponencial
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo 
+valores positivos?
+1−𝐹𝑋(𝑎+𝑑)
+1−𝐹𝑋(𝑎)
+=1−𝐹𝑋(𝑑)
+𝑃( 𝑋>𝑎+𝑑|𝑋>𝑎)=𝑃(𝑋>𝑑)
+1−𝐹𝑋(𝑎+𝑑)=(1−𝐹𝑋(𝑎))(1−𝐹𝑋(𝑑))
+𝑓𝑋(𝑎+𝑑)=(1−𝐹𝑋(𝑎)) 𝑓𝑋(𝑑)
+𝑓𝑋(𝑎+𝑑)=𝑓𝑋(𝑎)(1−𝐹𝑋(𝑑))
+Derivamos respecto de 
+Derivamos respecto de
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria exponencial
+
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo
+valores positivos?
+
+PX>a+dX>a =P X>d
+1-Fx(a+d)
+
+1- Fx(a)
+1-Fy(a+d)=1-F (a) 1- Fx(d)
+
+=1_Fx(d)
+
+Derivamos respecto de fx(a+d)=(1_Fx(a))fx(d)
+
+Derivamos respecto de fX(a+d):fX(a)(l_ FX(d))
+
+= D»
+—>
+-
+-
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria exponencial
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo 
+valores positivos?
+𝑓𝑋(𝑎+𝑑)=(1−𝐹𝑋(𝑎)) 𝑓𝑋(𝑑)
+𝑓𝑋(𝑎+𝑑)=𝑓𝑋(𝑎)(1−𝐹𝑋(𝑑))
+Definimos . Luego:
+𝐺𝑋
+′ (𝑎)
+𝐺𝑋(𝑎)= 𝐺𝑋
+′ (𝑎)
+𝐺𝑋(𝑎) ∀𝑎, 𝑑>0
+𝐺𝑋
+′ (𝑥)
+𝐺𝑋(𝑥)=−𝑘∀𝑥>0
+𝐺𝑋(0)=1
+ porque  y decreciente.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria exponencial
+
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo
+valores positivos?
+
+fxla+d)=|1-Fy(a))fx(d)
+fx(a+d)=fx(a)(l_Fx(d))
+
+Definimos . Luego:
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria exponencial
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo 
+valores positivos?
+𝐺𝑋
+′ (𝑥)
+𝐺𝑋(𝑥)=−𝑘⇒ln (𝐺𝑋(𝑥))−ln (𝐺𝑋(0) )=−𝑘𝑥
+ln (𝐺𝑋(𝑥))=−𝑘𝑥⇒𝐺𝑋(𝑥)=𝑒−𝑘𝑥⇒𝐹𝑋( 𝑥)=1−𝑒−𝑘𝑥
+Es una distribución exponencial
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria exponencial
+
+¿Existe otra v.a.c. con “falta de memoria” que tome sólo
+valores positivos?
+
+GíX(X)—— > ln X)| —In = — kx
+ME k=>In[Gx|x])-In|Gx[0))=-k
+
+1n(GX(X))=—RX=>Gx(x)=e“kxz>1:'x(x)=1 _e
+
+Es una distribución exponencial]]
+
+Variable aleatoria exponencial
+https://data.humdata.org/dataset/catalog-of-earthquakes1970-2014
+Tiempo en días entre 
+terremotos entre 
+1970 y 2014,
+El promedio da (para 
+estos datos) 3.03 
+días.
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variable aleatoria exponencial
+https://data.humdata.org/dataset/catalog-of-earthquakes1970-2014
+Tiempo en días entre 
+terremotos entre 1970 y 
+2014,
+Se superpone sobre el 
+diagrama stem de los 
+datos la función densidad 
+de una vac. con 
+distribución exponencial 
+con la misma media que 
+los datos.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+
+Variable aleatoria exponencial
+https://data.humdata.org/dataset/catalog-of-earthquakes1970-2014
+Tiempo en días entre 
+terremotos entre 1970 y 
+2014,
+Se superpone sobre la 
+distribución empírica de los 
+datos la función de 
+distribución de una vac. 
+con distribución 
+exponencial con la misma 
+media que los datos.
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables]
+
+Variable aleatoria exponencial
+https://data.humdata.org/dataset/catalog-of-earthquakes1970-2014
+Tiempo en días entre 
+terremotos entre 1970 y 
+2014,
+Se representa el diagrama 
+QQ donde se muestran 
+cuantiles de la muestra vs 
+los cuantiles de una vac. 
+con distribución 
+exponencial con la misma 
+media de los datos.
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee]
+

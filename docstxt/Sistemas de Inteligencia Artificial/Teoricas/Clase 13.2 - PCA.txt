@@ -1,0 +1,672 @@
+APRENDIZAJE 
+NO SUPERVISADO
+Análisis de Componentes Principales 
+Sistemas de Inteligencia Artiﬁcial - 2024
+
+[Descripción de la imagen: una imagen de un fondo amarillo y azul con las palabras, 'apria nouvead ']
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MODELO DE 
+KOHONEN
+03. MODELO DE 
+HOPFIELD
+04.
+05.
+06.
+2
+AUTOVALORES Y 
+AUTOVECTORES
+COMPONENTES 
+PRINCIPALES
+REGLA DE OJA Y 
+SANGER
+
+[Descripción de la imagen: conidos de mesa]
+
+05
+ANÁLISIS DE 
+COMPONENTES 
+PRINCIPALES
+3
+
+[Descripción de la imagen: un fondo blanco y amarillo con las palabras «principios de principios de los componentes de Analse»]
+
+05.1
+INTRODUCCIÓN
+4
+
+[Descripción de la imagen: un fondo blanco y amarillo con las palabras intro | Transcripción de la imagen: INTRODUCCIÓN]]
+
+EJEMPLO
+5
+Se cuenta con un conjunto de datos tomado de una competencia de natación. Los nadadores 
+debieron recorrer 4 tramos y se tomaron los siguientes tiempos (min):
+NADADOR
+TR1
+TR2
+TR3
+TR4
+1
+10
+10
+13
+12
+2
+12
+12
+14
+15
+3
+11
+10
+14
+13
+4
+9
+9
+11
+11
+5
+8
+8
+9
+8
+6
+8
+9
+10
+9
+7
+10
+10
+8
+9
+
+[Descripción de la imagen: una tabla con los números de cada uno de los números]
+
+6
+EJEMPLO
+Para una investigación se seleccionan al azar 3500 pacientes hipertensos sobre los que 
+se midieron las siguiente variables: 
+●
+Edad 
+●
+Duración de los síntomas (cantidad de días)
+●
+Colesterol (mg/dl)
+●
+Sexo 
+●
+Peso (kg) 
+●
+Presión arterial media (mm Hg) 
+●
+Medida del estrés
+Se desea saber si el paciente presenta una enfermedad arterial o no
+
+[Descripción de la imagen: emo para unificcion seicar así]
+
+MEDIDAS DESCRIPTIVAS 
+7
+Dado un conjunto de datos de una variable 
+MEDIA MUESTRAL
+VARIANZA MUESTRAL
+NOTA: Se toma una parte de la población
+
+[Descripción de la imagen: un fondo blanco con un texto en blanco y negro que lee medascits]
+
+8
+Dado un conjunto de datos con n variables y m observaciones. 
+La covarianza muestral mide la asociación lineal entre las variables Xi y Xk 
+COVARIANZA MUESTRAL
+MEDIDAS DESCRIPTIVAS
+
+[Descripción de la imagen: medascritas do unifico de covaridades | Transcripción de la imagen: MEDIDAS DESCRIPTIVAS
+
+Dado un conjunto de datos con n variables y m observaciones.
+La covarianza muestral mide la asociación lineal entre las variables X; y X,
+
+X 1 X 2 .. Á n COVARIANZA MUESTRAL
+L11 L192 ... Lin .
+1
+21 22 2n Sik — 5 Z((£U_77, — 33z)(333k E xk))
+=1]]
+
+MATRIZ DE COVARIANZAS
+9
+Las covarianzas forman una matriz simétrica deﬁnida positiva:
+
+[Descripción de la imagen: matizo de covarias | Transcripción de la imagen: MATRIZ DE COVARIANZAS
+
+Las covarianzas forman una matriz simétrica definida positiva:
+
+S11 8192 ... Sin
+S — 821 812 Sin
+
+Sm1 Sm2 ... “Smn]]
+
+10
+INTERPRETACIÓN COVARIANZA MUESTRAL
+Sea sik la covarianza muestral entre las variables Xi y Xk
+●
+Sik  > 0  indica asociación lineal positiva entre los datos de las variables
+●
+Sik  < 0  indica asociación lineal negativa entre los datos de las variables
+●
+Sik  = 0  indica que las variables son independientes
+Nota:
+La varianza muestral es la covarianza muestral entre los datos de la variable Xi con ella misma 
+(se puede denotar como Sii)
+
+[Descripción de la imagen: interaciono ovaran metal]
+
+CORRELACIÓN MUESTRAL
+11
+La correlación muestral es otra medida de asociación lineal.
+Es la covarianza muestral con las variables estandarizadas. 
+La correlación muestral para las variables Xi y Xk se deﬁne como:
+VARIABLE ESTANDARIZADA
+__
+~
+
+[Descripción de la imagen: un diagrama del coeficiente de correlación de un coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de coeficiente de]
+
+05.2
+PCA
+12
+
+[Descripción de la imagen: una captura de pantalla de un ordenador con el texto, « c2 »]
+
+ANÁLISIS DE COMPONENTES PRINCIPALES
+13
+Si las variables de un conjunto de datos están muy correlacionadas entonces posee 
+información redundante
+El objetivo del método de Principal Component Analysis (PCA)
+ es eliminar la redundancia
+¿CÓMO?
+
+[Descripción de la imagen: analis de comidas entres]
+
+ANÁLISIS DE COMPONENTES PRINCIPALES
+14
+Transformar el conjunto de variables original en otro conjunto 
+Tendrá variables que son combinaciones lineales de las anteriores 
+pero no están correlacionadas entre sí 
+CONJUNTO DE COMPONENTES PRINCIPALES
+
+[Descripción de la imagen: analis de compra]
+
+PCA - HISTORIA
+15
+Técnica publicada por H. Hotelling en 1933.
+Las primeras versiones se encuentran en los ajustes ortogonales por cuadrados mínimos 
+introducidos por K. Pearson en 1901.
+Paper
+
+[Descripción de la imagen: una página con el título del artículo | Transcripción de la imagen: PCA - HISTORIA
+
+Técnica publicada por H. Hotelling en 1933.
+
+Las primeras versiones se encuentran en los ajustes ortogonales por cuadrados mínimos
+introducidos por K. Pearson en 1901.
+
+Analysis of a complex of statistical variables into principal
+components.
+
+O Request Permissions
+
+Hotelling, H. (1933). Analysis of a complex of statistical variables into principal
+components. Journal of Educational Psychology, 24(6), 417—441.
+https://doi.org/10.1037/h0071325
+
+The problem is stated in detail, a method of analysis is derived and its geometrical
+meaning shown, methods of solution are illustrated and certain derivative problems are
+discussed. (To be concluded in October issue.) (APA Psycinfo Database Record (c) 2016
+
+APA, all rights reserved) p
+aper 15]]
+
+PCA
+16
+Dadas p variables originales: 
+Se desean encontrar q < p variables que sean combinaciones lineales de las p originales, 
+recogiendo la mayor parte de la información o variabilidad de los datos.
+Si las variables originales no están correlacionadas, entonces no tiene sentido realizar un 
+Análisis de Componentes Principales.
+Se hallan p componentes principales
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'las unifics']
+
+PCA
+17
+PCA
+Interactive PCA Example
+
+[Descripción de la imagen: una captura de pantalla de una línea de puntos púrpura y azul con un fondo blanco]
+
+PCA - VARIABILIDAD
+18
+¿Cómo sabemos que la variable “es principal”?
+Se toma la característica que maximiza la variabilidad, es un buen factor para diferenciar 
+objetos en un conjunto de datos.
+Ejemplo: 
+Se tiene un conjunto de datos de vehículos.
+●
+Característica 1: Cantidad de ruedas 
+●
+Característica 2: Longitud del vehículo (Mayor variabilidad)
+
+[Descripción de la imagen: un fondo blanco con las palabras avaricia]
+
+PCA - TRANSFORMACIÓN
+19
+Sea Xnxp una matriz con:
+●
+n elementos de la población  
+●
+p variables 
+Sea realiza una transformación de X de forma tal que la varianza del nuevo conjunto de 
+variables sea máxima
+
+[Descripción de la imagen: un fondo blanco con las palabras 'catransmo ']
+
+LA PRIMERA COMPONENTE
+20
+Sea        la primera componente principal, y un vector de cargas
+Nota: si las variables están estandarizadas no es necesario restar la media
+
+[Descripción de la imagen: la primera comante sea dispa]
+
+CARGAS
+21
+El conjunto de componentes principales es una combinación lineal de las variables originales.
+Se desea encontrar la carga                                     y la                     resulte máxima
+Los coeﬁcientes                                                         se denominan cargas (loadings)
+¿Cómo hallar las cargas? 
+Son los autovectores de la matriz de covarianzas (o correlaciones)
+
+[Descripción de la imagen: capa contoo contosos]
+
+BUSCAMOS AyA
+22
+Para hallar las componentes principales se deben 
+calcular 
+los 
+autovectores 
+vi 
+correspondientes a las cargas
+Entonces las componentes se calculan como:
+
+[Descripción de la imagen: bucama para labores alimenticias]
+
+23
+El autovalor         se corresponde con la varianza de la componente i 
+BUSCAMOS AyA
+Ordenando los autovalores de mayor a menor se logra reducir la dimensionalidad 
+tomando los autovectores correspondientes a los primeros q autovalores, que son los que 
+proveen mayor información (en términos de variabilidad).
+
+[Descripción de la imagen: un fondo blanco con las palabras negocio]
+
+05.3
+COVARIANZA vs 
+CORRELACIÓN
+24
+
+[Descripción de la imagen: un fondo blanco y amarillo con las palabras covarias Coreion]
+
+COVARIANZA vs CORRELACIÓN
+25
+Si alguna de las variables toma valores mayores a las demás entonces tendrá mayor 
+varianza, pero no quiere decir que tenga mayor variabilidad.
+Cuando las escalas de medida de las variables son muy distintas, la maximización de la 
+varianza depende decisivamente de estas escalas de medida y las variables con valores 
+más grandes tendrán más peso en el análisis.
+
+[Descripción de la imagen: un fondo blanco con las palabras covaria y correcion]
+
+COVARIANZA vs CORRELACIÓN
+26
+Para evitar el problema se deben estandarizar las variables
+cuando calculamos las componentes principales
+De esta manera las magnitudes de los valores numéricos de las variables originales serán 
+comparables
+
+[Descripción de la imagen: un fondo blanco con las palabras covaria y correcion]
+
+COVARIANZA vs CORRELACIÓN
+27
+Esto equivale a aplicar el análisis de componentes principales utilizando la
+matriz de correlaciones en lugar de la matriz de covarianzas.
+Cuando las variables tienen las mismas unidades, ambas alternativas son posibles.
+
+[Descripción de la imagen: covaria vs coreacion]
+
+EJERCICIO
+28
+Sea la matriz de correlaciones:
+correspondiente 
+a 
+las 
+variables 
+aleatorias  
+Ejercicio: 
+Escribir las variables                     de componentes principales y calcular qué 
+proporción de la varianza total explica cada componente.
+
+[Descripción de la imagen: un diagrama de la ecuación de un polinomio]
+
+29
+Sabemos que 
+El primer autovector es                                           que se corresponde con el mayor autovalor 
+El mayor autovalor es la varianza de
+SOLUCIÓN
+
+[Descripción de la imagen: solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution]
+
+30
+SOLUCIÓN
+AUTOVALORES
+AUTOVECTORES
+
+[Descripción de la imagen: solución de la solución de la solución de la solución de la solución de la solución de la solución de la solución de la solución de la solución | Transcripción de la imagen: SOLUCIÓN
+
+AUTOVALORES A1 = 6, 492 = 3, 13 =2
+
+AUTOVECTORES
+—0.40 —0.57 —0.70
+—0.81 0.57 0
+
+V =
+
+—0.40 —0.57 0.70]
+
+Y, = —0.40X; — 0.40X, —0.81 X3
+
+Y; = 0.70X; — 0.70.X5
+
+30]]
+
+SOLUCIÓN
+31
+AUTOVALORES
+La proporción de la varianza de cada componente es: 
+De Y1 = 6/11 
+De Y2 = 3/11 
+De Y3 = 2/11
+
+[Descripción de la imagen: un fondo blanco con las palabras solion y un fondo negro con las palabras solion]
+
+PROCEDIMIENTO
+32
+1.
+Construir la matriz X a partir del dataset, poniendo las variables en 
+columnas  
+2.
+Estandarizar las variables X
+3.
+Calcular la matriz de correlaciones Sx
+4.
+Calcular AyA
+5.
+Ordenar los autovalores de mayor a menor 
+6.
+Construir la matriz V con los autovectores con mayor autovalor 
+7.
+Calcular las nuevas variables Y como combinación lineal de las originales
+
+[Descripción de la imagen: procedimiento cono]
+
+05.4
+INTERPRETACIÓN
+33
+
+[Descripción de la imagen: un fondo blanco y amarillo con las palabras interacion]
+
+INTERPRETACIÓN DE PC1
+34
+EJEMPLO: 
+Los datos de una encuesta de presupuestos familiares en distintas provincias, presentan 
+los gastos medios de las familias utilizando seis variables: 
+●
+X1: alimentación 
+●
+X2: vestido y calzado
+●
+X3: vivienda
+●
+X4: mobiliario doméstico
+●
+X5: salud
+●
+X6: educación y cultura
+
+[Descripción de la imagen: un fondo blanco con las palabras interacione d'e]
+
+INTERPRETACIÓN DE PC1
+35
+Calculamos el primer autovector y obtenemos PC1:
+¿Qué información nos brinda?
+
+[Descripción de la imagen: interacione df calusol prievor dejes]
+
+INTERPRETACIÓN DE PC1
+36
+Calculamos el primer autovector y obtenemos PC1:
+●
+Y1 es una suma ponderada de todos los gastos, con mayor carga, de las variables:
+X1 
+alimentación, 
+X5 
+salud 
+y 
+X6 
+educación. 
+●
+El menor peso lo tiene el gasto en X2 vestido y calzado.
+
+[Descripción de la imagen: a calculao de calculao de calculao de calculaos]
+
+37
+INTERPRETACIÓN DE PC1
+Si calculamos los valores de Y1 para cada provincia y las ordenamos por esta nueva variable 
+quedan ordenadas por sus gastos.
+Explicación inmediata: muestra la capacidad de gasto
+
+[Descripción de la imagen: un fondo blanco con las palabras interacione d ']
+
+INTERPRETACIÓN DE PC1
+38
+●
+Si la carga (coeﬁciente o loading ) de una variable en la componente principal es 
+positiva, signiﬁca que la variable y la componente tienen una correlación positiva.
+●
+Si la carga es negativa, la variable se correlaciona en forma negativa con la primera 
+componente.
+●
+La primera componente representa un ı́ ndice (o una caracterı́ stica) por el cual se 
+pueden ordenar los registros.
+
+[Descripción de la imagen: interacione df1]
+
+05.5
+EJERCICIO CHATBOT
+39
+
+[Descripción de la imagen: un fondo blanco y amarillo con las palabras ericchabot]
+
+EJEMPLO
+Una compañía B2B brinda soluciones de servicio al cliente a través del desarrollo de 
+chatbots. 
+Se desea optimizar el ﬂujo del chatbot con el objetivo de:
+●
+automatizar el proceso de ventas de un cliente
+●
+recurrir a asistencia humana lo menos posible
+●
+mejorar la experiencia de usuario
+ 
+40
+
+[Descripción de la imagen: emo emoco emoco emoco emoco emoco emoco emoco emoco emoco emoco]
+
+EJEMPLO
+41
+ Para ello se recopilan datos sobre las interacciones de los usuarios con el chatbot:
+1.
+Longitud del input del usuario (cantidad de palabras/tokens) 
+2.
+Longitud del mensaje enviado por el chatbot (cantidad de palabras/tokens) 
+3.
+Índice de complejidad de la respuesta del chatbot 
+4.
+Tiempo de respuesta
+5.
+Frecuencia de solicitudes de input hechas por el bot al usuario 
+6.
+Satisfacción del usuario (1 al 10) 
+7.
+Frecuencia de input types (text, images, voice, emojis) 
+8.
+Cantidad de interacciones del usuario por sesión 
+9.
+Número de excepciones 
+10.
+Solicitudes de asistencia humana
+
+[Descripción de la imagen: emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo]
+
+EJEMPLO
+42
+Se cuenta con un conjunto de datos con:
+●
+10 variables o atributos (columnas)
+●
+26 observaciones (ﬁlas) 
+El conjunto de datos es multivariado 
+¿Cuáles son las variables que más inﬂuyen en la satisfacción del usuario?
+
+[Descripción de la imagen: emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo emo]
+
+BOXPLOT
+43
+
+[Descripción de la imagen: un gráfico con el gráfico de la caja y el gráfico de la caja | Transcripción de la imagen: BOXPLOT
+
+3500
+
+3000
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+Features
+
+—
+
+43]]
+
+BOXPLOT 
+44
+Si estandarizamos las variables
+
+[Descripción de la imagen: parcela de caja para la parcela de caja]
+
+BIPLOT
+45
+Valores de las Componentes Principales 1 y 2
+
+[Descripción de la imagen: un gráfico con una línea de datos y una línea de datos | Transcripción de la imagen: BIPLOT
+
+Valores de las Componentes Principales 1 y 2
+
+Rappi
+k Cablevisión
+.
+151
+Mostaza DirectTV
+Sub$vay .
+pedidosYa
+C
+1.0 1
+M(Dº"a¿ds ¡elecentro
+Starbug<s
+0.5 +
+Burger gng
+|
+N E smttactón Human Assistante
+[ Mensages
+000 Comple; —
+- of U5[er Input
+Sweet E
+Leve eptions
+Akiatra ]
+Length of Chatbot Response * ¡plan
+= " - .
+o RevingSton Garo
+.
+Fila
+Za
+Equfs
+—1.0 + User Prompts
+. .
+Topper . Personal
+.
+.
+N|k&:lldas
+- A
+=I Movistar
+T T T T T T
+—0.5 0.0 0.5 1.0 ES 2.0
+
+45]]
+
+BIPLOT
+46
+Índice a partir del cálculo 
+de la PC1
+
+[Descripción de la imagen: un gráfico con un gráfico de barras y un gráfico de barras | Transcripción de la imagen: PCAl per company
+
+BIPLOT
+
+Índice a partir del cálculo
+de la PCI
+
+d I TE TDT
+
+¡E 46]]
+
+EJERCICIO OBLIGATORIO
+47
+Utilizar una librerı́ a para calcular las componentes principales e interpretar la PC1 (gráﬁca 
+y teóricamente)
+El conjunto de datos europe.csv corresponde a caracterı́ sticas económicas, sociales y 
+geográﬁcas de 28 paı́ ses de Europa. Las variables son:
+●
+Country : Nombre del paı́ s.
+●
+Area: área.
+●
+GDP: producto bruto interno.
+●
+Inﬂation: inﬂación anual.
+●
+Life.expect: expectativa de vida media en años.
+●
+Military: presupuesto militar.
+●
+Pop.growth: tasa de crecimiento poblacional.
+●
+Unemployment: tasa de desempleo.
+
+[Descripción de la imagen: un fondo blanco con las palabras egico]
+

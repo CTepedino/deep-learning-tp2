@@ -1,0 +1,118 @@
+PROBABILIDAD Y ESTADISTICA   93.24                SEGUNDO  PARCIAL​ 24/06/19 
+INDICACIONES: Indique claramente apellido, nombre y número de legajo en cada hoja que entregue. No solicite indicaciones ni aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución. Exprese con 3 decimales las probabilidades que se pida 
+calcular.    
+SUERTE...                                DURACION : 2 HORAS. 
+ 
+APELLIDO Y NOMBRE : ...............................…...................................................................... Nro de Legajo :................…... 
+ 
+ 
+Escriba la respuesta de cada ítem de este examen en los recuadros indicados. No entregue las hojas en las que 
+realice los cálculos para arribar a esas respuestas.  
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (1 punto) La densidad de probabilidad conjunta del par de variables aleatorias continuas X e Y es f(x,,y) = 60 x2 y  
+en el interior del triángulo de vértices (0,0), (1,0) y (0,1) del plano xy y nula por fuera de él. Calcule P( X+Y < 1/2).  
+Exprese el resultado como un número racional en el siguiente recuadro. 
+ 
+ 
+2. (1 punto) El espacio de estados de una cadena de Markov es el conjunto 
+{1 2 3}. Sea X(n) el estado del proceso en el instante n.  La figura adjunta 
+muestra el diagrama de transiciones de esta cadena.  
+Sea pn = P(X(n) = 2 / X(0) = 2). Si α = 0.2, β = 0.3 y γ = 0.1 la cadena es 
+regular. Obtenga 
+. 
+Exprese el resultado como un número racional en el siguiente recuadro. 
+ 
+ 
+3. (1 punto) Cierto componente es crítico para la operación de un sistema eléctrico y debe ser reemplazado en cuanto 
+se produce una falla en el componente. Suponga que el tiempo de vida del componente hasta la falla es una variable 
+aleatoria continua con distribución exponencial de media 1000 hs. Al producirse la falla el componente se cambia y se 
+reemplaza por uno nuevo. Puede suponerse que el tiempo de recambio es despreciable y que los tiempos entre fallas 
+son independientes. Se dispone de 4 de estos componentes para realizar la reposición del componente que falla. 
+Calcule la probabilidad de que el tiempo de operación exceda 6000 horas. Exprese el resultado redondeando en tres 
+decimales en el siguiente recuadro. 
+ 
+ 
+4. (1 punto) Una consultora realizó una encuesta online consiguiendo la opinión de 1060 personas mayores a 18 años 
+sobre la situación económica. Según el informe, el 30% de los encuestados opinó que el responsable de la situación 
+económica presente es principalmente el gobierno actual. Obtenga un intervalo de confianza del 95% para la 
+proporción de la población adulta del país que opina de la misma manera. Exprese el resultado en la forma (extremo 
+izquierdo, extremo derecho), redondeando en tres decimales, en el siguiente recuadro.
+
+[Descripción de la imagen: un diagrama del diagrama del circuito]
+
+5. (1 punto) En cada período de tiempo (cada día por ejemplo) una cierta acción de mercado de valores puede 
+disminuir su precio una unidad con probabilidad 0.3, mantener su precio con probabilidad 0.3 o aumentar una unidad 
+con probabilidad 0.4. Asumiendo que los cambios de precio en períodos de tiempo sucesivos son independientes, 
+calcule la probabilidad de que después de 100 períodos el precio de la acción haya subido más de 15 unidades. 
+Exprese su resultado redondeando en tres decimales en el siguiente recuadro.  
+ 
+ 
+ 
+6. (1 punto) Se desea estimar la probabilidad p de ocurrencia de cierto suceso A a partir de la frecuencia relativa de 
+ocurrencia medida al realizar n repeticiones independientes del experimento en que puede ocurrir A. Llamemos E al 
+error en la estimación, esto es, la diferencia en valor absoluto entre p y la frecuencia relativa f. Se pone como 
+condición que la probabilidad de que el error no supere el valor ε, sea mayor que α. Determine el mínimo valor de n si 
+ε = 0.01, α = 0.99 y p = 0.5. Suponga que se cumple la condición para aproximar usando el teorema central del límite. 
+Exprese su resultado en el siguiente recuadro. 
+ 
+ 
+7. (1 punto) Un proveedor de lámparas de bajo consumo asegura que la duración de las mismas puede suponerse 
+una variable aleatoria continua con distribución normal de media de 2000 horas y con una desviación estándar de 400 
+horas. Un cliente tiene cierta sospecha de que la duración promedio de las lámparas es inferior a lo declarado por el 
+proveedor. Se ponen a prueba 36 lámparas y la suma de sus duraciones da 67200 horas. Calcule el valor P de la 
+prueba de hipótesis con que puede analizarse este resultado muestral. Exprese su resultado redondeando en tres 
+decimales en el siguiente recuadro.  
+ 
+ 
+8. (2 puntos) Para estimar la probabilidad p de un suceso A se realizan dos series de experimentos independientes y 
+en ambas se mide la frecuencia relativa de ocurrencia de A. En la primera se realizaron n repeticiones del 
+experimento E donde puede ocurrir A y se midieron r1 ocurrencias; en la segunda se consideraron 2 n  repeticiones 
+del experimento E y se midieron r2 ocurrencias. Se consideran tres estimadores de p:  
+​
+​
+​
+ 
+Determine los valores de α y β de manera tal que 
+sea un estimador de p  insesgado y de mínima varianza. 
+Escriba su respuesta en los siguientes recuadros como números racionales. 
+ 
+  
+ 
+ 
+9. (1 punto) Se supone que un procedimiento para producir cemento dará por resultado que tenga una resistencia a la 
+compresión de 5000 Kg/cm2 con una desviación standard de 120 Kg/cm2. Se sospecha que esa resistencia promedio 
+es menor a lo indicado. Para poner a prueba la hipótesis nula H0: µ = 5000 frente a la  alternativa  H1: µ < 5000 se 
+analiza una muestra de 50 probetas de hormigón a las que se somete a ensayo. Se rechaza la hipótesis nula si la 
+media muestral es menor que 4970 Kg/cm2. Calcule la probabilidad de cometer error tipo II si µ = 4950. Escriba su 
+respuesta, redondeando en tres decimales, en el siguiente recuadro.
+
+[Descripción de la imagen: el texto en el cuadro de texto se muestra en la imagen]
+
+[Descripción de la imagen: una alfombra de rayas blancas y negras con un borde blanco]
+

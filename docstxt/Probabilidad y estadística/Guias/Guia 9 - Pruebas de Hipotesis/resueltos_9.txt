@@ -1,0 +1,2646 @@
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Generalidades
+de
+Prueba
+de
+Hip
+ótesis
+En
+estadísti a,
+se
+denomina
+p
+obla ión
+al
+univ
+erso
+de
+ asos
+p
+osibles.
+Este
+término,
+ omo
+m
+u 
+hos
+otros,
+tienen
+sus
+orígenes
+en
+la
+apli a ión
+de
+la
+estadísti a
+al
+estudio
+de
+ ara terís-
+ti as
+demográ as.
+Sin
+em
+bargo,
+no
+se
+apli a
+sólo
+a
+individuos,
+sino
+que
+se
+utiliza
+en
+forma
+m
+u 
+ho
+más
+amplia.
+Lamen
+tablemen
+te,
+en
+general
+no
+ ono
+ emos
+exa tamen
+te
+la
+p
+obla ión.
+De
+he 
+ho,
+la
+p
+obla-
+ ión
+puede
+ser
+innita.
+P
+or
+lo
+tan
+to,
+se
+suele
+inferir
+informa ión
+a er a
+de
+la
+p
+obla ión
+a
+partir
+de
+la
+observ
+a ión
+de
+una
+muestr
+a
+de
+tamaño
+nito
+de
+la
+misma.
+Y
+a
+hemos
+visto,
+p
+or
+ejemplo,
+algunas
+formas
+de
+estimar
+parámetros
+de
+la
+p
+obla ión
+a
+partir
+de
+una
+m
+uestra.
+Una
+hip
+ótesis
+estadísti 
+a
+es
+una
+arma ión
+sobre
+parámetros
+de
+una
+p
+obla ión.
+Una
+prueb
+a
+de
+hip
+ótesis
+ onsiste
+en
+una
+forma
+de
+ on
+trastar
+v
+arias
+hip
+ótesis
+(m
+utuamen
+te
+ex luy
+en
+tes)
+en
+tre
+sí,
+ev
+aluando
+su
+p
+osible
+v
+era idad.
+Dado
+que,
+en
+general,
+no
+ ono
+ emos
+ ompletamen-
+te
+la
+p
+obla ión,
+n
+un a
+p
+o
+demos
+tener
+ ertidum
+bre
+total
+sobre
+la
+v
+era idad
+de
+un
+hip
+ótesis
+estadísti a.
+A
+quí
+nos
+ on en
+traremos
+en
+pruebas
+de
+hip
+ótesis
+binarias,
+es
+de ir,
+en
+las
+ uales
+se
+ on-
+trastan
+sólo
+dos
+hip
+ótesis.
+En
+parti ular,
+en
+las
+apli a iones
+se
+tiene
+in
+terés
+en
+p
+oner
+a
+prueba
+la
+v
+era idad
+de
+ ierta
+hip
+ótesis
+parti ular,
+la
+ ual
+se
+denomina
+hip
+ótesis
+nula
+(H0
+).
+P
+ara
+ello,
+se
+la
+ ompara
+ on
+una
+hip
+ótesis
+ omplemen
+taria
+o
+hip
+ótesis
+alternativa
+(H1
+).
+El
+análisis
+de
+la
+v
+era idad
+de
+am
+bas
+hip
+ótesis
+se
+realiza
+sobre
+la
+base
+de
+los
+datos
+de
+una
+o
+v
+arias
+m
+uestras.
+Nosotros
+nos
+enfo
+ aremos
+en
+los
+ asos
+en
+que
+se
+utiliza
+una
+sola
+m
+ues-
+tra.
+P
+ara
+fa ilitar
+el
+análisis,
+los
+datos
+de
+la
+m
+uestra
+se
+suelen
+resumir
+en
+un
+solo
+v
+alor
+denominado
+estadísti 
+o
+de
+prueb
+a
+(Λ ).
+Basados
+en
+en
+el
+v
+alor
+del
+estadísti o
+de
+prueba
+para
+una
+m
+uestra
+parti ular,
+se
+toma
+una
+de isión:
+a eptar
+o
+re 
+hazar
+la
+v
+era idad
+de
+la
+hip
+ótesis
+n
+ula.
+La
+hip
+ótesis
+se
+re 
+haza
+ uando Λ ∈R
+,
+siendo R
+una
+región
+pre-determinada
+de
+re 
+hazo
+ ono
+ ida
+ omo
+la
+r
+e
+gión
+ ríti 
+a.
+Dado
+que
+n
+un a
+se
+puede
+tener
+una
+ erteza
+total,
+se
+pueden
+ ometer
+distin
+tos
+tip
+os
+de
+errores:
+H0
+v
+erdadera
+H0
+falsa
+Se
+a epta H0
+OK
+Error
+Tip
+o
+I
+I
+Se
+re 
+haza H0
+Error
+Tip
+o
+I
+OK
+Una
+forma
+de
+plan
+tear
+la
+prueba
+de
+hip
+ótesis
+es
+jando
+un
+v
+alor α
+(p
+equeño)
+para
+la
+máxima
+probabilidad
+admisible
+de
+ ometer
+un
+Error
+Tip
+o
+I.
+A
+este
+v
+alor
+se
+lo
+denomina
+el
+nivel
+de
+signi 
+a ión
+de
+la
+prueba.
+Dado α,
+se
+puede
+determinar
+la
+región
+ ríti a R(α)
+tal
+que
+PH0
+
+Λ ∈R(α)
+≤α,
+donde
+la
+probabilidad
+se
+ev
+alúa
+en
+el
+ aso
+en
+que
+la
+hip
+ótesis
+n
+ula
+sea
+v
+erdadera.
+Fijada
+la
+región
+ ríti a,
+se
+puede
+ ometer
+un
+Error
+Tip
+o
+I
+I.
+La
+probabilidad
+de
+ ometer
+este
+error
+se
+suele
+denominar
+ on
+la
+letra β
+.
+Se
+ ono
+ e
+ omo
+p
+oten ia
+de
+la
+prueb
+a
+de
+hip
+ótesis
+a 1 −β
+.
+Dada
+una
+m
+uestra,
+se
+puede
+ al ular
+un
+v
+alor
+observ
+ado λobs
+del
+estadísti o Λ .
+Se
+dene
+el
+valor p
+de
+la
+prueba
+ omo
+la
+probabilidad
+de
+que Λ
+sea
+p
+eor
+que λobs
+ uando H0
+es
+v
+erdadera.
+P
+or
+p
+eor
+queremos
+de ir
+que
+ha e
+más
+sosp
+e 
+hoso
+que
+la
+hip
+ótesis
+n
+ula
+sea
+v
+erdadera.
+La
+hip
+ótesis
+n
+ula
+se
+re 
+haza
+si
+el
+v
+alor p
+es
+menor
+que
+el
+niv
+el
+de
+signi a ión
+α.
+1
+
+[Descripción de la imagen: un documento con el texto en español | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Generalidades de Prueba de Hipótesis
+
+En estadística, se denomina población al universo de casos posibles. Este término, como
+muchos otros, tienen sus orígenes en la aplicación de la estadística al estudio de caracterís-
+ticas demográficas. Sin embargo, no se aplica sólo a individuos, sino que se utiliza en forma
+mucho más amplia.
+
+Lamentablemente, en general no conocemos exactamente la población. De hecho, la pobla-
+ción puede ser infinita. Por lo tanto, se suele inferir información acerca de la población a
+partir de la observación de una muestra de tamaño finito de la misma. Ya hemos visto, por
+ejemplo, algunas formas de estimar parámetros de la población a partir de una muestra.
+
+Una hipotesis estadística es una afirmación sobre parámetros de una población. Una pruebda
+de hipótesis consiste en una forma de contrastar varias hipótesis (mutuamente excluyentes)
+entre sí, evaluando su posible veracidad. Dado que, en general, no conocemos completamen-
+te la población, nunca podemos tener certidumbre total sobre la veracidad de un hipótesis
+estadística.
+
+Aquí nos concentraremos en pruebas de hipótesis binarias, es decir, en las cuales se con-
+trastan sólo dos hipótesis. En particular, en las aplicaciones se tiene interés en poner a
+prueba la veracidad de cierta hipótesis particular, la cual se denomina hipótesis nula (Ho).
+Para ello, se la compara con una hipótesis complementaria o hipótesis alternativa (H1). El
+análisis de la veracidad de ambas hipótesis se realiza sobre la base de los datos de una o
+varias muestras. Nosotros nos enfocaremos en los casos en que se utiliza una sola mues-
+tra. Para facilitar el análisis, los datos de la muestra se suelen resumir en un solo valor
+denominado estadístico de prueba (A). Basados en en el valor del estadístico de prueba
+para una muestra particular, se toma una decisión: aceptar o rechazar la veracidad de la
+hipótesis nula. La hipótesis se rechaza cuando A € R, siendo R una región pre-determinada
+de rechazo conocida como la región crítica.
+
+Dado que nunca se puede tener una certeza total, se pueden cometer distintos tipos de
+errores:
+
+— verdadera |7 alsa —
+Error Tipo TI
+Enror Tipo 1
+
+Una forma de plantear la prueba de hipótesis es fijando un valor a (pequeño) para la
+máxima probabilidad admisible de cometer un Error Tipo I. A este valor se lo denomina
+el nivel de significación de la prueba. Dado a, se puede determinar la región crítica R
+tal que
+
+PH, <A € R(º¿)) <a,
+
+donde la probabilidad se evalúa en el caso en que la hipótesis nula sea verdadera. Fijada la
+región crítica, se puede cometer un Error Tipo II. La probabilidad de cometer este error se
+suele denominar con la letra $. Se conoce como potencia de la prueba de hipótesis a 1 — 6.
+
+Dada una muestra, se puede calcular un valor observado Aobs del estadístico A. Se define
+el valor p de la prueba como la probabilidad de que A sea “peor” que Xobs Cuando Hy es
+verdadera. Por “peor” queremos decir que hace más sospechoso que la hipótesis nula sea
+verdadera. La hipótesis nula se rechaza si el valor p es menor que el nivel de significación
+a.]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Prueba
+de
+hip
+ótesis
+para
+la
+media
+-
+Generalidades
+Sea X
+una
+v
+ariable
+aleatoria
+ on
+media µ.
+Existen
+tres
+tip
+os
+de
+pruebas
+de
+hip
+ótesis:
+1.
+De
+dos
+ olas:
+Prueba:
+H0 : µ = µ0
+µ0
+es
+un
+v
+alor
+dado
+H1 : µ ̸= µ0
+Condi ión
+de
+re 
+hazo: Λ ̸∈(λl, λu) ⊂R.
+Si µ = µ0
+(la
+hip
+ótesis
+n
+ula
+es
+ ierta),
+Eµ0[Λ] ∈(λl, λu).
+Probabilidad
+de
+Error
+Tip
+o
+I
+I: β(µ1) = Pµ1 (Λ ∈(λl, λu)) ,
+donde Pµ1(·)
+denota
+la
+probabilidad
+ uando µ = µ1
+.
+Ha
+y
+ in o
+v
+alores
+ ara terísti os:
+• β(µ0) = 1 −α.
+• β(µl) = β(µu) ≈0.5
+si
+la
+distribu ión
+de Λ
+es
+simétri a.
+• β(−∞) = β(+∞) = 0 .
+La
+grá a
+de β(µ1)
+vs. µ1
+se
+ ono
+ e
+ omo
+la
+ urva
+ 
+ar
+a terísti 
+a.
+P
+or
+otro
+lado,
+se
+llama
+ urva
+de
+p
+oten ia
+a
+la
+de 1 −β(µ1)
+vs. µ1
+.
+V
+alor p : p(λobs) = Pµ0 (|Λ −Eµ0[Λ]| > |λobs −Eµ0[Λ]|) .
+2.
+De
+ ola
+dere 
+ha:
+Prueba:
+H0 : µ ≤µ0
+µ0
+es
+un
+v
+alor
+dado
+H1 : µ > µ0
+Condi ión
+de
+re 
+hazo: Λ > λu
+.
+Probabilidad
+de
+Error
+Tip
+o
+I
+I: β(µ1) = Pµ1 (Λ ≤λu).
+Ha
+y
+tres
+v
+alores
+ ara te-
+rísti os:
+• β(µ0) = 1 −α.
+• β(λu) = 0.5
+si
+la
+distribu ión
+de Λ
+es
+simétri a.
+• β(+∞) = 0 .
+V
+alor p : p(λobs) = Pµ0 (Λ > λobs) .
+3.
+De
+ ola
+izquierda:
+Prueba:
+H0 : µ ≥µ0
+µ0
+es
+un
+v
+alor
+dado
+H1 : µ < µ0
+Condi ión
+de
+re 
+hazo: Λ < λl
+.
+Probabilidad
+de
+Error
+Tip
+o
+I
+I: β(µ1) = Pµ1 (Λ ≥λl).
+Ha
+y
+tres
+v
+alores
+ ara te-
+rísti os:
+• β(µ0) = 1 −α.
+• β(λl) = 0.5
+si
+la
+distribu ión
+de Λ
+es
+simétri a.
+• β(−∞) = 0 .
+V
+alor p : p(λobs) = Pµ0 (Λ < λobs) .
+2
+
+[Descripción de la imagen: exor de la pregunta de la pregunta de la pregunta de la pregunta de la pregunta de la pregunta de la pregunta de | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Prueba de hipótesis para la media - Generalidades
+Sea X una variable aleatoria con media 1. Existen tres tipos de pruebas de hipótesis:
+
+1. De dos colas:
+m Prueba:
+
+Ho: 4 = 0 440 es un valor dado
+H: E p
+
+m Condición de rechazo: A £ (A7, Au) C R. Si 4 = po (la hipótesis nula es cierta),
+Eno[A] € (1, Au).
+= Probabilidad de Error Tipo II: (1) = P., (A E (A1,A1)), donde P,,, (-) denota
+la probabilidad cuando u = u1 . Hay cinco valores característicos:
+e B(1) = Á(u) < 0.5 si la distribución de A es simétrica.
+e B(—00) = A(+00) =0.
+La gráfica de 8(11) vs. y41 se conoce como la curva característica. Por otro lado,
+se llama curva de potencia a la de 1 — 0(1) vs. p1-
+
+= Valor p: p(Novs) = Pue (A — Ejo [A]] > [obs — En [AJ)-
+
+2. De cola derecha:
+Prueba:
+
+Ho: H < o 440 es un valor dado
+H1: 4> o
+
+Condición de rechazo: A > Ay.
+
+Probabilidad de Error Tipo II: 6(41) = Pu, (A < Au). Hay tres valores caracte-
+rísticos:
+
+e B(A.) = 0.5 si la distribución de A es simétrica.
+
+e B(400) =0.
+= Valor p: p(Aobs) = Puq (A > Nobs)-
+
+3. De cola izquierda:
+m Prueba:
+
+Ho: 4 > o 440 es un valor dado
+Hi: p< po
+
+m Condición de rechazo: A < A:.
+= Probabilidad de Error Tipo II: 8(41) = P,,, (A > A1). Hay tres valores caracte-
+rísticos:
+e B(A) = 0.5 si la distribución de A es simétrica.
+e 8(—00) =0.
+= Valor p: p(Aors) = Puq (A < Nobs)-]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Prueba
+de
+hip
+ótesis
+para
+la
+media
+ on
+v
+arianza
+ ono
+ ida
+Asumamos
+que
+la
+m
+uestra X1, X2, · · · , Xn
+de
+una
+p
+obla ión
+puede
+ onsiderarse
+un
+ onjun
+to
+de n
+v
+ariables
+aleatorias
+i.i.d.
+normales
+ on
+media µ
+des ono
+ ida
+y
+v
+arianza σ2
+ ono
+ ida.
+Dos
+estadísti os
+de
+prueba
+habituales
+son
+la
+media
+m
+uestral ¯X
+y
+Z =
+¯X −µ0
+σ
+√n
+.
+Dado
+que
+es
+fá il
+pasar
+de
+uno
+estadísti o
+a
+otro,
+aquí
+sólo
+presen
+taremos
+los
+resultados
+usando Z
+.
+Si α
+es
+el
+niv
+el
+de
+signi a ión,
+las
+pruebas
+de
+hip
+ótesis
+quedan:
+Prueba
+de
+Condi ión
+Prob.
+Error
+Tip
+o
+I
+I
+V
+alor p
+Hip
+ótesis
+de
+re 
+hazo
+β(µ1)
+p(zobs)
+H0 : µ = µ0
+Z < −z1−α
+2
+Φ
+
++z1−α
+2 + µ0−µ1
+σ
+√n
+
+o
+−
+2 (1 −Φ (zobs))
+H1 : µ ̸= µ0
+Z > +z1−α
+2
+Φ
+
+−z1−α
+2 + µ0−µ1
+σ
+√n
+
+H0 : µ ≤µ0
+Z > +z1−α
+Φ
+
++z1−α + µ0−µ1
+σ
+√n
+
+1 −Φ (zobs)
+H1 : µ > µ0
+H0 : µ ≥µ0
+Z < −z1−α
+1 −Φ
+
+−z1−α + µ0−µ1
+σ
+√n
+
+Φ (zobs)
+H1 : µ < µ0
+Gra ias
+al
+T
+eorema
+Cen
+tral
+del
+Límite,
+estas
+e ua iones
+son
+v
+álidas
+aunque
+las
+v
+a-
+riables
+aleatorias
+no
+sean
+normales
+si n
+es
+grande.
+Sean
+o
+no
+normales
+las
+v
+ariables
+aleatorias,
+si n
+es
+grande,
+las
+mismas
+ ondi iones
+de
+re 
+hazo
+y
+fórm
+ulas
+para
+el
+v
+alor p
+se
+pueden
+utilizar
+aún
+en
+el
+ aso
+que
+la
+v
+arianza
+sea
+des ono
+ ida.
+En
+este
+ aso,
+el
+estadísti o
+de
+prueba
+que
+se
+utiliza
+es
+Z =
+¯X −µ0
+S
+√n
+.
+3
+
+[Descripción de la imagen: el cuadro de coeficientes y coeficientes en un cuadro de coeficientes | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Prueba de hipótesis para la media con varianza conocida
+
+Asumamos que la muestra X1, Xo, - -- , X, de una población puede considerarse un conjunto
+, s s
+
+de n variables aleatorias i.i.d. normales con media y, desconocida y varianza 0? conocida.
+
+Dos estadísticos de prueba habituales son la media muestral X y
+
+Dado que es fácil pasar de uno estadístico a otro, aquí sólo presentaremos los resultados
+usando Z. Si a es el nivel de significación, las pruebas de hipótesis quedan:
+
+Prueba de | Condición | Prob. Error Tipo II Valor p
+Hipótesis | de rechazo PlZobs)
+
+Gracias al Teorema Central del Límite, estas ecuaciones son válidas aunque las va-
+riables aleatorias no sean normales si n es grande.
+
+Sean o no normales las variables aleatorias, si n es grande, las mismas condiciones
+de rechazo y fórmulas para el valor p se pueden utilizar aún en el caso que la
+varianza sea desconocida. En este caso, el estadístico de prueba que se utiliza es
+7— X — 0
+S
+m]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Prueba
+de
+hip
+ótesis
+para
+una
+prop
+or ión
+Sea q
+la
+probabilidad
+des ono
+ ida
+de
+un
+ev
+en
+to
+dado.
+Otra
+forma
+de
+en
+tender q
+es
+ omo
+la
+prop
+or ión
+de
+la
+p
+obla ión
+que
+satisfa e
+ ierta
+propiedad.
+Sea X
+el
+n
+úmero
+de
+individuos
+ on
+la
+propiedad
+indi ada
+de
+una
+m
+uestra
+de n
+ asos
+indep
+endien
+tes.
+Si n ≪N
+,
+siendo
+N
+el
+tamaño
+de
+la
+p
+obla ión, X ∼
+Binomial(n, q).
+Si n
+es
+grande,
+p
+or
+el
+T
+eorema
+Cen
+tral
+del
+Límite,
+la
+distribu ión
+de X
+es
+apro
+ximadamen
+te
+normal
+ on
+media µ = nq
+y
+v
+arianza
+σ2 = nq(1 −q).
+T
+res
+estadísti os
+de
+prueba
+p
+osibles
+son X
+, ˆq = X/n
+y
+Z =
+ˆq −q0
+q
+q0(1−q0)
+n
+.
+Dado
+que
+es
+sen illo
+pasar
+de
+un
+estadísti o
+a
+otro,
+sólo
+presen
+taremos
+resultados
+ orres-
+p
+ondien
+tes
+a Z
+.
+Si n
+es
+grande
+(> 100 ),
+gra ias
+al
+T
+eorema
+Cen
+tral
+del
+Límite
+las
+pruebas
+de
+hip
+ótesis
+para
+un
+niv
+el
+de
+signi a ión α
+quedan:
+Prueba
+de
+Condi ión
+Prob.
+Error
+Tip
+o
+I
+I
+V
+alor p
+Hip
+ótesis
+de
+re 
+hazo
+β(q1)
+p(zobs)
+H0 : q = q0
+Z < −z1−α
+2
+Φ
+ 
++z1−α
+2
+q
+q0(1−q0)
+q1(1−q1) +
+q0−q1
+q
+q1(1−q1)
+n
+!
+o
+−
+2 (1 −Φ (zobs))
+H1 : q ̸= q0
+Z > +z1−α
+2
+Φ
+ 
+−z1−α
+2
+q
+q0(1−q0)
+q1(1−q1) +
+q0−q1
+q
+q1(1−q1)
+n
+!
+H0 : q ≤q0
+Z > +z1−α
+Φ
+ 
++z1−α
+q
+q0(1−q0)
+q1(1−q1) +
+q0−q1
+q
+q1(1−q1)
+n
+!
+1 −Φ (zobs)
+H1 : q > q0
+H0 : q ≥q0
+Z < −z1−α
+1 −Φ
+ 
+−z1−α
+q
+q0(1−q0)
+q1(1−q1) +
+q0−q1
+q
+q1(1−q1)
+n
+!
+Φ (zobs)
+H1 : q < q0
+4
+
+[Descripción de la imagen: una tabla con un número de números diferentes y un número de números diferentes | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Prueba de hipótesis para una proporción
+
+Sea q la probabilidad desconocida de un evento dado. Otra forma de entender q es como
+la proporción de la población que satisface cierta propiedad. Sea X el número de individuos
+con la propiedad indicada de una muestra de n casos independientes. Si n < N, siendo
+N el tamaño de la población, X — Binomial(n, q). Si n es grande, por el Teorema Central
+del Límite, la distribución de X es aproximadamente normal con media u = nq y varianza
+0? =ng(1-9).
+
+Tres estadísticos de prueba posibles son X, 4 = X/n y
+
+á — q0
+/ g0(1—90)
+n
+
+Dado que es sencillo pasar de un estadístico a otro, sólo presentaremos resultados corres-
+pondientes a Z. Si n es grande (> 100), gracias al Teorema Central del Límite las pruebas
+de hipótesis para un nivel de significación a quedan:
+
+Z =
+
+Prueba de | Condición Prob. Error Tipo II Valor p
+Hipótesis | de rechazo PlZobs)]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Ejer i io
+16
+de
+la
+guía
+9
+La
+prop
+or ión
+de
+defe tuosos
+en
+un
+pro
+ eso
+es
+2
+%.
+Como
+se
+desea
+estable er
+un
+ on
+trol
+sobre
+el
+mismo
+se
+insp
+e  ionan
+ on
+una
+fre uen ia
+de
+una
+v
+ez
+p
+or
+hora
+m
+uestras
+de
+tamaño
+n
+y
+se
+revisa
+el
+pro
+ eso
+si
+se
+en uen
+tran c
+o
+más
+defe tuosas
+en
+tre
+las n .
+P
+ara
+determinar n
+y c
+se
+han
+jado
+un
+riesgo
+del
+10
+%
+(0.1
+es
+la
+probabilidad
+de
+detener
+el
+pro
+ eso
+ uando
+en
+realidad
+no
+habría
+que
+ha erlo)
+y
+una
+probabilidad
+0.2
+de
+ ometer
+el
+error
+de
+no
+detener
+el
+pro
+ eso
+en
+el
+ aso
+en
+que
+el
+p
+or en
+ta
+je
+de
+defe tuosos
+sea
+de
+6
+%.
+1.
+Esp
+e i ar
+ laramen
+te
+la
+prueba
+de
+hip
+ótesis
+plan
+teada
+(hip
+ótesis
+n
+ula,
+alternativ
+a,
+niv
+el
+de
+signi a ión,
+estadísti o
+de
+prueba
+y
+zona
+de
+re 
+hazo).
+2.
+Determinar
+los
+v
+alores
+de n
+y c.
+3.
+Represen
+tar
+grá amen
+te
+en
+forma
+apro
+ximada
+las
+ urv
+as
+de
+op
+era ión
+ ara terísti a
+( urv
+a
+OC)
+y
+de
+p
+oten ia
+indi ando
+ laramen
+te
+las
+abs isas
+y
+ordenadas
+de
+al
+menos
+tres
+pun
+tos.
+Respuesta:
+Dado
+que
+se
+quiere
+man
+tener
+a
+ra
+y
+a
+el
+p
+or en
+ta
+je
+de
+defe tuosos,
+lo
+que
+imp
+orta
+es
+vigilar
+que
+el
+mismo
+no
+aumen
+te
+resp
+e to
+del
+2
+%
+a eptable.
+P
+or
+lo
+tan
+to,
+la
+prueba
+de
+hip
+ótesis
+deb
+e
+ser
+H0 : q ≤0.02
+(1)
+H1 : q > 0.02
+(2)
+El
+pro
+ eso
+se
+detiene
+si
+los
+resultados
+sugieren
+que
+la
+hip
+ótesis
+n
+ula
+es
+falsa.
+En
+ton es,
+detener
+el
+pro
+ eso
+ uando
+no
+habría
+que
+ha erlo
+es
+ ometer
+un
+Error
+de
+Tip
+o
+I.
+Ergo,
+el
+problema
+requiere
+un
+niv
+el
+signi a ión α = 0.1 .
+P
+or
+otro
+lado,
+no
+detener
+el
+pro
+ eso
+ uando
+el
+p
+or en
+ta
+je
+de
+defe tuosos
+es
+sup
+erior
+al
+2
+%
+es
+un
+Error
+de
+Tip
+o
+I
+I:
+el
+problema
+pide
+que β(0.06) ≤0.2 .
+Si n
+es
+grande,
+β(0.06) = Φ
+
++z1−0.1
+s
+0.02(1 −0.02)
+0.06(1 −0.06) +
+0.02 −0.06
+q
+0.06(1−0.06)
+n
+
+≤0.2
+(3)
+Φ
+ 
++z0.9
+r
+49
+141 −2√n
+√
+141
+!
+≤0.2
+(4)
+z0.9
+r
+49
+141 −2√n
+√
+141 ≤z0.2
+(5)
+2√n
+√
+141 ≥z0.9
+r
+49
+141 −z0.2
+(6)
+√n ≥7
+2z0.9 −
+√
+141
+2
+z0.2
+(7)
+n ≥
+ 
+7
+2z0.9 −
+√
+141
+2
+z0.2
+!2
+≈
+ 
+7
+21.2816 −
+√
+141
+2
+(−0.8416)
+!2
+(8)
+n ≥89.9136
+(9)
+n ≥90
+(10)
+5
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Ejercicio 16 de la guía 9
+
+La proporción de defectuosos en un proceso es 2%. Como se desea establecer un control
+sobre el mismo se inspeccionan con una frecuencia de una vez por hora muestras de tamaño
+n y se revisa el proceso si se encuentran c o más defectuosas entre las n. Para determinar n
+y c se han fijado un riesgo del 10 % (0.1 es la probabilidad de detener el proceso cuando en
+realidad no habría que hacerlo) y una probabilidad 0.2 de cometer el error de no detener
+el proceso en el caso en que el porcentaje de defectuosos sea de 6 %.
+
+1. Especificar claramente la prueba de hipótesis planteada (hipótesis nula, alternativa,
+nivel de significación, estadístico de prueba y zona de rechazo).
+
+2. Determinar los valores de n y c.
+
+3. Representar gráficamente en forma aproximada las curvas de operación característica
+(curva OC) y de potencia indicando claramente las abscisas y ordenadas de al menos
+tres puntos.
+
+Respuesta:
+Dado que se quiere “mantener a raya” el porcentaje de defectuosos, lo que importa es vigilar
+que el mismo no aumente respecto del 2 % aceptable. Por lo tanto, la prueba de hipótesis debe ser
+
+Ho: q <0.02 (1)
+H1: q>0.02 (2)
+
+El proceso se detiene si los resultados sugieren que la hipótesis nula es falsa. Entonces, detener
+el proceso cuando no habría que hacerlo es cometer un Error de Tipo I. Ergo, el problema requiere
+un nivel significación a = 0.1. Por otro lado, no detener el proceso cuando el porcentaje de
+defectuosos es superior al 2 % es un Error de Tipo If: el problema pide que 6(0.06) < 0.2. Si n es
+grande,
+
+0.02(1—0.02) — 0.02—0.06
+
+— Z _ <o2
+0.06(1 — 0.06) /0.06(1—0.06) ) —
+
+8(0.06) = $ | +21-0.1 (3)
+
+— — <
+20.9 141 141 = 20.2 (5)
+2/n 49
+> 20.91/-— — 2 6
+7 y141
+Vn > =20.9 — 20.2 (7)
+2 2
+2 2
+141 7 141
+nz 1 0.9 — 20.2 ) % | 51.2816 — ——(-0.8416) (8)
+2 2 2 2
+n > 89.9136 (9)
+n > 90 (10)]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+P
+o
+demos
+v
+eri ar:
+Φ
+ 
++z0.9
+r
+49
+141 −2
+√
+89
+√
+141
+!
+≈0.2023
+(11)
+Φ
+ 
++z0.9
+r
+49
+141 −2
+√
+90
+√
+141
+!
+≈0.1998
+(12)
+P
+or
+lo
+tan
+to,
+el
+mínimo n
+es
+90.
+La
+ ondi ión
+de
+re 
+hazo
+es
+ˆq −0.02
+q
+0.02(1−0.02)
+90
+> z0.9
+(13)
+ˆq > 0.02 +
+7
+300
+r
+2
+5 z0.9 ≈0.0389 ≈0.04
+(14)
+Deniendo X = nˆq = 90ˆq
+,
+X > 1.8 + 21
+10
+r
+2
+5 z0.9 ≈3.5021.
+(15)
+Es
+de ir,
+el
+pro
+ eso
+se
+revisará
+(es
+de ir,
+la
+hip
+ótesis
+n
+ula
+se
+re 
+hazará)
+ uando
+el
+n
+úmero
+de
+defe tuosos
+de
+una
+m
+uestra
+de n = 90
+sea
+ma
+y
+or
+o
+igual
+a c = 4 .
+La
+ urv
+a
+de
+op
+era ión
+ ara terísti a
+se
+puede
+gra ar
+a
+partir
+de
+β(q1) = Φ
+
++z0.9
+s
+0.02(1 −0.02)
+q1(1 −q1)
++ 0.02 −q1
+q
+q1(1−q1)
+90
+
+
+(16)
+Es
+fá il
+v
+er
+que
+β(0.0200) = 0.9,
+(17)
+β(1.0000) = 0.0.
+(18)
+A
+partir
+de
+las
+e ua iones
+(13)-(14)
+,
+tamp
+o
+ o
+es
+difí il
+mostrar
+β(0.0389) = 0.5.
+(19)
+Si
+bien β(1) = 0 , β(q1)
+es
+m
+uy
+p
+equeño
+para
+v
+alores
+de q1
+bastan
+te
+más
+ 
+hi os.
+En
+efe to,
+β(0.1) = 0.0267,
+(20)
+β(0.2) ≈7 × 10−5.
+(21)
+La
+Fig.
+1
+m
+uestra
+la
+ urv
+a
+de
+op
+era ión
+ ara terísti a.
+6
+
+[Descripción de la imagen: la ecuación de la ecuación de Fourier se muestra en el diagrama | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Podemos verificar:
+
+0N 141 VA
+
+49 2790
+5 <__zo_… /ñ — ñ> = 0.1998 (12)
+
+Por lo tanto, el mínimo n es 90. La condición de rechazo es
+
+2
+( < 1 £> = 0.2023 (11)
+
+7 — 0.02
+/0.02(1—0.02)
+90
+] > 0.02+ 7x/í = 0.0389 = 0.04 (14)
+Definiendo X = ná = 906,
+21 72
+X>1.8+ 10 5% = 3.5021. (15)
+
+Es decir, el proceso se revisará (es decir, la hipótesis nula se rechazará) cuando el número de
+defectuosos de una muestra de n = 90 sea mayor o igual a c =4.
+
+La curva de operación característica se puede graficar a partir de
+
+0.02(1—0.02) — 0.02—q1
+
+=P| +2091/ ——-— — + — 16
+Sa) N ali—a) 11(1—q1) (16)
+90
+Es fácil ver que
+8(0.0200) = 0.9, (17)
+5(1.0000) = 0.0. (18)
+A partir de las ecuaciones (13)-(14), tampoco es difícil mostrar
+5(0.0389) = 0.5. (19)
+Si bien 2(1) = 0, 6(41) es muy pequeño para valores de q1 bastante más chicos. En efecto,
+8(0.1) = 0.0267, (20)
+8(0.2)=7x105. (21)
+
+La Fig. 1 muestra la curva de operación característica.]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+q1
+β(q1)
+0.9
+0.02
+0.5
+0.0389
+0.1
+0.0267
+0.2
+Figura
+1:
+Curv
+a
+de
+op
+era ión
+ ara terísti a
+del
+ejer i io
+16
+de
+la
+guía
+9.
+Prueba
+de
+hip
+ótesis
+para
+la
+media
+ on
+v
+arianza
+des ono
+ ida
+Asumamos
+que
+la
+m
+uestra X1, X2, · · · , Xn
+de
+una
+p
+obla ión
+puede
+ onsiderarse
+un
+ on-
+jun
+to
+de n
+v
+ariables
+aleatorias
+i.i.d.
+normales
+ on
+media µ
+y
+v
+arianza σ2
+des ono
+ ida.
+El
+estadísti o
+de
+prueba
+es
+T =
+¯X −µ0
+S
+√n
+.
+Si α
+es
+el
+niv
+el
+de
+signi a ión,
+las
+pruebas
+de
+hip
+ótesis
+quedan:
+Prueba
+de
+Condi ión
+Prob.
+Error
+Tip
+o
+I
+I
+V
+alor p
+Hip
+ótesis
+de
+re 
+hazo
+β(µ1)
+p(tobs)
+H0 : µ = µ0
+T < −tn−1,1−α
+2
+Ξn−1
+
++tn−1,1−α
+2 + µ0−µ1
+σ
+√n
+
+o
+−
+2 (1 −Ξn−1 (tn−1,obs))
+H1 : µ ̸= µ0
+T > +tn−1,1−α
+2
+Ξn−1
+
+−tn−1,1−α
+2 + µ0−µ1
+σ
+√n
+
+H0 : µ ≤µ0
+T > +tn−1,1−α
+Ξn−1
+
++tn−1,1−α + µ0−µ1
+σ
+√n
+
+1 −Ξn−1 (tobs)
+H1 : µ > µ0
+H0 : µ ≥µ0
+T < −tn−1,1−α
+1 −Ξn−1
+
+−tn−1,1−α + µ0−µ1
+σ
+√n
+
+Ξn−1 (tobs)
+H1 : µ < µ0
+Ξn−1
+es
+la
+fun ión
+de
+distribu ión
+(a um
+ulada)
+ orresp
+ondien
+te
+a
+una
+v
+ariable
+aleatoria t
+de
+Studen
+t
+ on n −1
+grados
+de
+lib
+ertad.
+Cuando n
+es
+grande
+(> 200 ), Ξn−1(·) ≈Φ(·)
+y
+tn−1,δ ≈zδ
+.
+7
+
+[Descripción de la imagen: la ecuación derivada es una función de la ecuación derivada | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+B(a1)
+
+0.9
+
+Figura 1: Curva de operación característica del ejercicio 16 de la guía 9.
+
+Prueba de hipótesis para la media con varianza desconocida
+
+Asumamos que la muestra X1, X>2,--- , X, de una población puede considerarse un con-
+junto de n variables aleatorias i.i.d. normales con media u y varianza 0? desconocida. El
+estadístico de prueba es
+
+Si a es el nivel de significación, las pruebas de hipótesis quedan:
+
+Prueba de Condición Prob. Error Tipo II Valor p
+Hipótesis de rechazo B(11) Pltobs)
+
+T < —t, 1,1—6
+
+o 2(1—En-1 (£n-1,0bs))
+T > +tnfl,lf%
+
+T> +tnf1.,lfa Enf1 (+tnfl.,lfa + H0;¡u1
+
+n
+
+En-—1 es la función de distribución (acumulada) correspondiente a una variable aleatoria t
+de Student con n — 1 grados de libertad. Cuando n es grande (> 200), =n-1(:) = ()
+tn?17¿ = Z$.]]
+
+Probabilidad
+y
+Estadísti a
+93.24
+Prueba
+de
+Hip
+ótesis
+Ejer i io
+8
+de
+la
+guía
+9
+Según
+un
+fabri an
+te,
+la
+resisten ia
+media
+de
+ ierto
+alam
+bre
+aleado
+de
+Al
+es
+de
+250 MN/m2
+.
+Un
+ on
+tratista
+adquiere
+un
+lote
+de
+alam
+bre
+y
+p
+one
+a
+prueba
+una
+m
+uestra
+de
+tamaño
+35.
+El
+v
+alor
+medio
+y
+la
+desvia ión
+estándar
+obtenidos
+a
+partir
+de
+esa
+m
+uestra
+son
+274.4 MN/m2
+y
+11.2 MN/m2
+,
+resp
+e tiv
+amen
+te.
+¾Es
+justi able
+que
+el
+ on
+tratista
+ on luy
+a
+que
+la
+remesa
+tiene
+una
+resisten ia
+signi ativ
+amen
+te
+diferen
+te
+a
+lo
+esp
+e i ado
+p
+or
+el
+fabri an
+te?
+T
+omar
+un
+niv
+el
+de
+signi a ión
+del
+5
+%.
+Respuesta:
+Al
+ on
+tratista
+le
+preo
+ upa
+que
+si
+la
+arma ión
+del
+fabri an
+te
+es
+ ierta
+o
+no.
+La
+prueba
+de
+hip
+ótesis
+ade uada
+es
+en
+ton es
+H0 : µ = 250
+(22)
+H1 : µ ̸= 250
+(23)
+Siendo n = 35 ,
+el
+v
+alor
+ ríti o
+de
+la
+prueba
+de
+hip
+ótesis
+es t34,0.975 ≈2.0322 .
+El
+estadísti o
+observ
+ado
+es
+tobs = 274.4 −250
+11.2
+√
+35
+≈12.8886.
+(24)
+Dado
+que tobs > t34,0.975
+,
+existe
+su ien
+te
+eviden ia
+para
+re 
+hazar
+la
+hip
+ótesis
+n
+ula
+a
+un
+niv
+el
+de
+signi a ión
+del
+5
+%.
+8
+
+[Descripción de la imagen: un documento con el texto en español | Transcripción de la imagen: Probabilidad y Estadística 93.24 Prueba de Hipótesis
+
+Ejercicio 8 de la guía 9
+
+Según un fabricante, la resistencia media de cierto alambre aleado de Al es de 250 MN/m?.
+Un contratista adquiere un lote de alambre y pone a prueba una muestra de tamaño 35. El
+
+valor medio y la desviación estándar obtenidos a partir de esa muestra son 274.4 MN/m?
+y 11.2 MN/m?, respectivamente. ¿Es justificable que el contratista concluya que la remesa
+tiene una resistencia significativamente diferente a lo especificado por el fabricante? Tomar
+un nivel de significación del 5 %.
+
+Respuesta:
+Al contratista le preocupa que si la afirmación del fabricante es cierta o no. La prueba de
+hipótesis adecuada es entonces
+
+Ho: 4 =250 (22)
+Hi: p 7250 (23)
+
+Siendo n = 35, el valor crítico de la prueba de hipótesis es t34,0.975 = 2.0322. El estadístico
+
+observado es 2744 — 250
+tobs = — — % 12.8886. (24)
+
+11.2
+
+35
+
+Dado que tobs > t34,0.975, existe suficiente evidencia para rechazar la hipótesis nula a un nivel de
+significación del 5 %.]]
+

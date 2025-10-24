@@ -1,0 +1,925 @@
+SIA - TP5
+Deep Learning
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+
+[Descripción de la imagen: el título para el webinar webinar webinar webinar webinar webina]
+
+Autoencoder
+
+[Descripción de la imagen: la palabra autor en un fondo oscuro]
+
+Primera etapa
+-
+Perceptrón Multicapa
+-
+Learning rate ﬁjo
+-
+Función de activación: sigmoid
+-
+Épocas: 50.000 - 100.000
+-
+Capas
+-
+[35, X, 2, X, 35]
+-
+[35, Z, Y, 2, Y, Z, 35]
+-
+Optimizador: Adam
+-
+Loss function: MSE
+-
+Early Stopping: 8.000 épocas sin mejoras
+
+[Descripción de la imagen: un fondo negro con una flecha azul y las palabras 'Primerata']
+
+Primeros resultados - 5 capas
+Capas: [35, 12, 2, 12, 35]
+LR: 0.0024
+Épocas: 50.000
+Capas: [35, 10, 2, 10, 35]
+LR: 0.0033
+Épocas: 50.000
+
+[Descripción de la imagen: un gráfico con el número de los datos en los datos]
+
+Primeros resultados - 7 capas
+Capas: [35, 18, 6, 2, 6, 18, 35]
+LR: 0.0038
+Épocas: 50.000
+Capas: [35, 14, 6, 2, 6, 14, 35]
+LR: 0.0024
+Épocas: 100.000
+
+[Descripción de la imagen: un gráfico con el mismo número de datos]
+
+Primeros resultados - El mejor
+Capas: [35, 18, 6, 2, 6, 18, 35]
+LR: 0.0024
+Épocas: 100.000
+
+[Descripción de la imagen: un gráfico gráfico con el número de los datos | Transcripción de la imagen: Primeros resultados - El mejor
+
+Distribución de errores por letra
+
+Capas: [35, 18, 6,2, 6, 18, 35]
+LR: 0.0024
+Épocas: 100.000
+
+-
+u
+
+u
+o
+5
+-
+v
+v
+D
+o
+Le!
+D
+-
+E
+o
+1)
+
+-
+o
+
+1
+Error (píxeles)]]
+
+Cómo mejoramos esto?
+El resultado anterior era bueno, pero, lo podemos mejorar?
+Propuestas:
+-
+Learning rate adaptativo
+-
+Loss function: Binary Cross Entropy 
+Además, guardamos los pesos por capas para cierta conﬁguración de capas para que la próxima 
+vez que se corra igual, se inicialice con estos pesos.
+
+[Descripción de la imagen: comoo cono cono cono cono cono cono cono cono cono cono]
+
+Segunda etapa
+-
+Perceptrón Multicapa
+-
+Learning rate adaptativo
+-
+Función de activación: sigmoid
+-
+Épocas: 5.000 (entre 10 y 20 veces menos!)
+-
+Capas
+-
+[35, X, 2, X, 35]
+-
+Optimizador: Adam
+-
+Loss function: Binary Cross Entropy
+
+[Descripción de la imagen: sequeta - sem - sem - sem sem sem sem sem sem sem sem sem sem]
+
+Primeras pruebas - 5 capas
+Capas: [35, 14, 2, 14, 35]
+LR inicial: 0.0076
+Pesos: aleatorios
+Capas: [35, 18, 2, 18, 35]
+LR inicial: 0.009
+Pesos: aleatorios
+
+[Descripción de la imagen: un gráfico con el mismo número de diferentes tipos de gas]
+
+Errores
+Capas: [35, 18, 2, 18, 35]
+LR inicial: 0.009
+Pesos: aleatorios
+
+[Descripción de la imagen: un código qr con el código qr del texto]
+
+Ejecutando de vuelta con los pesos ﬁnales
+Capas: [35, 18, 2, 18, 35]
+LR: 0.009
+Épocas: 5.000
+Pesos: ﬁnales de la ejecución 
+anterior
+
+[Descripción de la imagen: un gráfico con el número del número del número del número del número del número del número del número del número del número del | Transcripción de la imagen: u
+o
+5
+-
+v
+v
+D
+o
+Le!
+D
+D
+E
+o
+1)
+
+N
+[=)
+
+r
+u
+
+Ejecutando de vuelta con los pesos finales
+
+Distribución de errores por letra
+
+o]
+Error (píxeles)
+
+Capas: [35, 18, 2, 18, 35]
+
+LR: 0.009
+
+Épocas: 5.000
+
+Pesos: finales de la ejecución
+anterior]]
+
+Espacios latentes
+Capas: [35, 18, 2, 18, 35]
+LR inicial: 0.009
+Pesos: ﬁnales de la ejecución anterior
+Capas: [35, 18, 2, 18, 35]
+LR inicial: 0.009
+Pesos: aleatorios
+1ra ejecución 
+2da ejecución
+
+[Descripción de la imagen: un gráfico gráfico con el mismo número de cada dato]
+
+Prueba ﬁnal - Distribución de errores
+Capas: [35, 17, 2, 17, 35]
+LR: 0.009
+Épocas: 10.000
+Pesos: aleatorios
+
+[Descripción de la imagen: preblar de tempos de la proxis preblar de tempos de la proxis preblar de tempos prociones probables probables probables probables pro | Transcripción de la imagen: Prueba final - Distr _ ioución de errores
+
+Distribución de errores por letra
+
+Capas: [35, 17,2, 17, 35]
+LR: 0.009
+
+Épocas: 10.000
+
+Pesos: aleatorios
+
+N
+[=)
+
+r
+u
+
+u
+o
+5
+-
+v
+v
+D
+o
+Le!
+D
+D
+E
+o
+1)
+
+o]
+Error (píxeles)]]
+
+Prueba ﬁnal - Espacio latente
+Capas: [35, 17, 2, 17, 35]
+LR: 0.009
+Épocas: 10.000
+Pesos: aleatorios
+
+[Descripción de la imagen: preiin - esocantee ress de la ress]
+
+Letras generadas por la red
+
+[Descripción de la imagen: una línea de cuadrados con los mismos cuadrados]
+
+Detección de outliers
+Capas: [35, 17, 2, 17, 35]
+
+[Descripción de la imagen: una imagen en blanco y negro con las palabras «deto» | Transcripción de la imagen: Detección de outliers
+
+Decodificado: 3
+
+Original: 3 Error: 15 píxeles C8p851 [35, 17, 2, 17, 35]
+
+—]]
+
+Detección de outliers
+
+[Descripción de la imagen: un gráfico con un punto rojo en el lado izquierdo y un punto azul en el lado derecho | Transcripción de la imagen: Detección de outliers
+
+Espacio latente: Letras originales vs Número 3
+
+N
+v
+g
+c
+v
+s
+5
+£
+p
+s
+-
+5
+£
+a
+
+a)
+
+[D O Letras originales
+* 3
+
+Dimensión latente 1]]
+
+Conclusiones
+-
+Variar el valor learning rate (ﬁjo) no es la solución a todo
+-
+Aumentar el número de capas puede ser perjudicial
+-
+Aumentar las épocas tampoco es la mejor solución
+
+[Descripción de la imagen: cruzes var vari en ratiol disosoo]
+
+Denoising
+Autoencoder
+
+[Descripción de la imagen: el logotipo para densing autono]
+
+Parámetros
+Seguimos con los mismos parámetros con los que el autoencoder aprendió sin errores:
+●
+Capas:
+○
+Encoder: 35 -> 17
+○
+Espacio Latente: 2
+○
+Decoder: 17 -> 35
+●
+Learning rate inicial 0.009
+●
+10000 epochs
+●
+Pesos iniciales aleatorios
+
+[Descripción de la imagen: pares sonos cons cons cons cons cons cons cons cons cons cons cons cons]
+
+Ruido
+●
+Salt And Pepper
+●
+Variamos el porcentaje de probabilidad para ver cómo se desempeña
+
+[Descripción de la imagen: un código qr con el nombre del texto y la imagen de un código qr]
+
+Entrenamiento
+●
+Le pasamos el dataset X y la función de ruido al autoencoder
+●
+Al entrenar, para cada epoch, obtiene X’ = ruido(X, p)
+●
+Para esa epoch, usa los x’ ∈  X’ como input y el x ∈ X asociado como output esperado
+●
+El valor de p se mantiene ﬁjo durante todo el entrenamiento
+●
+Luego, probamos con nuevos conjuntos de letras con ruido para ver que tan bien aprendió
+
+[Descripción de la imagen: enteno a la enteno del sudoo]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido 0.05
+Se generó este alfabeto con ruido tras entrenar para 
+probar…
+En general, las reconstrucciones no salieron muy bien
+
+[Descripción de la imagen: una pantalla con el texto est est est est est est est est est est est est est est est est est est]
+
+Evaluando el desempeño
+Pudo reconstruir bien la mitad 
+de las letras
+Sin embargo, algunas tienen 
+bastantes pixeles de error
+¿Qué pasa si entrenamos con 
+más ruido?
+
+[Descripción de la imagen: p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido 0.1
+
+[Descripción de la imagen: una captura de pantalla de una computadora con el texto'retos delos']
+
+Evaluando el desempeño
+Sigue con bastante error
+Además, 8 pixeles es una 
+diferencia importante
+
+[Descripción de la imagen: un gráfico de barras con el número de los datos | Transcripción de la imagen: Evaluando el desempeño
+
+. Distribución de errores por letra
+Sigue con bastante error
+
+Además, 8 pixeles es una
+diferencia importante
+
+u
+o
+s
+5
+y
+v
+D
+D
+]
+D
+D
+E
+l]
+1)
+
+4
+Error pixeles]]
+
+¿Cómo se puede mejorar?
+Si bien puede reconstruir bien algunas letras, tiene muchos errores
+A veces no termina entendiendo bien la forma original de la letra
+Output:
+Input:
+Otras veces, el ruido lo lleva a clasiﬁcarla como  una letra distinta:
+Input:
+Output:
+(era una m)
+
+[Descripción de la imagen: comoo de windows 10]
+
+Idea: Preentrenar el DAE
+●
+Primero, entrenamos un autoencoder (normal) con el dataset sin ruido para que aprenda 
+el dataset
+●
+Después, guardamos los pesos de ese AE y usamos eso como pesos iniciales al entrenar el 
+DAE
+●
+Lo que esperamos es que así el DAE pueda entender mejor el dataset que tiene que 
+reconstruir
+●
+Mantuvimos los mismos parámetros que antes
+
+[Descripción de la imagen: id perferi daf]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido 0.05 + 
+Preentrenamiento como AE
+
+[Descripción de la imagen: una pantalla con el texto 'retos delo ']
+
+Evaluando el desempeño
+Mejoro bastante
+¿Se mantendrá ante mayor 
+ruido?
+
+[Descripción de la imagen: un gráfico de barras con el número de los datos | Transcripción de la imagen: Evaluando el desempeño
+
+Mejoro bastante Distribución de errores por letra
+
+¿Se mantendrá ante mayor
+ruido?
+
+Pel
+o
+o
+5
+v
+v
+D
+]
+Le]
+D
+D
+=
+]
+o
+
+Error pixeles]]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido 0.1 + 
+Preentrenamiento como AE
+
+[Descripción de la imagen: una captura de pantalla de un ordenador con el texto,'reto deso ']
+
+Evaluando el desempeño
+Nuevamente, aunque no es 
+perfecto, se desempeñó 
+bastante mejor
+
+[Descripción de la imagen: un gráfico con el número de los datos en los datos]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido 0.15 + 
+Preentrenamiento como AE
+
+[Descripción de la imagen: retos de design prentadore com | Transcripción de la imagen: Resultados del denoising
+
+Entrenado con probabilidad de ruido 0.15 +
+Preentrenamiento como
+
+E&htunru
+
+T
+"E |_.| J hl
+
+" =
+N .'-
+
+—
+=
+. -
+-
+EE]]
+
+Evaluando el desempeño
+Ante ruido de 0.15, vuelven a 
+aparecer una cantidad de 
+errores elevada
+Creemos que es entendible, ya 
+que las letras generadas con 
+este nivel de ruido ya parecen 
+estar muy distorsionadas 
+como para poder 
+reconstruirlas de forma 
+consistente.
+
+[Descripción de la imagen: elvano de tempoo entreo de tempoo de tempoo de tempoo de tempoo]
+
+¿Como se desempeña con probabilidades 
+distintas a las que fue entrenado?
+Le dimos un alfabeto con ruido de 
+p = 0.05 al DAE que entrenamos 
+con AE + p = 0.15
+Esperábamos que, ante un 
+conjunto de menos ruido, tuviera 
+una capacidad similar o incluso 
+mejor
+Resulta que suele terminar con 
+errores de bastante más pixeles 
+de los que tenía el DAE 
+entrenado con AE + p = 0.05
+
+[Descripción de la imagen: un gráfico gráfico con el número de los datos]
+
+¿Se puede hacer algo al respecto?
+●
+Queríamos ver si podemos conseguir un DAE que performe bien ante diferentes niveles 
+de ruido.
+●
+Ya que entrenar con un ruido mayor no parece ser muy efectivo, se nos ocurrió entrenar 
+con múltiples niveles de ruido
+●
+En cada época, antes de aplicar el ruido, vamos a tomar un p entre [0, 0.15] de forma 
+uniforme, y generar el ruido con ese valor de p.
+
+[Descripción de la imagen: Que que que que que que que que que que que que que que que que que que que que]
+
+Resultados del denoising
+Entrenado con probabilidad de ruido aleatoria en [0, 0.15] + 
+Preentrenamiento como AE
+
+[Descripción de la imagen: retos de diseño | Transcripción de la imagen: C
+(1)
+S
+
+—
+e)
+
+a
+a
+
+o
+u
+e)
+
+Ne
+5
+—
+(1)
+
+D
+
+D
+la
+
+o
+
+r
+o
+
+o
+Oo
+—
+Qc
+c.0
+e)
+(a)
+e)
+
+O)
+£
+D ,
+O
+C :
+e .
+u
+[O
+NO
+(07)
+O
+S
+(q
+-
+>
+(09)
+v
+Y]]
+
+Evaluando el desempeño
+Para p=0.05
+Para p=0.15
+Se obtienen valores similares para otros p, en general no 
+performa muy bien en ninguno
+
+[Descripción de la imagen: un gráfico con el mismo número de datos diferentes | Transcripción de la imagen: Evaluando el desempeño
+
+Para p=0.05 Para p=0.15
+
+Distribución de errores por letra Distribución de errores por letra
+
+Cantidad de letras
+
+u
+o
+5
+E
+=
+v
+D
+o
+]
+5
+-
+=
+k
+(S)
+
+5
+
+2 3
+Error pixeles
+
+Error pixeles
+
+Se obtienen valores similares para otros p, en general no
+performa muy bien en ninguno]]
+
+Conclusiones
+●
+El Denoising Autoencoder es capaz de eliminar ruido de un dataset, provisto que esté 
+bien entrenado.
+●
+Preentrenarlo con una versión limpia del dataset parece mejorar signiﬁcativamente los 
+resultados
+●
+Sin embargo, a niveles altos de ruido, ya no puede distinguir entre las letras de forma 
+consistente.
+●
+Si bien en las pruebas que realizamos, entrenar con un valor de p aleatorio no dio buenos 
+resultados, podría valer la pena intentar con más epochs (dado que esperamos que 
+aprenda “más” ruidos), con más epochs, o con una dimensión mayor en el espacio latente.
+
+[Descripción de la imagen: crisies entre o crisies crisies entre o crisies o crisies o cr]
+
+Variational
+Autoencoder
+
+[Descripción de la imagen: el logotipo para el autocodificador virtual]
+
+Dataset - Emojis
+●
+Usamos un dataset de 56 emojis
+●
+Convertidos a escalas de grises
+●
+20x20 pixeles
+●
+Mapeamos los colores en [0, 1]
+
+[Descripción de la imagen: datt - emui unica de epics coviddos ses 20 / 10 / 12 / 12 / 12 / 12 / 12 | Transcripción de la imagen: Dataset - Emojis
+
+e Usamos un dataset de 56 emojis
+e Convertidos aescalas de grises
+e 20x20pixeles
+
+e ÑMapeamoslos colores en[0, 1]]]
+
+Primer Intento
+Capas:
+Encoder: 30 -> 20 -> 10
+Espacio latente: 2
+Decoder: 10 -> 20 -> 30
+Learning rate: 0.0001
+Epochs: 100
+Función de activación: Sigmoidea
+Optimizador: Adam
+
+[Descripción de la imagen: un patrón con un círculo blanco en él]
+
+Segundo intento
+Capas:
+Encoder: 30 -> 20 -> 10
+Espacio latente: 2
+Decoder: 10 -> 20 -> 30
+Learning rate: 0.0001
+Epochs: 1000
+Función de activación: Sigmoidea
+Optimizador: Adam
+
+[Descripción de la imagen: seudintel corsor 20 - 30 escararo - 20 - 30 escararco - 30 - 30 es]
+
+Tercer intento
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 2
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Función de activación: Sigmoidea
+Optimizador: Adam
+
+[Descripción de la imagen: 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000 - 2000]
+
+Cuarto intento
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 2
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: caso curo intéo - 2010 - 2012 - 2012 - 2013 - 2014 - 2014 - 2014 - 2014 - 2018 - 2018 - 2018]
+
+Espacio latente 2D
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 2
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: esopia de larios envoe 2010 - 2010]
+
+Errores de reconstrucción
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 2
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: ene desconucon cremee desconucon - 100 %]
+
+Generando elementos nuevos
+
+[Descripción de la imagen: un conjunto de tres filas de números con los mismos números]
+
+Quinto intento 
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 3
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: guio en Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas Copas]
+
+Espacio latente 3D
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 3
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: escalantel escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol escontrol]
+
+Errores de reconstrucción
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 3
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: eres descontrion eroser 2000 - 2009]
+
+Generando elementos nuevos
+
+[Descripción de la imagen: cerano elementos enes | Transcripción de la imagen: Generando elementos nuevos
+
+original a=0.17 a= 0.33 a=0.50 a=0.67 a= 0.83 original
+
+ZAZ AA A AAA
+
+original a=0.17 a= 0.33 a= 0.50 a=0.67 a =0.83 original
+
+* FE
+
+NAA AA
+
+original a=0.17 a= 0.33 a= 0.50 a=0.67 a= 0.83 orgnal
+
+SSS T
+L—L.—.L—.L—J:"_.L"—:L _J]]
+
+Sexto intento
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 6
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: una foto en blanco y negro de un grupo de emoticos]
+
+Errores de reconstrucción
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 6
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: En el desconucón erosor = 2, 200 - 3, 000 les]
+
+Generando elementos nuevos
+
+[Descripción de la imagen: ceran de ceran de ceran de ceran de ceran de ceran de | Transcripción de la imagen: Generando elementos nuevos
+
+original a=0.17
+
+P T S
+
+original a=0.17 a= 0.33 a= 0.83 ginal
+
+origl
+R
+
+k A AA AA
+
+original a=
+” "—
+Ka "
+EE ]
+
+0.17 a= 0.33 a=0.50 a =0.67 a =0.83 original
+: z an ea
+E — — -
+J AA AA]]
+
+Generando nuevos elementos
+Capas:
+Encoder: 300 -> 200 -> 100
+Espacio latente: 3
+Decoder: 100 -> 200 -> 300
+Learning rate: 0.0001
+Epochs: 1000
+Funciones de activación:
+ReLU
+Sigmoidea (sólo ultima capa)
+Optimizador: Adam
+
+[Descripción de la imagen: cero de cero de cero de cero de cero de cero de cero de]
+
+Generando nuevos elementos
+
+[Descripción de la imagen: cerano nues emetes | Transcripción de la imagen: Generando nuevos elementos
+
+"" E—
+. “ ,
+
+a
+
+De
+
+n
+E
+
+4]]
+
+Conclusiones
+●
+El VAE genera mejores muestras nuevas que un Autoencoder normal, gracias a la 
+estructura probabilística del espacio latente.
+●
+Los emojis generados con el VAE tienen más coherencia con el dataset que las letras 
+generadas con el Autoencoder normal.
+●
+Usar una dimensión de espacio latente adecuada es muy importante para que los datos se 
+puedan reconstruir e interpolar bien.
+○
+Si la dimensión del espacio latente es muy baja -> Cuesta más reconstruir
+○
+Si es muy alta -> Cuesta más interpolar
+
+[Descripción de la imagen: cruzes e - generales de datos]
+

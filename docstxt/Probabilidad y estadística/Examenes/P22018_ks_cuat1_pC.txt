@@ -1,0 +1,76 @@
+PROBABILIDAD Y ESTADISTICA   93.24                SEGUNDO  PARCIAL​ 11/06/18 
+INDICACIONES: Indique claramente apellido, nombre y número de legajo en cada hoja que entregue. No solicite indicaciones ni aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución. Exprese con 3 decimales las probabilidades que se pida 
+calcular.    
+SUERTE...                                DURACION : 2.5  HORAS. 
+ 
+APELLIDO Y NOMBRE : ...............................…...................................................................... Nro de Legajo :................…... 
+ 
+PARA EL CORRECTOR   
+1 
+2 
+3 
+4 
+5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos) Un chip tiene (pins) para conectarlos en los enchufes que vienen en la placa de un circuito. El grosor de 
+las patas es importante para determinar la calidad de la conexión con la placa. Cuando el proceso de producción 
+funciona adecuadamente, el diámetro medio de todas las patas producidas es 1.000 unidades (relativo a las 
+especificaciones de su diseño). Hay cierta variación inevitable en los diámetros; la desviación estándar es de 0.006 
+unidades. La distribución de los diámetros es normal. Una pata hará una conexión de alta calidad sólo si su diámetro 
+se encuentra entre 0.997 y 1.003 unidades. Como parte del proceso de control de calidad el fabricante de los circuitos 
+integrados toma muestras de 16 patas de cada lote de 20000. 
+a) Suponiendo que el proceso funciona adecuadamente, ¿cuál es la probabilidad de que el diámetro medio de la 
+muestra se encuentre entre 0.997 y 1.003 unidades? 
+b) Si en uno de los controles se obtuvo una diferencia entre la media muestral y la media hipotética de 0.005 
+unidades, ¿es justificable que se concluya que el proceso no funciona adecuadamente pues presenta una media 
+significativamente diferente de la esperada? Para responder considere una prueba de hipótesis con un nivel de 
+significación del 1%.  
+ 
+2. (2 puntos) El espacio de estados de una cadena de Markov es el conjunto 
+{1 2 3}. Sea X(n) el estado del proceso en el instante n.  La figura adjunta 
+muestra el diagrama de transiciones de esta cadena.  
+a) Calcule pn = P(X(n) = 2 / X(0) = 2) para n tomando los valores de 2 a  4 si 
+α = 0.2, β = 0.3 y γ = 0 . Para responder a esta pregunta realice un diagrama 
+de árbol indicando todas las secuencias de estados que corresponden a esta 
+situación.  
+b) Si α = 0.2, β = 0.3 y γ = 0.1 demuestre que la cadena es regular y obtenga 
+. 
+3. (2 puntos) Cierto componente es crítico para la operación de un sistema 
+eléctrico y debe ser reemplazado en cuanto se produce una falla en el 
+componente. Suponga que el tiempo de vida del componente hasta la falla 
+es una variable aleatoria continua con una media y desvío iguales a 1000 hs. 
+Al producirse la falla el componente se cambia y se reemplaza por uno nuevo. Puede suponerse que el tiempo de 
+recambio es despreciable y que los tiempos entre fallas son independientes. 
+a) Se dispone de 5 de estos componentes para realizar la reposición del componente que falla. Suponga que los 
+tiempos de vida tienen distribución exponencial. Calcule la probabilidad de que el tiempo de operación exceda 8000 
+horas. 
+b) Si se desea que la probabilidad de que el sistema no interrumpa su funcionamiento en las próximas 70000 hs. sea 
+como mínimo 0.95, ¿cuántos de estos componentes deben tenerse como mínimo en stock? 
+ 
+4. (2 puntos) D’Alessio Irol/Berenstein realizaron una encuesta online durante mayo, consiguiendo la opinión de 1077 
+personas mayores a 18 años sobre la situación económica. 
+a) Según el informe, el 50% de los encuestados opinó que el responsable de la situación económica presente es 
+principalmente el gobierno actual. Obtenga un intervalo de confianza del 95% para la proporción de la población 
+adulta del país que opina de la misma manera. ¿Qué se debe asumir para que dicha estimación sea válida? 
+b) El 57% de los encuestados cree que el gobierno no logrará afianzar su programa económico. ¿Existe suficiente 
+evidencia en favor de que más del 50% de los adultos del país opina igual? Plantee una prueba de hipótesis 
+adecuada y suponga un nivel de significación α = 0.01. 
+ 
+5. (2 puntos) Se sortea una variable aleatoria exponencial X de media 1. A continuación se sortea una variable 
+aleatoria exponencial Y de media X-1. 
+a) Obtenga la función densidad de probabilidad conjunta de X e Y. 
+b) Obtenga la función densidad de probabilidad y la función de probabilidad acumulada de Y. 
+Recuerdo:
+
+[Descripción de la imagen: un diagrama del número del número del número del número del número del número del]
+

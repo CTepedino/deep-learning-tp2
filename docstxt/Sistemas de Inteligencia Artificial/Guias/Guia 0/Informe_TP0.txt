@@ -1,0 +1,486 @@
+Instituto Tecnológico de Buenos Aires 
+ 
+ 
+72.27 - Sistemas de Inteligencia Artificial - Comisión: S 
+ 
+ 
+ 
+TP0 - Introducción al Análisis de Datos 
+ 
+ 
+ 
+Bendayan, Alberto - 62786 
+Bloise, Luca - 63004 
+Tepedino, Cristian - 62830 
+Ves Losada, Tobias - 63342
+
+[Descripción de la imagen: tp - datos introis]
+
+Aclaración: En caso de que se especifique lo contrario, se tomaron Pokemon en 
+condiciones ideales (HP:100%, LVL:100 y ninguna condición de salud) para realizar 
+los cálculos. Además, excepto en los casos en los que se especificó otra, se usó la 
+PokeBall básica. 
+ 
+1a) 
+Para calcular la probabilidad de captura promedio de cada pokeball, se realizaron 
+100 series de 100 intentos de captura. En los siguientes gráficos se muestran las medías de 
+las tasas de captura y el desvío estándar de cada pokeball que se obtuvieron:
+
+[Descripción de la imagen: un gráfico de barras con el número de personas en el país]
+
+​
+
+[Descripción de la imagen: un gráfico muestra el número de pacientes en diferentes regiones | Transcripción de la imagen: Porcentaje de Captura Exitosa (%)
+
+Porcentaje de Captura Exitosa (%)
+
+100
+
+90 -
+
+80 -
+
+70 -
+
+60 -
+
+100
+
+90 -
+
+80 -
+
+70 -
+
+60 -
+
+Probabilidad de captura de Jolteon en condiciones ideales
+
+23.20%
+
+172.08%
+
+PokeBall UltraBall FastBall HeavyBall
+Pokeballs
+
+Probabilidad de captura de Snorlax en condiciones ideales
+
+D
+6.29% 8.22%
+
+3.17% 3.02%
+
+PokeBall UltraBall FastBall HeavyBall
+Pokeballs]]
+
+1b)
+
+[Descripción de la imagen: un gráfico del número de pacientes en el paciente | Transcripción de la imagen: 1b)
+
+Porcentaje de Captura Exitosa (%)
+
+Porcentaje de Captura Exitosa (%)
+
+Probabilidad de captura de Onix en condiciones ideales
+100
+
+90 -
+80 -
+70 -
+
+60 -
+
+11.68%
+
+" 8.62%
+10 - 5.94% 5.372%
+
+PokeBall UltraBall FastBall HeavyBall
+Pokeballs
+
+Probabilidad de captura de Mewtwo en condiciones ideales
+100
+
+90 -
+
+80 -
+
+70 -
+
+60 -
+
+0.40% 0.94% 1.55%
+
+0- — _——_— —
+
+0.08%
+
+—
+PokeBall UltraBall FastBall HeavyBall
+Pokeballs]]
+
+​
+Existen 2 alternativas posibles para el comportamiento de los pokemon y las 
+pokeballs. La primera, es que, al momento de la captura, todos los pokémon sean iguales a 
+excepción de un solo número que determine la dificultad de captura, y que a su vez las 
+pokeball solo disten en una número que indique que tan buena es. La otra alternativa es 
+que la captura sea más compleja que eso, es decir, que según ciertas características del 
+pokémon (por ejemplo, el peso o la velocidad), ciertas pokeball vayan a ser más efectivas 
+de lo normal para atrapar a esa especie en particular. ​
+​
+Para probar esto decidimos comparar, para cada pokémon y pokeball, la eficiencia 
+de captura proporcional, la cual definimos como: 
+​
+ 
+ 
+𝑒𝑏,𝑝=  𝑝𝑜𝑟𝑐𝑒𝑛𝑡𝑎𝑗𝑒 𝑑𝑒 𝑐𝑎𝑝𝑡𝑢𝑟𝑎 𝑑𝑒𝑙 𝑝𝑜𝑘é𝑚𝑜𝑛 𝑝  𝑐𝑜𝑛 𝑙𝑎 𝑏𝑎𝑙𝑙 𝑏
+𝑝𝑜𝑟𝑐𝑒𝑛𝑡𝑎𝑗𝑒 𝑑𝑒 𝑐𝑎𝑝𝑡𝑢𝑟𝑎 𝑑𝑒𝑙 𝑝𝑜𝑘é𝑚𝑜𝑛 𝑝  𝑐𝑜𝑛 𝑃𝑜𝑘𝑒𝐵𝑎𝑙𝑙
+ 
+​
+En caso de que la eficiencia de captura proporcional de una pokeball sea 
+significativamente distinta en distintos pokémon, se puede comprobar que las propiedades 
+intrínsecas de un pokémon afectan a la captura. 
+ 
+ 
+​
+Observando los resultados, es claro que la eficiencia de captura proporcional varía 
+enormemente según la especie para la FastBall y la HeavyBall, lo que deja claro que 
+existen características intrínsecas de un pokémon que determinan qué tan efectivas serán 
+estas pokeballs. ​
+​
+Como resultado adicional, se puede notar que la eficiencia de captura proporcional 
+de la UltraBall es siempre cercana a 2, lo que podría indicar que está ball es siempre una 
+mejora directa a la PokeBall, sin importar las características del pokémon. 
+ 
+2)a) 
+ 
+​
+Para determinar si los efectos de estado influyen en la probabilidad de captura, 
+decidimos realizar 100 series de 100 capturas a cada pokémon manteniendo fijas todas las
+
+[Descripción de la imagen: un diagrama del equilibrio y del equilibrio del equilibrio]
+
+condiciones ideales, a excepción del efecto de estado. En los siguientes gráficos se pueden 
+ver los resultados obtenidos:
+
+[Descripción de la imagen: un gráfico de barras con el número de los diferentes tipos de las diferentes sustancias | Transcripción de la imagen: condiciones ideales, a excepción del efecto de estado. En los siguientes gráficos se pueden
+ver los resultados obtenidos:
+
+Probabilidad de captura de Caterpie bajo cierto estado
+
+49.27% 48.61%
+
+Porcentaje de Captura Exitosa (%)
+
+Ninguno Dormido Quemadura Congelado veneno Parálisis
+Efectos de estado
+
+Probabilidad de captura de Jolteon bajo cierto estado
+
+Porcentaje de Captura Exitosa (%)
+
+Ninguno Dormido Quemadura Congelado veneno Parálisis
+Efectos de estado]]
+
+[Descripción de la imagen: un gráfico del número de pacientes en el paciente | Transcripción de la imagen: Porcentaje de Captura Exitosa (%)
+
+Porcentaje de Captura Exitosa (%)
+
+100
+
+90 -
+
+80 -
+
+70 -
+
+60 -
+
+100
+
+90 -
+
+80 -
+
+70 -
+
+80 -
+
+Probabilidad de captura de Snorlax bajo cierto estado
+
+6.49% 6.59%
+3.33% 5.09% 4.885% 4.75%
+
+Ninguno Dormido Quemadura Congelado veneno Parálisis
+Efectos de estado
+
+Probabilidad de captura de Onix bajo cierto estado
+
+11.86% 11.93%
+
+8.54% 8.93% 8.93%
+5.928%
+
+Ninguno Dormido Quemadura Congelado veneno Parálisis
+Efectos de estado]
+
+​
+Luego, se compararon los resultados para cada pokémon tomando la efectividad de 
+captura relativa por estado: 
+ 
+ 
+𝑒𝑠, 𝑝=  
+𝑝𝑜𝑟𝑐𝑒𝑛𝑡𝑎𝑗𝑒 𝑑𝑒 𝑐𝑎𝑝𝑡𝑢𝑟𝑎 𝑑𝑒𝑙 𝑝𝑜𝑘é𝑚𝑜𝑛 𝑝  𝑏𝑎𝑗𝑜 𝑒𝑙 𝑒𝑓𝑒𝑐𝑡𝑜 𝑠
+𝑝𝑜𝑟𝑐𝑒𝑛𝑡𝑎𝑗𝑒 𝑑𝑒 𝑐𝑎𝑝𝑡𝑢𝑟𝑎 𝑑𝑒𝑙 𝑝𝑜𝑘é𝑚𝑜𝑛 𝑝  𝑠𝑖𝑛 𝑒𝑓𝑒𝑐𝑡𝑜𝑠 𝑑𝑒 𝑒𝑠𝑡𝑎𝑑𝑜
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea | Transcripción de la imagen: Probabilidad de captura de Mewtwo bajo cierto estado
+100
+
+90 -
+80 -
+70 -
+60 -
+50 -
+40 -
+
+30 -
+
+Porcentaje de Captura Exitosa (%)
+
+201
+
+10 -
+0.49% 0.85% 0.62% 0.78% 0.59% 0.68%
+
+Ninguno Dormido Quemadura Congelado veneno Parálisis
+Efectos de estado
+
+Luego, se compararon los resultados para cada pokémon tomando la efectividad de
+captura relativa por estado:
+
+porcentaje de captura del pokémon p bajo el efecto s
+s, p — porcentaje de captura del pokémon p sin efectos de estado
+
+10 Efectividad de captura relativa por pokemon
+
+Efectos de estado
+Ninguno
+Dormido
+Quemadura
+Congelado
+veneno
+Parálisis
+
+251
+
+AEA
+
+2.01
+
+1.0 4 O—— — — — 'lc —
+
+Efectividad de captura relativa (%)
+
+0.51
+0.0 T T T T T
+e o "+ ul o
+cº&¿& Xºxge 5ºo“ [O e e
+
+Pokémon]]
+
+Observando los 
+, se puede notar que los efectos de dormir y congelar son los más 
+𝑒𝑠, 𝑝
+efectivos para la captura, casi duplicando la tasa de captura, mientras que la quemadura, 
+parálisis y veneno la incrementan en menor medida. 
+ 
+ 
+2)b) 
+ 
+Para calcular la probabilidad de captura promedio para cada punto de vida, se 
+realizaron 100 series de 100 intentos de captura, variando exclusivamente los puntos de 
+vida. En los siguientes gráficos se muestran las medías de las tasas de captura de cada 
+punto de vida que se obtuvieron:
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+[Descripción de la imagen: un gráfico del número de pacientes en el paciente | Transcripción de la imagen: Porcentaje de Captura Exitosa (%)
+
+Porcentaje de Captura Exitosa (%)
+
+100
+
+100
+
+90 -
+
+80 -
+
+Probabilidad de captura de Jolteon según su HP
+
+5 10 1520 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95100
+HP (%)
+
+Probabilidad de captura de Snorlax según su HP
+
+5 10 1520 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95100
+HP ()]
+
+La tendencia que podemos observar en estos gráficos es que la probabilidad de captura 
+aumenta progresivamente a medida que los puntos de vida disminuyen. También podemos
+
+[Descripción de la imagen: un gráfico gráfico con el mismo número de las dos líneas | Transcripción de la imagen: 100
+
+Porcentaje de Captura Exitosa (%)
+n
+L]
+l
+
+100
+
+90 -
+
+80 -
+
+Porcentaje de Captura Exitosa (%)
+
+Probabilidad de captura de Onix según su HP
+
+5 10 1520 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95100
+HP (%)
+
+Probabilidad de captura de Mewtwo según su HP
+
+5 10 1520 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95100
+HP (%)
+
+La tendencia que podemos observar en estos gráficos es que la probabilidad de captura
+aumenta progresivamente a medida que los puntos de vida disminuyen. También podemos]]
+
+observar en los gráficos, cierta linealidad en el aumento de probabilidad de captura (si 
+observamos la probabilidad de captura con 50% de vida respecto al 100%, esta suele 
+tender al doble en todos los casos). 
+ 
+2) c)  
+Dentro de los factores analizados, y en cuanto a las características mutables del 
+pokémon, los puntos de vida es lo que más afecta la probabilidad de captura, dado que un 
+pokémon con poca vida tiene una probabilidad de ser capturado de hasta 3 veces más que 
+uno con la vida completa. Si se incluyen también las diferentes pokeball a usar, se puede 
+resaltar el uso de la FastBall, que en los Pokémon en donde es efectiva llega a aumentar 
+hasta casi 4 veces la probabilidad de captura con respecto a la Pokeball básica. 
+ 
+2) d)  
+​
+A partir de lo observado en los puntos anteriores, podemos decir lo siguiente acerca 
+de la optimización de la probabilidad de captura de un pokemon: 
+●​ Es deseable bajar el HP todo lo posible 
+●​ Los estados de efecto de congelar y dormir son los más efectivos para aumentar la 
+probabilidad de captura 
+●​ Como regla general, la UltraBall es una mejor opción que la PokeBall, sin embargo, 
+en algunos pokémon, se pueden utilizar pokeballs específicas que respondan mejor 
+a las características intrínsecas del pokémon para aumentar la probabilidad de éxito 
+incluso más. 
+ 
+​
+Por ejemplo, en un pokémon con un alto peso como Snorlax la HeavyBall funciona 
+mejor, mientras que en un pokémon rápido como Jolteon la FastBall es superior. 
+​
+Para validar esta hipótesis, realizamos un script que, dado un pokemon y un nivel, 
+realiza 1000 pruebas de captura con cada variación de parámetros y luego genera un 
+archivo indicando las condiciones óptimas para su captura. Estos son los resultados 
+obtenidos para la captura de un Snorlax y un Jolteon (ambos a nivel 100): 
+ 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "sleep", 
+    "hp_percentage": 0.06, 
+    "highest_rate": 0.517, 
+    "pokemon": "snorlax", 
+    "level": 100 
+} 
+{ 
+    "pokeball": "fastball", 
+    "status_effect": "sleep", 
+    "hp_percentage": 0.01, 
+    "highest_rate": 1.0, 
+    "pokemon": "jolteon", 
+    "level": 100 
+}
+
+[Descripción de la imagen: un documento con el texto en español]
+
+​
+Estos resultados validan la hipótesis planteada. Un resultado adicional interesante 
+es que la tasa de captura de Jolteon es de 100% en condiciones óptimas, hecho que deja 
+claro la importancia de optimizar las condiciones, sabiendo que, por lo visto en el punto 1a, 
+su tasa de captura “regular” es de tan solo 6, 12%. 
+ 
+2) e)  
+​
+Para analizar si la combinación de parámetros óptima varía con el cambio de nivel, 
+decidimos probar a ejecutar el mismo script del punto 2d para el mismo pokémon, pero 
+variando el nivel. Estos son los resultados: 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "sleep", 
+    "hp_percentage": 0.06, 
+    "highest_rate": 0.517, 
+    "pokemon": "snorlax", 
+    "level": 100 
+} 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "freeze", 
+    "hp_percentage": 0.01, 
+    "highest_rate": 0.524, 
+    "pokemon": "snorlax", 
+    "level": 75 
+} 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "sleep", 
+    "hp_percentage": 0.01, 
+    "highest_rate": 0.524, 
+    "pokemon": "snorlax", 
+    "level": 50 
+} 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "freeze", 
+    "hp_percentage": 0.04, 
+    "highest_rate": 0.538, 
+    "pokemon": "snorlax", 
+    "level": 25 
+} 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "freeze",
+
+[Descripción de la imagen: un documento con las palabras en español]
+
+"hp_percentage": 0.08, 
+    "highest_rate": 0.524, 
+    "pokemon": "snorlax", 
+    "level": 10 
+} 
+{ 
+    "pokeball": "heavyball", 
+    "status_effect": "freeze", 
+    "hp_percentage": 0.21, 
+    "highest_rate": 0.516, 
+    "pokemon": "snorlax", 
+    "level": 1 
+} 
+ 
+Se puede ver que la pokeball óptima es siempre la HeavyBall, y siempre es 
+deseable bajar la vida del pokémon antes de la captura (al ser un porcentaje, solo se 
+permite usar el mínimo porcentaje que deje que el HP sea al menos 1 punto, por esto el 
+porcentaje es ligeramente más alto en niveles más bajos, en los cuales los puntos de vida 
+máximos son menores). En cuanto al efecto de estado, en la mayoría de los casos el óptimo 
+es congelado, excepto en un caso en el que dio un porcentaje ligeramente más alto con 
+dormir al pokémon. Sin embargo, recordando lo visto en el punto 2a, podemos observar que 
+la eficiencia relativa de los estados de dormir y congelar es casi idéntica, por lo que no 
+creemos que indique un cambio en las condiciones óptimas de captura.
+
+[Descripción de la imagen: una carta del departamento de lengua española]
+

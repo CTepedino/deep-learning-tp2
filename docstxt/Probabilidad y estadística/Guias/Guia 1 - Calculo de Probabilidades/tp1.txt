@@ -1,0 +1,372 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 1
+Cálculo de probabilidades
+1. Se arrojan dos dados no cargados.
+a) Describa un espacio muestral o conjunto de todos los resultados posibles.
+b) Calcule la probabilidad de que la suma de los dos dados sea 7.
+c) Calcule la probabilidad de que la suma sea 4 ó 9.
+2. De una urna con bolillas rojas numeradas de 1 a 5 y tres negras numeradas de 6 a 8 se saca una
+completamente al azar. Juzgue la validez de los siguientes argumentos.
+a) Las rojas tienen mayor probabilidad de salir que las negras. Como 1 es roja y 6 negra, es
+más probable que salga el 1 que el 6.
+b) Sólo hay dos resultados posibles: rojo o negro. Luego la probabilidad de cada uno es 1/2.
+c) Cualquier bolilla tiene la misma probabilidad de salir: 1/8.
+d) El experimento ya se realizó una vez y salió el 4. Si se vuelve a realizar sería mucha casualidad
+que vuelva a salir el 4. Luego en dos repeticiones consecutivas del experimento si la primera
+vez salió 4, la segunda es menos probable que salga el 4 que, por ejemplo, el 8.
+3. Tres componentes se conectan para formar un sistema. El componente 1 se conecta en serie
+con un paralelo de los componentes 2 y 3. Como éstos dos últimos se conectan en paralelo, este
+subsistema funcionará si, por lo menos, uno de los dos componentes funciona. Para que el sistema
+funcione deberán funcionar el componente 1 y al menos uno de los componentes del paralelo.
+Supongamos un experimento aleatorio que consiste en registrar el estado de cada componente
+como Si si funciona el componente i y Fi si falla el componente i.
+Listar los resultados que corresponden al suceso:
+a) A: funcionan exactamente dos de los tres componentes.
+b) B: al menos dos de los componentes funcionan.
+c) C: el sistema funciona.
+Hacer una lista de los resultados que corresponden a: C, A ∪C, A ∩C, B ∪C y B ∩C.
+4. En una producción de 100 artículos hay 10 defectuosos y el resto no tiene defectos.
+a) Para cada uno de los siguientes experimentos describa un espacio muestral y asigne la
+probabilidad a cada suceso elemental.
+1) Se extrae un artículo al azar y se registra su calidad.
+2) Se extraen simultáneamente dos artículos y se registra su calidad.
+3) Se extraen sucesivamente sin reposición 2 artículos y se registra su calidad.
+4) Se extraen sucesivamente con reposición 2 artículos y se registra su calidad.
+5) Se extraen sucesivamente con reposición 2 artículos y se cuenta la cantidad de defec-
+tuosos.
+6) Se extraen sucesivamente sin reposición 2 artículos y se cuenta la cantidad de defectuo-
+sos.
+1
+
+[Descripción de la imagen: el texto en el cuadro de texto se muestra en la esquina inferior derecha]
+
+Probabilidad y Estadística 93.24
+curso 2023
+b) Compare los resultados obtenidos en: 2) con 3) y 3) con 4) y saque conclusiones.
+c) Calcule la probabilidad de que el segundo artículo sea bueno en los casos 3). y 4). Compare
+los resultados.
+d) Compare los resultados obtenidos en: 2) con 3) y 3) con 4) y saque conclusiones si el tamaño
+de la población es 1000.
+e) Generalice la probabilidad de obtener k defectuosos en una muestra aleatoria de tamaño n
+en los casos 5) y 6) si hay b artículos buenos y d defectuosos.
+5. Cierto tipo de motor eléctrico falla por obstrucción de los cojinetes, por combustión del bobinado
+o por desgaste de las escobillas. Suponga que la probabilidad de la obstrucción es el doble de la
+de combustión, la cual es cuatro veces más probable que la inutilización de las escobillas. ¿Cuál
+es la probabilidad de que el fallo sea por cada uno de estos tres mecanismos si la probabilidad
+de que el motor falle es 0.13? Indique las hipótesis que debe asumir para resolver el problema.
+6. Se sabe que cierta producción está sujeta a tres tipos de defectos, A, B y C. Entre 1000 unidades
+producidas en un día, el inspector de la línea de montaje informó de los siguientes resultados:
+defecto
+A
+B
+C
+AB
+AC
+BC
+ABC
+número de piezas
+30
+35
+20
+5
+5
+4
+2
+Compruebe que la proporción de unidades defectuosas en las 1000 unidades es de 0.073.
+Nota: Para entender esta tabla tenga en cuenta, por ejemplo, que si una unidad tiene el defecto
+A y el B, pero no el C, figurará en la columna A, en la B y en la AB.
+7. La clasificación de los grupos sanguíneos (tipos de sangre) se realiza de acuerdo con la presencia
+o ausencia de tres antígenos, que están simbolizados por A, B y Rh. Este sistema da lugar a ocho
+tipos posibles de sangre, que son los siguientes:
+Tipo de sangre
+Antígeno presente
+0 negativo
+ningún antígeno
+0 positivo
+Rh
+A negativo
+A
+A positivo
+A y Rh
+B negativo
+B
+B positivo
+B y Rh
+AB negativo
+A y B
+AB positivo
+A, B y Rh
+En un grupo numeroso de personas se detectó que 40 % tenían antígeno A, 50 % el antígeno B,
+60 % antígeno Rh, 20 % los antígenos A y B, 30 % los antígenos A y Rh, 30 % los antígenos B y
+Rh y, por último, 20 % los tres.
+Determinar el porcentaje de personas que pertenece al tipo sanguíneo:
+a) 0 positivo
+b) 0 negativo
+c) A negativo.
+8. En una pequeña ciudad se publican dos diarios Nuevos Aires y Opinión. El 40 % de los habitantes
+lee Nuevos Aires, el 23 % lee Opinión y el 8 % lee ambos.
+a) ¿Cuál es el porcentaje de personas que lee diarios ?
+b) De los habitantes que leen diarios, ¿qué porcentaje lee Opinión ?
+2
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+c) Si se eligen dos personas al azar, ¿cuál es la probabilidad de que ambas lean diarios ?
+d) ¿Qué porcentaje de la población lee sólo Nuevos Aires?
+9. Suponga que A y B son sucesos para los cuales P(A) = x, P(B) = y, P(A ∩B) = z. Exprese
+cada una de las probabilidades siguientes en términos de x, y, z.
+a) P(A ∪B)
+b) P(A ∩B)
+c) P(A ∪B)
+d) P(A ∩B)
+Nota: A es el suceso complementario del suceso A.
+10. Obtener una expresión de cálculo para P(A∪B∪C) en términos de P(A), P(B), P(C), P(A∩B),
+P(B ∩C), P(A ∩C) y P(A ∩B ∩C).
+11. Suponga que A, B y C son sucesos tales que P(A) = P(B) = P(C) = 1/4, P(A ∩B) =
+P(B ∩C) = 0, P(A ∩C) = 1/8 y P(A ∩B ∩C) = 0. Calcule la probabilidad de que al menos
+uno de los sucesos A, B o C ocurra.
+12. Dos sucesos A y B tienen igual probabilidad de ocurrencia, P(A) = P(B) = 0.4. Calcular
+P(A/B) si la probabilidad de ocurrencia de ambos es P(A ∩B) = 0.25.
+13. Las probabilidades de ocurrencia de dos sucesos A y B son P(A) = 0.5 y P(B) = 0.6. Calcular
+P(A/B) si la probabilidad de ocurrencia de ambos es P(A ∩B) = 0.25.
+14. Considere dos sucesos A y B para los cuáles P(A) = 1
+2, P(B) = 1
+3 y P(A ∩B) = 1
+4.
+Calcular:
+a) P(A/B)
+b) P(B/A)
+c) P(A ∪B)
+d) P(A/B)
+e) P(B/A).
+15. Si P(A/B) = 0.6, P(A ∪B) = P(A ∪B) = 0.8,
+a) ¿Son independientes los sucesos A y B?
+b) Calcular P(A ∪B) y P(B/A).
+16. Sean A y B dos sucesos asociados a un experimento aleatorio. Considerando que P(A) = 0.4,
+P(B) = p y P(A ∪B) = 0.7 .¿Cuál es el valor de p si A y B son:
+a) mutuamente excluyentes?
+b) independientes?
+17. Se extraen 10 cartas de un mazo de truco (todas de una vez ó una tras otra sin reposición).
+¿Cuál es la probabilidad de sacar: a) por lo menos un as, b) por lo menos dos ases.
+18. Ocho personas, entre las que se encuentran Jorge y Alejandro, se forman en una fila para acceder
+a una caja registradora. Si la fila se formó al azar calcular la probabilidad de los siguientes
+eventos:
+a) Jorge y Alejandro están uno detrás del otro
+b) Entre Jorge y Alejandro hay dos personas
+19. En un sorteo con 100 números hay 5 premios. Se venden todos los números y Ud. compra 5.
+Calcular la probabilidad de:
+3
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+a) sacar dos premios.
+b) sacar por lo menos un premio.
+20. Para poder operar la cuenta personal de banco a través de un cajero automático hay que ingresar
+un conjunto de 4 dígitos en sucesión (el PIN de la tarjeta). Calcular la probabilidad de poder
+operar la cuenta en un intento al elegir los cuatro números al azar, sabiendo que:
+a) todos los dígitos son distintos
+b) el número de cuatro dígitos es capicúa.
+21. Un dado equilibrado se arroja 2 veces. Halle la probabilidad de los sucesos que se indican a
+continuación:
+a) los dos resultados son iguales,
+b) los dos resultados son distintos y su suma no supera 9,
+c) la suma de ambos resultados es 10,
+d) el primer resultado es inferior a 4 y el segundo es impar,
+e) el módulo de la diferencia entre ambos resultados es 1.
+22. Uno de cartas. Se sacan dos cartas al azar de un mazo de cartas españolas (48 cartas, no se
+toman en cuenta los comodines). Hallar la probabilidad de que:
+a) las dos cartas sean de espadas.
+b) una sea de espadas y la otra de copas.
+c) las dos sean del mismo palo.
+d) las dos sean de distinto palo
+23. Un sistema de frenado diseñado para impedir que los automóviles derrapen puede descomponerse
+en tres subsistemas en serie (el sistema de frenado opera adecuadamente si y solo sí los tres sub-
+sistemas operan adecuadamente), que operan independientemente: un sistema electrónico, otro
+hidráulico y un tercero mecánico. La confiabilidad de un sistema se define como la probabilidad
+de que funcione adecuadamente durante un período de tiempo dado.
+En cierto tipo de frenado las confiabilidades de cada subsistema son respectivamente 0.998;
+0.997.y 0.993.
+a) Determine la confiabilidad del sistema.
+b) Si en cierto período de operación el sistema falló porque eso ocurrió con uno de los subsis-
+temas, ¿cuál de los tres es más probable que haya fallado?
+24. Un número binario está compuesto sólo de los dígitos 0 y 1. Esos dígitos se transmiten uno tras
+otro a través de cierto canal de información. Suponga que la probabilidad de que se transmita
+un dígito incorrecto es p y que los errores en dígitos diferentes son independientes uno de otro.
+a) ¿Cuál es la probabilidad de recibir al extremo del canal de información un número incorrecto
+de n dígitos ? La condición de número incorrecto corresponde a que por lo menos un bit sea
+recibido con error.
+b) ¿Cuál es la probabilidad de recibir al extremo del canal de información un número incorrecto
+de n dígitos por tener sólo un bit con error?
+4
+
+[Descripción de la imagen: un documento con las palabras '''' y'' ']
+
+Probabilidad y Estadística 93.24
+curso 2023
+25. Agregando tres bits extras a una palabra de 4 bits de una manera particular (código de Hamming)
+se puede detectar y corregir hasta un error en cualquiera de los bits. Si la probabilidad de que
+un bit sea cambiado durante la transmisión (y por consiguiente se transmita con error) es 0.05 y
+esos cambios son independientes:
+a) ¿cuál es la probabilidad de que una palabra (de 7 bits en total) sea correctamente recibida
+(o sea con hasta un error) ?
+b) Compare la probabilidad calculada en a) con la que correspondería si la palabra de 4 bits
+no fuera transmitida con bits de chequeo. En este caso los 4 bits deben recibirse sin error
+para que la palabra no tenga error.
+26. En la fabricación de cierto artículo se encuentra que se presenta un tipo de defectos con una
+probabilidad de 0.1 y defectos de un segundo tipo con una probabilidad de 0.05.
+Si la ocurrencia de esos defectos puedan suponerse sucesos independientes, ¿cuál es la probabilidad
+de que:
+a) un artículo no tenga ambas clases de defectos?
+b) un artículo sea defectuoso?
+c) sabiendo que un artículo es defectuoso, tenga sólo un tipo de defecto?
+27. Los contactos A, B, C, D, pertenecen a distintos relevadores (ver Fig. 1). Cuando se excita
+cualquier relevador se cierra el contacto pero puede ocurrir una falla de conexión con probabilidad
+10−2. Calcule la probabilidad de que circule corriente entre la entrada y la salida del circuito de
+la figura al excitar los cuatro relevadores. Asuma independencia de falla de los relevadores.
+Figura 1: sistema de relevadores
+28. Un conjunto electrónico consta de 2 subsistemas, A y B. A partir de una serie de pruebas previas,
+se presuponen estas probabilidades: P(A falle) = 0.2; P(B sólo falle) = 0.15; P(A y B fallen)=
+0.15.
+Calcule las siguientes probabilidades:
+a) P(A falle/ B haya fallado).
+b) P(sólo A falle).
+29. Para la señalización de emergencia se han instalado dos indicadores que funcionan independien-
+temente. La probabilidad de que el indicador accione durante la avería es igual a 0.95 para el
+primero de ellos y 0.9 para el segundo.
+a) Halle la probabilidad de que durante la avería accione sólo un indicador.
+5
+
+[Descripción de la imagen: el texto en el libro se muestra en la imagen]
+
+Probabilidad y Estadística 93.24
+curso 2023
+b) Calcule la probabilidad de que durante la avería se accionen k indicadores para k tomando
+los valores 0, 1, y 2.
+30. Una instalación industrial funciona cuando lo hacen un motor y al menos dos de tres equipos de
+bombeo. La probabilidad de que funcione el motor es 0.95 y la de funcionamiento de cada equipo
+de bombeo es 0.8. Se supone que la ocurrencia de falla en el motor o cualquiera de las bombas
+son sucesos independientes.
+a) Calcule la probabilidad de buen funcionamiento de la instalación.
+b) Si la instalación funciona calcular la probabilidad de que funcionen exactamente dos equipos
+de bombeo.
+31. Un análisis para detectar una enfermedad infecciosa ofrece un 90 % de confiabilidad en los enfer-
+mos (la probabilidad de detección de la enfermedad si la persona está enferma es 0.9) y 99 % en
+las personas sanas (o sea que en el 1 % de los casos se declara como enfermo a una persona que
+no lo está).
+Por datos recopilados con anterioridad se estimó que el 5 % de las personas padece esta enferme-
+dad.
+a) Calcule la probabilidad de que un análisis resulte positivo.
+b) Calcule la probabilidad de que ocurra un falso positivo. Esto sucede cuando el análisis da
+positivo y la persona no está infectada.
+c) Calcule la probabilidad de que se produzca un falso negativo. Esto ocurre cuando el análisis
+da negativo y la persona está infectada.
+d) Supongamos que se hace un análisis en un laboratorio y resulta positivo. Calcule la proba-
+bilidad que la persona de la que se extrajo la muestra para este análisis esté efectivamente
+enferma.
+e) Una persona se realiza el análisis y le da positivo. Como está preocupado decide realizar en
+otro laboratorio un análisis del mismo tipo (con las mismas probabilidades 0.9 y 0.99 del
+anterior laboratorio). Suponga que los resultados de los análisis de estos laboratorios son
+independientes. Si ambos análisis dan positivos, ¿cuál es la probabilidad de que la persona
+esté enferma?
+Sugerencia: Realice un diagrama de árbol para representar la sucesión de eventos.
+32. El control de calidad para cierto tipo de motor eléctrico consiste en dos pruebas: S (ensayo de
+sobrecarga) y C (ensayo de consumo). Se estimó que el 3 % de los motores que se someten a este
+control falla en la prueba S, el 4 % en la prueba C y el 95 % en ninguna de las dos.
+a) ¿Son las fallas en las pruebas sucesos estadísticamente independientes?
+b) De los motores que fallan en S, ¿qué porcentaje falla en la prueba C?
+33. En una fábrica de pernos, las máquinas A, B y C fabrican 25 %, 35 % y 40 % de la producción total,
+respectivamente. De lo que producen, 5 %, 4 % y 2 % respectivamente son pernos defectuosos. Se
+escoge un perno al azar del total de lo producido por las tres máquinas.
+a) ¿Cual es la probabilidad de que el perno extraído sea defectuoso?
+Esta probabilidad expresada como porcentaje corresponde al porcentaje de defecto del total de lo
+producido y siempre resulta entre los porcentajes mínimo y máximo de defectos de las máquinas.
+b) Si el perno extraído es defectuoso, ¿de qué máquina es más probable que provenga ?
+6
+
+[Descripción de la imagen: un documento con el título de la publicación]
+
+Probabilidad y Estadística 93.24
+curso 2023
+34. Hay tres partidas de 20 piezas en cada una. El número de piezas estándares en la primera, se-
+gunda y tercera de las partidas es respectivamente igual a 20, l5 y 10. De una partida tomada al
+azar se ha escogido en forma aleatoria una pieza que resultó estándar.
+Calcular la probabilidad de que la pieza se haya tomado de la tercera partida.
+35. Un sistema de transmisión de energía eléctrica está compuesto por un transformador elevador
+T1, dos líneas de transporte de energía L y dos transformadores reductores T2 (ver Fig. 2).
+El consumidor puede recibir por cualquier línea la potencia que necesite, pero el transformador
+reductor puede transmitir sólo el 50 % de la potencia requerida por el consumidor. La probabilidad
+Figura 2: sistema de transmisión
+de falla del transformador T1 es qT1 = 0.05, de una línea L es qL = 0.03 y la del transformador T2
+es qT2 = 0.006. Los fallos de todos los elementos se consideran sucesos aleatorios independientes.
+Determine la probabilidad de transmitir un porcentaje de la potencia requerida por el consumidor
+del:
+a) 100 %, b) 50 %, c) 0 %.
+Sugerencias: Por ejemplo para que el consumidor pueda recibir el 100 % de lo que requiere debe
+funcionar correctamente el transformador elevador T1, al menos una de las dos líneas L deben
+funcionar y no fallar ninguno de los dos transformadores reductores T2. Puede resultar conve-
+niente realizar un diagrama de árbol con una sucesión de sucesos independientes comenzando con
+un primer par de sucesos (primeras dos ramas) T1 y su opuesto siendo T1 la falla del transfor-
+mador 1.
+36. Un transmisor está enviando un mensaje mediante un código binario, es decir, una secuencia
+de 0 y 1. Cada bit transmitido (0 ó 1) debe pasar por tres sistemas repetidores para llegar al
+receptor. En cada repetidor el bit enviado puede ser diferente del bit recibido (una inversión) con
+probabilidad 0.10. Supongamos que los repetidores operan independientemente uno de otro.
+Transmisor →Repetidor 1 →Repetidor 2 →Repetidor 3 →Receptor.
+a) Si se envía un 1 desde el transmisor, ¿cuál es la probabilidad de que el receptor reciba un
+1?
+b) Supongamos que 70 % de todos los bits enviados desde el transmisor son 1. Si un 1 es
+recibido por el receptor, ¿cuál es la probabilidad de que se haya enviado un 1?
+7
+
+[Descripción de la imagen: el diagrama muestra la dirección de la corriente actual en la corriente]
+
+Probabilidad y Estadística 93.24
+curso 2023
+37. En un proceso de producción de artículos de goma se consideran de buena calidad a aquellos que
+no son ni excesivamente duros ni excesivamente blandos. Se ha efectuado un estudio estadístico
+determinándose que el 5 % de los artículos son excesivamente blandos (EB) y el 4 % son excesi-
+vamente duros (ED). El 15 % de los artículos ED se vende al público, mientras que el 98 % de los
+EB no sale a la venta. Se sabe además que la probabilidad de que un artículo de buena calidad
+no se venda es 0.01.
+a) ¿Qué porcentaje de artículos se vende al público?
+b) ¿Qué porcentaje de artículos que salen a la venta son de mala calidad?
+38. Suponga que en una población de N elementos se toma una muestra aleatoria de tamaño n.
+a) Encontrar la probabilidad p de que ninguno de m elementos (m ≤N) determinados queden
+incluídos en la muestra si suponemos que el muestreo se hace: (a) sin reemplazo, (b) con
+reemplazo.
+b) Comparar los valores numéricos de las probabilidades para ambas modalidades de muestreo
+si N = 100 y: a) n = m = 3 , b) n = m = 10 c) n = m = 20 . Saque alguna conclusión.
+c) Obtenga expresiones para p, en ambas modalidades de muestreo, en la forma de un producto
+de n factores (en un caso son distintos y en el otro todos iguales). Suponga n > 1. Por
+comparación de esos factores demuestre que la probabilidad p es menor en el caso del
+muestreo sin reposición que el caso con reposición.
+39. Una empresa compra bulones a un proveedor. El control de calidad en la recepción establece
+seleccionar una muestra al azar de 20 bulones de la partida entregada por el proveedor y rechazarla
+si se encuentra 1 o más defectuosos. La probabilidad de que un bulón sea defectuoso es p = 0.04.
+a) ¿Cuál es la probabilidad de rechazar la partida? Indique que consideraciones tuvo en cuenta
+para hacer el cálculo.
+b) Realice un gráfico de la probabilidad de aceptar la partida en función de p.
+c) Un lote se considera aceptable si p ≤0.03. ¿Cuál es la máxima probabilidad de rechazar un
+lote aceptable?
+d) Para ahorrar costo en el control de recepción los bulones se verifican uno tras otro y se detiene
+el proceso rechazando el lote ante el primer bulón defectuoso. ¿Cuál es la probabilidad de
+que el rechazo se produzca con el quinto bulón controlado? Suponga p = 0.04.
+40. Un fabricante arma equipos con 10 componentes básicos. Si alguno de ellos falla el equipo no
+funciona. La probabilidad de que un componente sea defectuoso es p = 0.02.
+a) ¿Cuál es la probabilidad de que el equipo funcione al ser armado?
+b) ¿Cuál debería ser el valor de p para que la probabilidad de que el equipo funcione sea la
+mitad de la calculada anteriormente?
+c) Para disminuir la probabilidad de que el equipo falle se coloca en cada uno de los 10 com-
+ponentes otro idéntico en paralelo. De esta manera cada uno de estos paralelos de dos
+componentes funciona si por lo menos uno funciona. ¿Cuál es la probabilidad de que el
+equipo falle? Considere p = 0.02.
+8
+
+[Descripción de la imagen: un documento con las palabras'''' y'''']
+

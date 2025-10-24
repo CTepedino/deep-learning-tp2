@@ -1,0 +1,1217 @@
+Primer Cuatrimestre 2025
+Sistemas de 
+Inteligencia Artificial
+Perceptrón 
+Multicapa
+Rodrigo Ramele
+Eugenia Piñeiro
+Alan Pierri
+Santiago Reyes
+Marina Fuster
+Luciano Bianchi
+Marco Scilipoti
+Paula Oseroff
+Joaquín Girod
+
+[Descripción de la imagen: una imagen en blanco y negro de un patrón colorido, abstracto, fraly, fra - como]
+
+RESUMEN DE LA CLASE ANTERIOR
+●
+¿Quiénes son McCulloch y Pitts? ¿Cuál fue su aporte?
+●
+¿Qué tipo de problemas podemos resolver con el perceptrón 
+simple escalón?
+●
+¿Con qué mecanismo encuentro los pesos sinápticos y el bias?
+●
+¿Qué tipo de problemas puedo resolver al cambiar la función de 
+activación? Por ejemplo: por una lineal o no lineal de la familia 
+de sigmoideas.
+
+[Descripción de la imagen: resr de la astero ques de la astero ques de la astero]
+
+LIMITACIONES DEL PERCEPTRÓN SIMPLE
+1
+2
+1
+
+[Descripción de la imagen: un dibujo en línea de forma rectangular]
+
+BUSCANDO ALTERNATIVAS…
+
+[Descripción de la imagen: un diagrama de una bola y una bola con una línea de simetría | Transcripción de la imagen: BUSCANDO ALTERNATIVAS... I !
+
+— 1
+Íj— 9(X) _ 1+exp_28'r
+b
+
+Im = (0, 1)]]
+
+BUSCANDO ALTERNATIVAS…
+1000
+-1000
+-2000
+1000
+-1
+1
+
+[Descripción de la imagen: un diagrama de un autobús con una luz roja | Transcripción de la imagen: BUSCANDO ALTERNATIVAS...
+
+1 B=1
+1000
+xf
+-100
+b
+1
+1 2
+o(h)=h
+1 -1
+B=1
+y, — 1000]]
+
+¿CÓMO PUEDO COMBINAR LOS PERCEPTRONES?
+
+[Descripción de la imagen: un fondo blanco con las palabras 'como como' y 'como']
+
+¿Qué clase de problemas 
+puedo representar?
+
+[Descripción de la imagen: Que que que que que que que que que que que que que que que que que que que que]
+
+TEOREMA DE APROXIMACIÓN UNIVERSAL 
+1989 - Cybenko, G.
+(expansión en 1990, Hornik, K.)
+
+[Descripción de la imagen: un gráfico con dos imágenes de un hombre y una mujer]
+
+TEOREMA DE APROXIMACIÓN UNIVERSAL 
+1989 - Cybenko, G.
+(expansión en 1990, Hornik, K.)
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico gráfico y un gráfico gráfico]
+
+TEOREMA DE APROXIMACIÓN UNIVERSAL 
+1989 - Cybenko, G.
+(expansión en 1991, Hornik, K.)
+
+[Descripción de la imagen: un texto que dice,'tgemaxiom universal ' | Transcripción de la imagen: TEOREMA DE APROXIMACIÓN UNIVERSAL g|
+1989 - Cybenko, G.
+
+(expansión en 1991, Hornik, K.)
+
+While the approximating properties we have described are quite powerful, we
+have focused only on existence. The important questions that remain to be answered
+deal with feasibility, namely how many terms in the summation (or equivalently,
+how many neural nodes) are required to yield an approximation of á given quality?
+What properties of the function being approximated play a role in determining the
+number of terms? At this point, we can only say that we suspect quite strongly that
+the overwhelming majority of approximation problems will require astronomical
+numbers of terms. This feeling is based on the curse of dimensionality that plagues
+multidimensional approximation theory and statistics. Some recent progress con-]]
+
+PERCEPTRÓN MULTICAPA
+
+[Descripción de la imagen: un diagrama de un árbol con algunos puntos | Transcripción de la imagen: M = cantidad capas
+
+PERCEPTRÓN MULTICAPA]]
+
+¿CÓMO CALCULAMOS LA SALIDA DE LA RED? FEED-FORWARD PASS
+
+[Descripción de la imagen: un diagrama de un árbol con los nombres de cada uno de los nombres]
+
+Salida de la neurona:
+Salida de la neurona de una capa intermedia:
+Salida de la neurona de la primera capa intermedia:
+¿CÓMO CALCULAMOS LA SALIDA DE LA RED? FEED-FORWARD PASS
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras '','''' y'' | Transcripción de la imagen: ¿CÓMO CALCULAMOS LA SALIDA DE LA RED? FEED-FORWARD PASS
+
+Salida de la neurona:
+
+= T V . W)
+Salida de la neurona de una capa intermedia:
+
+m—1 m
+= M =1
+
+Salida de la neurona de la primera capa intermedia:
+
+] 1
+= 0(X x .w.)
+k=1 ,]]
+
+¿CÓMO CALCULAMOS LA SALIDA DE LA RED? FEED-FORWARD PASS
+
+[Descripción de la imagen: un diagrama de un árbol con algunos puntos]
+
+¿CÓMO VA 
+CAMBIANDO EL 
+ALGORITMO?
+
+[Descripción de la imagen: una pantalla blanca con las palabras 'como' y 'como' | Transcripción de la imagen: Initialize multi layer perceptron architecture ¿CÓMO VA
+
+Initialize weights w to small random values
+
+set learning rate n CAMBIAN DO EL
+for a fixed number of epochs: ALGORITMO?
+
+For each training example p in the dataset:
+1. Compute activation given by feed forward pass:
+_ M-1 M
+O; = G(Z'K]Vk 'W¡k)'
+where j is the index of output neuron,
+M is the index of output layer,
+k is the index of neuron from previous layer.
+
+sum is over the gty. of neurons from the previous layer.
+
+2. Update the weights and bias:
+
+ece
+
+3. Calculate perceptron error:
+erFrOL = EE X) , X)
+
+convergence = True if error < e else False
+
+if convergence: break
+
+End]]
+
+AHORA… ¿CÓMO LO ENTRENAMOS? 👀
+
+[Descripción de la imagen: un diagrama de un árbol con un número de puntos | Transcripción de la imagen: AHORA... ¿CÓMO LO ENTRENAMOS? * *]]
+
+AHORA… ¿CÓMO LO ENTRENAMOS? 👀
+Recordemos…
+
+[Descripción de la imagen: un diagrama de un árbol con un número de nodos | Transcripción de la imagen: AHORA.... ¿CÓMO LO ENTRENAMOS? € %]]
+
+AHORA… ¿CÓMO LO ENTRENAMOS? 👀
+Recordemos…
+
+[Descripción de la imagen: un diagrama de un árbol con un círculo verde | Transcripción de la imagen: AHORA.... ¿CÓMO LO ENTRENAMOS? € %]]
+
+0.1
+-3.4
+2
+0.6
+0.34
+-1.2
+-0.01
+0.86
+-1.9
+-2.3
+0.7
+0.02
+…
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un diagrama de un plano con un plano en el medio y un plano en el medio | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL]]
+
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+Mecanismo de optimización: 
+por ahora, gradiente 
+descendente.
+Regla de la cadena de la 
+derivada para capas ocultas
+
+[Descripción de la imagen: una imagen de un circuito con las palabras en español]
+
+Índice
+Descripción
+i
+índice de la neurona de la capa de salida (o siguiente)
+j
+índice de la neurona de la capa intermedia
+k
+índice de la neurona de entrada o de la capa anterior
+m
+índice de la capa intermedia
+p
+cantidad datos
+𝜇
+dato en particular
+
+[Descripción de la imagen: un diagrama de un árbol con un número de nodos]
+
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+❓
+
+[Descripción de la imagen: un ejemplo del inter - exor con | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+w wí Wi
+O Ds O s ÓME]]
+
+❓
+Aplicamos la regla de la cadena:
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un ejemplo del algoritmo para el algoritmo | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+)) — )— C) =1
+
+Aplicamos la regla de la cadena:
+
+dE aE 90, AN
+
+6W11 601 6h1 (3W11]]
+
+❓
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un circuito con un circuito y un circuito con un circuito | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+w wí Wi
+O O u O u ÓME]]
+
+❓
+Aplicamos la regla de la cadena:
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un ejemplo del algoritmo para el algoritmo]
+
+❓
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un circuito con un circuito y un circuito con un circuito | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+w wí Wi
+O O O ÓME]]
+
+❓
+Aplicamos la regla de la cadena:
+ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+[Descripción de la imagen: un ejemplo del algoritmo para el algoritmo | Transcripción de la imagen: ENTRENAMIENTO: EXPLICACIÓN CONCEPTUAL
+
+w wí *
+O O O ÓME
+
+Aplicamos la regla de la cadena:
+
+aE — 0E 0, Óh, 3V, h
+
+w 90, óh avÍ óh
+
+11]]
+
+RUMELHART, HINTON, WILLIAMS (1986)
+●
+Trabajan en un nuevo 
+algoritmo para actualizar los 
+pesos de una red neuronal 
+usando retropropagación 
+(backpropagation)
+●
+Para calcular la 
+actualización de los pesos 
+utilizaremos el algoritmo del 
+gradiente descendente y la 
+regla de la cadena para la 
+diferenciación.
+0.1
+-3.4
+2
+0.6
+0.34
+-1.2
+-0.01
+0.86
+-1.9
+-2.3
+0.7
+0.02
+…
+
+[Descripción de la imagen: rehart, william william, william, y william]
+
+DELTA: EXPLICACIÓN CONCEPTUAL
+❓
+Aplicamos la regla de la cadena:
+
+[Descripción de la imagen: un diagrama del circuito bidimensional | Transcripción de la imagen: DELTA: EXPLICACIÓN CONCEPTUAL]]
+
+DELTA: EXPLICACIÓN CONCEPTUAL
+❓
+Aplicamos la regla de la cadena:
+
+[Descripción de la imagen: del exicio capital | Transcripción de la imagen: DELTA: EXPLICACIÓN CONCEPTUAL]]
+
+DELTA: EXPLICACIÓN CONCEPTUAL
+❓
+Aplicamos la regla de la cadena:
+
+[Descripción de la imagen: del exicio capital | Transcripción de la imagen: DELTA: EXPLICACIÓN CONCEPTUAL
+
+1 2 W
+Wa Wíy 11
+E) () —(7)—9) 1=10
+
+Aplicamos la regla de la cadena:]]
+
+¿CÓMO VA 
+CAMBIANDO EL 
+ALGORITMO?
+
+[Descripción de la imagen: una pantalla blanca con un texto rojo que lee,'comoo alorto???? | Transcripción de la imagen: Initialize multi layer perceptron architecture ¿CÓMO VA
+
+Initialize weights w to small random values
+
+set learning rate n CAMBIAN DO EL
+for a fixed number of epochs: ALGORITMO?
+
+For each training example p in the dataset:
+
+1. Compute activation given by feed forward pass:
+M-1 M
+0, = e<%vk 'ij)'
+
+where j is the index of output neuroan,
+M is the index of output layer,
+k is the index of neuron from previous layer.
+
+sum is over the gty. of neurons from the previous layer.
+
+2. Update the weights and bias:
+optimizer (GD) with chain rule
+for inner layers (calculated using back-propagation)
+
+3. Calculate perceptron error:
+error. = C E <e7 X)
+convergence = True if error < e else False
+
+if convergence: break
+
+End]]
+
+¿POR QUÉ FUE TAN IMPORTANTE?
+●
+Permite resolver el problema de determinar cuánto 
+contribuye cada neurona al error del perceptrón 
+multicapa de manera eficiente.
+●
+Herramienta práctica para aportar evidencia empírica al 
+Teorema de Aproximación Universal
+●
+Renueva el interés en el área de inteligencia artificial
+●
+El concepto de entrenar redes “deep” se hace posible 
+con back propagation
+
+[Descripción de la imagen: una imagen de una persona con una cara y un título]
+
+[Descripción de la imagen: una taza de café y dos galletas en una tabla de madera]
+
+PERCEPTRÓN SIMPLE
+PERCEPTRÓN MULTICAPA
+Proceso para 
+obtener la salida 
+de la neurona 
+(“predecir”)
+Proceso de 
+“aprendizaje” 
+para ajustar los 
+pesos
+?
+?
+?
+Función de costo 
+(medir error con 
+respecto a la 
+salida esperada)
+
+[Descripción de la imagen: perspilel perspilel perspilel]
+
+PERCEPTRÓN SIMPLE
+PERCEPTRÓN MULTICAPA
+Proceso para 
+obtener la salida 
+de la neurona 
+(“predecir”)
+Proceso de 
+“aprendizaje” 
+para ajustar los 
+pesos
+Función de costo 
+(medir error con 
+respecto a la 
+salida esperada)
+?
+?
+
+[Descripción de la imagen: perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel pers | Transcripción de la imagen: PERCEPTRÓN SIMPLE PERCEPTRÓN MULTICAPA
+
+Proceso para E — m—1 de
+obtener la salida Vj 9( ? Vk - ij)
+de la neurona k=1
+
+(“predecir”) m = 1..M (0.= Ví", 5= V?)
+
+Función de costo
+(medir error con
+respecto a la
+salida esperada)
+
+?
+
+A2
+E(0) =7ZO(C —0)
+|_1=
+
+nuevo anterior
+
+Proceso de = w + Aw
+“aprendizaje” t?
+para ajustar los w = - 0E L
+
+pesos T ow]]
+
+PERCEPTRÓN SIMPLE
+PERCEPTRÓN MULTICAPA
+Proceso para 
+obtener la salida 
+de la neurona 
+(“predecir”)
+Proceso de 
+“aprendizaje” 
+para ajustar los 
+pesos
+?
+Función de costo 
+(medir error con 
+respecto a la 
+salida esperada)
+
+[Descripción de la imagen: perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel perspilel pers | Transcripción de la imagen: PERCEPTRÓN SIMPLE PERCEPTRÓN MULTICAPA
+
+Proceso para
+obtener la salida
+de la neurona
+(“predecir”)
+
+m—1 m
+
+m
+= e(k;1 ; .)
+
+m=1..M (0,=V",x =V1)
+
+Función de costo
+(medir error con
+respecto a la
+salida esperada)
+
+2
+
+p-1
+E(0) =+ 0 -05 E(0) =I -01)
+h=0 hi
+
+nuevo anterior
+Proceso de 177 = W + Aw
+“aprendizaje” ?
+para ajustar los Ae — 0E L
+pesos _ u w]]
+
+RETROPROPAGACIÓN: NOTACIÓN
+Índice
+Descripción
+i
+índice de la neurona de la capa de salida (o siguiente)
+j
+índice de la neurona de la capa intermedia
+k
+índice de la neurona de entrada o de la capa anterior
+m
+índice de la capa intermedia
+p
+cantidad datos
+𝜇
+dato en particular
+
+[Descripción de la imagen: propo de propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo propo]
+
+RETROPROPAGACIÓN: CAPA DE SALIDA (j = M)
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama del modelo topológico para el modelo topológico | Transcripción de la imagen: E(0) = -E C- 0?>2
+RETROPROPAGACIÓN: CAPA DE SALIDA ( = M) 0= e(hi)
+
+h =X Ví_"'1 .W
+
+j=1 7
+
+w= - dE — dE %
+W = Maw | — _—”» aw — 00, 0h AW.
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA DE SALIDA (j = M)
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama del algoritmo para el algoritmo | Transcripción de la imagen: E(0) = -E C- 0?>2
+RETROPROPAGACIÓN: CAPA DE SALIDA ( = M) 0= e(hi)
+
+h=y "".w
+
+E E ECAO
+W = MNy | — — oW, — 90| an
+
+1
+
+ij
+
+= 6- 0)- 1e017
+
+y
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA DE SALIDA (j = M)
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama del algoritmo para el algoritmo | Transcripción de la imagen: E(0) = -E C- 0?>2
+RETROPROPAGACIÓN: CAPA DE SALIDA ( = M) 0= e(hi)
+
+h=y "".w
+
+E E ECAO
+W = MNy | — — oW, — 90| an
+
+ij
+
+0E — = ' M—-1
+= 6- 99 DEGY,
+
+0E M-1 ,
+w = — 6¡V¡ 6¡ = (Z¡ — O¡)9 (h¡)
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA DE SALIDA (j = M)
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama del modelo topológico para el modelo topológico | Transcripción de la imagen: E(0) = -E C- 0?>2
+RETROPROPAGACIÓN: CAPA DE SALIDA ( = M) 0= e(hi)
+
+h=y "".w
+
+E E ECAO
+W = MNy | — — oW, — 90| an
+
+ij
+
+dE _ _ ' M-1
+a= 6- 976 96)OY)
+0E M-1 ,
+6W¡¡ — 6iVj 6¡ — (¿¡ _ 0¡)9 (h¡)
+—1
+AW¡¡ = T]5¡V
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA DE SALIDA (j = M)
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama del modelo topológico para el modelo topológico | Transcripción de la imagen: 2
+E(0) =>IE C — 05)
+hi
+
+RETROPROPAGACIÓN: CAPA DE SALIDA ( = M) 0,= O(h)
+h 'El Ví_"'1 W
+
+E E ECAO
+W = MNy | — — oW, — 90| an
+
+ij
+
+dE _ _ ; M-1
+a= 6- 976 96)OY)
+0E M-1 ,
+6W¡¡ — 6iVj 6¡ — (¿¡ _ 0¡)9 (h¡)
+—1
+AW¡¡ = T]5¡V
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+
+[Descripción de la imagen: un diagrama de un modelo topológico]
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+
+[Descripción de la imagen: un diagrama del modelo topológico para el cuatroier | Transcripción de la imagen: 2
+E(0) =>IE C — 05)
+hi
+
+RETROPROPAGACIÓN: CAPA OCULTA ( = M-1 , jin [M-1; ..., 1)) 0,= e(h)
+h 'El Ví_"'1 .W,
+
+JE aE aE 90 Óh | av aR
+
+= - Maw| — q - [a0 an 9 r
+
+jk j jk
+óE ; m m
+E =- )X C- 9)0em630W, M "
+ÓW_ ó l 1 1 y a, M m
+jk l óh¡' Óij
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+
+[Descripción de la imagen: un diagrama de la propagación de la propagación de la propagación de la propagación de la propagación de la propagación de | Transcripción de la imagen: RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , jin [M-1) ..., 1)
+
+m m
+w — TE
+w | — awr - 90 (ah (ay an a
+
+E =- )X € - 9)em30)W, 7 *
+
+m m
+
+“
+j l ————.y—— 6h¡. ów¡k
+Ó.
+i
+m m
+=. E —
+a m l l] a 08 , m
+Wi, ; Óh. ów,
+J j jk
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+
+[Descripción de la imagen: un diagrama de la propagación de la propagación de la propagación de la propagación de la propagación de la propagación de | Transcripción de la imagen: m m
+= e(1")
+
+m
+— oe 0 ÓN V AN
+90 Óh ay a aw
+j jk
+0E
+m —
+ówjk
+dE m m—1
+= - 29W, 0( )01) V
+W¡'k a J k
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.]]
+
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+
+[Descripción de la imagen: el diagrama muestra las tres fases del modelo propuesto | Transcripción de la imagen: RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , jin [M-1) ..., 1) =y
+
+0E m m—i
+E - -—y8W £
+u le ray 0 I 7
+87'Il
+j
+m,,mn—1
+Aw = 16.V
+
+j k]]
+
+RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , j in [M-1, …, 1])
+
+[Descripción de la imagen: el diagrama muestra las tres fases del modelo propuesto | Transcripción de la imagen: RETROPROPAGACIÓN: CAPA OCULTA (j = M-1 , jin [M-1) ..., 1) EA]]
+
+Notar que el ejemplo está hecho para un dato de entrada. Se deberá extender al conjunto.
+RETROPROPAGACIÓN: CAPA OCULTA (j in [M-1, …, 1])
+
+[Descripción de la imagen: un diagrama de la propagación de la propagación de la propagación de la propagación de la propagación de la propagación de]
+
+PERCEPTRÓN SIMPLE
+PERCEPTRÓN MULTICAPA
+Proceso para 
+obtener la salida 
+de la neurona 
+(“predecir”)
+Proceso de 
+“aprendizaje” 
+para ajustar los 
+pesos
+Función de costo 
+(medir error con 
+respecto a la 
+salida esperada)
+
+[Descripción de la imagen: perspile perspile multila | Transcripción de la imagen: PERCEPTRÓN SIMPLE PERCEPTRÓN MULTICAPA
+
+m—1
+
+= (E V w
+
+j
+
+Proceso para
+obtener la salida
+de la neurona
+
+(*predecir”) m=1..M (0=V, x =V)
+
+Función de costo i p—-1 2 1 " T
+
+(medi — H h — ! —
+
+de E(0) =+ 3 ( -0"  E(0) =0 -0)
+h=0 hi
+
+salida esperada)
+
+Proceso de Wnuevo — Wanterzor + Aw AW¡¡ — n6¡V]. 6¡ "- (¿¡ _ º,-)º'(h,)
+“aprendizaje”
+
+para ajustar los — dE _
+
+pesos AwW = - , AW;,,;( = n8;,nV;(n - = -C 877 w e'(h")]]
+
+¿CÓMO VA 
+CAMBIANDO EL 
+ALGORITMO?
+TIP: expresar todo de 
+manera matricial 
+utilizando alguna 
+librería como numpy.
+
+[Descripción de la imagen: comoo algro | Transcripción de la imagen: Initialize multi layer perceptron architecture . CÓMO VA
+Initialize weights w to small random values ¿¡
+
+CAMBIANDO EL
+for a fixed number of epochs: ALGORITMO?
+
+For each training example p in the dataset:
+
+4
+
+Compute activation given by feed forward pass:
+M1 — M
+0; = 9(%EQ .uv“,
+
+where j is the index of output neuroan,
+M is the index of output layer,
+
+TIP: expresar todo de
+
+k is the index of neuron from previous layer. l
+sum is over the gty. of neurons from the previous layer. manera matrlC|a
+
+utilizando alguna
+Update the weights and bias: librería como numpy.
+
+For each weight w.,:
+
+1e
+
+(gradient descendent)
+
+, dE
+W: = W: + AWw,, where Aw;: = —nóí
+
+0E a o ] 'alacta 1n
+and e 15 computed using backpropagation
+
+3. Calculate perceptron error:
+error — £ X) ..7 X)
+
+convergence = True if error < e else False
+
+if convergence: break]]
+
+[Descripción de la imagen: una taza de café y dos galletas en una tabla de madera]
+
+INCREMENTAL/ONLINE
+(Gradiente Descendente 
+Estocástico)
+MINI LOTE/MINI BATCH
+(Gradiente Descendente 
+Estocástico)
+LOTE/BATCH
+(Gradiente Descendente)
+La actualización de los pesos de 
+la red se hace luego de calcular el 
+Δw para un elemento del 
+conjunto de datos
+La actualización de los pesos de 
+la red se hace luego de calcular el 
+Δw para un subconjunto de 
+elementos del conjunto de datos
+La actualización de los pesos de 
+la red se hace luego de calcular el 
+Δw para todos los elementos 
+del conjunto de datos
+
+[Descripción de la imagen: una tabla con tres tipos diferentes de la palabra]
+
+¿CÓMO VA 
+CAMBIANDO EL 
+ALGORITMO?
+VERSIÓN BATCH
+TIP: expresar todo de 
+manera matricial 
+utilizando alguna 
+librería como numpy.
+
+[Descripción de la imagen: comoo algritoo varia | Transcripción de la imagen: Initialize multi layer perceptron architecture . CÓMO Vº
+
+Initialize weights w to small random values
+p CAMBIANDO EL
+— ALGORITMO?
+Aws = 0 "
+
+For each training example h in the dataset: VE RSIÓN BATCH
+
+1. Compute activation given by feed forward pass:
+
+H
+(1)
+
+for a fixed number 0
+
+N M
+o = 9(2Vk 'W]—'-)'
+
+where j is the index of output neuron,
+M is the index of output layer, TIP: expresar todo de
+
+k is the index of neuron from previous layer. 1A
+— ' E E manera matricial
+sum is over the gty. of neurons from the previous layer.
+
+utilizando alguna
+librería como numpy.
+
+2. Calculate the weights and bias:
+For each weight w.:
+
+E “ . ,
+Aws = Aws + Aw,, where Aw, = —n¿í (gradient descendent)
+
+dE
+
+= is computed using backpropagation
+
+and
+
+W=W + Aws
+Calculate perceptron error:
+error = EC X) ..7 X)
+convergence = True if error < e else False
+
+if convergence: break
+
+End]]
+
+●
+¿Cuál es el costo de cada época? (aprendizaje) 
+●
+¿Cuáles son los requerimientos de memoria?
+●
+¿Cómo manejan el “ruido”? (ejemplo, outliers)
+●
+¿Cuánto tarda en converger?
+●
+…
+ESTRATEGIAS DE ENTRENAMIENTO: ONLINE / BATCH
+
+[Descripción de la imagen: estica entreo / onde / lote]
+
+EJERCICIO
+
+[Descripción de la imagen: una pantalla blanca con un texto negro que lee,'' ' | Transcripción de la imagen: Initialize
+Initialize
+
+multi layer perceptron architecture
+weights w to small random values
+
+set learning rate n
+
+for a fixed number of epochs:
+
+End
+
+For each training example p in the dataset:
+
+Compute activation given by feed forward pass:
+M-1 M
+0; = 6(%Vk W.)-
+
+where j is the index of output neuroan,
+M is the index of output layer,
+
+k is the index of neuron from previous layer.
+
+sum is over the gty. of neurons from the previous layer.
+
+. Update the weights and bias:
+
+For each weight w,:
+
+W: = W: + Aw,, where Aw: = —nj%% (gradient descendent)
+
+E — : 6
+and ¡£T is computed using backpropagation
+
+Calculate perceptron error:
+
+error — £ X) ..7 X)
+
+convergence = True if error < e else False
+if convergence: break
+
+EJERCICIO]]
+
+RESUMEN
+●
+El perceptrón multicapa me permite modelar 
+transformaciones complejas. En teoría, cualquier función 
+continua puede modelarse con un perceptrón multicapa.
+●
+La arquitectura del perceptŕon multicapa debe realizarse 
+manualmente. A priori, no tenemos una receta que nos 
+permita definir “la mejor arquitectura”.
+●
+Retropropagación provee un mecanismo con ciertas 
+optimizaciones para definir el “error” en las capas ocultas 
+y hallar las actualizaciones de los pesos que nos permiten 
+minimizar la función de costo.
+
+[Descripción de la imagen: remen e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza e perriza]
+
+¿Qué estoy 
+optimizando 
+cuando quiero 
+usar una red 
+neuronal?
+
+[Descripción de la imagen: una captura de pantalla de un ordenador con el texto, est est est est est est est est est est | Transcripción de la imagen: ¿Qué estoy
+optimizando
+cuando quiero
+usar una red
+neuronal?
+
+Función objetivo
+
+)52£1n FO F R = 10 .. (3)
+gi(X) <=0 (4)
+h(7) =0 (5)
+
+o Optimización Discreta: Programación entera y
+combinatoria
+
+o Optimización Discreta: Ecuación diofántica
+
+o Optimización Lineal: Programación Lineal
+
+o Optimización No Lineal sin Restricciones Convexa:
+garantía de extremos globales.
+
+o Optimización No Convexa: Primer orden: GD, SGD,
+ADAM,
+
+o Optimización No Convexa: Segundo orden: Newton
+
+o Optimización No Convexa: Cero orden: Bayesiana, Powel,
+
+Sim Optimistic Optimization
+
+[o)]]
+
+BIBLIOGRAFÍA
+Cybenko, G (1989) Approximation by Superpositions of a Sigmoidal Function, 
+https://link.springer.com/article/10.1007/BF02551274
+Hornik, Kurk (1990) Approximation capabilities of multilayer feedforward networks,
+https://www.sciencedirect.com/science/article/abs/pii/089360809190009T?via%3Dihub
+Rumelhart D., Hinton G. & Williams R., Learning representations by back-propagating 
+errors. Nature 323, 533-536 (1986), https://doi.org/10.1038/323533a0
+Rodrigo Ramele (2024) Reglamento y Apuntes de Sistemas de Inteligencia Artificial, 
+Capítulo 7.
+
+[Descripción de la imagen: bucareia ojek, i / ojek, i / ojec / ojec / ojec / ojec]
+
+BIAS EN 
+PERCEPTRÓN 
+MULTICAPA
+
+[Descripción de la imagen: una imagen colorida de un cerebro con las palabras ben perpio mutia]
+
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+Recordemos que el bias (o umbral) nos permite flexibilizar la forma de la salida 
+de la neurona, porque permite desplazamiento de la función (ver clase 8)
+
+[Descripción de la imagen: exo inoco els | Transcripción de la imagen: EXTRA: ¿CÓMO INCLUYO EL BIAS?
+
+Recordemos que el bias (0 umbral) nos permite flexibilizar la forma de la salida
+
+de la neurona, porque permite desplazamiento de la función (ver clase 8)
+
+0.7 »x — Republican
+»x Democrat
+0.6
+x
+v
+E£ x »
+n_2 05h
+D
+Ú
+N *
+o
+£ 04
+o
+=
+x
+0.3 *
+x
+* XX
+0.2 [ i 1 . L i 1 i
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+
+Normalized Age
+
+Normalized Income
+
+0.7F
+
+o
+o
+T
+
+a
+u
+
+0.4F
+
+0.3F
+
+»x — Republican
+»x Democrat
+
+0.4 0.5 0.6 0.7 0.8 0.9
+Normalized Age]]
+
+Recordemos que el bias (o umbral) nos permite flexibilizar la forma de la salida 
+de la neurona, porque permite desplazamiento de la función (ver clase 8)
+WolframAlpha Link
+WolframAlpha Link
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+
+[Descripción de la imagen: exo inclyo els]
+
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+Podemos incluir un x0 que permita 
+ajustar un peso w0. Este peso será 
+equivalente al bias pero puede 
+incorporarse en los cálculos de manera 
+matricial.
+
+[Descripción de la imagen: exo inclivo els | Transcripción de la imagen: EXTRA: ¿CÓMO INCLUYO EL BIAS?
+
+1
+l
+l
+l
+l
+
+Podemos incluir un x, que permita 6 0.445 0.669 10
+ajustar un peso w,. Este peso será | 10 l0.349 0.692 10
+equivalente al bias pero puede ¡ ** ea ea 10
+incorporarse en los cálculos de manera | 12 IZZÍ 3:32 ÍZ
+matricial. I Io.23 0.529 1.0
+
+I 10 I0.392 0.696 1.0
+
+" | 1.0 |0.355 0.641 1.0
+
+0(x) = 2 X.W + W p o lo.ass 0.66 10
+i=1 L L 0 l 1.0 [0.289 0.51 1.0
+
+11(0) | 0.513 0.255 -1.0
+
+I 1.0 |0.755 0.522 -1.0
+
+I 1() IO.626 0.24 -1.0
+
+| E 0.703 0.342 -1.0
+
+| 1.0 I0.863 0.536 -1.0
+
+| 1.0 |0.6 0.225 -1.0
+
+p 9 10.664 0.303 -1.0
+
+1.0 | 0.802 0.565 -1.0
+
+I 1.0 |0.592 0.213 -1.0
+
+I 1.0 0.531 0.223 -1.0]]
+
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+
+[Descripción de la imagen: un diagrama de un árbol con algunos puntos]
+
+1
+1
+1
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+Podemos incluir, capa a capa, un valor 
+constante para todos los datos de 
+entrada, de manera tal que podamos 
+ajustar w0 (bias) como si fuera un peso 
+sináptico más de la red neuronal.
+
+[Descripción de la imagen: exo inoly els??????????????????]
+
+RETROPROPAGACIÓN: NOTACIÓN
+Índice
+Descripción
+i
+índice de la neurona de la capa de salida (o siguiente)
+j
+índice de la neurona de la capa intermedia
+k
+índice de la neurona de entrada o de la capa 
+anterior
+m
+índice de la capa intermedia
+p
+cantidad datos
+𝜇
+dato en particular
+1
+1
+1
+A partir de 
+ahora 
+comienza 
+desde 0
+
+[Descripción de la imagen: un diagrama de una red con un nodo y un nodo]
+
+1
+1
+1
+EXTRA: ¿CÓMO INCLUYO EL BIAS?
+¿Es estrictamente necesario en 
+input o en todas las capas? 
+No necesariamente, esto pueden 
+probarlo. Recordar que el rol del bias 
+permite mayor flexibilidad y más 
+parámetros libres para aprender 
+patrones cada vez más complejos.
+Quizás es posible alcanzar soluciones 
+en determinadas situaciones sin hacer 
+uso del mismo. Pueden probar ¿qué 
+ocurre si no lo incluyo? ¿si lo incluyo 
+solo en la capa de entrada? ¿si lo 
+incluyo en todas las capas?
+
+[Descripción de la imagen: exo inicias??????????????????????]
+

@@ -1,0 +1,81 @@
+Instituto Tecnológico de Buenos Aires 
+ 
+ 
+72.27 - Sistemas de Inteligencia Artificial - Comisión: S 
+ 
+ 
+ 
+TP6 - Informe 
+ 
+ 
+ 
+Tepedino, Cristian - 62830
+
+[Descripción de la imagen: tpa - info - trop]
+
+¿Estará la Inteligencia Artificial a la altura de 
+sus expectativas? 
+ 
+​
+En el siguiente ensayo discutiré sobre la burbuja o “hype” que hay alrededor de la 
+Inteligencia Artificial, y sobre como no creo que sea posible estar a la altura de como se 
+espera que evolucione en el corto plazo. 
+​
+Actualmente, estamos viviendo una época de grandes y rápidas mejoras en el 
+campo de la IA. En menos de 5 años los modelos generativos pasaron de ser un tema de 
+nicho a estar en boca de todo el mundo. Nuevos y mejores modelos salen cada pocos 
+meses, y es fácil encontrar gente que defiende que en unos pocos años la IA podrá 
+reemplazar completamente a los ingenieros, programadores, y muchos otros oficios.  
+​
+A simple vista, se puede entender el razonamiento que los lleva a pensar de esa 
+forma. Prácticamente de un día para el otro surgieron una multitud de modelos de texto, de 
+imágenes, de video. Si comparamos la generación de imágenes que los modelos eran 
+capaces de producir en 2021 contra lo que se puede conseguir actualmente, se puede ver 
+un gran salto en la calidad.​
+​
+Aún así, esto ha pasado antes. En los 80 ya se hablaba sobre como las 
+computadoras serían tan inteligentes como los humanos “en unos pocos años”. Cuando 
+estas expectativas no se cumplieron, ocurrió un “Invierno de la IA” en el que se dejó de 
+invertir en la investigación y el área se estancó.  
+​
+Hoy en día pasa algo parecido. Todo el mundo tiene la vista puesta en el desarrollo 
+de la IA, y constantemente salen noticias cuando alguna figura reconocida dice que los 
+humanos serán reemplazados. Pero… ¿Quienes suelen ser los que dicen esto? 
+Usualmente, la gente que más habla sobre el potencial de la IA es la misma gente que tiene 
+inversiones en el área. Sabiendo esto, es obvio lo que está pasando: no están dando una 
+opinión, están haciendo marketing. Pero si lo dice gente que está tan metida en el tema, 
+una persona común lo verá, y tenderá a creerle. La burbuja crece más y más, y se dan 
+promesas y expectativas imposibles. “Tendremos AGI en 18 meses” repiten algunos, desde 
+hace 36 meses. “Ya no necesitamos humanos”  dicen otros, mientras contratan más 
+personas para reparar los problemas que les da depender únicamente de la IA. 
+​
+Aunque los modelos actuales son impresionantes, están lejos de tener una 
+comprensión real del mundo. Operan estadísticamente: generan texto o imágenes 
+basándose en patrones aprendidos de datos masivos, pero no entienden lo que producen. 
+No tienen sentido común, conciencia, ni la capacidad de razonar como lo hace un ser 
+humano. Muchos de sus errores se deben justamente a esta falta de comprensión profunda. 
+Tratar de modelar estas restricciones es una tarea extremadamente difícil, y por 
+impresionante que puedan ser los modelos actuales, están lejos de lograrlo. 
+​
+Hay demasiadas expectativas sobre la IA como para que puedan cumplirse pronto, y 
+si bien creo que eventualmente será posible obtener algo a lo que se pueda llamar 
+inteligencia generalizada, no veo posible que sea pronto. Los recursos necesarios para 
+mantener servicios como ChatGPT ya son muy elevados, y el único motivo por el que se 
+pueden mantener funcionando como lo hacen es porque reciben tanta inversión que su 
+rentabilidad no es importante. Cuando se inevitablemente se llegué a un límite y se frene el 
+avance, toda esa inversión va a desaparecer, y el área volverá a tener un invierno. ¿Será
+
+[Descripción de la imagen: una página del libro,'est suplica la arte de la est est est est est est]
+
+tan largo y tan brutal como el que se vivió después de los 80? Probablemente no, a este 
+punto los LLMs se integraron mucho en la sociedad, y que desaparezca el hype no va a 
+eliminar esto. La investigación en las IAs se mantendrá, aunque se reduzca fuertemente. Y, 
+seguramente, eventualmente se vuelva a formar una burbuja cuando se descubra alguna 
+innovación importante, pero dudo fuertemente que eso será pronto. 
+Con esto no quiero pretender que la IA no tiene futuro. Pero esta evolución será más 
+progresiva de lo que muchas predicciones sugieren. En vez de reemplazar a los humanos, 
+lo más probable es que la IA termine complementando nuestras capacidades, 
+automatizando tareas específicas, como una herramienta más que como una persona.
+
+[Descripción de la imagen: un libro blanco con las palabras '''' y'' ']
+

@@ -1,0 +1,300 @@
+Probabilidad y Estadística 93.24
+Les damos la bienvenida a este curso en el que nos 
+ocuparemos de intentar cuantificar 
+Lo incierto, no determinista, 
+estocástico, aleatorio …
+… sí, el azar
+
+[Descripción de la imagen: un dado con las palabras en español e inglés | Transcripción de la imagen: 9 Loincierto, no determinista,
+estocastico, aleatorio ...
+
+... Si, el azar]]
+
+Experimento aleatorio
+Ejemplos de experimentos no determinísticos o aleatorios
+E1: Se lanza un dado y se observa el número que aparece en 
+la cara superior.
+E2: Se lanza una moneda y se cuenta el número de caras 
+obtenidas.
+E3: Se consideran los artículos producidos en una línea de 
+producción y se cuenta el número de defectuosos.
+E4: Se cuenta el número de accesos a un servidor Web en 
+una hora.
+E5: Se registran las temperaturas máxima y mínima de un día.
+E6: Se mide el tiempo de duración de una lámpara LED
+¿Qué tienen en común todos estos experimentos?
+
+[Descripción de la imagen: exemento de demimios aloros]
+
+Experimento aleatorio
+Características de un experimento aleatorio
+1. Es posible repetir el experimento indefinidamente sin 
+cambiar esencialmente las condiciones en que se realiza.
+2. Aunque, en general, no podemos identificar un resultado 
+particular del experimento, se puede indicar el conjunto de 
+todos los resultados posibles (este conjunto es el ESPACIO 
+MUESTRAL del experimento).
+3. A medida que el experimento se repite, los resultados 
+parecen ocurrir en forma caprichosa. Sin embargo, como el 
+experimento se repite un gran número de veces, aparece un 
+patrón 
+de 
+regularidad. Este 
+patrón hace 
+posible 
+la 
+construcción de un modelo matemático con el cual analizar el 
+experimento.
+
+[Descripción de la imagen: exermelato carres de exemento]
+
+Experimento aleatorio
+Espacio  muestral 
+Espacio muestral para el experimento 
+aleatorio en que  se arroja un dado y se 
+observa  el número que sale
+Espacio muestral para el experimento aleatorio en el que 
+se arrojan dos dados y se anotan los dos números que 
+salen. Observe que se consideran dos dados distintos.
+
+[Descripción de la imagen: exemento asquibles exemento asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles asquibles | Transcripción de la imagen: Experimento aleatorio
+
+Espacio muestral
+
+e e e e le e fes Espacio muestral para el experimento
+rI W - W s F. L .M .. 1 as aleatorio en que se arroja un dado y se
+_2
+
+observa el número que sale
+
+29 Espacio muestral para el experimento aleatorio en el que
+se arrojan dos dados y se anotan los dos números que
+salen. Observe que se consideran dos dados distintos.
+
+: 22 E (22)009 (23 908 (53/009 (33)M00 (3: E
+
+Lo -E IR CIBB IN ON ON
+
+lo RA]]
+
+Experimento aleatorio
+Experimento 
+aleatorio
+Cálculo de
+probabilidades
+Estadística
+Inferencial
+Descriptiva
+Antes
+Después
+Tiempo
+
+[Descripción de la imagen: exemento deso tempoo calculao]
+
+Estadística vs. Probabilidad
+Probabilidad: Sabemos 
+que un balde tiene  
+pelotitas,  negras,  grises y 
+ amarillas. Si saco 5, ¿qué 
+tan probable es sacar 2 
+negras y 2 grises?
+Estadística: Sabemos 
+que un balde tiene  
+pelotitas. Saco 5 al azar y  
+obtengo 2 negras y 2 
+grises. ¿Qué proporción de 
+cada una cada color hay 
+en el balde?
+
+[Descripción de la imagen: probalido probalido probalido probalido probalido probalido probalido probaciono probaciono probaciono probaciono probaciono proba]
+
+Experimento aleatorio
+Lanzamiento de una moneda
+ 
+ 
+•
+Probabilidad: Si no es una moneda ‘pesada’, entonces será 
+igualmente probable que salga cara o ceca.
+•
+Estadística: Si no sé si no es una moneda ‘justa’, puedo 
+lanzarla muchas veces y anotar cuántas veces sale cara. La 
+frecuencia relativa (proporción) de ocurrencia de caras estima 
+la probabilidad de que salga cara en un solo lanzamiento.
+
+[Descripción de la imagen: exemento lazmoy no est mar = o c o c = o c = o c = o o o o]
+
+y = rand(1,10000);
+x = (y>0.5);
+fa = cumsum(x);
+f = cumsum(x)./(1:10000);
+plot(f)
+Experimento aleatorio
+Simulación del lanzamiento de una moneda (Octave)
+Genero muchos (10000) 
+1s y 0s, con igual 
+probabilidad.
+Frecuencia absoluta de 
+ocurrencia de 1s.
+Frecuencia relativa de 
+ocurrencia de 1s.
+Grafico la frecuencia 
+relativa.
+
+[Descripción de la imagen: exemento de larmo de lar]
+
+Experimento aleatorio
+Simulación del lanzamiento de una moneda 
+Frecuencia relativa (proporción muestral) de ocurrencia de cara 
+para el número de repeticiones del experimento creciente.
+
+[Descripción de la imagen: exemento sinacina del diantee]
+
+Experimento aleatorio
+Simulación del lanzamiento de un dado
+
+[Descripción de la imagen: exermealto sinalonzando de dato | Transcripción de la imagen: Experimento aleatorio
+
+Simulación del lanzamiento de un dado
+
+>> S5=Lloor (6*rand(1,6000)+1);
+>> plot[1:10ú,5[1:100),'D',1:100,S(1:100))
+
+— lad
+*
+*
+-
+
+—
+
+_2
+
+ad
+
+d
+»
+*
+.»
+
+-*
+»
+
+- »
+
+-]]
+
+Experimento aleatorio
+Simulación del lanzamiento de un dado
+•
+El gráfico de la derecha se denomina histograma: muestra la 
+frecuencia de ocurrencia de cada valor. Es una herramienta 
+de la estadística descriptiva (i.e., describe resultados).
+•
+El histograma me permite, de un vistazo, ver qué tan 
+frecuentemente aparece cada valor, es decir, su distribución.
+
+[Descripción de la imagen: exermento de lazmoo | Transcripción de la imagen: Experimento aleatorio
+
+Simulación del lanzamiento de un dado
+
+ME oe C Figure 1
+
+:l_.é.rc_hi_vu Editar — Depurar — Ventana __Ayuda Noticias _r€_hha_5dilm_ñyuda E
+
+ñ |j i E |j Directorio actual: C:Users|Win seven ) z+ z- « Insertartexto [; Ejes Mala Autoescalado
+Ventana de comandos 1200
+
+>> S=floor (6*rand (1, 6000)+1); 1000
+>> [a b]=hist(5,1:6);
+>> stem(b,a)
+
+E A
+
+1054 994 1027 919 972 1034
+
+El gráfico de la derecha se denomina histograma: muestra la
+frecuencia de ocurrencia de cada valor. Es una herramienta
+de la estadística descriptiva (1.e., describe resultados).
+
+El histograma me permite, de un vistazo, ver qué tan
+frecuentemente aparece cada valor, es decir, su distribución.]]
+
+Un dato biométrico
+•
+Experimento aleatorio: se mide la longitud (en mm) del fémur 
+izquierdo de una persona tomada al azar.
+
+[Descripción de la imagen: una nota con las palabras en español | Transcripción de la imagen: Un dato biométrico
+
+Experimento aleatorio: se mide la longitud (en mm) del fémur
+izquierdo de una persona tomada al azar.
+
+Espacio muestral: R* (no discriminamos ni altos ni bajos).
+
+Probabilidad: basados en algún modelo, podemos predecir
+qué tan probable es que la longitud se encuentre en un
+intervalo (a, b| (por ej., (300,330)).
+
+Estadística: medimos a muchas personas para conocer la
+distribución de los valores: cuántas personas tienen el fémur
+en el intervalor (a, b]. El histograma muestra visualmente estos
+resultados.]]
+
+Un dato biométrico
+Como 
+ocurre 
+en 
+muchas 
+situaciones, se presenta este 
+tipo de distribución de los 
+valores 
+de 
+una 
+variable 
+(‘muchos valores en torno del 
+promedio y pocos alejados a 
+un lado y otro del promedio’)
+Longitud del fémur izquierdo 
+en mm en 813 personas (The 
+Goldman Osteometric  Data 
+Set)
+
+[Descripción de la imagen: un gráfico gráfico con una línea azul y una línea azul]
+
+Ruido Gaussiano
+Dos segundos de ruido 
+entre 
+estaciones 
+de 
+radios FM en formato 
+digital a 22500 muestras 
+por segundo
+Mil muestras del 
+registro anterior
+
+[Descripción de la imagen: radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio radio]
+
+Ruido Gaussiano
+Otra vez la forma de ‘campana’. Es tan importante, que estará 
+relacionado con el famoso Teorema Central del Límite.
+Las 
+50000 
+muestras 
+agrupadas 
+en 
+este 
+gráfico 
+especial 
+(un 
+histograma). Se parte en 
+intervalos el rango de 
+amplitudes y se cuenta la 
+cantidad de muestras en 
+cada intervalo.
+
+[Descripción de la imagen: un gráfico gráfico con una línea azul y una línea blanca]
+
+El aparato de Galton (Quincux)
+
+[Descripción de la imagen: una caja con una puerta de metal y una puerta de metal | Transcripción de la imagen: Index Funds Advisors
+matching people with partíalios]]
+

@@ -1,0 +1,1554 @@
+Variable aleatoria bidimensional 
+continua
+Función 
+de 
+densidad 
+de 
+probabilidad 
+conjunta
+𝑓𝑋,𝑌(𝑥, 𝑦)
+𝑓𝑋,𝑌(𝑥,𝑦)×∆𝑥∆𝑦≈𝑃(𝑥−∆𝑥
+2
+< 𝑋≤𝑥+ ∆𝑥
+2
+,𝑦−∆𝑦
+2
+<𝑌≤𝑦+ ∆𝑦
+2 )
+𝑓
+𝑋,𝑌( 𝑥, 𝑦) ≥0
+
+[Descripción de la imagen: varleetaria bierial conta conta conta conta conta conta conta conta conta conta conta conta | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Función de densidad de probabilidad
+conjunta
+
+fX,Y(X!y)
+fy y X,y XAXAyaP -—<X<x+—,y-—y Y<y+ 1y
+
+fX,Y(X,_)/)ZO
+
+e
+>
+_
+U>
+l
+-—
+_>
+_=
+— -D
+—
+— -D
+—_—>
+l
+—
+_>
+-
+—
+— D
+—_—>
+_-]]
+
+Variable aleatoria bidimensional 
+continua
+Función 
+de 
+densidad 
+de 
+probabilidad 
+conjunta
+𝑓𝑋,𝑌(𝑥,𝑦)×∆𝑥∆𝑦≈𝑃(𝑥−∆𝑥
+2
+< 𝑋≤𝑥+ ∆𝑥
+2
+,𝑦−∆𝑦
+2
+<𝑌≤𝑦+ ∆𝑦
+2 )
+𝑃(𝑎< 𝑋≤𝑏,𝑐<𝑌≤𝑑)=∫
+𝑎
+𝑏
+∫
+𝑐
+𝑑
+𝑓𝑋,𝑌(𝑥, 𝑦)𝑑𝑥𝑑𝑦
+∫
+−∞
++ ∞∫
+−∞
++ ∞
+𝑓𝑋,𝑌(𝑥, 𝑦) 𝑑𝑥𝑑𝑦=1
+
+[Descripción de la imagen: varleetao conta biliar | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Función de densidad de probabilidad
+conjunta
+
+fy Xy AA ys P —l< X+%,y-A—y<Y£y+%
+
+b d
+Pla<X<b,c<Y<d =| | fy y x, y dxdy
+
+— OO — OO
+
+»
+- >
+—>
+—
+—
+—>
+—
+— =»
+2
+— D
+—
+—
+—
+—>
+—
+2
+—
+—
+_»]]
+
+Variable aleatoria bidimensional 
+continua
+Función de probabilidad acumulada conjunta
+𝐹𝑋, 𝑌( 𝑥, 𝑦)=𝑃( 𝑋≤𝑥, 𝑌≤𝑦)
+𝑓𝑋,𝑌(𝑥, 𝑦)= 𝜕2 𝐹𝑋, 𝑌( 𝑥, 𝑦)
+𝜕𝑥𝜕𝑦
+•  
+0 ≤𝐹𝑋, 𝑌( 𝑥, 𝑦)≤1
+• Monotónicamente no decreciente en cada variable 
+• Continua por derecha en cada variable
+
+[Descripción de la imagen: varleatoria bierial conta | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+Función de probabilidad acumulada conjunta
+Fay X. Y) =P X<x.Y<y)
+
+O<7 -il><. y) —<l
+
+* Monotónicamente no decreciente en cada variable
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+_—-
+_-
+—
+- D»
+-
+-
+-- -
+-
+-
+->
+-
+_-
+—
+—>
+-
+- -
+- -
+
+* Continua por derecha en cada variable]]
+
+Variable aleatoria bidimensional 
+continua
+Función de densidad de marginal
+𝑓𝑌( 𝑦)=∫
+−∞
++∞
+𝑓𝑋, 𝑌( 𝑥, 𝑦) 𝑑𝑥
+𝑓𝑋( 𝑥)=∫
+−∞
++∞
+𝑓𝑋, 𝑌( 𝑥, 𝑦) 𝑑𝑦
+
+[Descripción de la imagen: variablee de variables | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Función de densidad de marginal
+
+_
+>
+—
+U >
+l >
+l
+>
+—
+— -D
+—
+— -D
+—>
+l >
+l
+_>
+—
+a
+— -D
+_—>
+2]]
+
+Variable aleatoria bidimensional 
+continua
+Función de densidad condicional
+𝑓𝑋∨𝑌( 𝑥∨𝑦)= 𝑓𝑋, 𝑌( 𝑥, 𝑦)
+𝑓𝑌( 𝑦)
+𝑓𝑌∨𝑋( 𝑦∨𝑥)= 𝑓𝑋, 𝑌( 𝑥, 𝑦)
+𝑓𝑋( 𝑥)
+
+[Descripción de la imagen: variablee sine sine sine sine sine sine sine sine sine sine sine | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Función de densidad condicional
+
+fX,Y(X>y)
+
+* .
+=
+ >
+U_>
+—
+1 >
+-
+->
+2
+— -D
+— »
+—
+1 >
+-
+->
+_
+2
+_=_
+-
+- »]]
+
+Variable aleatoria bidimensional 
+continua
+Variables aleatorias independientes
+𝑓𝑋,𝑌(𝑥, 𝑦)= 𝑓𝑋( 𝑥) 𝑓𝑌( 𝑦)
+𝑓𝑋∨𝑌( 𝑥∨𝑦)= 𝑓
+𝑋( 𝑥)
+𝑓𝑌∨𝑋( 𝑦∨𝑥)= 𝑓𝑌( 𝑦)
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Variables aleatorias independientes
+
+ o0000UOUILO
+
+) =r (Y)]]
+
+Variable aleatoria bidimensional 
+continua
+Valor esperado
+𝐸[𝑔( 𝑋,𝑌) ]=∫
+−∞
++∞
+∫
+−∞
++∞
+𝑔(𝑥, 𝑦) 𝑓𝑋, 𝑌(𝑥, 𝑦)𝑑𝑥𝑑𝑦
+Cov ( 𝑋,𝑌)=𝐸[ 𝑋𝑌]−𝐸[ 𝑋] 𝐸[𝑌]
+Covarianza
+Variables independientes
+
+[Descripción de la imagen: varleetao bienia conta valor | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Valor esperado
+Eg X,Y=| | ax. yf x yX, y dxdy
+Covarianza
+
+Cov(X,Y)=El XY )- ElLX]E[Y]
+
+Variables independientes
+
+_
+a
+>
+! >
+1 >
+l
+
+-
+
+-
+=
+— -D
+_=»
+1 >
+l
+-
+-
+=
+_-
+-
+- >]]
+
+Variable aleatoria bidimensional 
+continua
+Correlación
+𝜌𝑋,𝑌=Cov ( 𝑋,𝑌)
+𝜎𝑋𝜎𝑌
+Relación lineal con probabilidad 1
+𝜌𝑋,𝑌∈[ −1 ,+1]
+
+[Descripción de la imagen: varleetaria bierial conta coreion | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Correlación
+
+Relación lineal con probabilidad 1
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+continua
+Se definen dos variables aleatorias continuas:
+: el radio de la base (en cm) .
+: la altura (en cm).
+Experimento
+En cierto proceso industrial se fabrican piezas 
+cilíndricas.
+
+[Descripción de la imagen: varleetao biernia conta exenteo pres]
+
+Variable aleatoria bidimensional 
+continua
+Densidad de probabilidad conjunta
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: continua
+Densidad de probabilidad conjunta
+
+É
+=
+o
+7
+=
+v
+E
+re
+r!
+S
+—
+o
+o
+r
+S
+u
+r!
+S
+G
+>]]
+
+Variable aleatoria bidimensional 
+continua
+¿Cuál es el valor de la constante ?
+1=∬
+−∞
++∞
+𝑓𝑅,𝐻(𝑟,h) h
+𝑑𝑑𝑟=¿∫
+0
+10
+∫
+𝑟
+10
+10𝑘𝑟h
+𝑑𝑑𝑟¿
+1=∫
+0
+10
+10𝑘(10−𝑟)𝑟𝑑𝑟=10𝑘(5𝑟
+2−𝑟
+3
+3 )|0
+10
+1= 5000
+3
+𝑘
+❑
+⇒
+𝑘=
+3
+5000 =0.0006
+
+[Descripción de la imagen: variablee de la calculaion | Transcripción de la imagen: = D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -
+
+Variable aleatoria bidimensional
+continua
+
+¿Cuál es el valor de la constante ?
+
+10 10
+
+1=ÍÍ Fey T.hidndr=i | | 10krdhdre
+—00 07
+
+10
+
+10
+1= f 10k/10-r|rdr=10k 5rº—%)
+0 0
+
+— 5000
+
+1 k]]
+
+Variable aleatoria bidimensional 
+continua
+¿Cuál es la probabilidad de que el volumen () sea menor que 125  
+ cm3?
+𝑟1=√12.5
+
+[Descripción de la imagen: varlea alustinal conta | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+¿Cuál es la probabilidad de que el volumen () sea menor que 125 á
+E
+cm*?
+
+hr?-125
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+- D»
+
+— ->
+
+— -
+
+- -]]
+
+Variable aleatoria bidimensional 
+continua
+∫
+0
+𝑟1
+∫
+𝑟
+10
+10𝑘𝑟
+h
+𝑑𝑑𝑟=∫
+0
+𝑟1
+10𝑘(10−𝑟)𝑟𝑑𝑟=10𝑘(5𝑟
+2−𝑟
+3
+3 )|0
+𝑟1
+¿10𝑘(5𝑟1
+2−𝑟1
+3
+3 )
+∫
+𝑟1
+5
+∫
+𝑟
+125/𝑟
+2
+10𝑘𝑟
+h
+𝑑𝑑𝑟=∫
+𝑟1
+5
+10𝑘(
+125
+𝑟−𝑟
+2)𝑑𝑟=10𝑘(125 ln ⁡(𝑟)−𝑟
+3
+3 )|𝑟1
+5
+¿10𝑘(125 ln(
+5
+𝑟1)−125
+3 + 𝑟1
+3
+3 )
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+r, 10 ; 7
+[ [10krdhdr= f10k 10-rirdr=10kI5r _í)
+
+0 r 0
+
+r
+¿10k 5rl_íl
+
+5 125/r* 3
+
+I J 10kr dhdr= IlOk r dr=10k(1251n(r)—%
+
+r Tr r,
+
+125 , 71
+
+. 5
+¿10k|1251n| -- |-
+( n(r1) 33
+
+* .
+=
+ >
+U_>
+—
+1 >
+-
+->
+2
+- -D
+_ >
+—
+1 >
+-
+->
+2
+_=_
+-
+- »]]
+
+Variable aleatoria bidimensional 
+continua
+P (𝑉<125 𝜋)=10𝑘(5𝑟1
+2+125ln(
+5
+𝑟1)−125
+3 )
+ 
+≈0.38493
+¿Cuál es la probabilidad de que el volumen () sea menor que 125  
+ cm3?
+
+[Descripción de la imagen: varlea alusta biesia cona]
+
+Variable aleatoria bidimensional 
+continua
+Densidades de probabilidad marginales
+𝑓𝑅(𝑟)=∫
+−∞
++∞
+𝑓𝑅,𝐻(𝑟,h ) h
+𝑑=¿∫
+𝑟
+10
+10𝑘𝑟
+h
+𝑑=10𝑘𝑟(10−𝑟)¿
+𝑓𝑅(𝑟)={
+3
+500 𝑟(10−𝑟)
+𝑟∈(0,10)
+0
+𝑟∉(0,10)
+𝜇𝑅=E [𝑅]=∫
+0
+10
+𝑟
+3
+500 𝑟(10−𝑟)𝑑𝑟= 3
+500(
+10𝑟
+3
+3
+−𝑟
+4
+4 )|0
+10
+=5
+❑
+E [ 𝑅
+2]=∫
+0
+10
+𝑟
+2 3
+500 𝑟(10−𝑟) 𝑑𝑟= 3
+500(
+10𝑟
+4
+4
+−𝑟
+5
+5 )|0
+10
+=30
+❑
+𝜎𝑅
+2 =30−52=5
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: = D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+- D»
+
+— ->
+
+— -
+
+- -
+
+Variable aleatoria bidimensional
+continua
+
+Densidades de probabilidad marginales
++00 10
+r=| fruT,hidh=i | 10krdn=10krl10-r"i
+
+F.lr)= %r(10—r) r e l0,10)
+
+0 r e l0,10)
+
+10 3
+3 3 1107 T
+
+2 3 _3 107 _T
+E R* fr500r(10 r dr= 500174
+
+OoR=30-5"=5]]
+
+Variable aleatoria bidimensional 
+continua
+Densidades de probabilidad marginales
+𝑓𝐻(h)=∫
+−∞
++∞
+𝑓𝑅, 𝐻(𝑟,h )𝑑𝑟=¿∫
+0
+h
+10𝑘𝑟𝑑𝑟=5𝑘h
+2¿
+𝑓𝐻( h)={
+3
+1000 h2
+h∈(0,10)
+0
+h∉(0,10)
+𝜇𝐻=E[ 𝐻]=∫
+0
+10
+h
+3
+1000 h
+2 h
+𝑑=
+3
+4000 h
+4|0
+10
+=7.5
+❑
+E [𝐻
+2]=∫
+0
+10
+h
+2
+3
+1000 h
+2 h
+𝑑=
+3
+5000 h
+5|0
+10
+=60
+❑
+𝜎𝐻
+2 =60−7.52=3.75
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: = D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -
+
+Variable aleatoria bidimensional
+continua
+
+Densidades de probabilidad marginales
++00 h
+h=| fryr,hidr=i | 10krdr=5kwi
+— 00 0
+
+3
+f y1 h)=1 1000
+0 h é [0,10)
+
+h helo,10)
+
+10 3 3 10
+=E H =|h——hdh=——h" =7.5
+n =E ]! 1000 4000 | a
+
+10
+
+EH h—h dh=———h"| =60
+[ '!; 1000 5000 0 a
+
+o =60 - 7.5=3.75]]
+
+Variable aleatoria bidimensional 
+continua
+Densidades de probabilidad marginales
+𝑓𝐻( h)={
+3
+1000 h2
+h∈(0,10)
+0
+h∉(0,10)
+𝜇𝐻=7.5❑
+𝜎𝐻
+2 =3.75
+𝑓𝑅(𝑟)={
+3
+500 𝑟(10−𝑟)
+𝑟∈(0,10)
+0
+𝑟∉(0,10)
+𝜇𝑅=5❑
+𝜎𝑅
+2 =5
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Densidades de probabilidad marginales]]
+
+Variable aleatoria bidimensional 
+continua
+Densidades de probabilidad condicionales
+𝑓𝑅(𝑟)={
+3
+500 𝑟(10−𝑟)
+𝑟∈(0,10)
+0
+𝑟∉(0,10)
+ 
+𝑓𝐻∨𝑅(h|𝑟)={
+1
+10−𝑟
+0<𝑟<10 ,𝑟<h<10
+0
+en  todo  otro  caso
+
+[Descripción de la imagen: variablee de probabilidades variablee de probabilidades variablee variablee variablee]
+
+Variable aleatoria bidimensional 
+continua
+Densidades de probabilidad condicionales
+𝑓𝐻( h)={
+3
+1000 h2
+h∈(0,10)
+0
+h∉(0,10)
+ 
+𝑓𝑅∨𝐻(𝑟|h)={
+2𝑟
+h2
+0<𝑟<10,𝑟<h<10
+0
+en   todo  otro  caso
+
+[Descripción de la imagen: variablee de probabilidades variablee de probabilidades variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Densidades de probabilidad condicionales
+
+O<r<10,7T<h<10
+
+27
+vaH(r|h)= -
+0 en todo otro caso]]
+
+Variable aleatoria bidimensional 
+continua
+Covarianza
+E [ 𝑅𝐻]=∫
+0
+10
+∫
+𝑟
+10
+h
+𝑟10𝑘𝑟h
+𝑑𝑑𝑟=∫
+0
+10
+5𝑘𝑟
+2(100−𝑟
+2) 𝑑𝑟=¿❑¿
+¿ 5𝑘(
+100𝑟
+3
+3
+−𝑟
+5
+5 )|0
+10
+=40
+Cov (𝑅, 𝐻)=40−5∙7.5=2.5
+𝜌𝑅, 𝐻=
+2.5
+√5∙3.75 ≈0.57735
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: = D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+- -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -
+
+Variable aleatoria bidimensional
+continua
+
+Covarianza
+
+10 10
+
+E[RH)=/ [ mi0krdhdr= f5kr 100-7" Jdr =ixi
+07 "
+=40
+
+0
+
+1007 _r
+5
+
+¿5k( 3
+
+Cov|R, H =40-5:7.5=2.5]]
+
+Variable aleatoria bidimensional 
+continua
+Experimento
+Se sortea un número  al azar en  y a continuación se 
+sortea otro número al azar  pero en donde  fue el valor 
+observado de .
+
+[Descripción de la imagen: varleetato bierial conta externio]
+
+Variable aleatoria bidimensional 
+continua
+La  función de densidad conjunta viene dada por :
+𝑓𝑋( 𝑥)={
+1
+𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑌∨𝑋( 𝑦∨𝑥)={
+1
+1−𝑥
+𝑦∈(𝑥,1),𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+
+[Descripción de la imagen: variablee disple disple disple disple disple disple di | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+—_|1 xel(o,1) y E x,1),x € [0,1|
+
+1
+= y VX=11-X
+
+0 x € 10,1)
+
+fxlx)
+
+La función de densidad conjunta viene dada por :
+
+y E |xX,1),x e [0,1)
+
+1
+fX,Y(X:y)= 1-x
+0 x € [0,1)]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑌(𝑦)=∫
+0
+1
+𝑓𝑋𝑌(𝑥, 𝑦)𝑑𝑦=∫
+0
+𝑦
+𝑑𝑥
+1−𝑥=ln(
+1
+1−𝑦) y ∈(0,1)
+𝑓𝑌( 𝑦)={
+ln(
+1
+1−𝑦)
+𝑦∈( 0,1)
+0
+𝑦∉( 0,1)
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Fe lX y)= á y E |lxX,1),x e [0,1)
+- 0 x € [0,1|
+
+dx
+
+=1
+— y e (0,1)
+
+1-y
+
+fY(y)=,Í fXY(X:y)dy=;€
+
+1
+ry=Pl=y| y0A
+
+0 y el0,1]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑌( 𝑦)={
+ln(
+1
+1−𝑦)
+𝑦∈( 0,1)
+0
+𝑦∉( 0,1)
+𝑓𝑋( 𝑥)={
+1
+𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑋,𝑌(0.5,0.1)=0≠1∙(−ln (0.9))= 𝑓𝑋(0.5) 𝑓𝑌(0.1 )
+No son independientes
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Fe lX y)= +x y E Ix,1),x € l0,1)
+| 0 x € [0,1)
+
+1
+fxi=/ *ElO py=P=y| y0A
+
+O xe l0,1) 0 y elo.l
+
+f x y 0.5,0.1)=071-|-In[0.9))=f x[0.5) f,(0.1)
+
+No son independientes]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑌( 𝑦)={
+ln(
+1
+1−𝑦)
+𝑦∈( 0,1)
+0
+𝑦∉( 0,1)
+𝑓𝑋( 𝑥)={
+1
+𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝐸[𝑌]=∫
+0
+1
+∫
+𝑥
+1
+𝑦
+1−𝑥𝑑𝑦𝑑𝑥=∫
+0
+1
+𝑑𝑥
+2(1−𝑥) (1−𝑥2)=0.75
+𝐸[ 𝑋]=0.5
+Valores esperados
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Fy =l7 7 el1),Xe l0)
+
+0 x € (0,1]
+
+—_|1 xe|(o,1) _
+fX(X)_ 0 X€(O,1) fY(.y)_
+
+Valores esperados
+
+E X =0.5
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+𝑓𝑌( 𝑦)={
+ln(
+1
+1−𝑦)
+𝑦∈( 0,1)
+0
+𝑦∉( 0,1)
+𝑓𝑋( 𝑥)={
+1
+𝑥∈(0,1)
+0
+𝑥∉(0,1)
+Covarianza
+𝐂𝐨𝐯(¿ 𝑋,𝑌)=𝐸[ 𝑋𝑌]−𝐸[ 𝑋] 𝐸[𝑌]= 5
+12 −1
+2
+3
+4= 1
+24 ¿
+𝐸[ 𝑋𝑌]=∫
+0
+1
+∫
+𝑥
+1
+𝑥𝑦
+1−𝑥𝑑𝑦𝑑𝑥=∫
+0
+1 𝑥𝑑𝑥
+2
+(1+𝑥)= 5
+12
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+1
+fX,Y(X:y)= 1-x
+0 x € (0,1]
+
+y elx,1),x € 10,1|
+
+—_|1 xe|(o,1)
+xb= O xe l0,1)
+
+Covarianza
+E[XY]=ÍÍlÓJJÓX=Íº(I+X)I—
+=X 2 2
+
+9 13 1,
+
+Cov(¿X,Y)=E[XY]—E[X]E[Y]=ñ—ízzi¿
+
+_
+a
+->
+>
+—
+->
+->
+-
+-
+=
+— -D
+_=»
+- >
+->
+->
+-
+-
+_>
+=
+_-
+-
+- >]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+Algunas probabilidades
+𝑃( 𝑋+𝑌≤1)=∫
+0
+0.5 ∫
+𝑥
+1−𝑥
+1
+1−𝑥𝑑𝑦𝑑𝑥=∫
+0
+0.5
+(1 −
+𝑥
+1 −𝑥)𝑑𝑥
+𝑃( 𝑋+𝑌≤1)=1−ln(¿2)≈0.3069¿
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Y
+
+Variable aleatoria bidimensional
+continua
+
+Fy =l7 7 el1),Xe l0)
+
+0 x € (0,1]
+
+Algunas probabilidades
+
+.D 1— x 0.5
+
+_£ dydx=_[(1—lfx)dx
+
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+— »
+-
+-
+->
+-
+_-
+
+PIX+Y <1=1-In(¿2)x0.3069¿
+
+100000]]
+
+Variable aleatoria bidimensional 
+continua
+𝑓𝑋,𝑌(𝑥, 𝑦)={
+1
+1−𝑥
+𝑦∈( 𝑥,1) ,𝑥∈(0,1)
+0
+𝑥∉(0,1)
+Algunas probabilidades
+𝑃(𝑌<0.5∨𝑋<0.25)= 𝑃({𝑌<0.5}∩{ 𝑋<0.25})
+𝑃({𝑋<0.25})
+=¿
+¿1+2ln(¿0.75)≈0.4246¿
+¿
+1
+0.25 ∫
+0
+0.25
+∫
+𝑥
+0.5
+1
+1−𝑥𝑑𝑦𝑑𝑥
+¿
+1
+0.25 ∫
+0
+0.25
+(1−0.5
+1−𝑥) 𝑑𝑥
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+1
+fX,Y(X:_V)= 1-x
+0 x € (0,1]
+
+y elx,1),x € 10,1|
+
+Algunas probabilidades
+
+P([Y<0.5]»n[X<O.25]»)_¿
+PliIX<0.25) —
+
+0.25 0.5
+
+1
+
+. 1
+“a5 l l dy
+
+P(Y <0.5v X <0.25)=
+
+1-x
+
+= D»
+—>
+-
+—>
+_——>
+-
+->
+_—-
+_-
+- D»
+
+— -»
+
+— -
+
+= -
+-
+->
+-
+_-
+
+- ->
+- D»
+
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+continua
+Experimento
+Se sortean dos números e  al azar en  y en forma 
+independiente
+𝑓𝑋𝑌(𝑥, 𝑦)={
+¿1(𝑥, 𝑦)∈(0,1)×(0,1)
+¿ 0(𝑥, 𝑦)∉(0,1)×(0,1)
+Como la función de densidad conjunta 
+es igual a 1 en este cuadrado entonces 
+el cálculo de probabilidades de sucesos 
+en este dominio se reduce al cálculo de 
+áreas de recintos.
+
+[Descripción de la imagen: varlea aldicional conta]
+
+Variable aleatoria bidimensional 
+continua
+Algunas probabilidades
+𝑃( 𝑋+𝑌<3/ 4)=1
+2
+3
+4
+3
+4 = 9
+32
+
+[Descripción de la imagen: variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables variables | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Algunas probabilidades
+
+P(IX+Y<3/4)=
+
+—
+2]]
+
+Variable aleatoria bidimensional 
+continua
+Algunas probabilidades
+𝑃( 𝑋𝑌<1/2)= 1
+2 +∫
+1/ 2
+1
+𝑑𝑥
+2 𝑥
+¿ 1
+2+ 1
+2 ln(¿ 2)≈0.8466¿
+
+[Descripción de la imagen: variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable variable | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Algunas probabilidades
+
+1
+P(XY<1/2)=%+ g
+1/21
+
+1 1. .
+¿5+íln(¿,2)w0.8466¿,]]
+
+Variable aleatoria bidimensional 
+continua
+Algunas probabilidades
+𝑆=𝑋+𝑌
+𝑃(𝑆≤𝑠)=¿
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Algunas probabilidades
+S=X+Y
+
+y
+
+:L PlIS<s)=
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Variable aleatoria bidimensional 
+continua
+Algunas probabilidades
+𝑆=𝑋+𝑌
+𝐹𝑆(𝑠)=¿
+𝑓𝑆(𝑠)={
+𝑠
+0<𝑠<1
+2−𝑠
+1<𝑠<2
+0
+𝑠∉(0,1 )
+
+[Descripción de la imagen: variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee variablee | Transcripción de la imagen: Variable aleatoria bidimensional
+continua
+
+Algunas probabilidades
+S=X+Y
+
+S O<s<1
+f:(s)=12-8 1<s<2
+0 selo1
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+

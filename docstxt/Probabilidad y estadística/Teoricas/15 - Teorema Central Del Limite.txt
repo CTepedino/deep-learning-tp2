@@ -1,0 +1,4444 @@
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite
+Lic. Lucio José Pantazis
+4/5/2023
+
+[Descripción de la imagen: una hoja blanca con las palabras «teera central limite»]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Repaso
+
+[Descripción de la imagen: una captura de pantalla de una pantalla de ordenador con la repo de texto | Transcripción de la imagen: Repaso]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼
+
+[Descripción de la imagen: sine varietais | Transcripción de la imagen: Teorema
+
+Central
+
+del m Sumas de variables aleatorias
+Lic. Lucio
+
+Par:15:zis Hemos comprobado ya las siguientes propiedades:
+
+Repaso * Suma de Bernoullies:
+
+Teorema X1, X2 » Be
+
+Central del í 1X1?X2 índ(p) ? =X +X -
+
+Límite]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+
+[Descripción de la imagen: sine variees aloras | Transcripción de la imagen: Teorema
+
+Central
+
+m Sumas de variables aleatorias
+Lic. Lucio
+
+RA Hemos comprobado ya las siguientes propiedades:
+
+Repaso 9 Suma de Bernoullies:
+
+Teorema X1, X> » Be ,
+
+Central del í 1X1?X2 índ(p) ? = X1 + X — Bi(2, p)
+
+Límite]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼
+
+[Descripción de la imagen: sine variees aloras | Transcripción de la imagen: Teorema
+Central
+
+del Límite Sumas de variables aleatorias
+
+Lic. Lucio
+
+PJºtSé. Hemos comprobado ya las siguientes propiedades:
+antazis
+
+Repaso 9 Suma de Bernoullies:
+
+X1, X2 [d Be(p) .
+í X1, X> ind > X) +X » BI(2, p)
+
+* Suma de Binomiales:
+
+X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+í X1, % ind 7A+X—-]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+
+[Descripción de la imagen: sine variees aloras | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias
+
+Hemos comprobado ya las siguientes propiedades:
+
+* Suma de Bernoullies:
+
+X1 , X2 ind
+
+í X1, X2 — Be(p) ? > X1 + % - Bil2, p)
+
+* Suma de Binomiales:
+
+t
+
+X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+X1,X2 ind
+
+% => X1 + X - Bi(m + m, p)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼
+
+[Descripción de la imagen: sine variees alterarias | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Hemos comprobado ya |
+
+Sumas de variables aleatorias
+
+as siguientes propiedades:
+
+* Suma de Bernoullies:
+
+X1 , X2 ind
+
+í X1, X2 — Be(p) ? > X1 + % - Bil2, p)
+
+* Suma de Binomiales:
+
+í X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+* Suma de Poisson:
+
+t
+
+X1 , X2 ind
+
+X1 ( PO(Á1),X2 [d PO(Á2)
+)<17 X2 ind
+
+% => X1 + X - Bi(m + m, p)
+
+%:>X1+X2N]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Po(λ1 + λ2)
+
+[Descripción de la imagen: sine variees alterarias | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Hemos comprobado ya |
+
+Sumas de variables aleatorias
+
+as siguientes propiedades:
+
+* Suma de Bernoullies:
+
+X1 , X2 ind
+
+í X1, X2 — Be(p) ? > X1 + % - Bil2, p)
+
+* Suma de Binomiales:
+
+í X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+* Suma de Poisson:
+
+t
+
+X1 , X2 ind
+
+X1 ( PO(Á1),X2 [d PO(Á2)
+)<17 X2 ind
+
+% => X1 + X - Bi(m + m, p)
+
+% > X1 +X » PO(Á1 +)x2)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Po(λ1 + λ2)
+• Suma de Exponenciales:
+n
+X1 ∼E(λ), X2 ∼E(λ)
+X1, X2 ind
+o
+⇒X1 + X2 ∼
+
+[Descripción de la imagen: sine variees alteraments | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias
+
+Hemos comprobado ya las siguientes propiedades:
+
+* Suma de Bernoullies:
+
+* Suma de Binomiales:
+
+í X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+* Suma de Poisson:
+
+X1 , X2 ind
+
+í X1, X2 — Be(p) ? > X1 + % - Bil2, p)
+
+X1 , X2 ind
+
+X1 , X2 ind
+
+í Xy - Po(A1), X> + Po(a:)
+
+* Suma de Exponenciales:
+
+t
+
+X1 - El1), X — Ela)
+X1,X2 ind
+
+% => X1 + X - Bi(m + m, p)
+% > X1 +X » PO(Á1 +)x2)
+
+%:>X1+X2N]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Po(λ1 + λ2)
+• Suma de Exponenciales:
+n
+X1 ∼E(λ), X2 ∼E(λ)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Γ(2, λ)
+
+[Descripción de la imagen: sine variees alteraments | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias
+
+Hemos comprobado ya las siguientes propiedades:
+
+* Suma de Bernoullies:
+
+* Suma de Binomiales:
+
+í X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+* Suma de Poisson:
+
+X1 , X2 ind
+
+í X1, X2 — Be(p) ? > X1 + % - Bil2, p)
+
+X1 , X2 ind
+
+X1 , X2 ind
+
+í Xy - Po(A1), X> + Po(a:)
+
+* Suma de Exponenciales:
+
+t
+
+X1 - El1), X — Ela)
+X1,X2 ind
+
+% => X1 + X - Bi(m + m, p)
+% > X1 +X » PO(Á1 +)x2)
+
+%:>X1+X2NF(2,A)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Po(λ1 + λ2)
+• Suma de Exponenciales:
+n
+X1 ∼E(λ), X2 ∼E(λ)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Γ(2, λ)
+• Suma de Normales:
+n
+X1 ∼N(µ1, σ1), X2 ∼N(µ2, σ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼
+
+[Descripción de la imagen: sine variees alteraments | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias
+
+Hemos comprobado ya las siguientes propiedades:
+
+* Suma de Bernoullies:
+
+X1, X2 [d Be(p)
+X17 X2 ind
+
+* Suma de Binomiales:
+
+X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+í X1 , X2 ind
+
+* Suma de Poisson:
+
+X1 ad PO(Á1),X2 [d PO(Á2)
+
+í X1 , X2 ind
+
+* Suma de Exponenciales:
+
+X - E(1), X - E(A)
+
+í X1,X2 ind
+
+* Suma de Normales:
+
+l
+
+X1 - N(u1, 01), X - N(p2, 02)
+X1,X2 ind
+
+?:>X1 + X — Bi(2, p)
+
+%2X1 + X + Bi(m + m,p)
+%:>X1 + X - Po(A1 + 22)
+%;»xl+xzwr(2ax)
+
+%©X1+X2N]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias
+Hemos comprobado ya las siguientes propiedades:
+• Suma de Bernoullies: n
+X1, X2 ∼Be(p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(2, p)
+• Suma de Binomiales:
+n
+X1 ∼Bi(n1, p), X2 ∼Bi(n2, p)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Bi(n1 + n2, p)
+• Suma de Poisson:
+n
+X1 ∼Po(λ1), X2 ∼Po(λ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Po(λ1 + λ2)
+• Suma de Exponenciales:
+n
+X1 ∼E(λ), X2 ∼E(λ)
+X1, X2 ind
+o
+⇒X1 + X2 ∼Γ(2, λ)
+• Suma de Normales:
+n
+X1 ∼N(µ1, σ1), X2 ∼N(µ2, σ2)
+X1, X2 ind
+o
+⇒X1 + X2 ∼N
+
+µ1 + µ2,p
+σ2
+1 + σ2
+2
+
+
+[Descripción de la imagen: sine variees alteraments | Transcripción de la imagen: Teorema
+Central
+
+del Límite Sumas de variables aleatorias
+Lic. Lucio
+
+PJºtSé. Hemos comprobado ya las siguientes propiedades:
+antazis
+
+Repaso 9 Suma de Bernoullies:
+
+X1, X2 [d Be(p) .
+í X1, X> ind > X) +X » BI(2, p)
+
+* Suma de Binomiales:
+
+í X1 ( Bi(n1,p),Xz [d Bí(nz,p)
+
+X1, X> ind %ÓX1+XZNB¡(…+M”p)
+
+* Suma de Poisson:
+
+í Xy - Po(A1), X> + Po(a:)
+
+X1, X> ind % = X1 + X — Po(A1 + %2)
+
+* Suma de Exponenciales:
+
+í X1 - E(1), X - ElA)
+
+X1, X> ind % =7 X1+X - [(2,7)
+
+* Suma de Normales:
+
+X1 - N(u1, 01), X - N(p2, 02) /
+í X1, X> ind =7 X1 +X N| + po, U%+Ú%]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼
+
+[Descripción de la imagen: una pantalla de ordenador que muestra el mismo número de variables | Transcripción de la imagen: Teorema
+
+Central
+del Límite Sumas de variables aleatorias (en general)
+'-¡º-Jº';2º¡º Más generalmente, con n variables de cada “familia”:
+Pantazis
+* Suma de Bernoullies:
+Repaso X; — Be(p) n
+=1
+
+Límite]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+
+[Descripción de la imagen: una pantalla de ordenador que muestra el mismo número de variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼
+
+[Descripción de la imagen: sume variables generales | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias (en general)
+
+Más generalmente, con n variables de cada “familia”:
+
+* Suma de Bernoullies:
+X; - Be(p) E6 + … — Bi
+í X1, X, -- .X, ind X +X+--+X =X - BilnP)
+=1
+
+* Suma de Binomiales:
+
+t
+
+X; - Bi(n;, P)
+X1, X2,--- , Xnind
+
+?:>X1+Xz"'+an E Xi —
+=1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi
+ 
+n
+X
+i=1
+ni, p
+!
+• Suma de Poisson:
+n
+Xi ∼Po(λi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Po
+ 
+n
+X
+i=1
+λi
+!
+
+[Descripción de la imagen: sume variables generales | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Sumas de variables aleatorias (en general)
+
+Más generalmente, con n variables de cada “familia”:
+
+* Suma de Bernoullies:
+
+Xi — Be(p)
+
+í X1, X2,--- ,X
+
+* Suma de Binomiales:
+
+t
+
+* Suma de Poisson:
+
+t
+
+X; - Bi(n;, P)
+X1, X2,--- , Xnind
+
+X¡ [d PO(Á¡)
+
+X1, X, --
+
+- ,X ind
+
+»
+
+ind % *
+
+?:>X1+Xz-'-
+
+E +X = E X; — Bi(n, p)
+=1
+
+n
+
++XH=E X; — Bi E nP
+i=1
+
+=1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi
+ 
+n
+X
+i=1
+ni, p
+!
+• Suma de Poisson:
+n
+Xi ∼Po(λi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Po
+ 
+n
+X
+i=1
+λi
+!
+• Suma de Exponenciales:
+n
+Xi ∼E(λ)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼
+
+[Descripción de la imagen: sume variables generalese | Transcripción de la imagen: Teorema
+
+Central
+del Límite Sumas de variables aleatorias (en general)
+'-¡º-Jº';2º¡º Más generalmente, con n variables de cada “familia”:
+Pantazis
+* Suma de Bernoullies:
+Repaso
+
+X; » Be .
+í X1,Xz,...,(;3¡nd % X + X +---+ X,= E X; - Bi(n, p)
+i=1
+
+* Suma de Binomiales:
+
+n
+
+X; - Bi(n;, P) — E ! ; E .
+í Xi, Xa, - -- .X, ind = X1 + X -- -+ X,= X; — Bi ni, P
+=1 =1
+
+* Suma de Poisson:
+
+Xi — Po(A;) , , , E . E .
+í X1, X, -- ,X ind % X+ X +---+X 5= X; - Po N
+=1 =1
+
+* Suma de Exponenciales:
+
+X; — E(A) — .
+íX11X2,'-',Xn¡nd?:>X1+XZ+.…+X_ZX'N
+=1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi
+ 
+n
+X
+i=1
+ni, p
+!
+• Suma de Poisson:
+n
+Xi ∼Po(λi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Po
+ 
+n
+X
+i=1
+λi
+!
+• Suma de Exponenciales:
+n
+Xi ∼E(λ)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Γ(n, λ)
+
+[Descripción de la imagen: sume variables generalese | Transcripción de la imagen: Teorema
+
+Central
+del Límite Sumas de variables aleatorias (en general)
+'-¡º-Jº';2º¡º Más generalmente, con n variables de cada “familia”:
+Pantazis
+* Suma de Bernoullies:
+Repaso
+
+X; » Be .
+í X1,Xz,...,(;3¡nd % X + X +---+ X,= E X; - Bi(n, p)
+i=1
+
+* Suma de Binomiales:
+
+n
+
+X; - Bi(n;, P) — E ! ; E .
+í Xi, Xa, - -- .X, ind = X1 + X -- -+ X,= X; — Bi ni, P
+=1 =1
+
+* Suma de Poisson:
+
+Xi — Po(A;) , , , E . E .
+í X1, X, -- ,X ind % X+ X +---+X 5= X; - Po N
+=1 =1
+
+* Suma de Exponenciales:
+
+X; - E(A) _ .
+íX17X2,'-',Xnínd?:>X1+XZ+"'+X—E X; - (, X)
+í=1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi
+ 
+n
+X
+i=1
+ni, p
+!
+• Suma de Poisson:
+n
+Xi ∼Po(λi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Po
+ 
+n
+X
+i=1
+λi
+!
+• Suma de Exponenciales:
+n
+Xi ∼E(λ)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Γ(n, λ)
+• Suma de Normales:
+n
+Xi ∼N(µi, σi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼
+
+[Descripción de la imagen: sume variables generalese | Transcripción de la imagen: Teorema
+
+Central
+del Límite Sumas de variables aleatorias (en general)
+'-¡º-Jº';2º¡º Más generalmente, con n variables de cada “familia”:
+Pantazis
+* Suma de Bernoullies:
+Repaso
+
+X; » Be .
+í X1,Xz,...,(;3¡nd % X + X +---+ X,= E X; - Bi(n, p)
+i=1
+
+* Suma de Binomiales:
+
+n
+
+X; - Bi(n;, P) — E ! ; E .
+í Xi, Xa, - -- .X, ind = X1 + X -- -+ X,= X; — Bi ni, P
+=1
+
+=1
+
+* Suma de Poisson:
+
+Xi — Po(A;) , , , E . E .
+í X1, X, -- ,X ind % X+ X +---+X 5= X; - Po N
+=1 =1
+
+* Suma de Exponenciales:
+
+X; - E(A) _ .
+íX17X2,'-',Xnínd?:>X1+XZ+"'+X—E X; - (, X)
+í=1
+
+Suma de Normales:
+
+X; - N 97) _ .
+íX11X21"'1xnínd > X +X +---+X = E X; -
+=1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Sumas de variables aleatorias (en general)
+Más generalmente, con n variables de cada “familia”:
+• Suma de Bernoullies:
+n
+Xi ∼Be(p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi(n, p)
+• Suma de Binomiales:
+n
+Xi ∼Bi(ni, p)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 · · · + Xn =
+n
+X
+i=1
+Xi ∼Bi
+ 
+n
+X
+i=1
+ni, p
+!
+• Suma de Poisson:
+n
+Xi ∼Po(λi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Po
+ 
+n
+X
+i=1
+λi
+!
+• Suma de Exponenciales:
+n
+Xi ∼E(λ)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼Γ(n, λ)
+• Suma de Normales:
+n
+Xi ∼N(µi, σi)
+X1, X2, · · · , Xn ind
+o
+⇒X1 + X2 + · · · + Xn =
+n
+X
+i=1
+Xi ∼N
+ 
+n
+X
+i=1
+µi,
+s
+n
+X
+i=1
+σ2
+i
+!
+
+[Descripción de la imagen: sume variables generalese | Transcripción de la imagen: Teorema
+
+Central
+del Límite Sumas de variables aleatorias (en general)
+'-¡C-J Lucio Más generalmente, con n variables de cada “familia”:
+lose
+Pantazis
+
+* Suma de Bernoullies:
+Repaso X B ( ) n
+¡ - eP | Ea E — Bi
+í X1, Xo, - -- ,X ind % X1 + X + - Xn = D. Bi(n, p)
+i=1
+
+* Suma de Binomiales:
+
+n
+
+X; - Bi(n;, P) — E ! ; E .
+í Xi, Xa, - -- .X, ind = X1 + X -- -+ X,= X; — Bi ni, P
+=1
+
+=1
+
+* Suma de Poisson:
+
+Xi — Po(A;) , , , E . E .
+í X1, X, -- ,X ind % X+ X +---+X 5= X; - Po N
+=1 =1
+
+* Suma de Exponenciales:
+
+Xi - ElA) ÍE .
+í X1, X, -- ,X ind ?2X1+X2+"'+X_ X; — "(1, )
+=1
+
+* Suma de Normales:
+
+X; — N(ki, 01) ?E . E .
+íX1-,X2-,"'-,Xnínd > X +X +---+X = X -N 7
+=1 =1]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Desigualdad de Čebyšëv 1
+1Wikipedia: The surname Chebyshev has been transliterated in several diﬀerent ways, like Tchebichef,
+Tchebychev, Tchebycheﬀ, Tschebyschev, Tschebyschef, Tschebyscheﬀ, Čebyčev, Čebyšev, Chebysheﬀ, Chebychov,
+Chebyshov (according to native Russian speakers, this one provides the closest pronunciation in English to the
+correct pronunciation in old Russian), and Chebychev, a mixture between English and French transliterations
+considered erroneous. It is one of the most well known data-retrieval nightmares in mathematical literature.
+Currently, the English transliteration Chebyshev has gained widespread acceptance, except by the French, who prefer
+Tchebychev. The correct transliteration according to ISO 9 is Čebyšëv. The American Mathematical Society adopted
+the transcription Chebyshev in its Mathematical Reviews.
+
+[Descripción de la imagen: una página del libro digital decaimiento]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Desigualdad de Čebyšëv 1
+Sea X una variable aleatoria cualquiera con media µ y varianza σ2 (ambas ﬁnitas).
+Para cualquier valor de ε > 0:
+P(|X −E(X)| ≥ε) ≤V (X)
+ε2
+1Wikipedia: The surname Chebyshev has been transliterated in several diﬀerent ways, like Tchebichef,
+Tchebychev, Tchebycheﬀ, Tschebyschev, Tschebyschef, Tschebyscheﬀ, Čebyčev, Čebyšev, Chebysheﬀ, Chebychov,
+Chebyshov (according to native Russian speakers, this one provides the closest pronunciation in English to the
+correct pronunciation in old Russian), and Chebychev, a mixture between English and French transliterations
+considered erroneous. It is one of the most well known data-retrieval nightmares in mathematical literature.
+Currently, the English transliteration Chebyshev has gained widespread acceptance, except by the French, who prefer
+Tchebychev. The correct transliteration according to ISO 9 is Čebyšëv. The American Mathematical Society adopted
+the transcription Chebyshev in its Mathematical Reviews.
+
+[Descripción de la imagen: desuade celyi]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Desigualdad de Čebyšëv 1
+Sea X una variable aleatoria cualquiera con media µ y varianza σ2 (ambas ﬁnitas).
+Para cualquier valor de ε > 0:
+P(|X −E(X)| ≥ε) ≤V (X)
+ε2
+Es decir, hay una cota para la probabilidad de que cualquier variable pueda alejarse de
+su valor medio, siempre y cuando tenga media y varianza ﬁnita.
+1Wikipedia: The surname Chebyshev has been transliterated in several diﬀerent ways, like Tchebichef,
+Tchebychev, Tchebycheﬀ, Tschebyschev, Tschebyschef, Tschebyscheﬀ, Čebyčev, Čebyšev, Chebysheﬀ, Chebychov,
+Chebyshov (according to native Russian speakers, this one provides the closest pronunciation in English to the
+correct pronunciation in old Russian), and Chebychev, a mixture between English and French transliterations
+considered erroneous. It is one of the most well known data-retrieval nightmares in mathematical literature.
+Currently, the English transliteration Chebyshev has gained widespread acceptance, except by the French, who prefer
+Tchebychev. The correct transliteration according to ISO 9 is Čebyšëv. The American Mathematical Society adopted
+the transcription Chebyshev in its Mathematical Reviews.
+
+[Descripción de la imagen: desuade dey]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Desigualdad de Čebyšëv 1
+Sea X una variable aleatoria cualquiera con media µ y varianza σ2 (ambas ﬁnitas).
+Para cualquier valor de ε > 0:
+P(|X −E(X)| ≥ε) ≤V (X)
+ε2
+Es decir, hay una cota para la probabilidad de que cualquier variable pueda alejarse de
+su valor medio, siempre y cuando tenga media y varianza ﬁnita.
+Notar que esta cota no siempre es la mejor, ya que al poder adaptarse a una
+innumerable cantidad de variables aleatorias (ya sea discreta o continua), no siempre da
+la mejor información posible para algunas variables especíﬁcas.
+1Wikipedia: The surname Chebyshev has been transliterated in several diﬀerent ways, like Tchebichef,
+Tchebychev, Tchebycheﬀ, Tschebyschev, Tschebyschef, Tschebyscheﬀ, Čebyčev, Čebyšev, Chebysheﬀ, Chebychov,
+Chebyshov (according to native Russian speakers, this one provides the closest pronunciation in English to the
+correct pronunciation in old Russian), and Chebychev, a mixture between English and French transliterations
+considered erroneous. It is one of the most well known data-retrieval nightmares in mathematical literature.
+Currently, the English transliteration Chebyshev has gained widespread acceptance, except by the French, who prefer
+Tchebychev. The correct transliteration according to ISO 9 is Čebyšëv. The American Mathematical Society adopted
+the transcription Chebyshev in its Mathematical Reviews.
+
+[Descripción de la imagen: desuade dey]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Desigualdad de Čebyšëv 1
+Sea X una variable aleatoria cualquiera con media µ y varianza σ2 (ambas ﬁnitas).
+Para cualquier valor de ε > 0:
+P(|X −E(X)| ≥ε) ≤V (X)
+ε2
+Es decir, hay una cota para la probabilidad de que cualquier variable pueda alejarse de
+su valor medio, siempre y cuando tenga media y varianza ﬁnita.
+Notar que esta cota no siempre es la mejor, ya que al poder adaptarse a una
+innumerable cantidad de variables aleatorias (ya sea discreta o continua), no siempre da
+la mejor información posible para algunas variables especíﬁcas.
+De todas formas, es de mucha utilidad cuando no se sabe mucho sobre la variable que
+se está analizando.
+1Wikipedia: The surname Chebyshev has been transliterated in several diﬀerent ways, like Tchebichef,
+Tchebychev, Tchebycheﬀ, Tschebyschev, Tschebyschef, Tschebyscheﬀ, Čebyčev, Čebyšev, Chebysheﬀ, Chebychov,
+Chebyshov (according to native Russian speakers, this one provides the closest pronunciation in English to the
+correct pronunciation in old Russian), and Chebychev, a mixture between English and French transliterations
+considered erroneous. It is one of the most well known data-retrieval nightmares in mathematical literature.
+Currently, the English transliteration Chebyshev has gained widespread acceptance, except by the French, who prefer
+Tchebychev. The correct transliteration according to ISO 9 is Čebyšëv. The American Mathematical Society adopted
+the transcription Chebyshev in its Mathematical Reviews.
+
+[Descripción de la imagen: desuade dey1]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: la portada del libro, que es un fondo blanco con un borde azul]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un documento con el título del artículo]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un documento con el título del documento, que es el título del documento]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+• Del mismo modo, si consideramos el promedio de estas variables
+
+la llamamos X n = Sn
+n =
+Pn
+i=1 Xi
+n
+
+, podemos calcular:
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+• Del mismo modo, si consideramos el promedio de estas variables
+
+la llamamos X n = Sn
+n =
+Pn
+i=1 Xi
+n
+
+, podemos calcular:
+• Su media: E(X n) = E
+ Sn
+n
+
+= 1
+n · E(Sn) = 1
+n · n · µ = µ
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+• Del mismo modo, si consideramos el promedio de estas variables
+
+la llamamos X n = Sn
+n =
+Pn
+i=1 Xi
+n
+
+, podemos calcular:
+• Su media: E(X n) = E
+ Sn
+n
+
+= 1
+n · E(Sn) = 1
+n · n · µ = µ
+• Su varianza: V (X n) = V
+ Sn
+n
+
+= 1
+n2 · V (Sn) = 1
+n2 · n · σ2 = σ2
+n
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables | Transcripción de la imagen: Teorema
+
+Central
+
+del Límits Variables Aleatorias Independientes
+ael Idénticamente Distribuidas
+Pantazis
+
+Repaso La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+
+Distribuidas.Es decir, variables independientes con la misma distribución.
+
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son |.I.D., podemos deducir algunas propiedades.
+
+9 Sean X1, X, - -- , X, V.A.LID. Al ser idénticamente distribuidas, tienen la misma media
+E(X;) = y y desvío o(X;) = 0
+
+* Si consideramos la suma de estas variables (la llamamos S,), podemos calcular:
+
+* Su media: E(S,) = E (2L1 X¡) = 27:1 E(X;) = 2¡ ¡H=n:h
+* Su varianza: V(S,) = V (2:_1:1 X¡) IN:DZ 27:1 V(X;) = 27:1 o =n-0"
+
+9 Del mismo modo, si consideramos el promedio de estas variables
+
+— "X,
+(Ia llamamos X, = & = E;1
+
+) , podemos calcular:
+n
+
+0,2
+
+1
+* Su media: E(X, (5) E(S)_; n u=
+S
+
+n
+n 1 1 2
+* Su varianza: V(X;) 5% V(S1) = 5 :n:0 =
+n n
+
+n
+
+2Oj(:|: No vale "distribuir" la varianza a través de la suma si las variables no son independientes]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+Distribuidas.Es decir, variables independientes con la misma distribución.
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son I.I.D., podemos deducir algunas propiedades.
+• Sean X1, X2, · · · , Xn V.A.I.I.D. Al ser idénticamente distribuidas, tienen la misma media
+E(Xi) = µ y desvío σ(Xi) = σ.
+• Si consideramos la suma de estas variables (la llamamos Sn), podemos calcular:
+• Su media: E(Sn) = E  Pn
+i=1 Xi
+
+= Pn
+i=1 E(Xi) = Pn
+i=1 µ = n · µ
+• Su varianza: V (Sn) = V  Pn
+i=1 Xi
+ IND2
+= Pn
+i=1 V (Xi) = Pn
+i=1 σ2 = n · σ2
+• Del mismo modo, si consideramos el promedio de estas variables
+
+la llamamos X n = Sn
+n =
+Pn
+i=1 Xi
+n
+
+, podemos calcular:
+• Su media: E(X n) = E
+ Sn
+n
+
+= 1
+n · E(Sn) = 1
+n · n · µ = µ
+• Su varianza: V (X n) = V
+ Sn
+n
+
+= 1
+n2 · V (Sn) = 1
+n2 · n · σ2 = σ2
+n
+2Ojo: No vale "distribuir" la varianza a través de la suma si las variables no son independientes
+
+[Descripción de la imagen: un diagrama de las variables en las variables | Transcripción de la imagen: Teorema
+
+Central
+
+del Límits Variables Aleatorias Independientes
+ael Idénticamente Distribuidas
+Pantazis
+
+Repaso La abreviación V.A.I.I.D. corresponde a Variables Aleatorias Independientes Idénticamente
+
+Distribuidas.Es decir, variables independientes con la misma distribución.
+
+En esta guía estas colecciones de variables serán de sumo interés. Por ejemplo, ya que hablamos de
+sumas de variables aleatorias, si éstas son |.I.D., podemos deducir algunas propiedades.
+
+9 Sean X1, X, - -- , X, V.A.LID. Al ser idénticamente distribuidas, tienen la misma media
+E(X;) = y y desvío o(X;) = 0
+
+* Si consideramos la suma de estas variables (la llamamos S,), podemos calcular:
+
+* Su media: E(S,) = E (2L1 X¡) = 27:1 E(X;) = 2¡ ¡H=n:h
+* Su varianza: V(S,) = V (2:_1:1 X¡) IN:DZ 27:1 V(X;) = 27:1 o =n-0"
+
+9 Del mismo modo, si consideramos el promedio de estas variables
+
+— "X,
+(Ia llamamos X, = & = E;1
+
+) , podemos calcular:
+n
+
+0,2
+
+1
+* Su media: E(X, (5) E(S)_; n u=
+S
+
+n
+n 1 1 2
+* Su varianza: V(X;) 5% V(S1) = 5 :n:0 =
+n n
+
+n
+
+2Oj(:|: No vale "distribuir" la varianza a través de la suma si las variables no son independientes]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+En conclusión, dadas X1, X2, · · · , Xn V.A.I.I.D., con media µ y desvío σ:
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras «arucus industus»]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+En conclusión, dadas X1, X2, · · · , Xn V.A.I.I.D., con media µ y desvío σ:
+• E(Sn) = n · µ, V (Sn) = n · σ2 ⇒σ(Sn) = √n · σ
+
+[Descripción de la imagen: una pantalla de ordenador que muestra las propiedades de las variables | Transcripción de la imagen: Teorema
+Central
+
+del Límits Variables Aleatorias Independientes
+o Idénticamente Distribuidas
+Pantazis
+
+Repaso
+
+Teorema
+
+Central del
+Límite
+
+En conclusión, dadas X1, X>, - -- ,X V.A.L.I.D., con media “ y desvío o:
+* ElS1) = - 1, V(S1) =1:0" > a(51) = v:0]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+En conclusión, dadas X1, X2, · · · , Xn V.A.I.I.D., con media µ y desvío σ:
+• E(Sn) = n · µ, V (Sn) = n · σ2 ⇒σ(Sn) = √n · σ
+• E(X n) = µ, V (X n) = σ2
+n ⇒σ(X n) =
+σ
+√n
+
+[Descripción de la imagen: la fórmula del coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente coeficiente | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Límite
+
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+
+En conclusión, dadas X1, X>, - -- ,X V.A-.I.I.D., con media u y desvío o:
+* ElS1) = - 1, V(S1) =1:0" > a(51) = v:0
+2
+
+* E(X,) = u, V(X1) = On o(X-) = 5ñ]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+En conclusión, dadas X1, X2, · · · , Xn V.A.I.I.D., con media µ y desvío σ:
+• E(Sn) = n · µ, V (Sn) = n · σ2 ⇒σ(Sn) = √n · σ
+• E(X n) = µ, V (X n) = σ2
+n ⇒σ(X n) =
+σ
+√n
+Pregunta: ¿Qué sucede con la media y el desvío de X n si n →+∞?
+
+[Descripción de la imagen: un diagrama de los cuatroiers de un cuatroier | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+Teorema
+
+Central del
+Límite
+
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+
+En conclusión, dadas X1, X>, - -- ,X V.A.L.I.D., con media “ y desvío o:
+* ElS1) = - 1, V(S1) =1:0" > a(51) = v:0
+
+o — o
+* ECo) =1 0) == 001) = 7
+
+Pregunta: ¿Qué sucede con la media y el desvío de X, si n > +00?]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Variables Aleatorias Independientes
+Idénticamente Distribuidas
+En conclusión, dadas X1, X2, · · · , Xn V.A.I.I.D., con media µ y desvío σ:
+• E(Sn) = n · µ, V (Sn) = n · σ2 ⇒σ(Sn) = √n · σ
+• E(X n) = µ, V (X n) = σ2
+n ⇒σ(X n) =
+σ
+√n
+Pregunta: ¿Qué sucede con la media y el desvío de X n si n →+∞?
+El promedio está siempre centrado en la media µ, pero el desvío tiende a 0. Por lo que
+la variable se concentra más y más alrededor de µ hasta el punto de parecer una
+constante (son las únicas variables con desvío cero).
+
+[Descripción de la imagen: un diagrama de los cuatroiers de un cuatroier]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+
+[Descripción de la imagen: proteco, x paras ques conoces]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+
+[Descripción de la imagen: protección x parar ques conoce ques]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+
+[Descripción de la imagen: proteco x porrex ques conoceres]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+• Poisson (Xi ∼Po(3))
+
+[Descripción de la imagen: proteco x porrex, est conocimiento y conocimiento]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+• Poisson (Xi ∼Po(3))
+• Exponenciales (Xi ∼E( 1
+10 ))
+
+[Descripción de la imagen: proteco, x, x, x, x, x, x, x, x, x, x, x, x]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+• Poisson (Xi ∼Po(3))
+• Exponenciales (Xi ∼E( 1
+10 ))
+
+[Descripción de la imagen: proteco, x, x, x, x, x, x, x, x, x, x, x, x]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+• Poisson (Xi ∼Po(3))
+• Exponenciales (Xi ∼E( 1
+10 ))
+Haremos crecer los valores de n para ver esta tendencia, tomando los valores n = 10,
+n = 30, n = 60, n = 100.
+
+[Descripción de la imagen: proteco x pare de est conoces]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n
+Para veriﬁcar que estas conclusiones valen para cualquier distribución, podemos tomar
+promedios de n v.a.i.i.d con las siguientes distribuciones:
+• Normales (Xi ∼N(10, 4))
+• Binomiales (Xi ∼Bi(5, 0.9))
+• Poisson (Xi ∼Po(3))
+• Exponenciales (Xi ∼E( 1
+10 ))
+Haremos crecer los valores de n para ver esta tendencia, tomando los valores n = 10,
+n = 30, n = 60, n = 100.
+El problema es el siguiente: ¿Cómo vemos si se concentra o no el promedio a medida
+que aumenta n? Con un promedio solo no alcanza. Por lo tanto, para cada distribución,
+trataremos de replicar M = 200 promedios de cada tamaño.
+
+[Descripción de la imagen: proteco x porrecir equite]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+A continuación mostramos cómo se visualizan estas distintas iteraciones y la
+concentración de los promedios. Comenzamos con una simulación de tamaño n = 10
+de normales Xi ∼N(10, 4):
+
+[Descripción de la imagen: proxi xnmes conoce de productos]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+A continuación mostramos cómo se visualizan estas distintas iteraciones y la
+concentración de los promedios. Comenzamos con una simulación de tamaño n = 10
+de normales Xi ∼N(10, 4):
+plot(GG)
+0.950
+0.975
+1.000
+1.025
+1.050
+5.0
+7.5
+10.0
+12.5
+15.0
+X~N(10,4)
+Número de iteración
+
+[Descripción de la imagen: pronos xnmes conoce conoce]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Agregando otro vector de n = 10:
+plot(GG)
+0.8
+1.2
+1.6
+2.0
+5.0
+7.5
+10.0
+12.5
+15.0
+X~N(10,4)
+Número de iteración
+
+[Descripción de la imagen: un gráfico con un cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero cero | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+
+Teorema
+Central del
+Límite
+
+Agregando otro vector de n = 10:
+
+plot (GG)
+
+5 20=
+
+S
+
+5
+
+q 16-
+
+s
+
+E
+
+2 1.2=
+
+E
+
+Z ..
+
+0.8 =
+
+1
+5.0
+
+75
+
+Promedios X, (Normales)
+
+X ...
+o ><|oo ..
+
+10.0 125
+X-N(10,4)
+
+15.0]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Agregando más vectores de tamaño n = 10:
+plot(GG)
+0
+5
+10
+15
+20
+25
+0
+5
+10
+15
+20
+X~N(10,4)
+Número de iteración
+
+[Descripción de la imagen: proxis xn / uts regosoo vec | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso
+Teorema
+
+Central del
+Límite
+
+Promedios X, (Normales)
+
+Agregando más vectores de tamaño n = 10:
+
+plot (GG)
+
+5= D eX .o
+oo..o..=:>< :...o. — e
+
+'E315- o .oo: o o..>o< o. o
+
+Z- o:0u.02(:>z o..o:: í
+
+X-N(10,4)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Todas los promedios de tamaño n = 10 muestran la siguiente distribución:
+plot(GG)
+0
+50
+100
+150
+200
+0
+5
+10
+15
+20
+25
+X~N(10,4)
+Número de iteración
+Podemos ver algunas cuestiones:
+
+[Descripción de la imagen: Proyectos x n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Todas los promedios de tamaño n = 10 muestran la siguiente distribución:
+plot(GG)
+0
+50
+100
+150
+200
+0
+5
+10
+15
+20
+25
+X~N(10,4)
+Número de iteración
+Podemos ver algunas cuestiones:
+• Los promedios efectivamente se concentran alrededor de 10
+
+[Descripción de la imagen: n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n o n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Todas los promedios de tamaño n = 10 muestran la siguiente distribución:
+plot(GG)
+0
+50
+100
+150
+200
+0
+5
+10
+15
+20
+25
+X~N(10,4)
+Número de iteración
+Podemos ver algunas cuestiones:
+• Los promedios efectivamente se concentran alrededor de 10
+• Los promedios se concentran más alrededor de 10 que la variable original
+
+[Descripción de la imagen: Proyectos x n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Todas los promedios de tamaño n = 10 muestran la siguiente distribución:
+plot(GG)
+0
+50
+100
+150
+200
+0
+5
+10
+15
+20
+25
+X~N(10,4)
+Número de iteración
+Podemos ver algunas cuestiones:
+• Los promedios efectivamente se concentran alrededor de 10
+• Los promedios se concentran más alrededor de 10 que la variable original
+• El promedio es variable, es decir, puede tomar distintos valores.
+
+[Descripción de la imagen: projets de la nustes de la nuste de nustes de nustes]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Todas los promedios de tamaño n = 10 muestran la siguiente distribución:
+plot(GG)
+0
+50
+100
+150
+200
+0
+5
+10
+15
+20
+25
+X~N(10,4)
+Número de iteración
+Podemos ver algunas cuestiones:
+• Los promedios efectivamente se concentran alrededor de 10
+• Los promedios se concentran más alrededor de 10 que la variable original
+• El promedio es variable, es decir, puede tomar distintos valores.
+
+[Descripción de la imagen: projets de la nustes de la nuste de nustes de nustes]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Podemos ver cómo se distribuyen estos promedios con un gráﬁco de valor vs constante:
+
+[Descripción de la imagen: n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Podemos ver cómo se distribuyen estos promedios con un gráﬁco de valor vs constante:
+plot(GG)
+−0.050
+−0.025
+0.000
+0.025
+0.050
+8
+10
+12
+14
+Promedios de X~N(10,4) con n=10
+
+[Descripción de la imagen: produo y y y y y y y y y y y y y y y y y y y]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Podemos ver cómo se distribuyen estos promedios con un gráﬁco de valor vs constante:
+plot(GG)
+−0.050
+−0.025
+0.000
+0.025
+0.050
+8
+10
+12
+14
+Promedios de X~N(10,4) con n=10
+Notamos que, al menos estos promedios toman valores entre 6 y 14 aproximadamente,
+pero que hay mucha superposición que no permite evaluar correctamente cómo se
+distribuyen.
+
+[Descripción de la imagen: n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Por lo tanto, vamos a evaluar mejor la distribución con un histograma de estos valores:
+plot(GG)
+0.0
+0.1
+0.2
+0.3
+0.4
+8
+10
+12
+14
+Promedios de X~N(10,4) con n=10
+Frecuencia relativa
+
+[Descripción de la imagen: proxis x n°s pos to x n°s varcee ete de la proxis]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Además, como vimos anteriormente, al promediar normales también se observa que
+siguen una distribución normal de media 10 y desvío
+4
+√
+10 :
+
+[Descripción de la imagen: projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta projeta]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Además, como vimos anteriormente, al promediar normales también se observa que
+siguen una distribución normal de media 10 y desvío
+4
+√
+10 :
+plot(GG)
+0.0
+0.1
+0.2
+0.3
+0.4
+7.5
+10.0
+12.5
+Promedios de X~N(10,4) con n=10
+Frecuencia relativa
+
+[Descripción de la imagen: produo x n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n, podemos
+comparar los distintos histogramas para evaluar la concentración alrededor de la media
+10. Además, sabemos que deberían tener distribuciones normales de media 10 y desvío
+4
+√n , por lo tanto, comparamos con esa distribución:
+
+[Descripción de la imagen: una pantalla de ordenador con el texto'''' en español]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Normales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n, podemos
+comparar los distintos histogramas para evaluar la concentración alrededor de la media
+10. Además, sabemos que deberían tener distribuciones normales de media 10 y desvío
+4
+√n , por lo tanto, comparamos con esa distribución:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+7.5
+10.0
+12.5
+7.5
+10.0
+12.5
+7.5
+10.0
+12.5
+7.5
+10.0
+12.5
+0.00
+0.25
+0.50
+0.75
+1.00
+Promedios de X~N(10,4)
+Frecuencia relativa
+
+[Descripción de la imagen: un gráfico gráfico con una línea azul y una línea roja]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Binomiales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Bi(5, 0.9), deberían concentrarse alrededor de µ = 5 · 0.9 = 4.5:
+
+[Descripción de la imagen: proyecto x - ionios repio de detero]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Binomiales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Bi(5, 0.9), deberían concentrarse alrededor de µ = 5 · 0.9 = 4.5:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+4.0
+4.4
+4.8
+4.0
+4.4
+4.8
+4.0
+4.4
+4.8
+4.0
+4.4
+4.8
+0
+2
+4
+6
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: proxis x binomiis repio deperione | Transcripción de la imagen: Teorema
+
+Central —
+del Límite Promedios X, (Binomiales)
+Lic. Lucio
+p:rfaez¡5 Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Bi(5,0.9), deberían concentrarse alrededor de y1 = 5 - 0.9 = 4.5:
+Repaso
+, plot (GG)
+n=10 n=30 n= 60 n= 100
+6 m
+2-
+L 1 L L L U U 1 L L L 1
+4.0 4.4 4.8 4.0 4.4 4.8 4.0 4.4 4.8 4.0 44 4.8
+
+Promedios de X-Bi(5,0.9)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Poisson)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Po(3), deberían concentrarse alrededor de µ = λ = 3:
+
+[Descripción de la imagen: proyecto x - veneno repio exocto m - 300 discos de bailes]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Poisson)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Po(3), deberían concentrarse alrededor de µ = λ = 3:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+2
+3
+4
+2
+3
+4
+2
+3
+4
+2
+3
+4
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: proxis x - veneno repio enocatom - 300 distaton de fares | Transcripción de la imagen: Teorema
+
+Central —
+del Límite Promedios X, (Poisson)
+Lic. Lucio
+p::;ez¡5 Repitiendo este procedimiento con M=200 con distintos tamaños de n para binomiales
+con Po(3), deberían concentrarse alrededor de u = A =3:
+Repaso
+, plot (GG)
+n=10 n=30 n=60 n= 100
+25 =
+2.0 =
+% 15 =
+E
+0.5 =
+0.0 = = [ _
+1 L L 1 L U L 1 U L L 1
+2 3 4 2 3 4 2 3 4 2 3 4
+
+Promedios de X-Bi(5,0.9)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Exponenciales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para
+exponenciales con λ =
+1
+10 , deberían concentrarse alrededor de µ = 10:
+
+[Descripción de la imagen: proteco x conoce reprecometo m - 200 conoce de la]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Promedios X n (Exponenciales)
+Repitiendo este procedimiento con M=200 con distintos tamaños de n para
+exponenciales con λ =
+1
+10 , deberían concentrarse alrededor de µ = 10:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+5
+10
+15
+20
+5
+10
+15
+20
+5
+10
+15
+20
+5
+10
+15
+20
+0.0
+0.1
+0.2
+0.3
+Promedios de X~Exp(0.1)
+Frecuencia relativa
+
+[Descripción de la imagen: prontos x conoctes reprecometo m - 200 conocte de la pronto]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+
+[Descripción de la imagen: conoce cono cono cono cono cono cono cono cono cono cono]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+
+[Descripción de la imagen: conoce de dato de dato]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+P  X n −µ
+ ≥ε
+= P  X n −E(X n)
+ ≥ε
+≤V (X n)
+ε2
+=
+σ2
+n · ε2
+−→
+n→+∞0
+
+[Descripción de la imagen: conoce de la est est conoce de est est esto]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+P  X n −µ
+ ≥ε
+= P  X n −E(X n)
+ ≥ε
+≤V (X n)
+ε2
+=
+σ2
+n · ε2
+−→
+n→+∞0
+Es decir, la probabilidad de que el promedio esté lejos de su media siempre tiende a 0 a
+medida que más variables se promedian.
+
+[Descripción de la imagen: conoce de la est esto]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+P  X n −µ
+ ≥ε
+= P  X n −E(X n)
+ ≥ε
+≤V (X n)
+ε2
+=
+σ2
+n · ε2
+−→
+n→+∞0
+Es decir, la probabilidad de que el promedio esté lejos de su media siempre tiende a 0 a
+medida que más variables se promedian. Dato de color:
+Esto da lugar a una propiedad llamada “la Ley de los Grandes Números”:
+
+[Descripción de la imagen: conoce de la est esto]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+P  X n −µ
+ ≥ε
+= P  X n −E(X n)
+ ≥ε
+≤V (X n)
+ε2
+=
+σ2
+n · ε2
+−→
+n→+∞0
+Es decir, la probabilidad de que el promedio esté lejos de su media siempre tiende a 0 a
+medida que más variables se promedian. Dato de color:
+Esto da lugar a una propiedad llamada “la Ley de los Grandes Números”:
+Sean X1, X2, · · · , Xn V.A.I.I.D., de media µ y desvío ﬁnito σ, para todo ε > 0:
+P  X n −µ
+ ≥ε
+−→
+n→+∞0
+
+[Descripción de la imagen: conoce del cono de cono cono cono cono cono cono cono]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Efectivamente vemos que los promedios se concentran más y más alrededor de su
+media a medida que se promedian más variables.
+Más aún, eso lo podíamos comprobar con la desigualdad de Čebyšëv. Dado que
+X1, X2, · · · , Xn son V.A.I.I.D., sabemos la media y la varianza de X n. Cuando
+aplicamos la desigualdad, para cualquier ε > 0, observamos lo siguiente:
+P  X n −µ
+ ≥ε
+= P  X n −E(X n)
+ ≥ε
+≤V (X n)
+ε2
+=
+σ2
+n · ε2
+−→
+n→+∞0
+Es decir, la probabilidad de que el promedio esté lejos de su media siempre tiende a 0 a
+medida que más variables se promedian. Dato de color:
+Esto da lugar a una propiedad llamada “la Ley de los Grandes Números”:
+Sean X1, X2, · · · , Xn V.A.I.I.D., de media µ y desvío ﬁnito σ, para todo ε > 0:
+P  X n −µ
+ ≥ε
+−→
+n→+∞0
+Se dice en este caso que X n “converge en probabilidad” a µ.
+
+[Descripción de la imagen: conoce de la esto]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Pero vemos otra cosa revisando los histogramas, a medida que se promedian más
+variables, todos los promedios parecen distribuirse de manera normal, sea cual sea la
+variable que se promedia.
+
+[Descripción de la imagen: crusoes veros conos de la ests]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Pero vemos otra cosa revisando los histogramas, a medida que se promedian más
+variables, todos los promedios parecen distribuirse de manera normal, sea cual sea la
+variable que se promedia.
+Pero dado el caso, ¿cuáles deberían ser la media y el desvío de esa variable normal?
+
+[Descripción de la imagen: crusoes do siso]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones
+Pero vemos otra cosa revisando los histogramas, a medida que se promedian más
+variables, todos los promedios parecen distribuirse de manera normal, sea cual sea la
+variable que se promedia.
+Pero dado el caso, ¿cuáles deberían ser la media y el desvío de esa variable normal?
+Claramente, lo mínimo que le tendría que pedir a esa variable normal es que tenga la
+misma media y desvío que el promedio X n, es decir, media µ y desvío
+σ
+√n .
+
+[Descripción de la imagen: conoce de la comida]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Binomial)
+Podemos veriﬁcar entonces comparando los histogramas de la binomial del mismo
+modo que comparamos las que sabíamos que eran normales. Si fueran normales,
+tendrían media µ = 5 · 0.9 = 4.5 y desvío σ =
+q5 · 0.9 · 0.1
+n
+:
+
+[Descripción de la imagen: conoce normale conoce normale]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Binomial)
+Podemos veriﬁcar entonces comparando los histogramas de la binomial del mismo
+modo que comparamos las que sabíamos que eran normales. Si fueran normales,
+tendrían media µ = 5 · 0.9 = 4.5 y desvío σ =
+q5 · 0.9 · 0.1
+n
+:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+3.5
+4.0
+4.5
+5.0
+3.5
+4.0
+4.5
+5.0
+3.5
+4.0
+4.5
+5.0
+3.5
+4.0
+4.5
+5.0
+0.0
+2.5
+5.0
+7.5
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: conoce normale conoce normale]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Poisson)
+Podemos veriﬁcar entonces comparando los histogramas de la poisson del mismo modo
+que comparamos las que sabíamos que eran normales. Si fueran normales, tendrían
+media µ = 3 y desvío σ =
+q 3
+n :
+
+[Descripción de la imagen: conoce normale conoce normale]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Poisson)
+Podemos veriﬁcar entonces comparando los histogramas de la poisson del mismo modo
+que comparamos las que sabíamos que eran normales. Si fueran normales, tendrían
+media µ = 3 y desvío σ =
+q 3
+n :
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+0.0
+0.5
+1.0
+1.5
+2.0
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: conoce normale cono normale]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Exponenciales)
+Podemos veriﬁcar entonces comparando los histogramas de la exponenciales del mismo
+modo que comparamos las que sabíamos que eran normales. Si fueran normales,
+tendrían media µ = 10 y desvío σ = 10
+√n :
+
+[Descripción de la imagen: Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Conclusiones Normalidad (Exponenciales)
+Podemos veriﬁcar entonces comparando los histogramas de la exponenciales del mismo
+modo que comparamos las que sabíamos que eran normales. Si fueran normales,
+tendrían media µ = 10 y desvío σ = 10
+√n :
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+5
+10
+15
+20
+5
+10
+15
+20
+5
+10
+15
+20
+5
+10
+15
+20
+0.0
+0.1
+0.2
+0.3
+0.4
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce Conoce]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite
+
+[Descripción de la imagen: un fondo blanco con las palabras'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' | Transcripción de la imagen: Teorema Central del Límite]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+
+[Descripción de la imagen: tera central limite tc | Transcripción de la imagen: Teorema
+Central
+
+del Límite Teorema Central del Límite (TCL)
+
+Lic. Lucio
+José
+Pantazis
+
+Repaso Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+
+Teorema que n — 00:
+
+Central del 57
+
+p — (aprox Xn — rox
+
+C X, 209 y (… í) > —£ 2 N(0,1)
+Vn ;]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+
+[Descripción de la imagen: teera central limite tc | Transcripción de la imagen: Teorema
+
+Central
+del Límite Teorema Central del Límite (TCL)
+Lic. Lucio
+
+José
+Pantazis
+eee Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+Teorema que n — 0o:
+Central del X
+
+— - rox Xn — rox
+Límite X, (2P99) y u, — )> —E (a79) N(0, 1)
+
+n Z
+
+Del mismo modo, se puede probar lo siguiente:
+
+(aprox) S, —n-: H (aprox)
+S, N(n-,u,Ú'0') > y N(0, 1)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+
+[Descripción de la imagen: tera central limite tc | Transcripción de la imagen: Teorema
+
+Central
+del Límite Teorema Central del Límite (TCL)
+Lic. Lucio
+
+José
+
+Pantazis
+
+Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+Teorema que n — 0o:
+Central del Y
+Límite — X, 7N u, — )> Xn — E (r N(0, 1)
+n Z
+
+Del mismo modo, se puede probar lo siguiente:
+
+(aprox) S, —n-: H (aprox)
+S, N(n-,u,Ú'0') > y N(0, 1)
+
+Es decir, para cualquier valor t € R:
+
+— X, — t— TCL t—
+F (1) = P(X, <t) =P —<| =0| —
+" 7 7 7]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+FSn (t) = P(Sn ≤t) = P
+ Sn −n · µ
+√n · σ
+≤t −n · µ
+√n · σ
+
+TCL
+≈
+n→+∞
+Φ
+ t −n · µ
+√n · σ
+
+
+[Descripción de la imagen: teera central limite tc | Transcripción de la imagen: Teorema
+
+Central
+del Límite Teorema Central del Límite (TCL)
+Lic. Lucio
+
+José
+
+Pantazis
+
+Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+Teorema que n — 0o:
+Central del Y
+Límite — X, 7N u, — )> Xn — E (r N(0, 1)
+n Z
+
+Del mismo modo, se puede probar lo siguiente:
+(aprox) S, —n-: H (aprox)
+S - Nin-u,Vn:0)> — — - N(0,1
+(C (0,1)
+
+Es decir, para cualquier valor t € R:
+
+— X, — t— TCL t—
+F (1) = P(X, <t) =P —<| =0| —
+" 7 7 7
+
+F5n(t):P(sngt)fp<s"_"'“gt_"'”) Z q>(—t_"'“)
+o]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+FSn (t) = P(Sn ≤t) = P
+ Sn −n · µ
+√n · σ
+≤t −n · µ
+√n · σ
+
+TCL
+≈
+n→+∞
+Φ
+ t −n · µ
+√n · σ
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+
+[Descripción de la imagen: teera central limite tc | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Teorema
+Central del
+Límite
+
+Teorema Central del Límite (TCL)
+
+Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+que n — 0o:
+
+n
+
+Del mismo modo, se puede probar lo siguiente:
+
+— as X, — f (apros
+X, 7N (uví) > —£ E n(0,1)
+N
+
+(aprox) S, —n-: H (aprox)
+S, N(n-p,%.a) > y N(0, 1)
+
+Es decir, para cualquier valor t € R:
+
+— X, — t— TCL t—
+F (1) = P(X, <t) =P —<| =0| —
+" 7 7 7
+
+S| — n t-n-u TCL t—n-h
+Fs (t) = P(S, <) =P < = e| —
+0-6< (7< E (57)
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+FSn (t) = P(Sn ≤t) = P
+ Sn −n · µ
+√n · σ
+≤t −n · µ
+√n · σ
+
+TCL
+≈
+n→+∞
+Φ
+ t −n · µ
+√n · σ
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+Observación: Esto vale para cualquier distribución
+
+[Descripción de la imagen: teera central limite tc | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Teorema
+Central del
+Límite
+
+Teorema Central del Límite (TCL)
+
+Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+que n — 0o:
+
+n
+
+Del mismo modo, se puede probar lo siguiente:
+
+— as X, — f (apros
+X, 7N (uví) > —£ E n(0,1)
+N
+
+(aprox) S, —n-: H (aprox)
+S, N(n-p,%.a) > y N(0, 1)
+
+Es decir, para cualquier valor t € R:
+
+— X, — t— TCL t—
+F (1) = P(X, <t) =P —<| =0| —
+" 7 7 7
+
+S| — n t-n-u TCL t—n-h
+Fs (t) = P(S, <) =P < = e| —
+0-6< (7< E (57)
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+
+Observación: Esto vale para cualquier distribución]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+FSn (t) = P(Sn ≤t) = P
+ Sn −n · µ
+√n · σ
+≤t −n · µ
+√n · σ
+
+TCL
+≈
+n→+∞
+Φ
+ t −n · µ
+√n · σ
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+Observación: Esto vale para cualquier distribución
+
+[Descripción de la imagen: teera central limite tc | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Teorema
+Central del
+Límite
+
+Teorema Central del Límite (TCL)
+
+Sean X, X>, --
+
+, Xh V.A.LI.D., de cualquier distribución con media y y desvío finito 0, a medida
+que n — 00:
+
+— (apros Xa — 1 (apros
+X. N (1, =) > E 7 500,1)
+n z
+
+Del mismo modo, se puede probar lo siguiente:
+
+(aprox)
+
+Sp — n- p (aprox)
+Sh, N(n-,u,Ána)áñ o N(0,1)
+
+Es decir, para cualquier valor t € R:
+
+— Y,,—,u t—h TCL t—hH
+F;n(t)_P(X,,5t)_P( = <—- ) = 4><
+W NZ n>+00
+
+S.—n-h _ t-n-h TCL t—n-h
+Fa = P(S,<t) =P < = | —
+Sr (£) (S1 < 1) < Vn:0 — yn:0o ) n>+00 ( x/ñ'º')
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+
+EN
+
+Observación: Esto vale para cualquier distribución]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Sean X1, X2, · · · , Xn V.A.I.I.D., de cualquier distribución con media µ y desvío ﬁnito σ, a medida
+que n →∞:
+X n
+(aprox)
+∼
+N
+
+µ, σ
+√n
+
+⇒X n −µ
+σ
+√n
+(aprox)
+∼
+N(0, 1)
+Del mismo modo, se puede probar lo siguiente:
+Sn
+(aprox)
+∼
+N  n · µ, √n · σ
+⇒Sn −n · µ
+√n · σ
+(aprox)
+∼
+N(0, 1)
+Es decir, para cualquier valor t ∈R:
+FXn (t) = P(X n ≤t) = P
+
+X n −µ
+σ
+√n
+≤t −µ
+σ
+√n
+
+TCL
+≈
+n→+∞
+Φ
+
+t −µ
+σ
+√n
+
+FSn (t) = P(Sn ≤t) = P
+ Sn −n · µ
+√n · σ
+≤t −n · µ
+√n · σ
+
+TCL
+≈
+n→+∞
+Φ
+ t −n · µ
+√n · σ
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+Observación: Esto vale paraCUALQUIER
+DISTRIBUCIÓN
+
+[Descripción de la imagen: teera central límite 1 | Transcripción de la imagen: Teorema
+Central
+del Límite
+
+Lic. Lucio
+José
+Pantazis
+
+Teorema
+Central del
+Límite
+
+Teorema Central del Límite (TCL)
+
+Sean Xi, X, - -- , X, V.A.LI.D., de cualquier distribución con media u y desvío finito 0, a medida
+que n — 0o:
+
+— - (aprox X, — rox
+x, 7N (,) > £ y0,1)
+Vn N
+
+Del mismo modo, se puede probar lo siguiente:
+(aprox)
+
+S, —n-: rox
+S, - N(H-u,%—o)¿%(apmf)N(0,l)
+
+Es decir, para cualquier valor t € R:
+
+— X, — t— TCL t—
+F(N)=PO,<)=P| >—E<—E) =e| —
+" 7 Z ) i Z
+
+S, —n-h t—n-h TCL t-n-H
+Fs (t) = P(S, < 1) =P < = | —
+Sn() (Sn < t) ( n.0 — W'Ú)n—>+oo ( . )
+
+Observación: Esto dice más que “el promedio se concentra alrededor de la media”, permite calcular
+las probabilidades de que el promedio se encuentre en algún rango.
+
+obsenvción: Esto vale para CU ALQUIER
+DISTRIBUCIÓN]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Teorema Central del Límite (TCL)
+Tendría que haber puesto “El mejor teorema del mundo mundial”.
+Ojo: No vale si las variables que se promedian no son independientes o no tienen
+exactamente la misma distribución. En la práctica, es difícil que esto se cumpla o que
+se pueda veriﬁcar.
+
+[Descripción de la imagen: tera central lite c]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Utilización del TCL
+Comprobemos cómo se visualiza el Teorema Central del Límite. Consideremos las variables binomiales ya utilizadas. Calculemos por
+ejemplo, para cada n, qué probabilidad hay de que el promedio esté por debajo de 4.4:
+
+[Descripción de la imagen: el texto en el cuadro de texto se llama utizo]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Utilización del TCL
+Comprobemos cómo se visualiza el Teorema Central del Límite. Consideremos las variables binomiales ya utilizadas. Calculemos por
+ejemplo, para cada n, qué probabilidad hay de que el promedio esté por debajo de 4.4:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+0.0
+2.5
+5.0
+7.5
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+
+[Descripción de la imagen: un gráfico con una línea de datos y una línea de datos | Transcripción de la imagen: Teorema
+
+Central
+del Límit: ... .7
+A lm Utilización del TCL
+Lic. Lucio , M P . . . . "
+Jlazá Comprobemos cómo se visualiza el Teorema Central del Límite. Consideremos las variables binomiales ya utilizadas. Calculemos por
+Panterds ejemplo, para cada n, qué probabilidad hay de que el promedio esté por debajo de 4.4:
+plot (GG)
+Teorema
+Contral del n=10 n=30 n=60 n= 100
+L 1
+L L
+75 =
+L L
+L 1
+S
+5 I !
+2 5.0=
+s L U
+Ea
+3 L
+3
+v
+u
+25 =
+0.0 =
+u ! ¡ '
+4.2 45 4.8 4.2 45 4.8 4.2 45 4.8 4.2 45 48
+
+Promedios de X-Bi(5,0.9)]]
+
+Teorema
+Central
+del Límite
+Lic. Lucio
+José
+Pantazis
+Repaso
+Teorema
+Central del
+Límite
+Utilización del TCL
+Comprobemos cómo se visualiza el Teorema Central del Límite. Consideremos las variables binomiales ya utilizadas. Calculemos por
+ejemplo, para cada n, qué probabilidad hay de que el promedio esté por debajo de 4.4:
+plot(GG)
+n = 10
+n = 30
+n = 60
+n = 100
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+4.2
+4.5
+4.8
+0.0
+2.5
+5.0
+7.5
+Promedios de X~Bi(5,0.9)
+Frecuencia relativa
+En cada caso, la suma de las alturas de las barras a la izquierda de 4.4 y el área bajo la curva normal correspondiente da lo siguiente:
+pbinom(4.4*ns,t*ns,p)
+## [1] 0.38387699 0.24194154 0.14534121 0.08098716
+pnorm(4.4,mean=t*p,sd=sqrt(t*p*(1-p)/ns))
+## [1] 0.31867594 0.20710809 0.12410654 0.06801856
+
+[Descripción de la imagen: un gráfico con un gráfico de línea y un gráfico de línea]
+

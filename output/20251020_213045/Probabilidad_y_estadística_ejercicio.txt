@@ -1,0 +1,35 @@
+================================================================================
+EJERCICIOS ACADÉMICOS GENERADOS CON RAG
+================================================================================
+
+INFORMACIÓN:
+--------------------------------------------------------------------------------
+Materia: Probabilidad y estadística
+Unidad: Variables Aleatorias
+Tipo: multiple_choice
+Dificultad: intermedio
+Modelo: gpt-4o-mini
+Fecha: 2025-10-20 21:30:45
+
+EJERCICIOS (1):
+================================================================================
+
+EJERCICIO 1
+--------------------------------------------------------------------------------
+
+PREGUNTA:
+Si consideramos una variable aleatoria Xn que representa la cantidad de veces que ocurre un suceso de interés en n repeticiones de un experimento, ¿cuál es la distribución de probabilidad que sigue Xn si cada repetición es independiente y tiene una probabilidad p de éxito?
+
+OPCIONES:
+  A) A) Normal
+  B) B) Binomial
+  C) C) Poisson
+  D) D) Geométrica
+
+RESPUESTA CORRECTA: B
+
+================================================================================
+
+
+Generado con Sistema RAG - ITBA
+Basado en 5 fuentes académicas

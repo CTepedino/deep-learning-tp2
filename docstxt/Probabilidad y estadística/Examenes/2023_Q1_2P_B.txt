@@ -1,0 +1,336 @@
+ITBA
+Probabilidad y Estad´ıstica (93.24) - 2do. Parcial - Tema B
+15/6/2023
+Nombre:
+Legajo:
+Pregunta
+1
+2
+3
+4
+5
+Total
+Puntos
+2
+2
+2
+2
+2
+10
+Calificaci´on
+No se contestan preguntas.
+Justifique sus c´alculos.
+Redondee los resultados finales a 4 decimales.
+1. Usted ha sido contratado en un criadero de chanchos donde se ha implementado una nueva dieta
+para los animales. El due˜no le informa que, al final del proceso de crianza, el peso de un chancho
+adulto tomado al azar puede considerarse una variable aleatoria normal con desv´ıo σ = 5 kg.
+(a) (1/2 pto.) El due˜no le pide que determine el peso medio de los chanchos adultos al final de la
+crianza con un nivel de confianza del 99 % y un margen de error de 1 kg. ¿Cu´al es el n´umero
+m´ınimo de chanchos que deber´ıa pesar? Justifique su respuesta.
+(b) (1/2 pto.) Al final, usted pesa 25 chanchos tomados al azar y el peso promedio le da x = 200 kg.
+Determine el intervalo de confianza con un nivel de 99 % para el peso medio.
+(c) (1 pto.) Hist´oricamente, antes de la implementaci´on de la nueva dieta, el peso medio de los
+chanchos era de 202 kg. ¿Puede concluirse que la nueva dieta disminuy´o el peso medio? Plantee
+la prueba de hip´otesis correspondiente, calcule el valor P de la misma y escriba su conclusi´on.
+Respuesta:
+(a) Dado el nivel de confianza γ = 0.99, el margen de error es
+∆= z 1+γ
+2
+σ
+√n = z0.995
+5
+√n = 2.5758 5
+√n ≤1 ∴n ≥165.87.
+Rta.: n = 166.
+(b) En este caso
+∆= z0.995
+5
+√
+25 = 2.5758.
+Rta.: (197.4242, 202.5758).
+(c) La prueba de hip´otesis es:
+H0 : µ ≥202 (= µ0)
+H1 : µ < 198
+El valor del estad´ıstico de prueba observado es
+zobs = x −µ0
+σ
+√n
+= 200 −202
+5
+√
+25
+= −2.
+Luego,
+Valor P = P(Z ≤−2) = Φ(−2) = 0.022750.
+Rta.: Para todo nivel de significaci´on α > 0.022750, existe suficiente evidencia de que la dieta
+disminuy´o el peso medio.
+2. Usted no conf´ıa en el due˜no del criadero y descree que el desv´ıo poblacional sea igual a 5 kg. Por
+ello, calcula el desv´ıo muestral a partir de los datos de los 25 chanchos, obteniendo s = 4.4692.
+P´agina 1 de 4
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+ITBA
+Probabilidad y Estad´ıstica (93.24) - 2do. Parcial - Tema B
+15/6/2023
+(a) (1 pto.) Determine el intervalo de confianza con un nivel de 95 % para el peso medio.
+(b) (1 pto.) ¿Puede concluirse que la nueva dieta disminuy´o el peso medio? Plantee la prueba de
+hip´otesis con un nivel de significaci´on del 1 % y escriba su conclusi´on.
+Respuesta:
+Idea general: igual que el ejercicio anterior, pero con σ desconocido.
+(a) En este caso:
+∆= t 1+γ
+2
+,n−1
+s
+√n = t0.975,24
+s
+√n = 2.06394.4692
+√
+25
+= 1.8448.
+Rta.: (198.1552, 201.8448).
+(b) El valor del estad´ıstico de prueba observado es
+tobs = x −µ0
+s
+√n
+= 200 −202
+4.4692
+√
+25
+= −2.2375.
+El valor cr´ıtico es tc = −t1−α,n−1 = −t0.99,24 = −2.4922. Como tobs > tc, no se rechaza la
+hip´otesis nula.
+Rta.: Para un nivel de significaci´on α = 0.01, no existe suficiente evidencia de que la dieta
+disminuy´o el peso medio.
+3. Un nuevo pasante ingres´o al criadero. Para que comience a entrenarse, usted le pide plantee una
+prueba de hip´otesis para determinar si la proporci´on de chanchos que pesa menos de 199 kg es inferior
+al 25 % con un nivel de significaci´on del 5 %. Asuma que usa una muestra de tama˜no n = 2500.
+(a) (1 pto.) Plantee detalladamente la prueba de hip´otesis, el estad´ıstico de prueba y la regi´on de
+rechazo.
+(b) (1 pto.) Dibuje la curva OC especificando al menos 3 puntos.
+Respuesta:
+Se trata de una prueba de hip´otesis para una proporci´on:
+H0 : p ≥0.25 (= p0)
+H1 : p < 0.25
+La zona de rechazo se puede especificar de dos formas, dependiendo del estad´ıstico de prueba:
+• Estad´ıstico Z.
+Z =
+ˆp −p0
+q
+p0(1−p0)
+n
+=
+ˆp −0.25
+q
+0.25(0.75)
+2500
+.
+Se rechaza si zobs < zc = −z1−α = −z0.95 = −1.6449.
+• Estad´ıstico ˆp. Se rechaza si ˆp < ˆpc, donde
+ˆpc = p0 −z1−α
+r
+p0(1 −p0)
+n
+= 0.25 −z0.95
+r
+0.25(0.75)
+2500
+= 0.2358.
+Para graficar la OC, hay que recordar que
+β(p0) = 1 −α →β(0.2500) = 0.95,
+β(ˆpc) = 0.5
+→β(0.2358) = 0.50,
+β(0) = 0
+P´agina 2 de 4
+
+[Descripción de la imagen: la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+ITBA
+Probabilidad y Estad´ıstica (93.24) - 2do. Parcial - Tema B
+15/6/2023
+Para obtener m´as puntos, recordamos que
+β(p) = Pp (ˆp > ˆpc) ≈1 −Φ
+
+ˆpc −p
+q
+p(1−p)
+n
+
+.
+4. Los chanchos del criadero son de una raza muy especial. Se sabe que la cantidad de veces que cada
+chancho defeca puede considerarse un proceso de Poisson con par´ametro λ = 1 hora−1.
+(a) (1 pto.) ¿Cu´al es la probabilidad que pasen m´as de 4 horas entre la primera y la sexta deposici´on
+de heces?
+(b) (1 pto.) Estos chanchos tan especiales defecan 50 g en cada ocasi´on. Dichas heces son vendidas
+a un vecino como abono. Si tiene 100 cerdos, ¿cu´antos kilogramos de heces por semana pueden
+asegurarse al comprador con probabilidad de al menos 99 %?
+Respuesta:
+(a) Sea N(t) el proceso de Poisson con par´ametro λ correspondiente a la cantidad de ingestas
+de un chancho dado. Si entre la primera y la sexta deposici´on pasan m´as de 4 horas, significa
+que en 4 horas hubo menos de cinco (5) deposiciones. Dado que un proceso de Poisson tiene
+incrementos independientes, la probabilidad pedida se calcula
+P (N(4) ≤4) =
+4
+X
+k=0
+(1 × 4)k
+k!
+e−1×4 ≈0.6288.
+(b) Llamemos Ni(t) al n´umero de heces hasta tiempo t del i-´esimo chancho.
+Sea S100(t) el
+n´umero correspondiente a los 100 chanchos, es decir
+S100(t) =
+100
+X
+i=1
+Ni(t),
+E [S100(t)] = 100 × E [Ni(t)] = 100 × 0.5 × t,
+Var [S100(t)] = 100 × Var [Ni(t)] = 100 × 0.5 × t,
+donde en el ´ultimo paso hemos asumido que las deposiciones de los 100 chanchos son indepen-
+dientes entre s´ı.
+En 7 d´ıas (= 168 horas), el n´umero de deposiciones tendr´a
+E [S100(168)] = 100 × 1 × 168 = 16800,
+Var [S100(168)] = 100 × 1 × 168 = 16800.
+Llamemos C a la cantidad de heces producidas por los 100 chanchos en 7 d´ıas y c a la cantidad
+que se desea asegurar. Luego,
+P (C > c) = P (0.05S100(168) > c) = P
+
+S100(168) >
+c
+0.05
+
+≈1 −Φ
+
+c
+0.05 −16800
+√
+16800
+
+≥0.99,
+donde hemos usado el TCL (sumamos 100 variables aleatorias; otro punto de vista: S100 es
+suma de Poisson independientes y, por tanto, Poisson, por lo que se puede aproximar por la
+normal). Entonces
+c
+0.05 −16800
+√
+16800
+≤−z0.99 = −2.3263 ∴c ≤0.05 ×
+
+16800 −2.3263
+√
+16800
+
+= 824.92.
+P´agina 3 de 4
+
+[Descripción de la imagen: el texto en el libro de texto se muestra en la imagen]
+
+ITBA
+Probabilidad y Estad´ıstica (93.24) - 2do. Parcial - Tema B
+15/6/2023
+5. Luego de haber trabajado muchos a˜nos en el criadero, usted est´a completamente seguro que el
+due˜no le minti´o o no sab´ıa de lo que hablaba. De hecho, en el transcurso de sus investigaciones ha
+determinado que el peso Y de un chancho y el peso de su madre X est´an dados por la distribuci´on
+de probabilidades conjunta
+fX,Y (x, y) =
+(
+1
+50
+si x ∈(195, 205), y ∈(x + 5, x + 10),
+0
+para todo otro caso.
+(1)
+(a) (1 pto.) Determine las densidades de distribuci´on marginales. Graf´ıquelas.
+(b) (1 pto.) Calcule Cov(X, Y ).
+Respuesta:
+La clave es hacer un dibujo de la regi´on de inter´es en 2D. Omitimos los detalles de las cuentas.
+(a)
+fX(x) =
+(
+1
+10
+x ∈(195, 205),
+0
+x ̸∈(195, 205).
+fY (y) =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+y < 200,
+y−200
+50
+200 < y < 205,
+1
+10
+205 < y < 210,
+215−y
+50
+210 < y < 215,
+0
+y > 215.
+(b)
+µX = 200,
+µY = 207.5.
+E [XY ] = 124525
+3
+≈41508.33,
+Cov (X, Y ) = 25
+3 ≈8.3333.
+P´agina 4 de 4
+
+[Descripción de la imagen: la ecuación de la ecuación de fourier se muestra en el diagrama de abajo | Transcripción de la imagen: ITBA Probabilidad y Estadística (93.24) - 2do. Parcial - Tema B 15/6/2023
+
+5. Luego de haber trabajado muchos años en el criadero, usted está completamente seguro que el
+dueño le mintió o no sabía de lo que hablaba. De hecho, en el transcurso de sus investigaciones ha
+
+determinado que el peso Y de un chancho y el peso de su madre X están dados por la distribución
+de probabilidades conjunta
+
+1 sive(195,205), y € (7 +5,4+10),
+fx,y(x7y)—í5º ( »Yl , (1)
+
+0 para todo otro caso.
+
+(a) (1 pto.) Determine las densidades de distribución marginales. Grafíquelas.
+(b) (1 pto.) Calcule Cov(X, Y).
+
+Respuesta:
+
+La clave es hacer un dibujo de la región de interés en 2D. Omitimos los detalles de las cuentas.
+
+(a)
+
+— f+ ze(195,205),
+fX(º7)_íáo z € (195,205).
+
+0 y < 200,
+49 200<y <205,
+Sy (y) =4 35 205 <y <210,
+
+50 210<y <215,
+0 y > 215.
+(b)
+ux = 200,
+uy = 207.5.
+124525
+E[LXY] = = 41508.33,
+
+2
+Cov (X, Y) = í5 = 8.3333.
+
+Página 4 de 4]]
+

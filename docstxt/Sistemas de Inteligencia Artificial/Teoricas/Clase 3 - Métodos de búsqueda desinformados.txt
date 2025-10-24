@@ -1,0 +1,3122 @@
+Sistemas de Inteligencia Artificial
+Métodos de Búsqueda
+Desinformados
+
+[Descripción de la imagen: Diseño de logotipos para el idioma español]
+
+Recapitulando…
+
+[Descripción de la imagen: un fondo negro con la palabra "repulano" | Transcripción de la imagen: kecapitulando...]]
+
+Sistemas de Inteligencia Artificial
+Agentes y Ambientes
+
+[Descripción de la imagen: el logotipo para el departamento de ciencia e ingeniería]
+
+El Agente y su Ambiente
+Ambiente
+?
+Agente
+Sensores
+Efectores
+Percepciones
+Acciones
+
+[Descripción de la imagen: el diagrama muestra las diferentes partes de un agente]
+
+El Agente y su Ambiente
+Sistemas de recomendación
+!
+Sistemas de detección de 
+fraude
+Agentes de inteligencia 
+artificial generativa
+
+[Descripción de la imagen: un fondo blanco con un montón de logos diferentes]
+
+Agentes
+Todo aquello que puede considerarse que percibe y responde o 
+actúa en un ambiente, de forma independiente (autónomo).
+
+[Descripción de la imagen: fondo blanco con hexas azules y hexas]
+
+Tipos de Agentes
+    Racionales  vs  No Racionales
+Omniscientes  vs  No Omniscientes
+                  Sin  vs  Con estado interno
+
+[Descripción de la imagen: las palabras oráculos vs oráculos vs oráculos vs oráculos vs oráculos vs oráculos vs oráculos]
+
+Ambientes
+Es un conjunto de componentes que conforman al entorno del 
+problema. 
+Pueden contener uno o más agentes.
+
+[Descripción de la imagen: una imagen de las palabras aments sobre un fondo blanco]
+
+Tipos de Ambientes
+1.
+        Totalmente  vs  Parcialmente   Observable
+2.
+  Determinístico  vs  Estocástico     (vs Estratégico)
+3.
+          Episódico  vs  Secuencial
+4.
+             Estático  vs  Dinámico         (vs Semidinámico)
+5.
+             Discreto  vs  Continuo
+6.
+           Conocido  vs  Desconocido
+7.
+           Individual  vs  Multiagente
+8.
+        Adversarial  vs  Colaborativo
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y blanco que dice topo anientes]
+
+Ahora…
+
+[Descripción de la imagen: ahra - la palabra ahra está escrita en azul sobre un fondo negro | Transcripción de la imagen: Ahora...]]
+
+Sistemas de Inteligencia Artificial
+Métodos de Búsqueda
+Desinformados
+
+[Descripción de la imagen: Diseño de logotipos para el idioma español]
+
+Definiciones
+●
+Estado: Conjunto de valores del ambiente en un momento 
+dado.
+●
+Acción: Una función que toma un estado y retorna otro 
+estado, si es aplicable.
+●
+Espacio de estados: Conjunto de estados que incluye todos 
+los estados alcanzables desde el estado inicial.
+●
+Espacio de acciones: Conjunto de acciones que incluye todas 
+las acciones aplicables a por lo menos un estado en el 
+espacio de estados.
+
+[Descripción de la imagen: un fondo blanco con las palabras delicioos y un fondo azul con las palabras delicioos]
+
+Definiciones
+Ejemplo
+Laberinto
+
+[Descripción de la imagen: un laberinto con un laberinto y un tablero de laberinto con un laberinto | Transcripción de la imagen: (a)
+:>ºDeñmciones
+N
+
+Ejemplo
+
+- ._
+N
+«]]
+
+Definiciones
+Ejemplo
+●
+Acciones
+A = {a | a sea un movimiento 
+del trazo}
+○
+Muevo hacia abajo 
+●
+Estados
+S = { s | s contenga P, L y O }
+○
+P: posición del trazo
+○
+L: límites del laberinto
+○
+O: posiciones bloqueadas 
+(paredes)
+Laberinto
+
+[Descripción de la imagen: un laberinto con un laberinto en el medio y un laberinto en el medio | Transcripción de la imagen: —
+
+Definiciones
+
+e Acciones
+
+A = (a | a sea un moviMIeNto
+del trazo)
+
+o Muevo hacia abajo
+
+e BEstados
+
+Q
+S=(s|scontenga P,Ly0]º'?"'
+
+o P:posición del trazo
+o L:límites del laberinto
+- Coo o . 0: posiciones bloqueadas º
+(paredes) .
+Laberinto]]
+
+Definiciones
+Ejemplo
+●
+Difícil representar 
+computacionalmente
+●
+Acciones: Continuo de 
+posibilidades para el trazo 
+(¡INFINITAS ACCIONES!)
+○
+Muevo hacia abajo 0.123º 
+respecto de la vertical a la 
+izquierda (-0.123º)
+○
+¿Cuánto muevo? ¿2cm? 
+¿2 pixeles?
+●
+Estados: Posición en un 
+continuo (¡INFINITOS 
+ESTADOS!)
+Puede resultar costoso 
+computacionalmente 
+detectar si en x 
+posición hay un 
+obstáculo
+Laberinto
+
+[Descripción de la imagen: un póster con un laberinto y un laberinto]
+
+Definiciones
+Ejemplo
+●
+¡Podemos discretizar el 
+problema!
+○
+Si hay blanco en el cuadrado, 
+esta bloqueado
+●
+A = { arriba, abajo, izquierda, 
+derecha }
+●
+S = { s | s = (P, L) } donde
+○
+P es el cuadradito en el que se 
+encuentra el jugador
+○
+L tiene la disponibilidad de 
+cada cuadradito (matriz, mapa, 
+etc.)
+Laberinto
+
+[Descripción de la imagen: un diagrama de los diferentes tipos del juego | Transcripción de la imagen: E —
+
+IIIII= m
+| H
+
+-- ==-----
+
+an
+1E
+1
+|
+Ir
+16
+
+Laberinto
+
+¡Podemos discretizar el
+problema!
+
+o Si hay blanco en el cuadrado,
+esta bloqueado
+
+A = ( arriba, abajo, izquierda,
+derecha 3
+
+S=(s]s=(P,L))donde —
+¿
+
+o Pesel cuadradito en el que se
+encuentra el jugador
+
+o Ltienela disponibilidad de
+cada cuadradito (matriz, mapa,
+
+etc.) . º]]
+
+Problema
+Información que se utiliza para crear al agente que realiza un 
+método de búsqueda.
+●
+Se analizan los objetivos a lograr.
+●
+Se formulan las acciones posibles y los estados (o su 
+arquitectura).
+●
+Se elabora un algoritmo de búsqueda que:
+○
+Recibe un estado inicial (ambiente).
+○
+Ejecuta indeﬁnidamente o hasta llegar a cierto(s) 
+estado(s).
+
+[Descripción de la imagen: un fondo blanco con las palabras probam y un fondo azul con las palabras probam]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un póster con una foto de un campo de fútbol]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un póster con una foto de un campo de fútbol]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un póster con una foto de un campo de fútbol]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un póster con una foto de un campo de fútbol]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un fondo blanco con un campo verde y un fondo azul y blanco con un fondo blanco con un campo verde]
+
+Problema
+Ejemplo
+●
+Objetivo: llegar a la 
+bolsita de cereales
+●
+Estado inicial: tazón de 
+cereales
+Laberinto
+
+[Descripción de la imagen: un póster con una foto de un campo de fútbol]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+Pokémon Emerald Version
+
+[Descripción de la imagen: una captura de pantalla de un edificio con un fondo azul y blanco | Transcripción de la imagen: —
+
+Problema
+
+e Objetivo: ¿?
+
+o  Conseguir todos los
+items]]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+○
+Ganar todos los 
+concursos
+Pokémon Emerald Version
+
+[Descripción de la imagen: una captura de pantalla de un edificio con un fondo azul y blanco]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+○
+Ganar todos los 
+concursos
+○
+Ganar el frente de 
+batalla (obtener 
+todos los símbolos)
+Pokémon Emerald Version
+
+[Descripción de la imagen: un gráfico de un parque con un banco y un banco | Transcripción de la imagen: —
+
+Problema
+
+Pokémon Emerald Version
+
+Objetivo: ¿?
+
+o  Conseguir todos los
+items
+
+o Ganartodos los
+concursos
+o Ganarelfrentede «< ,»
+batalla (obtener r?" <:>
+todos los símbolos)]]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+○
+Ganar todos los 
+concursos
+○
+Ganar el frente de 
+batalla (obtener 
+todos los símbolos)
+○
+Ganar las 8 
+medallas
+Pokémon Emerald Version
+
+[Descripción de la imagen: un gráfico de un parque con un banco y un banco]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+○
+Ganar todos los 
+concursos
+○
+Ganar el frente de 
+batalla (obtener 
+todos los símbolos)
+○
+Ganar las 8 
+medallas
+○
+Ganar la liga 
+Pokémon
+Pokémon Emerald Version
+
+[Descripción de la imagen: un gráfico de un parque con un banco y un banco]
+
+Problema
+Ejemplo
+●
+Objetivo: ¿?
+○
+Conseguir todos los 
+items
+○
+Ganar todos los 
+concursos
+○
+Ganar el frente de 
+batalla (obtener 
+todos los símbolos)
+○
+Ganar las 8 
+medallas
+○
+Ganar la liga 
+Pokémon
+Pokémon Emerald Version
+
+[Descripción de la imagen: un gráfico de un parque con un banco y un banco]
+
+Problemas 
+Bien Definidos
+Estado Inicial: Estado en el cual, generalmente, el problema no
+está resuelto.
+Conjunto de posibles acciones: Dado un estado particular
+S, retorna el conjunto de acciones que pueden
+ejecutarse en S.
+Modelo de Transición: Describe el efecto de aplicar A (acción) a S 
+(estado).
+Función de costo: Determina el costo para el modelo de transición.
+Condición de solución: Función que nos indica si un estado S es 
+solución.
+Condición de 
+solución:
+goal: S -> { 0, 1 }
+
+[Descripción de la imagen: un cartel con las palabras procionas y las palabras procionas]
+
+Problemas 
+Bien Definidos
+δ
+a1
+a2
+a3
+a4
+s1
+s2
+s3
+∅
+∅
+s2
+s1
+∅
+∅
+sG
+s3
+∅
+∅
+∅
+s1
+sG
+∅
+∅
+∅
+∅
+El modelo de transición es: 
+δ: S⨯A -> S o también δ(sx, ay) = sz
+s1
+s2
+s3
+sG
+a1
+a2
+a4
+n1
+n3
+n2
+n4
+
+[Descripción de la imagen: un diagrama de los tres tipos diferentes de la molécula | Transcripción de la imagen: N
+
+Problemas
+E
+
+Bien Definidos
+
+Z]]
+
+Problemas 
+Bien Definidos
+δ
+a1
+a2
+a3
+a4
+s1
+s2
+s3
+∅
+∅
+s2
+s1
+∅
+∅
+sG
+s3
+∅
+∅
+∅
+s1
+sG
+∅
+∅
+∅
+∅
+Existe un costo asociado a aplicar una acción sobre un 
+estado: 
+g: S⨯A -> ℝ o también g(sx, ay) = w
+s1
+s2
+s3
+sG
+a1
+a2
+a4
+w = 7
+w = 2
+w = 3
+g
+a1
+a2
+a3
+a4
+s1
+7
+2
+∅
+∅
+s2
+7
+∅
+∅
+3
+s3
+∅
+∅
+∅
+2
+sG
+∅
+∅
+∅
+∅
+n1
+n3
+n2
+n4
+
+[Descripción de la imagen: una representación gráfica de la estructura periódica de la molécula | Transcripción de la imagen: (a)
+Problemas
+Bien Definidos
+
+© Existe un costo asociado a aplicar una acción sobre un
+N estado:
+g: SXA -> R o también g(s,, a) =w]]
+
+Problemas 
+Bien Definidos
+δ
+a1
+a2
+a3
+a4
+s1
+s2
+s3
+∅
+∅
+s2
+s1
+∅
+∅
+sG
+s3
+∅
+∅
+∅
+s1
+sG
+∅
+∅
+∅
+∅
+Existe un costo asociado a aplicar una acción sobre un 
+estado: 
+g: S⨯A -> ℝ o también g(sx, ay) = w
+s1
+s2
+s3
+sG
+a1
+a2
+a4
+w = 7
+w = 2
+w = 3
+g
+a1
+a2
+a3
+a4
+s1
+7
+2
+∅
+∅
+s2
+7
+∅
+∅
+3
+s3
+∅
+∅
+∅
+2
+sG
+∅
+∅
+∅
+∅
+n1
+n3
+n2
+n4
+g(n4) = 10
+g(n2) = 7
+g(n3) = 2
+g(n1) = 0
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: (a)
+Problemas
+Bien Definidos
+
+© Existe un costo asociado a aplicar una acción sobre un
+N estado:
+g: SXA -> R o también g(s,, a) =w]]
+
+Representación de 
+Problema
+●
+Deﬁnición de arquitectura de estados...
+○
+Estratégicamente, entendiendo los operadores entre 
+ellos.
+○
+De forma tal que representen todo el espacio de 
+estados.
+○
+Entendiendo el costo computacional de dicha 
+representación y de sus operadores.
+○
+Buscando simetría de estados.
+○
+El conjunto de acciones es más reducido (manteniendo 
+utilidad).
+
+[Descripción de la imagen: un fondo blanco con las palabras, resencia, y un fondo azul y blanco con las palabras resencia]
+
+Representación de 
+Problema
+8
+6
+5
+4
+7
+2
+3
+1
+2
+5
+8
+3
+4
+1
+7
+6
+8 puzzle
+
+[Descripción de la imagen: un diagrama de los cuatro cuadrados en el mismo patrón | Transcripción de la imagen: ºRepresentamon de
+
+Problema
+
+nn. nn. o
+O]]
+
+Representación de 
+Problema
+8
+6
+5
+4
+7
+2
+3
+1
+2
+5
+8
+3
+4
+1
+7
+6
+90º
+8 puzzle
+
+[Descripción de la imagen: un diagrama de los cuatro cuadrados con los cuatro cuadrados en el centro | Transcripción de la imagen: ºRepresentamon de
+
+Problema
+
+|
+nn. nn. o
+10
+
+%
+o]]
+
+Representación de 
+Problema
+2
+5
+8
+3
+4
+1
+7
+6
+90º
+8 puzzle
+
+[Descripción de la imagen: un diagrama de los cuatro cuadrados con las palabras, 'rescione' y 'rescione ' | Transcripción de la imagen: ºRepresentamon de
+
+Problema
+
+EE]]
+
+Representación de 
+Problema
+2
+5
+8
+3
+4
+1
+7
+6
+90º
+Los estados 
+podrían deﬁnirse 
+cómo los 
+números 
+adyacentes a un 
+número
+8 puzzle
+
+[Descripción de la imagen: un diagrama de los cuatro cuadrados en el juego | Transcripción de la imagen: —
+Representación de
+Problema]]
+
+Definiendo
+Acciones ...
+●
+Teniendo en cuenta las suposiciones de la descripción 
+informal del problema.
+●
+Eligiendo entre acciones particulares o meta-acciones*.
+○
+Meta-acciones es una forma de deﬁnir genéricamente 
+un conjunto de acciones.
+●
+Decidiendo cuanto debe ser resuelto en el precálculo de 
+acciones y cuánto debe ser resuelto por el método de 
+búsqueda.
+
+[Descripción de la imagen: un fondo blanco con las palabras,'tendo acos'y'tendo acos']
+
+Definiendo
+Acciones ...
+Mirar en una 
+dirección puede 
+resultar una 
+acción sin 
+utilidad
+Pokémon Emerald Version
+
+[Descripción de la imagen: las pantallas del juego se muestran en la esquina inferior izquierda | Transcripción de la imagen: Mirar en una
+dirección puede
+resultar una
+acción sin
+utilidad
+
+- - E - - y
+e oº' u o*" .o - "0 S o-'...ºo
+
+14L ¡l¡
+
+e U 70 5h 170 030 + 2 90549 u77 703 v70 I5 70 904 e
+- '.º"¡¡'x" ..,..l¡'k'. '..Jl. D .....l]¡:' < .º".'¡f' '..',¡'¡¡b'. x . h) ¡x 4 .x
+
+|¡: $ll: $JI: ; 0D 97 Ne J: ,
+n.…º,.v¡'¡'_ E S :¡'_ A _ S p E º.s;¡._e., ..9¡¡_!.,
+
+Pokémon Emerald Version n]]
+
+Definiendo
+Acciones ...
+Deﬁno una meta 
+acción de 
+moverme a la 
+izquierda
+3 acciones, una unica acción: Moverse a la izquierda
+●
+Mirar a la izquierda
+●
+Moverse a la izquierda
+●
+Mirar al frente
+Pokémon Emerald Version
+
+[Descripción de la imagen: un gráfico de un edificio con algunos tipos diferentes de edificios]
+
+Definiendo
+Acciones ...
+4 acciones: 
+arriba, abajo, 
+izquierda, 
+derecha
+
+[Descripción de la imagen: las pantallas del juego son todas diferentes, pero las pantallas son diferentes | Transcripción de la imagen: (a)
+Definiendo
+Acciones ...]]
+
+Definiendo
+Acciones ...
+¿Podría deﬁnir 
+las meta 
+acciones de 
+movimiento 
+diagonal?
+
+[Descripción de la imagen: una captura de pantalla de un edificio con un campo verde y un cielo azul | Transcripción de la imagen: TT
+
+, ? I Yy
+
+¿Podría definir
+las meta
+
+acciones de
+movimiento
+diagonal?]]
+
+Definiendo
+Acciones ...
+SÍ pero OJO. Si la deﬁnimos cómo 
+arriba-izquierda o izquierda-arriba CAMBIA. 
+Tener en cuenta las implicancias.
+Pokémon Emerald Version
+
+[Descripción de la imagen: una captura de pantalla de un juego con una imagen de una persona en el fondo]
+
+Eficiencia
+Forma de medir la eﬁciencia de una búsqueda:
+●
+Encuentra solución.
+●
+Optimiza el costo de la solución.
+○
+Mínimo
+○
+Máximo
+○
+Promedio
+●
+Optimiza la cantidad de acciones a tomar.
+●
+Optimiza el costo computacional de encontrar una solución.
+○
+Tiempo
+○
+Memoria
+○
+…
+●
+Combinación
+●
+Otros, según lo requiera el problema
+
+[Descripción de la imagen: ficina - aquen de ests]
+
+Direcciones  
+de búsqueda
+Forward / “data-driven”
+La raíz es el estado inicial.
+Backward / “goal-driven”
+La raíz es la solución (o una de las soluciones).
+
+[Descripción de la imagen: un fondo blanco con las palabras "dioca" y "dioca"]
+
+Direcciones  
+de búsqueda
+Podemos comenzar desde el 
+tazón o la bolsita
+Laberinto
+
+[Descripción de la imagen: un fondo verde con un fondo blanco y un logotipo azul y blanco]
+
+Estrategias
+de búsqueda
+Completa
+Encuentra una solución (de existir y ser alcanzable).
+Óptima
+Encuentra la solución alcanzable con menor costo.
+Complejidad computacional
+●
+Temporal
+●
+Espacial
+
+[Descripción de la imagen: estras de estros entrer entrer entrer entrer en]
+
+Búsquedas 
+Desinformadas
+●
+No tienen más información de los estados que los que otorga 
+la deﬁnición del problema.
+●
+Sólo se distinguen estados “goal” de los que no lo son.
+●
+Poco eﬁcientes en problemas donde podemos realizar 
+estimaciones.
+Algunos de ellos son:
+●
+BFS
+●
+DFS
+●
+IDDFS
+●
+Costo Uniforme
+
+[Descripción de la imagen: un fondo blanco con las palabras 'desoras' y 'desoras']
+
+Búsquedas
+Informadas
+●
+Tienen más información para comparar entre dos estados 
+cuál es “mejor”.
+●
+Pueden estimar cuánto les falta para solucionar el problema. 
+La estimación a la solución desde un estado se llama 
+HEURÍSTICA.
+●
+Pueden estimar cuál es el costo del problema.
+●
+En problemas complejos, suelen ser más eﬁcientes que los 
+métodos no informados.
+Algunos de ellos son:
+●
+Greedy
+●
+A*
+
+[Descripción de la imagen: un fondo blanco con las palabras 'ques de ests' y 'ques de ests']
+
+Representación de 
+Problema
+Un estado es expandido cuando dentro del método de búsqueda se le 
+han aplicado todas las acciones aplicables.
+De esta forma se genera un árbol donde:
+●
+La raíz representa al estado inicial
+●
+Cada nodo representa (contiene) un estado
+○
+Los nodos hoja son estados sin acciones aplicables o 
+estados que no fueron expandidos.
+
+[Descripción de la imagen: un cartel con las palabras,'rescion de pola'and'resciono de pola]
+
+Representación de 
+Problema
+Un estado es expandido cuando dentro del método de búsqueda se le 
+han aplicado todas las acciones aplicables.
+De esta forma se genera un árbol donde:
+●
+La raíz representa al estado inicial
+●
+Cada nodo representa (contiene) un estado
+○
+Los nodos hoja son estados sin acciones aplicables o 
+estados que no fueron expandidos.
+s1
+s2
+s3
+sG
+a1
+a2
+a4
+Árbol de 
+búsqueda 
+totalmente 
+expandido
+n1
+n3
+n2
+n4
+
+[Descripción de la imagen: un cartel con las palabras,'repenenciao de pola'and'repio de pola]
+
+Representación de 
+Problema
+s1
+s2
+s3
+sG
+a1
+a2
+a4
+Árbol de 
+búsqueda 
+totalmente 
+expandido
+s1
+s2
+s3
+a1
+a2
+Nodos no explorados
+Nodos explorados
+¿Qué nodos están expandidos?
+n1
+n3
+n2
+n4
+n1
+n3
+n2
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: —
+Representación de
+Problema
+
+|:| Nodos no explorados
+
+|:. Nodos explorados
+
+Árbol de
+búsqueda
+totalmente
+expandido
+
+s]]
+
+Representación de 
+Problema
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y verde]
+
+Representación de 
+Problema
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y verde de un edificio y un gráfico azul y verde]
+
+Representación de 
+Problema
+
+[Descripción de la imagen: un fondo blanco con un logotipo azul y verde y un fondo blanco con un logotipo azul y verde | Transcripción de la imagen: a)
+Representación de
+Problema
+
+QQQ£7 QQQ¡£7 QQQ7£7 QQQ¡Q¡]]
+
+Representación de 
+Problema
+
+[Descripción de la imagen: un fondo blanco con un diseño azul y verde | Transcripción de la imagen: a)
+Representación de
+Problema
+
+— Q7£7' | IIW |" QQQ¡Q¡ s
+OLOLO 0O0O0 0O0O0 0O0O0]]
+
+Nodo ≠ Estado
+No confundir NODO con ESTADO!
+Un nodo contiene un estado. De esta forma, un estado puede estar 
+representado en diferentes nodos.
+Siendo g(n) el costo acumulado del nodo (la suma del arco desde 
+n0 hasta n), podemos encontrar dos nodos n1 y n2, que pueden 
+contener al mismo estado, de forma tal que:
+g(n1) ≠ g(n2)
+En rigor, n1 y n2 tienen diferentes antecesores.
+
+[Descripción de la imagen: no esto - no esto esto]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. Analicemos estos estados:
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla | Transcripción de la imagen: Nodo F Estado
+
+Imaginemos que queremos ir de Plaza lItalia a Congreso de
+Tucumán. Analicemos estos estados:
+
+o
+AE
+$$¿5 E le
+- N
+E El
+
+E BELGRANO
+CBXB
+
+% K-
+A ZO
+
+o Cráme,
+
+S
+Perr COLEGIALES
+o
+e ººbado
+4
+
+Giro
+"bone
+IZAR
+
+Rosey]]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. Analicemos estos estados:
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla | Transcripción de la imagen: Nodo F Estado
+
+Imaginemos que queremos ir de Plaza lItalia a Congreso de
+Tucumán. Analicemos estos estados:
+
+RA * v % S
+. % -
+5'Aºº E 5'Aºº E 5
+X N X
+5 El X 5
+eS BEL ANO e eS BELMENO
+N . == Qyººx'b l.
+PR D<
+% %
+% % El % % El
+en sa —
+o Q
+º2% o Cg El N q,% o Srá 1 D.
+" Mey p e Mmey e
+< o KTa < - =
+Dey COLEGIALES JEf ii órn £$j Dey COLEGIALES º¿7a¿9 EJ vinisúo Carran £Í'
+s L
+ad n - ad . S
+S E S El
+Q - E G S o
+"Mbop, 2O PALERMO. 7 ibop, < PALERMO.
+IZAR ñ < hY e
+E El Ros; N S El
+en X EZA é
+
+Poser e S
+— Y EZ ».<ºé — — Y 97 EO]]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. ¿Son contenidos por nodos iguales?
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla | Transcripción de la imagen: Nodo F Estado
+
+Imaginemos que queremos ir de Plaza lItalia a Congreso de
+Tucumán. ¿Son contenidos por nodos iguales?
+
+RA * v % S
+. % -
+5'Aºº E 5'Aºº E 5
+X N X
+5 El X 5
+eS BEL ANO e eS BELMENO
+N . == Qyººx'b l.
+PR D<
+% %
+% % El % % El
+en sa —
+o Q
+º2% o Cg El N q,% o Srá 1 D.
+" Mey p e Mmey e
+< o KTa < - =
+Dey COLEGIALES JEf ii órn £$j Dey COLEGIALES º¿7a¿9 EJ vinisúo Carran £Í'
+s L
+ad n - ad . S
+S E S El
+Q - E G S o
+"Mbop, 2O PALERMO. 7 ibop, < PALERMO.
+IZAR ñ < hY e
+E El Ros; N S El
+en X EZA é
+
+Posey S S
+— Y EZ ».<ºé — — Y 97 E]]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. ¿Son contenidos por nodos iguales? NO
+Línea 152 (Olivos)
+Línea 29 (Pte Saavedra)
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla | Transcripción de la imagen: Nodo F Estado
+
+Imaginemos que queremos ir de Plaza lItalia a Congreso de
+Tucumán. ¿Son contenidos por nodos iguales? NO
+
+Nerop'ar_ge j _ Villa Maipú
+
+Jorge Newbi
+|Ia<Ly“nch
+
++ 'illa Madero J
+* ñ
+d Villa Fiorito Lgnús Eo:
+
+/ N / , —
+* laMadero l
+-1 /
+| N Villa Fiorito L£nús Es 9
+
+Línea 152 (Olivos) Línea 29 (Pte Saavedra)]]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. ¿Son contenidos por nodos iguales? NO
+Línea 152 (Olivos)
+Línea 29 (Pte Saavedra)
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. ¿Son contenidos por nodos iguales? NO
+Por el 
+NORESTE
+Por el 
+SURESTE
+Línea 152 (Olivos)
+Línea 29 (Pte Saavedra)
+
+[Descripción de la imagen: no esto - capturas de pantalla - capturas de pantalla]
+
+Nodo ≠ Estado
+Imaginemos que queremos ir de Plaza Italia a Congreso de 
+Tucumán. ¿Son contenidos por nodos iguales? NO
+Recorre MÁS 
+distancia.
+Tiene MAYOR 
+costo.
+NO es lo 
+mismo.
+Línea 29 (Pte Saavedra)
+Línea 152 (Olivos)
+
+[Descripción de la imagen: un mapa con los nombres de las ciudades y sus nombres]
+
+Algoritmo
+de Búsqueda
+Dados Árbol de búsqueda Tr ; Conjunto frontera Fr ; Conjunto de 
+nodos explorados Exp ...
+1.
+Crear Tr, Fr (y Exp) inicialmente vacíos.
+2.
+Insertar nodo inicial n0 en Tr y Fr.
+3.
+Mientras Fr no esté vacía… (6 en caso de estar vacía)
+a.
+Extraer primer nodo de Fr => Nodo n
+b.
+Si n es goal
+i.
+Devolver la solución, formada por el arco entre la 
+raíz n0 y el nodo n en Tr. Termina Algoritmo.
+c.
+Expandir el nodo n, generando los sucesores. Ingresar 
+dichos sucesores en Fr y colocarlos en Tr como nodos 
+sucesores de n. (Agregar n a Exp.)
+
+[Descripción de la imagen: un fondo blanco con las palabras agrto de fuda]
+
+Algoritmo
+de Búsqueda
+4.
+Reordenar Fr según un criterio dado (depende del método de 
+búsqueda).
+5.
+Ir al paso 3.
+Si Fr está vacía en el paso 3…
+6.
+No existe solución alcanzable.
+También se puede tomar Fr como un conjunto
+ordenado, donde no haga falta reordenar.
+
+[Descripción de la imagen: un fondo blanco con las palabras agrto de bisa]
+
+Algoritmo
+de Búsqueda
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Algoritmo
+E>. d€ BÚS queda_ [ —| Nodos no explorados
+
+|:| Nodos frontera
+
+º |:| Nodos explorados
+
+Tr=[n1, N,, n3]
+Fr=[n2, n3]
+
+Exp =(n,)]]
+
+Algoritmo
+de Búsqueda
+n1
+n2
+n3
+a1
+a2
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+En realidad, desconozco los estados futuros. 
+Al explorar un nodo, obtengo qué acciones le 
+puedo aplicar a su estado y, con ello, consigo los 
+siguientes estados
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula]
+
+Algoritmo
+de Búsqueda
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Algoritmo
+E>. d€ BÚS queda_ [ —| Nodos no explorados
+
+|:| Nodos frontera
+
+º |:| Nodos explorados
+
+Tr=[n1, N,, n3]
+Fr=[n2, n3]
+
+Exp =(n,)]]
+
+Algoritmo
+de Búsqueda
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6 }
+Fr = { n2, n5, n6 }
+Exp = { n1, n3 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Algoritmo
+E>. d€ BÚS queda_ [ —| Nodos no explorados
+
+|:| Nodos frontera
+
+º |:| Nodos explorados
+
+Tr = (n,, n,, ,, Ag )
+
+Fr =1 5 Ms n6]
+
+Exp = (n,,n,)]]
+
+Breadth First
+Search
+●
+Expande los nodos de menor profundidad primero.
+●
+Es completa si el factor de ramiﬁcación es ﬁnito.
+●
+Encuentra la solución con menor profundidad.
+●
+Es Óptima cuando el problema es de costo uniforme (*).
+○
+(*) Las acciones tienen todas el mismo costo.
+
+[Descripción de la imagen: el logotipo de la marca firstear]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+0
+1
+2
+3
+
+[Descripción de la imagen: un diagrama de un árbol con las palabras « pan primero » y « pan primero » | Transcripción de la imagen: E>. Searchn
+o
+
+e <.>
+ºBreadth First
+o]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,,n,)
+Fr=(n,,n,;)
+
+Exp=(n,)]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6 }
+Fr = { n2, n5, n6 }
+Exp = { n1, n3 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, A,, N- AJ
+
+Fr=(n,, n;, nJ
+
+Exp =(n,,n,)]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n5, n6, n4 }
+Exp = { n1, n3, n2 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, A,, A-, Ag y)
+
+Fr=(n,, Ne NJ
+
+Exp = (n,,n,, N-j]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n6, n4 }
+Exp = { n1, n3, n2, n5 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, A,, A-, Ag y)
+Fr=(n,, n,)
+
+Exp = (n,, N,, N,, N- Y]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n6 }
+Exp = { n1, n3, n2, n5, n4 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, A,, A-, Ag y)
+
+Fr=(n;)
+
+Exp = (n,, N,, ,, N5 Ayt]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4, n7 
+}
+Fr = { n7 }
+Exp = { n1, n3, n2, n5, n4, n6 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+|:| Nodos frontera
+|:| Nodos explorados
+
+Tr =(n,,n,, A,, A;, Ag Ay A;
+
+Fr=(n,)
+
+EXp = ( ,, N,, N,, , Ay A:J]]
+
+Breadth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4, n7 }
+Fr = { }
+Exp = { n1, n3, n2, n5, n4, n6, n7 }
+
+[Descripción de la imagen: el diagrama muestra los diferentes tipos de la molécula | Transcripción de la imagen: (a)
+Breadth First
+Search
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,, ,, A,, A;, Ag Ay A-]
+
+Fr=()
+
+a
+4
+Exp = ( ,, A,, ,, A;, Ay Ag N-]]
+
+Uniform Cost 
+Search
+●
+Expande el nodo con menor costo acumulado.
+●
+Idéntico a BFS en problemas de costo uniforme.
+●
+Óptima si sucede alguna de las siguientes:
+○
+g(sucesor(n)) ≥ g(n)  ;  ∀n
+Dicho de otra forma..
+g(a) ≥ 0 ; ∀ a: acción 
+(si el costo de una acción es < 0, no es óptima)
+
+[Descripción de la imagen: un fondo blanco con las palabras, 'informa' y 'informa']
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,,n,,n,)
+
+|:| Nodos explorados
+
+_ 9(n,) =3
+Fr=(n,,n,;) >
+
+Exp=(n,)
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n4 }
+Fr = { n3, n4 }
+Exp = { n1, n2 }
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,,n,, n,, N,)
+
+|:| Nodos explorados
+
+_ 9(n,) =3
+Fr=(n,, n,) >
+
+Exp =(n,,n,)
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+Tr = { n1, n2, n3, n4, n5, n6 }
+Fr = { n4, n5, n6 }
+Exp = { n1, n2, n3 }
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,,n,, A,, Ay A;, AL]
+
+|:| Nodos explorados
+
+Fr=(n,, N- nJ
+
+Exp = (n,,n,, n;J
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+Tr = { n1, n2, n3, n4, n5, n6, n7 }
+Fr = { n4, n5, n7 }
+Exp = { n1, n2, n3, n6 }
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,, ,, A,, Ay A;, Ag A-J
+9(n,) =3
+
+=0 |:| Nodos explorados
+
+Fr=(n,, n;, n-)
+
+EXp = ( ,, n,, N;, N +
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+Tr = { n1, n2, n3, n4, n5, n6, n7 }
+Fr = { n5, n7 }
+Exp = { n1, n2, n3, n6, n4 }
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,, ,, A,, Ay A;, Ag A-J
+9(n,) =3
+
+=0 |:| Nodos explorados
+
+Fr=(n,, n-)
+
+Exp = (n,, n,, A,, Ag A4t
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Uniform Cost 
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+g(n1) = 0
+g(n3) = 7
+g(n6) = 8
+g(n7) = 12
+g(n5) = 17
+g(n4) = 11
+g(n2) = 3
+Tr = { n1, n2, n3, n4, n5, n6, n7 }
+Fr = { n5 }
+Exp = { n1, n2, n3, n6, n4, n7 }
+
+[Descripción de la imagen: el diagrama del modelo molecular | Transcripción de la imagen: a
+Uniform Cost
+> |:| Nodos no explorados
+D . S earCh |:| Nodos frontera
+
+Tr=(n,, ,, A,, Ay A;, Ag A-J
+
+_ 9(n,) =3
+Fr=(n;) >
+
+=0 |:| Nodos explorados
+
+EXp = ( ,, N,, N,, Ag Ay A-J
+
+gín)=11 g(n;) =8
+
+g(n) =17]]
+
+Depth First
+Search
+●
+Expande el nodo de mayor profundidad.
+●
+Suele ser de menor complejidad espacial, sobre todo en su 
+version sin estados repetidos (más adelante).
+●
+Suele ser más rápido que BFS cuando existen muchas 
+soluciones.
+●
+No es óptima.
+
+[Descripción de la imagen: un fondo blanco con las palabras «depiist» y «depiist»]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+1
+2
+3
+4
+
+[Descripción de la imagen: un diagrama de las diferentes partes de una molécula | Transcripción de la imagen: N
+
+:> Depth First
+D
+. Searck3 01 e 02
+2 a, º í º a,
+- (09/ (90]]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Depth First
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,,n,)
+
+|:| Nodos explorados
+
+Fr=(n,,n,;)
+
+Exp=(n,)]]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6 }
+Fr = { n2, n5, n6 }
+Exp = { n1, n3 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Depth First
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,, A,, N- AJ
+
+|:| Nodos explorados
+
+Fr=(n,, n;, nJ
+
+Exp =(n,,n,)]]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n7 }
+Fr = { n2, n5, n7 }
+Exp = { n1, n3, n6 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Depth First
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,, A,, A;, Ag N- )
+
+|:| Nodos explorados
+
+Fr=(n,, n n-)
+
+Exp = (n,,n,, nJ]]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n7 }
+Fr = { n2, n5 }
+Exp = { n1, n3, n6, n7 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Depth First
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,, A,, A;, Ag N- )
+
+|:| Nodos explorados
+
+Fr=(n,,n:)
+
+Exp = ( ,, N,, Ng N- Y]]
+
+Depth First
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n7 }
+Fr = { n2 }
+Exp = { n1, n3, n6, n7, n5 }
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: Depth First
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,, A,, A;, Ag N- )
+
+Fr=(n)
+
+|:| Nodos explorados
+
+Exp = (n,, N,, Ag N- AJ]]
+
+Depth Limited
+Search
+●
+Idem DFS sólo que se limita la profundidad.
+●
+No es completa ni óptima.
+
+[Descripción de la imagen: el logotipo para el nuevo sitio web, el nuevo sitio web para el nuevo sitio web]
+
+Depth Limited
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+Por ejemplo, 
+solo llego a 
+profundidad 2
+1
+2
+
+[Descripción de la imagen: un diagrama de una molécula con las palabras, 'profundidad - búsqueda limitada ' | Transcripción de la imagen: e Search
+
+N
+:>º Depth Limited
+"
+o]]
+
+Depth Limited
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: un diagrama de los péptidos y los péptidos | Transcripción de la imagen: Depth Limited
+> |:| Nodos no explorados
+D . SearCh |:| Nodos frontera
+
+Tr=(n,,n,,n,)
+
+|:| Nodos explorados
+
+Fr=(n,,n,;)
+
+Exp=(n,)]]
+
+Depth Limited
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6 }
+Fr = { n2, n5, n6 }
+Exp = { n1, n3 }
+Alcanzó el límite.
+No puede tomar nodos 
+frontera de mayor 
+profundidad.
+
+[Descripción de la imagen: un diagrama de los péptidos y los péptidos | Transcripción de la imagen: —
+Depth Limited
+Search
+
+Tr=(n,,n,, A,, N- AJ
+Fr=(n,, n;, nJ
+
+Exp =(n,,n,)
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+e
+
+Alcanzó el límite.
+
+No puede tomar nodos
+frontera de mayor
+profundidad.]]
+
+Depth Limited
+Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n5, n6, n4 }
+Exp = { n1, n3, n2 }
+TODOS los nodos 
+frontera se encuentran 
+a mayor profundidad.
+FIN de DLS.
+
+[Descripción de la imagen: un diagrama de los péptidos y los péptidos | Transcripción de la imagen: —
+Depth Limited
+Search
+
+Tr= (,,, Ny, Ag Ag A4) º º
+Fr=(n,, Ne NJ )A
+
+Exp = (n,,n,, N-j
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+TODOS los nodos
+frontera se encuentran
+a mayor profundidad.
+FIN de DLS.]]
+
+Iterative Deepening
+Depth First Search
+●
+DLS donde la profundidad varía según cierto criterio.
+●
+Se puede implementar manteniendo los nodos hoja que no 
+fueron expandidos por cota de profundidad entre cada 
+iteración.
+●
+Por ejemplo, podría conﬁgurarse con un profundidad inicial de 
+1 y creciente en 1 en cada iteración - sería un BFS (más 
+costoso si no mantiene el árbol al reiniciar).
+●
+Con un valor inﬁnito, es un DFS.
+
+[Descripción de la imagen: un fondo blanco con las palabras, «diseño creativo» y «diseño creativo»]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+Primero llego a 
+profundidad 2.
+Luego, llego a 
+profundidad 4.
+1
+2
+3
+4
+
+[Descripción de la imagen: un gráfico de un árbol con las palabras de profundidad nativa, búsqueda de profundidad y un fondo azul y blanco | Transcripción de la imagen: —
+Iterative Deepening
+Depth First Search
+
+: / )
+Cll C'12
+) m
+M
+CI4 02 03
+
+.ÍQC.C>
+eesy
+4 ) .<E
+
+E]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3 }
+Fr = { n2, n3 }
+Exp = { n1 }
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de péptidos | Transcripción de la imagen: e
+Iterative Deepening
+
+E> Depth F1FSt Sea_rch |:| Nodos no explorados]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6 }
+Fr = { n2, n5, n6 }
+Exp = { n1, n3 }
+Alcanzó el límite.
+No puede tomar nodos 
+frontera de mayor 
+profundidad.
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de péptidos | Transcripción de la imagen: N
+Iterative Deepening
+D epth kHir St S earCh [-] Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Alcanzó el límite.
+
+No puede tomar nodos
+frontera de mayor
+profundidad.
+
+Tr=í Aj Ay, Ay, Ac; n6]
+
+Fr = (n,, 5, N;)
+
+Exp = (,. n;)]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n5, n6, n4 }
+Exp = { n1, n3, n2 }
+TODOS los nodos 
+frontera se encuentran 
+a mayor profundidad.
+FIN de 1ra iteración.
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de péptidos | Transcripción de la imagen: —
+Iterative Deepening
+Depth First Search
+
+TODOS los nodos
+
+Tr =1 ) frontera se encuentran
+T as Aao Ms A N Ye a mayor profundidad.
+FIN de 1ra iteración.
+Fr=(n;, , ,) A
+
+b5 6 4
+
+Exp = (n,,n,, N-j
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n5, n6, n4 }
+Exp = { n1, n3, n2 }
+Límite de la segunda 
+iteración
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de péptidos | Transcripción de la imagen: e
+ºlteratíve Deepening
+
+E> Depth First Search 2 ete=m>emende
+|:| Nodos frontera
+
+Tr = (,,, ,, Ag Ag A4)
+
+|:| Nodos explorados
+
+Fr=[n5, Ng n4]
+
+Exp = (n,,n,, N-j]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4 }
+Fr = { n5, n6, n4 }
+Exp = { n1, n3, n2 }
+Límite de la segunda 
+iteración
+A partir de la frontera 
+de la iteración anterior.
+
+[Descripción de la imagen: un diagrama de los diferentes tipos de la molécula | Transcripción de la imagen: N
+Iterative Deepening
+D epth kHir St S earCh [-] Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, A,, A;, Ag y)
+
+Exp = (n,,n,, N-j
+
+A partir de la frontera
+de la iteración anterior.
+
+Límite de la segunda
+iteración]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4, n7 }
+Fr = { n5, n4, n7 }
+Exp = { n1, n3, n2, n6 }
+
+[Descripción de la imagen: un diagrama de la estructura de una molécula | Transcripción de la imagen: e
+ºlteratíve Deepening
+
+E> Depth First Search 2 ete=m>emende
+|:| Nodos frontera
+
+Tr = (n,, 0,, Nz, Ag, Ag Ay N- )
+
+|:| Nodos explorados
+
+Fr=[n5,n4,n7]
+
+Exp = í M , n63]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4, n7 }
+Fr = { n5, n4 }
+Exp = { n1, n3, n2, n6, n7 }
+
+[Descripción de la imagen: un diagrama de la estructura de una molécula | Transcripción de la imagen: e
+ºlteratíve Deepening
+
+E> Depth First Search 2 ete=m>emende
+|:| Nodos frontera
+
+Tr = (n,, 0,, Nz, Ag, Ag Ay N- )
+
+|:| Nodos explorados
+
+Fr=[n5,n41
+
+Exp = ( n,, N,, N,, Ng A-)]]
+
+Iterative Deepening
+Depth First Search
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+n5
+n6
+a2
+n7
+a3
+a1
+Tr = { n1, n2, n3, n5, n6, n4, n7 }
+Fr = { n4 }
+Exp = { n1, n3, n2, n6, n7, n5 }
+
+[Descripción de la imagen: un diagrama del algoritmo neuronal | Transcripción de la imagen: e
+ºlteratíve Deepening
+
+E> Depth First Search 2 ete=m>emende
+|:| Nodos frontera
+
+Tr = (n,, 0,, Nz, Ag, Ag Ay N- )
+
+Fr=[n41
+
+|:| Nodos explorados
+
+Exp = 1N Ag N: Ng: M7 Ms]]
+
+Estados
+Repetidos
+Motivación:
+●
+No regresar a estados ancestros.
+●
+No crear rutas que tengan ciclos.
+●
+No volver a expandir estados ya expandidos previamente
+○
+Muy útil para DFS y BFS
+○
+Ojo con  DLS e IDDFS !!
+■
+Si existe una solución a profundidad N, podemos 
+no encontrarla.
+●
+Compromiso vs el costo de almacenar y chequear estados.
+
+[Descripción de la imagen: un fondo blanco con un gráfico azul y blanco que dice, 'estos petros']
+
+Estados
+Repetidos
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+s2
+s2
+Tr = { n1, n2, n4, n3, … }
+Fr = { n3, … }
+Exp = { n1, n2, n4 }
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: ()
+Estados
+kepetidos
+
+Tr=(n,,n,, ,, , .- )
+
+Fr=(n,,...)
+
+Exp = (n,,n,, n,J
+
+S2
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados]]
+
+Estados
+Repetidos
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+s2
+s2
+Tr = { n1, n2, n4, n3, … }
+Fr = { n3, … }
+Exp = { n1, n2, n4 }
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: ()
+Estados
+kepetidos
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, ,, , .- )
+
+Fr=(n,,...)
+
+Exp = (n,,n,, n,J
+
+S2]]
+
+Estados
+Repetidos
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+s2
+s2
+Tr = { n1, n2, n4, n3, … }
+Fr = { n3, … }
+Exp = { n1, n2, n4 }
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: ()
+Estados
+kepetidos
+
+Tr=(n,,n,, ,, , .- )
+
+Fr=(n,,...)
+
+Exp = (n,,n,, n,J
+
+S2
+
+|:| Nodos no explorados
+|:| Nodos frontera
+
+|:| Nodos explorados]]
+
+Estados
+Repetidos
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+s2
+s2
+Quito n3 de la frontera. 
+No lo exploro al ser 
+repetido.
+Tr = { n1, n2, n4, n3, … }
+Fr = { … }
+Exp = { n1, n2, n4 }
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+Nodos ignorados
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: N
+E Stad0 S |:| Nodos ignorados
+R€p etld0 = [ ] Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, ,, N ... )
+
+Fr=(...)
+3 Quito n, de la frontera.
+No lo exploro al ser
+
+repetido. :?fo.<:>
+D.<E
+
+Exp = (n,,n,, n,J
+
+S2]]
+
+Estados
+Repetidos
+n1
+n2
+n3
+n4
+a1
+a2
+a4
+n5
+n6
+a2
+n7
+a3
+a1
+s2
+s2
+Me perdí n5 que es goal 
+dentro del límite actual.
+n3, además, me 
+conducía a una 
+solución óptima.
+Tr = { n1, n2, n4, n3, … }
+Fr = { … }
+Exp = { n1, n2, n4 }
+Nodos no explorados
+Nodos explorados
+Nodos frontera
+Nodos ignorados
+Goal
+
+[Descripción de la imagen: un diagrama del modelo molecular | Transcripción de la imagen: —
+|:| Goal
+
+E Stad0 S |:| Nodos ignorados
+R€p etld0 = [ ] Nodos no explorados
+
+|:| Nodos frontera
+
+|:| Nodos explorados
+
+Tr=(n,,n,, ,, N ... )
+
+Fr=(...)
+Me perdí n, que es goal
+Exp = [ N ,, A, ) dentro del límite actual.
+
+S
+
+! n,, además, me
+
+conducía a una
+solución óptima.
+
+a]]
+
+Trivia
+Tratándose de un problema de costo uniforme, se sabe que la 
+solución tiene una profundidad < 1000. El problema tiene un factor 
+de ramiﬁcación de 10.
+Se quiere hallar una solución óptima. Unos colegas hacen unos 
+cálculos y encuentran que el hardware no cuenta con la memoria 
+suﬁciente para correr BFS.
+¿ Qué solución propondrían al equipo ?
+Por supuesto, omitir la solución trivial 
+“mejorar el hardware”.
+
+[Descripción de la imagen: tria - trío de software]
+
+Práctica
+Para el problema dado, deﬁnir las siguientes características:
+1.
+Arquitectura de estado
+2.
+Acciones
+3.
+Estado Inicial
+4.
+Espacio de estados
+5.
+Condición de terminación
+●
+8 reinas
+●
+8 Puzzle
+●
+Misioneros y Caníbales
+●
+Sudoku (1-4)
+●
+Laberinto
+●
+Travelling Salesman
+
+[Descripción de la imagen: prtica para prendoo de la liigenes]
+

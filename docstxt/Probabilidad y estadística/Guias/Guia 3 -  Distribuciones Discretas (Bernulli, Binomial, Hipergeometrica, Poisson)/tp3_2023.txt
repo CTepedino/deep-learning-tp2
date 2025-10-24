@@ -1,0 +1,138 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 3
+Las distribuciones binomial y de Poisson
+1. Se determinó, a partir de numerosas experiencias previas, que de cada 5 fusibles que produce una
+máquina 1 es defectuoso. Calcular la probabilidad de que en una muestra aleatoria (extraída de
+un lote de gran tamaño) de 4 fusibles se obtengan:
+a) uno defectuoso;
+b) como máximo dos defectuosos;
+c) ninguno defectuoso;
+d) los cuatro defectuosos.
+2. Supongamos que diez trabajadores van a usar intermitentemente energía eléctrica y que nos
+interesa estimar la carga total con la que se va a operar. Supondremos que, en un instante dado,
+cada trabajador tiene aproximadamente la misma probabilidad p de requerir una unidad de
+energía. Si, en promedio, un trabajador usa la energía durante 12 minutos por hora, tomaremos
+p = 0.2 (ya que 12 minutos es el 20 % de una hora) .
+Calcular la probabilidad de que 7 o más trabajadores requieran energía eléctrica al mismo tiempo
+(lo que equivale a calcular la probabilidad de sobrecarga cuando el suministro se ajusta a 6
+unidades de energía).
+3. Los motores de una producción se someten a dos controles independientes A y B. Se sabe, de
+experiencias previas, que el 1 % de los motores de este tipo falla en la prueba A y el 2 % en la
+prueba B.
+a) Calcular la probabilidad de que un motor probado falle en por lo menos uno de los controles.
+b) Si se selecciona al azar 20 de esos motores (se supone que el total de los motores es mucho
+mayor que 20), calcular la probabilidad de que fallen en por lo menos uno de los controles:
+1) ningún motor;
+2) a lo sumo el 10 % de los motores de la muestra.
+Representar gráficamente la función de probabilidad pX(x) de la variable aleatoria X :
+número de motores que fallan en por lo menos uno de los controles.
+4. La máquina A produce diariamente el doble de artículos que la máquina B; el 4 % de los ar-
+tículos producidos por la máquina A tiende a ser defectuoso, mientras que para la máquina B el
+porcentaje de defectuosos es del 2 %. Se combina la producción diaria de ambas máquinas y se
+toma una muestra aleatoria de 10 artículos.
+a) ¿Cuál es la probabilidad de que la muestra contenga exactamente 2 artículos defectuosos?
+b) Determinar el valor esperado y el desvío estándar del número de artículos defectuosos en
+esa muestra aleatoria de 10 artículos.
+5. Una producción de lámparas eléctricas tiene un porcentaje de defecto del 1 %. Se prueba una
+muestra de 100 lámparas y si hay a lo sumo una defectuosa se acepta la producción; si hay dos
+o más defectuosas se toma otra muestra de 100 lámparas. Si en esta muestra hay a lo sumo una
+1
+
+[Descripción de la imagen: un documento con el título de la publicación]
+
+Probabilidad y Estadística 93.24
+curso 2023
+defectuosa se acepta la producción y en caso contrario se rechaza. Calcular la probabilidad de
+aceptación de la producción.
+6. Una proporción p de un gran número de artículos en un lote es defectuosa. Se extrae una muestra
+de m artículos y si ésta no contiene items defectuosos, el lote es aceptado, en tanto que si contiene
+más de dos items defectuosos, el lote es rechazado. Si la muestra contiene uno o dos artículos
+defectuosos, se extrae una muestra independiente de tamaño m y si el número combinado de
+defectuosas en las dos muestras no excede de dos, el lote es aceptado. Calcular la probabilidad
+de aceptar este lote.
+7. Un comprador y un vendedor acuerdan un plan de muestreo de tamaño n = 10 para hacer el
+control de calidad. El comprador acepta el lote del que se extrae la muestra sólo si el número
+de artículos defectuosos es 0, 1 o 2. En caso contrario la rechaza. Llamemos p a la probabilidad
+de que un artículo sea defectuoso y supongamos que el tamaño de la población de la que se
+extrae la muestra es lo suficientemente grande para suponer que las observaciones muestrales son
+independientes. Calcular la probabilidad de que el comprador acepte el lote para los siguientes
+valores de p: (a) 0.1, (b) 0.3 y (c) 0.5. Representar gráficamente la probabilidad de aceptación
+como función de p.
+8. Sea p la probabilidad de que cualquier símbolo particular de un código se transmita erróneamente
+a través de un sistema de comunicaciones. Suponga que en diferentes símbolos ocurren errores
+independientemente uno de otro. Suponga también que con probabilidad p2 un símbolo erróneo
+se corrige al recibirse. Sea Xn el número de símbolos correctos recibidos en un bloque de mensaje
+formado por n símbolos (una vez que el proceso de corrección haya terminado).
+a) Demostrar que Xn es una variable aleatoria discreta con distribución binomial.
+b) Determinar el valor esperado y la varianza de Xn si n = 10, p = 0.02, y p2 = 0.95.
+9. Se supone que un proceso de fabricación de fusibles produce un 1 % de fusibles defectuosos. El
+proceso se controla periódicamente examinando 10 fusibles, y, si alguno falla, se detiene el proceso
+para revisarlo.
+a) ¿Cuál es la probabilidad de detener el proceso con el sistema de control implementado?
+b) ¿Cúantos fusibles deberán probarse (en vez de 10) si se desea que la probabilidad de detener
+el proceso para revisarlo sea 0.95 cuando esté produciendo 5 % de fusibles defectuosos (que
+es un porcentaje de defectos muy por encima del aceptable)?
+c) Con el tamaño de muestra obtenido en el punto (b), ¿cuál es la probabilidad de detener el
+proceso cuando esté produciendo al 1 % de fusibles defectuosos?
+10. Una partícula esta sometida a la acción de impulsos aleatorios, pudiéndose mover en la dirección
+del eje x. Supongamos conocida la probabilidad de un salto unitario hacia la derecha es p y la
+probabilidad de un salto unitario hacia la izquierda q = 1−p. Este proceso aleatorio se denomina
+un Random Walk o caminata aleatoria unidimensional.
+a) Obtener una expresión para la probabilidad que la partícula alcance cierta abscisa x al cabo
+de n saltos. Suponga que la posición inicial es 0.
+Sugerencia: Si la partícula se encuentra en la posición x tras n saltos de los cuales r fueron
+a la derecha y l a la izquierda entonces se tiene: r + l = n y r −l = x.
+b) Sea Xn la posición de la partícula al cabo de n saltos. Si p = 0.5 y X0 = 0 calcular las
+siguientes probabilidades:
+2
+
+[Descripción de la imagen: un documento con el título del libro, 'la nue de la nue ']
+
+Probabilidad y Estadística 93.24
+curso 2023
+1) P(Xn ≥0) para n tomando los valores de 1 a 4.
+2) P(|Xn| ≤2) para n tomando los valores de 1 a 4.
+11. Un dispositivo está compuesto de un gran número de elementos que trabajan independientemente
+con igual probabilidad (pequeña) de falla de cada elemento durante un tiempo T. Hallar el
+promedio de elementos que fallan en el tiempo T, si la probabilidad de que en ese tiempo falle
+por lo menos un elemento es igual a 0.999.
+12. Una batería de artillería dispara a un blanco y se sabe que la probabilidad de acertar es p =0.01.
+¿Cuántos disparos tendrá que realizar para tener probabilidad mayor que 90 % de dar en el blanco
+por lo menos una vez? Resolver usando las distribuciones binomial y de Poisson. Generar una
+tabla con la razón de las respuestas obtenidas con una y otra distribución para valores de p desde
+0.1 hasta 0.01 en pasos de 0.005.
+13. El número promedio de personas que realizan transacciones en un cajero automático cada 10
+minutos es de 3.4 personas. El número de personas que acude al cajero automático se puede
+suponer una variable aleatoria con distribución de Poisson. Calcular la probabilidad de que en
+10 minutos cualesquiera, se realicen:
+a) menos de 2 transacciones.
+b) más de 2 transacciones.
+14. Una fábrica envía al depósito 500 artículos. La probabilidad de deterioro de un artículo en el
+camino es igual a 0.002. Hallar la probabilidad de que en el camino se deterioren:
+a) exactamente 3 artículos;
+b) menos de 3 artículos;
+c) más de 3 artículos;
+d) por lo menos uno.
+15. En una población el 1 % de las personas padece de daltonismo. ¿Cuál debe ser el tamaño de una
+muestra aleatoria (con reemplazo), de manera tal que la probabilidad de que la misma contenga
+por lo menos un daltónico sea mayor o igual a 0.95? Resuelva usando las distribuciones binomial
+y de Poisson.
+16. La probabilidad de que se haga una soldadura defectuosa en una determinada conexión de una
+tubería es 10−4.
+a) Hallar el valor esperado y la desviación típica de la variable aleatoria X: número de soldadu-
+ras defectuosas realizadas, si el número de soldaduras que requiere el tendido de la tubería
+es 5 104.
+b) Calcular la probabilidad de que en dicho trabajo no haya ninguna soldadura defectuosa.
+17. Suponga un sistema de comunicación óptica que transmite dos símbolos, 1 y 0. Como transmisor,
+se utiliza un láser que se enciende (para enviar un 1) y se apaga (para enviar un 0). El número
+de fotones durante el tiempo que está encendido el láser sigue una distribución de Poisson con
+media λ. Como receptor, se tiene un dispositivo ideal que puede contar cada fotón que llega. De
+esta forma, si cuenta al menos un fotón, el receptor decide que se envió un 1; caso contrario,
+decide que se envió un 0. Si se transmiten tantos 1s como 0s, determine el valor de λ para que
+la tasa de error en la decisión del receptor sea menor a 10−9.
+3
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+

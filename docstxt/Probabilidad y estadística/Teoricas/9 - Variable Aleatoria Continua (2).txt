@@ -1,0 +1,6255 @@
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Variables aleatorias continuas
+Lic. Lucio José Pantazis
+30/3/2023
+
+[Descripción de la imagen: vires alcontass lio pais 9 / 2 / 2013]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Motivación
+
+[Descripción de la imagen: una hoja blanca con las palabras motivión | Transcripción de la imagen: Motivación]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (entero)
+Supongamos que en un verano cualquiera, utilizamos un termómetro que redondea la
+temperatura al grado celsius entero más próximo.
+
+[Descripción de la imagen: teparas ento tempagro entrao]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (entero)
+Supongamos que en un verano cualquiera, utilizamos un termómetro que redondea la
+temperatura al grado celsius entero más próximo.
+Podemos considerar la siguiente variable discreta:
+T0 = Temperatura registrada [ºC] en un día de verano elegido al azar (redondeado a un valor entero)
+
+[Descripción de la imagen: teparas ento tempagra ento tempagra entraa, templa entrara, tetra]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T0
+Supongamos que la variable sigue la siguiente distribución de probabilidades:
+
+[Descripción de la imagen: dibucio t supra ques de supra]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T0
+Supongamos que la variable sigue la siguiente distribución de probabilidades:
+print(ps[1:5])
+##
+T0 = 25
+T0 = 26
+T0 = 27
+T0 = 28
+T0 = 29
+## 0.001125926 0.007407407 0.018666667 0.033481481 0.050429630
+print(ps[6:10])
+##
+T0 = 30
+T0 = 31
+T0 = 32
+T0 = 33
+T0 = 34
+## 0.06808889 0.08503704 0.09985185 0.11111111 0.11739259
+print(ps[11:15])
+##
+T0 = 35
+T0 = 36
+T0 = 37
+T0 = 38
+T0 = 39
+## 0.11727407 0.10933333 0.09214815 0.06429630 0.02435556
+
+[Descripción de la imagen: dibucio tp = = = = = = = = = = = =]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T0
+Visualizamos la distribución:
+
+[Descripción de la imagen: una pantalla blanca con las palabras gro distudi | Transcripción de la imagen: Gráfico distribución TO
+
+Visualizamos la distribución:]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T0
+Visualizamos la distribución:
+print(GG0)
+0.00
+0.03
+0.06
+0.09
+0.12
+28
+32
+36
+Grados [ºC]
+P(T0=k)
+
+[Descripción de la imagen: un gráfico con una línea de datos | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Gráfico distribución TO
+
+Lic. Lucio
+José
+
+Pantazis Visualizamos la distribución:
+
+Motivación print (GG0)
+
+0.12=-
+
+0.09 =
+
+-k)
+
+0.06 =
+
+P(TO
+
+0.03 =
+
+l 1 U
+28 32 36
+
+Grados [*C]]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T0
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T0 = 36):
+
+[Descripción de la imagen: calcurobuindes putable tf con est est est est est est est est est est est est est]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T0
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T0 = 36):
+print(ps[IndP])
+##
+T0 = 36
+## 0.1093333
+
+[Descripción de la imagen: calculao de dato]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T0
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T0 = 36):
+print(ps[IndP])
+##
+T0 = 36
+## 0.1093333
+Gráﬁcamente:
+print(GG0)
+0.00
+0.03
+0.06
+0.09
+0.12
+28
+32
+36
+Grados [ºC]
+P(T0=k)
+
+[Descripción de la imagen: calculao de calculaos de calculaos de calculaos de calculaos de cal | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Cálculo probabilidades puntuales TO
+Lic. Lucio
+José
+as Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+Motivación e P( T0 — 36)
+print (ps [IndP])
+HA TO = 36
+
+HH 0.1093333
+
+Gráficamente:
+print (GG0)
+
+0.12 -
+
+0.09 =
+"
+O 0.06 =
+F
+
+—
+
+a
+0.03 =
+
+0.00- O ? T T
+28
+
+32 36
+Grados [*C]]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T0
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T0 ≤37):
+
+[Descripción de la imagen: Calo productor en unro do t oo]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T0
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T0 ≤37):
+print(ps[IndR])
+##
+T0 = 35
+T0 = 36
+T0 = 37
+## 0.11727407 0.10933333 0.09214815
+print(sum(ps[IndR]))
+## [1] 0.3187556
+
+[Descripción de la imagen: una captura de pantalla en las ventanas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T0
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T0 ≤37):
+print(ps[IndR])
+##
+T0 = 35
+T0 = 36
+T0 = 37
+## 0.11727407 0.10933333 0.09214815
+print(sum(ps[IndR]))
+## [1] 0.3187556
+Gráﬁcamente:
+print(GG0)
+0.00
+0.03
+0.06
+0.09
+0.12
+28
+32
+36
+Grados [ºC]
+P(T0=k)
+
+[Descripción de la imagen: calculao de la calculao de la calculao de calculao de calculao | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Cálculo probabilidades en un rango de TO
+Lic. Lucit
+an)séCQ
+Pantazis
+
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+
+* P(35 < To <37):
+print (ps[IndR])
+
+Motivación
+
+hi TO = 35 TO = 36 TO = 37
+HE 0.11727407 0.10933333 0.09214815
+
+print (sum (ps [IndR]))
+
+Hit [1] 0.3187556
+
+Gráficamente:
+print (GG0)
+
+0.12 =
+
+0.09 =
+í
+O 0.06 -
+F
+
+—
+
+0.03 =
+
+0.0- O ? (f T
+28
+
+32 36
+Grados [*C]]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (décimas)
+Supongamos que conseguimos un termómetro de mayor precisión, que ahora redondea
+a décimas de grado celsius.
+
+[Descripción de la imagen: tecrasicias los ests de la est]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (décimas)
+Supongamos que conseguimos un termómetro de mayor precisión, que ahora redondea
+a décimas de grado celsius.
+Podemos considerar la siguiente variable discreta:
+T1 = Temperatura registrada [ºC] en un día de verano elegido al azar (redondeado a la décima)
+
+[Descripción de la imagen: tecrasicias deporta deportaa]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T1
+Supongamos que con estos cambios, la variable sigue la siguiente distribución de
+probabilidades (sólo se muestran ciertos valores ya que son 150 probabilidades):
+
+[Descripción de la imagen: dibucuina 1 submedo cono]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T1
+Supongamos que con estos cambios, la variable sigue la siguiente distribución de
+probabilidades (sólo se muestran ciertos valores ya que son 150 probabilidades):
+print(ps[1:5])
+##
+T1 = 25
+T1 = 25.1
+T1 = 25.2
+T1 = 25.3
+T1 = 25.4
+## 1.179259e-06 8.207407e-06 2.213333e-05 4.281481e-05 7.010963e-05
+print(ps[6:10])
+##
+T1 = 25.5
+T1 = 25.6
+T1 = 25.7
+T1 = 25.8
+T1 = 25.9
+## 0.0001038756 0.0001439704 0.0001902519 0.0002425778 0.0003008059
+print(ps[11:15])
+##
+T1 = 26
+T1 = 26.1
+T1 = 26.2
+T1 = 26.3
+T1 = 26.4
+## 0.0003647941 0.0004344000 0.0005094815 0.0005898963 0.0006755022
+print(ps[16:20])
+##
+T1 = 26.5
+T1 = 26.6
+T1 = 26.7
+T1 = 26.8
+T1 = 26.9
+## 0.0007661570 0.0008617185 0.0009620444 0.0010669926 0.0011764207
+print(ps[21:25])
+##
+T1 = 27
+T1 = 27.1
+T1 = 27.2
+T1 = 27.3
+T1 = 27.4
+## 0.001290187 0.001408148 0.001530163 0.001656089 0.001785784
+print(ps[26:30])
+##
+T1 = 27.5
+T1 = 27.6
+T1 = 27.7
+T1 = 27.8
+T1 = 27.9
+## 0.001919105 0.002055911 0.002196059 0.002339407 0.002485813
+
+[Descripción de la imagen: dibucii t subadae cono de esto | Transcripción de la imagen: Variables
+
+aleatorias
+omtiimer Distribución T1
+Lic. Lucio
+José
+Pantazis
+Supongamos que con estos cambios, la variable sigue la siguiente distribución de
+Motivación
+probabilidades (sólo se muestran ciertos valores ya que son 150 probabilidades):
+Variables
+Ne print (ps[1:5])
+continuas
+Ejercitación H T1 =25 T1 = 25.1 T1 = 25.2 Ti = 25.3 T1 = 25.4
+
+H!4 1.179259e-06 8.207407e-06 2.213333e-05 4.281481e-05 7.010963e-05
+print (ps[6:10])
+
+d T1=25.5 T1=25.6 T1=25.7 T1=25.8 T1=25.9
+dit 0.0001038756 0.0001439704 0.0001902519 0.0002425778 0.0003008059
+print(ps[11:15))
+
+“a T1=26 fT1=26.1 T1=26.2 T1=26.3 T1=26.4
+Hit 0.0003647941 0.0004344000 0.0005094815 0.0005898963 0.0006755022
+print (ps[16:20])
+
+i T1=26.5 T1=26.6 T1=26.7 T1=26.8 T1=26.9
+diit 0.0007661570 0.0008617185 0.0009620444 0.0010669926 0.0011764207
+print (ps[21:25])
+
+“a T1=27 T1=27.1 T1=27.2 T1=27.3 T1=27.4
+dit 0.001290187 0.001408148 0.001530163 0.001656089 0.001785784
+print (ps [26:30])
+
+H T1 =27.5 T1i=27.6 T1 = 27.7 T1 =27.8 T1 =27.9
+4 0.001919105 0.002055911 0.002196059 0.002339407 0.002485813]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T1
+Graﬁcamos la distribución:
+print(GG1)
+0.000
+0.003
+0.006
+0.009
+0.012
+25
+30
+35
+40
+Grados [ºC]
+P(T1=k)
+
+[Descripción de la imagen: gatos dedicia gatos dedicia gadicia gadicia gadicia gadicia]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T1
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad puntual:
+• P(T1 = 36):
+
+[Descripción de la imagen: Calcurobuindes putable t cona distudir]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T1
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad puntual:
+• P(T1 = 36):
+print(ps[IndP])
+##
+T1 = 36
+## 0.01143205
+
+[Descripción de la imagen: calculao deporto]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T1
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad puntual:
+• P(T1 = 36):
+print(ps[IndP])
+##
+T1 = 36
+## 0.01143205
+Gráﬁcamente:
+print(GG1)
+0.000
+0.003
+0.006
+0.009
+0.012
+25
+30
+35
+40
+Grados [ºC]
+P(T1=k)
+
+[Descripción de la imagen: calculas de calculas de calculas de calculas de calculas de cal]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T1
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T1 ≤37):
+
+[Descripción de la imagen: Calo productor en unro i]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T1
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T1 ≤37):
+print(ps[IndR[1:5]])
+##
+T1 = 26
+T1 = 26.1
+T1 = 26.2
+<NA>
+<NA>
+## 0.0003647941 0.0004344000 0.0005094815
+NA
+NA
+print(sum(ps[IndR]))
+## [1] 0.001308676
+
+[Descripción de la imagen: una captura de pantalla en las ventanas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T1
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T1 ≤37):
+print(ps[IndR[1:5]])
+##
+T1 = 26
+T1 = 26.1
+T1 = 26.2
+<NA>
+<NA>
+## 0.0003647941 0.0004344000 0.0005094815
+NA
+NA
+print(sum(ps[IndR]))
+## [1] 0.001308676
+Gráﬁcamente, se suman los siguientes valores:
+print(GG1)
+0.000
+0.003
+0.006
+0.009
+0.012
+25
+30
+35
+40
+Grados [ºC]
+P(T1=k)
+
+[Descripción de la imagen: calculas de las calculas de las calculas de calculas de calculas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (centésimas)
+Del mismo modo, podríamos conseguir un termómetro de mayor precisión, que ahora
+redondea a centésimas de grado celsius.
+
+[Descripción de la imagen: teerate centes del marketing]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Temperaturas (centésimas)
+Del mismo modo, podríamos conseguir un termómetro de mayor precisión, que ahora
+redondea a centésimas de grado celsius.
+Podemos considerar la siguiente variable discreta:
+T2 = Temperatura registrada [ºC] en un día de verano elegido al azar (redondeado a la centésima)
+
+[Descripción de la imagen: teparae centes del ests]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T2
+Supongamos que la variable sigue la siguiente distribución de probabilidades (sólo se
+muestran ciertos valores):
+
+[Descripción de la imagen: dibuin t2 subros la verilse de distudir]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución T2
+Supongamos que la variable sigue la siguiente distribución de probabilidades (sólo se
+muestran ciertos valores):
+print(ps[1:5])
+##
+T2 = 25
+T2 = 25.01
+T2 = 25.02
+T2 = 25.03
+T2 = 25.04
+## 1.184593e-09 8.287407e-09 2.248000e-08 4.374815e-08 7.207763e-08
+print(ps[6:10])
+##
+T2 = 25.05
+T2 = 25.06
+T2 = 25.07
+T2 = 25.08
+T2 = 25.09
+## 1.074542e-07 1.498637e-07 1.992919e-07 2.557244e-07 3.191473e-07
+print(ps[11:15])
+##
+T2 = 25.1
+T2 = 25.11
+T2 = 25.12
+T2 = 25.13
+T2 = 25.14
+## 3.895461e-07 4.669067e-07 5.512148e-07 6.424563e-07 7.406169e-07
+print(ps[16:20])
+##
+T2 = 25.15
+T2 = 25.16
+T2 = 25.17
+T2 = 25.18
+T2 = 25.19
+## 8.456824e-07 9.576385e-07 1.076471e-06 1.202166e-06 1.334709e-06
+print(ps[21:25])
+##
+T2 = 25.2
+T2 = 25.21
+T2 = 25.22
+T2 = 25.23
+T2 = 25.24
+## 1.474085e-06 1.620281e-06 1.773283e-06 1.933076e-06 2.099645e-06
+
+[Descripción de la imagen: dibuin t2 subros la variable siquete distudir | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Distribución T2
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+Vn Supongamos que la variable sigue la siguiente distribución de probabilidades (sólo se
+
+atorias muestran ciertos valores):
+
+continuas
+
+print (ps[1:5])
+
+tación
+
+“a T2=25 T2=25.01 T2=25.02 T2=25.03 T2=25.04
+diit 1.184593e-09 8.287407e-09 2.248000e-08 4.374815e-08 7.207763e-08
+print (ps[6:10])
+
+Hl T2=25.05 T2=25.06 T2=25.07 T2=25.08 T2=25.09
+Hit 1.074542e-07 1.498637e-07 1.992919e-07 2.557244e-07 3.191473e-07
+print (ps[11:15])
+
+H T2=25.1 T2=25.11 T2=25.12 T2=25.13 T2=25.14
+dit 3.895461e-07 4.669067e-07 5.512148e-07 6.424563e-07 7.406169e-07
+print (ps[16:20])
+
+H T2=25.15 T2=25.16 T2=25.147 T2=25.18 T2=25.19
+dit 8.456824e-07 9.576385e-07 1.076471e-06 1.202166e-06 1.334709e-06
+print (ps[21:25])
+
+“ T2 = 25.2 T2 = 25.21 T2 = 25.22 T2 = 25.23 T2 = 25.24
+4 1.474085e-06 1.620281e-06 1.773283e-06 1.933076e-06 2.099645e-06]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T2
+Graﬁcamos la distribución
+
+[Descripción de la imagen: un fondo blanco con las palabras gros distudi | Transcripción de la imagen: Gráfico distribución T2
+
+Graficamos la distribución]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T2
+Graﬁcamos la distribución
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+
+[Descripción de la imagen: distribución grios t2 distribución grios t2 distribución grios t2 distribución grios t2]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Gráﬁco distribución T2
+Graﬁcamos la distribución
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+Parece no ser una variable discreta porque los datos están muy apiñados.
+
+[Descripción de la imagen: distribución grios t2 distribución grios t2 distribución grios t2 distribución grios t2 distribución grios t2 distribución grios t2 distribución grios]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Zoom gráﬁco distribución T2
+Sin embargo, si “hacemos zoom” a los valores entre 34 y 35, vemos que sigue siendo
+discreta.
+
+[Descripción de la imagen: zonario distuon t2 sin envoo a lote y 36 vegodoo sida]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Zoom gráﬁco distribución T2
+Sin embargo, si “hacemos zoom” a los valores entre 34 y 35, vemos que sigue siendo
+discreta.
+print(GG2+xlim(c(34,35)))
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+34.00
+34.25
+34.50
+34.75
+35.00
+Grados [ºC]
+P(T2=k)
+
+[Descripción de la imagen: zonario distuon t2 sin envoga si siembom siembom siembom siembom siembom siembom siembom siembom siembom siembom siembo]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T2
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T2 = 36):
+
+[Descripción de la imagen: calcurobuindes putable t2 con est est est est est est est est est est est est est]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T2
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T2 = 36):
+print(ps[IndP])
+##
+T2 = 36
+## 0.001146867
+
+[Descripción de la imagen: calculao deporto]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades puntuales T2
+Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+• P(T2 = 36):
+print(ps[IndP])
+##
+T2 = 36
+## 0.001146867
+Gráﬁcamente:
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+
+[Descripción de la imagen: calculao de la calculao de la calculao de calculao de calculao | Transcripción de la imagen: Variables
+aleatorias
+
+cariimer Cálculo probabilidades puntuales T2
+Lic. Lucio
+José
+Pantazis Con esta distribución, podríamos calcular por ejemplo, la siguiente probabilidad:
+Motivación . P( T2 — 36)
+print (ps [IndP])
+Hit T2 = 36
+
+H 0.001146867
+
+Gráficamente:
+print (GG2)
+
+0.00100 -
+3<|T 0.00075 -
+aa
+E 0.00050 -
+a
+
+0.00025 -
+
+0.00000 =
+
+Grados [*C]]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T2
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T2 ≤37):
+
+[Descripción de la imagen: calo productor en unre t2]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T2
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T2 ≤37):
+print(ps[IndR[1:5]])
+##
+T2 = 35
+T2 = 35.01
+T2 = 35.02
+T2 = 35.03
+T2 = 35.04
+## 0.001185184 0.001185177 0.001185163 0.001185141 0.001185113
+print(sum(ps[IndR]))
+## [1] 0.2276306
+
+[Descripción de la imagen: calo probajadr en unific de t2]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Cálculo probabilidades en un rango de T2
+A su vez, podríamos calcular la probabilidad de estar en cierto rango de valores:
+• P(35 ≤T2 ≤37):
+print(ps[IndR[1:5]])
+##
+T2 = 35
+T2 = 35.01
+T2 = 35.02
+T2 = 35.03
+T2 = 35.04
+## 0.001185184 0.001185177 0.001185163 0.001185141 0.001185113
+print(sum(ps[IndR]))
+## [1] 0.2276306
+Gráﬁcamente
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+
+[Descripción de la imagen: calculao de la calculao de la calculao de calculao de calculao]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+
+[Descripción de la imagen: comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras comoras com]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+
+[Descripción de la imagen: comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+
+[Descripción de la imagen: comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Se ve notablemente que a medida que a medida que aumentan los valores posibles, baja la
+probabilidad de que la variable tome alguno de esos valores en especíﬁco.
+
+[Descripción de la imagen: comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Se ve notablemente que a medida que a medida que aumentan los valores posibles, baja la
+probabilidad de que la variable tome alguno de esos valores en especíﬁco.Esto tiene sentido
+dado que la suma total siempre debe dar 1. Mientras más deba repartirse esa probabilidad
+máxima, menores serán los valores de cada resultado.
+
+[Descripción de la imagen: comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Se ve notablemente que a medida que a medida que aumentan los valores posibles, baja la
+probabilidad de que la variable tome alguno de esos valores en especíﬁco.Esto tiene sentido
+dado que la suma total siempre debe dar 1. Mientras más deba repartirse esa probabilidad
+máxima, menores serán los valores de cada resultado. Veamos qué sucedió con P(X = 36):
+print(p36)
+##
+P(T0 = 36)
+P(T1 = 36)
+P(T2 = 36)
+## 0.109333333 0.011432053 0.001146867
+
+[Descripción de la imagen: comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Se ve notablemente que a medida que a medida que aumentan los valores posibles, baja la
+probabilidad de que la variable tome alguno de esos valores en especíﬁco.Esto tiene sentido
+dado que la suma total siempre debe dar 1. Mientras más deba repartirse esa probabilidad
+máxima, menores serán los valores de cada resultado. Veamos qué sucedió con P(X = 36):
+print(p36)
+##
+P(T0 = 36)
+P(T1 = 36)
+P(T2 = 36)
+## 0.109333333 0.011432053 0.001146867
+• Más aún, podríamos hipotetizar que a medida que se vuelve más preciso el instrumento de
+precisión, la probabilidad de que la temperatura sea exactamente 36ºC, tiende a 0.
+
+[Descripción de la imagen: comidas de comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comidas comi]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Además, vemos que no se modiﬁca sustancialmente la probabilidad de que la
+variable tome un rango de valores, o que al menos, converge a cierto valor.
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico gráfico y un gráfico gráfico]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Comparación distribuciones
+Comparemos las distribuciones, a medida que va aumentando la precisión
+print(GG)
+Centésimas
+Décimas
+Entero
+25
+30
+35
+40
+25
+30
+35
+40
+25
+30
+35
+40
+0.00
+0.03
+0.06
+0.09
+0.12
+Grados [ºC]
+P(X=k)
+Comentarios:
+• Además, vemos que no se modiﬁca sustancialmente la probabilidad de que la
+variable tome un rango de valores, o que al menos, converge a cierto valor.
+Veamos qué sucedió con P(35 ≤X ≤37):
+print(pR)
+## P(35<= T0<=37) P(35<= T1<=37) P(35<= T2<=37)
+##
+0.3187556
+0.2367604
+0.2276306
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico gráfico y un gráfico gráfico]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Variables aleatorias continuas
+
+[Descripción de la imagen: váres alteres de la estr | Transcripción de la imagen: Variables aleatorias continuas]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+
+[Descripción de la imagen: una captura de pantalla de un ordenador con el text'la ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+
+[Descripción de la imagen: un fondo blanco con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+
+[Descripción de la imagen: un fondo blanco con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.Por lo tanto, si tenemos que contemplar todos los valores del
+intervalo, la probabilidad de que la variable T tome exactamente un valor t es cero.
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.Por lo tanto, si tenemos que contemplar todos los valores del
+intervalo, la probabilidad de que la variable T tome exactamente un valor t es cero.Es
+decir,
+P(T = t) = 0, ∀t ∈[25, 40]
+
+[Descripción de la imagen: una pantalla de ordenador con el texto'''' y la imagen de una pantalla de ordenador con el texto'''']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.Por lo tanto, si tenemos que contemplar todos los valores del
+intervalo, la probabilidad de que la variable T tome exactamente un valor t es cero.Es
+decir,
+P(T = t) = 0, ∀t ∈[25, 40]
+Comentario:
+• Que la probabilidad P(T = t) sea 0, no signiﬁca que sea imposible que T tome el
+valor t.
+
+[Descripción de la imagen: una pantalla de ordenador con el texto'''' y la imagen de una pantalla de ordenador con el texto'''']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.Por lo tanto, si tenemos que contemplar todos los valores del
+intervalo, la probabilidad de que la variable T tome exactamente un valor t es cero.Es
+decir,
+P(T = t) = 0, ∀t ∈[25, 40]
+Comentario:
+• Que la probabilidad P(T = t) sea 0, no signiﬁca que sea imposible que T tome el
+valor t.Signiﬁca que no podemos incluir a todos los valores con probabilidad
+positiva sin pasar el valor máximo para una probabilidad (1).
+
+[Descripción de la imagen: una pantalla de ordenador con el texto'''' y la imagen de una pantalla de ordenador con el texto'''']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Generalización
+Podríamos decir en este punto que las variables consideradas hasta el momento, eran
+redondeos de una variable que no tiene porqué tener un número ﬁjo de decimales.
+Es decir, la temperatura toma valores continuos pero el instrumento de medición en
+algún decimal debe redondearlo.
+De todos modos, se puede tomar la siguiente variable aleatoria
+T = Temperatura [ºC] en un día de verano elegido al azar
+es una variable que toma todos sus valores en un intervalo continuo. (Asumamos que
+ese intervalo es [25,40]).Decimos en estos casos, que se trata de una variable aleatoria
+continua (o v.a.c.).
+Por lo que vimos anteriormente, a medida que se toman más valores, las probabilidades
+puntuales tienden a 0.Por lo tanto, si tenemos que contemplar todos los valores del
+intervalo, la probabilidad de que la variable T tome exactamente un valor t es cero.Es
+decir,
+P(T = t) = 0, ∀t ∈[25, 40]
+Comentario:
+• Que la probabilidad P(T = t) sea 0, no signiﬁca que sea imposible que T tome el
+valor t.Signiﬁca que no podemos incluir a todos los valores con probabilidad
+positiva sin pasar el valor máximo para una probabilidad (1).
+Es decir, se considera que cada valor t es improbable, pero no es imposible.
+
+[Descripción de la imagen: una descripción del texto en español con las palabras]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+Podríamos preguntarnos: ¿Cómo calculamos por ejemplo, la probabilidad de que la
+variable T tome valores entre 35 y 37?
+
+[Descripción de la imagen: posiblee de las]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+Podríamos preguntarnos: ¿Cómo calculamos por ejemplo, la probabilidad de que la
+variable T tome valores entre 35 y 37?
+Hasta ahora veníamos sumando las probabilidades de cada valor que cae dentro del
+rango.
+
+[Descripción de la imagen: producto uno podio de dato]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+Podríamos preguntarnos: ¿Cómo calculamos por ejemplo, la probabilidad de que la
+variable T tome valores entre 35 y 37?
+Hasta ahora veníamos sumando las probabilidades de cada valor que cae dentro del
+rango.Es decir:
+P(35 ≤T ≤37) =
+X
+t ∈RT
+35 ≤t ≤37
+P(T = t)
+
+[Descripción de la imagen: posiblee de dato]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.
+
+[Descripción de la imagen: probajad uno e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.
+
+[Descripción de la imagen: probajad uno e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.De este modo,
+P(35 ≤T ≤37) =
+Z 37
+35
+P(T = t) dt
+
+[Descripción de la imagen: poblaad unro e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.De este modo,
+P(35 ≤T ≤37) =
+Z 37
+35
+P(T = t) dt
+Sin embargo, por lo que vimos anteriormente, la probabilidad de que una variable
+continua tome un valor puntual es 0.
+
+[Descripción de la imagen: poblaad unro e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.De este modo,
+P(35 ≤T ≤37) =
+Z 37
+35
+P(T = t) dt
+Sin embargo, por lo que vimos anteriormente, la probabilidad de que una variable
+continua tome un valor puntual es 0.Por lo tanto, esa integral (o cualquier integral)
+daría 0 bajo esa expresión.
+
+[Descripción de la imagen: poblaad unro e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.De este modo,
+P(35 ≤T ≤37) =
+Z 37
+35
+P(T = t) dt
+Sin embargo, por lo que vimos anteriormente, la probabilidad de que una variable
+continua tome un valor puntual es 0.Por lo tanto, esa integral (o cualquier integral)
+daría 0 bajo esa expresión.Esto no tiene mucho sentido, dado que cualquier
+probabilidad daría 0 como resultado.
+Además, todas las variables que observamos no tienen una probabilidad constante para
+los distintos valores.
+
+[Descripción de la imagen: poblaad unro e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Probabilidad en un rango
+El problema es que en este momento debemos hacer una suma sobre todos los valores
+de un intervalo, contemplando alguna noción de probabilidad de que la variable tome
+cada valor.La extensión matemática para una suma ponderada en un intervalo continuo,
+es la integral deﬁnida.De este modo,
+P(35 ≤T ≤37) =
+Z 37
+35
+P(T = t) dt
+Sin embargo, por lo que vimos anteriormente, la probabilidad de que una variable
+continua tome un valor puntual es 0.Por lo tanto, esa integral (o cualquier integral)
+daría 0 bajo esa expresión.Esto no tiene mucho sentido, dado que cualquier
+probabilidad daría 0 como resultado.
+Además, todas las variables que observamos no tienen una probabilidad constante para
+los distintos valores.Por lo tanto, debemos añadir una forma de que existan rangos de
+valores más probables.
+
+[Descripción de la imagen: poblaad unro e e e e e e e e e e e e e e e e e e e e e e e e e]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Para ello, se deﬁne una función de densidad de probabilidad, notada fT (t) que sí
+pueda tomar valores positivos y que por lo tanto, dicha integral pueda dar un resultado
+positivo.
+
+[Descripción de la imagen: un fondo blanco con las palabras''y''in español]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Para ello, se deﬁne una función de densidad de probabilidad, notada fT (t) que sí
+pueda tomar valores positivos y que por lo tanto, dicha integral pueda dar un resultado
+positivo.Con esta deﬁnición, se calcula la probabilidad pedida del siguiente modo:
+P(35 ≤T ≤37) =
+Z 37
+35
+fT (t) dt
+
+[Descripción de la imagen: una pantalla de ordenador con el texto delade doubud]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Para ello, se deﬁne una función de densidad de probabilidad, notada fT (t) que sí
+pueda tomar valores positivos y que por lo tanto, dicha integral pueda dar un resultado
+positivo.Con esta deﬁnición, se calcula la probabilidad pedida del siguiente modo:
+P(35 ≤T ≤37) =
+Z 37
+35
+fT (t) dt
+Antes de dar una densidad de probabilidad para el ejemplo de las temperaturas, vamos
+a hablar de algunas propiedades que debe cumplir una función de densidad.
+
+[Descripción de la imagen: una pantalla de ordenador con el texto delade doubud]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+
+[Descripción de la imagen: una pantalla de ordenador con el texto delde probaid]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+
+[Descripción de la imagen: una pantalla de ordenador con el texto delde probaid]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+• R +∞
+−∞
+fX (x) dx = 1
+
+[Descripción de la imagen: una pantalla de ordenador que muestra una representación gráfica de una variable | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Densidad de probabilidad
+
+Dada una variable aleatoria continua X, una función de densidad fy : R +> Rg debe cumplir las siguientes condiciones:
+
+Lic. Lucio
+José
+Pantazis
+
+* f(x) > 0, Y ER
+Motivación
+
++o00
+Variables . fx(x) de =1
+aleatorias —
+continuas
+
+Ejercitación]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+• R +∞
+−∞
+fX (x) dx = 1
+Una vez deﬁnida esta función, para cualquier valor a ≤b, se calcula cualquier probabilidad del siguiente modo:
+P(a ≤X ≤b) =
+Z
+b
+a
+fX (x) dx
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de una probaid quadd]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+• R +∞
+−∞
+fX (x) dx = 1
+Una vez deﬁnida esta función, para cualquier valor a ≤b, se calcula cualquier probabilidad del siguiente modo:
+P(a ≤X ≤b) =
+Z
+b
+a
+fX (x) dx
+Es decir, la probabilidad de que X esté en cierto intervalo es igual al área bajo la curva de su densidad fX (x)
+
+[Descripción de la imagen: un diagrama de la ecuación derivada]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+• R +∞
+−∞
+fX (x) dx = 1
+Una vez deﬁnida esta función, para cualquier valor a ≤b, se calcula cualquier probabilidad del siguiente modo:
+P(a ≤X ≤b) =
+Z
+b
+a
+fX (x) dx
+Es decir, la probabilidad de que X esté en cierto intervalo es igual al área bajo la curva de su densidad fX (x)
+Volviendo un segundo al ejemplo, recordemos cómo calculamos P(35 ≤T2 ≤37) en el caso de las centésimas:
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+
+[Descripción de la imagen: un gráfico con una línea roja y azul]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Dada una variable aleatoria continua X, una función de densidad fX : R 7→R+
+0 debe cumplir las siguientes condiciones:
+•
+fX (x) ≥0, ∀x ∈R
+• R +∞
+−∞
+fX (x) dx = 1
+Una vez deﬁnida esta función, para cualquier valor a ≤b, se calcula cualquier probabilidad del siguiente modo:
+P(a ≤X ≤b) =
+Z
+b
+a
+fX (x) dx
+Es decir, la probabilidad de que X esté en cierto intervalo es igual al área bajo la curva de su densidad fX (x)
+Volviendo un segundo al ejemplo, recordemos cómo calculamos P(35 ≤T2 ≤37) en el caso de las centésimas:
+print(GG2)
+0.00000
+0.00025
+0.00050
+0.00075
+0.00100
+25
+30
+35
+40
+Grados [ºC]
+P(T2=k)
+Vemos que se asemeja bastante al gráﬁco del área bajo una curva.
+
+[Descripción de la imagen: un gráfico con una línea roja y azul]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+
+[Descripción de la imagen: un fondo blanco con las palabras'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' | Transcripción de la imagen: Densidad de probabilidad
+
+Comentarios:]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+• Como fX es una función que puede tomar cualquier valor real x, pareciera que se
+asume que cualquier x se asume como posible.
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+• Como fX es una función que puede tomar cualquier valor real x, pareciera que se
+asume que cualquier x se asume como posible.Sin embargo, se pueden restringir
+los valores posibles de X, dando valor cero a la densidad en dichos puntos. El
+conjunto de densidad positiva se denomina soporte.
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras'''' y'']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+• Como fX es una función que puede tomar cualquier valor real x, pareciera que se
+asume que cualquier x se asume como posible.Sin embargo, se pueden restringir
+los valores posibles de X, dando valor cero a la densidad en dichos puntos. El
+conjunto de densidad positiva se denomina soporte.
+En el ejemplo de la temperatura, para que T tome valores entre 25 y 40, se puede
+tomar fT (t) = 0 si t ̸∈[25, 40].
+
+[Descripción de la imagen: una pantalla de ordenador con el texto delade doubud]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+• Como fX es una función que puede tomar cualquier valor real x, pareciera que se
+asume que cualquier x se asume como posible.Sin embargo, se pueden restringir
+los valores posibles de X, dando valor cero a la densidad en dichos puntos. El
+conjunto de densidad positiva se denomina soporte.
+En el ejemplo de la temperatura, para que T tome valores entre 25 y 40, se puede
+tomar fT (t) = 0 si t ̸∈[25, 40].
+• Considerando que las probabilidades se calculan mediante una integral, se sustenta
+que P(X = a) = R a
+a fX(x) dx = 0 para cualquier valor de a.
+
+[Descripción de la imagen: una aplicación informática con una interfaz informática, la interfaz informática es una interfaz informática]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Densidad de probabilidad
+Comentarios:
+• Como fX es una función que puede tomar cualquier valor real x, pareciera que se
+asume que cualquier x se asume como posible.Sin embargo, se pueden restringir
+los valores posibles de X, dando valor cero a la densidad en dichos puntos. El
+conjunto de densidad positiva se denomina soporte.
+En el ejemplo de la temperatura, para que T tome valores entre 25 y 40, se puede
+tomar fT (t) = 0 si t ̸∈[25, 40].
+• Considerando que las probabilidades se calculan mediante una integral, se sustenta
+que P(X = a) = R a
+a fX(x) dx = 0 para cualquier valor de a.
+• Además, la función de densidad de probabilidad puede ser mayor que 1, lo
+importante es que no integre más que 1 en ningún intervalo.
+
+[Descripción de la imagen: una aplicación informática con una interfaz informática, la interfaz informática es una interfaz informática]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+
+[Descripción de la imagen: diccional disple disple disple disple disple disple]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+
+[Descripción de la imagen: distudis distudis distudis distudis distudis dictional distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distu]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+• 0 ≤FX(t) ≤1
+
+[Descripción de la imagen: distudis distudis distudis distudis distudis dictional distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distudis distu]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+• 0 ≤FX(t) ≤1
+• FX es creciente: Si a ≤b ⇒FX(a) ≤FX(b)
+
+[Descripción de la imagen: distudia dictional]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+• 0 ≤FX(t) ≤1
+• FX es creciente: Si a ≤b ⇒FX(a) ≤FX(b)
+•
+lim
+t→−∞FX(t) = 0
+
+[Descripción de la imagen: distructo distructo distructo distructo distructo distructo distructo]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+• 0 ≤FX(t) ≤1
+• FX es creciente: Si a ≤b ⇒FX(a) ≤FX(b)
+•
+lim
+t→−∞FX(t) = 0
+•
+lim
+t→+∞FX(t) = 1
+
+[Descripción de la imagen: distructo distructo distructo distructo distructo distructo distructo]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al igual que con las variables discretas, para una variable aleatoria continua X, se
+puede deﬁnir entonces la función de distribución acumulada:
+FX : R 7→[0, 1], FX(t) = P(X ≤t) =
+Z t
+−∞
+fX(x) dx
+Al igual que lo deﬁnido para variables aleatorias discretas, la función de distribución
+acumulada cumple las siguientes propiedades:
+• 0 ≤FX(t) ≤1
+• FX es creciente: Si a ≤b ⇒FX(a) ≤FX(b)
+•
+lim
+t→−∞FX(t) = 0
+•
+lim
+t→+∞FX(t) = 1
+• FX es continua a derecha: FX(a) = lim
+t→a+FX(t)
+
+[Descripción de la imagen: distructo distructo distructo distructo distructo distructo distructo]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al ser X continua, se agregan algunas propiedades extra:
+
+[Descripción de la imagen: dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional dictional]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al ser X continua, se agregan algunas propiedades extra:
+• FX es continua : FX(a) = lim
+t→aFX(t)
+
+[Descripción de la imagen: diction du suda]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Distribución acumulada
+Al ser X continua, se agregan algunas propiedades extra:
+• FX es continua : FX(a) = lim
+t→aFX(t)
+• La densidad se obtiene derivando la distribución (Por el teorema fundamental del
+cálculo):
+dFX(t)
+dt
+=
+d[R t
+−∞fX(x) dx]
+dt
+= fX(t)
+
+[Descripción de la imagen: diotudia at x cona se argans redes]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+
+[Descripción de la imagen: parsion varis desats]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+
+[Descripción de la imagen: parson varis octas variablee]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+
+[Descripción de la imagen: parsion varis desats]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
++o0
+
+fx(x) de =1]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
++o0
+
+fx(x) de =1]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+
+[Descripción de la imagen: parsona par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++00
+fx(x) de =1
+t
+Fx(t) = P(X < 1) = f (+) de]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+
+[Descripción de la imagen: parsona pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars par | Transcripción de la imagen: Variables
+
+aleatorias
+continuas Paralelismo con variables discretas
+Lic. Lucio
+P Jose¡ Variables Aleatorias Discretas Variables Aleatorias Continuas
+antazis
+Probabilidad puntual: px (x) > 0 Densidad de probabilidad: fy (x) > 0
+Motivación
+VA Recorrido: R y (valores de probabilidad positiva) Soporte: Sy (valores de densidad positiva)
+ariables
+aleatorias +00
+continuas
+PXx(X) =1 A (x) de =1
+Ejercitación
+xER X —
+t
+Fx(t) = P(X < $) = E PX (x) Fx(t) = P(X < $) = fxy (x) d
+x € Rx —
+x <f
+
+E(X) = E x - PX(x)
+
+xERX]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+
+[Descripción de la imagen: pars de pars pars pars pars pars pars pars pars pars pars | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+Variables
+aleatorias
+
+continuas
+
+Ejercitación
+
+Paralelismo con variables discretas
+
+Variables Aleatorias Discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+E(X) = E x - PX(x)
+
+xERX
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++o00
+fx(x) de =1
+t
+Fx(t) = P(X < 1) = f (+) de
++00
+E(X) = x + fx(x) dx]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+
+[Descripción de la imagen: parsona pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+Variables
+aleatorias
+
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+E(X) = E x - PX(x)
+
+xERX
+
+g cualquier función, E(g(X)) = E E() - Px(x)
+
+xERX
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++o00
+fx(x) de =1
+t
+Fx(t) = P(X < 1) = f (+) de
++00
+E(X) = x + fx(x) dx]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+g cualquier función, E(g(X)) =
+Z
++∞
+−∞
+g(x) · fX (x) dx
+
+[Descripción de la imagen: parsona pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejerc
+
+ación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++00
+
+ZPX<X):1 fx (x) dx =1
+
+xERX —
+t
+
+Fx(t) = P(X < $) = Z PX (x) Fx(t) = P(X < $) = fxy (x) d
+x € Rx —
+x<t
++00
+E(X) Z PX () E(X) = * - fx(x) dx
+xER X —
++00
+g cualquier función, Elg(X)) = Z () - Px(X) g cualquier función, E(g(X)) = E(x) - fx(x) dx
+
+xERX]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+g cualquier función, E(g(X)) =
+Z
++∞
+−∞
+g(x) · fX (x) dx
+E(X2) =
+X
+x∈RX
+x2 · pX (x)
+
+[Descripción de la imagen: parsona pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+E(X) = E - X(
+
+xERX
+
+g cualquier función, E(e(X)) = E E(x) - PxX()
+
+xERX
+
+E(?) = E - px()
+
+xERX
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++o00
+
+fx(x) de =1
+
+t
+Fx(t) = PX < 1)= fx () de
++00
+E(X) = * - fy (x) de
++00
+g cualquier función, E(g(X)) = E(x) - fx (x) dx]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+g cualquier función, E(g(X)) =
+Z
++∞
+−∞
+g(x) · fX (x) dx
+E(X2) =
+X
+x∈RX
+x2 · pX (x)
+E(X2) =
+Z
++∞
+−∞
+x2 · fX (x) dx
+
+[Descripción de la imagen: parsona pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars pars par | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERX
+
+Fx(t) = P(X < 1) = E Px()
+
+x € Rx
+x<t
+
+E(X) = E - X(
+
+xERX
+
+g cualquier función, E(e(X)) = E E(x) - PxX()
+
+xERX
+
+E(?) = E - px()
+
+xERX
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++o00
+
+fx(x) de =1
+
+t
+Fy (t) = P(X < 1) = f (x) de
++oo
+E(X) = x - fx(x) de
++o0
+g cualquier función, E(g(X)) = E(x) - fx (x) dx
++00
+E(?) = X - f (x) de]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+g cualquier función, E(g(X)) =
+Z
++∞
+−∞
+g(x) · fX (x) dx
+E(X2) =
+X
+x∈RX
+x2 · pX (x)
+E(X2) =
+Z
++∞
+−∞
+x2 · fX (x) dx
+V (X) = E(X2) −E2(X) ⇒σ(X) = p
+V (X)
+
+[Descripción de la imagen: parsone pars de variables pars de variables pars pars pars pars | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERx
+Fx(t) = P(X < t) = E PX ()
+x € Rx
+x<t
+E(X) = E - Px()
+xER X
+g cualquier función, E(g(X)) = E 8() - Px(»)
+xER X
+E(X?) = E X X(
+xER X
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++00
+fx (x) de =1
+— 00
+t
+Fx(t) = P(X < t) = fxy (x) d
+— 00
++00
+E(X) = * - fx(x) dx
+— 00
++00
+g cualquier función, E(g(X)) = 8(x) - fx () de
+—oo
++00
+E(X2) = X. x (x) dx
+— 00]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Paralelismo con variables discretas
+Variables Aleatorias Discretas
+Variables Aleatorias Continuas
+Probabilidad puntual: pX (x) ≥0
+Densidad de probabilidad: fX (x) ≥0
+Recorrido: RX (valores de probabilidad positiva)
+Soporte: SX (valores de densidad positiva)
+X
+x∈RX
+pX (x) = 1
+Z
++∞
+−∞
+fX (x) dx = 1
+FX (t) = P(X ≤t) =
+X
+x ∈RX
+x ≤t
+pX (x)
+FX (t) = P(X ≤t) =
+Z
+t
+−∞
+fX (x) dx
+E(X) =
+X
+x∈RX
+x · pX (x)
+E(X) =
+Z
++∞
+−∞
+x · fX (x) dx
+g cualquier función, E(g(X)) =
+X
+x∈RX
+g(x) · pX (x)
+g cualquier función, E(g(X)) =
+Z
++∞
+−∞
+g(x) · fX (x) dx
+E(X2) =
+X
+x∈RX
+x2 · pX (x)
+E(X2) =
+Z
++∞
+−∞
+x2 · fX (x) dx
+V (X) = E(X2) −E2(X) ⇒σ(X) = p
+V (X)
+V (X) = E(X2) −E2(X) ⇒σ(X) = p
+V (X)
+
+[Descripción de la imagen: parsone pars de variables pars de variables pars pars pars pars | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Paralelismo
+
+Variables Aleatorias Discretas
+
+con variables discretas
+
+Variables Aleatorias Continuas
+
+Probabilidad puntual: px (x) > 0
+
+Recorrido: R y (valores de probabilidad positiva)
+
+E PX(x) =1
+
+xERx
+Fx(t) = P(X < t) = E PX ()
+x € Rx
+x<t
+E(X) = E - Px()
+xER X
+g cualquier función, E(g(X)) = E 8() - Px(»)
+xER X
+E(X?) = E X X(
+xER X
+
+Densidad de probabilidad: fy (x) > 0
+
+Soporte: Sy (valores de densidad positiva)
+
++00
+fx (x) de =1
+— 00
+t
+Fx(t) = P(X < t) = fxy (x) d
+— 00
++00
+E(X) = * - fx(x) dx
+— 00
++00
+g cualquier función, E(g(X)) = 8(x) - fx () de
+—oo
++00
+E(X2) = X. x (x) dx
+— 00]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejercitación
+
+[Descripción de la imagen: una captura de pantalla de una pantalla de ordenador con el texto «erracon» | Transcripción de la imagen: Ejercitación]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de un número de números]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de un número de números]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+b) Calcular P(35 ≤T ≤37)
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de un número de números]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+b) Calcular P(35 ≤T ≤37)
+c) Calcular P(35 < T ≤37)
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de una pantalla de computadora]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+b) Calcular P(35 ≤T ≤37)
+c) Calcular P(35 < T ≤37)
+d) Calcular la función de distribución FT (t)
+
+[Descripción de la imagen: una aplicación informática para la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la solicitud]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+b) Calcular P(35 ≤T ≤37)
+c) Calcular P(35 < T ≤37)
+d) Calcular la función de distribución FT (t)
+e) Calcular el valor esperado de T
+
+[Descripción de la imagen: una aplicación informática para la aplicación de la aplicación informática]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+Consideremos la variable T = Temperatura [ºC] en un día de verano elegido al azar, y supongamos que tiene
+densidad de probabilidad dada por
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k
+b) Calcular P(35 ≤T ≤37)
+c) Calcular P(35 < T ≤37)
+d) Calcular la función de distribución FT (t)
+e) Calcular el valor esperado de T
+f ) Calcular la varianza de T
+
+[Descripción de la imagen: una aplicación informática para la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la solicitud]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+
+[Descripción de la imagen: una pantalla de computadora que muestra la ecuación de una función | Transcripción de la imagen: Ejemplo de temperatura
+
+2 .
+
+a) Calcular el valor de k:]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un polinomio | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Ejemplo de temperatura
+
+Lic. Lucio
+José
+Pantazis 0)= K- 25)? - (40 — t) si £ € [25, 40]
+T- o si * £ [25, 40]
+
+Motivación
+
+Variables a) Calcular el valor de k:
+aleatorias
+
+continuas Sabemos que la densidad tiene que integrar 1. Es decir,
+
+Ejercitación +o00
+
+fr(t)Idt=1]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+Resolvemos la integral
+Z
+25
+−∞
+fT (t)
+|{z}
+0
+dt +
+Z
+40
+25
+fT (t)
+|{z}
+k·(t−25)2·(40−t)
+dt +
+Z
++∞
+40
+fT (t)
+|{z}
+0
+dt
+
+[Descripción de la imagen: un simple ejemplo de la ecuación de Fourier | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+Ejemplo de temperatura
+
+k - (t — 25)? - (40 — it € [25,40
+fT(t)=í 0 (2 99 :¡íg%25,40%
+
+a) Calcular el valor de k:
+
+Sabemos que la densidad tiene que integrar 1. Es decir,
+
++o0
+fr(t)Idt=1
+—oo
+Resolvemos la integral
+25 40 +o00
+fr(t) dt + fr(t) dt + Fr(t) dt
+— Y 5 D s Y
+
+k-(t—25)2-(40—t) o]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+Resolvemos la integral
+Z
+25
+−∞
+fT (t)
+|{z}
+0
+dt +
+Z
+40
+25
+fT (t)
+|{z}
+k·(t−25)2·(40−t)
+dt +
+Z
++∞
+40
+fT (t)
+|{z}
+0
+dt
+Z
+40
+25
+k · (t −25)2 · (40 −t) dt = k ·
+Z
+40
+25
+−t3 + 90t2 −2625t + 25000 dt
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+Variables
+aleatorias
+
+continuas
+
+Ejercitación
+
+Ejemplo de temperatura
+
+k - (t — 25)? - (40 — it € [25,40
+fT(t)=í 0 (2 99 :¡íg%25,40%
+
+a) Calcular el valor de k:
+
+Sabemos que la densidad tiene que integrar 1. Es decir,
+
++00
+fr(t)Idt=1
+—oo
+Resolvemos la integral
+25 40 +00
+fr(t) dt + fr(t) dt + Fr(t) dt
+ioox0,/ a k-(tf2x5);-;t07t) 0 Y
+40 40
+k - (£ —25)? - (40 — t)dt=k- S + 90 — 2625t + 25000 dt
+
+25 25]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+Resolvemos la integral
+Z
+25
+−∞
+fT (t)
+|{z}
+0
+dt +
+Z
+40
+25
+fT (t)
+|{z}
+k·(t−25)2·(40−t)
+dt +
+Z
++∞
+40
+fT (t)
+|{z}
+0
+dt
+Z
+40
+25
+k · (t −25)2 · (40 −t) dt = k ·
+Z
+40
+25
+−t3 + 90t2 −2625t + 25000 dt
+Con la primitiva aplico barrow
+k ·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t
+
+40
+25
+= k ·
+16875
+4
+Z
++∞
+−∞
+fT (t) dt = 1 ⇒k =
+4
+16875
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+
+aleatorias
+ME Ejemplo de temperatura
+Lic. Lucio
+José
+Pantazis 0)= K- 25)? - (40 — t) si £ € [25, 40]
+T o si t £ [25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Ejercitación +o00
+fr(t)Idt=1
+—oo
+Resolvemos la integral
+25 40 +00
+fr(t) dt + fr(t) dt + Fr(t) dt
+—oo 25 40
+o k-(t—25)2-(40—t) o
+40 40
+k - (£ —25)? - (40 — t)dt=k- S + 90 — 2625t + 25000 dt
+25 25
+Con la primitiva aplico barrow
+[a 3 2605 “ 16875 4
+k- + 301 + 25000 - £ = — lde =1>k= —
+4 2 25 4 16875
+
+—oo]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+Resolvemos la integral
+Z
+25
+−∞
+fT (t)
+|{z}
+0
+dt +
+Z
+40
+25
+fT (t)
+|{z}
+k·(t−25)2·(40−t)
+dt +
+Z
++∞
+40
+fT (t)
+|{z}
+0
+dt
+Z
+40
+25
+k · (t −25)2 · (40 −t) dt = k ·
+Z
+40
+25
+−t3 + 90t2 −2625t + 25000 dt
+Con la primitiva aplico barrow
+k ·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t
+
+40
+25
+= k ·
+16875
+4
+Z
++∞
+−∞
+fT (t) dt = 1 ⇒k =
+4
+16875
+Es decir, k debe valer
+4
+16875
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+
+aleatorias
+ME Ejemplo de temperatura
+Lic. Lucio
+José
+Pantazis 0)= K- 25)? - (40 — t) si £ € [25, 40]
+T o si t £ [25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Ejercitación +o00
+fr(t)Idt=1
+—oo
+Resolvemos la integral
+25 40 +o00
+fr(t) dt + fr(t) dt + Fr(t) dt
+—oo 25 40
+o k-(t—25)2-(40—t) o
+40 40
+k - (£ —25)? - (40 — t)dt=k- S + 90 — 2625t + 25000 dt
+25 25
+Con la primitiva aplico barrow
+[ 3 265 “ 16875
+k- + 301 + 25000 - £ = — frltIdt=1> k=
+4 2 5 4
+
+—oo
+
+Es decir, k debe valer
+875
+
+16875]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+fT (t) =
+n
+k · (t −25)2 · (40 −t)
+si t ∈[25, 40]
+0
+si t ̸∈[25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Z
++∞
+−∞
+fT (t) dt = 1
+Resolvemos la integral
+Z
+25
+−∞
+fT (t)
+|{z}
+0
+dt +
+Z
+40
+25
+fT (t)
+|{z}
+k·(t−25)2·(40−t)
+dt +
+Z
++∞
+40
+fT (t)
+|{z}
+0
+dt
+Z
+40
+25
+k · (t −25)2 · (40 −t) dt = k ·
+Z
+40
+25
+−t3 + 90t2 −2625t + 25000 dt
+Con la primitiva aplico barrow
+k ·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t
+
+40
+25
+= k ·
+16875
+4
+Z
++∞
+−∞
+fT (t) dt = 1 ⇒k =
+4
+16875
+Es decir, k debe valer
+4
+16875
+(Sí, los números de este ejercicio no van a dar lindos, pero en general son más
+benevolentes)
+
+[Descripción de la imagen: un diagrama de los cuatroiers de un cuatroier | Transcripción de la imagen: Variables
+
+aleatorias
+ME Ejemplo de temperatura
+Lic. Lucio
+José
+Pantazis 0)= K- 25)? - (40 — t) si £ € [25, 40]
+T o si t £ [25, 40]
+a) Calcular el valor de k:
+Sabemos que la densidad tiene que integrar 1. Es decir,
+Ejercitación +o00
+fr(t)Idt=1
+—oo
+Resolvemos la integral
+25 40 +00
+fr(t) dt + fr(t) dt + Fr(t) dt
+—oo 25 40
+o k-(t—25)2-(40—t) o
+40 40
+k - (£ —25)? - (40 — t)dt=k- S + 90 — 2625t + 25000 dt
+25 25
+Con la primitiva aplico barrow
+[a 3 2605 “ 16875 4
+k- + 301 + 25000 - £ =k- — lde =1>k= —
+4 2 25 4 16875
+
+—oo
+
+Es decir, k debe valer
+
+(Sí, los números de este ejercicio no van a dar lindos, pero en general son más
+5
+benevolentes)]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+b) Calcular P(35 ≤T ≤37)
+
+[Descripción de la imagen: una captura de pantalla con un texto que lee '' ' | Transcripción de la imagen: Ejemplo de temperatura
+b) Calcular P(35 < T < 37)]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+b) Calcular P(35 ≤T ≤37)
+Para calcular dicha probabilidad, ahora que tenemos el valor de k, es simplemente
+integrar en el intervalo:
+P(35 ≤T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt
+
+[Descripción de la imagen: una pantalla de ordenador que muestre la fórmula de la fórmula]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+b) Calcular P(35 ≤T ≤37)
+Para calcular dicha probabilidad, ahora que tenemos el valor de k, es simplemente
+integrar en el intervalo:
+P(35 ≤T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt
+Como la primitiva es la misma:
+4
+16875 ·
+
+−t4
+4 + 30t3 −2625 · t2
+2
++ 25000 · t
+
+37
+35
+=
+=
+4
+16875 · 956 = 3824
+16875 ≈0.2266
+
+[Descripción de la imagen: una interfaz de computadora con una interfaz de computadora, la interfaz de computadora es una interfaz de computadora]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+b) Calcular P(35 ≤T ≤37)
+Para calcular dicha probabilidad, ahora que tenemos el valor de k, es simplemente
+integrar en el intervalo:
+P(35 ≤T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt
+Como la primitiva es la misma:
+4
+16875 ·
+
+−t4
+4 + 30t3 −2625 · t2
+2
++ 25000 · t
+
+37
+35
+=
+=
+4
+16875 · 956 = 3824
+16875 ≈0.2266
+Notar que da como resultado es similar a los que se obtuvieron cuando consideramos la
+variable como discreta:
+print(pR)
+## P(35<= T0<=37) P(35<= T1<=37) P(35<= T2<=37)
+##
+0.3187556
+0.2367604
+0.2276306
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un número de los números]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+b) Calcular P(35 ≤T ≤37)
+Para calcular dicha probabilidad, ahora que tenemos el valor de k, es simplemente
+integrar en el intervalo:
+P(35 ≤T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt
+Como la primitiva es la misma:
+4
+16875 ·
+
+−t4
+4 + 30t3 −2625 · t2
+2
++ 25000 · t
+
+37
+35
+=
+=
+4
+16875 · 956 = 3824
+16875 ≈0.2266
+Notar que da como resultado es similar a los que se obtuvieron cuando consideramos la
+variable como discreta:
+print(pR)
+## P(35<= T0<=37) P(35<= T1<=37) P(35<= T2<=37)
+##
+0.3187556
+0.2367604
+0.2276306
+Es decir, a medida que se obtiene más precisión en la medición, las probabilidades
+discretas convergen a las probabilidades continuas.
+
+[Descripción de la imagen: una pantalla de computadora que muestra el texto de un programa]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+c) Calcular P(35 < T ≤37)
+
+[Descripción de la imagen: una pantalla de ordenador con la de texto, la de texto, la de texto, la de texto, la de | Transcripción de la imagen: Ejemplo de temperatura
+
+c) Calcular P(35 < T < 37)]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+c) Calcular P(35 < T ≤37)
+Numéricamente, se calcula del mismo modo que la probabilidad anterior, ya que se
+mantienen los mismos límites de integración. Es decir,
+P(35 < T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt = 3824
+16875
+
+[Descripción de la imagen: una pantalla del ordenador que muestra el número del número de los números en el programa]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+c) Calcular P(35 < T ≤37)
+Numéricamente, se calcula del mismo modo que la probabilidad anterior, ya que se
+mantienen los mismos límites de integración. Es decir,
+P(35 < T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt = 3824
+16875
+Otra forma de verlo es la siguiente:
+P(35 ≤T ≤37) = P(T = 35)
+|
+{z
+}
+0
++ P(35 < T ≤37) = 3824
+16875
+
+[Descripción de la imagen: una interfaz de computadora, utilizando el programa para crear un programa para un programa]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+c) Calcular P(35 < T ≤37)
+Numéricamente, se calcula del mismo modo que la probabilidad anterior, ya que se
+mantienen los mismos límites de integración. Es decir,
+P(35 < T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt = 3824
+16875
+Otra forma de verlo es la siguiente:
+P(35 ≤T ≤37) = P(T = 35)
+|
+{z
+}
+0
++ P(35 < T ≤37) = 3824
+16875
+esto se debe a que para cualquier variable aleatoria continua, la probabilidad en un
+único punto es siempre 0.
+
+[Descripción de la imagen: una aplicación informática para la aplicación informática, la aplicación informática es un simple, simple y simple]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+c) Calcular P(35 < T ≤37)
+Numéricamente, se calcula del mismo modo que la probabilidad anterior, ya que se
+mantienen los mismos límites de integración. Es decir,
+P(35 < T ≤37) =
+Z 37
+35
+4
+16875 · (t −25)2 · (40 −t) dt = 3824
+16875
+Otra forma de verlo es la siguiente:
+P(35 ≤T ≤37) = P(T = 35)
+|
+{z
+}
+0
++ P(35 < T ≤37) = 3824
+16875
+esto se debe a que para cualquier variable aleatoria continua, la probabilidad en un
+único punto es siempre 0.
+Comentario: En general, para cualquier variable aleatoria continua X:
+P(a ≤X ≤b) = P(a < X ≤b) = P(a ≤X < b) = P(a < X < b)
+
+[Descripción de la imagen: una aplicación informática para la aplicación informática, la aplicación informática es un simple, simple y simple]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+
+[Descripción de la imagen: una captura de pantalla en windows xp | Transcripción de la imagen: Ejemplo de temperatura
+
+d) Calcular la función de distribución de T-]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+
+[Descripción de la imagen: una pantalla de ordenador con el nombre del texto y la imagen de una pantalla de ordenador | Transcripción de la imagen: Ejemplo de temperatura
+
+t
+FrT(t) = P(T < ) = / fT(s) as
+—
+
+d) Calcular la función de distribución de T]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+
+[Descripción de la imagen: una pantalla de ordenador con el nombre del texto y la imagen de una pantalla de ordenador]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:
+
+[Descripción de la imagen: una pantalla de ordenador con el nombre del texto y la imagen de una pantalla de ordenador]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un polinomio]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un polinomio]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+
+[Descripción de la imagen: un diagrama de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de la ecuación de]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+4
+16875
+·
+
+−
+s4
+4
++ 30s3 −
+2625 · s2
+2
++ 25000 · s
+25
+t
+=
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+4
+16875
+·
+
+−
+s4
+4
++ 30s3 −
+2625 · s2
+2
++ 25000 · s
+25
+t
+=
+=
+4
+16875
+·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t −
+703125
+4
+
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+
+aleatorias
+Es Ejemplo de temperatura
+Lic. Lucio d) Calcular la función de distribución de T
+José t
+as Fr(t) = P(T < = f7 () ds
+Motivación — 00
+Sin embargo, hay que recordar que f—r(t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+Variables
+aleatorias t
+continuas * si< - f - 66 eo
+[eoo]
+Ejercitación 0
+9 SI25<t <40:
+25 t
+F7 (t) = f (s) ds+ fT(s) de
+—oo 25
+[o)
+4 Ea 3 26957 25
+- — + 305 — + 25000 - s =
+16875 4 2 t
+
+4 [ 3 2057 703125
+- - | -— +30 — + 25000 - £ —
+4 2 4]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+4
+16875
+·
+
+−
+s4
+4
++ 30s3 −
+2625 · s2
+2
++ 25000 · s
+25
+t
+=
+=
+4
+16875
+·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t −
+703125
+4
+
+•
+Si t > 40:
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Variables
+aleatorias
+continuas
+
+Ejercitación
+
+d) Calcular la función de distribución de T
+
+Ejemplo de temperatura
+t
+Fr(t) = P(T < t) = f7 (s) ds
+
+— 0o
+
+Sin embargo, hay que recordar que f—r(t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+
+t
+* Sit < 25:F7(t) = f
+
+9 SI25 <t <140:
+
+9 Sit > 40:
+
+fT(s) ds =0
+0
+25 t
+Fr(t) = f7(s) ds + f7 () ds
+—oo 25
+()
+
+25
+
+4 * 3 26957
+- [ —-— +305 — + 25000 - s
+16875 4 2 t
+
+4 [ 3 2057 703125
+- [ —-— +303 — + 25000 - £ —
+
+4 2 4]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+4
+16875
+·
+
+−
+s4
+4
++ 30s3 −
+2625 · s2
+2
++ 25000 · s
+25
+t
+=
+=
+4
+16875
+·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t −
+703125
+4
+
+•
+Si t > 40:FT (t) = R 25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+40
+25
+fT (s) ds
+|
+{z
+}
+1
++ R t
+40
+fT (s)
+|{z}
+0
+ds = 1
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+
+aleatorias
+Es Ejemplo de temperatura
+Lic. Lucio d) Calcular la función de distribución de T
+José t
+Pantazis F7 (t) = P(T < )= f (s) ds
+Motivación —
+Sin embargo, hay que recordar que f—r(t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+Variables
+aleatorias t
+continuas * si< - f - 66 eo
+— 00
+Ejercitación 0
+* SI25 < t <140:
+25 t
+Fr(t) = f7 (s) ds + f7 (s) ds
+—oo 25
+o
+4 Ea y 2657 25
+- — + 3057 — + 25000 - s =
+16875 4 2 t
+4 “ y 257 703125
+= - — + 30t5 — + 25000 - + —
+16875 4 2 4
+40
+25 t
+* Sir > 40:F7(t) = f fr(s) de + Fr(s) ds + f fr(s) de =1
+—ooONn D 25 40 D
+0 — 0
+
+1]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+d) Calcular la función de distribución de T
+FT (t) = P(T ≤t) =
+Z
+t
+−∞
+fT (s) ds
+Sin embargo, hay que recordar que fT (t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+•
+Si t < 25:FT (t) = R t
+−∞
+fT (s)
+|{z}
+0
+ds = 0
+•
+Si 25 ≤t ≤40:
+FT (t) =
+Z
+25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+t
+25
+fT (s) ds
+4
+16875
+·
+
+−
+s4
+4
++ 30s3 −
+2625 · s2
+2
++ 25000 · s
+25
+t
+=
+=
+4
+16875
+·
+
+−
+t4
+4
++ 30t3 −
+2625 · t2
+2
++ 25000 · t −
+703125
+4
+
+•
+Si t > 40:FT (t) = R 25
+−∞
+fT (s)
+|{z}
+0
+ds +
+Z
+40
+25
+fT (s) ds
+|
+{z
+}
+1
++ R t
+40
+fT (s)
+|{z}
+0
+ds = 1
+Por lo tanto:
+FT (t) =
+
+0
+si t < 25
+−
+t4
+16875 +
+8t3
+1125 −14·t2
+45
++ 160·t
+27
+−125
+3
+si 25 ≤t ≤40
+1
+si t > 40
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: Variables
+
+aleatorias
+ti .
+Ejemplo de temperatura
+Lic. Lucio d) Calcular la función de distribución de T
+José t
+Pantazis F7 (t) = P(T < )= f (s) ds
+Motivación —oo
+Sin embargo, hay que recordar que f—r(t) es una función por tramos. Por lo tanto, dividimos en 3 casos:
+Variables
+aleatorias t
+continuas * si< - f - 66 eo
+— 00
+Ejercitación 0
+9 SI25<t <40:
+25 t
+Fr(t) = f (s) ds+ fT(s) de
+—oo 25
+o
+4 s y 2657 25
+- — + 3057 — + 25000 - s =
+16875 4 2 t
+4 “ y 257 703125
+= - — + 30t5 — + 25000 - + —
+16875 4 2 4
+40
+25 t
+* Sir > 40:F7(t) = f fr(s) de + Fr(s) ds + f fr(s) de =1
+—oon » 40 ,
+> 25
+0 — 1
+1
+Por lo tanto:
+o] sit<<25
+4 3 2
+Fr(t) = —l 8 — 14-t 160.t _ 125 ;
+700 16875 + 1125 — 45 + “7 3 si25 <t <40
+1 sit > 40]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+e) Calcular el valor esperado de T
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+e) Calcular el valor esperado de T
+Como fue visto, para el valor esperado de T hay que ponderar los valores de la variable
+con su respectiva densidad:
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'ejete tempoera ']
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+e) Calcular el valor esperado de T
+Como fue visto, para el valor esperado de T hay que ponderar los valores de la variable
+con su respectiva densidad:
+E(T) =
+Z +∞
+−∞
+t · fT (t) dt =
+Z 25
+−∞
+t · 0 dt +
+Z 40
+25
+t · fT (t) dt +
+Z +∞
+40
+t · 0 dt =
+
+[Descripción de la imagen: ejecjacjacjacjacjacjacjacjacjacjacjacjacjacjacjacjacjacjacjajajacie ciencia ciencia ciencia ciencia ciencia ciencia]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+e) Calcular el valor esperado de T
+Como fue visto, para el valor esperado de T hay que ponderar los valores de la variable
+con su respectiva densidad:
+E(T) =
+Z +∞
+−∞
+t · fT (t) dt =
+Z 25
+−∞
+t · 0 dt +
+Z 40
+25
+t · fT (t) dt +
+Z +∞
+40
+t · 0 dt =
+=
+4
+16875 ·
+Z 40
+25
+t ·  −t3 + 90t2 −2625t + 25000
+dt =
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+e) Calcular el valor esperado de T
+Como fue visto, para el valor esperado de T hay que ponderar los valores de la variable
+con su respectiva densidad:
+E(T) =
+Z +∞
+−∞
+t · fT (t) dt =
+Z 25
+−∞
+t · 0 dt +
+Z 40
+25
+t · fT (t) dt +
+Z +∞
+40
+t · 0 dt =
+=
+4
+16875 ·
+Z 40
+25
+t ·  −t3 + 90t2 −2625t + 25000
+dt =
+=
+
+−4t5
+84375 + 2t4
+375 −28t3
+135 + 80t2
+27
+
+40
+25
+= 34
+
+[Descripción de la imagen: un diagrama de la ecuación de un polinomio]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+f ) Calcular la varianza de T
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras 'e - o'and'e - o ' | Transcripción de la imagen: Ejemplo de temperatura
+
+f) Calcular la varianza de T]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+f ) Calcular la varianza de T
+Para calcular la varianza, podemos calcular primero E(T 2):
+E(T 2) =
+Z +∞
+−∞
+t2 · fT (t) dt =
+Z 40
+25
+t2 · fT (t) dt =
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un polinomio | Transcripción de la imagen: Variables
+aleatorias
+
+ME Ejemplo de temperatura
+Lic. Lucio
+José
+
+Pantazis
+
+f) Calcular la varianza de T
+
+Para calcular la varianza, podemos calcular primero E(7):
+Ejercitación +o00 40
+
+E(Tº)=/ t2vf—¡-(t)dt=/ £ - fr(t) dt =
+—00 25]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+f ) Calcular la varianza de T
+Para calcular la varianza, podemos calcular primero E(T 2):
+E(T 2) =
+Z +∞
+−∞
+t2 · fT (t) dt =
+Z 40
+25
+t2 · fT (t) dt =
+=
+4
+16875 ·
+Z 40
+25
+t2 ·  −t3 + 90t2 −2625t + 25000
+dt =
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un número de los números | Transcripción de la imagen: Variables
+aleatorias
+
+continuas Ejemplo de temperatura
+
+Lic. Lucio
+José
+Pantazis
+
+f) Calcular la varianza de T
+
+Para calcular la varianza, podemos calcular primero E(7):
+
+40
+
+Ejercitación +00
+E(Tº)=/ t2vf—¡-(t)dt=/ £ - fr(t) dt =
+— 2
+
+00 5
+
+40
+
+4
+
+= ——:- t2v( £ + 90t” — 2625t 4 25000) dt =
+16875 /]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+f ) Calcular la varianza de T
+Para calcular la varianza, podemos calcular primero E(T 2):
+E(T 2) =
+Z +∞
+−∞
+t2 · fT (t) dt =
+Z 40
+25
+t2 · fT (t) dt =
+=
+4
+16875 ·
+Z 40
+25
+t2 ·  −t3 + 90t2 −2625t + 25000
+dt =
+=
+
+−2t6
+50625 + 8t5
+1875 −7t4
+45 + 160t3
+81
+
+40
+25
+= 1165
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la ecuación de un número del número del número del número del número | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Lic. Lucio
+José
+Pantazis
+
+Ejercitación
+
+Ejemplo de temperatura
+
+f) Calcular la varianza de T
+
+Para calcular la varianza, podemos calcular primero E(7):
+
+L00 40
+E(T2)=/ t2va(t)dt=/ - fr(t) dt =
+— 2
+
+00 5
+
+40
+4
+= ——:- t2v( £ + 90t” — 2625t 4 25000) dt =
+16875 /
+
+_ 266 85 74 1608 ) |
+50625 * 1875 45 8l
+
+= 1165
+
+25]]
+
+Variables
+aleatorias
+continuas
+Lic. Lucio
+José
+Pantazis
+Motivación
+Variables
+aleatorias
+continuas
+Ejercitación
+Ejemplo de temperatura
+f ) Calcular la varianza de T
+Para calcular la varianza, podemos calcular primero E(T 2):
+E(T 2) =
+Z +∞
+−∞
+t2 · fT (t) dt =
+Z 40
+25
+t2 · fT (t) dt =
+=
+4
+16875 ·
+Z 40
+25
+t2 ·  −t3 + 90t2 −2625t + 25000
+dt =
+=
+
+−2t6
+50625 + 8t5
+1875 −7t4
+45 + 160t3
+81
+
+40
+25
+= 1165
+Por lo tanto, la varianza es:
+V (X) = E(X 2) −E 2(X) = 1165 −342 = 9
+
+[Descripción de la imagen: una aplicación informática para la aplicación informática del ordenador | Transcripción de la imagen: Variables
+aleatorias
+continuas
+
+Ejemplo de temperatura
+Lic. Lucio
+
+José
+Pantazis
+
+f) Calcular la varianza de T
+
+Para calcular la varianza, podemos calcular primero E(7):
+
+L00 40
+E(T2)=/ t2va(t)dt=/ - fr(t) dt =
+— 2
+
+00 5
+
+Ejercitación
+
+40
+
+4
+
+= ——:- t2v( £ + 90t” — 2625t 4 25000) dt =
+16875 /
+
+_ 2t5 | 8 7 , 160t3
+50625 * 1875 45 8l
+
+Por lo tanto, la varianza es:
+
+40
+
+= 1165
+
+25
+
+V(X) = E(X?) — E?(X) = 1165 — 342 =9]]
+

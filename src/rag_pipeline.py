@@ -1,12 +1,11 @@
 """
 RAG Pipeline Module using LangChain
-Pipeline principal de RAG usando LangChain para máxima flexibilidad
+Pipeline principal de RAG usando LangChain
 """
 
 import os
 import logging
 from typing import Dict, Any, List, Optional
-from pathlib import Path
 from dotenv import load_dotenv
 
 # Cargar variables de entorno
@@ -14,22 +13,21 @@ load_dotenv()
 
 # Imports de LangChain
 from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Imports locales
-from .data_loading import load_documents, load_documents_as_chunks
+from .data_loading import DocumentLoader
 from .text_processing import TextProcessor
 from .vector_store import create_vector_store
 from .retriever import create_retriever
 from .generator import ExerciseGenerator
-from .query_utils import prepare_search_query
+from .query_utils import prepare_search_query, normalize_text
 
 logger = logging.getLogger(__name__)
 
 
 class RAGPipeline:
     """
-    Pipeline RAG completo usando LangChain para máxima flexibilidad
+    Pipeline RAG completo usando LangChain
     """
     
     def __init__(
@@ -43,7 +41,7 @@ class RAGPipeline:
         reset_collection: bool = False
     ):
         """
-        Inicializa el pipeline RAG con LangChain
+        Inicializa el pipeline RAG
         
         Args:
             collection_name: Nombre de la colección ChromaDB
@@ -62,7 +60,8 @@ class RAGPipeline:
         self.chunk_size = chunk_size if chunk_size is not None else int(os.getenv('CHUNK_SIZE', '1000'))
         self.chunk_overlap = chunk_overlap if chunk_overlap is not None else int(os.getenv('CHUNK_OVERLAP', '200'))
         
-        # No necesitamos data_loader ya que usamos la función load_documents
+        # Inicializar componentes
+        self.data_loader = DocumentLoader()
         self.text_processor = TextProcessor(
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap
@@ -79,29 +78,28 @@ class RAGPipeline:
         # Retriever
         self.retriever = create_retriever(
             vector_store=self.vector_store,
-            k=5,
+            k=10,
             score_threshold=0.0
         )
         
         # Generador de ejercicios
         self.generator = ExerciseGenerator(self.generator_model_name)
         
-        # Query utils (función importada)
-        self.query_utils = prepare_search_query
-        
         logger.info("RAGPipeline inicializado correctamente")
     
     def load_materials(
         self,
         data_directory: str,
-        file_extensions: List[str] = None
+        file_extensions: List[str] = None,
+        skip_on_error: bool = True
     ) -> Dict[str, Any]:
         """
-        Carga materiales académicos desde un directorio (optimizado)
+        Carga materiales académicos desde un directorio
         
         Args:
             data_directory: Directorio con los materiales
             file_extensions: Extensiones de archivo a procesar
+            skip_on_error: Si continuar cuando hay errores en documentos individuales
             
         Returns:
             Diccionario con estadísticas de carga
@@ -110,35 +108,39 @@ class RAGPipeline:
             if file_extensions is None:
                 file_extensions = ['.txt', '.pdf', '.tex']
             
-            # Cargar documentos directamente como chunks (optimizado)
-            chunks = load_documents_as_chunks(
-                directory=data_directory,
-                file_extensions=file_extensions,
-                use_academic_metadata=True,
-                chunk_size=self.chunk_size,
-                chunk_overlap=self.chunk_overlap
+            # Cargar documentos con metadata académica de la jerarquía de carpetas
+            documents = self.data_loader.load_documents_from_directory(
+                directory_path=data_directory,
+                metadata_extractor=self.data_loader.extract_academic_metadata
             )
             
-            if not chunks:
-                logger.warning(f"No se encontraron chunks en {data_directory}")
-                return {"status": "error", "message": "No chunks found"}
+            if not documents:
+                logger.warning(f"No se encontraron documentos en {data_directory}")
+                # No es un error crítico si ya hay docs en la DB
+                collection_info = self.vector_store.get_collection_info()
+                existing_count = collection_info.get('document_count', 0)
+                if existing_count > 0:
+                    return {
+                        "status": "warning",
+                        "message": f"No se encontraron nuevos documentos, pero hay {existing_count} documentos existentes",
+                        "documents_loaded": 0,
+                        "chunks_created": 0,
+                        "documents_added": 0,
+                        "existing_documents": existing_count
+                    }
+                return {"status": "error", "message": "No documents found"}
             
-            # Convertir a formato LangChain Document
-            langchain_docs = []
-            for chunk in chunks:
-                langchain_doc = Document(
-                    page_content=chunk['content'],
-                    metadata=chunk['metadata']
-                )
-                langchain_docs.append(langchain_doc)
+            # Procesar texto (fragmentar en chunks)
+            processed_docs = self.text_processor.split_documents(documents)
             
             # Agregar al vector store
-            doc_ids = self.vector_store.add_documents(langchain_docs)
+            doc_ids = self.vector_store.add_documents(processed_docs)
             
             # Estadísticas
             stats = {
                 "status": "success",
-                "chunks_created": len(chunks),
+                "documents_loaded": len(documents),
+                "chunks_created": len(processed_docs),
                 "documents_added": len(doc_ids),
                 "collection_info": self.vector_store.get_collection_info()
             }
@@ -148,12 +150,30 @@ class RAGPipeline:
             
         except Exception as e:
             logger.error(f"Error cargando materiales: {str(e)}")
-            return {"status": "error", "message": str(e)}
+            
+            # Si skip_on_error, no abortar - reportar estado parcial
+            if skip_on_error:
+                collection_info = self.vector_store.get_collection_info()
+                existing_count = collection_info.get('document_count', 0)
+                
+                if existing_count > 0:
+                    logger.warning(f"Continuando con {existing_count} documentos existentes")
+                    return {
+                        "status": "partial_error",
+                        "message": str(e),
+                        "documents_loaded": 0,
+                        "chunks_created": 0,
+                        "documents_added": 0,
+                        "existing_documents": existing_count,
+                        "can_continue": True
+                    }
+            
+            return {"status": "error", "message": str(e), "can_continue": False}
     
     def generate_exercises(
         self,
         query_params: Dict[str, Any],
-        k_retrieval: int = 5,
+        k_retrieval: int = 10,
         use_filters: bool = True
     ) -> Dict[str, Any]:
         """
@@ -169,18 +189,16 @@ class RAGPipeline:
         """
         try:
             # Preparar consulta de búsqueda
-            search_query = self.query_utils(query_params)
+            search_query = prepare_search_query(query_params)
             
             # Construir filtros si es necesario
             filter_dict = None
             if use_filters:
                 filter_dict = {}
                 if query_params.get("materia"):
-                    filter_dict["materia"] = query_params["materia"]
-                if query_params.get("tipo_documento"):
-                    filter_dict["tipo_documento"] = query_params["tipo_documento"]
-                if query_params.get("nivel_dificultad"):
-                    filter_dict["difficulty_hint"] = query_params["nivel_dificultad"]
+                    # Normalizar materia para búsqueda robusta
+                    materia_normalizada = normalize_text(query_params["materia"])
+                    filter_dict["materia"] = materia_normalizada
             
             # Recuperar contexto relevante
             context_docs = self.retriever.retrieve(
@@ -196,9 +214,11 @@ class RAGPipeline:
                 }
             
             # Generar ejercicios
+            tipo_ejercicio = query_params.get("tipo_ejercicio", "multiple_choice")
             exercises = self.generator.generate_exercises(
                 query_params=query_params,
-                context_documents=context_docs
+                context_documents=context_docs,
+                tipo_ejercicio=tipo_ejercicio
             )
             
             # Agregar información de contexto
@@ -254,6 +274,8 @@ class RAGPipeline:
         except Exception as e:
             logger.error(f"Error en búsqueda: {str(e)}")
             return []
+    
+    
     
     def get_system_info(self) -> Dict[str, Any]:
         """
@@ -340,7 +362,7 @@ def create_rag_pipeline(
     reset_collection: bool = False
 ) -> RAGPipeline:
     """
-    Función de conveniencia para crear un pipeline RAG con LangChain
+    Función de conveniencia para crear un pipeline RAG
     
     Args:
         collection_name: Nombre de la colección (por defecto de CHROMA_COLLECTION_NAME)
@@ -364,69 +386,3 @@ def create_rag_pipeline(
         reset_collection=reset_collection
     )
 
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Crear pipeline RAG
-    print("Creando pipeline RAG...")
-    rag_pipeline = create_rag_pipeline(
-        reset_collection=True
-    )
-    
-    # Mostrar información del sistema
-    system_info = rag_pipeline.get_system_info()
-    print("Información del Sistema:")
-    print("=" * 50)
-    for component, info in system_info.items():
-        print(f"\n{component.upper()}:")
-        for key, value in info.items():
-            print(f"  {key}: {value}")
-    
-    # Crear documentos de ejemplo
-    from langchain_core.documents import Document
-    
-    sample_docs = [
-        Document(
-            page_content="La distribución normal es fundamental en estadística. Se usa para modelar muchos fenómenos naturales.",
-            metadata={"materia": "Probabilidad y estadística", "tipo_documento": "apunte", "difficulty_hint": "introductorio"}
-        ),
-        Document(
-            page_content="Calcular P(X < 2) para X ~ N(0, 1) usando tablas de distribución normal estándar.",
-            metadata={"materia": "Probabilidad y estadística", "tipo_documento": "ejercicio", "difficulty_hint": "intermedio"}
-        ),
-        Document(
-            page_content="Los algoritmos de clustering como K-means son importantes en machine learning.",
-            metadata={"materia": "Sistemas de Inteligencia Artificial", "tipo_documento": "concepto", "difficulty_hint": "avanzado"}
-        )
-    ]
-    
-    # Agregar documentos
-    print("\nAgregando documentos...")
-    doc_ids = rag_pipeline.vector_store.add_documents(sample_docs)
-    print(f"Documentos agregados: {len(doc_ids)}")
-    
-    # Ejemplo de generación de ejercicios
-    print("\nGenerando ejercicios...")
-    query_params = {
-        "materia": "Probabilidad y estadística",
-        "unidad": "Distribuciones continuas",
-        "tipo_ejercicio": "multiple_choice",
-        "cantidad": 2,
-        "nivel_dificultad": "intermedio"
-    }
-    
-    exercises = rag_pipeline.generate_exercises(query_params)
-    print(f"Ejercicios generados: {exercises}")
-    
-    # Ejemplo de búsqueda
-    print("\nBuscando materiales...")
-    search_results = rag_pipeline.search_materials("distribución normal", k=2)
-    for i, result in enumerate(search_results):
-        print(f"Resultado {i+1}: {result['content'][:100]}...")
-    
-    # Estadísticas de recuperación
-    print("\nEstadísticas de recuperación:")
-    stats = rag_pipeline.get_retrieval_stats("probabilidad")
-    print(f"Estadísticas: {stats}")

@@ -1,0 +1,286 @@
+Probabilidad y Estadística 93.24
+curso 2023
+Probabilidad y Estadística (93.24)
+Trabajo Práctico No 4
+Variables aleatorias continuas
+1. Una variable aleatoria X tiene densidad de probabilidad
+fX(x)
+=
+(
+c
+√
+A2−x2
+x ∈(−A, A)
+0
+x /∈(−A, A)
+a) Determine el valor de la constante c para que sean funciones densidad de probabilidad de
+variables aleatorias continuas (variable aleatoria continua) X;
+b) Encuentre la función de distribución FX(x) = P(X ≤x).
+c) Calcule el valor esperado E[X] y la varianza Var(X);
+2. Sea X una čon distribución uniforme en (0, 8). Calcular:
+a) P(2 < X < 5).
+b) P[(0 < X < 3)/(0 < X < 5)].
+3. La función densidad de probabilidad fX(x) de la variable aleatoria continua X es:
+fX(x) =
+ 2(1 −x)
+x ∈(0, 1)
+0
+x /∈(0, 1)
+a) Calcular E[X] y Var(X).
+b) Calcular la mediana m de X definida por P(X < m) = 0.5.
+4. La variable aleatoria continua X tiene por función densidad de probabilidad a fX(x) = x/2 0 <
+x < 2 y 0 fuera de ese intervalo. Si se hacen
+a) dos determinaciones independientes de X, ¿cuál es la probabilidad de que ambas sean ma-
+yores que 1?
+b) tres determinaciones independientes, ¿cuál es la probabilidad de que exactamente dos sean
+mayores que 1?
+5. El porcentaje de alcohol (100 X) en cierto compuesto se puede considerar una variable aleatoria
+continua, en donde X verifica 0 < X < 1 y tiene la función de densidad fX(x) = 20x3(1−x) 0 <
+x < 1 y 0 fuera de ese intervalo.
+a) Determinar la función de distribución FX y representarla gráficamente.
+b) Calcular P[(X < 1/2)/(1/3 < X < 2/3)].
+1
+
+[Descripción de la imagen: la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de]
+
+Probabilidad y Estadística 93.24
+curso 2023
+6. La duración en horas X de cierto dispositivo electrónico es una variable aleatoria continua con
+función densidad de probabilidad
+fX(x) =
+ 100/x2
+x > 100
+0
+x ≤100
+a) ¿Cuál es la probabilidad de que un dispositivo dure menos de 200 hs si se sabe que el
+dispositivo aún funciona después de 150 hs de servicio?
+b) ¿Cuál es la probabilidad de que si se instalan 3 de tales dispositivos en un sistema 2 fallen
+antes de las 150 horas de servicio y el restante después de las 150 hs?
+c) ¿Cuál es el número máximo de dispositivos que se pueden poner en un sistema para que la
+probabilidad de que después de 150 horas de servicio todos ellos funcionen sea 0.4?
+7. El colectivo de cierta línea va a un horario estricto con intervalos de 5 minutos. Calcular la
+probabilidad de que un pasajero que se acerque a la parada en un instante al azar tenga que
+esperar el colectivo menos de tres minutos. Suponga que el instante de llegada del pasajero a la
+parada es una variable aleatoria continua con distribución uniforme en (0, 5).
+8. La duración en horas de un sistema puede considerarse una variable aleatoria continua con
+distribución exponencial de parámetro característico 0.001 hora−1.
+a) Una empresa que produce este sistema desea garantizarlo durante cierto tiempo. ¿Cuántas
+horas lo debe amparar la garantía de buen funcionamiento para asegurar, con probabilidad
+0.95, que el sistema funcionará como mínimo el número de horas garantizadas.
+b) Un dispositivo utiliza cinco de estos sistemas y funciona si todos ellos lo hacen. Los sistemas
+funcionan (y fallan) en forma independiente. ¿Cuál es la probabilidad de que el dispositivo
+opere, por lo menos, 100 horas? ¿Y 1000 horas?
+c) Otro dispositivo también utiliza cinco de estos sistemas y funciona mientras lo hagan por
+lo menos tres de ellos (no suponga ninguna conexión en especial). Los sistemas funcionan
+(y también fallan) en forma independiente. ¿Cuál es la probabilidad de que el dispositivo
+funcione aún al cabo de 1000 horas?
+9. Un sistema está integrado por dos componentes A y B que fallan al azar en promedio 1 vez cada
+500 y 800 horas respectivamente. El sistema falla cuando cualquiera de dichos componentes falla.
+Se supone que estos componentes fallan en forma independiente y que el tiempo entre fallas es
+una variable aleatoria con distribución exponencial. ¿Cuál es la probabilidad de que el sistema
+falle después de transcurridas las primeras 1000 horas?
+10. El tiempo de duración hasta la falla de un dispositivo mecánico se supone que tiene distribución
+exponencial con una media de 400 hs.
+a) Este dispositivo ha funcionado sin fallas durante 400 horas. ¿Cuál es la probabilidad de que
+falle en las próximas 100 horas?.
+b) Si se ponen a funcionar 10 de estos dispositivos , ¿cuál es la probabilidad de que falle al
+menos uno de ellos antes de 100 horas?. Suponga que los dispositivos fallan de manera
+independiente.
+2
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+11. Un sistema consta de n componentes idénticos conectados en serie. Cuando falla por lo menos un
+componente falla todo el sistema. Suponga que la duración de cada componente es una variable
+aleatoria con distribución exponencial de parámetro λ = 0.01 1/hora, y que los componentes fallan
+independientemente uno de otro. Defina los sucesos independientes Ai = i- ésimo componente
+dura por lo menos t horas, i = 1, . . . n. Sea T el tiempo en el que falla el sistema, esto es, la
+duración mínima de funcionamiento entre los n componentes.
+Considerando la independencia de los sucesos Ai, obtenga F(t) = P(T < t) y la función densidad
+de probabilidad de T. ¿Qué tipo de distribución de probabilidades tiene T ? ¿Cuál es el valor
+esperado de T?
+12. La duración de ciertos dispositivos es una variable aleatoria con distribución exponencial de
+parámetro λ (en 1/hora). La probabilidad de que en una muestra de 5 dispositivos haya por lo
+menos uno que dure más de 1200 hs. es 0.75.
+a) Hallar la constante λ.
+b) Suponga que estos dispositivos se conectan en serie de manera tal que al fallar por lo menos
+uno de ellos falla todo el sistema. Calcular la probabilidad de que el sistema funcione mas
+de 1500 horas.
+13. Una función que se relaciona a veces con variable aleatoria continua no negativas es la función
+de tasa de fallas (o la tasa de riesgo). Esta función se define por R(t) = f(t)/(1 −F(t)) para una
+función de densidad f(t) con su correspondiente función de distribución F(t).
+Si la variable aleatoria T es la duración de un componente entonces, para ∆t pequeño, P[(t ≤
+T ≤t + ∆t)|(T > t)] ≈R(t)∆t. Demostrar que una variable aleatoria continua que toma valores
+reales positivos tiene distribución exponencial si y solo si R(t) es constante.
+Comentario: Observe que la condición es necesaria y suficiente, si T tiene distribución exponencial de
+parámetro λ usando la definición de R(t) resulta que R(t) = λ. Con la condición R(t) = λ se obtiene un
+problema de valor inicial para FT (t), la función de distribución de T..
+14. Se sabe que la duración X de una pieza responde a la distribución de Weibull cuya función de
+distribución es: F(x) = 1 −exp(−(λ x)b) para x > 0 con b y λ constantes reales positivas. Si x
+se mide en miles de horas, b = 2 y λ = 0.01:
+a) obtener la función de densidad de probabilidad de la duración de la pieza.
+b) calcular la duración garantizada G90 con un 90 % de confiabilidad. Nota: Se cumple P(X >
+G90) = 0,90.
+c) Se realizó una prueba con un lote muy grande de piezas y se separaron 1000 con duración
+superior a 10000 horas; ¿cuántas unidades espera Ud. haya en este lote de 1000 cuyas
+duraciones totales sean superiores a 20000 horas?
+15. Sobre la distribución normal
+Suponga que la variable aleatoria continua X tiene distribución normal de media µ y desvío
+estándar σ. Sean fX y FX las funciones de densidad de probabilidad y de distribución respecti-
+vamente.
+3
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+a) Demostrar que FX(x) = Φ
+  x−µ
+σ
+
+, donde Φ es la función de distribución de la variable
+continua Z que tiene distribución normal estándar (media cero y desvío estándar unitario).
+b) Demostrar que Φ(z) = 1 −Φ(−z).
+c) Sea zα el fractil α de la variable continua Z que tiene distribución normal estándar, entonces
+Φ(zα) = α. Demostrar que z1−ω = −zω.
+d) Para una variable aleatoria X de media µ y desvío estándar σ el coeficiente de kurtosis
+κ viene dado por κ =
+E[(X−µ)4]
+σ4
+. Demostrar que para la variable continua X que tiene
+distribución normal se verifica κ = 3. Es dato
+Z +∞
+−∞
+z4 exp(−a z2) dz = 3 √π
+4
+a−5
+2 ,
+a > 0.
+e) Calcule los cuartiles primero Q1, tercero Q3 y el rango intercuartílico IQ = |Q3 −Q1| para
+la variable aleatoria X con distribución normal de media µ y desvío estándar σ. Según la
+definición de fractil se cumple F(Q1) = 0.25 mientras que F(Q3) = 0.75.
+f ) Según la convención introducida por J. W. Tukey para la construcción del diagrama de caja
+ó boxplot, los valores medidos de la variable de interés en una muestra que sean menores
+que q1 −1.5 iq, o mayores que q3 + 1.5 iq, son declarados valores extremos ó outliers (q1, q3
+e iq son, respectivamente, los cuartiles primero, tercero y el rango intercuartílico para los
+datos de la muestra considerada). Calcule la probabilidad que una variable aleatoria X con
+distribución normal tome valores extremos.
+g) Considere la variable continua Z con distribución normal estándar (media cero y desvío
+estándar unitario). Calcule E[|Z|].
+16. El consumo mensual de combustible en una planta industrial se puede considerar una variable
+aleatoria continua con distribución normal con media 18000 litros y desvío estándar 1500 litros.
+a) ¿Qué porcentaje de los meses se consume menos de 21000 litros?
+b) ¿Qué porcentaje de los meses se consume mas de 17000 litros?
+c) ¿Qué porcentaje de los meses el consumo es mayor que 17000 y menor que 21000 litros?.
+d) ¿Qué capacidad debe tener un tanque para satisfacer el consumo mensual con probabilidad
+0.95?
+e) ¿Cuál es el consumo superado en el 90 % de los meses ?
+f ) De los meses que se consume mas de 17000 litros, ¿qué porcentaje se consume menos de
+21000 litros ?
+17. Por larga experiencia se ha determinado que la capacidad de cierto tipo de condensadores, fabri-
+cados con el mismo procedimiento, es una variable aleatoria continua con distribución normal de
+media 10 y desvío standard 0.1 (ambos valores en microfaradios).
+a) Para que estos componentes puedan utilizarse en un sistema deben tener una capacidad no
+inferior a 9.8. ¿Cuál es el porcentaje de condensadores que no cumplen la especificación?
+b) ¿Para que valor de la capacidad C0 el 99 % de los condensadores tienen una capacidad igual
+o menor que C0?
+4
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+18. Un comerciante tiene piezas de mármol en dos depósitos, 70 % y 30 % respectivamente, en cada
+uno de ellos. El peso de estas piezas en kg se distribuye así: N1(1200, 150) y N2(1100, 100), (una
+forma de anotar media y dispersión de una distribución normal). Por error se juntaron las piezas
+en un solo depósito y se debe enviar 50 de ellas con un peso no inferior a 1100 kg sin tiempo
+para revisarlas. Calcular la probabilidad de que más de 10 piezas sean devueltas.
+19. Una máquina produce tornillos con un diámetro que se distribuye en forma normal con media
+8 mm. Se sabe que el 10 % de la producción es frágil por tener un diámetro menor que 5 mm.
+¿Qué porcentaje de la producción tiene un diámetro mayor que 10 mm?
+20. Un fábrica entrega remaches cuyo diámetro tiene una distribución normal. Se sabe que el 2.81 %
+de los remaches entregados tiene un diámetro mayor que 2.1 mm y que el 13.79 % tiene un
+diámetro menor que 1.5 mm. ¿Cuál es el valor medio y la varianza del diámetro de los remaches
+entregados?
+21. El diámetro de contacto de la rosca de una unión se distribuye normalmente con media 10.02
+mm y desvío standard 0.075 mm. Las especificaciones dadas para esa rosca son: 10.00 ± 0.025
+mm.(la especificación es un intervalo de valores dentro del cuál deberá estar el diámetro para que
+sea considerado aceptable).
+a) ¿Cuál es la probabilidad de que la rosca esté fuera de la especificación dada?
+b) Suponiendo que el diámetro de contacto esté centrado en el valor nominal de la especificación
+(10 mm), ¿cuál es la máxima desviación standard del diámetro aceptable que permitirá no
+más de una defectuosa entre mil producidas?
+22. Dos máquinas rectificadoras A y B trabajan de tal manera que cuando se ajusta el diámetro
+requerido para la pieza rectifican según una distribución normal de media 5 mm y desvíos de
+0.01 y 0.02 mm respectivamente. La máquina A hace el 80 % del trabajo y la B el resto.
+Se mezclan las piezas rectificadas y se supone que una pieza es buena si su diámetro D está
+comprendido entre 5 mm y 5.02 mm.
+a) ¿Cuál es la probabilidad de que una pieza extraída al azar resulte fuera de especificación?
+b) Si una pieza extraída al azar resulta fuera de especificación, ¿cuál es la probabilidad de que
+haya sido rectificada por la máquina B?
+c) Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas
+¿cuál es la probabilidad de encontrar i.) una pieza buena, ii.) por lo menos una pieza buena?
+23. La vida promedio de cierto tipo de motor pequeño es de 10 años con una desviación típica de 2
+años. El fabricante garantiza reponer todos los motores que fallen dentro de un cierto período.
+Suponiendo que la vida de un motor sea una variable aleatoria continua distribuida normalmente,
+hallar el período de garantía que debe ofrecer el fabricante si sólo desea tener que reponer el 3 %
+de los motores que fallen.
+5
+
+[Descripción de la imagen: un documento con el texto en español]
+
+Probabilidad y Estadística 93.24
+curso 2023
+24. El gerente de producción de una fábrica estima que la vida útil de una máquina es una variable
+aleatoria continua distribuida normalmente con una media de 3000 horas. Si además considera
+que hay una probabilidad de 0.5 de que la máquina dure menos de 2632 o más de 3368 horas,
+¿cuál es la desviación típica de la duración de dicha máquina?
+25. Si el tiempo T para fallar de un sistema está distribuido normalmente con media 90 horas y
+un desvío standard 5 horas, ¿cuántas horas de operación (tc) deben considerarse para que la
+confiabilidad (probabilidad de que el tiempo de buen funcionamiento exceda tc) sea 0.90? ¿ y
+0.95?
+26. Se puede ajustar una máquina expendedora de gaseosas de tal manera que llene los vasos con
+un promedio de m unidades de volumen (UV ) por vaso. Si se supone que el volumen despachado
+por la máquina es una variable aleatoria continua con distribución normal de media m y desvío
+standard 0.3 UV , determine el valor de m de manera que los vasos de 8 UV solamente se derramen
+el 1 % de las veces en que son llenados.
+27. Se supone que los resultados de un examen tienen una distribución normal con una media de 78
+y una varianza de 36.
+a) Determinar la probabilidad de que una persona que realiza el examen obtenga una nota
+mayor que 72.
+b) Suponga que a los estudiantes que se encuentran en el 10 % de la parte superior de la
+distribución se les asigna una calificación A. ¿Cuál es la nota mínima que se debe obtener
+para tener calificación A?
+c) ¿Cuál debe ser la mínima nota aprobatoria si el evaluador pretende que solamente el 28.1 %
+de los estudiantes apruebe?
+d) Calcular, aproximadamente, la proporción de los estudiantes que tienen nota que exceden
+por lo menos en 5 puntos a la calificación reprobatoria del 25 % (calificaciones inferiores).
+e) Si se sabe que la calificación de un estudiante es mayor que 72, ¿cuál es la probabilidad de
+que su calificación sea mayor que 84?
+28. Un empleado va al trabajo en subte el 70 % de las veces y en colectivo el 30 % restante. El tiempo
+que tarda cuando va en subte es una variable aleatoria normal con media 30 min. y dispersión 5
+min, mientras que el tiempo que tarda cuando va en colectivo es una variable aleatoria normal
+con media 40 min. y dispersión 8 min.
+a) Si un día tarda en llegar al trabajo mas de 35 minutos, ¿cuál es la probabilidad de que haya
+viajado en subte?
+b) ¿Cuál es la probabilidad de que en al menos dos de 10 días consecutivos tarde mas de 35
+minutos en llegar al trabajo? Indique que suposición permite el cálculo de esta probabilidad.
+29. La longitud de ciertos dispositivos mecánicos tiene la siguiente tolerancia: 58 ± 0.21 mm. Se han
+recibido tres partidas de distintos proveedores de 200, 300 y 500 cajas de 6 unidades cada una,
+que si bien no difieren en su valor medio 58 mm presentan distintas dispersiones: 0.102 mm, 0.12
+mm y 0.146 mm. Se supone que la longitud de esos dispositivos es una variable aleatoria con
+6
+
+[Descripción de la imagen: una página de un libro de texto con una imagen de una persona en el fondo]
+
+Probabilidad y Estadística 93.24
+curso 2023
+distribución normal. En el almacén se han mezclado las cajas. Si se elige una caja al azar y se
+comprueba que exactamente 4 de las piezas están dentro de los límites de tolerancia, ¿cuál es la
+probabilidad de que la caja haya sido entregada por el proveedor número 2?
+7
+
+[Descripción de la imagen: una carta del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del departamento del]
+

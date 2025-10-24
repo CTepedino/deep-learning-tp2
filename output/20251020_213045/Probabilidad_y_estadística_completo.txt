@@ -1,0 +1,41 @@
+================================================================================
+EJERCICIOS ACADÉMICOS GENERADOS CON RAG
+================================================================================
+
+INFORMACIÓN:
+--------------------------------------------------------------------------------
+Materia: Probabilidad y estadística
+Unidad: Variables Aleatorias
+Tipo: multiple_choice
+Dificultad: intermedio
+Modelo: gpt-4o-mini
+Fecha: 2025-10-20 21:30:45
+
+EJERCICIOS (1):
+================================================================================
+
+EJERCICIO 1
+--------------------------------------------------------------------------------
+
+PREGUNTA:
+Si consideramos una variable aleatoria Xn que representa la cantidad de veces que ocurre un suceso de interés en n repeticiones de un experimento, ¿cuál es la distribución de probabilidad que sigue Xn si cada repetición es independiente y tiene una probabilidad p de éxito?
+
+OPCIONES:
+  A) A) Normal
+  B) B) Binomial
+  C) C) Poisson
+  D) D) Geométrica
+
+RESPUESTA CORRECTA: B
+
+PISTA:
+Recuerda que la variable aleatoria que cuenta el número de éxitos en n ensayos independientes con la misma probabilidad de éxito sigue una distribución específica.
+
+SOLUCIÓN:
+La variable aleatoria Xn representa la cantidad de éxitos en n repeticiones de un experimento, donde cada repetición tiene una probabilidad p de éxito y son independientes entre sí. Por lo tanto, Xn sigue una distribución Binomial, que se denota como Xn ~ Bi(n, p). Las otras opciones no son correctas porque la distribución normal es un límite para grandes n, la distribución de Poisson se utiliza para contar eventos en un intervalo de tiempo o espacio y la distribución geométrica cuenta el número de intentos hasta el primer éxito.
+
+================================================================================
+
+
+Generado con Sistema RAG - ITBA
+Basado en 5 fuentes académicas

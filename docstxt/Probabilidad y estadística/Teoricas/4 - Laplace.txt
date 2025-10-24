@@ -1,0 +1,816 @@
+Cálculo de probabilidades con 
+la regla de Laplace
+Se asume que todos los casos son igualmente 
+probables
+P ( 𝐴)= ∑
+𝑠𝑖∈𝐴
+❑
+P({𝑠𝑖})= ∑
+𝑠𝑖∈𝐴
+❑
+1
+𝑛
+=# de  casos en   𝐴
+# total  de  casos
+ 
+ 
+❑
+⇒P({𝑠𝑖})= 1
+𝑛
+
+[Descripción de la imagen: Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calcula | Transcripción de la imagen: Cálculo de probabilidades con
+la regla de Laplace
+
+Se asume que todos los casos son igualmente
+probables
+
+| _Í 1_ de casos en A
+
+scAN — f total de casos
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+_—-
+_-
+—
+- D»
+-
+-
+->
+-
+-
+->
+-
+_-
+—
+- D»
+-
+— -
+- -]]
+
+Cálculo de probabilidades con 
+la regla de Laplace
+Se asume que todos los casos son igualmente 
+probables
+P( 𝐴)=# de casos  favorables  (en  𝐴¿
+¿
+# total de casos
+
+[Descripción de la imagen: una nota con las palabras « probables calo » | Transcripción de la imagen: Cálculo de probabilidades con
+la regla de Laplace
+
+Se asume que todos los casos son igualmente
+probables
+
+P(A)—1i de casos favorables (en Ai E rl de casos
+
+e
+>
+_
+U>
+l
+-—
+_>
+_=
+— -D
+—
+— -D
+—_—>
+l
+—
+_>
+__
+—
+— D
+—_—>
+_-]]
+
+Hallar la probabilidad de sacar una suma de 8 puntos al lanzar 
+un dado dos veces.
+Casos posibles 
+6 x 6 = 36
+Casos favorables
+5   {(5,3),(3,5),(6,2),(2,6),(4,4)}
+Si el primer elemento de un par 
+ordenado se puede seleccionar 
+de n formas y por cada una de 
+éstas se puede seleccionar el 
+segundo elemento del par de m 
+maneras entonces el número de 
+pares posibles es  n x m.
+Cálculo de probabilidades con 
+la regla de Laplace
+P= 5
+36 ≈0.1389
+
+[Descripción de la imagen: calo de probables cona]
+
+Hallar la probabilidad de sacar por suma o bien 4, o bien 11 al 
+lanzar dos dados.
+Casos posibles 
+6 x 6 = 36
+Casos favorables
+5   {(2,2),(3,1),(1,3)} o {(5,6),(6,5)}
+Supongamos que el procedimiento 1 se puede hacer de n maneras  y 
+el procedimiento 2 se puede hacer de m maneras. Si no es posible 
+que ambos, 1 y 2, se hagan juntos entonces el número de maneras en 
+que se puede hacer 1 o 2 es n + m.
+Cálculo de probabilidades con 
+la regla de Laplace
+P= 5
+36 ≈0.1389
+
+[Descripción de la imagen: calo e probabilidades en lage]
+
+Con los dígitos 1, 2, 3, 4 y 5 se escriben todos los números 
+posibles de tres dígitos, sin repetir dígitos en el número. 
+Calcular la probabilidad de que un número elegido al azar sea 
+múltiplo de 4.
+Casos posibles 
+5 x 4 x 3 = 60
+Casos favorables
+2 x 3 x 2 = 12
+Cálculo de probabilidades con 
+la regla de Laplace
+P= 1
+5=0.2
+
+[Descripción de la imagen: calo de probables cons]
+
+Cálculo de probabilidades con 
+la regla de Laplace
+Una computadora genera en forma aleatoria la contraseña de 
+cada nuevo usuario. Si este código consta de 8 caracteres 
+elegidos al azar entre las 26 letras y los 10 dígitos, calcular la 
+probabilidad de que empiece por letra y termine en dígito.
+Casos posibles 
+Casos favorables
+(26+10)8=368 ≈2.8211 ×1012
+26 ∙(26+10 )6 ∙10=260 ∙366 ≈5.6596 ×1011
+P= 260∙366
+368
+≈0.2006
+
+[Descripción de la imagen: calo probables cona de cálculo]
+
+Regla de Laplace
+Dos iguales entre tres
+Se lanzan 3 dados simultáneamente. Si salen al menos dos 
+números iguales se gana un premio. Si los tres dados muestran 
+números diferentes no se gana nada. Determinar la 
+probabilidad de ganar. 
+Casos posibles 
+Casos favorables
+P= 96
+216 =4
+9 ≈0.44
+63=216
+63−6⋅5⋅4=216−120=96
+
+[Descripción de la imagen: regcias do est est est est est est est est est est est est est est est est est est est est est est est]
+
+Se lanzan 3 dados simultáneamente. Si salen al menos dos 
+números iguales se cobra un premio A. Si los tres dados 
+muestran números diferentes se pierde la puesta P. Determinar 
+el valor de P para que el juego sea equitativo o noble. 
+El jugador debe pagar una cierta cantidad P para intervenir en el 
+juego 
+La banca le paga una cantidad A al jugador si gana el juego.
+Si se juegan N jugadas entonces la banca cobra N P. Si en n  de 
+ellas el jugador gana entonces cobra n A. Para que el juego sea 
+equitativo deberá ser  N P = n A.
+Si N es grande entonces la razón  n / N es próxima a la 
+probabilidad de ganar. En este juego esa probabilidad es 4/9, 
+luego si  P = (4/9) A el juego es equitativo o noble. 
+Regla de Laplace
+Dos iguales entre tres
+
+[Descripción de la imagen: rega de lago dopleo]
+
+Regla de Laplace
+¿Qué conviene hacer?
+Una lotería tiene   números y sólo un premio. Ud. tiene dinero 
+para comprar números. ¿Cómo le conviene comprar esos 
+números? 
+a)
+Comprar los   números en un solo sorteo.
+b)
+Comprar un número a lo largo de   sorteos.
+P 𝑎= 𝑛
+𝑁
+
+[Descripción de la imagen: rega de la recar]
+
+Regla de Laplace
+¿Qué conviene hacer?
+Una lotería tiene   números y sólo un premio. Ud. tiene dinero 
+para comprar números. ¿Cómo le conviene comprar esos 
+números? 
+a)
+Comprar los   números en un solo sorteo.
+b)
+Comprar un número a lo largo de   sorteos.
+Se calcula la probabilidad de ganar por lo menos una vez. 
+El número de maneras de elegir un número en jugadas de entre 
+los  posibles es . El número de maneras de perder a lo largo de  
+jugadas es
+Pb=1−(
+𝑁−1
+𝑁)
+𝑛
+=1−(1−1
+𝑁)
+𝑛
+≈1−(1−𝑛
+𝑁+ 𝑛(𝑛−1)
+2𝑁2 )
+
+[Descripción de la imagen: rega de la recar]
+
+Regla de Laplace
+¿Qué conviene hacer?
+Una lotería tiene   números y sólo un premio. Ud. tiene dinero 
+para comprar números. ¿Cómo le conviene comprar esos 
+números? 
+a)
+Comprar los   números en un solo sorteo.
+b)
+Comprar un número a lo largo de   sorteos.
+P𝑏=1−(1−1
+𝑁)
+𝑛
+≈𝑛
+𝑁−𝑛(𝑛−1)
+2 𝑁
+2
+P 𝑎= 𝑛
+𝑁
+
+[Descripción de la imagen: rega de la recar]
+
+En el banco de un aula, hay 4 asientos disponibles. ¿Cuál es la 
+probabilidad de que Alicia y Bautista se sienten dejando libre el 
+asiento junto a la pared? 
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: un cuaderno con las palabras 'calo probables estafa ']
+
+Casos posibles 
+Cálculo de probabilidades con 
+la regla de Laplace
+A
+B
+4×3
+2
+¿
+4!
+2!×2!
+¿(
+4
+2)
+B
+A
+A
+B
+B
+A
+A
+B
+B
+A
+A
+B
+B
+A
+A
+B
+B
+A
+A
+B
+B
+A
+
+[Descripción de la imagen: Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calcula | Transcripción de la imagen: aaa
+
+e
+|
+P
+DLULE
+e
+eN
+eA
+ea
+
+( |
+o..o.o.o......o.........o.
+
+Casos posibles
+
+la regla de Laplace
+
+=
+o
+v
+V
+0
+o
+o
+R
+r
+T
+o
+O
+=
+o
+v
+e,
+R
+=
+—
+T
+V]]
+
+En el banco de un aula, hay 4 asientos disponibles. ¿Cuál es la 
+probabilidad de que Alicia y Bautista se sienten dejando libre el 
+asiento junto a la pared? 
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: un cuaderno con las palabras 'calo probables estafa ']
+
+Casos favorables 
+Cálculo de probabilidades con 
+la regla de Laplace
+A
+B
+3×2
+2
+¿
+3!
+2!×1!
+¿(3
+2)=(3
+1)
+B
+A
+A
+B
+B
+A
+A
+B
+B
+A
+
+[Descripción de la imagen: Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calculas Calcula | Transcripción de la imagen: Cálculo de probabilidades con
+la regla de Laplace
+
+Casos favorables
+[ Al|B| |
+_BIAal| |
+_[ A| |8| _
+_B | af
+[ _ |Aals|
+— |B8|Aal| —
+
+3x2 — 3!
+2 “2x1!
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+_—-
+_-
+—
+- D»
+-
+-
+->
+-
+-
+->
+-
+_-
+—
+- D»
+-
+— -
+- -]]
+
+En el banco de un aula, hay 4 asientos disponibles. ¿Cuál es la 
+probabilidad de que Alicia y Bautista se sienten dejando libre el 
+asiento junto a la pared? 
+Cálculo de probabilidades con 
+la regla de Laplace
+P=(
+3
+2)
+(
+4
+2)
+=0.5
+
+[Descripción de la imagen: calculas de calculas de calculas de calculas de calculas de cal]
+
+En un colectivo hay 10 asientos vacíos, de ellos hay dos que 
+están en la última fila. Si se suben 7 personas y eligen al azar 
+su asiento: ¿cuál es la probabilidad de que queden vacíos los 
+dos asientos de la última fila? 
+Casos posibles 
+Casos favorables
+P= 8
+120 ≈0.067
+(
+10
+7 )=10⋅9⋅8
+3⋅2⋅1 =120
+(
+¿ 8
+¿7)=8
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: calo de probables con cono de probables cono cono cono cono cono]
+
+Se sacan una tras otra (o las dos al tiempo) dos cartas de una 
+baraja española de 40 cartas. ¿Cuál es la probabilidad de que 
+sean un caballo y un tres?
+Casos posibles 
+Casos favorables
+P  = 16
+780= 4
+195 ≈0.0205
+(
+40
+2 )=40⋅39
+2
+=780
+(
+¿ 4
+¿1)⋅(
+¿4
+¿1)=4⋅4=16
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: calo de probables cona]
+
+A un congreso asisten 80 personas. De ellos 70 hablan inglés y 
+50 francés. Se eligen dos de ellos al azar. ¿cuál es la 
+probabilidad de que se entiendan sin necesidad de intérprete?
+Casos posibles 
+Casos favorables
+P=2860
+3160 =143
+158 ≈0.905
+(
+8 0
+2 )= 80⋅79
+2
+=3160
+(
+30
+2 )+(
+4 0
+2 )+(
+10
+2 )+(
+4 0
+1 )(
+30
+1 )+(
+4 0
+1 )(
+10
+1 )=2860
+Con los datos disponibles resulta que hay 30 que hablan sólo ingles, 10 que hablan 
+sólo francés y 40 congresistas que hablan ambos idiomas.
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: calo de probables cono]
+
+A un congreso asisten 80 personas. De ellos 70 hablan inglés y 
+50 francés. Se eligen dos de ellos al azar. ¿cuál es la 
+probabilidad de que se entiendan sin necesidad de intérprete?
+Casos posibles 
+Casos (des)favorables
+(
+8 0
+2 )= 80⋅79
+2
+=3160
+(
+30
+1 )(
+10
+1 )=300
+Con los datos disponibles resulta que hay 30 que hablan sólo ingles, 10 que hablan 
+sólo francés y 40 congresistas que hablan ambos idiomas.
+Cálculo de probabilidades con 
+la regla de Laplace
+𝑃=1−300
+3160=1−15
+158=143
+158 ≈0.905
+
+[Descripción de la imagen: calo de probables cono]
+
+Para trasladarse de A a B pueden hacerse desplazamientos 
+solamente hacia arriba o hacia la derecha siguiendo las líneas 
+del cuadriculado. Si los desplazamientos se realizan al azar, 
+¿cuál es la probabilidad de que la trayectoria pase por C?
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: un cuaderno con las palabras « probables calo »]
+
+Casos posibles 
+(
+10
+4 )=90⋅56
+24
+=210
+Son 10 desplazamientos en total
+(4
+ + 8 
+)
+⇨
+⇧
+Cálculo de probabilidades con 
+la regla de Laplace
+Casos favorables
+P= 90
+210 =3
+7 ≈0.429
+(
+¿ 4
+¿2)(
+¿6
+¿2)=6⋅15=90
+4 pasos hasta C, (2⇨ + 2 ⇧) 
+6 pasos hasta B
+(2⇨ + 4 ⇧)
+
+[Descripción de la imagen: calo de probabilidades cons de la calcula | Transcripción de la imagen: Cálculo de probabilidades con
+la regla de Laplace
+
+Son 10 desplazamientos en total
+(4> +8 1)
+
+10|_ 90:56
+4 24
+
+4 pasos hasta C, (2> + 2 f)
+6 pasos hasta B
+(2> +4 )
+
+Casos posibles ( =210
+
+¿AN¿G)_-.ic—
+Casos favorables (¿2)(¿2)—6 15=90
+
+90 _3
+
+=07
+
+-
+_-
+—>
+-
+-
+_——>
+-
+->
+—
+_-
+—
+- D»
+— »
+-
+->
+-
+-
+->
+—
+_-
+—
+- D»
+- »
+— -
+-- -
+
+s (.429]]
+
+Calcular la probabilidad de tener póker (4 cartas iguales) al 
+repartir una mano de póker (5 cartas extraídas al azar de un 
+mazo de cartas francesas de 52 cartas sin comodines).
+Casos posibles 
+Casos favorables
+P=
+624
+2598960 ≈0.00024(≈
+1
+4167)
+(
+52
+5 )=52⋅51⋅50⋅49⋅48
+120
+=2598960
+13⋅48=624
+Como hay 13 cartas en cada palo entonces hay 13 cuartetos. 
+Una vez elegido uno de ellos quedan 48 cartas posibles para la 
+quinta restante.
+Regla de Laplace
+Póker en una mano
+
+[Descripción de la imagen: regcia de la recar en la recar en la recar en la recar en la recar en la recar]
+
+En una concesionaria de autos, sólo venden coches de 4 
+colores: rojo (R), azul (A), blanco (B) y negro (N). Si dos 
+clientes que entran eligen el color al azar, calcule la 
+probabilidad de que elijan el mismo color.
+Casos posibles 
+Casos favorables
+P= 4
+4
+2=0.25
+4 × 4=42
+Cálculo de probabilidades con 
+la regla de Laplace
+{(R,R),(A,A),(B,B),(N,N)}
+4
+
+[Descripción de la imagen: calo de probables cona]
+
+En una concesionaria de autos, sólo venden coches de 4 
+colores: rojo (R), azul (A), blanco (B) y negro (N). Si dos 
+clientes que entran eligen el color al azar, calcule la 
+probabilidad de que elijan el mismo color.
+Casos posibles 
+Casos (des)favorables
+P=1−4×3
+4
+2 =0.25
+4 × 4=42
+4 ×3
+También se puede analizar observando el evento complementario: 
+que los dos elijan colores distintos.
+Cálculo de probabilidades con 
+la regla de Laplace
+
+[Descripción de la imagen: calo de probables cona]
+
+Calcular la probabilidad de que en una reunión de n personas 
+elegidas al azar al menos dos tengan la misma fecha de 
+cumpleaños.
+Casos posibles 
+Casos favorables
+P𝑛=1−365⋅364⋅…(365−(𝑛−1))
+365
+𝑛
+365
+𝑛
+365𝑛−365⋅364⋅…(365−(𝑛−1))
+Conviene analizar el caso en que todos los cumpleaños son distintos. 
+Suponga que todos los días son 
+igualmente 
+probables 
+y 
+que 
+por 
+supuesto 
+pueden 
+repetirse 
+los 
+cumpleaños. 
+Regla de Laplace
+Un problema de cumpleaños
+
+[Descripción de la imagen: regcia de la calculaa]
+
+P𝑛=1−365⋅364⋯(365−(𝑛−1))
+365
+𝑛
+N
+Pn
+18
+0.347
+19
+0.379
+20
+0.411
+21
+0.444
+22
+0.476
+23
+0.507
+24
+0.538
+25
+0.569
+Regla de Laplace
+Un problema de cumpleaños
+
+[Descripción de la imagen: regza de la recada de la recada de la recada de la recada de la rec | Transcripción de la imagen: Regla de Laplace
+Un problema de cumpleanos
+
+— 365:364---(365-(1-1))
+365"
+
+=1
+
+n
+
+= D»
+—>
+—>
+__ >
+- >
+- >
+_—-
+_-
+
+- D»
+— -»
+— -
+= -
+- >
+- >
+-
+
+_-
+
+- D»
+— »
+_-
+
+- -]]
+
+Regla de Laplace
+Un desafío
+
+[Descripción de la imagen: rega de la defa de la defa | Transcripción de la imagen: Regla de Laplace
+Un desafío
+
+HDesafíoITBA
+Si tenés 12 medias blancas y 12 medias negras en
+un cajón y elegís dos al azar...
+
+| a I . . 1- j 3 '_'|í. —.E — .-.: " =0 E = . Y = | “ - - EE E i =a '¡'F-'_'J
+Jal ES L:a p obabiilidad de que Saques dos ¡guales?
+
+Any — ry - My ray — ry — Any — ny - Any -- Ay — Any — y- My v 45 %
+
+ELTTLTTLLTTO
+
+-
+-
+>
+>
+
+>
+>
+_»
+»
+-
+-
+-
+__
+-
+
+—>
+
+-
+_»
+_»
+»
+
+-
+
+-
+
+-
+_
+
+-
+
+—>
+
+-
+_2]]
+

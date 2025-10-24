@@ -1,0 +1,867 @@
+SIA - TP1
+Métodos de Búsqueda
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+Luca Bloise
+
+[Descripción de la imagen: un fondo azul y verde con la palabra tp metros bisuda ']
+
+Ejercicio 1 - “8-puzzle”
+
+[Descripción de la imagen: un diagrama de un rompecabezas con los números 1 - 8 | Transcripción de la imagen: Ejercicio 1- 8-puzzle'
+
+Initial State Goal State]]
+
+Estructura de estado y acciones
+●
+Como estado, se tendrá una matriz de 3x3 de enteros, con los números del 1 al 8 
+representando las respectivas piezas del puzzle y el número 0 indicando el espacio 
+vacío.
+●
+El espacio de acciones está conformado por 4 direcciones: arriba, abajo, izquierda y 
+derecha. Se describe por la ubicación de la pieza relativa al espacio vacío en el 
+tablero previo a ejecutar la acción. 
+●
+En cuanto a los costos de las acciones, consideramos que cualquier movimiento 
+realizado es un costo idéntico. Dado que no deﬁnimos ninguna meta-acción que 
+encapsule a más de un movimiento, decidimos que el costo de toda acción sea 1.
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Primera Heurística
+Cantidad de piezas fuera de lugar
+●
+La primera heurística que consideramos es aquella que estima basándose en la 
+cantidad de piezas que estén “fuera de lugar”. Es decir, aquellas en las que su 
+posición en el estado actual no coincida con la posición de la pieza en el tablero 
+solución.
+●
+Si hay N piezas fuera de lugar, en el mejor de los casos se necesitan N acciones para 
+llegar a la solución. En este caso la función heurística valdrá también N.
+●
+En cualquier otro caso el acomodar las piezas tomaría más de un movimiento, lo 
+que signiﬁca que el costo de acomodarlas es mayor que el valor de la heurística.
+●
+Dado que para todo estado la estimación de la heurística es menor al costo de la 
+solución óptima, la heurística es admisible.
+
+[Descripción de la imagen: un fondo negro con las palabras "fina" y "fina"]
+
+Segunda Heurística
+Suma de distancias Manhattan
+●
+Se calcula mediante la suma de las distancias Manhattan entre la 
+posición actual de las ﬁchas y su posición en la solución.
+●
+Para cada pieza se cumple D(pieza, solución) = N. Se necesitan al 
+menos N acciones para llevar esa pieza a su lugar en la solución
+●
+Si extendemos esto a todos las ﬁchas y soluciones del tablero, 
+podemos comprobar la admisibilidad:
+
+[Descripción de la imagen: seda heurita sina distante]
+
+Método de búsqueda y heurística a utilizar
+A* con distancia Manhattan
+●
+Dado que tenemos una heurística admisible, las mejores opciones para 
+realizar la búsqueda son A* e Iterative Deepening A*.
+●
+Como el tablero del 8-puzzle es pequeño, y hay como máximo 4 acciones 
+por estado, el uso de memoria no sería lo suﬁcientemente alto como para 
+ameritar usar IDA*. Por ende, optamos por A*.
+●
+Debido a que la heurística de la distancia Manhattan domina a la de la 
+cantidad de ﬁchas fuera de lugar, optamos por usarla en el algoritmo de 
+búsqueda.
+
+[Descripción de la imagen: mejo de buscay heistia]
+
+Ejercicio 2 - “Sokoban”
+
+[Descripción de la imagen: una captura de pantalla de un juego con las palabras erio 2 - soan]
+
+Estructura de estado y acciones
+●
+El estado de un nivel de Sokoban cuenta con una parte inmutable (las paredes y objetivos) 
+y una parte mutable (el jugador y las cajas).
+●
+Cada uno de estos elementos se guarda como un par (x, y) indicando la posición del 
+elemento.
+●
+Las acciones posibles son los movimientos en cada dirección {Arriba, Abajo, Izquierda, 
+Derecha}. Si en un estado el jugador tiene de un lado una pared, o una caja con una pared 
+u otra caja detrás, no podrá moverse en esa dirección en ese estado.
+●
+El costo de cada acción es uniformemente 1
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Métodos de búsqueda
+Para la implementación, se creó una función que implementa el método de 
+búsqueda general y recibe una colección que hace de frontera y determina el orden 
+de extracción de los nodos según el método especíﬁco. En particular:
+●
+BFS - Se usa una Queue
+●
+DFS - Se usa un Stack
+●
+IDDFS - Se usa una PriorityQueue, ordenada por nivel de iteración primero, y 
+por el camino más largo para desempatar
+●
+Greedy - Se usa una PriorityQueue, ordenada por el valor de la heurística 
+usada evaluada en el estado
+●
+A* - Se usa una PriorityQueue, ordenada por la suma entre el costo acumulado 
+y la heurística, y usando la heurística para desempatar
+
+[Descripción de la imagen: un fondo negro con las palabras ''y'' ']
+
+Heurísticas
+Por distancia de las cajas
+●
+Misplaced Boxes: 
+Devuelve la cantidad de cajas que no 
+están ubicadas en un objetivo. 
+Es admisible, dado que en un 
+movimiento solo se puede, como 
+máximo, mover una caja, y cada caja 
+que no esté en un objetivo requiere 
+al menos un movimiento para llegar.
+●
+Manhattan Distance Sum: 
+Devuelve la suma de la mínima distancia 
+Manhattan entre cada caja y su objetivo más 
+cercano. 
+Es admisible, ya que si una caja está a una 
+distancia N del objetivo más cercano, se 
+requieren al menos N movimientos para llevarla 
+hasta dicho objetivo. 
+En el mejor de los casos,  la cantidad de 
+movimientos sería igual a la suma de distancias
+
+[Descripción de la imagen: Hesicas porsicas pors]
+
+Heurísticas
+Por distancia de las cajas
+●
+Nearest Box: 
+Devuelve la distancia Manhattan del 
+personaje a la caja más cercana que no 
+esté en un objetivo. 
+Es admisible, puesto que para mover 
+una caja el personaje debe estar 
+adyacente a ella, y en el mejor caso en 
+que solo quede una caja no ubicada a 
+distancia n, se requieren al menos n 
+movimientos para llegar a la caja (y 
+luego más para llevarla al objetivo)
+●
+Walled Distance Sum: 
+Calcula el mínimo camino de una caja hacia 
+el objetivo más cercano, sin atravesar 
+paredes, luego, devuelve la suma de 
+longitudes de estos caminos para cada caja. 
+Es admisible, ya que se requieren al menos 
+la cantidad de movimientos dado por el 
+camino calculado para poder llegar al 
+objetivo, por lo tanto la suma de las 
+distancias de todas las cajas será menor a la 
+cantidad de movimientos necesarios.
+
+[Descripción de la imagen: Hesicas porsicas pors]
+
+Heurísticas
+Situaciones de deadlock
+●
+Not Cornered: 
+Busca deadlocks causados por cajas 
+que quedan en esquinas sin un 
+objetivo. 
+Como el juego solo permite mover 
+cajas empujandolas, el dejar una caja 
+en una esquina de paredes signiﬁca 
+que esa caja no puede volver a ser 
+movida.
+●
+No Square Blocks: 
+Busca deadlocks causados por cuadrados de 
+4 cajas o cajas y paredes. 
+Dado que no se puede empujar una caja que 
+tenga detrás a otra caja, el agrupar 4 cajas 
+impide que ninguna de estas pueda volver a 
+ser empujada, por lo que, si no están en un 
+objetivo, es imposible ganar a partir de ese 
+estado.
+Todas estas heurísticas devuelven inﬁnito en caso de encontrar un deadlock, puesto que un 
+camino que la contenga no tendrá solución alguna.
+
+[Descripción de la imagen: hesicas de adp]
+
+Heurísticas
+Situaciones de deadlock
+●
+Not Wall Stuck: 
+Busca deadlocks causados por una caja adherida a una ﬁla o columna de paredes, 
+cuando no hay un objetivo adyacente a dicha ﬁla o columna que pueda alcanzar. 
+El criterio de búsqueda implica buscar, si una caja es adyacente a una pared de un 
+lado, si existe una forma, aunque lleve múltiples movimientos, de empujar la caja en 
+el eje x (si el lado es izquierda o derecha) o en el eje y (si es arriba o abajo) o si tiene 
+un objetivo en sus casilleros alcanzables. Caso contrario, la caja nunca podrá 
+despegarse de ese grupo de paredes, y el nivel no podrá completarse.
+Todas estas heurísticas devuelven inﬁnito en caso de encontrar un deadlock, puesto que un 
+camino que la contenga no tendrá solución alguna.
+
+[Descripción de la imagen: hesicas de adoc]
+
+Heurísticas
+Combinaciones
+●
+Avoid Deadlocks
+●
+Manhattan Distance Sum (Avoid Deadlocks)
+●
+Nearest Box (Avoid Deadlocks)
+●
+Walled Distance Sum (Avoid Deadlocks)
+
+[Descripción de la imagen: hesicas connacionales de marketing]
+
+Análisis de resultados
+
+[Descripción de la imagen: analis de ests]
+
+Niveles utilizados
+Nivel 1
+Nivel 2
+
+[Descripción de la imagen: una captura de pantalla de un juego con dos pantallas y una con un botón]
+
+Niveles utilizados
+Nivel 3
+Nivel 4
+
+[Descripción de la imagen: una captura de pantalla de un juego con dos niveles diferentes]
+
+Niveles utilizados
+Nivel 5
+
+[Descripción de la imagen: una captura de pantalla de un juego con un corazón rojo en él]
+
+Métodos no informados
+●
+BFS
+●
+DFS
+●
+IDDFS (depth 5 para casos ﬁjos)
+
+[Descripción de la imagen: un fondo negro con las palabras neto infinitos, bfs, y dbs]
+
+Nivel 3 - Tiempo vs Costo
+Se realizaron 1000 iteraciones por nivel y por método
+
+[Descripción de la imagen: niz - tempoo costo mediana de costo | Transcripción de la imagen: Nivel 3 - Tlempo vs Costo
+
+Comparación de costos con desviación estándar Comparación de tiempos de búsqueda con desviación estándar
+
+o
+o
+o
+
+o
+o
+a
+
+o
+o
+>
+
+o
+-
+a
+U
+-
+a)
+o
+v
+v
+D
+Ley
+[
+E
+d
+=
+
+dfs dfs
+Método de búsqueda Método de búsqueda
+
+Se realizaron 1000 iteraciones por nivel y por método]]
+
+Nivel 4 - Tiempo vs Costo
+Se realizaron 1000 iteraciones por nivel y por método
+
+[Descripción de la imagen: ni4 - tempoo coste est esto | Transcripción de la imagen: Nivel 4 - Tilempo vs Costo
+
+Comparación de costos con desviación estándar Comparación de tiempos de búsqueda con desviación estándar
+
+e
+c
+o
+D
+>
+D
+EO
+v
+v
+D
+o
+[
+-
+v
+=
+
+dfs dfs
+Método de búsqueda Método de búsqueda
+
+Se realizaron 1000 iteraciones por nivel y por método]]
+
+Nivel 3 - IDDFS(depth)-Tiempo vs Costo
+Se realizaron 100 iteraciones por cada depth entre 1 y 10
+
+[Descripción de la imagen: ni - iden - temo costo | Transcripción de la imagen: Nivel 3 - IDDFS(depth)-Tiempo vs Costo
+
+Costo del IDDFS en función de la profundidad Tiempo de ejecución del IDDFS en función de la profundidad
+
+u
+c
+po
+o]
+=3
+]
+E
+v
+v
+o
+o
+a
+=
+R
+F
+
+5 6 5 6
+Profundidad (depth) Profundidad (depth)
+
+Se realizaron 100 iteraciones por cada depth entre 1 y 10]]
+
+Nivel 4 - IDDFS(depth)-Tiempo vs Costo
+Se realizaron 100 iteraciones por cada depth entre 1 y 10
+
+[Descripción de la imagen: ne + idp / idp / temo / coste | Transcripción de la imagen: Nivel 4 - IDDFS(depth)-Tiempo vs Costo
+
+Costo del IDDFS en función de la profundidad Tiempo de ejecución del IDDFS en función de la profundidad
+
+a
+c
+a
+v
+3
+y
+.
+7
+v
+o
+o
+a
+E
+R
+É
+
+5 6 5 6
+Profundidad (depth) Profundidad (depth)
+
+Se realizaron 100 iteraciones por cada depth entre 1 y 10]]
+
+Nodos expandidos - Nodos frontera
+Nivel 1
+Nivel 2
+Nivel 5
+
+[Descripción de la imagen: noxpanos - todo enes ne 1 ne 2 ne 3 ne 3 ne 3 ne 3 ne 3 ne 3 ne 3 ne 3 ne 3 ne | Transcripción de la imagen: Nodos expandidos - Nodos frontera
+
+Nivel1 Nivel 2
+
+m Nodos expandidos
+
+m Nodos expandidos
+m Nodos en frontera
+
+m Nodos en frontera
+
+a a
+g E
+D -
+E El
+e e
+v v
+l -
+o -
+E E
+z z
+E E
+5 5
+1S) 1S)
+
+dfs
+
+dfs
+Método de búsqueda
+
+Método de búsqueda
+
+Nivel 5
+
+200000 m Nodos expandidos
+m Nodos en frontera
+
+175000
+
+150000
+
+125000
+
+100000
+
+Cantidad de nodos
+
+75000
+
+50000
+
+25000
+
+dís
+Método de búsqueda]]
+
+Métodos informados
+●
+Greedy
+●
+A*
+
+[Descripción de la imagen: un logotipo azul y verde con las palabras « neoos informantes » | Transcripción de la imagen: “ Métodos informados
+
+e Greedy
+e A]]
+
+Greedy - Comparación de heurísticas - Nivel 1
+
+[Descripción de la imagen: gris - comacina de hesics - cero | Transcripción de la imagen: Greedy - Comparación de heurísticas - Nivel 1
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+a
+o
+D
+o
+-
+v
+D
+D
+]
+D
+E
+=
+ka
+(S)
+
+Tiempo de ejecución (s)
+
+Greedy Greedy Greedy Greedy Greedy Greedy Greedy Greedy
+Misplaced Boxes Manhattan distance Walled distance Nearest box Misplaced Boxes Manhattan distance — Walled distance Nearest box]]
+
+Greedy - Comparación de heurísticas - Nivel 2
+
+[Descripción de la imagen: gris - comparación de recation | Transcripción de la imagen: Greedy - Comparación de heurísticas - Nivel 2
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+r
+o
+D
+]
+-
+v
+D
+D
+]
+-
+-
+-
+ka
+a)
+
+Tiempo de ejecución (s)
+
+Greedy Greedy Greedy Greedy Greedy Greedy Greedy Greedy
+Misplaced Boxes Manhattan distance Walled distance Nearest box Misplaced Boxes Manhattan distance — Walled distance Nearest box]]
+
+Greedy - Comparación de heurísticas - Nivel 3
+
+[Descripción de la imagen: gris - comparación de l'estr | Transcripción de la imagen: Greedy - Comparación de heurísticas - Nivel 3
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+=
+[
+
+>
+N
+
+r
+o
+D
+o
+-
+v
+o
+o
+Ea
+5
+£
+S
+()
+
+Tiempo de ejecución
+
+o
+[
+
+Greedy Greedy Greedy Greedy Greedy Greedy Greedy Greedy
+Misplaced Boxes Manhattan distance Walled distance Nearest box Misplaced Boxes Manhattan distance Walled distance Nearest box]]
+
+Greedy - Comparación de heurísticas - Nivel 4
+
+[Descripción de la imagen: gris - comparación de recation | Transcripción de la imagen: Greedy - Comparación de heurísticas - Nivel 4
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+C
+] =
+E 6
+Ú
+E >
+' o
+- E
+D v
+h
+D $
+r o
+% a
+(S) -
+v
+=
+
+Greedy Greedy Greedy Greedy Greedy Greedy Greedy Greedy
+Misplaced Boxes Manhattan distance Walled distance Nearest box Misplaced Boxes HManhattan distance Walled distance Nearest box]]
+
+A* - Comparación de heurísticas - Nivel 1
+
+[Descripción de la imagen: una comparación de los resultados de los resultados de los resultados | Transcripción de la imagen: A* - Comparación de heurísticas - Nivel 1
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+o
+r
+
+c
+; s
+o v
+£ >
+ó D
+o =
+o v
+o v
+D D
+E o
+S É
+N S
+
+É
+
+A* Not cornered A* Not wall stuck A* Avoid deadlocks A* Not cornered A* Not wall stuck A* Avoid deadlocks
+Método de búsqueda Método de búsqueda]]
+
+A* - Comparación de heurísticas - Nivel 2
+
+[Descripción de la imagen: una comparación de los resultados de los resultados de los resultados | Transcripción de la imagen: A* - Comparación de heurísticas - Nivel 2
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+
+a
+ó
+D
+o
+[
+v
+D
+D
+E
+-
+=
+5
+S)
+
+Tiempo de ejecu
+
+A* Not cornered A* Not wall stuck A* Avoid deadlocks A* Not cornered A* Not wall stuck A* Avoid deadlocks
+Método de búsqueda Método de búsqueda]]
+
+A* - Comparación de heurísticas - Nivel 3
+
+[Descripción de la imagen: una comparación de los diferentes colores de los colores de los colores de los colores de los colores de los colores | Transcripción de la imagen: 200000
+
+175000
+
+150000
+
+125000
+
+100000
+
+r
+o
+D
+o
+É
+v
+D
+D
+]
+-
+k
+S)
+
+75000
+
+50000
+
+25000
+
+A* - Comparación de heurísticas - Nivel 3
+
+Comparación de nodos expandidos
+
+A* Not cornered A* Not wall stuck
+Método de búsqueda
+
+m Nodos expandidos
+
+A* Avoid deadlocks
+
+Tiempo de ejecución (s)
+
+S
+-
+u
+
+o
+u
+o
+
+Comparación de tiempos de búsqueda con desviación estándar
+
+A* Not corered A* Not wall stuck
+Método de búsqueda
+
+A* Avoid deadlocks]]
+
+A* - Comparación de heurísticas - Nivel 4
+
+[Descripción de la imagen: una comparación de los resultados de los resultados de los resultados | Transcripción de la imagen: A* - Comparación de heurísticas - Nivel 4
+
+Comparación de nodos expandidos Comparación de tiempos de búsqueda con desviación estándar
+
+m Nodos expandidos
+175000
+
+150000
+
+m
+u
+
+125000
+
+100000
+
+ha
+o
+
+75000
+
+a
+o
+D
+o
+c
+v
+D
+D
+E
+-
+E
+5
+1S)
+
+Tiempo de ejecución (s)
+
+50000
+
+o
+u
+
+25000
+
+A* Not cornered A* Not wall stuck A* Avoid deadlocks A* Not comered A* Not wall stuck A* Avoid deadlocks
+Método de búsqueda Método de búsqueda]]
+
+Manhattan distance avoid deadlocks vs 
+Manhattan distance 
+Nivel 4
+Nivel 5
+
+[Descripción de la imagen: Manhattan diclass Manhattan diclass New York, ny | Transcripción de la imagen: Manhattan distance avoid deadiocks vs
+Manhattan distance
+
+Nivel 4 Nivel 5
+
+Comparación de tiempos de A* Comparación de tiempos de A*
+
+m Tiempo promedio + std m Tiempo promedio + std
+
+v v
+o ]
+D D
+E E
+5 5
+D D
+v v
+Z Z
+o o
+D D
+H D
+E E
+2 e
+a a
+o o
+[ [
+E E
+g g
+F F
+
+Manhattan distance Manhattan distance avoid deadlocks Manhattan distance Manhattan distance avoid deadlocks]]
+
+Nearest box avoid deadlocks vs Nearest box
+Nivel 4
+Nivel 5
+
+[Descripción de la imagen: caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de nido caja de | Transcripción de la imagen: Nearest box avoid deadlocks vs Nearest box
+
+Nivel 4 Nivel 5
+
+Comparación de tiempos de A* Comparación de tiempos de A*
+
+mun Tiempo promedio + std mun Tiempo promedio + std
+
+0.6
+
+S
+ya
+Tiempo promedio (segundos)
+
+m
+8
+D
+E
+E
+>
+v
+g
+o
+E
+v
+E
+S
+5
+E
+a
+E
+g
+2
+
+Nearest box Nearest box avoid deadlocks Nearest box Nearest box avoid deadlocks]]
+
+Walled distance sum avoid deadlocks vs Walled 
+distance sum
+Nivel 4
+Nivel 5
+
+[Descripción de la imagen: un gráfico con una línea roja y una línea azul con una línea roja | Transcripción de la imagen: Walled distance sum avoid deadlocks vs Walled
+distance sum
+
+Nivel 4 Nivel 5
+
+Comparación de tiempos de A* Comparación de tiempos de A*
+
+mun Tiempo promedio + std m Tiempo promedio + std
+
+o
+[
+
+o
+a
+Tiempo promedio (segundos)
+
+m
+8
+D
+E
+E
+>
+v
+g
+o
+E
+v
+E
+S
+5
+E
+a
+E
+g
+2
+
+Ed
+D
+
+Walled distance sum Walled distance sum avoid deadlocks Walled distance sum Walled distance sum avoid deadlocks]]
+
+MUCHAS GRACIAS!!!
+
+[Descripción de la imagen: un col de imágenes de personas en diferentes poses]
+

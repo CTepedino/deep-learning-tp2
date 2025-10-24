@@ -1,0 +1,29 @@
+{
+  "samples": [
+    {
+      "materia": "Probabilidad y estadística",
+      "unidad": "Distribución binomial",
+      "tipo_ejercicio": "multiple_choice",
+      "nivel_dificultad": "intermedio",
+      "cantidad": 1,
+      "descripcion": "Ejercicio sobre distribución binomial"
+    },
+    {
+      "materia": "Probabilidad y estadística",
+      "unidad": "Distribución normal",
+      "tipo_ejercicio": "teorico",
+      "nivel_dificultad": "basico",
+      "cantidad": 1,
+      "descripcion": "Ejercicio sobre distribución normal"
+    },
+    {
+      "materia": "Sistemas de Inteligencia Artificial",
+      "unidad": "Redes neuronales",
+      "tipo_ejercicio": "multiple_choice",
+      "nivel_dificultad": "basico",
+      "cantidad": 1,
+      "descripcion": "Ejercicio sobre redes neuronales"
+    }
+  ]
+}
+

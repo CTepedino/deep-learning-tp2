@@ -1,0 +1,5158 @@
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tests de Hipótesis
+Lic. Lucio José Pantazis
+22/5/2023
+
+[Descripción de la imagen: ¿ Cuál es el problema?]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Motivación
+
+[Descripción de la imagen: una pantalla blanca con las palabras motivion | Transcripción de la imagen: Motivación]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Material audiovisual
+Para introducir esta temática, vamos a ver el siguiente extracto de la película “Un
+cuento chino”, del año 2005: https://youtu.be/Vb3QPEr6vAg
+
+[Descripción de la imagen: material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material material]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Un cuento chino
+Imaginemos cómo puede haberse dado la previa a este intercambio.
+• Hay una hipótesis previa: si bien la cantidad de tornillos por caja es a veces es mayor o
+menor, su media es de 350 tornillos.
+Esta hipótesis es sostenida por el proveedor.
+• Como cliente, Ricardo tiene una sospecha que esta hipótesis es falsa.
+Por lo tanto, plantea una hipótesis alternativa, contrapuesta a la hipótesis planteada por el
+proveedor, que establece que la media de los tornillos por caja es menor que 350 tornillos.
+• Para poner a prueba estas hipótesis enfrentadas, Ricardo decide contar la cantidad de tornillos
+en las cajas.
+Es decir, recolecta evidencia que pueda respaldar alguna de las hipótesis.
+• Luego de recolectar evidencia, debe decidir por una de las hipótesis para saber cómo actuar.
+En esta decisión puede cometer errores:
+• Puede decidir que el proveedor se equivoca, cuando éste tiene razón.
+Esto lo llevaría a cambiar de proveedor de forma innecesaria. Por lo tanto, ante la duda,
+estará más reacio a cometer este error.
+• Puede decidir que el proveedor tiene razón, cuando no la tiene.
+Esto lo llevaría a mantener a un proveedor que no cumple con su palabra.
+• Para decidir por cuál de las dos hipótesis se inclina, debe tener en cuenta que la cantidad de
+tornillos es variable.
+Por lo tanto, no cualquier valor menor que 350 es necesariamente indicio de que la hipótesis
+del proveedor es falsa. Por lo tanto, debe elegir con cuidado el límite.
+• Una vez recolectada la evidencia, mientras más alejada esté de 350 la cantidad de tornillos,
+más sustento tiene la decisión de rechazar la hipótesis del proveedor, ya que la evidencia es
+fuerte.
+
+[Descripción de la imagen: unutio]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Analogía judicial
+Podemos hacer una analogía con un proceso judicial.
+• “Toda persona es inocente hasta que se demuestra lo contrario”. Por lo tanto, la hipótesis
+previa (se suele llamar hipótesis nula) es la presunción de inocencia.
+• La hipótesis alternativa es la hipótesis de culpabilidad, enfrentada a la hipótesis nula.
+• Se presentan todas las evidencias correspondientes al caso.
+• En base a las evidencias, se toma una decisión, que puede acarrear 2 tipos de errores:
+• Se puede declarar culpable a alguien que es inocente. Esta decisión cambia el estado del
+acusado en el caso de que sea encarcelado. En casos dudosos, se trata de evitar cometer
+este error.
+• Se puede declarar inocente a alguien culpable. Con esta decisión, si antes estaba libre,
+mantiene esa condición.
+• La decisión deberá contemplar que no cualquier evidencia incriminatoria pueda ser
+comprobación de culpabilidad. Por lo tanto, la decisión está sujeta a dudas razonables.
+• En caso de ser declarado culpable, se puede establecer además un grado de responsabilidad.
+Mientras más fuerte sea la evidencia, mayor será pena impuesta.
+
+[Descripción de la imagen: argual dopos, unan, no pres, no pres, no pres, no pres, no pres]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Hipótesis
+Volviendo al cuento chino, vamos a pensar desde la probabilidad el problema de Ricardo.
+Consideremos:
+Xi = cantidad de tornillos en la i-ésima caja
+supongamos que Xi ∼N(µ, 10). Planteamos la media µ como variable porque es lo que está en
+discusión.
+Entonces, tenemos las siguientes hipótesis enfrentadas:
+• Hipótesis nula. H0 : µ = 350 (Hipótesis del proveedor, la asumida hasta ahora)
+• Hipótesis alternativa. H1 : µ < 350 (Hipótesis de Ricardo, que se encuentra a prueba)
+Es decir, bajo cada hipótesis, podemos graﬁcar la densidad de Xi:
+plot(GG)
+H0
+H1
+0.00
+0.01
+0.02
+0.03
+0.04
+320
+340
+360
+380
+µ
+Densidad
+
+[Descripción de la imagen: un gráfico con una curva y una curva]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Estadístico de prueba
+Para juntar evidencia, Ricardo decide tomar una muestra de n = 50 cajas y tomar el
+promedio de las cajas X 50. Como podemos suponer que son v.a.i.i.d., sabemos que
+X 50 ∼N
+
+µ, 10
+√n
+
+. Esta distribución probabilística nos permite diferenciar las
+observaciones que son razonables (o probables) de lo improbable.
+Al tomar un promedio, la distribución cambia su dispersión:
+plot(GG)
+H0
+H1
+0.0
+0.1
+0.2
+330
+340
+350
+360
+µ
+Densidad
+
+[Descripción de la imagen: estico deprea]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Regla de decisión
+Luego de tomar la muestra, Ricardo toma una decisión: Diremos que “Rechaza H0” si
+las evidencias apoyan su sospecha y “Acepta H0” si las evidencias no la apoyan lo
+suﬁciente. Por lo tanto, como nunca tendremos certeza absoluta si H0 es cierta o falsa,
+se pueden dar 4 escenarios:
+Rechaza H0
+Acepta H0
+H0 Verdadera
+Error tipo I
+Decisión correcta
+H0 Falsa
+Decisión correcta
+Error tipo II
+Como dijimos, está reacio a cambiar de proveedor de forma innecesaria porque le
+involucra nuevos esfuerzos y quemar un puente que luego necesitará cruzar. Por lo
+tanto, querrá además que la probabilidad de error tipo I (se denomina nivel de
+signiﬁcación, notada α), sea pequeña. Tomemos en este caso α = 0.05.
+Comentario: Decimos que se “Acepta H0” porque no signiﬁca que sea cierta. Puede
+que no hayamos juntado las evidencias suﬁcientes para rechazarla. Del mismo modo
+que si no se junta demasiada evidencia para probar la culpabilidad, no signiﬁca que la
+persona sea inocente.
+
+[Descripción de la imagen: rega de decision]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Valores críticos
+Como hemos dicho, para tomar la decisión, no va a rechazar la hipótesis del proveedor
+para cualquier valor menor a 350. Rechazará la hipótesis si el valor obtenido es mucho
+menor a 350 (contemplando la variabilidad del proceso). Dicho de otro modo, se
+rechaza la hipótesis nula si el valor observado de X 50 es signiﬁcativamente menor que
+350.
+La pregunta es: ¿A partir de qué valor consideramos que el promedio es
+signiﬁcativamente menor que 350? Es decir, ¿cómo calculamos un valor crítico
+(llamémoslo xc) de forma que se rechace H0 para todos los promedios menores que xc.
+Es decir, previo a tomar la muestra se determina que:
+Si X 50 < xc
+⇒
+Se rechaza H0
+Si X 50 ≥xc
+⇒
+Se acepta H0
+
+[Descripción de la imagen: valores crios]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Región de rechazo
+Para calcular xc podemos usar el nivel de signiﬁcación α (probabilidad de error tipo I)
+de forma que xc cumpla lo siguiente:
+α = P(Error tipo I) = P(Rechazar H0 | H0 cierta) = P(X 50 < xc | µ = 350)
+Para calcular la probabilidad, usamos la distribución ya conocida. Como
+X 50 ∼N
+
+µ,
+10
+√
+50
+
+, cuando asumimos que µ = 350, se obtiene que
+X 50 ∼N
+
+350,
+10
+√
+50
+
+.
+plot(GG)
+H0
+0.05
+xc
+0.0
+0.1
+0.2
+345.0
+347.5
+350.0
+352.5
+355.0
+µ
+Densidad
+
+[Descripción de la imagen: un gráfico gráfico con una curva y una curva]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Región de rechazo
+Por lo tanto, podemos utilizar la estandarización:
+P(X 50 < xc | µ = 350) = Φ
+ 
+xc −350
+10
+√
+50
+!
+= α
+α=0.05
+⇒
+xc −350
+10
+√
+50
+= z0.05 = −z0.95 ⇒
+⇒xc = 350 −z0.95 ·
+10
+√
+50
+= 347.6738
+Es decir, antes de tomar la muestra, se determina la siguiente regla de decisión:
+Si X 50 < 347.6738
+⇒
+Se rechaza H0
+⇒
+Cambia el proveedor.
+Si X 50 ≥347.6738
+⇒
+Se acepta H0
+⇒
+Mantiene el proveedor.
+
+[Descripción de la imagen: rego de recado | Transcripción de la imagen: Tests de
+Hipótesis ,
+Lic. Lucio Región de rechazo
+
+José
+Pantazis
+
+Motivación
+
+Por lo tanto, podemos utilizar la estandarización:
+
+— xc — 350 =0.05 Xc — 350
+P(Xs0 < Xc | 4 = 350) = | < 10 =a" - 10 = Z0.05 = —20.95
+50 50
+350 10 347.6738
+Xc — Z0.95 * — .
+50
+
+Es decir, antes de tomar la muestra, se determina la siguiente regla de decisión:
+
+Si X5 < 347.6738 —> Serechaza Hy =  Cambia el proveedor.
+Si X5o > 347.60738  —> Seacepta H,XH = lMantiene el proveedor.]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Estos valores críticos, se calculan para minimizar el error tipo I. Sin embargo, una vez establecidos
+estos límites, podemos cometer un error de tipo II. Es decir, podemos aceptar H0 (X 50 ≥xc)
+cuando H0 es falsa (µ < 350).
+Para cuantiﬁcar este error, podemos calcular su probabilidad (notado con la letra β):
+β = P(Error tipo II) = P(Aceptar H0 | H0 falsa) = P(X 50 ≥xc | µ < 350)
+El problema es que a diferencia del cálculo de α, no tenemos un valor de referencia (llamado µ0,
+que vale 350 en este caso) para usar la media real, ya que lo único que sabemos es que µ < 350.
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Por lo tanto, evaluamos el error de tipo II como función de todos los valores posibles
+para µ. Como son valores de la hipótesis alternativa, se denota µ1. Veamos cómo se
+distribuye el promedio bajo esta hipótesis:
+plot(GG)
+H1
+H0
+xc
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+Podemos calcularlo utilizando la estandrización correcta:
+β(µ1) = P(X 50 ≥xc | µ = µ1 < 350)
+X50∼N µ1, 10
+√
+50
+
+=
+1 −Φ
+ 
+xc −µ1
+10
+√
+50
+!
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore | Transcripción de la imagen: Tests de
+
+Hipótesis
+ls, Qe Error tipo ll
+José
+Pantazis
+Por lo tanto, evaluamos el error de tipo II como función de todos los valores posibles
+Motivación
+
+para u. Como son valores de la hipótesis alternativa, se denota 11. Veamos cómo se
+distribuye el promedio bajo esta hipótesis:
+
+plot (GG)
+
+- 02- HO
+[
+D
+7
+5
+01-
+
+0.0- h
+
+1 U U
+340 345 350 355
+1
+
+Podemos calcularlo utilizando la estandrización correcta:
+
+— Y50NN(M:I—;) x- —
+Blu1) = P(X5s0 > xc | 4 = 11 < 350) = % 1_k| * 10“1
+50]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Hay algunos valores de µ1 donde se conoce el β correspondiente. Por ejemplo, si
+µ1 = xc:
+β(xc) = 1 −Φ
+ 
+xc −xc
+10
+√
+50
+!
+= 1 −Φ(0) = 0.5
+Esto lo podemos comprobar gráﬁcamente:
+plot(GG)
+H1
+H0
+xc
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+El valor de 0.5 es coherente con la simetría de la distribución normal.
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore | Transcripción de la imagen: Tests de
+
+Hipótesis ,
+ls, Qe Error tipo ll
+José
+Pantazis
+Motivació Hay algunos valores de u1 donde se conoce el 6 correspondiente. Por ejemplo, si
+'otivación
+HM1 = Xc:
+Xc — X,
+A(x-)=1-% | —7 | =1- (0)=05
+50
+
+Esto lo podemos comprobar gráficamente:
+plot (GG)
+
+0.2 =
+
+Densidad
+
+0.0 -
+
+L 1 U
+340 345 350 355
+u
+
+El valor de 0.5 es coherente con la simetría de la distribución normal.]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Otro valor donde se sabe el valor de β es el siguiente: si bien µ1 debe ser menor que
+µ0, podemos analizar lo que sucede cuando µ1 se acerca a µ0:
+lim
+µ→µ−
+0
+β(µ) = β(µ0) = P(Aceptar H0 | µ = µ0) = 1 −P(Rechazar H0 | µ = µ0) = 1 −P(Error tipo I) = 1 −α
+Es decir, para calcular ese valor límite, podemos realizar el mismo cálculo asumiendo
+que H0 es correcta. Gráﬁcamente:
+plot(GG)
+xc
+H0
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+
+Error tipo ll
+José
+
+Pantazis
+M Otro valor donde se sabe el valor de £ es el siguiente: si bien y,1 debe ser menor que
+L40, podemos analizar lo que sucede cuando 1j se acerca a Ho:
+
+lim — A(1) = A(u0) = PlAceptar Ho | 1 = 0) =1 — P(Rechazar Ho | 4 = 110) =1 — P(Error tipo 1) =1 — a
+HHO
+
+Es decir, para calcular ese valor límite, podemos realizar el mismo cálculo asumiendo
+que Ho es correcta. Gráficamente:
+
+plot (GG)
+
+Densidad
+
+L L
+340 345
+
+1
+350 355]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Para tener alguna noción de cómo evoluciona esta función, podríamos calcular, por
+ejemplo, la probabilidad de error tipo II para µ1 = 345:
+β(345) = 1 −Φ
+ 
+xc −345
+10
+√
+50
+!
+≈1 −Φ(1.89068) ≈0.02933
+Gráﬁcamente:
+plot(GG)
+H1
+H0
+xc
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+
+Error tipo ll
+José
+
+Pantazis
+
+M Para tener alguna noción de cómo evoluciona esta función, podríamos calcular, por
+
+ejemplo, la probabilidad de error tipo lII para 11 = 345:
+
+— 34
+8(345) =1— e | “ —25 | 1- e(1.80068) < 0.02933
+
+10
+v50
+
+Gráficamente:
+plot (GG)
+
+Densidad]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Curva de Operación Característica (OC)
+Es decir, ya sabemos que la función β pasa por los siguientes puntos:
+plot(GG)
+0.0
+0.4
+0.8
+342.5
+345.0
+347.5
+350.0
+352.
+µ
+β
+
+[Descripción de la imagen: cura de opcion catastica o]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Curva de Operación Característica (OC)
+Se puede demostrar que la curva de operación característica tiene forma sigmoidea (forma de s),
+con un cambio de concavidad en el valor de xc. Sabiendo estos datos, alcanza con saber tres puntos
+para poder esbozar la gráﬁca:
+plot(GG)
+0.0
+0.4
+0.8
+342.5
+345.0
+347.5
+350.0
+352.
+µ
+β
+La curva “termina” en µ0 = 350 ya que a partir de ese valor, deja de ser falsa la hipótesis nula.
+El análisis de esta curva nos permite ver cuánto resignamos de error tipo II al establecer el límite
+considerando sólo el error tipo I. Por ejemplo, en este caso, si las cajas tienen una cantidad media
+de 345 (es decir, el proveedor miente), hay muy baja probabilidad (2.93%) de aceptar la hipótesis
+del proveedor.
+
+[Descripción de la imagen: cura de opciones contos]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Curva de potencia
+Otra función que se puede analizar es la denominada curva de potencia (denotada π),
+que es complementaria a la función β. Así como el error tipo II se preﬁere que sea
+pequeño, se busca que la potencia sea alta:
+π(µ1) = P(Rechazar H0 | H0 falsa) = P(X 50 < xc | µ = µ1 < 350) = 1 −β(µ1)
+También se graﬁca con tres puntos:
+plot(GG)
+0.0
+0.4
+0.8
+342.5
+345.0
+347.5
+350.0
+352.
+µ
+π
+
+[Descripción de la imagen: un gráfico gráfico con una curva y un gráfico de línea]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Decisión Post-Muestra
+Hasta ahora todo lo visto es previo a tomar la muestra.
+Como vimos en el video, Ricardo termina contando 323 tornillos. Es decir, después de
+tomar la muestra, observa un promedio xobs = 323.
+Según el valor crítico que estableció Ricardo, como xobs = 323 < xc = 347.6738. Por
+lo tanto rechaza H0, ya que el valor observado es signiﬁcativamente menor al valor de
+referencia µ0 = 350.
+Es decir, Ricardo tiene suﬁciente evidencia para rechazar la hipótesis del proveedor, y
+por lo tanto, cambiarlo por otro.
+
+[Descripción de la imagen: una pantalla de ordenador con el texto Delois - mista]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+p-Valor
+Más aún, no sólo el valor observado fue menor que el valor crítico xc, sino que fue
+mucho menor. Por lo tanto, podríamos pensar en formas de cuantiﬁcar no sólo si la
+diferencia es signiﬁcativa, sino cuán signiﬁcativa es.
+Para eso, se deﬁne el denominado p-Valor. Se calcula después de tomar la muestra y
+da una noción de cuán probable es que una muestra nos de lo observado como
+resultado (o algo más extremo), asumiendo que la hipótesis nula es verdadera. Es decir,
+P(X 50 ≤xobs
+|{z}
+323
+|H0 verdadera
+|
+{z
+}
+µ=350
+) = Φ
+ 
+323 −350
+10
+√
+50
+!
+≈Φ(−19.09) ≈1.47 · 10−81
+Gráﬁcamente:
+plot(GG)
+H0
+p−Valor
+xObs
+0.0
+0.1
+0.2
+320
+330
+340
+350
+µ
+Densidad
+
+[Descripción de la imagen: un gráfico con una pendiente y una línea de la misma longitud]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+p-Valor
+Por lo tanto, aún dándole el beneﬁcio de la duda al proveedor (asumiendo H0 cierta),
+observar un número tan bajo es tan inverosímil (80 ceros antes del primer dígito
+signiﬁcativo), que hay evidencia muy fuerte para rechazar su hipótesis. Mientras más
+chico sea el p-Valor, más evidencia hay para rechazar la hipótesis nula.
+
+[Descripción de la imagen: una pantalla blanca con las palabras p - valor]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Comentarios p-Valor
+Suele confundir el uso de “lo observado (o más extremo)” en el cálculo del p-Valor.
+Por empezar, para identiﬁcar lo “más extremo”, hay que observar la hipótesis
+alternativa. Como en este caso, H1 : µ < 350, mientras más chico sea el valor
+observado, más “extremo” será al asumir la hipótesis alternativa.
+Por otro lado, si sólo nos basáramos en lo observado, tendríamos:
+P(X 50 = xobs|H0 verdadera)
+Pero como X 50 es continua, esa probabilidad es 0 para cualquier valor observado. Por
+lo tanto, deja de ser informativo para medir la verosimilitud, ya que es constante para
+cualquier valor. Por lo tanto, se elige tomar además de lo observado, los valores “más
+extremos”.
+
+[Descripción de la imagen: contos p - valor]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tests de hipótesis (desvío conocido)
+
+[Descripción de la imagen: teste de diagnostics | Transcripción de la imagen: Tests de hipótesis (desvío conocido)]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tests de hipótesis
+Este procedimiento, en el que tenemos una hipótesis sobre un parámetro poblacional y
+decidimos ponerla a prueba a partir de una muestra, se llama test de hipótesis.
+Permite tomar decisiones informadas, basándose en la evidencia.
+Hemos visto un primer caso, en el que podemos usar la distribución normal. En este
+caso, las hipótesis involucraban a la media de esa distribución normal.
+Veremos los distintos tests que pueden aplicarse a la media. Para estos cálculos
+asumiremos que el desvío σ es conocido, y se toma:
+• un valor de referencia µ0
+• un tamaño muestral n
+• un nivel de signiﬁcación α
+
+[Descripción de la imagen: teste upes]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ < µ0
+plot(GG)
+H0
+H1
+0.0
+0.1
+0.2
+330
+340
+350
+360
+µ
+Densidad
+
+[Descripción de la imagen: prueba prueba ultra izquia prueba prueba ultra izquia prueba prueba ultra izqui prueba izquia prueba izqui]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ < µ0
+• Estadístico de prueba X n ó Z = X n −µ0
+σ
+√n
+• Valor crítico xc = µ0 −z1−α ·
+σ
+√n
+ó zc = −z1−α
+plot(GG)
+H0
+xc
+0.0
+0.1
+0.2
+345.0
+347.5
+350.0
+352.5
+355.0
+µ
+Densidad
+
+[Descripción de la imagen: teste disple teste disple test test test test test test test test test test test test test test | Transcripción de la imagen: Tests de
+
+Hipótesis
+Lic. Lucio Test unilateral a izquierda
+José
+Pantazis
+Motivación * - Hipótesis nula Ho : 4 = 10
+Tests de * - Hipótesis alternativa Hy : 4 < mu0
+hipótesis
+(desvío Y
+conocido PE v — hpo
+) * Estadístico de prueba X, ó 7 = — E
+NZ
+. o Z
+* Valor crítico x- = 10 — Zi—a * Ó Z-c = —Z—a
+
+plot (GG)
+
+0.2=
+
+Densidad
+
+0.1=
+
+0.0- :
+1 U
+345.0 347.5 35
+
+T
+I
+I
+I
+I
+I
+I
+I
+|
+0
+
+1 1
+.0 352.5 355.0
+
+=]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ < µ0
+•
+Estadístico de prueba Xn
+ó Z =
+Xn −µ0
+σ
+√n
+•
+Valor crítico xc = µ0 −z1−α ·
+σ
+√n
+ó zc = −z1−α
+•
+Regla de decisión:
+Si Xn < xc ⇒Se rechaza H0
+Si Xn ≥xc ⇒Se acepta H0
+o
+Si Z < zc ⇒Se rechaza H0
+Si Z ≥zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+• Probabilidad de error tipo II: β(µ1) = 1 −Φ
+
+xc −µ1
+σ
+√n
+
+plot(GG)
+H1
+H0
+xc
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+
+[Descripción de la imagen: teste izquia lateral | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+Test unilateral a izquierda
+
+*  Hipótesis nula H : 4 = 0
+* Hipótesis alternativa Hy : y < u0
+
+— x
+9 Estadístico de prueba X, ó Z =
+
+o
+* - Valor crítico xc = HQ — 71 a* 7 Ó Z = -—4_a
+* Regla de decisión:
+Si ;,, < Xc = Se rechaza Ho Si Z < zc = Se rechaza Ho Si p — Valor < a —> Se rechaza Hg
+
+Si ;n > xc = Se acepta Ho " SiZ > zc = Se acepta Hg " Si p — Valor > a —> Se acepta Ho
+
+Xc — 41
+
+NZ
+
+Probabilidad de error tipo Il: 9(1.1) =1 — *
+
+plot (GG)
+
+ed
+N
+U
+
+Densidad
+
+1 1
+340 345 350 355]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ < µ0
+•
+Estadístico de prueba Xn
+ó Z =
+Xn −µ0
+σ
+√n
+•
+Valor crítico xc = µ0 −z1−α ·
+σ
+√n
+ó zc = −z1−α
+•
+Regla de decisión:
+Si Xn < xc ⇒Se rechaza H0
+Si Xn ≥xc ⇒Se acepta H0
+o
+Si Z < zc ⇒Se rechaza H0
+Si Z ≥zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = 1 −Φ
+
+xc −µ1
+σ
+√n
+
+•
+p-Valor: p −Valor = Φ
+
+xobs −µ0
+σ
+√n
+
+plot(GG)
+H0
+p−Valor
+xObs
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+
+[Descripción de la imagen: ensayo de izquia lateral | Transcripción de la imagen: Tests de
+
+Hipótesis
+Lic. Lucio Test unilateral a izquierda
+José *  Hipótesis nula Hg : 4 = u0
+Pantazis
+*  Hipótesis alternativa Hy : 4 < 0
+Motivación X
+- — H
+
+Tesis de 9 Estadístico de prueba X, ó Z = —
+
+hipótesis
+
+(desvío
+
+id o
+
+amrtl) * - Valor crítico x- = 40 — 71_a * — $ Z0=-—241-a
+
+Tests de v
+
+hipótesis . u
+
+(Desvío Regla de decisión:
+
+dcííí…0' Si Y,, < Xc = Se rechaza Ho o Si Z < zc = Se rechaza Ho Si p — Valor < a — Se rechaza Hg
+cido
+
+Si Yn > xc = Se acepta Ho SIiZ > zc => Se acepta Hg " Si p — Valor > a = Se acepta Hg
+
+Tests para
+propor-
+ciones p a
+—
+*  Probabilidad de error tipo II: 8(1.1) =1 — $ —
+
+9 p-Valor: p — Valor = $
+
+plot (66)
+
+Densidad]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ > µ0
+plot(GG)
+H0
+H1
+0.0
+0.1
+0.2
+340
+350
+360
+370
+µ
+Densidad
+
+[Descripción de la imagen: testia de la estr]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ > µ0
+• Estadístico de prueba X n ó Z = X n −µ0
+σ
+√n
+• Valor crítico xc = µ0 + z1−α · σ
+√n
+ó zc = z1−α
+plot(GG)
+H0
+xc
+0.0
+0.1
+0.2
+345
+350
+355
+360
+µ
+Densidad
+
+[Descripción de la imagen: testias de estr | Transcripción de la imagen: Tests de
+
+Hipótesis
+l, s Test unilateral a derecha
+José
+
+Pantazis
+*  Hipótesis nula H : 4 = 0
+
+Tests de *  Hipótesis alternativa H : 4 > hO
+
+hipótesis
+
+(desvío —
+
+emaatda) * Estadístico de prueba X, ó Z =
+
+a o
+* Valor crítico xc = 140 + Z1—a * N
+n
+plot (GG)
+
+T
+I R
+, 02- 1e
+[ I h
+D
+”
+5 LI
+A 01- — HO/ —«
+I
+I
+0.0= | h
+L U U
+345 350 355 360]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ > µ0
+•
+Estadístico de prueba Xn
+ó Z =
+Xn −µ0
+σ
+√n
+•
+Valor crítico xc = µ0 + z1−α ·
+σ
+√n
+ó zc = z1−α
+•
+Regla de decisión:
+Si Xn > xc ⇒Se rechaza H0
+Si Xn ≤xc ⇒Se acepta H0
+o
+Si Z > zc ⇒Se rechaza H0
+Si Z ≤zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+• Probabilidad de error tipo II: β(µ1) = Φ
+
+xc −µ1
+σ
+√n
+
+plot(GG)
+H1
+H0
+xc
+0.0
+0.1
+0.2
+345
+350
+355
+360
+Densidad
+
+[Descripción de la imagen: testia de la estr | Transcripción de la imagen: Tests de
+Hipótesis
+l, s Test unilateral a derecha
+José *  Hipótesis nula Hg : 4 = 10
+Pantazis
+* Hipótesis alternativa Hy : y > u0
+
+— x
+Tests de * Estadístico de prueba X, ó Z =
+hipótesis
+(desvío
+
+conocido) P CA
+* - Valor crítico x- = 40 +71-a * — Ó Z6 =1a
+
+* Regla de decisión:
+
+Si ;,, > xc = Se rechaza Ho Si Z > zc = Se rechaza Ho Si p — Valor < a —> Se rechaza Hg
+Si Xn < xc = Se acepta Ho S SiZ < zc = Se acepta H S Si p — Valor > a —> Se acepta Ho
+
+Xc —
+
+n
+
+Probabilidad de error tipo II: 8(11) = $
+
+plot (GG)
+
+0.2 -
+
+Densidad
+
+0.0 =
+
+d - - — o] — — — -
+
+1
+345 350 3]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : µ = µ0
+•
+Hipótesis alternativa H1 : µ > µ0
+•
+Estadístico de prueba Xn
+ó Z =
+Xn −µ0
+σ
+√n
+•
+Valor crítico xc = µ0 + z1−α ·
+σ
+√n
+ó zc = z1−α
+•
+Regla de decisión:
+Si Xn > xc ⇒Se rechaza H0
+Si Xn ≤xc ⇒Se acepta H0
+o
+Si Z > zc ⇒Se rechaza H0
+Si Z ≤zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+
+xc −µ1
+σ
+√n
+
+•
+p-Valor: p −Valor = 1 −Φ
+
+xobs −µ0
+σ
+√n
+
+plot(GG)
+H0
+p−Valor
+xObs
+0.0
+0.1
+0.2
+345
+350
+355
+360
+µ
+Densidad
+
+[Descripción de la imagen: teste de teste de teste de teste de teste de teste de teste de | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+descono-
+
+cido)
+
+Tests para
+propor-
+ciones
+
+Test unilateral a derecha
+
+* - Hipótesis nula Hg : 4 = 0
+
+*  Hipótesis alternativa Hy : 4 > 0
+
+9 Estadístico de prueba Y,, ó Z=
+
+* - Valor crítico xc = HO + 71 a *
+
+* Regla de decisión:
+
+Si Y,, > xc = Se rechaza Ho Si Z > zc = Se rechaza Ho Si p — Valor < a — Se rechaza Hg
+Si Yn < Xc = Se acepta Ho o SIiZ < zc => Se acepta Hg o Si p — Valor > a = Se acepta Hg
+*  Probabilidad de error tipo II: 8(1.1) = Y
+Xobs — H
+* p-Valor: p — Valr =1 — $ “obs — ro
+plot (GG)
+- l .
+$ 02- l xObs
+D I S
+s 01- H | :
+* p-Valor
+0.0 1 | 1 - I
+345 350 355 360]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ ̸= µ0
+plot(GG)
+H0
+H1
+H1
+0.0
+0.1
+0.2
+330
+340
+350
+360
+370
+µ
+Densidad
+
+[Descripción de la imagen: tetrall tecıi fizal tecıi fizal tecıl fizal tecıl fizal tecıl fi | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+Test bilateral
+
+* Hipótesis nula Ho : 4 = u0
+
+* Hipótesis alternativa Hi : u * u0
+plot (GG)
+
+0.2 =
+
+Densidad
+
+01- HI Ho/1 |H1
+
+1 1
+330 340 350 360 370]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : µ = µ0
+Hipótesis alternativa H1 : µ ̸= µ0
+• Estadístico de prueba X n ó Z = X n −µ0
+σ
+√n
+• Valores críticos
+
+xc1 = µ0 −z1−α
+2 · σ
+√n
+y
+xc2 = µ0 + z1−α
+2 · σ
+√n
+
+ó
+zc = z1−α
+2
+plot(GG)
+H0
+xc1
+xc2
+0.0
+0.1
+0.2
+345.0
+347.5
+350.0
+352.5
+355.0
+µ
+Densidad
+
+[Descripción de la imagen: tec - tec - tec - tec tec tec tec tec tec tec tec tec tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+*  Hipótesis nula H : 4 = 0
+
+* Estadístico de prueba Y… óZ=
+
+* Valores críticos
+
+plot (GG)
+
+(Xcl =m--3:
+
+Densidad
+
+0.2 -
+0.1=
+
+0.0= ,
+345.0
+
+É
+
+y *y = Ho+Z71-9-
+
+"a
+347.5
+
+Hipótesis alternativa Hy : u 7 u0
+
+Xn — p
+
+N
+
+T
+I
+I
+!
+I
+I
+I
+I
+[
+0
+
+351
+
+=
+
+.0
+
+"
+352.5
+
+Test bilateral
+
+o
+
+S
+
+)
+
+1
+355.0
+
+[o)
+
+Zc = Z1- a
+c 12]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : µ = µ0
+Hipótesis alternativa H1 : µ ̸= µ0
+•
+Estadístico de prueba Xn ó Z =
+Xn −µ0
+σ
+√n
+•
+Valores críticos
+
+xc1 = µ0 −z1−α
+2
+·
+σ
+√n
+y
+xc2 = µ0 + z1−α
+2
+·
+σ
+√n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Si Xn < xc1 o Xn > xc2 ⇒Se rechaza H0
+Si xc1 ≤Xn ≤xc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+• Probabilidad de error tipo II: β(µ1) = Φ
+
+xc2 −µ1
+σ
+√n
+
+−Φ
+
+xc1 −µ1
+σ
+√n
+
+plot(GG)
+H1
+H0
+xc1
+xc2
+0.0
+0.1
+0.2
+340
+345
+350
+355
+µ
+Densidad
+
+[Descripción de la imagen: prueba bilateral prueba ideale de tipo | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+* Hipótesis nula Hg
+
+* Estadístico de prueba ;,, óZ=
+
+* - Valores críticos
+
+* Regla de decisión:
+
+A =0
+
+Test bilateral
+
+Hipótesis alternativa Hy : u 7 u0
+
+N
+
+—_4_a”
+
+Xn — ho
+
+NZ
+
+Si ;,, < Xc oY,, > Xq > Se rechaza Hg
+
+Si *c < Xn < X = Se acepta Ho
+
+plot (GG)
+
+Densidad
+
+>
+DS
+1
+
+0.1=
+
+Probabilidad de error tipo II: 8(11) = $
+
+o
+y * :Ho+zli%-Z)
+
+Si IZ| > zc > Se rechaza Hg
+Si |Z| < zc > Se acepta Hg
+
+Xc, — h1
+
+ó
+
+Zc =77_a
+
+p — Valor < a = Se rechaza Ho
+p — Valor > a = Se acepta Hg
+
+Xcy — m
+
+o
+
+l)
+
+o
+
+NZ]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : µ = µ0
+Hipótesis alternativa H1 : µ ̸= µ0
+•
+Estadístico de prueba Xn ó Z =
+Xn −µ0
+σ
+√n
+•
+Valores críticos
+
+xc1 = µ0 −z1−α
+2
+·
+σ
+√n
+y
+xc2 = µ0 + z1−α
+2
+·
+σ
+√n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Si Xn < xc1 o Xn > xc2 ⇒Se rechaza H0
+Si xc1 ≤Xn ≤xc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+• Probabilidad de error tipo II: β(µ1) = Φ
+
+xc2 −µ1
+σ
+√n
+
+−Φ
+
+xc1 −µ1
+σ
+√n
+
+plot(GG)
+H1
+H0
+xc1
+xc2
+0.0
+0.1
+0.2
+340
+345
+350
+355
+360
+µ
+Densidad
+
+[Descripción de la imagen: prueba bilateral prueba ideale de tipo | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+* Hipótesis nula Hg
+
+A =0
+
+* Estadístico de prueba ;,, óZ=
+
+* - Valores críticos
+
+* Regla de decisión:
+
+Xn — ho
+
+N
+
+NZ
+
+Si ;,, < Xcy oY,, > Xq > Se rechaza Hg
+
+Si *c < Xn < X = Se acepta Ho
+
+plot (GG)
+
+Densidad
+
+>
+DS
+1
+
+o
+1
+
+>
+o
+1
+
+Y X) =mo+2_g-
+
+Hipótesis alternativa Hy : u 7 u0
+
+Test bilateral
+
+o
+
+n
+
+) -
+
+Si IZ| > zc > Se rechaza Hg
+Si |Z| < zc > Se acepta Hg
+
+Xc — h1
+
+Zc =77_a
+
+p — Valor < a = Se rechaza Ho
+p — Valor > a = Se acepta Hg
+
+Xcy — m
+
+Probabilidad de error tipo II: 8(11) = $
+
+o
+
+l)
+
+o
+
+NZ]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : µ = µ0
+Hipótesis alternativa H1 : µ ̸= µ0
+•
+Estadístico de prueba Xn ó Z =
+Xn −µ0
+σ
+√n
+•
+Valores críticos 
+xc1 = µ0 −z1−α
+2
+·
+σ
+√n
+y
+xc2 = µ0 + z1−α
+2
+·
+σ
+√n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Si Xn < xc1 o Xn > xc2 ⇒Se rechaza H0
+Si xc1 ≤Xn ≤xc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+
+xc2 −µ1
+σ
+√n
+
+−Φ
+
+xc1 −µ1
+σ
+√n
+
+•
+p-Valor: p −Valor(xobs ) = 2 ·
+
+1 −Φ
+
+|xobs −µ0|
+σ
+√n
+
+plot(GG)
+H0
+p−Valor
+xObs
+p−Valor
+0.0
+0.1
+0.2
+340
+345
+350
+355
+360
+µ
+Densidad
+
+[Descripción de la imagen: Tec - Tec - Tec - Tec - Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+descono-
+
+cido)
+
+Tests para
+propor-
+ciones
+
+*  Hipótesis nula H : 4 = 0
+
+* Estadístico de prueba ;,, óZ=
+
+* - Valores críticos
+
+Xº1í*uº*zlf%'
+
+* Regla de decisión:
+
+Hipótesis alternativa Hy : u 7 u0
+
+N
+
+Si ;,, < Xc QY,, > Xq > Se rechaza Hg
+
+Si *c < Xn < X = Se acepta Ho
+
+*  Probabilidad de error tipo II: 3(1.1) = $
+
+plot (66)
+
+p-Valor: p — Valor(Xob5) = 2 -
+
+Densidad
+
+1-6
+
+0.0 =
+
+Si IZ| > zc > Se rechaza Hg
+Si IZ| < zc > Se acepta Ho
+
+y o :uo+11f%
+
+Test bilateral
+
+a
+
+1
+340
+
+1
+345
+
+1
+355
+
+1
+360
+
+ó
+
+Zc =77_a
+
+p — Valor < a — Se rechaza Ho
+p — Valor > a > Se acepta Ho]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : µ = µ0
+Hipótesis alternativa H1 : µ ̸= µ0
+•
+Estadístico de prueba Xn ó Z =
+Xn −µ0
+σ
+√n
+•
+Valores críticos 
+xc1 = µ0 −z1−α
+2
+·
+σ
+√n
+y
+xc2 = µ0 + z1−α
+2
+·
+σ
+√n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Si Xn < xc1 o Xn > xc2 ⇒Se rechaza H0
+Si xc1 ≤Xn ≤xc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+
+xc2 −µ1
+σ
+√n
+
+−Φ
+
+xc1 −µ1
+σ
+√n
+
+•
+p-Valor: p −Valor(xobs ) = 2 ·
+
+1 −Φ
+
+|xobs −µ0|
+σ
+√n
+
+plot(GG)
+H0
+p−Valor
+p−Valor
+xObs
+0.0
+0.1
+0.2
+340
+345
+350
+355
+360
+µ
+Densidad
+
+[Descripción de la imagen: Tec - Tec - Tec - Tec - Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Motivación
+
+Tests de
+hipótesis
+(desvío
+conocido)
+
+descono-
+
+cido)
+
+Tests para
+propor-
+ciones
+
+*  Hipótesis nula H : 4 = 0
+
+* Estadístico de prueba ;,, óZ=
+
+* - Valores críticos
+
+Xº1í*uº*zlf%'
+
+* Regla de decisión:
+
+Hipótesis alternativa Hy : u 7 u0
+
+N
+
+Si ;,, < Xc QY,, > Xq > Se rechaza Hg
+
+Si *c < Xn < X = Se acepta Ho
+
+*  Probabilidad de error tipo II: 3(1.1) = $
+
+plot (66)
+
+p-Valor: p — Valor(Xob5) = 2 -
+
+Densidad
+
+1-6
+
+0.0 =
+
+Xcy — M
+
+Si IZ| > zc > Se rechaza Hg
+Si IZ| < zc > Se acepta Ho
+
+y o :uo+11f%
+
+Test bilateral
+
+a
+
+1
+340
+
+1
+345
+
+1
+355
+
+1
+360
+
+ó
+
+Zc =77_a
+
+p — Valor < a — Se rechaza Ho
+p — Valor > a > Se acepta Ho]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Comentarios
+• Las hipótesis se plantean sobre un parámetro poblacional.
+Sobre valores muestrales NO se plantean hipótesis, porque es justamente lo que
+será conocido.
+• Para los test unilaterales, a veces puede plantearse, por ejemplo H0 : µ ≥µ0 vs
+H1 : µ < µ0.
+Se puede escribir de ambas formas de manera indistinta ya que en ambos casos, el
+valor crítico que se obtiene es el mismo.
+Esto se debe a que el valor crítico se calcula en función del valor de referencia.
+plot(GG)
+xc
+0.05
+<0.05
+0.0
+0.1
+0.2
+345.0
+347.5
+350.0
+352.5
+355.0
+µ
+Densidad
+Es decir, al controlar el error tipo I para el valor de referencia, se impone un máximo
+para todos los otros valores de H0.
+
+[Descripción de la imagen: cono de la est cono de la est cono cono cono cono cono]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tests de hipótesis (Desvío desconocido)
+
+[Descripción de la imagen: teste dipos / desoco teste dipos / desoco teste dipos / test | Transcripción de la imagen: Tests de hipótesis (Desvío desconocido)]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+TCL
+Cuando el desvío poblacional σ es desconocido, algunas cuentas ya no se pueden
+realizar previo a tomar la muestra, ya que debe reemplazarse con el desvío muestral s.
+Por ejemplo, consideremos un test unilateral a izquierda (H0 : µ = µ0 y H1 : µ < µ0).
+Si n es grande, el Teorema Central del Límite nos dice que el promedio tendrá
+distribución normal.
+Sin embargo, ya no podemos tomar un valor del promedio xc como crítico, ya que sería
+de la siguiente forma:
+xc = µ0 −z1−α ·
+s
+√n
+Por lo tanto, como s es desconocido previo a tomar la muestra, se utiliza sólo
+Z = X n −µ0
+s
+√n
+como estadístico de prueba y el valor zc = z1−α como crítico.
+
+[Descripción de la imagen: el algoritmo para la regresión de una regresión]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II y desvío desconocido
+Del mismo modo, tampoco puede calcularse previo a la muestra el error tipo II, ya que
+tendría la siguiente fórmula:
+β(µ1) = P(Aceptar H0|µ = µ1) = P(Z ≥zc|µ = µ1) = P
+
+X n −µ0
+s
+√n
+≥zc|µ = µ1
+
+=
+= P
+
+X n
+s
+√n
+−µ0
+s
+√n
+≥zc|µ = µ1
+
+= P
+
+X n
+s
+√n
+≥zc + µ0
+s
+√n
+|µ = µ1
+
+=
+= P
+
+X n
+s
+√n
+−µ1
+s
+√n
+≥zc + µ0
+s
+√n
+−µ1
+s
+√n
+|µ = µ1
+
+TCL
+≈1 −Φ
+
+zc + µ0 −µ1
+s
+√n
+
+Sin embargo, estos cálculos podrían estimarse si se tiene un desvío muestral previo s
+proveniente de una muestra más chica (suele denominarse “prueba piloto”).
+Vamos a detallar las cuentas que sí podemos hacer con TCL.
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda (TCL)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ < µ0
+• Estadístico de prueba Z = X n −µ0
+s
+√n
+• Valor crítico zc = −z1−α
+• Regla de decisión:
+Si Z < zc
+⇒
+Se rechaza H0
+Si Z ≥zc
+⇒
+Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+• p-Valor: p −Valor = Φ
+
+xobs −µ0
+s
+√n
+
+(es posterior a tomar la muestra)
+
+[Descripción de la imagen: teilita zarda c t | Transcripción de la imagen: Tests de
+Hipótesis
+
+Test unilateral a izquierda (TCL)
+
+Lic. Lucio
+José
+
+Pantazis
+
+* Hipótesis nula Ho : 4 = u0
+
+* Hipótesis alternativa H; : u < Ho
+Tests de —
+hipótesis Xn — u0
+(Desvío * Estadístico de prueba Z = — — —
+descono- —
+cido) Vn
+
+* Valor crítico Z- = —Z1—a
+
+.
+
+Regla de decisión:
+
+SIZ<zZc = Se rechaza Ho p — Valor < a > Se rechaza Ho
+SIZ>zZz: > Se acepta Ho " p — Valor > a > Se acepta Ho
+
+Xobs — L0
+—
+
+NZ
+
+p-Valor: p — Valor = $ ( ) (es posterior a tomar la muestra)]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha (TCL)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ > µ0
+• Estadístico de prueba Z = X n −µ0
+s
+√n
+• Valor crítico zc = z1−α
+• Regla de decisión:
+Si Z > zc
+⇒
+Se rechaza H0
+Si Z ≤zc
+⇒
+Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+• p-Valor: p −Valor = 1 −Φ
+
+xobs −µ0
+s
+√n
+
+(es posterior a tomar la muestra)
+
+[Descripción de la imagen: teste de la teste de la teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de teste de | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+
+Test unilateral a derecha (TCL)
+
+* Hipótesis nula Ho : 4 = u0
+
+* Hipótesis alternativa H; : 4 > Ho
+
+X. —
+* Estadístico de prueba Z = "T'u0
+NO
+* Valor crítico Z- = Z1-a
+* Regla de decisión:
+SIZ>zc => Se rechaza Ho p — Valor < a > Se rechaza Ho
+
+SIZ<zZ- => Se acepta Ho " p — Valor > a > Se acepta Ho
+
+Xobs — 10
+s
+
+NZ
+
+* p-Valor: p — Valor =1- + ( ) (es posterior a tomar la muestra)]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral (TCL)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ ̸= µ0
+• Estadístico de prueba Z = X n −µ0
+s
+√n
+• Valor crítico zc = z1−α
+2
+• Regla de decisión:
+Si |Z| > zc
+⇒
+Se rechaza H0
+Si |Z| ≤zc
+⇒
+Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+• p-Valor: p −Valor(xobs) = 2 ·
+
+1 −Φ
+
+|xobs −µ0|
+s
+√n
+
+(es posterior a tomar la
+muestra)
+
+[Descripción de la imagen: tetrali c hipatas alemlive hipata alemlive = = = = = = = = = = = = = = = = = = = = = | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+
+Hipótesis nula Ho : 4 = H0
+Hipótesis alternativa H; : 4 * u0
+Yn — ho
+
+Estadístico de prueba Z = s
+Z
+
+Valor crítico zc = 1-
+Regla de decisión:
+
+SiIZI>zc => Se rechaza Ho
+Si|IZ|I<zc > Se acepta Ho
+
+Test bilateral (TCL)
+
+p — Valor < a > Se rechaza Ho
+p — Valor > a > Se acepta Ho
+
+|;0bs — ¡U'0|
+
+p-Valor: p — Valor(Xobs) =2 - (1 l) (
+
+muestra)
+
+E
+
+n
+
+)) (es posterior a tomar la]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tamaños muestrales pequeños
+Cuando el desvío es desconocido, y el tamaño muestral no es suﬁciente, ya no podemos
+utilizar la distribución normal.
+Sin embargo, sabemos que si las variables promediadas Xi son normales (Xi ∼N(µ, σ)),
+el siguiente estadístico tiene distribución t de student:
+T = X n −µ
+s
+√n
+∼tn−1
+En cualquiera de los casos anteriores, podemos tomar H0 : µ = µ0.
+Por lo tanto, suponiendo H0 cierta, obtenemos:
+T = X n −µ0
+s
+√n
+∼tn−1
+Por lo tanto, éste será el estadístico de prueba.
+
+[Descripción de la imagen: taramoo de est est est est est est est est est est est est est est est est est est est]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda (t de Student)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ < µ0
+• Estadístico de prueba T = X n −µ0
+s
+√n
+• Valor crítico tc = −tn−1;1−α
+• Regla de decisión:
+Si T < tc
+⇒
+Se rechaza H0
+Si T ≥tc
+⇒
+Se acepta H0
+• p-Valor: p −Valor = FTn−1
+
+xobs −µ0
+s
+√n
+
+donde FTn−1 es la función de distribución acumulada de una t de student con n −1
+grados de libertad.
+
+[Descripción de la imagen: testia a sierat e semental]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha (t de Student)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ > µ0
+• Estadístico de prueba T = X n −µ0
+s
+√n
+• Valor crítico tc = tn−1;1−α
+• Regla de decisión:
+Si T > tc
+⇒
+Se rechaza H0
+Si T ≤tc
+⇒
+Se acepta H0
+• p-Valor: p −Valor = 1 −FTn−1
+
+xobs −µ0
+s
+√n
+
+donde FTn−1 es la función de distribución acumulada de una t de student con n −1
+grados de libertad.
+
+[Descripción de la imagen: teilir decta de stud | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+
+Test unilateral a derecha (t de Student)
+
+* Hipótesis nula Ho : 4 = u0
+
+* Hipótesis alternativa Hi : 4 > uo
+X. —
+
+* Estadístico de prueba T = "THO
+NZ
+
+Valor crítico tc = th—1:1—a
+
+Regla de decisión:
+
+SIT>tc => Se rechaza Ho
+SIT<tc > Se acepta Ho
+
+NZ
+
+donde F7,_, es la función de distribución acumulada de una t de student con n—1
+
+grados de libertad.
+
+p-Valor: p — Valor =1 — Fr,_, (Xºbs S— H0)]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral (t de Student)
+• Hipótesis nula H0 : µ = µ0
+• Hipótesis alternativa H1 : µ ̸= µ0
+• Estadístico de prueba T = X n −µ0
+s
+√n
+• Valor crítico tc = tn−1;1−α
+2
+• Regla de decisión:
+Si |T| > tc
+⇒
+Se rechaza H0
+Si |T| ≤tc
+⇒
+Se acepta H0
+• p-Valor: p −Valor = 2 ·
+
+1 −FTn−1
+
+|xobs −µ0|
+s
+√n
+
+donde FTn−1 es la función de distribución acumulada de una t de student con n −1
+grados de libertad.
+
+[Descripción de la imagen: Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+
+Test bilateral (t de Student)
+
+* Hipótesis nula Ho : 4 = u0
+
+* Hipótesis alternativa H; : u * u0
+
+Xn — Ho
+-
+NC
+
+* Estadístico de prueba 7
+
+* Valor crítico tc = t,_ 1.1
+
+NIo
+
+* Regla de decisión:
+
+SIi|ITI>tc > Se rechaza Ho
+SIi|ITI<tr > Se acepta Hg
+
+p-Valor: p — Valor =2 - (1 — Fr., <…))
+=
+
+donde F7,_, es la función de distribución acumulada de una t de student con n—1
+
+grados de libertad.]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Tests para proporciones
+
+[Descripción de la imagen: testa porciones testa porciones testa porciones porciones porciones | Transcripción de la imagen: Tests para proporciones]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Proporciones
+Cuando lo que se quiere poner a prueba es una proporción poblacional p, recordemos
+que la proporción muestral bp cumple lo siguiente (asumiendo que vale la aproximación
+normal a la binomial):
+bp
+(a)
+∼N
+ 
+p;
+r
+p · (1 −p)
+n
+!
+⇒
+bp −p
+r
+p · (1 −p)
+n
+(a)
+∼N(0, 1)
+Por lo tanto, si el tamaño muestral n es grande, podemos utilizar esta aproximación.
+
+[Descripción de la imagen: porciones poro poro poro poro poro poro poro poro poro poro poro poro poro]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Ejemplo test de hipótesis para proporción
+Consideremos una materia en la cual, el porcentaje de aprobados suele ser 40%.
+Se sospecha que ese número ha aumentado. Por lo tanto, el curso siguiente (de n=150
+alumnos), se registra el porcentaje de aprobados para poner a prueba la sospecha.
+Describamos las hipótesis enfrentadas:
+• H0 : p = p0 = 0.4
+• H1 : p > p0 = 0.4
+
+[Descripción de la imagen: ejecje tupsia procion]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Proporción crítica
+Por lo tanto, se rechaza H0 si el valor estimado de bp es mayor que un valor crítico pc.
+Considerando un nivel de signiﬁcación α = 0.05, se limita la probabilidad de Error Tipo I:
+0.05 = P(Error tipo I) = P(Rechazar H0|H0verdadera) = P  bp > pc|p = 0.4
+=
+= P
+
+
+bp −p
+q
+p · (1 −p)
+n
+>
+pc −p
+q
+p · (1 −p)
+n
+|p = 0.4
+
+=
+= P
+
+
+bp −0.4
+q
+0.4 · (1 −0.4)
+n
+>
+pc −0.4
+q
+0.4 · (1 −0.4)
+n
+|p = 0.4
+
+
+TCL
+≈1 −Φ
+
+
+pc −0.4
+q
+0.4 · (1 −0.4)
+n
+
+
+Entonces,
+0.05 = 1 −Φ
+
+
+pc −0.4
+q
+0.4 · (1 −0.4)
+n
+
+⇒
+pc −0.4
+q
+0.4 · (1 −0.4)
+n
+= z0.95 ⇒
+⇒pc = 0.4 + z0.95 ·
+q
+0.4 · (1 −0.4)
+150
+= 0.4657941
+
+[Descripción de la imagen: pocion cita poro de datio de la nua de la nua de nua de | Transcripción de la imagen: Tests de
+
+Hipótesis
+Lic. Lucio Proporción crítica
+José —
+par:15:1¡5 Por lo tanto, se rechaza H si el valor estimado de p es mayor que un valor crítico pc.
+Considerando un nivel de significación a = 0.05, se limita la probabilidad de Error Tipo l:
+0.05 = P(Error tipo 1) = P(Rechazar Ho|Hoverdadera) = P (; > Pc|P = 0.4) =
+-P P—P > PP _ p=04
+X/p'(1—p) X/P-(1—P)
+n n
+Tests para
+propor- _
+ciones —0.4 —0.4 TCL — 0.4
+=P P > — p=04) <1-06 Pe
+X/o.4 -(1—0.4) X/0.4 -(1—0.4) 0.4- (1 — 0.4)
+n n n
+Entonces,
+Pc — 0.4 Pc — 0.4
+
+0.05=1—$
+
+— 20.95
+/0.4- (1—0.4) /0.4-(1—0.4)
+n n
+/0.4-(1—0.4
+= Pc = 0.4 + 20.05 - % = 0.4657941]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Estadísticos de prueba y decisiones
+Por lo tanto, podemos tomar como estadísticos de prueba tanto bp y
+Z =
+bp −p0
+r
+p0 · (1 −p0)
+n
+.
+• Se rechaza H0 si bp > pc = 0.4657941 o si Z > z1−α
+• Se acepta H0 si bp ≤pc = 0.4657941 o si Z ≤z1−α
+
+[Descripción de la imagen: estos pru y Dios por poro poro poro poro poro poro]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Error tipo II
+Con estos límites, podríamos calcular la probabilidad de Error Tipo II si el porcentaje de
+aprobados es 48%:
+β(0.48) = P(Aceptar H0|p = 0.48) = P(bp ≤pc|p = 0.48) ≈
+≈Φ
+
+
+pc −0.48
+q
+0.48·(1−0.48)
+150
+
+= 0.3638263
+
+[Descripción de la imagen: errore errore errore errore errore errore errore errore errore errore errore errore | Transcripción de la imagen: Tests de
+
+Hipótesis .
+Lic. Lucio Error tIpo ||
+José
+
+Pantazis
+Con estos límites, podríamos calcular la probabilidad de Error Tipo Il si el porcentaje de
+aprobados es 48%:
+
+Testo para 2(0.48) = P(Aceptar Ho|p = 0.48) = P(p < pc|p = 0.48) =
+
+propor-
+
+ciones
+
+Pc — 0.48
+
+0.48-(1—0.48)
+150
+
+= 0.30382603]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Post muestra
+Si se observa un porcentaje de aprobados de 50% (pobs = 0.5), se rechaza H0 ya que
+bp = 0.5 > 0.4657941 = pc.
+Es decir, hay evidencia suﬁciente para rechazar la hipótesis de que la proporción de
+aprobados es p = 0.4.
+Más aún, el p-Valor sería
+p −Valor = P(bp ≥pobs|p = 0.4) ≈1 −Φ
+ 
+0.5 −0.4
+p
+0.4·0.6
+150
+!
+= 0.0062
+
+[Descripción de la imagen: Postistao Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Postula Post]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+• Hipótesis nula H0 : p = p0
+• Hipótesis alternativa H1 : p < p0
+plot(GG)
+H0
+H1
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: test ultra lazada test ultra lazada test ultra lazada test ultra lazada test ultra lazada test ultra lazada test ultra la | Transcripción de la imagen: Tests de
+
+Hipótesis . . .
+Lic. Lucio Test unilateral a izquierda
+José
+Pantazis
+* Hipótesis nula Ho : p = po
+* Hipótesis alternativa H; : p < po
+plot (GG)
+10.0 =
+Tests para
+propor- 75=
+ciones
+
+Densidad
+o
+]
+1]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p < p0
+• Estadístico de prueba bp ó Z =
+bp −p0
+p
+p0·(1−p0)
+n
+• Valor crítico pc = p0 −z1−α ·
+p
+p0·(1−p0)
+n
+ó zc = −z1−α
+plot(GG)
+H0
+xc
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: ensayo de izquia lateral | Transcripción de la imagen: Tests de
+
+Hipótesis
+Lic. Lucio Test unilateral a izquierda
+José
+Pantazis
+* - Hipótesis nula Hg : p = pq y Hipótesis alternativa Hy : p < po
+* Estadístico de prueba ;ó Z= — —
+PO (1—r0)
+n
+* Valor crítico pc = po — Z1—a * pº'<1n*pº) ÓZc = —A—a
+plot (GG)
+Tests para
+RE 10.0 -
+ciones
+
+75=
+
+5.0-
+
+Densidad
+
+25-
+
+0.0=]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p < p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valor crítico pc = p0 −z1−α ·
+p
+p0·(1−p0)
+n
+ó zc = −z1−α
+•
+Regla de decisión:
+Sib
+p < pc ⇒Se rechaza H0
+Sib
+p ≥pc ⇒Se acepta H0
+o
+Si Z < zc ⇒Se rechaza H0
+Si Z ≥zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(p1) = 1 −Φ
+ 
+pc −p1
+p
+p1·(1−p1)
+n
+!
+plot(GG)
+H1
+H0
+xc
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: ensayo de izquia lateral | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+* Probabilidad de error tipo Il: 8(p1) =1 — $
+
+Test unilateral a izquierda
+
+Hipótesis nula Hj : p = po y Hipótesis alternativa Hy : p < po
+
+—
+ósti 7e6 P— PO
+Estadístico de prueba pó Z = —————— —
+Po-(1—p0)
+n
+-(1—
+Valor crítico pc = Po — Z1— a* … ÓZ = —4_a
+Regla de decisión:
+—
+Si p < pc = Se rechaza Hg SiZ < zc = Se rechaza Hg
+—
+
+Si p > pc = Se acepta Ho
+
+plot (66)
+
+10.0 =
+75-
+5.0 -
+25-
+0.0= ;
+
+Densidad
+
+SiZ > zc = Se acepta Ho
+
+Si p — Valor < a — Se rechaza Hg
+Si p — Valor > a > Se acepta Hg]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a izquierda
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p < p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valor crítico pc = p0 −z1−α ·
+p
+p0·(1−p0)
+n
+ó zc = −z1−α
+•
+Regla de decisión:
+Sib
+p < pc ⇒Se rechaza H0
+Sib
+p ≥pc ⇒Se acepta H0
+o
+Si Z < zc ⇒Se rechaza H0
+Si Z ≥zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(p1) = 1 −Φ
+ 
+pc −p1
+p
+p1·(1−p1)
+n
+!
+•
+p-Valor: p −Valor = Φ
+ 
+pobs −p0
+p
+p0·(1−p0)
+n
+!
+plot(GG)
+H0
+p−Valor
+pObs
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: ensayo de izquia lateral | Transcripción de la imagen: Tests de
+Hipótesis
+Lic. Lucio
+
+José
+Pantazis
+
+Motivación
+
+Tests para
+propor-
+ciones
+
+—
+
+Test unilateral a izquierda
+
+*  Hipótesis nula Hj : p = po y Hipótesis alternativa H : p < pO
+
+—
+
+9 Estadístico de prueba p ó Z =
+
+* Regla de decisión:
+
+-
+
+Valor crítico pc = Po — Z1—a *
+
+Si p < Pc => Se rechaza Hg
+a
+
+Si p > pc = Se acepta Ho
+
+* - Probabilidad de error tipo II: 8(p1) =1 — $
+
+9 p-Valor: p — Valor = $
+
+plot (66)
+
+Densidad
+
+P — PO
+
+SiZ < zc = Se rechaza Ho
+SiZ > zc > Se acepta HO
+
+Si p — Valor < a — Se rechaza Ho
+Si p — Valor > a —> Se acepta Ho]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+• Hipótesis nula H0 : p = p0
+• Hipótesis alternativa H1 : p > p0
+plot(GG)
+H0
+H1
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: testia de la estr | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Test unilateral a derecha
+
+* Hipótesis nula Ho : p = po
+
+* Hipótesis alternativa H; : p > po
+
+plot (GG)
+
+Tests para
+propor-
+ciones
+
+Densidad
+
+10.0 =
+
+75=
+
+5.0=
+
+25-
+
+0.0 -]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p > p0
+• Estadístico de prueba bp ó Z =
+bp −p0
+q
+p0·(1−p0)
+n
+• Valor crítico pc = p0 + z1−α ·
+q
+p0·(1−p0)
+n
+ó zc = z1−α
+plot(GG)
+H0
+pc
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: testia de est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+Test unilateral a derecha
+
+* - Hipótesis nula Hy : p = pq y Hipótesis alternativa Hy : p > po
+
+* Estadístico de prueba 3 óZ=
+
+P—Po
+
+Po-(1—r0)
+
+n
+
+* Valor crítico pc = po + Z1—a “ 1/ … Ó Z- =ZI—a
+
+plot (GG)
+
+Densidad
+
+10.0 =
+
+75=
+
+5.0-
+
+25-
+
+0.0 -]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p > p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valor crítico pc = p0 + z1−α ·
+p
+p0·(1−p0)
+n
+ó zc = z1−α
+•
+Regla de decisión:
+Sib
+p > pc ⇒Se rechaza H0
+Sib
+p ≤pc ⇒Se acepta H0
+o
+Si Z > zc ⇒Se rechaza H0
+Si Z ≤zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+• Probabilidad de error tipo II: β(p1) = Φ
+
+
+pc −p1
+q
+p1·(1−p1)
+n
+
+
+plot(GG)
+H1
+H0
+pc
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: teste de teste de teste de teste de teste de teste de teste de | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+Test unilateral a derecha
+
+Hipótesis nula Hj : p = po y Hipótesis alternativa Hy : p > po
+
+—
+s —>, P — PO
+Estadístico de prueba pó Z = ——————
+PO-(1—ro)
+n
+- (1—
+Valor crítico pc = Po + 71— a* M ÓZ =Z1—a
+Regla de decisión:
+—
+Si p > pc = Se rechaza Hg o SiZ > zc > Se rechaza Ho o Si p — Valor < a —> Se rechaza Hg
+— Si Z < zc > Se acepta HO Si p — Valor > a —> Se acepta Ho
+
+Si p < pc = Se acepta Ho
+
+Probabilidad de error tipo Il: 8(p,) = $
+
+plot (GG)
+
+10.0 =
+
+75=
+
+5.0-
+
+Densidad
+
+25-
+
+0.0=]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test unilateral a derecha
+•
+Hipótesis nula H0 : p = p0 y Hipótesis alternativa H1 : p > p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valor crítico pc = p0 + z1−α ·
+p
+p0·(1−p0)
+n
+ó zc = z1−α
+•
+Regla de decisión:
+Sib
+p > pc ⇒Se rechaza H0
+Sib
+p ≤pc ⇒Se acepta H0
+o
+Si Z > zc ⇒Se rechaza H0
+Si Z ≤zc ⇒Se acepta H0
+o
+Si p −Valor < α ⇒Se rechaza H0
+Si p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(p1) = Φ
+ 
+pc −p1
+p
+p1·(1−p1)
+n
+!
+•
+p-Valor: p −Valor = 1 −Φ
+ 
+pobs −p0
+p
+p0·(1−p0)
+n
+!
+plot(GG)
+H0
+p−Valor
+pObs
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: testia de est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: Tests de
+Hipótesis
+Lic. Lucio
+
+José
+Pantazis
+
+Motivación
+
+cido)
+
+Tests para
+propor-
+ciones
+
+Test unilateral a derecha
+
+Hipótesis nula Hj : p = po y Hipótesis alternativa H : p > po
+
+—
+P — PO
+/ Po:(1—ro)
+n
+/ po-(1—
+* - Valor crítico pc = Po +71—a * M ÓZ =_a
+
+* Regla de decisión:
+
+—
+9 Estadístico de prueba p ó Z =
+
+—
+Si p > pc = Se rechaza Ho o SiZ > zc > Se rechaza Ho o Si p — Valor < a —> Se rechaza Hg
+—
+
+Si p < pc = Se acepta Ho Si Z < zc > Se acepta HO Si p — Valor > a —> Se acepta Ho
+
+* - Probabilidad de error tipo II: 3(p1) = $
+
+* p-Valor: p — Valor =1 — $
+
+plot (66)
+
+10.0 -
+
+Densidad
+o
+[=]
+U]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+• Hipótesis nula H0 : p = p0
+• Hipótesis alternativa H1 : p ̸= p0
+plot(GG)
+H0
+H1
+H1
+0.0
+2.5
+5.0
+7.5
+10.0
+0.2
+0.4
+0.6
+0.8
+p
+Densidad
+
+[Descripción de la imagen: tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetral tetra | Transcripción de la imagen: Tests de
+
+Hipótesis .
+Lic. Lucio Test bilateral
+José
+Pantazis
+* Hipótesis nula Ho : p = po
+* Hipótesis alternativa H; : p £ po
+plot (GG)
+10.0 =
+Tests para HO
+RE 75-
+ciones D
+D
+e 50- Hi H1
+a)
+2.5-
+AA
+U U 1 L
+0.2 0.4 0.6 0.8]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : p = p0
+Hipótesis alternativa H1 : p ̸= p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valores críticos
+
+pc1 = p0 −z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+y
+pc2 = p0 + z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+
+ó
+zc = z1−α
+2
+plot(GG)
+H0
+pc1
+pc2
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: tec conferencia, otoño 2004 tec conferencia, otoño 2004 tec conferencia tec conferencia tec conferencia tec conferencia tec conferencia | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+* - Hipótesis nula Ho : p = po
+
+9 Estadístico de prueba p ó Z =
+
+—
+
+* - Valores críticos
+
+plot (66)
+
+P =P -4-9"
+
+Densidad
+
+10.0 =
+
+75=
+
+5.0-
+
+25-
+
+0.0=
+
+—
+P— PO
+
+PO :(1—r0)
+n
+
+Po - (1 — p0)
+
+Test bilateral
+
+Hipótesis alternativa Hy : p 7 po]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : p = p0
+Hipótesis alternativa H1 : p ̸= p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valores críticos
+
+pc1 = p0 −z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+y
+pc2 = p0 + z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Sib
+p < pc1 ob
+p > pc2 ⇒Se rechaza H0
+Si pc1 ≤b
+p ≤pc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+ 
+pc2 −p1
+p
+p1·(1−p1)
+n
+!
+−Φ
+ 
+pc1 −p1
+p
+p1·(1−p1)
+n
+!
+plot(GG)
+H1
+H0
+pc1
+pc2
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: Tec - Tec - Tec - Tec - Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+Test bilateral
+
+Hipótesis nula Hg : p = po — Hipótesis alternativa Hi : p 7 po
+
+—
+Estadístico de prueba p ó Z =
+
+Valores críticos
+
+pclípolei%.
+
+y Pc2:P0+zli%-
+
+2
+Regla de decisión:
+— —
+Sip < Pcj O p > Pcy = Se rechaza Ho o Si IZ| > zc > Se rechaza Ho , P— Valr<a> Se rechaza Ho
+— Si IZ| < zc > Se acepta Hg p — Valor > a =+ Se acepta Hg
+
+Si Pes <p< Poo > Se acepta Hg
+
+plot (66)
+
+M . Peo — P1 Pa P1
+Probabilidad de error tipo II: 8(1.1) = —
+P1:(1—P1) P1:(1—P1)
+n n
+10.0 =
+8 75-
+3
+% 5.0=
+QA 25-
+0.0 -]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : p = p0
+Hipótesis alternativa H1 : p ̸= p0
+•
+Estadístico de pruebab
+p ó Z =
+b
+p −p0
+p
+p0·(1−p0)
+n
+•
+Valores críticos
+
+pc1 = p0 −z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+y
+pc2 = p0 + z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Sib
+p < pc1 ob
+p > pc2 ⇒Se rechaza H0
+Si pc1 ≤b
+p ≤pc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+ 
+pc2 −p1
+p
+p1·(1−p1)
+n
+!
+−Φ
+ 
+pc1 −p1
+p
+p1·(1−p1)
+n
+!
+plot(GG)
+H1
+H0
+pc1
+pc2
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: Tec - Tec - Tec - Tec - Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+Test bilateral
+
+Hipótesis nula Hg : p = po — Hipótesis alternativa Hi : p 7 po
+
+— P
+Estadístico de prueba p ó Z = —
+
+Valores críticos
+
+Py =P -1-39
+
+y Pc2:po+zlf%-
+
+2
+Regla de decisión:
+— —
+Sip < Pcj O p > Pcy = Se rechaza Ho o Si IZ| > zc > Se rechaza Ho p — Valor < a > Se rechaza Ho
+—
+
+. o
+Si Pa <p< Poy = Se acepta Hy Si IZ| < zc > Se acepta Hg p — Valor > a =+ Se acepta Hg
+
+plot (66)
+
+E . Peo — P1 Pcy — P1
+Probabilidad de error tipo II: 8(1.1) = —
+P1:(1—P1) P1:(1—P1)
+n n
+10.0 -
+y 75-
+D
+D 50-
+-
+Ó 25-
+0.0=]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : p = p0
+Hipótesis alternativa H1 : p ̸= p0
+•
+Estadístico de pruebab
+p ó Z =
+(b
+p−p0)·√n
+p
+p0·(1−p0)
+•
+Valores críticos
+
+pc1 = p0 −z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+y
+pc2 = p0 + z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Sib
+p < pc1 ob
+p > pc2 ⇒Se rechaza H0
+Si pc1 ≤b
+p ≤pc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+
+(pc2 −p1)·√n
+p
+p1·(1−p1)
+
+−Φ
+
+(pc1 −p1)·√n
+p
+p1·(1−p1)
+
+•
+p-Valor: p −Valor = 2 ·
+
+1 −Φ
+
+|pobs −p0|
+p
+p0·(1−p0)
+n
+
+plot(GG)
+H0
+p−Valor
+pObs
+p−Valor
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: tec - tec - tec - tec tec tec tec tec tec tec tec tec tec | Transcripción de la imagen: Tests de
+
+Hipótesis
+Lic. Lucio Test bilateral
+José *  Hipótesis nula Ho : p = po — Hipótesis alternativa Hy : p 7 po
+Pantazis
+—
+—
+*  Estadístico de prueba p ó 7 = P—7
+PO :(1—ro)
+* - Valores críticos
+Po - (1 — p0) PO - (1— 0) .
+Pj =P0 -Q — Y Po=M+4_€: — Ó Zc=77_a
+2 n 2 n 2
+* Regla de decisión:
+— —
+Teostípara Sip < Pcy O P > Pcy = Se rechaza Ho o Si IZ| > zc => Se rechaza Ho o P— Valor < a = Se rechaza Hg
+propor- — . _
+ciones Si Pep < p < Poy = Se acepta Ho Si IZ| < zc = Se acepta H p — Valor > a = Se acepta Hg
+
+(Pcy —P1): V _e (Pej —P1): V
+
+A/P1:(1—71) A/P1:(1—P1)
+
+9 p-Valor: p — Valor = 2- |pobs
+
+/ Po:(1—P0)
+
+*  Probabilidad de error tipo II: 3(1.1) = $
+
+plot (66)
+
+p0bs—:
+
+Densidad
+
+O NPAINO
+
+OoOO
+1
+
+- D
+ñ
+<
+D
+S
+
+0.3 0.4 0.5 0.6]]
+
+Tests de
+Hipótesis
+Lic. Lucio
+José
+Pantazis
+Motivación
+Tests de
+hipótesis
+(desvío
+conocido)
+Tests de
+hipótesis
+(Desvío
+descono-
+cido)
+Tests para
+propor-
+ciones
+Test bilateral
+•
+Hipótesis nula H0 : p = p0
+Hipótesis alternativa H1 : p ̸= p0
+•
+Estadístico de pruebab
+p ó Z =
+(b
+p−p0)·√n
+p
+p0·(1−p0)
+•
+Valores críticos
+
+pc1 = p0 −z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+y
+pc2 = p0 + z1−α
+2
+·
+q
+p0 · (1 −p0)
+n
+
+ó
+zc = z1−α
+2
+•
+Regla de decisión:
+Sib
+p < pc1 ob
+p > pc2 ⇒Se rechaza H0
+Si pc1 ≤b
+p ≤pc2 ⇒Se acepta H0
+o
+Si |Z| > zc ⇒Se rechaza H0
+Si |Z| ≤zc ⇒Se acepta H0
+o
+p −Valor < α ⇒Se rechaza H0
+p −Valor ≥α ⇒Se acepta H0
+•
+Probabilidad de error tipo II: β(µ1) = Φ
+
+(pc2 −p1)·√n
+p
+p1·(1−p1)
+
+−Φ
+
+(pc1 −p1)·√n
+p
+p1·(1−p1)
+
+•
+p-Valor: p −Valor = 2 ·
+
+1 −Φ
+
+|pobs −p0|
+p
+p0·(1−p0)
+n
+
+plot(GG)
+H0
+p−Valor
+pObs
+p−Valor
+0.0
+2.5
+5.0
+7.5
+10.0
+0.3
+0.4
+0.5
+0.6
+p
+Densidad
+
+[Descripción de la imagen: Tec - Tec - Tec - Tec - Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec Tec | Transcripción de la imagen: Tests de
+Hipótesis
+
+Lic. Lucio
+José
+Pantazis
+
+Tests para
+propor-
+ciones
+
+Test bilateral
+
+Hipótesis nula Hg : p = po — Hipótesis alternativa Hi : p 7 po
+
+-
+
+—
+Estadístico de prueba p ó Z = …
+PO :(1—ro)
+Valores críticos
+Po - (1 — p0) PO - (1— 0) .
+Pcy =PO -7 — Y Po=M+Z_a: — — Ó Zc=77_a
+2 n 2 n 2
+Regla de decisión:
+— —
+Si p < Pcy OP > Pcy = Se rechaza Hg Si |Z| > zc > Se rechaza H, p — Valor < a > Se rechaza H
+1 2 o (y (y
+
+. o
+Si pep <P < Pey =+ Se acepta Ho Si IZ| < zc = Se acepta H p — Valor > a = Se acepta Hg
+
+Pcy —P1): Vn Pcj —P1): Vn
+Probabilidad de error tipo Il: 3(11) = * (Pey —P1) o| Pa—)
+
+plot (66)
+
+P1-(1—P1) P1:(1—P1)
+p-Valor: p — Valor =2. | 1—-6 | —Pobs—POl_
+PO :(1—r0)
+n
+v 10.0-
+$ 75-
+<Z7 5.0=
+o 25-
+QA 0.0-]]
+

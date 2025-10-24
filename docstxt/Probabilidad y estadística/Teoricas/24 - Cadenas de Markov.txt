@@ -1,0 +1,604 @@
+Proceso de Markov
+Se dice que un proceso estocástico es un proceso de Markov 
+sii para todo  toda secuencia  y todo 
+Es decir, sólo importa el valor más “reciente”.
+Hechos:
+•
+La caminata aleatoria es un proceso de Markov.
+•
+Asumir que se trata de un proceso de Markov simplifica mucho las 
+cosas.
+
+[Descripción de la imagen: proceso de marketing poro]
+
+Cadena de Markov
+Habitualmente, se llama cadena de Markov a un proceso de 
+Markov que tiene un espacio de parámetro discreto: T.
+En nuestro caso, consideraremos también un espacio de 
+estados discreto: .
+Hecho:
+•
+La caminata aleatoria es una cadena de Markov.
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Una cadena de Markov  queda completamente descripta por:
+1.
+La distribución de probabilidades del estado inicial
+𝑝𝑗(0 )=𝑃( 𝑋(0)=𝑒𝑗)
+2.
+Las probabilidades de transición entre cada par de estados
+𝑝𝑖𝑗(𝑛)= 𝑃( 𝑋(𝑛+1)=𝑒𝑗∨𝑋(𝑛)=𝑒𝑖)
+∑
+𝑗
+𝑝𝑗(0)=1
+∑
+𝑗
+𝑝𝑖𝑗(𝑛)=1
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Matriz de probabilidades de transición de un solo paso:
+ℙ(𝑛)=(
+𝑝11 (𝑛)
+𝑝12 (𝑛)
+⋯
+𝑝21 (𝑛)
+𝑝22 (𝑛)
+⋯
+⋮
+⋮
+⋱)
+Las filas suman 1.
+Vector de probabilidades:
+⃗𝑝(𝑛)=( 𝑝1(𝑛)
+𝑝2(𝑛)
+⋯)
+Suma 1.
+
+[Descripción de la imagen: una nota con las palabras''y''en español | Transcripción de la imagen: Cadena de Markov
+
+Vector de probabilidades:
+
+Ppin)=Ip.(n) p.(n)
+
+Suma 1.
+
+Matriz de probabilidades de transición de un solo paso:
+
+Paulr) Pln)
+
+Las filas suman 1.]]
+
+Cadena de Markov
+Diagrama de estados
+𝑒1
+𝑒2
+𝑒3
+𝑝12
+𝑝21
+𝑝32
+𝑝23
+𝑝13
+𝑝31
+𝑝11
+𝑝22
+𝑝33
+
+[Descripción de la imagen: cade de marco diagrama de marco | Transcripción de la imagen: Cadena de Markov
+
+Diagrama de estados
+
+D1]]
+
+Cadena de Markov
+Ecuación de Chapman-Kolmogorov:
+𝑝𝑗(𝑛+1)=𝑝1(𝑛) 𝑝1 𝑗(𝑛)+𝑝2 (𝑛) 𝑝2 𝑗(𝑛)+𝑝3(𝑛)𝑝3 𝑗(𝑛)+…
+Forma matricial:
+⃗𝑝(𝑛+1)=⃗𝑝(𝑛)ℙ(𝑛)
+𝑝𝑗(𝑛+1)=∑
+𝑖
+𝑝𝑖(𝑛)𝑝𝑖𝑗(𝑛)
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación | Transcripción de la imagen: Cadena de Markov
+
+Ecuación de Chapman-Kolmogorov:
+
+pn+1)=p,Inp, n)+p,In|p, n)+p,In)p, ¡ IN|+...
+
+pj(n+1):Z pi(n)pij(n)
+
+Forma matricial:
+
+pln+1)=p(n)P(n)]]
+
+Cadena de Markov
+Cadenas homogéneas: las probabilidades de transición no 
+dependen del tiempo
+𝑝𝑖𝑗(𝑛)=𝑝𝑖𝑗(𝑘)
+Chapman-Kolmogorov:
+Matriz de probabilidades de transición de k pasos:
+
+[Descripción de la imagen: caden de marjo cadens horges, las probadas, tras no]
+
+Cadena de Markov
+        El vendedor viajero 
+La región de ventas de un vendedor la componen tres 
+ciudades A, B y C. Nunca vende en la misma ciudad en días 
+seguidos. Si vende en la ciudad A, entonces al día siguiente 
+vende en la ciudad B. Sin embargo, si vende en una de las 
+dos ciudades B o C, entonces al día siguiente la 
+probabilidad de vender en A es el doble de la de vender en 
+la restante.
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+        El vendedor viajero 
+Diagrama de transición
+Matriz de probabilidades de transición
+ℙ=(
+0
+1
+0
+2/3
+0
+1/3
+2/3
+1/3
+0 )
+
+[Descripción de la imagen: un diagrama de un árbol con un número de 1]
+
+Cadena de Markov
+Probabilidad a largo plazo o distribución estacionaria:
+⃗𝜋= lim
+𝑛→∞⃗𝑝(𝑛)
+No siempre existe, pero, si existe, se corresponde con un 
+autovector a izquierda correspondiente al autovalor 1 de :
+⃗𝜋= lim
+𝑛→∞⃗𝑝(𝑛)=¿ lim
+𝑛→∞⃗𝑝(𝑛+1)=¿ lim
+𝑛→∞⃗𝑝(𝑛) ℙ=[ lim
+𝑛→∞⃗𝑝(𝑛)] ℙ¿¿
+⃗
+𝜋= ⃗
+𝜋ℙ
+No toda distribución que satisface esta ecuación es una 
+distribución estacionaria.
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Condición suficiente para la existencia de una distribución 
+estacionaria:
+Si una cadena de Markov finita es regular, esto es, existe  tal  
+tiene todos sus elementos positivos (> 0), entonces existe una 
+distribución de probabilidad esacionaria
+
+[Descripción de la imagen: un bloc de notas con las palabras''y''en español]
+
+Cadena de Markov
+El vendedor viajero 
+La cadena es regular, en 4 pasos todos los estados están 
+conectados. 
+Existe 
+una 
+distribución 
+estacionaria 
+de 
+probabilidades independiente de la distribución inicial de 
+probabilidades de estados. 
+ℙ4=(
+42/81
+18 /81
+21 /81
+26 /81
+49/81
+6 /81
+26 /81
+48/81
+7 /81 )
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+El vendedor viajero 
+ℙ10=(
+0.41040
+0.42920
+0.16039
+0.39306
+0.46387
+0.14307
+0.39306
+0.46385
+0.14308)
+ℙ100=(
+0.40000
+0.45000
+0.15000
+0.40000
+0.45000
+0.15000
+0.40000
+0.45000
+0.15000)
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+El vendedor viajero 
+⃗
+𝜋= ⃗
+𝜋ℙ
+(𝑎
+𝑏
+𝑐)=(𝑎
+𝑏
+𝑐)(
+0
+1
+0
+2 /3
+0
+1/3
+2 /3
+1/3
+0 )
+𝑎= 2
+3 𝑏+ 2
+3 𝑐
+𝑏=𝑎+ 1
+3 𝑐
+𝑐= 1
+3 𝑏
+No son l.i.
+
+[Descripción de la imagen: una hoja con la ecuación del número del número del número del número del número del número de | Transcripción de la imagen: Cadena de Markov
+
+El vendedor viajero
+
+No son |.I.]]
+
+Cadena de Markov
+El vendedor viajero 
+⃗
+𝜋= ⃗
+𝜋ℙ
+(𝑎
+𝑏
+𝑐)=(𝑎
+𝑏
+𝑐)(
+0
+1
+0
+2 /3
+0
+1/3
+2 /3
+1/3
+0 )
+𝑎= 2
+3 𝑏+ 2
+3 𝑐
+1=𝑎+𝑏+𝑐
+𝑐= 1
+3 𝑏
+Agregamos 
+una ecuación
+
+[Descripción de la imagen: una hoja con la ecuación de la ecuación | Transcripción de la imagen: Cadena de Markov
+
+El vendedor viajero
+
+2 2
+a—5b+5c
+
+Agregamos
+1=d+b+c una ecuación
+
+1
+C—5b]]
+
+Cadena de Markov
+El vendedor viajero 
+⃗
+𝜋= ⃗
+𝜋ℙ
+⃗
+𝜋=(𝑎
+𝑏
+𝑐)=( 8
+2 0
+9
+20
+3
+20)
+⃗𝜋=(𝑎
+𝑏
+𝑐)= (0.40
+0.45
+0.15)
+
+[Descripción de la imagen: una hoja con las palabras'''' y'''' en español | Transcripción de la imagen: Cadena de Markov
+
+El vendedor viajero]]
+
+Cadena de Markov
+        El vendedor viajero 
+ Aquí se muestra la evolución temporal de la distribución de 
+probabilidades de estados en función del tiempo. Se supuso 
+que inicialmente el vendedor estaba en la ciudad A.
+
+[Descripción de la imagen: cade de marko aquise muestra dedicion de distudi]
+
+Cadena de Markov
+El bebé
+Un modelo muy simple de un infante tiene tres estados: 1 – 
+Come; 2 – Hace sus necesidades; 3 – Duerme 
+𝐶𝑜
+𝐶𝑎
+𝐷𝑢
+1
+1
+1
+
+[Descripción de la imagen: un diagrama de un árbol con los nombres de las letras]
+
+Cadena de Markov
+El bebé
+Un modelo muy simple de un infante tiene tres estados: 1 – 
+Come; 2 – Hace sus necesidades; 3 – Duerme 
+ℙ=(
+0
+1
+0
+0
+0
+1
+1
+0
+0)
+¿Existe una distribución estacionaria?
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+El bebé
+(𝑎
+𝑏
+𝑐)=(𝑎
+𝑏
+𝑐)(
+0
+1
+0
+0
+0
+1
+1
+0
+0)
+𝑎=𝑏
+1=𝑎+𝑏+𝑐
+𝑏=𝑐
+⃗
+𝜋= ⃗
+𝜋ℙ
+𝑎=𝑏=𝑐= 1
+3
+
+[Descripción de la imagen: una hoja con las palabras "ebe" y "ebe" | Transcripción de la imagen: Cadena de Markov
+
+El bebé
+
+£ i iiLÑ .Y ———
+
+— —]]
+
+Cadena de Markov
+El bebé
+Sin embargo, no existe una distribución estacionaria: la 
+cadena es periódica
+ℙ4=ℙ=(
+0
+1
+0
+0
+0
+1
+1
+0
+0)
+¿Qué significa la distribución obtenida? Que, en promedio, el 
+bebé pasa un tercio del tiempo en cada uno de los estados.
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Vida
+La probabilidad de que un individuo muera durante el próximo 
+año es . Los estados posibles son: 1 – Muerto; 2 – Vivo
+𝑀
+𝑉
+𝑝
+1
+La muerte es un estado absorbente.
+
+[Descripción de la imagen: un diagrama de una línea de código]
+
+Cadena de Markov
+Vida
+La probabilidad de que un individuo muera durante el próximo 
+año es . Los estados posibles son: 1 – Muerto; 2 – Vivo
+ℙ=(
+1
+0
+𝑝
+𝑞)
+ℙ𝑛=(
+1
+0
+1 −𝑞𝑛
+𝑞𝑛)
+
+[Descripción de la imagen: caden de marco vida la probable que unviddoo]
+
+Cadena de Markov
+Vida
+Si (está vivo inicialmente), ¿cuántos años permanecerá en 
+ese estado?
+𝑃( 𝑁=1∨𝑋(0)=2)=𝑝
+Llamemos  número de años vivo
+𝑃( 𝑁=2∨𝑋(0 )=2)=𝑝𝑞
+𝑃( 𝑁=3∨𝑋(0 )=2)=𝑝𝑞2
+𝑃( 𝑁=4∨𝑋(0 )=2)=𝑝𝑞3
+⋮
+𝑃( 𝑁=𝑛∨𝑋(0 )=2)=𝑝𝑞𝑛−1
+
+[Descripción de la imagen: una sábana con las palabras''y''en español | Transcripción de la imagen: Cadena de Markov
+
+Vida
+Si (está vivo inicialmente), ¿cuántos años permanecerá en
+
+ese estado?
+
+Llamemos número de años vivo
+PII =1 X
+PIIN =2Vv X (
+PlIIV =3v X(o
+PII =4v X(O
+
+PlIIN =nv X (o)]]
+
+Cadena de Markov
+Vida
+Si (está vivo inicialmente), ¿cuántos años permanecerá en 
+ese estado?
+𝐸(𝑁∨𝑋(0)=2)=∑
+𝑛= 0
+∞
+𝑛𝑃( 𝑁=𝑛∨𝑋(0)=2)
+Llamemos  número de años vivo
+𝐸( 𝑁∨𝑋(0)=2)=∑
+𝑛= 0
+∞
+𝑛𝑝𝑞𝑛−1
+𝐸( 𝑁∨𝑋(0)=2)=
+1
+1−𝑞
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Vida más compleja
+Un individuo puede estar en cualquiera de tres estados: 1 – 
+Muerto; 2 – Enfermo; 3 – Sano.
+
+[Descripción de la imagen: un bloc de notas con las palabras 'vidas' y 'vidas']
+
+Cadena de Markov
+Vida más compleja
+𝑀
+𝐸
+𝑆
+0.1
+0.29
+0.6
+0.01
+1
+0.3
+0.7
+
+[Descripción de la imagen: un diagrama de un nodo nodo nodo nodo nodo nodo nodo nodo nodo nodo nodo nodo | Transcripción de la imagen: Cadena de Markov
+
+Vida más compleja]]
+
+Cadena de Markov
+Vida más compleja
+ℙ=(
+1
+0
+0
+0.10
+0.30
+0.60
+0.01
+0.29
+0.70)
+Estructura:
+ℙ=(
+𝕀
+𝟎
+𝔽
+ℚ)
+Definimos: 
+Al igual que en el ejemplo anterior, se puede demostrar que  
+valor esperado del tiempo pasado en , dado que se comenzó 
+en , antes de alcanzar un estado absorbente.
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+
+Cadena de Markov
+Vida más compleja
+𝔼=(𝕀−ℚ)−1=(
+25
+3
+50
+3
+145
+18
+175
+9 )
+Llamemos:
+ número de años enfermo, 
+ número de años sano
+,  
+,
+
+[Descripción de la imagen: un cuaderno con un número de 3 y un número de 3]
+
+Andrei Andreyevich Markov
+(1856-1922)
+
+[Descripción de la imagen: una vieja foto de un hombre con barba | Transcripción de la imagen: yevich Markov
+
+Andre]]
+
+Cadena de Markov
+function p = markov(P,p0,N)
+% P es la matriz de transición 
+% p0 es el vector inicial de probabilidades
+% N es el vector de instantes donde se desea analizar
+M = rows(P);
+N = sort(N); 
+n  = max(N);
+p  = zeros(n+1,M);
+p(1,:) = p0;
+for k = 1:n
+  p(k+1,:) = p(k,:)*P;
+end
+p = p(N,:);
+
+[Descripción de la imagen: caden de marko]
+
+Cadena de Markov
+function X = simulmarkov(P,x0,n)
+% Genera una realización de una cadena de Markov
+% P es la matriz de transición 
+% x0 es el estado inicial 
+% n es la cantidad de instantes considerados
+M = rows(P);
+E = 1:M;
+X = zeros(n,1);
+X(1)=x0;
+for k=1:n-1
+  X(k+1) = discrete_rnd(E,P(X(k),:),1);
+end
+
+[Descripción de la imagen: una nota con las palabras''y''en español]
+

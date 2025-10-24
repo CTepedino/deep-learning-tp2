@@ -1,0 +1,126 @@
+PROBABILIDAD Y ESTADISTICA   93.24        SEGUNDO  PARCIAL  18/11/22​
+ 
+ 
+INDICACIONES:  Indique claramente apellido, nombre, número  de legajo y curso  en cada hoja que entregue. 
+No solicite indicaciones ni aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  
+cuenta cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables 
+aleatorias y comente la solución.   
+SUERTE...                                DURACION : 2.5  HORAS. 
+ 
+APELLIDO Y NOMBRE : ...............................….................................................................. Nro de Legajo y curso :................…... 
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+TOTAL 
+NOTA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos) El gerente de personal de CHAPAS S.A. quiere determinar la cantidad de tiempo que necesitan sus 
+empleados para llegar al trabajo. Se selecciona una muestra aleatoria de 12 empleados y se registra el tiempo 
+en minutos para llegar al trabajo, con los siguientes resultados: 
+ 
+45 
+35 
+50 
+70 
+60 
+55 
+30 
+45 
+80 
+40 
+40 
+30 
+ 
+a) Obtenga un intervalo de confianza del 95% para el tiempo medio de viaje de los empleados de esta empresa.  
+b) Con un nivel de significación del 1%, ¿hay evidencia estadísticamente significativa de que el tiempo promedio 
+de viaje de los empleados es menor a 60 minutos? Explique claramente la prueba de hipótesis involucrada. 
+Indique que suposición es necesaria introducir para responder a ambas cuestiones. 
+ 
+a) Si la muestra aleatoria proviene de una población normal se cumplen las condiciones para realizar la 
+obtención del IC usando la media y el desvío estándar muestrales y un fractil conveniente de la distribución t de 
+Student con 11 grados de libertad. La respuesta es el intervalo (38.43, 58.23). 
+b) En la prueba de cola izquierda planteada se verifica que no hay rechazo de la hipótesis nula ya que el valor 
+observado del estadístico de prueba con distribución t con 11 grados de libertad es -2.595 siendo el valor crítico 
+-2.72 (al 1% de significación). 
+ 
+ 
+2. (2 puntos) En una ciudad se considera que históricamente un 10% de la población es portadora de cierto 
+virus. Empieza a sospecharse que, ante el aumento del número de casos, el porcentaje de la población afectada 
+se modificó. Se toma una muestra de la población y se testea a las personas elegidas para verificar si son o no 
+portadoras del virus. 
+a) A partir de la información muestral se obtuvo el intervalo (0.098, 0.1298) para la proporción de portadores en 
+la población con un nivel de confianza 0.92. Calcular el valor observado de la proporción muestral y el tamaño de 
+la muestra. 
+b) En base a la muestra extraída, ¿hay evidencia de que haya aumentado significativamente la proporción de 
+portadores del virus? Describir las hipótesis enfrentadas, el estadístico de prueba, la región de rechazo, la 
+decisión que se toma y el p-valor. Considerar un nivel de significación del 6%. 
+ 
+a) Usando la información propuesta resulta que la proporción muestral medida fue 0.1139 y el tamaño muestral 
+1224. 
+b) En la prueba de cola derecha se cumple que el valor observado del estadístico de prueba con distribución 
+normal estándar es 1.621 siendo el valor crítico 1.555 (al 6% de significación) dando lugar al rechazo de la 
+hipótesis nula: se afirma que evidencia significativa (al 6% de significación). El valor p de la muestra es 0.0525.  
+ 
+​
+​  
+3. (2 puntos) El largo L y el ancho A de una placa se suponen variables aleatorias independientes. El largo tiene 
+distribución uniforme en (1, 1.08) y el ancho también tiene distribución uniforme, pero en (0.5, 0.55).3 
+Calcule la probabilidad de que 
+a) el área de la placa sea menor a 0.58. 
+b) el largo sea mayor que el doble del ancho. 
+ 
+a) 0.956   b) 0.4
+
+[Descripción de la imagen: un documento con las palabras en español e inglés]
+
+4. (2 puntos) La variable aleatoria X tiene la siguiente distribución de probabilidades en cierta población: 
+​
+​
+​
+ 
+Valores de X 
+1 
+2 
+3 
+Probabilidad 
+0.10 
+0.50 
+0.40 
+ 
+Se extrae una muestra aleatoria de tamaño 3 con reposición de esta población. 
+a) Obtenga la distribución de probabilidades de la media muestral. 
+b) Calcule la probabilidad de que la media muestral sea mayor o igual que la media poblacional. 
+ 
+a) Los pares (valor de la media muestral, probabilidad) son : (1,0.001), (4/3, 0.015), (5/3, 0.087), (2, 0.245), (7/3, 
+0.348), (8/3, 0.24)  y (3, 0.064). 
+b) 0.652 
+ 
+ 
+5. (2 puntos) Los intervalos de tiempo entre ocurrencias de cierto experimento aleatorio se pueden suponer 
+variables aleatorias independientes con distribución exponencial de media m segundos. 
+a) Aproxime el cálculo de la probabilidad de que el instante de la ocurrencia del evento número 900 ocurra en el 
+intervalo (840 m , 960 m). 
+b) Tras un número grande de repeticiones del experimento se estimó con un valor de 0.2  la probabilidad de que 
+el tiempo hasta la ocurrencia del evento número 100 fuera inferior a 1000 segundos.  Estime el valor de m. 
+ 
+Recuerdo: Una variable aleatoria continua con distribución exponencial tiene valor esperado y desvío estándar iguales. 
+ 
+ 
+  a) Usando el TCL resulta 0.9545.      b) 10.92 
+ 
+​
+
+[Descripción de la imagen: un documento con el texto en español]
+

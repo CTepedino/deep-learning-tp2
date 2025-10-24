@@ -1,0 +1,598 @@
+APRENDIZAJE 
+NO SUPERVISADO
+Modelo de Hopﬁeld 
+Sistemas de Inteligencia Artiﬁcial - 2024
+
+[Descripción de la imagen: el logotipo del artesano nouved]
+
+TABLA DE CONTENIDOS
+01. INTRODUCCIÓN
+02. MODELO DE 
+KOHONEN
+03. MODELO DE 
+HOPFIELD
+04.
+05.
+06.
+2
+AUTOVALORES Y 
+AUTOVECTORES
+COMPONENTES 
+PRINCIPALES
+REGLA DE OJA Y 
+SANGER
+
+[Descripción de la imagen: conidos de mesa]
+
+03.1
+MODELO DE 
+HOPFIELD
+Arquitectura de Red
+3
+
+[Descripción de la imagen: un fondo amarillo y blanco con el texto «modele hofd»]
+
+4
+MEMORIAS ASOCIATIVAS
+El almacenamiento y recuperación de información por asociación con otras 
+informaciones
+Consiste en almacenar un conjunto de p patrones tal que 
+●
+cuando se presenta un nuevo patrón Pin, la red responda con el patrón 
+almacenado Pout que más se parece a Pin
+Pin 
+ 
+ 
+= 
+Estímulo 
+Pout = Respuesta
+
+[Descripción de la imagen: memoascias el impecion y recargar]
+
+5
+MODELO DE HOPFIELD
+Propuesto en 1982 por JJ. Hopﬁeld 
+Red Recurrente 
+Existe retroalimentación entre las 
+neuronas, están todas conectadas 
+entre sí 
+(a diferenca de las redes feed-forward)
+
+[Descripción de la imagen: modelo de dipel]
+
+6
+MODELO DE HOPFIELD
+●
+Las neuronas no están conectadas con sí 
+mismas 
+●
+Conjunto de input y ouput permitido {-1, 1 } 
+(activo 
+o 
+inactivo) 
+●
+Todas las neuronas están en una sola capa de 
+entrada y salida
+En esta materia se verá el modelo discreto
+
+[Descripción de la imagen: modelo de hpel]
+
+7
+OBJETIVO
+¿Para qué sirve? 
+Asociar un patrón de consulta binario (con perturbaciones) 
+con alguno de los patrones almacenados
+INPUT: patrón ruidoso
+OUTPUT: el más similar
+
+[Descripción de la imagen: un fondo blanco con las palabras oetivo]
+
+8
+EJEMPLO
+1
+1
+-1
+-1
+-1
+-1
+1
+1
+1= (1, 1, -1, -1)
+2= (-1, -1, 1, 1)
+¿Qué patrón se le asigna al siguiente vector de consulta? 
+= (1, -1, -1, -1)
+
+[Descripción de la imagen: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+
+9
+ESTADOS
+Cada neurona tiene 2 estados
+●
+Si = +1 (activo)
+●
+Si = -1 (inactivo)
+Para una red de N neuronas el estado queda representado por el vector de estados 
+S = [S1 , S2, … ,SN]
+
+[Descripción de la imagen: estos cauao nemento estos s i activo]
+
+10
+PLANTEO DEL PROBLEMA
+Dados los patrones almacenados ξμ , μ = 1, . . . , p.
+Presentamos un nuevo patrón ζ 
+Queremos encontrar el patrón almacenado más cercano a ζ (usando redes neuronales)
+
+[Descripción de la imagen: planto de problema]
+
+11
+PLANTEO DEL PROBLEMA
+Buscamos los pesos sinápticos
+wij , i = 1, . . . , N, j = 1, . . . , N
+tal que la red nos devuelva el patrón ξμ más cercano a ζ.
+
+[Descripción de la imagen: planta de problema]
+
+12
+MODELO DE HOPFIELD
+Es una red neuronal que cumple las siguientes caracterı́ sticas:
+●
+Cada neurona i es un perceptrón simple con la función de activación escalón (1, -1).
+●
+Cada par de neuronas (i, j) se conectan por el peso sináptico wij  .
+
+[Descripción de la imagen: modelo hpid]
+
+13
+MODELO DE HOPFIELD
+Comenzamos con una conﬁguración Si = ζi , i = 1, . . . , n,  (patrón de consulta)
+Queremos ver si hay un conjunto de pesos wij que hagan a la red alcanzar el estado Si = ξi 
+μ0 , 
+donde ξi 
+μ0 es un patrón almacenado.
+Patrón
+ ξi 
+μ0 , i = 1, . . . , n es el estado del patrón almacenado más parecido a ζi , i = 1, . . . , n.
+
+[Descripción de la imagen: modelo hpid compra com | Transcripción de la imagen: MODELO DE HOPFIELD
+
+Comenzamos con una configuración S¡ = C¡, 1=1,...,n, (patrón de consulta)
+
+Queremos ver si hay un conjunto de pesos W. ¡que hagan a la red alcanzar el estado S
+donde€ HO es un patrón almacenado.
+
+Patrón
+
+€¡ e ,1=1,...,nesel estado del patrón almacenado más parecido a C¡ ,=
+
+| L]]
+
+14
+MODELO DE HOPFIELD
+Donde: 
+●
+wij es el peso entre la neurona i y la neurona j 
+●
+Sj es el estado de la neurona j 
+●
+N es la cantidad de neuronas
+  
+Sea
+
+[Descripción de la imagen: modelo hpel doe somos enren unau neu]
+
+15
+MODELO DE HOPFIELD
+ Si hi = 0 entonces la neurona i permanece en el estado previo.  
+La neurona i modiﬁca su  estado Si de acuerdo a la regla:
+
+[Descripción de la imagen: modelo hpld]
+
+16
+ESTADO ESTABLE
+La red evoluciona hasta que Si no se modiﬁque más ∀i = 1, . . . n.
+Quiere decir que la red alcanzó un estado estable
+El estado al que evoluciona se lo denomina atractor
+
+[Descripción de la imagen: esto est est est est est est est est est est est est est est est est est est est est est est]
+
+17
+CONVERGENCIA
+-1
+-1
+1
+1
+= (-1, -1, 1, 1)
+ξ1 
+ξN 
+debido a que ξj² = 1 ∀j = 1, . . . N 
+Por lo tanto, se produce la convergencia: alcanza el patrón almacenado.
+Tenemos N neuronas en la red y un único patrón almacenado ξ 
+Calculamos los wij
+
+[Descripción de la imagen: una pizarra blanca con un fondo púrpura y un fondo púrpura con las palabras converencia | Transcripción de la imagen: CONVERGENCIA
+
+Tenemos N neuronas en la red y un único patrón almacenado €
+
+Calculamos los Wíj
+
+1 "
+Wij = N¿¿€j 13 =1,..N
+
+N
+
+O = 8739“(Z WijE;) = sign(E;) = iVi
+
+=1
+debídoaqueíj.º=1 Yj=1...N
+
+Por lo tanto, se produce la convergencia: alcanza el patrón almacenado.
+
+É = (-1,-1,1,1)
+N
+
+S
+
+EN]]
+
+18
+MÚLTIPLES PATRONES
+Sean p patrones almacenados. 
+Podemos elegir los pesos como:
+Esta ecuación incrementa los pesos entre dos neuronas i y j  cuando ambos están activados 
+o ambos desactivados.
+Se toma también wii = 0 y   wji  = wij 
+1
+1
+-1
+-1
+-1
+-1
+1
+1
+1= (1, 1, -1, -1)
+2= (-1, -1, 1, 1)
+
+[Descripción de la imagen: multi- matrices - pars - pars - pars - pars - pars - pars - pars pars pars]
+
+03.2
+ALGORITMO
+19
+
+[Descripción de la imagen: un cuadrado blanco con la palabra lotmo en él]
+
+20
+ALGORITMO
+1.
+Almacenamiento: Sean ξ 1 ,  ξ 2  , . . . ,  ξ p  , patrones N-dimensionales binarios.
+2.
+Pesos Sinápticos:
+Donde: 
+●
+wij es el peso sináptico entre la neurona i y la j.
+●
+ξ 1 μ ∈ {−1, 1}
+
+[Descripción de la imagen: lotmo alotmo, c, y, y, y, y, y, y, y, y, y, y, y, y, y, y | Transcripción de la imagen: ALCORITMO
+
+1. Almacenamiento: Sean €1 , €2 ..... €p , patrones N-dimensionales binarios.
+
+2. Pesos Sinápticos:
+
+I 1E7 si Aj
+”U)¿j —
+0 si i=j
+
+Donde:
+e w;es el peso sináptico entre la neurona | y lajJ.
+
+e E ef(-1,1)
+
+20]]
+
+21
+ALGORITMO
+3.  Inicialización. Sea ζ un vector de consulta N-dimensional desconocido, presentado a la red.
+Si(0) = ζi  i = 1, . . . N
+●
+Si(0) es el estado de la neurona i en el tiempo t = 0.
+●
+ζi es el i-ésimo elemento del vector de consulta que queremos asociar con alguno de los 
+patrones almacenados.
+
+[Descripción de la imagen: algrmo 3 militaion y veloa unifico deocio]
+
+22
+ALGORITMO
+4.   Iteración hasta la convergencia
+Actualizar los elementos del vector de estado S(t) de acuerdo a la regla:
+Repetir la iteración hasta que el vector de estados S permanezca estable.
+
+[Descripción de la imagen: alotmo 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+23
+MÚLTIPLES PATRONES
+5. Output
+Sea Sﬁjo el estado ﬁjo o estable calculado al ﬁnal del paso 3.
+Sﬁjo  es el patrón asociado con ζ.
+Observar que el vector de pesos permanece ﬁjo y que en cada paso cambian los estados Si .
+
+[Descripción de la imagen: un fondo blanco con las palabras 'mutes paras ']
+
+03.3
+EJEMPLO
+24
+
+[Descripción de la imagen: una captura de pantalla de un texto con las palabras «efm» y «efm»]
+
+25
+EJEMPLO
+Cantidad de patrones p = 2
+ξ1 = (1, 1, −1, −1)  , ξ2  = (−1, −1, 1, 1)
+
+[Descripción de la imagen: emo canta de paquete = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 y 1 | Transcripción de la imagen: EJEMPLO
+
+Cantidad de patrones p =2
+
+E =(1,1, -1, =1) , €* = (-1,=1,1,1)
+
+25]]
+
+26
+EJEMPLO
+Cantidad de patrones p = 2
+ξ1 = (1, 1, −1, −1)  , ξ2  = (−1, −1, 1, 1)  
+Cantidad de neuronas N = 4 (porque cada patrón tiene 4 elementos) 
+ 
+ 
+¿Cuál es el valor de w12 y w13? 
+Calcular la matriz de pesos W
+
+[Descripción de la imagen: emo canta de patro = = = = = = = = = = =]
+
+27
+EJEMPLO
+Cantidad de patrones p = 2
+ξ1 = (1, 1, −1, −1)  , ξ2  = (−1, −1, 1, 1)  
+Cantidad de neuronas N = 4 (porque cada patrón tiene 4 elementos)
+
+[Descripción de la imagen: Empo puede ser pard = = = = = = = = = = = = | Transcripción de la imagen: EJEMPLO 0- 108 1
+
+Cantidad de patrones p =2
+E = (1,1, -1, -1) , €* = (1, -1,1,1)
+
+Cantidad de neuronas N = 4 (porque cada patrón tiene 4 elementos)
+
+12 = 7 (163 + 6263) = 701 +1) =05
+
+13 = ¡(EE + 26) = [1—1)=-05
+
+27]]
+
+28
+EJEMPLO
+Cantidad de patrones p = 2
+ξ1 = (1, 1, −1, −1)  , ξ2  = (−1, −1, 1, 1)  
+Cantidad de neuronas N = 4 (porque cada patrón tiene 4 elementos)
+
+[Descripción de la imagen: = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, | Transcripción de la imagen: EJEMPLO
+
+Cantidad de patrones p =2
+
+E =(1,1, -1, =1) , €* = (-1,=1,1,1)
+
+Cantidad de neuronas N = 4 (porque cada patrón tiene 4 elementos)
+
+—0.5
+—0.5
+
+—0.5
+—0.5
+
+—0.5
+—0.5
+Ú
+0.5
+
+—0.5
+—0.5
+0.5
+0
+
+28]]
+
+29
+EJEMPLO
+Para calcular la matriz de pesos W
+K = (ξ1  ξ2  ) (la matriz que se obtiene de poner los patrones en columna)
+Entonces
+Recordar que la diagonal debe ser 0
+
+[Descripción de la imagen: emo para calibo de pes]
+
+30
+EJEMPLO
+Pregunta: ¿Qué patrón se le asigna al vector de consulta ζ = (1, −1, −1, −1)?
+Llegó al patrón 
+almacenado ξ1
+ξ1 = (1, 1, −1, −1)  , ξ2  = (−1, −1, 1, 1)  
+ζ
+
+[Descripción de la imagen: una pizarra blanca con un pizarrón y una pizarra blanca con un pizarrón y una pizarra blanca con un | Transcripción de la imagen: EJEMPLO
+
+Pregunta: ¿Qué patrón se le asigna al vector de consulta C= (1, -1 -1, -?
+
+0
+S1 = sign(W ¿ = sign _Oó55
+—0.5
+0.5
+—0.5
+
+0.5 —0.5 —0.9 1
+0 —0.5 —0.5 —l1
+
+—0.5 0 0.5 —l1
+
+—0.5 0.5 0 —l1
+1 Llegó al patrón
+1 — almacenado E
+—l E = (1,1, -1, -1) , €* = (1, -1,1,1)
+—l
+
+30]]
+
+31
+EJEMPLO
+Se mantiene 
+estable
+S1 = ξ1 = (1, 1, −1, −1)
+
+[Descripción de la imagen: una pizarra blanca con un pizarrón y una pizarra blanca con un pizarrón y una pizarra blanca con un | Transcripción de la imagen: EJEMPLO
+
+0 05 —05 —0.5 /1
+
+S
+
+—0.5 —0.5 0 0.5 —1
+—0.5 —0.5 05 0 1
+1 1 |
+Se mantiene
+] 0.5 1 ——— estable
+011 —
+— [-18 N S1=6=(1,1,-1, 1)
+
+—1.5 —1
+
+31]]
+
+03.4
+CONVERGENCIA
+32
+
+[Descripción de la imagen: un cuadrado blanco con la abreviatura de la palabra en negro y un cuadrado amarillo con la abreviatura de la palabra]
+
+33
+ESTABILIDAD
+¿Se llega a un estado de Estabilidad?
+Sea ξi
+ν el elemento i del patrón de consulta ν.
+La condición de estabilidad es:  
+Patrones almacenados
+Patron de consulta
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est | Transcripción de la imagen: ESTABILIDAD Wij =
+
+¿Se llega a un estado de Estabilidad?
+
+v . ,
+Sea €¡ el elemento ¡ del patrón de consulta v.
+La condición de estabilidad es:
+
+sign(h;) = El
+
+Patrones almacenados
+
+1 —£Í——
+- ugs - 45 08
+j j — s
+
+Patron de consulta
+
+33]]
+
+34
+ESTABILIDAD
+El sistema es estable si:
+●
+el término de crosstalk es cero.
+●
+Es decir, cuando los patrones son ortogonales
+Esta es una de las limitaciones de esta red.
+crosstalk = 0
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+35
+CONVERGENCIA
+Hopﬁeld demostró que su red está asociada a una función de Energı́ a, dada por:
+Y que los mı́ nimos locales de esta función son los patrones almacenados.
+
+[Descripción de la imagen: un fondo blanco con un texto en blanco y negro que lee converencia]
+
+36
+FUNCIÓN DE ENERGÍA
+Propiedad central de una Función de Energı́ a
+●
+Siempre decrece (o permanece constante) cuando el sistema evoluciona.
+●
+Como los pesos sinápticos son simétricos:  
+ 
+Porque wij = wji , entonces puedo sumar solo la parte superior de la matriz y multiplicar por 2 
+(parte superior e inferior de la matriz W) . Además w ii = 0
+
+[Descripción de la imagen: un fondo blanco con las palabras flucione enicia]
+
+37
+Sea Si’ el nuevo valor de Si 
+Si   Si’   = Si      la energı́ a no se modiﬁca
+Si   Si’   = −Si    entonces (cambió de signo): 
+Estamos considerando los Si’  con signo contrario a Si entonces la energı́ a decrece cada 
+vez que un Si cambia.
+FUNCIÓN DE ENERGÍA
+-
+Si’
+
+[Descripción de la imagen: una pizarra blanca con un pizarrón y una pizarra blanca con un pizarrón y una pizarra blanca con un | Transcripción de la imagen: FUNCIÓN DE ENERGÍA H(w) =- ) u15SiS;
+
+3>1
+
+Sea S;' el nuevo valor de S, — S; = sign E WijS;
+
+j
+Si S; =5, la energía no se modifica
+Si S¡' = -S; entonces (cambió de signo):
+— / — — ... / . .. . .
+1> 7>1
+25; » wizS;<0
+i —
+/
+
+Estamos considerando los S¡' con signo contrario a S; entonces la energía decrece cada
+vez que un S, cambia.
+
+37]]
+
+38
+LIMITACIONES
+●
+El número máximo de patrones que puede almacenar es igual al 15 % del número de 
+neuronas de la red. Es decir, 
+p ≤ 0,15 ∗ N 
+donde N es la dimensión de los patrones
+●
+Los patrones deben ser “más o menos” ortogonales.
+
+[Descripción de la imagen: imaciones entres entres]
+
+39
+ESTADOS ESPURIOS
+●
+Los patrones son atractores.
+●
+La Función de Energı́ a H puede tener otros mı́ nimos locales que no son los 
+patrones almacenados.
+Estados Espurios
+También son atractores
+Puede desembocar en ciclos
+
+[Descripción de la imagen: estos esos estos estos estos estos estos estos estos est]
+
+40
+BIBLIOGRAFÍA
+[1] McKay D.J.C. Hopﬁeld Networks. Information Theory, Inference and Learning Algorithms, 
+Cambridge, 
+2003.
+[2] Anders Krogh John Hertz and Richard Palmer. Introduction to the Theory of Neural 
+Computation. Addison-Wesley, 1991.
+
+[Descripción de la imagen: i, i, i, i, i, i, i, i, i, i, i, i, i, i, i]
+

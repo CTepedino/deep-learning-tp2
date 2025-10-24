@@ -8,7 +8,7 @@ import logging
 import re
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 # Cargar variables de entorno
@@ -164,8 +164,7 @@ class AcademicTextSplitter:
         if self._contains_exercises(content_lower):
             metadata['contains_exercises'] = True
         
-        # Detectar nivel de dificultad aproximado
-        metadata['difficulty_hint'] = self._estimate_difficulty(content_lower)
+       
         
         return metadata
     
@@ -201,36 +200,6 @@ class AcademicTextSplitter:
         
         return any(keyword in content for keyword in exercise_keywords)
     
-    def _estimate_difficulty(self, content: str) -> str:
-        """
-        Estima el nivel de dificultad del contenido
-        
-        Args:
-            content: Contenido del chunk
-            
-        Returns:
-            Nivel de dificultad estimado
-        """
-        # Palabras clave por nivel de dificultad
-        beginner_keywords = [
-            'básico', 'simple', 'elemental', 'introducción', 'concepto',
-            'definición', 'ejemplo', 'caso simple'
-        ]
-        
-        advanced_keywords = [
-            'avanzado', 'complejo', 'sofisticado', 'teorema', 'demostración',
-            'corolario', 'lema', 'proposición', 'análisis', 'síntesis'
-        ]
-        
-        beginner_count = sum(1 for keyword in beginner_keywords if keyword in content)
-        advanced_count = sum(1 for keyword in advanced_keywords if keyword in content)
-        
-        if advanced_count > beginner_count:
-            return 'avanzado'
-        elif beginner_count > 0:
-            return 'introductorio'
-        else:
-            return 'intermedio'
 
 
 def split_documents(
@@ -270,76 +239,3 @@ def split_documents(
 # Alias para compatibilidad con rag_pipeline.py
 TextProcessor = AcademicTextSplitter
 
-
-def analyze_chunks(chunks: List[Document]) -> Dict[str, Any]:
-    """
-    Analiza las características de los chunks generados
-    
-    Args:
-        chunks: Lista de chunks a analizar
-        
-    Returns:
-        Diccionario con estadísticas de los chunks
-    """
-    if not chunks:
-        return {}
-    
-    lengths = [len(chunk.page_content) for chunk in chunks]
-    
-    # Contar tipos de contenido
-    math_chunks = sum(1 for chunk in chunks if chunk.metadata.get('contains_math', False))
-    definition_chunks = sum(1 for chunk in chunks if chunk.metadata.get('contains_definitions', False))
-    exercise_chunks = sum(1 for chunk in chunks if chunk.metadata.get('contains_exercises', False))
-    
-    # Contar niveles de dificultad
-    difficulty_counts = {}
-    for chunk in chunks:
-        difficulty = chunk.metadata.get('difficulty_hint', 'intermedio')
-        difficulty_counts[difficulty] = difficulty_counts.get(difficulty, 0) + 1
-    
-    return {
-        'total_chunks': len(chunks),
-        'avg_length': sum(lengths) / len(lengths),
-        'min_length': min(lengths),
-        'max_length': max(lengths),
-        'math_chunks': math_chunks,
-        'definition_chunks': definition_chunks,
-        'exercise_chunks': exercise_chunks,
-        'difficulty_distribution': difficulty_counts
-    }
-
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Crear documento de ejemplo
-    sample_doc = Document(
-        page_content="""
-        Definición de Distribución Normal
-        
-        Una variable aleatoria X sigue una distribución normal con parámetros μ y σ² 
-        si su función de densidad de probabilidad es:
-        
-        f(x) = (1/√(2πσ²)) * e^(-(x-μ)²/(2σ²))
-        
-        Ejercicio: Calcular la probabilidad P(X < 2) para X ~ N(0, 1).
-        
-        Solución: Usando la tabla de la distribución normal estándar...
-        """,
-        metadata={'source': 'ejemplo.pdf', 'materia': 'Probabilidad y estadística'}
-    )
-    
-    # Fragmentar documento
-    chunks = split_documents([sample_doc], chunk_size=200, chunk_overlap=50)
-    
-    # Analizar chunks
-    analysis = analyze_chunks(chunks)
-    
-    print("Análisis de chunks:")
-    for key, value in analysis.items():
-        print(f"{key}: {value}")
-    
-    print("\nPrimer chunk:")
-    print(f"Contenido: {chunks[0].page_content}")
-    print(f"Metadata: {chunks[0].metadata}")

@@ -1,0 +1,425 @@
+Sistemas de Inteligencia Artificial
+Perceptrón Simple
+Primer Cuatrimestre 2025
+Alan Pierri
+Rodrigo Ramele
+Eugenia Piñeiro
+Marina Fuster
+Luciano Bianchi
+Santiago Reyes
+Marco Scilipoti
+Paula Oseroff
+Joaquín Girod
+
+[Descripción de la imagen: un fondo blanco con las palabras perot simple]
+
+RESUMEN DE PERCEPTRÓN SIMPLE
+●
+McCulloch y Pitts sientan las bases del modelo de 
+neurona que se utiliza en el área de redes neuronales. 
+Este modelo se denomina Perceptrón.
+●
+El modelo de McCulloch y Pitts permite resolver 
+problemas linealmente separables.
+●
+Rosenblatt provee el mecanismo que permite obtener los 
+pesos del perceptrón de manera iterativa
+●
+No es lo mismo aprendizaje que generalización
+
+[Descripción de la imagen: un fondo blanco con las palabras "resm" y "resm"]
+
+[Descripción de la imagen: un gráfico gráfico con una línea que grafica la regresión de la regresión | Transcripción de la imagen: Salary (* 10.000)
+
+Salary based on years of experience
+
+4 6
+Years of Experience
+
+10]
+
+salary(years_of_experience):
+      return a * years_of_experience + b
+
+[Descripción de la imagen: un gráfico de scr con un gráfico de línea | Transcripción de la imagen: Salary (+ 10.000)
+
+Salary based on years of experience
+
+4 6
+Years of Experience
+
+10
+
+salary(years_of_experience):
+return a* years_of_experience + b]]
+
+salary(years_of_experience):
+      return a * years_of_experience + b
+salary(x1):
+      return w1 * x1 + w0
+
+[Descripción de la imagen: un gráfico de scr con un gráfico de línea | Transcripción de la imagen: Salary (* 10.000)
+
+Salary based on years of experience
+
+4 6
+Years of Experience
+
+10
+
+salary(years_of_experience):
+return a* years_of_experience + b
+
+salary(x1):
+
+*
+return W, * X, +W,]]
+
+salary(x1, x2):
+      return w1 * x1 + w2 * x2 + w0
+
+[Descripción de la imagen: una parcela con un gráfico de línea y una parcela con un gráfico de línea | Transcripción de la imagen: Salary based on age and years of experience
+
+salary(x,, X>):
+return W, * X, + W, * x, + w
+
+» .
+| 0000]]
+
+¿CÓMO RESUELVO EL PROBLEMA?
+Necesito encontrar los 
+valores de w que me 
+permitan encontrar un 
+hiperplano que ajuste lo 
+mejor posible al 
+conjunto de datos
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+Widrow-Hoff - 1960
+ADALINE: ADAptive LINear Element 
+(o perceptrón simple lineal)
+Cambiamos la función de activación por la identidad:
+La salida del perceptrón ya no está confinada a ser 
+binaria: toma valores en los reales
+
+[Descripción de la imagen: una foto de dos hombres con las mismas caras]
+
+¿CÓMO RESUELVO EL PROBLEMA?
+Necesito encontrar los 
+valores de w que me 
+permitan encontrar un 
+hiperplano que ajuste lo 
+mejor posible al 
+conjunto de datos
+
+[Descripción de la imagen: un gráfico gráfico con un gráfico de línea y un gráfico de línea]
+
+APRENDIZAJE PARA EL PERCEPTRÓN LINEAL
+Rosenblatt: Cada vez que la neurona recibe un estímulo, los pesos 
+sinápticos pueden actualizarse (proceso iterativo):
+?
+
+[Descripción de la imagen: aprender deporte ideal]
+
+¿CÓMO DEFINIMOS QUE EL PERCEPTRÓN SE EQUIVOCA?
+salary(x1):
+      return w1 * x1 + w0
+
+[Descripción de la imagen: comoo que peron seivoo | Transcripción de la imagen: ¿CÓMO DEFINIMOS QUE EL PERCEPTRÓN SE EQUIVOCA?
+
+Salary based on years of experience Salary based on years of experience
+
+30
+
+25
+
+N
+o
+
+Salary (* 10.000)
+[l
+u
+
+Salary (* 10.000)
+
+-
+(=)
+
+Years of Experience Years of Experience
+
+salary(x1):
+
+*
+return W, * X, + Wo]]
+
+Podemos usar la siguiente función de error:
+La salida del perceptrón depende, a su vez, de los pesos sinápticos.
+¿CÓMO DEFINIMOS QUE EL PERCEPTRÓN SE EQUIVOCA?
+
+[Descripción de la imagen: un número de números está escrito en español]
+
+Podemos usar la siguiente función de error o costo:
+La salida del perceptrón depende, a su vez, de los pesos sinápticos.
+¿CÓMO DEFINIMOS QUE EL PERCEPTRÓN SE EQUIVOCA?
+Incluye el “umbral” o “bias”
+
+[Descripción de la imagen: un diagrama de la ecuación de un polinomio]
+
+¿CÓMO “APRENDE” EL PERCEPTRÓN CON ESTA FUNCIÓN DE COSTO?
+Fórmula de actualización de los pesos al evaluar un dato de entrada:
+
+[Descripción de la imagen: un diagrama de la ecuación de una línea | Transcripción de la imagen: ¿CÓMO “APRENDE” EL PERCEPTRÓN CON ESTA FUNCIÓN DE COSTO?
+
+-1 n ,
+E(w) = - E g - e x..w))
+h= i=
+
+Fórmula de actualización de los pesos al evaluar un dato de entrada:
+
+nuevo anterior
+= W + Aw
+Condiciones sobre la dirección de movimiento
+Por supuesto, la idea es que sea descendente, o sea
+dE de Vf(x.) < 0.
+AW — — -n a o Recordar que el gradiente es la dirección de máximo
+0W crecimiento de una función.
+
+o Cualquier dirección contraria a la del gradiente, es una
+dirección de decrecimiento de la función.]]
+
+¿QUÉ FORMA TIENE LA FUNCIÓN DE COSTO?
+
+[Descripción de la imagen: un modelo 3d de un plano con una línea de simetría]
+
+DESARROLLO DE
+
+[Descripción de la imagen: un modelo 3d de un triangular con un modelo 3d de un triangular]
+
+DESARROLLO DE
+
+[Descripción de la imagen: un diagrama de la ecuación derivada | Transcripción de la imagen: DESARROLLO DE 3—í
+
+2
+
+p-1 n
+- E|7 -0(2x-.w))) — a : ,
+— = =0 = = E| - 0(E x .w)C DS x.w)x
+ów =0 i0 * L =0 * E dq]]
+
+DESARROLLO DE
+
+[Descripción de la imagen: un diagrama de la ecuación derivada | Transcripción de la imagen: DESARROLLO DE 3—5
+
+p-1 n 2 0' h,u
+- E| -6(Exw)|) — a s í
+6Wi 6W¡ u=0 i=0 l L =0 i [
+p-1 p-1
+= EC -09)- D)X =- EC —-0 )(X
+u=0 u=]]
+
+DESARROLLO DE 
+Fórmula de actualización de los pesos al evaluar un dato de entrada:
+
+[Descripción de la imagen: un diagrama de la ecuación de fourier | Transcripción de la imagen: DESARROLLO DE 3—í
+
+2
+
+p-1 n
+- E|7 -0(2x-.w))) — a : ,
+== 0 - — E| - 0(S x .w)G 1DO'(3 x.w)x-
+ow =0 i0 * L =0 * E dq
+
+p—1 p—-1
+
+h h o A — h En7 A
+» ($ —O )( 1)9(h)x, = - 26 —0 )O (N )X,
+h=0 u=0
+Fórmula de actualización de los pesos al evaluar un dato de entrada:
+
+Aw= - ny =|7 - 0 )e'(hx]]
+
+EL ALGORITMO PARA EL PERCEPTRÓN LINEAL ES IGUAL AL ANTERIOR
+Tip de implementación
+Construirse un conjunto 
+de datos que sean 
+puntos pertenecientes a 
+una recta y ajustarlos!
+
+[Descripción de la imagen: elcrimol deportion egalitor | Transcripción de la imagen: EL ALGORITMO PARA EL PERCEPTRÓN LINEAL ES IGUAL AL ANTERIOR
+
+Initialize weights w to small random values
+
+7
+
+[7
+
+et learning rate n
+
+for a fixed number of epochs:
+
+FOr
+
+each training example p in the dataset:
+
+Calculate the weighted sum:
+
+= * X E S a a + X
+
+. Compute activation given by 0:
+
+O(h") = O (1") = h"
+
+. Update the weights and bias:
+For each weight w.:
+
+W: = W: + n * (y - output)
+
+. Calculate perceptron er
+s
+
+error — El
+
+convergence = True if error <
+
+if convergence: break
+
+27 ...
+
+r
+
+O () +
+
+Tip de implementación
+
+Construirse un conjunto
+de datos que sean
+
+puntos pertenecientes a
+una recta y ajustarlos!]]
+
+[Descripción de la imagen: dos gráficos que muestran la correlación de las regresiones | Transcripción de la imagen: Salary vs. years of experience
+
+120000
+
+100000
+
+Salary vs. years of experience
+
+150000 ococcccocoOc0o
+
+140000
+Years of experience
+
+130000
+
+100000
+
+Years of experience]
+
+PERCEPTRÓN SIMPLE NO LINEAL
+Cambiamos la función de activación por una sigmoidea, tanh o logística
+La fórmula de error se mantiene igual al 
+perceptrón lineal:
+
+[Descripción de la imagen: periro p lineal camos de factorion unadoo | Transcripción de la imagen: PERCEPTRÓN SIMPLE NO LINEAL
+Cambiamos la función de activación por una sigmoidea, tanh o logística
+
+0()
+
+O(x +q
+( ) 1+exp_/“8'x im (0' 1)
+
+0 = e( 5 x.w_) m m - CA
+=0
+
+L
+
+La fórmula de error se mantiene igual al
+perceptrón lineal:
+
+—
+E(0) = %p20(<“ — 0'
+E]]
+
+¿Cómo “aprende”? ¡Igual que el anterior!
+Cambiamos la función de activación por una sigmoidea, tanh o logística
+Fórmula de actualización de los pesos al evaluar un dato de entrada:
+
+[Descripción de la imagen: cono de la esto de la esto]
+
+PERCEPTRÓN SIMPLE NO LINEAL
+Cambiamos la función de activación por una sigmoidea, tanh o logística
+Hyperbolic Tangent Function
+Logistic Function
+
+[Descripción de la imagen: periro plo lineal | Transcripción de la imagen: PERCEPTRÓN SIMPLE NO LINEAL
+
+Cambiamos la función de activación por una sigmoidea, tanh o logística
+
+O = G(£: x¿.w¿)
+=0
+
+L
+
+Hyperbolic Tangent Function Logistic Function
+
+O(h) = tanh(Bh) O(h) = ——
+l+exp
+
+Im = (-1,1) Im = (0,1)
+
+0'(h) = 6A — 6 (1)) e'(h) = 260(h)(1 — e(M)]]
+
+Parámetro beta que cambia la forma:
+Funciones sigmoideas
+Variación de tanh de acuerdo a beta
+Tangente Hiperbólica
+Función Logística
+Parámetro beta que cambia la forma:
+
+[Descripción de la imagen: una parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela parcela | Transcripción de la imagen: Funciones S|gm0|deas Variación de tanh de acuerdo a beta
+
+Tangente Hiperbólica
+
+Parámetro beta que cambia la forma:
+0(N) = tanh(BA)
+, 2
+0'(h) = P(1 — 0 (A))
+
+Función Logística
+Parámetro beta que cambia la forma:
+
+1
+O(h) = rexo T
+
+exp
+
+O'(A) = 260(1)(1 — 0()]]
+
+Con respecto a la inicialización de pesos
+What are the best weight initialization 
+techniques for deep neural networks?
+Inicializar los pesos en cero
+Inicializar los pesos con valores aleatorios de una 
+distribución uniforme/gaussiana
+
+[Descripción de la imagen: un fondo blanco con un texto en blanco y negro que lee,'¿¿qué es Internet????]
+
+BIBLIOGRAFÍA
+Rodrigo Ramele (2024) Reglamento y Apuntes de Sistemas de Inteligencia 
+Artificial, Capítulo 6.
+Bernard Widrow and Marcian E. Hoff, Adaptive switching circuits, 1960 IRE 
+WESCON Convention Record, New York: IRE, pp. 96-104
+PARA LA PRÓXIMA CLASE
+1.
+What is a Neural Network?
+2.
+Gradient Descent
+3.
+What is backpropagation?
+4.
+Backpropagation
+
+[Descripción de la imagen: bucareia arrifie c4 / 0 0 0 0 0 0 0 0 0 0 0 0]
+

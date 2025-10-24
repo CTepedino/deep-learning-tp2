@@ -1,0 +1,72 @@
+PROBABILIDAD Y ESTADISTICA   93.24                PRIMER  PARCIAL​
+25/04/17 
+INDICACIONES: Escriba claramente apellido, nombre y número  de legajo en cada hoja que entregue. No solicite indicaciones ni 
+aclaraciones.  
+Indique claramente los planteos de los problemas que resuelva, no serán tenidos en  cuenta 
+cálculos dispersos, poco claros o sin comentarios. Defina sucesos, variables aleatorias y su 
+distribución y comente la solución.  Exprese los resultados redondeando en 4 decimales. 
+DURACION : 2.50  HORAS. 
+ 
+APELLIDO  Y NOMBRE : ...............................…................................................................................................. Nro de Legajo :................…... 
+CARRERA :  
+ 
+PARA EL CORRECTOR   
+ 
+1 
+2 
+3 
+4 
+5 
+TOTAL 
+NOTA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. (2 puntos)  Un canal de comunicaciones binario Z es un canal en el cual, cuando se envía un 0 existe una 
+probabilidad no nula de recibir un 1, pero siempre que se envía un 1  se recibe un 1. Asuma que es igualmente 
+probable que se envíe un 0 ó un 1. 
+a) Sea p la probabilidad de recibir un 1 cuando se envía un 0. Si se recibe un 1, ¿cuál es la probabilidad de que se 
+haya enviado un 0? 
+b) Una posibilidad para reducir la probabilidad de error es enviar n copias del dígito deseado. Si entre las n copias 
+se recibe al menos un 0, entonces no hay dudas que se ha enviado un 0. Si se reciben todos 1s, el receptor 
+decide (con posibilidad de equivocarse) que se ha enviado un 1. Determine la probabilidad de error como una 
+función de p y de n, asumiendo que los errores en distintos dígitos son independientes.  
+ 
+2. (2 puntos) La variable aleatoria continua X tiene por función densidad de 
+probabilidad a fX(x) no nula en (0,3) del gráfico adjunto.  
+a) Represente gráficamente la función de distribución de X. Indicar 
+claramente algunos puntos típicos de este gráfico. 
+b) Calcule la varianza de X. 
+ 
+3. (2 puntos)   En un establecimiento agropecuario, el 10 % de los novillos 
+que salen a venta pesan más de 500 kg y el 7 % pesa menos de 410 kg Suponga que la distribución del peso de 
+un novillo es una variable aleatoria con distribución normal. 
+a) Calcule el peso superado solo por el 15 % de los novillos. 
+b) Calcule la probabilidad de que en una jaula de 25 novillos haya alguno que pese menos de 400 kg. 
+  
+4. (2 puntos) El tiempo de funcionamiento hasta la ocurrencia de falla de ciertos dispositivos puede considerarse 
+una variable aleatoria con distribución exponencial de parámetro λ (en 1/hora). La probabilidad de que en un 
+conjunto de 4 de estos dispositivos, que comenzaron a funcionar al mismo tiempo, haya por lo menos uno que 
+dure más de 600 hs es 0.84. 
+a) Calcule la probabilidad de que uno de estos dispositivos dure más de 4000 hs. 
+b) Suponga que estos dispositivos se conectan en serie de manera tal que al fallar por lo menos uno de ellos falla 
+todo el sistema. Calcule la probabilidad de que un sistema con 10 de estos dispositivos funcione más de 500 hs. 
+Suponga que los sucesos correspondientes a los tiempos de funcionamiento en distintos dispositivos son 
+independientes.  
+ 
+     5. (2 puntos)  La función densidad de probabilidad de la variable aleatoria X viene dada por   
+​ ​ ​
+​
+​
+​
+ 
+​ ​ a) Se define  Y 
+. Calcule el valor esperado de Y. 
+​ ​ b)  Obtenga la función densidad de probabilidad de Z = X 2.
+
+[Descripción de la imagen: el texto en el texto está escrito en español]
+

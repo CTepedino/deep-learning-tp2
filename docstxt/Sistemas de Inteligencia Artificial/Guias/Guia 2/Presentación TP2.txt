@@ -1,0 +1,511 @@
+SIA - TP2
+Algoritmos Genéticos
+Grupo 1
+Alberto Bendayan
+Tobias Ves Losada
+Cristian Tepedino
+Luca Bloise
+
+[Descripción de la imagen: un triángulo azul y verde con las palabras t2 agritos ']
+
+Ejercicio 1
+
+[Descripción de la imagen: un diente con la palabra Eric en él]
+
+Deﬁnimos
+●
+Individuo: Matriz NxN de caracteres ASCII
+●
+Genes: Habrá N2 genes, cada uno determinando un carácter de 
+la matriz, y buscando representar MxM píxeles de la matriz 
+original
+●
+Generación 0: Se obtienen individuos con caracteres aleatorios
+
+[Descripción de la imagen: un fondo negro con las palabras "idio" e "idio"]
+
+Fitness
+●
+A cada carácter ASCII, le asociamos un valor de densidad entre 0 
+y 1
+●
+Comparamos la densidad asociada al ASCII con la densidad de la 
+sección de la imagen a representar.
+●
+Se obtiene la suma de errores de cada carácter de la matriz:
+f(i) = 1/(1+suma errores)
+
+[Descripción de la imagen: un archivo con los archivos de texto]
+
+Crossover
+Cruce Uniforme
+
+[Descripción de la imagen: una captura de pantalla de una pantalla de ordenador con el texto cre unime | Transcripción de la imagen: “ Crossover
+
+Cruce Uniforme
+
+Es el único tipo de cruce visto
+
+que no mantiene correlación
+posicional entre alelos.]]
+
+Criterio de corte
+●
+Representación por ASCII limitada -> no conviene usar f(i) como único criterio 
+de corte.
+●
+Usamos cantidad de generaciones o el tiempo que tarda en encontrarse un 
+nuevo f(i) máximo.
+●
+Pensamos en combinar condiciones de corte para poder usar una cota sobre 
+f(i).
+
+[Descripción de la imagen: crio de cono]
+
+Ejercicio 2
+
+[Descripción de la imagen: un fondo azul y verde con la palabra eric]
+
+Deﬁnimos
+●
+Individuo: Aproximación de Imagen de entrada.
+●
+Genes: T triángulos que se utilizan para aproximar la imagen.
+●
+Alelos: Las posiciones de los vértices y el color de los triángulos.
+●
+Generación 0: Se obtienen individuos con triángulos con alelos 
+aleatorios.
+
+[Descripción de la imagen: un fondo negro con las palabras en español e inglés]
+
+Fitness
+●
+Se compara la imagen generada por un individuo con la imagen objetivo.
+●
+Usamos el índice de similitud estructural (SSIM) para comparar ambas imágenes.
+○
+Evalúa similitudes en luminancia, contraste y estructura.
+○
+Devuelve un valor entre -1 (completamente diferente) y 1 (idénticas).
+●
+La función de ﬁtness devuelve el valor de SSIM normalizado como medida de calidad 
+del individuo.
+
+[Descripción de la imagen: un esquema de color azul y verde con las palabras 'color ']
+
+Métodos de selección
+●
+Elite
+●
+Ruleta
+●
+Universal
+●
+Boltzmann
+●
+Torneo determinístico
+●
+Torneo probabilístico
+●
+Ranking
+
+[Descripción de la imagen: metos de seicoo efte ulia, botánico, toem, toem,]
+
+Métodos de cruza
+●
+Cruce de un punto
+○
+Baja variación
+○
+Mantiene la estructura
+●
+Cruce de dos puntos
+○
+Más variación
+○
+Sigue manteniendo algo de estructura
+●
+Cruce uniforme
+○
+La mayor variación
+○
+No mantiene correlación posicional
+●Cruce anular
+○
+Mantiene la estructura de forma cíclica
+
+[Descripción de la imagen: un fondo negro con las palabras en español]
+
+Métodos de mutación
+●
+Gen
+○
+Variación baja
+○
+Más útil al ﬁnal
+●
+MultiGen
+○
+Varía más que la mutación simple
+○
+No desestabiliza tanto
+○
+Más medido que uniforme y más agresivo que el Gen
+●
+Uniforme
+○
+Alta variación
+○
+Puede mutar todos los genes
+●
+Completa 
+○
+Agresivo
+○
+Muta todos los genes
+
+[Descripción de la imagen: meto de nuo n varcibia o muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte ni muerte]
+
+Métodos para crear nuevas generaciones
+●Tradicional
+●Sesgo Joven
+
+[Descripción de la imagen: un fondo negro con las palabras ''y'' ']
+
+Condiciones de corte
+●
+Tiempo de ejecución
+●
+Cantidad de generaciones
+●
+Valor de ﬁtness mínimo aceptable
+●
+Similitud de generaciones consecutivas
+●
+Fitness máximo deja de variar
+
+[Descripción de la imagen: un fondo negro con las palabras «criones de te»]
+
+Resultados
+
+[Descripción de la imagen: un logotipo azul y verde con las palabras resto]
+
+Métodos de selección 
+sin parámetros
+
+[Descripción de la imagen: un logotipo azul y verde con las palabras metos seicoi paramentos]
+
+Parámetros por defecto
+Iteraciones: 70
+cantidad de triángulos: 200
+Generation size: 100
+Parents size: 50
+Probabilidad de cruza 0,9
+Probabilidad de mutación: 0,2
+Cruza: Uniforme
+Selección: Elite
+Mutación: Multigen
+Conformación genética: Tradicional
+
+[Descripción de la imagen: porteco porteco porteco porteco porteco porteco porteco porteco porteco]
+
+Evolución del Fitness según la cruza
+
+[Descripción de la imagen: evcn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - | Transcripción de la imagen: Evolución del Fitness según la cruza
+
+double_point
+ring
+single_point
+uniform
+
+u
+u
+v
+E
+
+o
+
+ral
+=
+
+-
+[:7)
+
+=
+
+30 40
+Generación]]
+
+Evolución del Fitness según la mutación
+
+[Descripción de la imagen: evcn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - | Transcripción de la imagen: Evolución del Fitness según la mutación
+
+— complete_mutation
+gen_mutation
+
+— multigen_mutation
+uniform_mutation
+
+u
+u
+v
+E
+
+o
+
+ral
+=
+
+-
+[:7)
+
+=
+
+30 40
+Generación]]
+
+Evolución del Fitness según la conformación 
+genética
+
+[Descripción de la imagen: evr - presqua conaciona | Transcripción de la imagen: Evolución del Fitness según la conformación
+genética
+
+= ial
+fill_paren
+
+u
+u
+v
+E
+
+o
+
+ral
+=
+
+-
+[:7)
+
+=
+
+Generación]]
+
+Evolución del Fitness según la selección
+
+[Descripción de la imagen: evole fitness - sei - capturas de pantalla]
+
+Métodos de selección 
+con parámetros
+
+[Descripción de la imagen: metos seicos para la comercialización]
+
+Evolución según la selección de Boltzmann
+La temperatura mínima para todos los casos es 0.1
+
+[Descripción de la imagen: evcn - seic dolmann - seicn - se - se - se - se - se - se - se se se se se se se se se se se se se se se se se se se | Transcripción de la imagen: Evolución según la selección de Boltzmann
+
+Evolución del Fitness
+
+— boltzmann_0_25
+boltzmann_0_5
+
+— boltzmann_0_7
+boltzmann_1
+
+u
+u
+[
+En
+
+—
+
+a
+É
+S,
+v
+
+=
+
+30 40
+Generación
+
+= T + (T0 —T )e_t La temperatura mínima para todos los casos es 0.1
+C C]]
+
+Evolución del Fitness según la selección de 
+torneo determinístico
+
+[Descripción de la imagen: evr / frs / ess / ess / ess / ess / ess / ess / ess / ess | Transcripción de la imagen: Evolución del Fitness según la selección de
+torneo determinístico
+
+Evolución del Fitness
+
+— deterministic toumament 10
+deterministic toumament_25
+— deterministic toumament_50
+
+u
+u
+[
+En
+
+—
+
+a
+É
+
+-
+v
+
+=
+
+Generación]]
+
+Evolución del Fitness según la selección de 
+torneo probabilístico
+
+[Descripción de la imagen: evr / fresgui seon de porobis | Transcripción de la imagen: Evolución del Fitness según la selección de
+torneo probabilístico
+
+Evolución del Fitness
+
+— probabilstic tourmament 0_5
+probabilstic tournament-0_75
+— probabilstic toumament 0_9
+
+w
+u
+v
+5
+E 072
+=
+o
+v
+=
+
+Generación]]
+
+Otras variaciones
+
+[Descripción de la imagen: logotipo de la palabra con una flecha azul y verde]
+
+Evolución del Fitness según el generation size
+
+[Descripción de la imagen: evcn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - fn - | Transcripción de la imagen: Evolución del Fitness según el generation size
+
+Evolución del Fitness
+
+— gen size 50
+gen_size_100
+
+— gen size 250
+gen_size_500
+
+— gen_size_1000
+
+u
+u
+v
+-
+-
+ral
+É
+-
+v
+=
+
+30 40
+Generación]]
+
+Evolución del Fitness según la probabilidad de 
+mutación
+
+[Descripción de la imagen: evr - presqua probable de nua | Transcripción de la imagen: Evolución del Fitness según la probabilidad de
+mutación
+
+Evolución del Fitness
+
+— mut prob_0
+mut_prob_0_1
+— mut prob_0_25
+mut_prob_0_5
+— mut prob_0_75
+— mut prob 1
+
+u
+u
+[
+En
+
+—
+
+a
+É
+S,
+v
+
+=
+
+30 40
+Generación]]
+
+Conclusiones
+
+[Descripción de la imagen: la palabra conclusiones sobre un fondo oscuro]
+
+Conclusiones
+●
+El tener generaciones de muchos individuos es crucial para poder obtener una buena 
+diversidad genética al inicio, y poder aumentar rápidamente el ﬁtness
+●
+Si no se tiene probabilidad de mutación, el máximo ﬁtness se estancara por la eventual 
+falta de diversidad, pero tener un valor muy elevado lleva a no aprovechar la información 
+de los individuos seleccionados, bajando el ﬁtness. Un valor de 0,1 es bueno para permitir 
+variación sin introducir demasiado caos
+●
+El mejor método de cruza resultó ser el uniforme, creemos que esto se debe a que no 
+mantiene la correlación posicional entre alelos, lo cual en nuestra implementación dicta 
+que triangulos se colocaran sobre otros
+●
+El sesgo joven lleva a mejores resultados de ﬁtness, esto podría ser debido a que elegir a 
+los hijos cruzados y mutados aumenta la diversidad de la próxima generación
+
+[Descripción de la imagen: crusos tercees envoolos envoolos]
+
+Conclusiones
+●
+Los mejores métodos de mutación son el de un gen y el multigen. Esto puede ser debido a 
+que mantienen más del individuo original que los otros métodos, permitiendo un 
+equilibrio entre introducir variación y mantener los mejores elementos
+●
+Los métodos de selección de ruleta y universal no parecen aumentar mucho el ﬁtness de 
+su valor inicial, creemos que esto se debe a que no le ponen suﬁciente prioridad a 
+seleccionar los mejores individuos.
+●
+Los métodos de selección élite y ranking llevan a un aumento rápido del mayor ﬁtness, 
+pero en sucesivas generaciones se “estancan”. Esto se debe a que eliminan demasiado 
+rápido la diversidad genética, por lo que toda la variación en las últimas generaciones 
+vendrá de las mutaciones
+
+[Descripción de la imagen: cruces as meros de sonidos en enanos enanos enten]
+
+Conclusiones
+●
+La selección de Boltzmann es un buen compromiso para solucionar los problemas de los 
+métodos anteriores, permitiendo iniciar con una temperatura alta que preserve la 
+diversidad durante las primeras generaciones, y lentamente bajarla para priorizar los 
+mejores individuos hacia el ﬁnal
+●
+Los torneos determinísticos parecen tener el mismo problema que la selección élite, en el 
+sentido que eligen una solución “buena” de forma rápida, pero eliminan rápido la variedad 
+genética y se estancan. Elegir un número alto de participantes hace menos probable que 
+las soluciones buenas se pierdan de una generación a otra.
+●
+Los torneos probabilísticos, dado un buen threshold, permiten un balance entre elegir los 
+mejores y mantener la diversidad genética, pero, si el threshold es muy bajo, la selección 
+será prácticamente aleatoria, y si es muy alto, la diversidad desaparece rápido y se 
+estanca. Un buen valor del threshold parece ser 0,75.
+
+[Descripción de la imagen: con con con con con con con con con con con con con con con con con con con con con con con con con con con con]
+

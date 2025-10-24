@@ -1,0 +1,297 @@
+Estimación
+Población
+Muestra
+Esperamos 
+que 
+sea 
+representativa. Para ello, 
+se toma al azar de entre 
+toda la población.
+{𝑥𝑖}𝑖=1
+𝑛
+Estimamos 
+(“aproximamos”) 
+un 
+valor de la población 
+total basados sólo en la 
+muestra
+
+[Descripción de la imagen: estr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr esr]
+
+Estimación
+Población
+Muestra
+Esperamos 
+que 
+sea 
+representativa. Para ello, 
+se toma al azar de entre 
+toda la población.
+{𝑥𝑖}𝑖=1
+𝑛
+Estadístico: 
+una 
+función de la muestra
+Estimación: 
+una 
+aproximación al valor de 
+interés
+
+[Descripción de la imagen: Estancia en el est en el est est est est est est est est est est est est est est]
+
+Estimación
+Población
+Muestra
+^𝜃1
+Muestra
+^𝜃2
+Distintas muestras 
+pueden producir 
+estimaciones 
+distintas. ¡El 
+resultado de una 
+estimación es una 
+variable aleatoria!!!
+Estimador: 
+variable 
+aleatoria 
+correspondiente 
+a 
+las 
+estimaciones de  basados en una muestra al azar
+
+[Descripción de la imagen: est est est est est est est est est est est est est est est est est est est est est est est est]
+
+Dos medidas de performance
+Sesgo
+Error cuadrático medio
+Error cuadrático medio
+
+[Descripción de la imagen: un bloc de notas con las palabras "seo" y "seo"]
+
+Propiedades deseables
+Consistente (una versión)
+Estimador insesgado
+
+[Descripción de la imagen: un bloc de notas con las palabras prociones desas]
+
+Ejemplos de estimadores
+Media
+Si 
+Es insesgado y consistente
+
+[Descripción de la imagen: un libro con el título de la lengua española]
+
+Ejemplos de estimadores
+Proporción
+Si  con probabilidad  y con probabilidad 
+Es insesgado y consistente
+
+[Descripción de la imagen: elemos e - estros propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos propos]
+
+Ejemplos de estimadores
+Varianza
+Si 
+Es insesgado y consistente
+Su distribución depende de la distribución de
+
+[Descripción de la imagen: un bloc de notas con las palabras''y''en español]
+
+¿De dónde salen los estimadores?
+Existen numerosas técnicas.
+Vamos a presentar la idea de algunas.
+• Máxima verosimilitud
+• Máximo a posteriori
+• Método de los momentos
+• Cuadrados mínimos
+
+[Descripción de la imagen: ?s de los ests]
+
+Máxima verosimilitud
+La distribución conjunta de las variables  viene dada 
+por
+𝑓(𝑥1,…, 𝑥𝑛;𝜃)
+ es el parámetro que se quiere estimar. Lo que se 
+hace es buscar el valor del parámetro que maximiza 
+la probabilidad (verosimilitud) para los valores dados 
+de la muestra .
+
+[Descripción de la imagen: maximo osmid la distribution quieste]
+
+Máxima verosimilitud
+Ejemplo:  i.i.d. y se desea estimar :
+𝑓(𝑥1,…,𝑥𝑛; 𝜇)=∏
+𝑖=1
+𝑛
+1
+√2 𝜋𝜎
+2 𝑒
+−
+(𝑥𝑖−𝜇)
+2
+2 𝜎
+2
+L (𝜇)= ln( 𝑓(𝑥1,…,𝑥𝑛; 𝜇))=𝑛ln(√2 𝜋𝜎
+2)−∑
+𝑖=1
+𝑛(𝑥𝑖−𝜇)
+2
+2 𝜎
+2
+𝑑L( 𝜇)
+𝑑𝜇
+=∑
+𝑖=1
+𝑛
+(𝑥𝑖−𝜇)
+𝜎
+2
+= 1
+𝜎
+2(∑
+𝑖=1
+𝑛
+𝑥𝑖−𝑛𝜇)=0⟹^𝜇= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑥𝑖
+
+[Descripción de la imagen: máxima vosinida | Transcripción de la imagen: Máxima verosimilitud
+
+Da Ejemplo: i.i.d. y se desea estimar :]]
+
+Máximo a posteriori
+La distribución conjunta de las variables  dado un 
+valor del parámetro viene dada por
+𝑓(𝑥1,…, 𝑥𝑛∨𝜃)
+La información sobre el parámetro es especificada 
+por una prior (distribución de probabilidades de )
+Permite incorporar información previa sobre el 
+parámetro a estimar.
+La visión Bayesiana: es una variable aleatoria.
+𝑔(𝜃)
+
+[Descripción de la imagen: una nota con las palabras en español]
+
+Máximo a posteriori
+Como estimador, se elige el valor que maximiza esta 
+distribución
+Luego de ver las muestras, se puede calcular la 
+distribución de  actualizada (a posteriori)
+𝑔(𝜃|𝑥1 ,…,𝑥𝑛)=
+𝑓(𝑥1,…, 𝑥𝑛∨𝜃)𝑔(𝜃) 
+∫
+❑
+❑
+𝑓(𝑥1 ,…,𝑥𝑛|𝜃)𝑔(𝜃) 𝑑𝜃
+^𝜃=argmax
+𝜃
+𝑔(𝜃|𝑥1,…,𝑥𝑛)
+
+[Descripción de la imagen: máximo posteriori lugge, velasa, sede, calculaa, distudi, de calculaa,]
+
+Máximo a posteriori
+Ejemplo:  i.i.d. y se desea estimar .
+𝑓(𝑥1,…,𝑥𝑛∨𝜇)=∏
+𝑖=1
+𝑛
+1
+√2 𝜋𝜎
+2 𝑒
+−
+(𝑥𝑖−𝜇)
+2
+2 𝜎
+2
+𝑔( 𝜇) =
+1
+√2 𝜋𝜎𝑝
+2 𝑒
+−( 𝜇−𝜇𝑝)2
+2 𝜎𝑝
+2
+Pero se sabe que  debe estar cerca de . Esto se 
+escribe como .
+
+[Descripción de la imagen: máximo posteriori | Transcripción de la imagen: Máximo a posterior!
+
+Ejemplo: 1.1.d. y se desea estimar .
+
+= 1 20
+f(X1,...,XHV¿¿) z'11x/23028
+
+Pero se sabe que debe estar cerca de . Esto se
+escribe como .
+
+(“ —ep)
+
+1 _ 2
+- -E
+2¿m17p]]
+
+Máximo a posteriori
+𝑔(𝜃|𝑥1,…,𝑥𝑛)∝
+1
+√2𝜋𝜎𝑝
+2 𝑒
+−
+(𝜇−𝜇𝑝)
+2
+2𝜎𝑝
+2 ∏
+𝑖=1
+𝑛
+1
+√2 𝜋𝜎
+2 𝑒
+−
+(𝑥𝑖−𝜇)
+2
+2𝜎
+2
+Luego de algunas cuentas…
+^𝜇=
+𝜎2
+𝜎2+𝑛𝜎𝑝
+2 𝜇𝑝+
+𝑛𝜎𝑝
+2
+𝜎2+𝑛𝜎𝑝
+2 𝑥
+Si ,  
+Si ,
+
+[Descripción de la imagen: maximo posterior luegoe dequeta | Transcripción de la imagen: Máximo a posterior!]]
+
+Método de las potencias
+Existe un estimador conocido para un momento de la 
+variable aleatoria
+^𝜇𝑘=h(𝑥1,…,𝑥𝑛)
+Hay una dependencia conocida entre el momento y el 
+parámetro 
+𝜇𝑘=𝐻(𝜃)
+Se resuelve la ecuación
+𝐻(𝜃)=h(𝑥1,…, 𝑥𝑛)
+
+[Descripción de la imagen: una nota con las palabras ''y'' ']
+
+Método de las potencias
+Ejemplo:  i.i.d. y se desea estimar :
+𝜇=𝐸[ 𝑋𝑖]= 1
+𝜆
+⟹^𝜆=
+1
+1
+𝑛∑
+𝑖=1
+𝑛
+𝑥𝑖
+^𝜇= 1
+𝑛∑
+𝑖=1
+𝑛
+𝑥𝑖
+
+[Descripción de la imagen: una nota con la ecuación de la ecuación]
+

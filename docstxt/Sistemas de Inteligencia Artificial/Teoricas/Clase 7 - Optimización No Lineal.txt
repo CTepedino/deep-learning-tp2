@@ -1,0 +1,916 @@
+Referencias
+M´etodos de Optimizaci´on No Lineal Sin
+Restricciones: Un resumen
+10 de abril de 2025
+1/48
+
+[Descripción de la imagen: métodos de optimizanion]
+
+Referencias
+El Problema: Optimizaci´on
+Aplicaciones de todo tipo
+Minimizar el costo de producci´on de una empresa.
+Maximizar las ganancias.
+Hallar las medidas del rect´angulo que mejor ajusta a la
+patente en fotos de autos.
+Hallar los par´ametros ´optimos de una funci´on de
+distribuci´on para una muestra de datos.
+Redes Neuronales
+2/48
+
+[Descripción de la imagen: problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes]
+
+Referencias
+Optimizaci´on
+Diferentes Alternativas
+Optimizaci´on Discreta: Programaci´on entera y
+combinatoria
+Optimizaci´on Discreta: Ecuaci´on diof´antica
+Optimizaci´on Lineal: Programaci´on Lineal
+Optimizaci´on No Lineal sin Restricciones Convexa:
+garant´ıa de extremos globales.
+Optimizaci´on No Convexa: Primer orden: GD, SGD,
+ADAM,
+Optimizaci´on No Convexa: Segundo orden: Newton
+Optimizaci´on No Convexa: Cero orden: Bayesiana, Powel,
+Sim Optimistic Optimization
+3/48
+
+[Descripción de la imagen: Optimización Optimización Optimización Optimización Optimización Optimización Optimización Optimización Optimización Optimización]
+
+Referencias
+Optimizaci´on
+Historia
+1847: Cauchy gradiente descendente
+1950s: Programaci´on lineal, SGD
+1980s: Teor´ıa Convexa, Optimizaci´on General
+2005-2015: Optimizaci´on a gran escala sobre problemas
+convexos.
+2015-ahora: Deep Learning empuja una explosi´on en su
+entendimiento.
+4/48
+
+[Descripción de la imagen: Optimización de historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia]
+
+Referencias
+¿Por qu´e C´alculo es importante?
+Dada una lata de coca, un tema pr´actico que puede buscarse
+es encontrar cuales tienen que ser las dimensiones de una lata
+cil´ındrica que contenga un litro, para minimizar su superficie y
+as´ı la cantidad de aluminio que hay que utilizar.
+5/48
+
+[Descripción de la imagen: una lata de coca con el título de la palabra coca]
+
+Referencias
+¿Por qu´e C´alculo es importante?
+S(r, h) = 2 π r 2 + 2 π r h
+(1)
+g(r, h) = π r 2 h = 1000
+(2)
+6/48
+
+[Descripción de la imagen: una lata de coca con la palabra coca | Transcripción de la imagen: Referencias
+¿Por qué Cálculo es importante?
+
+PNRIGINAL TASY
+SINCE 1886
+
+S(r,h=27 r +27rh
+g(r, h) =7 r h= 1000
+
+6/48]]
+
+Referencias
+¿Por qu´e C´alculo es importante?
+g(r, h) = π r 2 h = 1000 cm3
+h = 1000 cm3
+π r 2
+Reemplazando en 1
+S(r) = 2 π r 2 + 2 π r (1000 cm3
+π r 2
+)
+S(r) = 2 π r 2 + 2000 cm3
+r
+7/48
+
+[Descripción de la imagen: una fórmula para la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula de la fórmula | Transcripción de la imagen: g(r, h) =7 r h= 1000 cm*
+
+' Wr2
+Reemplazando en 1
+3
+0 =27rr2+27rr(1000cm
+S(r) =2
+
+Wr2
+
+Tr )
++—
+r
+<Oo» 48> <=> <E=> —]]
+
+Referencias
+¿Por qu´e C´alculo es importante?
+El punto extremo ocurre cuando la derivada de S(r) respecto
+a r es cero. Esto es
+S′(r) = 4 π r −2000 cm3
+r 2
+= 0
+4 π r = 2000 cm3
+r 2
+4 π r 3 = 2000 cm3
+r 3 = 500 cm3
+π
+r =
+3
+r
+500 cm3
+π
+8/48
+
+[Descripción de la imagen: una imagen de un circuito con las palabras para el circuito]
+
+Referencias
+¿Por qu´e C´alculo es importante?
+Como el punto que se desea encontrar es el m´ınimo, esto
+ocurre cuando la derivada pasa de negativa a positiva, y eso es
+justamente en la soluci´on positiva de r = 5,41 cm, lo que
+provoca un valor de h = 58 cm para la altura
+9/48
+
+[Descripción de la imagen: una imagen de una pantalla de ordenador con las palabras 's' y 's']
+
+Referencias
+El Problema: Optimizaci´on
+Funci´on objetivo
+m´ın
+x∈ℜn f (x), f : ℜn →ℜ, ⃗x = [x1, x2, ..., xn]
+(3)
+gi(⃗x) < = 0
+(4)
+hj(⃗x) = 0
+(5)
+Donde
+1 ⃗x variables de dise˜no, f (⃗x) es la funci´on objetivo/costo
+2 gi y hj son restricciones
+3 ⃗x∗resuelve el problema para f (⃗x∗)
+10/48
+
+[Descripción de la imagen: problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes problemes | Transcripción de la imagen: Referencias
+El Problema: Optimización
+
+Función objetivo
+
+mgl f(x), F : M 3 K,X = ha, 0, .., Xp]
+xENN
+
+h( =0
+
+Donde
+O x variables de diseño, f(%) es la función objetivo/costo
+O ¿; y h; son restricciones
+O ** resuelve el problema para f(x*)
+
+10/48]]
+
+Referencias
+Programaci´on Lineal: Simplex
+11/48
+
+[Descripción de la imagen: un diagrama de un plano con un plano en el centro y un plano en el fondo | Transcripción de la imagen: Maximize Xj — T2
+subject to
+T1 +%2<1, —21 +279 <2,
+
+L1 >—1, —zT1i +3%9> —3.
+
+X +2€,=2]]
+
+Referencias
+El Problema: Optimizaci´on NO Lineal sin
+restricciones
+Funci´on objetivo
+m´ın
+x∈ℜn f (x), f : ℜn →ℜ,
+(6)
+Donde f es una funci´on no lineal, por ejemplo:
+1 f (x1, x2) = x2
+1 + sen(x1 ∗x2) −x1 ∗x2
+2 f (x1, . . . , xn) = Pn
+i=1(xi −cos(xi))2
+3 f (x1, . . . , xn) = Pn
+i=1(xi −g(xi, ξi))2
+12/48
+
+[Descripción de la imagen: una pantalla de ordenador que muestra la función de una función | Transcripción de la imagen: Referencias
+
+El Problema: Optimización NO Lineal sin
+restricciones
+
+Función objetivo
+
+mín f(x), f : R > K, (6)
+
+xEP
+
+Donde f es una función no lineal, por ejemplo:
+O fl x:) = Z + senlx * x>) — x * %
+O f(x1,... .X) = 1(x; — cos(x;))?
+O f(x1,....,X) = 27=1(XÍ — 8(xi, €Í))2
+
+12/48]]
+
+Referencias
+¿Por qu´e nos interesa?
+Nos interesa porque detr´as de todo algoritmo de aprendizaje
+autom´atico hay un mecanismo de optimizaci´on matem´atica
+que resuelve el aprendizaje autom´atico.
+Optimizaci´on en Redes Neuronales
+m´ın
+w∈ℜn E(w), E : ℜn →ℜ,
+(7)
+E(w1, . . . , wn) = 1
+2
+Pp
+µ=1(ζµ −g(Pn
+i=1 wiξµ
+i ))2 es la
+funci´on de error.
+w = (w1, . . . , wn) es el vector de pesos sin´apticos que
+queremos hallar.
+n es la cantidad de pesos sin´apticos.
+13/48
+
+[Descripción de la imagen: ¿Poro's intes????????????????????????? | Transcripción de la imagen: Referencias
+
+¿Por qué nos interesa?
+
+Nos interesa porque detrás de todo algoritmo de aprendizaje
+automático hay un mecanismo de optimización matemática
+que resuelve el aprendizaje automático.
+
+Optimización en Redes Neuronales
+
+mín E(w), E : R > K, (7)
+
+wEN"
+
+o Elw,..., Wn) =5 "-1(C* — e(D , wiEr)) es la
+función de error.
+
+o w=(W,...,W,)es el vector de pesos sinápticos que
+queremos hallar.
+
+e nes la cantidad de pesos sinápticos.
+
+13/48]]
+
+Referencias
+M´etodos de Resoluci´on
+M´etodos exactos: Calculan una f´ormula cerrada para la
+soluci´on.
+M´etodos de aproximaci´on de la soluci´on:
+M´etodos basados en las derivadas primeras, o en el
+gradiente.
+M´etodos basados en las derivadas segundas, o en el
+hessiano.
+M´etodos sin derivadas.
+M´etodos Estoc´asticos (estiman la direcci´on).
+14/48
+
+[Descripción de la imagen: metos de roulon metos de roulon metos de roulon metos de roulon metos de roos de roos de roos de roos de roos de roos de roos de roos de roos de roos]
+
+Referencias
+Matriz definida positiva
+Una matriz A es definida positiva
+Si xtAx > 0, x ̸= 0.
+Si todos sus autovalores son positivos
+Hay otras caracter´ısticas que definen a las matrices
+definidas positivas, por ejemplo los valores de la diagonal
+deben ser mayores que la suma de los otros elementos de
+la fila.
+Si xtAx ≥0, x ̸= 0, entonces se dice que la matriz es
+Semi definida Positiva
+15/48
+
+[Descripción de la imagen: matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo matizo]
+
+Referencias
+Definiciones
+Sea la funci´on f diferenciable con primera y segunda derivadas
+continuas, entonces x∗...
+Es m´ınimo global si ∀x, f (x∗) ≤f (x)
+Es m´ınimo local si f (x∗) ≤f (x) ∀x, ∥x −x∗∥< ϵ
+16/48
+
+[Descripción de la imagen: una pantalla de ordenador con el texto en español | Transcripción de la imagen: Referencias
+
+Definiciones
+
+Sea la función f diferenciable con primera y segunda derivadas
+continuas, entonces x*...
+
+o Es mínimo global si Vx, f(x*) < fF(x)
+o Es mínimo local si f(x*) < f(x) Yx, |x—x|| <e
+
+16/48]]
+
+Referencias
+Condiciones de optimalidad
+Condiciones necesarias
+Condici´on necesaria de primer orden: Si x∗es un
+m´ınimo local de f entonces ∇f (x∗) = 0.
+Condici´on necesaria de segundo orden: Si x∗es un
+m´ınimo local de f entonces ∇f (x∗) = 0 y Hf (x∗) (el
+hessiano) es una matriz semidefinida positiva.
+17/48
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras''y''en español]
+
+Referencias
+Condiciones de optimalidad
+Condiciones suficientes
+Condici´on suficiente de primer orden:
+Si x∗es tal que ∇f (x∗) = 0 y Hf (x∗) es definida positiva,
+entonces es un m´ınimo local de f .
+18/48
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras''y''en español]
+
+Referencias
+Funciones Convexas y C´oncavas
+Las funciones convexas son aquellas que son diferenciables y
+donde el punto medio entre dos puntos siempre es menor o
+igual a la media aritm´etica entre los dos extremos. Las
+c´oncavas se definen de la misma forma tomando el valor
+inverso de la funci´on.
+Funci´on convexa →Hessiano matriz definida positiva.
+Funci´on c´oncava →Hessiano matriz definida negativa.
+Las funciones convexas permiten atacar el problema de la
+optimizaci´on con un modelo m´as simplificado intermedio que
+ofrece condiciones de optimalidad.
+19/48
+
+[Descripción de la imagen: un texto que lee'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''']
+
+Referencias
+Funci´on cuadr´atica
+Hessiano: definida positiva
+Hessiano: NO definida positiva
+20/48
+
+[Descripción de la imagen: un diagrama de las formas tridimensionales de un cono | Transcripción de la imagen: Referencias
+
+Función cuadrática
+
+Paraboloide eliptico Paraboloide hiperbólico
+
+Hessiano: definida positiva Hessiano: NO definida positiva
+
+20/48]]
+
+Referencias
+Procedimiento General de Optimizaci´on
+Iterativamente, en el paso k:
+Punto inicial xk, dato de entrada.
+Buscar una direcci´on de movimiento dk.
+Calcular o decidir la longitud de paso αk.
+Actualizar al nuevo punto xk+1 = xk + αkdk.
+21/48
+
+[Descripción de la imagen: procimento generale de optimización]
+
+Referencias
+Procedimiento General de Optimizaci´on
+La idea es
+elegir el nuevo punto de manera que el valor de la funci´on
+disminuya, o sea que f (xk+1) < f (xk)
+Con el algoritmo general, el problema se reduce a:
+Encontrar la direcci´on de movimiento dk.
+Encontrar el paso adecuado αk.
+22/48
+
+[Descripción de la imagen: procedimiento general de procedimiento]
+
+Referencias
+Procedimiento General de Optimizaci´on
+Direcci´on de Decrecimiento
+La direcci´on en la cu´al realizar la b´usqueda del pr´oximo
+xk+1.
+Condiciones sobre la direcci´on de movimiento
+Por supuesto, la idea es que sea descendente, o sea
+dt
+k∇f (xk) < 0.
+Recordar que el gradiente es la direcci´on de m´aximo
+crecimiento de una funci´on.
+Cualquier direcci´on contraria a la del gradiente, es una
+direcci´on de decrecimiento de la funci´on.
+23/48
+
+[Descripción de la imagen: procedimiento generale de la estr]
+
+Referencias
+Procedimiento General de Optimizaci´on
+Tasa de aprendizaje
+αk es la tasa de aprendizaje.
+αk fijo: es muy grande, el m´etodo puede no converger, si
+es muy peque˜no converge muy lentamente.
+B´usqueda Unidimensional: para encontrar αk
+Minimiza el valor de la funci´on f sobre la recta en la que se
+est´a haciendo la b´usqueda:
+αk = arg m´ın
+α>0 g(α) = f (xk + αdk)
+(8)
+24/48
+
+[Descripción de la imagen: procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese procese]
+
+Referencias
+M´etodo del gradiente descendiente o m´aximo
+descenso
+La direcci´on de b´usqueda para minimizar la funci´on es
+dk = −∇f (xk)
+No requiere el uso de segundas derivadas.
+Puede tener convergencia lenta.
+25/48
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras «modelo» y «modelo»]
+
+Referencias
+M´etodo del Gradiente Descendiente
+Avanza en zig-zag, como una pelota que cae por un cuenco y
+que cambia de direcci´on abruptamente.
+26/48
+
+[Descripción de la imagen: un diagrama de un círculo con la letra k en él]
+
+Referencias
+M´etodo del Gradiente descendiente Con
+Momentum
+T´ermino regularizador
+Consiste en tomar la direcci´on de descenso como una
+combinaci´on lineal de direcciones de descenso calculadas en
+pasos anteriores.
+xk+1 = xk −αk∇f (xk) −βαk−1∇f (xk−1)
+Este promedio ponderado entre direcciones suaviza el zig
+zagueo del m´etodo del gradiente. El hiperpar´ametro β,
+0 < β < 1, equivale a la inercia del sistema, y a mayor valor,
+es m´as dif´ıcil cambiar la direcci´on (se suaviza el zig zag).
+27/48
+
+[Descripción de la imagen: meo del gliente cono cono]
+
+Referencias
+M´etodo de Newton
+Aproximamos la funci´on por el polinomio de Taylor de segundo
+orden,
+∇f (xk+1) = ∇f (xk + αkdk) = ∇f (xk) + αkH(xk)dk
+Entonces, si xk+1 fuera el m´ınimo, ∇f (xk+1) = 0 y por lo tanto
+∇f (xk) + αkH(xk)dk = 0
+de donde resulta
+dk = −H−1(xk)∇f (xk)
+28/48
+
+[Descripción de la imagen: mejo newtone methode]
+
+Referencias
+M´etodos Quasi Newton
+La idea es disminuir el costo computacional asociado a
+calcular el hessiano y su inversa.
+Se basan en aproximar la matriz H−1(xk)
+La reemplazan por una matriz aproximada, definida
+positiva Bk.
+Diferentes m´etodos cuasi Newton difieren en la forma de
+aproximar esta matriz.
+29/48
+
+[Descripción de la imagen: meos quos meos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos quos qu]
+
+Referencias
+Pero...
+Los m´etodos quasi Newton no pueden utilizarse para resolver
+problemas de Redes Neuronales porque poseen un alto costo
+computacional.
+En su lugar, se puede utilizar el m´etodo L-BFGS (limited
+memory Broyden Fletcher Goldfarb Shanno (BFGS)
+algorithm). Este algoritmo, siguiendo con la idea del huevo y
+la gallina, implementa una b´usqueda iterativa para estimar el
+Hessiano Bk+1 Bk.
+30/48
+
+[Descripción de la imagen: una pantalla de ordenador con las palabras ''y'' ']
+
+Referencias
+M´etodos de Direcciones Conjugadas
+Definici´on
+Sea el conjunto de direcciones d1, . . . , dn y A una matriz
+sim´etrica definida positiva, entonces:
+Si dt
+i Adj = 0, ∀i ̸= j entonces se dice que d1, . . . , dn son
+direcciones A-conjugadas.
+Si un conjunto de vectores es A-conjugado, con A
+sim´etrica, definida positiva entonces es tambi´en un
+conjunto linealmente independiente.
+31/48
+
+[Descripción de la imagen: métodos de dispección]
+
+Referencias
+M´etodos de Direcciones Conjugadas
+Teorema: Dada una funci´on cuadr´atica f : ℜn →ℜ
+f (x) = xtHx + btx
+si un m´etodo de minimizaci´on no lineal realiza las b´usquedas
+unidimensionales sobre direcciones H-conjugadas, entonces el
+m´etodo converge en n pasos.
+32/48
+
+[Descripción de la imagen: una pantalla de ordenador con el texto 'meos de dios conadas']
+
+Referencias
+M´etodo de gradientes conjugados (1952)
+En cada paso k
+Calcula una nueva direcci´on dk+1 que es H(xk)-conjugada con
+todas las direcciones anteriores d1, . . . , dk.
+Problema: Hay que conocer el gradiente y el hessiano.
+33/48
+
+[Descripción de la imagen: Meo degreadoss 15 / 12 / 10 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12 / 12]
+
+Referencias
+M´etodo de direcciones conjugadas, M. Powell 1964
+No necesita derivadas
+Este m´etodo genera en cada paso k un conjunto de
+direcciones conjugadas dk
+1 , . . . dk
+n .
+Comienza con un conjunto de direcciones l.i d0
+1, . . . d0
+n y
+un punto inicial x0.
+En el paso k, saca del conjunto la direcci´on dk
+k y agrega
+una direcci´on conjugada con dk−1
+1
+, . . . dk−1
+k−1 (las de los
+pasos anteriores).
+La b´usqueda lineal es igual que antes.
+34/48
+
+[Descripción de la imagen: mejoe dispectiones no mejoe dispectiones no mejoe dispectiones no mejoes no mejoes no mees no mees no mees no mees no mees no mees]
+
+Referencias
+M´etodo de direcciones conjugadas, M. Powell 1964
+Con este m´etodo...
+Si la funci´on es convexa, entonces el m´etodo converge en n
+pasos.
+35/48
+
+[Descripción de la imagen: mejoe dispections mejoe dispections mejoe dispections mejoes mejoes mejoes mejoes mees mees mees mees mees mees mees mees]
+
+Referencias
+Observaciones
+Todos estos m´etodos fueron desarrollados antes (o al
+mismo tiempo) de la aparici´on de Redes Neuronales.
+Incluso un m´etodo que converge en n pasos puede ser
+demasiado costoso para resolver un problema de redes
+neuronales.
+Aparece una nueva l´ınea de investigaci´on: desarrollo de
+m´etodos de optimizaci´on para resolver problemas de
+Machine Learning
+36/48
+
+[Descripción de la imagen: obrecimentoes todos de meralloss]
+
+Referencias
+Funciones de Error
+Problema
+Supongamos que tenemos un problema de aprendizaje
+supervisado, donde queremos aprender una funci´on f (ξ) = ζ,
+donde tenemos p observaciones ξµ = {ξ1, . . . ξn}, µ = 1, . . . , p
+de dimensi´on n del conjunto de entrenamiento (ξ) junto con
+sus p salidas ζµ de dimensi´on 1.
+Queremos encontrar una funci´on g(·) que aproxime f (·) lo
+mejor posible. Para eso podemos plantear
+E(·) = 1
+2
+p
+X
+µ=1
+(ζµ −g(ξµ
+i ))
+(9)
+37/48
+
+[Descripción de la imagen: una pantalla de ordenador con el texto « foncesa » | Transcripción de la imagen: Referencias
+
+Funciones de Error
+
+Problema
+
+Supongamos que tenemos un problema de aprendizaje
+supervisado, donde queremos aprender una función f(£) =£,
+donde tenemos p observaciones £ = Í£1,...En), 4 =1,...,Pp
+de dimensión n del conjunto de entrenamiento (£) junto con
+sus p salidas C” de dimensión 1.
+
+Queremos encontrar una función g(-) que aproxime f(-) lo
+mejor posible. Para eso podemos plantear
+
+2Z=: " — g(E”)) (9)
+
+| [
+
+37/48]]
+
+Referencias
+Funciones de Error
+Problema
+Si hacemos que g(·) dependa de par´ametros libres, que vamos
+a llamar w = (w1, . . . , wn), lo que podemos hacer es plantear
+esto como un problema de optimizaci´on e intentar buscar los
+w que minimizan (9) y as´ı encontrar w ∗con alguna
+formulaci´on para g, como por ejemplo combinaci´on lineal
+g(ξµ
+i ) = Pn
+i=1 wiξµ
+i .
+E(w) = 1
+2
+p
+X
+µ=1
+(ζµ −
+n
+X
+i=1
+wiξµ
+i )
+(10)
+As´ı el problema de aproximar f con g se reduce a optimizar g
+en base a los par´ametros libres w de forma que se minimice
+E(w).
+38/48
+
+[Descripción de la imagen: una interfaz informática, utilizando la función función función función función función función función función función función función función función función función]
+
+Referencias
+M´etodos Estoc´asticos
+Solo sirven para minimizar funciones de error.
+Recapitulando el problema de aproximaci´on
+Se tienen p observaciones ξµ = {ξ1, . . . ξn}, µ = 1, . . . , p de
+dimensi´on n del conjunto de entrenamiento (X) junto con sus
+p salidas ζµ de dimensi´on 1 y w = (w1, . . . , wn) el vector de
+pesos sin´apticos (par´ametros libres). Entonces, queremos
+hallar w que minimice E(w):
+E(w) = 1
+2
+p
+X
+µ=1
+(ζµ −
+n
+X
+i=1
+wiξµ
+i )
+(11)
+39/48
+
+[Descripción de la imagen: meos estos solvennr minizars errores | Transcripción de la imagen: Referencias
+
+Métodos Estocásticos
+
+Solo sirven para minimizar funciones de error. ¡
+
+Recapitulando el problema de aproximación
+
+Se tienen p observaciones £” = Í£1,...En), 4 =1,-..
+dimensión n del conjunto de entrenamiento ( X) junto con sus
+p salidas C de dimensión 1 y w = (w,..., Wn) el vector de
+pesos sinápticos (parámetros libres). Entonces, queremos
+hallar w que minimice E(w):
+
+32 -- m (11)
+
+., p de
+
+Ix)
+
+39/48]]
+
+Referencias
+M´etodos Estoc´asticos
+Entonces, podemos pensar
+E(w) = 1
+p
+p
+X
+µ=1
+E µ(ζµ, ξµ, w)
+(12)
+Es decir, a la funci´on a optimizar la podemos visualizar con el
+c´alculo de un estimador del comportamiento poblacional de los
+patrones.
+40/48
+
+[Descripción de la imagen: una pantalla de ordenador con el texto « metos ests »]
+
+Referencias
+M´etodos Estoc´asticos
+Con esto el c´alculo del gradiente descendiente y la formula de
+actualizaci´on ser´ıa:
+Soluci´on del Gradiente Descendiente Estoc´astico
+wt+1 = wt −ηt
+1
+p
+p
+X
+µ=1
+∇wE µ(ξµ, wt)
+con lo que se calcular´ıan los par´ametros libres w en relaci´on a
+la formulaci´on estoc´astica aproximada del verdadero gradiente.
+41/48
+
+[Descripción de la imagen: metos estos estos estos estos estos estos estos estos estos est | Transcripción de la imagen: Referencias
+
+Métodos Estocásticos
+
+Con esto el cálculo del gradiente descendiente y la formula de
+actualización sería:
+
+Solución del Gradiente Descendiente Estocástico
+
+con lo que se calcularían los parámetros libres w en relación a
+la formulación estocástica aproximada del verdadero gradiente.
+
+41/48]]
+
+Referencias
+Gradiente Descendiente Estoc´astico
+Estimador del Gradiente
+1
+p
+Pp
+µ=1 ∇wE(ξµ, wt) es un estimador de la esperanza del
+gradiente, dado un conjunto de entrenamiento.
+Una soluci´on computacionalmente adecuada, es obtener
+∇wE(ξν, wt) para alg´un subconjunto ν arbitario de los
+patrones (en vez de elegirlos a todos). As´ı surgen los
+minibatch.
+Minibach
+un subconjunto aleatorio Pk
+µ=1 ∇wE(ξµ, wt), k << p.
+42/48
+
+[Descripción de la imagen: retícula desler estraco estr]
+
+Referencias
+Gradiente Descendiente Estoc´astico
+El nombre original de este m´etodo fue ADALINE (Adaptive
+Linear Element)
+Gradient Descend (GD) vs Stochastic Gradient Descend (SGD)
+La diferencia es que en el m´etodo GD Estoc´astico, solamente
+una parte de los datos se utiliza para calcular la direcci´on de
+descenso en cada paso.
+Los autores del m´etodo, demuestran en su libro [1] (1998) que
+el m´etodo converge, pero no siempre va descendiendo.
+43/48
+
+[Descripción de la imagen: rejilla desdetere estraco]
+
+Referencias
+ADAGrad, 2011 (Adaptative Gradient)
+Modificaci´on al m´etodo de gradientes estoc´asticos
+Es un m´etodo que tiene como principal objetivo adaptar el
+valor de la tasa de aprendizaje en cada paso y la actualizaci´on
+del vector w se realiza coordenada a coordenada.
+Sea gt = ∇E(wt−1) entonces (gt)i es la i-´esima coordenada
+g1:t = {g1, . . . , gt} son todos los gradientes anteriores hasta el
+paso t.
+44/48
+
+[Descripción de la imagen: adgd gradiente adaptativo 2011]
+
+Referencias
+La modificaci´on
+SGD har´ıa
+wt+1 = wt −ηt∇wE µ(ξµ, wt)
+ADAGrad
+wt+1
+i
+= wt
+i −
+ηt
+p
+G t
+ii + ϵ
+∇wiE µ(ξµ, wt)
+G t = Pt
+τ=1 gτ ∗g t
+τ
+La ventaja de este m´etodo es que cada coordenada tiene su
+propia actualizaci´on.
+45/48
+
+[Descripción de la imagen: la modulacion subir a adg | Transcripción de la imagen: Referencias
+
+La modificación
+
+w'* — w — V E"(E”,w')
+
+6 =) r1 87 *E7
+
+La ventaja de este método es que cada coordenada tiene su
+propia actualización.
+
+45/48]]
+
+Referencias
+M´etodo ADAM-2015 (Adaptive Moment
+Estimation)
+Algoritmo
+Requiere:
+α tasa de aprendizaje.
+β1 y β2 tasas de decaimiento.
+f la funci´on objetivo.
+Inicializaci´on:
+w0 par´ametro inicial.
+m0 = 0
+v0 = 0
+46/48
+
+[Descripción de la imagen: Meto adm - 1 / 4 / 4 / 4 / 4 / 4 / 4 / 4 / 4 / 4 / 4 / 4 / 4 | Transcripción de la imagen: Referencias
+
+Método ADAM-2015 (Adaptive Moment
+Estimation)
+
+Algoritmo
+Requiere:
+e a tasa de aprendizaje.
+o 6 y É tasas de decaimiento.
+e f la función objetivo.
+Inicialización:
+e wy parámetro inicial.
+
+0m0=0
+
+o V0=0
+
+46/48]]
+
+Referencias
+M´etodo ADAM-2015 (Adaptive Moment
+Estimation)
+Algoritmo
+while wt not converge do
+t := t + 1
+gt = ∇f (wt−1)
+mt = β1mt−1 + (1 −β1)gt
+vt = β2vt−1 + (1 −β2)g 2
+t
+wt = wt−1 −α
+mt
+√vt+ϵ
+El autor sugiere β1 = 0,9, β1 = 0,999 y ϵ = 10−8
+47/48
+
+[Descripción de la imagen: metroo alm - 1 / 4 adaptativo | Transcripción de la imagen: Referencias
+
+Método ADAM-2015 (Adaptive Moment
+Estimation)
+
+Algoritmo
+
+while w; not converge do
+t:==t+1
+
+8t — Vf(Wt—1)
+
+M: = Bim:-1 + (1 — 61)8r
+Ve = Bov.-1 + (1— 6>)87
+
+MmMt
+
+El autor sugiere 9 = 0,9, 9; = 0,999 y e=10%
+
+47/48]]
+
+Referencias
+Referencias
+Un libro recomendado [3] Tambi´en [4],y [5] Un libro cl´asico
+popular en ingenier´ıa es [2]
+[1] L. Bottou. Online Algorithms and Stochastic
+Approximations. Online Learning and Neural Networks.
+Cambridge University Press., 1998.
+[2] Stephen P Boyd and Lieven Vandenberghe. Convex
+optimization. Cambridge university press, 2004.
+[3] Richard P. Brent. Algorithms for minimization without
+derivatives. Englewood Cliffs, N.J., Prentice-Hall, 1973.
+[4] Pablo Pedregal. Introduction to Optimization. Springer,
+2003.
+[5] Jan A Snyman, Daniel N Wilke, et al. Practical
+mathematical optimization. Springer, 2005.
+48/48
+
+[Descripción de la imagen: 1 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 /]
+
