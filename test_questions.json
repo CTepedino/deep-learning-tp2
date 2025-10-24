@@ -80,6 +80,5 @@
   {
     "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Generá un ejercicio teórico sobre algoritmos genéticos.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
     "ground_truth": "Debe explicar los conceptos de población, selección, cruce y mutación. La solución debe mostrar cómo estos mecanismos se utilizan para buscar soluciones óptimas en espacios complejos."
-  },
-
+  }
 ]
