@@ -35,8 +35,7 @@ class RAGEvaluator:
                 faithfulness,
                 answer_relevancy,
                 context_precision,
-                context_recall,
-                context_entity_recall
+                context_recall
             )
             from ragas import evaluate
             
@@ -52,8 +51,7 @@ class RAGEvaluator:
             # Métricas que SÍ requieren ground_truth
             self.metrics_with_gt = {
                 'context_precision': context_precision,
-                'context_recall': context_recall,
-                'context_entity_recall': context_entity_recall
+                'context_recall': context_recall
             }
             
             # Todas las métricas
@@ -306,4 +304,3 @@ def create_evaluator() -> RAGEvaluator:
         Instancia de RAGEvaluator
     """
     return RAGEvaluator()
-

@@ -1,11 +1,9 @@
 {
   "materia": "Probabilidad y estadística",
-  "tipo_consulta": "evaluacion",
-  "tipo_examen": "primer_parcial",
   "consulta_libre": "ejercicios que combinen distribuciones normales con intervalos de confianza, con aplicaciones prácticas",
-  "cantidad": 5,
+  "cantidad": 1,
   "nivel_dificultad": "avanzado",
   "tipo_ejercicio": "desarrollo",
-  "formato": "tex"
+  "formato": "txt"
 }
 
