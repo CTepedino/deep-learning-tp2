@@ -431,7 +431,7 @@ def main():
             # Recuperar documentos
             context_docs = pipeline.retriever.retrieve(
                 query=search_query,
-                k=5,
+                k=10,
                 filter_dict=filter_dict
             )
 

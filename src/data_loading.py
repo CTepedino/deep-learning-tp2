@@ -230,59 +230,49 @@ class DocumentLoader:
                 path_after_docs = parts[-4:] if len(parts) >= 4 else parts
         
         # NIVEL 1: Materia (primera carpeta después de docs)
-        if len(path_after_docs) >= 1:
-            materia_raw = path_after_docs[0]
-            # Convertir guiones bajos a espacios y capitalizar
-            materia_clean = materia_raw.replace('_', ' ')
-            # Normalizar materia para búsqueda robusta
-            metadata['materia'] = normalize_text(materia_clean)
-        else:
-            # Fallback: detectar materia por keywords
-            materia_detectada = self._detect_materia_fallback(file_path)
-            metadata['materia'] = normalize_text(materia_detectada)
+        materia_raw = path_after_docs[0]
+        # Convertir guiones bajos a espacios y capitalizar
+        materia_clean = materia_raw.replace('_', ' ')
+        # Normalizar materia para búsqueda robusta
+        metadata['materia'] = normalize_text(materia_clean)
+        
         
         # NIVEL 2: Puede ser Unidad O Tipo de documento
-        if len(path_after_docs) >= 2:
-            level2_raw = path_after_docs[1]
+        level2_raw = path_after_docs[1]
+        
+        # Detectar si es una Unidad (contiene "Unidad" o números) o un Tipo de documento
+        if self._is_unit_folder(level2_raw):
+            # Es una carpeta de unidad (estructura de 3 niveles)
+            unit_number = self._extract_unit_number(level2_raw)
+            if unit_number is not None:
+                metadata['unidad_numero'] = unit_number
             
-            # Detectar si es una Unidad (contiene "Unidad" o números) o un Tipo de documento
-            if self._is_unit_folder(level2_raw):
-                # Es una carpeta de unidad (estructura de 3 niveles)
-                unit_number = self._extract_unit_number(level2_raw)
-                if unit_number is not None:
-                    metadata['unidad_numero'] = unit_number
-                
-                unit_topic = self._extract_unit_topic(level2_raw)
-                metadata['unidad_tema'] = unit_topic
-                
-                # NIVEL 3: Tipo de documento (cuando hay 3 niveles)
-                if len(path_after_docs) >= 3:
-                    tipo_raw = path_after_docs[2]
-                    metadata['tipo_documento'] = self._normalize_tipo_documento(tipo_raw)
-                else:
-                    # Fallback: detectar tipo desde el nombre del archivo
-                    metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
-            else:
-                # Es una carpeta de tipo de documento (estructura de 2 niveles)
-                # Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
-                metadata['tipo_documento'] = self._normalize_tipo_documento(level2_raw)
-                
-                # No hay unidad explícita, intentar detectar del nombre de archivo
-                unit_from_file = self._extract_unit_from_filename(file_path.name)
-                if unit_from_file:
-                    # Extraer número de unidad (ej: "Unidad 18" -> 18)
-                    import re
-                    unit_match = re.search(r'Unidad (\d+)', unit_from_file)
-                    if unit_match:
-                        metadata['unidad_numero'] = int(unit_match.group(1))
-                
-                # Intentar extraer el tema de la unidad del nombre de archivo
-                unit_topic_from_file = self._extract_unit_topic_from_filename(file_path.name)
-                if unit_topic_from_file:
-                    metadata['unidad_tema'] = unit_topic_from_file
+            unit_topic = self._extract_unit_topic(level2_raw)
+            metadata['unidad_tema'] = unit_topic
+            
+            # NIVEL 3: Tipo de documento (cuando hay 3 niveles)
+            tipo_raw = path_after_docs[2]
+            metadata['tipo_documento'] = self._normalize_tipo_documento(tipo_raw)
+            
         else:
-            # Solo hay materia, detectar tipo del archivo
-            metadata['tipo_documento'] = self._detect_tipo_documento_fallback(file_path)
+            # Es una carpeta de tipo de documento (estructura de 2 niveles)
+            # Ejemplo: docs/Sistemas de Inteligencia Artificial/Guias/archivo.pdf
+            metadata['tipo_documento'] = self._normalize_tipo_documento(level2_raw)
+            
+            # No hay unidad explícita, intentar detectar del nombre de archivo
+            unit_from_file = self._extract_unit_from_filename(file_path.name)
+            if unit_from_file:
+                # Extraer número de unidad (ej: "Unidad 18" -> 18)
+                import re
+                unit_match = re.search(r'Unidad (\d+)', unit_from_file)
+                if unit_match:
+                    metadata['unidad_numero'] = int(unit_match.group(1))
+            
+            # Intentar extraer el tema de la unidad del nombre de archivo
+            unit_topic_from_file = self._extract_unit_topic_from_filename(file_path.name)
+            if unit_topic_from_file:
+                metadata['unidad_tema'] = unit_topic_from_file
+
         
         # Detectar nivel de dificultad sugerido del nombre de archivo
         filename_lower = file_path.name.lower()
@@ -571,61 +561,4 @@ class DocumentLoader:
         # Reemplazar guiones bajos por espacios
         return cleaned.replace('_', ' ')
     
-    def _detect_materia_fallback(self, file_path: Path) -> str:
-        """
-        Detecta materia por keywords cuando no está en la estructura de carpetas
-        
-        Args:
-            file_path: Ruta del archivo
-            
-        Returns:
-            Nombre de la materia detectada o 'No especificada'
-        """
-        filename_lower = file_path.name.lower()
-        parent_dir = file_path.parent.name.lower()
-        
-        # Mapeo de materias (expandible)
-        materia_keywords = {
-            'probabilidad': 'Probabilidad y estadística',
-            'estadistica': 'Probabilidad y estadística',
-            'sia': 'Sistemas de Inteligencia Artificial',
-            'inteligencia': 'Sistemas de Inteligencia Artificial',
-            'ai': 'Sistemas de Inteligencia Artificial',
-            'machine learning': 'Sistemas de Inteligencia Artificial',
-        }
-        
-        for keyword, materia in materia_keywords.items():
-            if keyword in filename_lower or keyword in parent_dir:
-                return materia
-        
-        return 'No especificada'
-    
-    def _detect_tipo_documento_fallback(self, file_path: Path) -> str:
-        """
-        Detecta tipo de documento por el nombre cuando no está en la estructura
-        
-        Args:
-            file_path: Ruta del archivo
-            
-        Returns:
-            Tipo de documento
-        """
-        filename_lower = file_path.name.lower()
-        
-        if 'apunte' in filename_lower:
-            return 'apuntes'
-        elif 'guia' in filename_lower:
-            return 'guias'
-        elif 'examen' in filename_lower:
-            return 'examenes'
-        elif 'parcial' in filename_lower:
-            return 'parciales'
-        elif 'final' in filename_lower:
-            return 'finales'
-        elif 'ejercicio' in filename_lower or 'practica' in filename_lower:
-            return 'ejercicios'
-        else:
-            return 'documento'
-
-
-
+   

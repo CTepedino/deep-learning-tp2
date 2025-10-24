@@ -173,7 +173,7 @@ class RAGPipeline:
     def generate_exercises(
         self,
         query_params: Dict[str, Any],
-        k_retrieval: int = 5,
+        k_retrieval: int = 10,
         use_filters: bool = True
     ) -> Dict[str, Any]:
         """

@@ -200,7 +200,7 @@ class DocsProcessor:
         end_time = time.time()
         duration = end_time - start_time
         
-        print(f"\n📊 ESTADÍSTICAS FINALES:")
+        print(f"\n ESTADÍSTICAS FINALES:")
         print(f"   Total archivos: {stats['total']}")
         print(f"   Procesados exitosamente: {stats['processed']}")
         print(f"   Errores: {stats['errors']}")
