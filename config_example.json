@@ -1,7 +1,9 @@
 {
   "materia": "Probabilidad y estadística",
-  "unidad": "Variables Aleatorias", 
-  "cantidad": 3,
+  "tipo_consulta": "evaluacion",
+  "tipo_examen": "primer_parcial",
+  "consulta_libre": "ejercicios que combinen distribuciones normales con intervalos de confianza, con aplicaciones prácticas",
+  "cantidad": 5,
   "nivel_dificultad": "avanzado",
   "tipo_ejercicio": "desarrollo",
   "formato": "tex"
