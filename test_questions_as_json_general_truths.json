@@ -54,5 +54,32 @@
   {
     "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio sobre combinación de distribuciones independientes.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
     "ground_truth": "Debe combinar dos variables aleatorias independientes (por ejemplo, una binomial y otra Poisson) y solicitar el cálculo de la esperanza y varianza de su suma. La solución debe utilizar la linealidad de la esperanza y la aditividad de varianzas para variables independientes."
-  }
+  },
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Generá un ejercicio teórico sobre agentes racionales.\", \"cantidad\": 1, \"nivel_dificultad\": \"básico\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe definir qué es un agente racional y explicar cómo su comportamiento depende de la percepción, el conocimiento, los objetivos y las acciones disponibles. La solución debe incluir la estructura PEAS (Performance, Environment, Actuators, Sensors) y ejemplos de tipos de agentes."
+  },
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Creá un ejercicio teórico sobre algoritmos de búsqueda informada.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe comparar búsqueda informada y no informada, definiendo el rol de las heurísticas. La solución debe explicar el funcionamiento del algoritmo A* y las condiciones que debe cumplir una heurística admisible."
+  },
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Generá un ejercicio teórico sobre representación del conocimiento.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe presentar distintos enfoques de representación del conocimiento (como lógica proposicional, lógica de primer orden y redes semánticas). La solución debe explicar ventajas, desventajas y un ejemplo simple de inferencia."
+  },
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Generá un ejercicio teórico sobre el teorema de Bayes y su uso en IA.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe pedir definir el teorema de Bayes y explicar cómo se aplica en clasificación probabilística o diagnóstico. La solución debe incluir la fórmula P(H|E) = P(E|H)P(H)/P(E) y un ejemplo interpretativo en contexto de IA."
+  },
+
+
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Creá un ejercicio teórico sobre redes neuronales artificiales.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe describir la estructura básica de una red neuronal (capas, neuronas, pesos y funciones de activación). La solución debe explicar el proceso de entrenamiento mediante retropropagación del error y el gradiente descendente."
+  },
+  {
+    "question": "{\"materia\": \"Sistemas de Inteligencia Artificial\", \"consulta_libre\": \"Generá un ejercicio teórico sobre algoritmos genéticos.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"teórico\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe explicar los conceptos de población, selección, cruce y mutación. La solución debe mostrar cómo estos mecanismos se utilizan para buscar soluciones óptimas en espacios complejos."
+  },
+
 ]
