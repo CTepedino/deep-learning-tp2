@@ -1,0 +1,58 @@
+[
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio sobre probabilidad total con su solución.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "El ejercicio debe presentar un escenario con varios eventos mutuamente excluyentes (por ejemplo, máquinas o fuentes distintas) y aplicar la regla de la probabilidad total para calcular la probabilidad de un suceso global. La solución debe incluir el planteo de P(A) = Σ P(A|Bi)P(Bi) y un ejemplo numérico coherente."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio que involucre variables aleatorias discretas.\", \"cantidad\": 1, \"nivel_dificultad\": \"básico\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe presentar una variable aleatoria discreta con pocos valores posibles (por ejemplo, el número de caras al lanzar monedas) e incluir el cálculo de su función de probabilidad y su esperanza. La solución debe mostrar la distribución y el valor esperado."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio sobre distribución binomial.\", \"cantidad\": 1, \"nivel_dificultad\": \"básico\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe incluir un experimento con número fijo de ensayos, dos posibles resultados y probabilidad constante de éxito. La solución debe aplicar la fórmula de la distribución binomial y calcular al menos una probabilidad puntual."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio que utilice la distribución de Poisson.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe describir un fenómeno de ocurrencia de eventos raros (como llamadas por minuto o llegadas de clientes) y requerir la aplicación de la fórmula de Poisson. La solución debe mostrar el uso del parámetro λ y el cálculo de una probabilidad específica."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio que aplique la distribución normal.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe plantear un contexto práctico (como alturas, calificaciones o tiempos) donde una variable siga una distribución normal con media y desviación estándar dadas. La solución debe incluir la estandarización Z y la obtención de una probabilidad a partir de la tabla normal."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio de probabilidad condicional.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe presentar dos eventos relacionados (por ejemplo, aprobar dos materias o tener cierta característica dado un grupo) y pedir el cálculo de una probabilidad condicional usando la fórmula P(A|B) = P(A∩B)/P(B). La solución debe mostrar razonamiento paso a paso."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio sobre eventos independientes.\", \"cantidad\": 1, \"nivel_dificultad\": \"básico\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe incluir dos eventos independientes y solicitar la probabilidad de su intersección o unión. La solución debe justificar la independencia y aplicar correctamente las fórmulas de P(A∩B)=P(A)·P(B) y P(A∪B)=P(A)+P(B)-P(A∩B)."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio que relacione la varianza y la esperanza.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe definir una variable aleatoria discreta con varios valores y probabilidades dadas, y pedir el cálculo de su esperanza y varianza. La solución debe incluir los pasos para E[X] y Var(X) = E[X²] - (E[X])²."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio que combine probabilidad condicional y Bayes.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe involucrar un escenario de diagnóstico, clasificación o testeo con tasas de falsos positivos y falsos negativos, y requerir aplicar el teorema de Bayes para calcular una probabilidad posterior. La solución debe incluir el diagrama o fórmula de Bayes y los cálculos de cada componente."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio sobre variables aleatorias continuas.\", \"cantidad\": 1, \"nivel_dificultad\": \"intermedio\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe plantear una variable aleatoria continua con una función de densidad válida definida en un intervalo y pedir el cálculo de una probabilidad y el valor esperado. La solución debe verificar la normalización e incluir las integrales correspondientes."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio sobre distribución uniforme.\", \"cantidad\": 1, \"nivel_dificultad\": \"básico\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe introducir una variable uniforme continua o discreta, indicar sus límites o valores posibles, y requerir el cálculo de E[X] y Var(X). La solución debe mencionar la fórmula general de la distribución uniforme."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio de aplicación de la ley de los grandes números.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"simulación\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe proponer una simulación o experimento repetido muchas veces (como lanzar una moneda o dado) y observar cómo la frecuencia relativa se aproxima al valor teórico. La solución debe describir el comportamiento esperado conforme aumenta el número de repeticiones."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Generá un ejercicio sobre covarianza entre dos variables.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe definir dos variables aleatorias conjuntas con distribución conocida y pedir el cálculo de la covarianza o correlación. La solución debe mostrar los cálculos de E[X], E[Y], E[XY] y Cov(X,Y)=E[XY]-E[X]E[Y]."
+  },
+  {
+    "question": "{\"materia\": \"Probabilidad y estadística\", \"consulta_libre\": \"Creá un ejercicio sobre combinación de distribuciones independientes.\", \"cantidad\": 1, \"nivel_dificultad\": \"avanzado\", \"tipo_ejercicio\": \"desarrollo\", \"formato\": \"txt\"}",
+    "ground_truth": "Debe combinar dos variables aleatorias independientes (por ejemplo, una binomial y otra Poisson) y solicitar el cálculo de la esperanza y varianza de su suma. La solución debe utilizar la linealidad de la esperanza y la aditividad de varianzas para variables independientes."
+  }
+]

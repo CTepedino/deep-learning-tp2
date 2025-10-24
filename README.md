@@ -149,16 +149,14 @@ deep-learning-tp2/
 
 ### Evaluar con RAGAS
 ```bash
-python evaluate_with_ragas.py
+python evaluate_with_ragas.py --questions questions.json [--with-ground-truth]
+
+Evaluar sin ground truth solo provee las metricas faithfulness y context precision
+
 ```
 
 ### Evaluar con LLM Judge
 ```bash
-python evaluate_with_llm_judge.py
-```
-
-### Evaluar generación de ejercicios
-```bash
-python evaluate_exercise_generation.py
+python evaluate_with_llm_judge.py --input questions.json
 ```
 
