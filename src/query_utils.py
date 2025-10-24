@@ -4,6 +4,38 @@ Utilidades para construir consultas de búsqueda optimizadas
 """
 
 from typing import Dict
+import re
+import unicodedata
+
+
+def normalize_text(text: str) -> str:
+    """
+    Normaliza texto para búsqueda robusta:
+    - Convierte a minúsculas
+    - Remueve acentos y tildes
+    - Remueve espacios y caracteres especiales
+    - Solo deja letras y números
+    
+    Args:
+        text: Texto a normalizar
+        
+    Returns:
+        Texto normalizado
+    """
+    if not text:
+        return ""
+    
+    # Convertir a minúsculas
+    text = text.lower()
+    
+    # Remover acentos y tildes
+    text = unicodedata.normalize('NFD', text)
+    text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
+    
+    # Remover espacios y caracteres especiales, solo dejar letras y números
+    text = re.sub(r'[^a-z0-9]', '', text)
+    
+    return text
 
 
 def prepare_search_query(query_params: Dict[str, str]) -> str:

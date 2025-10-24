@@ -21,7 +21,7 @@ from .text_processing import TextProcessor
 from .vector_store import create_vector_store
 from .retriever import create_retriever
 from .generator import ExerciseGenerator
-from .query_utils import prepare_search_query
+from .query_utils import prepare_search_query, normalize_text
 
 logger = logging.getLogger(__name__)
 
@@ -200,7 +200,9 @@ class RAGPipeline:
             if use_filters:
                 filter_dict = {}
                 if query_params.get("materia"):
-                    filter_dict["materia"] = query_params["materia"]
+                    # Normalizar materia para búsqueda robusta
+                    materia_normalizada = normalize_text(query_params["materia"])
+                    filter_dict["materia"] = materia_normalizada
             
             # Recuperar contexto relevante
             context_docs = self.retriever.retrieve(

@@ -14,6 +14,7 @@ from langchain_community.document_loaders import (
     UnstructuredFileLoader
 )
 from langchain_core.documents import Document
+from .query_utils import normalize_text
 
 logger = logging.getLogger(__name__)
 
@@ -232,10 +233,13 @@ class DocumentLoader:
         if len(path_after_docs) >= 1:
             materia_raw = path_after_docs[0]
             # Convertir guiones bajos a espacios y capitalizar
-            metadata['materia'] = materia_raw.replace('_', ' ')
+            materia_clean = materia_raw.replace('_', ' ')
+            # Normalizar materia para búsqueda robusta
+            metadata['materia'] = normalize_text(materia_clean)
         else:
             # Fallback: detectar materia por keywords
-            metadata['materia'] = self._detect_materia_fallback(file_path)
+            materia_detectada = self._detect_materia_fallback(file_path)
+            metadata['materia'] = normalize_text(materia_detectada)
         
         # NIVEL 2: Puede ser Unidad O Tipo de documento
         if len(path_after_docs) >= 2:
