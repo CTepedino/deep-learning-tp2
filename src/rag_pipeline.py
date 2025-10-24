@@ -1,6 +1,6 @@
 """
 RAG Pipeline Module using LangChain
-Pipeline principal de RAG usando LangChain con LCEL (LangChain Expression Language)
+Pipeline principal de RAG usando LangChain
 """
 
 import os
@@ -13,7 +13,6 @@ load_dotenv()
 
 # Imports de LangChain
 from langchain_core.documents import Document
-from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
 # Imports locales
 from .data_loading import DocumentLoader
@@ -28,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 class RAGPipeline:
     """
-    Pipeline RAG completo usando LangChain para máxima flexibilidad
+    Pipeline RAG completo usando LangChain
     """
     
     def __init__(
@@ -42,7 +41,7 @@ class RAGPipeline:
         reset_collection: bool = False
     ):
         """
-        Inicializa el pipeline RAG con LangChain
+        Inicializa el pipeline RAG
         
         Args:
             collection_name: Nombre de la colección ChromaDB
@@ -85,9 +84,6 @@ class RAGPipeline:
         
         # Generador de ejercicios
         self.generator = ExerciseGenerator(self.generator_model_name)
-        
-        # LCEL Chains (se crean bajo demanda)
-        self._rag_chains = {}
         
         logger.info("RAGPipeline inicializado correctamente")
     
@@ -279,154 +275,7 @@ class RAGPipeline:
             logger.error(f"Error en búsqueda: {str(e)}")
             return []
     
-    def create_rag_chain(
-        self,
-        tipo_ejercicio: str = "multiple_choice"
-    ):
-        """
-        Crea un LCEL chain para RAG usando el retriever nativo y el generator
-        
-        Args:
-            tipo_ejercicio: Tipo de ejercicio para el chain
-            
-        Returns:
-            Chain de LangChain (LCEL)
-        """
-        if tipo_ejercicio in self._rag_chains:
-            return self._rag_chains[tipo_ejercicio]
-        
-        try:
-            # Obtener retriever nativo
-            native_retriever = self.retriever.get_native_retriever()
-            
-            # Obtener chain del generator
-            generator_chain = self.generator.chains.get(tipo_ejercicio)
-            
-            if not generator_chain:
-                raise ValueError(f"Chain no disponible para tipo: {tipo_ejercicio}")
-            
-            # Función para formatear documentos recuperados
-            def format_docs(docs: List[Document]) -> str:
-                """Formatea documentos recuperados como contexto"""
-                context_parts = []
-                for i, doc in enumerate(docs, 1):
-                    content = doc.page_content.strip()
-                    source = doc.metadata.get("source", f"Documento {i}")
-                    context_parts.append(f"[Fuente {i}: {source}]\n{content}\n")
-                return "\n".join(context_parts)
-            
-            # Crear chain completo usando LCEL:
-            # 1. Retriever obtiene contexto
-            # 2. Se formatean los docs
-            # 3. Se pasa al generator chain
-            # Nota: El generator chain ya maneja todo el prompt y parsing
-            
-            # Chain básico: retriever -> formateador
-            rag_chain = {
-                "contexto": native_retriever | RunnableLambda(format_docs),
-                "materia": RunnablePassthrough(),
-                "tema": RunnablePassthrough(),
-                "cantidad": RunnablePassthrough(),
-                "nivel_dificultad": RunnablePassthrough()
-            }
-            
-            # Guardar en cache
-            self._rag_chains[tipo_ejercicio] = rag_chain
-            
-            logger.info(f"LCEL chain creado para tipo: {tipo_ejercicio}")
-            return rag_chain
-            
-        except Exception as e:
-            logger.error(f"Error creando LCEL chain: {str(e)}")
-            raise
     
-    def generate_exercises_with_chain(
-        self,
-        query_params: Dict[str, Any],
-        tipo_ejercicio: str = "multiple_choice"
-    ) -> Dict[str, Any]:
-        """
-        Genera ejercicios usando LCEL chains nativos de LangChain
-        
-        Args:
-            query_params: Parámetros de la consulta
-            tipo_ejercicio: Tipo de ejercicio
-            
-        Returns:
-            Diccionario con ejercicios generados
-        """
-        try:
-            # Obtener el chain del generator directamente
-            generator_chain = self.generator.chains.get(tipo_ejercicio)
-            
-            if not generator_chain:
-                raise ValueError(f"Chain no disponible para tipo: {tipo_ejercicio}")
-            
-            # Preparar la consulta de búsqueda
-            search_query = prepare_search_query(query_params)
-            
-            # Recuperar documentos usando el retriever
-            context_docs = self.retriever.retrieve(
-                query=search_query,
-                k=10,
-                filter_dict={"materia": query_params.get("materia")} if query_params.get("materia") else None
-            )
-            
-            if not context_docs:
-                return {
-                    "status": "error",
-                    "message": "No se encontró contexto relevante"
-                }
-            
-            # Formatear contexto
-            def format_docs(docs: List[Document]) -> str:
-                context_parts = []
-                for i, doc in enumerate(docs, 1):
-                    content = doc.page_content.strip()
-                    source = doc.metadata.get("source", f"Documento {i}")
-                    context_parts.append(f"[Fuente {i}: {source}]\n{content}\n")
-                return "\n".join(context_parts)
-            
-            contexto = format_docs(context_docs)
-            
-            # Preparar variables para el chain
-            chain_input = {
-                "cantidad": query_params.get("cantidad", 1),
-                "tema": query_params.get("unidad", "tema no especificado"),
-                "materia": query_params.get("materia", "materia no especificada"),
-                "contexto": contexto,
-                "nivel_dificultad": query_params.get("nivel_dificultad", "intermedio")
-            }
-            
-            # Invocar el chain usando LCEL
-            result = generator_chain.invoke(chain_input)
-            
-            # Validar ejercicios
-            exercises = self.generator._validate_exercises(result, tipo_ejercicio)
-            
-            # Agregar metadata
-            return {
-                "ejercicios": exercises,
-                "metadata": {
-                    "materia": query_params.get("materia"),
-                    "unidad": query_params.get("unidad"),
-                    "tipo_ejercicio": tipo_ejercicio,
-                    "cantidad": query_params.get("cantidad", 1),
-                    "nivel_dificultad": query_params.get("nivel_dificultad"),
-                    "chunks_recuperados": len(context_docs),
-                    "fuentes": [doc.metadata.get("source", "desconocido") for doc in context_docs],
-                    "modelo_usado": self.generator_model_name,
-                    "metodo": "LCEL Chain"
-                },
-                "context_info": {
-                    "documents_retrieved": len(context_docs),
-                    "search_query": search_query
-                }
-            }
-            
-        except Exception as e:
-            logger.error(f"Error generando ejercicios con chain: {str(e)}")
-            return {"status": "error", "message": str(e)}
     
     def get_system_info(self) -> Dict[str, Any]:
         """
@@ -513,7 +362,7 @@ def create_rag_pipeline(
     reset_collection: bool = False
 ) -> RAGPipeline:
     """
-    Función de conveniencia para crear un pipeline RAG con LangChain
+    Función de conveniencia para crear un pipeline RAG
     
     Args:
         collection_name: Nombre de la colección (por defecto de CHROMA_COLLECTION_NAME)

@@ -743,16 +743,16 @@ if __name__ == "__main__":
     # Probar exportación
     print("Exportando a TXT...")
     txt_file = export_exercises(example_result, format="txt", filename="ejemplo")
-    print(f"✅ Creado: {txt_file}")
+    print(f" Creado: {txt_file}")
     
     print("\nExportando a TEX...")
     tex_file = export_exercises(example_result, format="tex", filename="ejemplo")
-    print(f"✅ Creado: {tex_file}")
+    print(f" Creado: {tex_file}")
     
     try:
         print("\nExportando a PDF...")
         pdf_file = export_exercises(example_result, format="pdf", filename="ejemplo")
-        print(f"✅ Creado: {pdf_file}")
+        print(f" Creado: {pdf_file}")
     except ImportError as e:
-        print(f"⚠️  {e}")
+        print(f"  {e}")
 

@@ -30,7 +30,7 @@ class ExerciseGenerator:
         self,
         model_name: str = None,
         temperature: float = 0.7,
-        max_tokens: int = 2000
+        max_tokens: int = 4000
     ):
         """
         Inicializa el generador de ejercicios con OpenAI
@@ -206,8 +206,8 @@ Formato de respuesta (JSON):
         }
     
     def _setup_output_parsers(self):
-        """Configura los prompts sin chains"""
-        # Crear prompts para cada tipo de ejercicio (sin chains)
+        """Configura los prompts"""
+        # Crear prompts para cada tipo de ejercicio
         self.prompts = {}
         for tipo_ejercicio, config in self.exercise_templates.items():
             # Crear prompt template para cada tipo
@@ -400,6 +400,17 @@ Formato de respuesta (JSON):
             # Extraer contenido de la respuesta
             content = response.content
             
+            # Verificar si la respuesta fue truncada por límite de tokens
+            if content.endswith('...') or len(content) < 100:
+                logger.warning("Respuesta del LLM parece truncada. Considera aumentar max_tokens.")
+                # Intentar con más tokens si es posible
+                if self.max_tokens < 8000:
+                    logger.info("Reintentando con más tokens...")
+                    self.max_tokens = min(8000, self.max_tokens * 2)
+                    self.llm.max_tokens = self.max_tokens
+                    response = self.llm.invoke(formatted_prompt)
+                    content = response.content
+            
             # Limpiar el JSON si viene en markdown
             if "```json" in content:
                 # Extraer solo el JSON del bloque de código
@@ -485,7 +496,7 @@ Formato de respuesta (JSON):
         tipo_ejercicio: str
     ) -> List[Dict[str, Any]]:
         """
-        Valida los ejercicios generados por el chain de LangChain
+        Valida los ejercicios generados por el LLM
         
         Args:
             response_data: Datos parseados por JsonOutputParser

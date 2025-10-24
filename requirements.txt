@@ -1,7 +1,7 @@
 # Sistema RAG Completo con Evaluación RAGAS
 # Dependencias unificadas para el sistema RAG y evaluación
 
-# Core RAG con LangChain (LCEL incluido)
+# Core RAG con LangChain
 langchain>=0.3.0
 langchain-community>=0.3.0
 langchain-chroma>=0.2.0

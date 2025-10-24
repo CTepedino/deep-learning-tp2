@@ -8,7 +8,7 @@ Módulos principales:
 - vector_store: Base de datos vectorial con ChromaDB
 - retriever: Búsqueda semántica con LangChain
 - generator: Generación de ejercicios con ChatOpenAI
-- rag_pipeline: Pipeline completo RAG con LCEL
+- rag_pipeline: Pipeline completo RAG
 - evaluation: Evaluación con métricas RAGAS
 - query_utils: Utilidades para consultas
 """

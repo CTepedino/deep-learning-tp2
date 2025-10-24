@@ -85,7 +85,7 @@ class Retriever:
             else:
                 # Usar retriever nativo si no hay filtros especiales
                 if filter_dict is None and k == self.k:
-                    # Usar retriever nativo directamente (ideal para LCEL chains)
+                    # Usar retriever nativo directamente
                     results = self.native_retriever.invoke(query)
                     logger.info(f"Recuperados {len(results)} documentos (retriever nativo)")
                     return results
@@ -106,7 +106,7 @@ class Retriever:
 
     def get_native_retriever(self) -> VectorStoreRetriever:
         """
-        Retorna el retriever nativo de LangChain para uso en LCEL chains
+        Retorna el retriever nativo de LangChain
         
         Returns:
             Retriever nativo de LangChain

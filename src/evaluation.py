@@ -179,19 +179,19 @@ class RAGEvaluator:
         # Construir reporte
         report_lines = [
             "=" * 70,
-            "📊 REPORTE DE EVALUACIÓN RAG",
+            "REPORTE DE EVALUACION RAG",
             "=" * 70,
             "",
-            f"📝 Muestras evaluadas: {stats['num_samples']}",
+            f" Muestras evaluadas: {stats['num_samples']}",
             "",
-            "📈 MÉTRICAS AGREGADAS:",
+            " MÉTRICAS AGREGADAS:",
             "-" * 70,
         ]
         
         # Agregar cada métrica
         for metric_name, scores in stats['metrics_scores'].items():
             report_lines.extend([
-                f"\n🔹 {metric_name.upper().replace('_', ' ')}:",
+                f"\n {metric_name.upper().replace('_', ' ')}:",
                 f"   - Promedio: {scores['mean']:.4f}",
                 f"   - Desv. Estándar: {scores['std']:.4f}",
                 f"   - Mínimo: {scores['min']:.4f}",
@@ -202,22 +202,22 @@ class RAGEvaluator:
         report_lines.extend([
             "",
             "=" * 70,
-            "💡 INTERPRETACIÓN DE MÉTRICAS:",
+            " INTERPRETACIÓN DE MÉTRICAS:",
             "=" * 70,
             "",
-            "🎯 Faithfulness (Fidelidad):",
+            " Faithfulness (Fidelidad):",
             "   Mide si la respuesta se basa en los hechos del contexto.",
             "   1.0 = perfectamente fiel, 0.0 = no fiel",
             "",
-            "🎯 Answer Relevancy (Relevancia de Respuesta):",
+            " Answer Relevancy (Relevancia de Respuesta):",
             "   Mide cuán relevante es la respuesta a la pregunta.",
             "   1.0 = perfectamente relevante, 0.0 = irrelevante",
             "",
-            "🎯 Context Precision (Precisión de Contexto):",
+            " Context Precision (Precisión de Contexto):",
             "   Mide si los contextos recuperados son precisos.",
             "   1.0 = todos los contextos son relevantes, 0.0 = ninguno relevante",
             "",
-            "🎯 Context Recall (Exhaustividad de Contexto):",
+            " Context Recall (Exhaustividad de Contexto):",
             "   Mide si se recuperó todo el contexto necesario.",
             "   1.0 = todo recuperado, 0.0 = nada recuperado",
             "   (Requiere ground_truth)",

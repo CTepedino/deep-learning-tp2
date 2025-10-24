@@ -114,11 +114,11 @@ def validate_docs_structure(docs_path: str) -> Dict[str, Any]:
                 stats['structure_levels'][3] += 1
             
             if len(parts) == 1:
-                issues.append(f"⚠️  Archivo sin estructura jerárquica: {file_path.name}")
+                issues.append(f"  Archivo sin estructura jerárquica: {file_path.name}")
             
             # Validar extensión
             if file_path.suffix.lower() not in ['.pdf', '.txt', '.tex', '.md']:
-                issues.append(f"⚠️  Extensión inusual: {file_path.name}")
+                issues.append(f"  Extensión inusual: {file_path.name}")
     
     # Convertir sets a listas y defaultdicts a dicts para serialización
     stats['materias'] = sorted(list(stats['materias']))
@@ -142,7 +142,7 @@ def validate_docs_structure(docs_path: str) -> Dict[str, Any]:
         stats['coverage_3_levels'] = f"{coverage:.1f}%"
     
     # Determinar si es válido
-    valid = len([i for i in issues if i.startswith('❌')]) == 0
+    valid = len([i for i in issues if i.startswith('')]) == 0
     
     return {
         'valid': valid,
@@ -173,20 +173,20 @@ def print_validation_report(result: Dict[str, Any]):
         result: Resultado de validate_docs_structure()
     """
     print("=" * 70)
-    print("📋 REPORTE DE VALIDACIÓN DE ESTRUCTURA DE DOCUMENTOS")
+    print(" REPORTE DE VALIDACIÓN DE ESTRUCTURA DE DOCUMENTOS")
     print("=" * 70)
     
     # Estado general
     if result['valid']:
-        print("✅ Estado: VÁLIDO")
+        print(" Estado: VÁLIDO")
     else:
-        print("❌ Estado: REQUIERE ATENCIÓN")
+        print(" Estado: REQUIERE ATENCIÓN")
     
     print()
     
     # Estadísticas
     stats = result['stats']
-    print("📊 ESTADÍSTICAS GENERALES")
+    print(" ESTADÍSTICAS GENERALES")
     print("-" * 70)
     print(f"Total de archivos: {stats.get('archivos_totales', 0)}")
     print(f"Materias encontradas: {len(stats.get('materias', []))}")
@@ -200,7 +200,7 @@ def print_validation_report(result: Dict[str, Any]):
     
     # Materias
     if stats.get('materias'):
-        print("📚 MATERIAS DETECTADAS")
+        print(" MATERIAS DETECTADAS")
         print("-" * 70)
         for materia in stats['materias']:
             count = stats['archivos_por_materia'].get(materia, 0)
@@ -209,11 +209,11 @@ def print_validation_report(result: Dict[str, Any]):
     
     # Tipos de documento
     if stats.get('tipos_documento'):
-        print("📄 TIPOS DE DOCUMENTO")
+        print(" TIPOS DE DOCUMENTO")
         print("-" * 70)
         for tipo in stats['tipos_documento']:
             count = stats['archivos_por_tipo'].get(tipo, 0)
-            icon = "✅" if _is_valid_document_type(tipo) else "⚠️"
+            icon = "" if _is_valid_document_type(tipo) else ""
             print(f"  {icon} {tipo}: {count} archivo(s)")
         print()
     
@@ -256,7 +256,7 @@ def print_validation_report(result: Dict[str, Any]):
     archivos_con_unidad = stats.get('archivos_con_unidad', 0)
     
     if archivos_con_unidad > 0:
-        print("📚 ESTADÍSTICAS DE UNIDADES")
+        print(" ESTADÍSTICAS DE UNIDADES")
         print("-" * 70)
         print(f"Archivos con unidad detectada: {archivos_con_unidad}")
         
@@ -275,12 +275,12 @@ def print_validation_report(result: Dict[str, Any]):
     # Issues
     issues = result.get('issues', [])
     if issues:
-        print("⚠️  ADVERTENCIAS Y PROBLEMAS")
+        print("  ADVERTENCIAS Y PROBLEMAS")
         print("-" * 70)
         
         # Separar por tipo
-        errors = [i for i in issues if i.startswith('❌')]
-        warnings = [i for i in issues if i.startswith('⚠️')]
+        errors = [i for i in issues if i.startswith('')]
+        warnings = [i for i in issues if i.startswith('')]
         
         if errors:
             print("\n🔴 ERRORES CRÍTICOS:")
@@ -297,12 +297,12 @@ def print_validation_report(result: Dict[str, Any]):
         
         print()
     else:
-        print("✅ No se encontraron problemas")
+        print(" No se encontraron problemas")
         print()
     
     # Recomendaciones
     if not result['valid'] or issues:
-        print("💡 RECOMENDACIONES")
+        print(" RECOMENDACIONES")
         print("-" * 70)
         
         if any('espacios' in i for i in issues):
@@ -353,7 +353,7 @@ def generate_structure_template(base_path: str):
                 gitkeep = folder_path / '.gitkeep'
                 gitkeep.touch()
     
-    print(f"✅ Estructura de ejemplo creada en: {base_path}")
+    print(f" Estructura de ejemplo creada en: {base_path}")
     print("\nEstructura creada:")
     for materia in structure.keys():
         print(f"  • {materia}/")
@@ -377,6 +377,6 @@ if __name__ == "__main__":
     
     # Sugerir crear estructura si no existe
     if result['stats'].get('archivos_totales', 0) == 0:
-        print("\n💡 ¿Quieres crear una estructura de ejemplo?")
+        print("\n ¿Quieres crear una estructura de ejemplo?")
         print("   Ejecuta: python -c \"from src.utils.validate_docs import generate_structure_template; generate_structure_template('./docs')\"")
 
