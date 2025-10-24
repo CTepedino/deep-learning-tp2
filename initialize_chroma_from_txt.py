@@ -107,10 +107,7 @@ def main():
             print("✗ Error inicializando ChromaDB")
             print("  Revisa los errores y vuelve a intentar")
         
-        print("\nVentajas de usar archivos TXT:")
-        print("  • Carga más rápida (sin procesamiento de PDF)")
-        print("  • Menor uso de memoria")
-        print("  • Mejor extracción de texto con OCR previo")
+       
         
     except KeyboardInterrupt:
         print("\n\n⚠ Operación cancelada por el usuario")
