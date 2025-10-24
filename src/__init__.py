@@ -19,30 +19,50 @@ from .retriever import Retriever, create_retriever
 from .vector_store import VectorStore, create_vector_store
 from .data_loading import DocumentLoader
 from .text_processing import AcademicTextSplitter, split_documents
-from .evaluation import RAGEvaluator
 from .query_utils import prepare_search_query
 from .export_utils import ExerciseExporter, export_exercises
 
-__all__ = [
-    # Main pipeline
-    'RAGPipeline',
-    'create_rag_pipeline',
-    # Components
-    'ExerciseGenerator',
-    'Retriever',
-    'create_retriever',
-    'VectorStore',
-    'create_vector_store',
-    'DocumentLoader',
-    'AcademicTextSplitter',
-    'split_documents',
-    'RAGEvaluator',
-    'prepare_search_query',
-    # Export
-    'ExerciseExporter',
-    'export_exercises',
-]
+# Importación condicional de evaluation para evitar errores de dependencias
+try:
+    from .evaluation import RAGEvaluator, create_evaluator
+    __all__ = [
+        # Main pipeline
+        'RAGPipeline',
+        'create_rag_pipeline',
+        # Components
+        'ExerciseGenerator',
+        'Retriever',
+        'create_retriever',
+        'VectorStore',
+        'create_vector_store',
+        'DocumentLoader',
+        'AcademicTextSplitter',
+        'split_documents',
+        'RAGEvaluator',
+        'create_evaluator',
+        'prepare_search_query',
+        'ExerciseExporter',
+        'export_exercises'
+    ]
+except ImportError as e:
+    # Si falla la importación de evaluation (por falta de RAGAS u otras deps)
+    __all__ = [
+        # Main pipeline
+        'RAGPipeline',
+        'create_rag_pipeline',
+        # Components
+        'ExerciseGenerator',
+        'Retriever',
+        'create_retriever',
+        'VectorStore',
+        'create_vector_store',
+        'DocumentLoader',
+        'AcademicTextSplitter',
+        'split_documents',
+        'prepare_search_query',
+        'ExerciseExporter',
+        'export_exercises'
+    ]
 
 __version__ = '2.0.0'
 __author__ = 'Deep Learning TP2 - ITBA'
-
