@@ -23,8 +23,8 @@ class RAGEvaluator:
     Métricas implementadas:
     - Faithfulness: ¿La respuesta es fiel al contexto recuperado?
     - Answer Relevancy: ¿La respuesta es relevante a la pregunta?
-    - Context Precision: ¿Los contextos recuperados son precisos?
-    - Context Recall: ¿Se recuperó todo el contexto necesario?
+    - Context Precision: ¿Los contextos recuperados son precisos? (requiere ground_truth)
+    - Context Recall: ¿Se recuperó todo el contexto necesario? (requiere ground_truth)
     """
     
     def __init__(self):
@@ -35,20 +35,33 @@ class RAGEvaluator:
                 faithfulness,
                 answer_relevancy,
                 context_precision,
-                context_recall
+                context_recall,
+                context_entity_recall
             )
             from ragas import evaluate
             
             self.Dataset = Dataset
             self.evaluate = evaluate
-            self.metrics = {
+            
+            # Métricas que NO requieren ground_truth
+            self.metrics_without_gt = {
                 'faithfulness': faithfulness,
                 'answer_relevancy': answer_relevancy,
-                'context_precision': context_precision,
-                'context_recall': context_recall
             }
             
+            # Métricas que SÍ requieren ground_truth
+            self.metrics_with_gt = {
+                'context_precision': context_precision,
+                'context_recall': context_recall,
+                'context_entity_recall': context_entity_recall
+            }
+            
+            # Todas las métricas
+            self.all_metrics = {**self.metrics_without_gt, **self.metrics_with_gt}
+            
             logger.info("RAGEvaluator inicializado con métricas RAGAS")
+            logger.info(f"Métricas sin ground_truth: {list(self.metrics_without_gt.keys())}")
+            logger.info(f"Métricas con ground_truth: {list(self.metrics_with_gt.keys())}")
             
         except ImportError as e:
             logger.error(f"Error importando RAGAS: {str(e)}")
@@ -70,8 +83,8 @@ class RAGEvaluator:
             questions: Lista de preguntas
             answers: Lista de respuestas generadas por el sistema
             contexts: Lista de listas de contextos recuperados para cada pregunta
-            ground_truths: Lista de respuestas correctas (opcional, para context_recall)
-            metrics: Lista de nombres de métricas a usar (None = todas)
+            ground_truths: Lista de respuestas correctas (opcional, para métricas avanzadas)
+            metrics: Lista de nombres de métricas a usar (None = todas disponibles)
             
         Returns:
             Diccionario con resultados de evaluación
@@ -87,28 +100,44 @@ class RAGEvaluator:
             'contexts': contexts,
         }
         
-        # Agregar ground_truths si están disponibles (necesario para context_recall)
-        if ground_truths:
+        # Verificar si tenemos ground_truths
+        has_ground_truth = ground_truths is not None and len(ground_truths) > 0
+        
+        if has_ground_truth:
             if len(ground_truths) != len(questions):
                 raise ValueError("ground_truths debe tener la misma longitud que questions")
             data_samples['ground_truth'] = ground_truths
+            logger.info("Ground truths proporcionados - se usarán todas las métricas")
+        else:
+            logger.warning("Sin ground truths - solo se usarán métricas básicas (faithfulness, answer_relevancy)")
         
         # Crear dataset
         dataset = self.Dataset.from_dict(data_samples)
         
-        # Seleccionar métricas
+        # Seleccionar métricas según disponibilidad de ground_truth
         if metrics:
-            selected_metrics = [self.metrics[m] for m in metrics if m in self.metrics]
+            # Usuario especificó métricas específicas
+            selected_metrics = []
+            for m in metrics:
+                if m in self.all_metrics:
+                    # Verificar si la métrica requiere ground_truth
+                    if m in self.metrics_with_gt and not has_ground_truth:
+                        logger.warning(f"Métrica '{m}' requiere ground_truth pero no está disponible - se omite")
+                    else:
+                        selected_metrics.append(self.all_metrics[m])
+                else:
+                    logger.warning(f"Métrica '{m}' no reconocida - se omite")
         else:
-            # Si no hay ground_truths, omitir context_recall
-            if ground_truths:
-                selected_metrics = list(self.metrics.values())
+            # Usar todas las métricas disponibles según ground_truth
+            if has_ground_truth:
+                selected_metrics = list(self.all_metrics.values())
+                logger.info("Usando todas las métricas (con ground_truth)")
             else:
-                selected_metrics = [
-                    self.metrics['faithfulness'],
-                    self.metrics['answer_relevancy'],
-                    self.metrics['context_precision']
-                ]
+                selected_metrics = list(self.metrics_without_gt.values())
+                logger.info("Usando solo métricas básicas (sin ground_truth)")
+        
+        if not selected_metrics:
+            raise ValueError("No hay métricas válidas para evaluar")
         
         logger.info(f"Evaluando {len(questions)} preguntas con {len(selected_metrics)} métricas")
         
@@ -126,12 +155,13 @@ class RAGEvaluator:
             # Calcular estadísticas agregadas
             stats = {
                 'num_samples': len(questions),
+                'has_ground_truth': has_ground_truth,
                 'metrics_scores': {},
                 'detailed_results': df_results.to_dict('records')
             }
             
             # Calcular promedios de cada métrica
-            for metric_name in self.metrics.keys():
+            for metric_name in self.all_metrics.keys():
                 if metric_name in df_results.columns:
                     scores = df_results[metric_name].dropna()
                     if len(scores) > 0:
@@ -151,6 +181,8 @@ class RAGEvaluator:
             
         except Exception as e:
             logger.error(f"Error durante evaluación: {str(e)}")
+            import traceback
+            traceback.print_exc()
             return {
                 'status': 'error',
                 'message': str(e)
@@ -183,6 +215,7 @@ class RAGEvaluator:
             "=" * 70,
             "",
             f"📝 Muestras evaluadas: {stats['num_samples']}",
+            f"🎯 Ground truth disponible: {'Sí' if stats.get('has_ground_truth') else 'No'}",
             "",
             "📈 MÉTRICAS AGREGADAS:",
             "-" * 70,
@@ -208,22 +241,35 @@ class RAGEvaluator:
             "🎯 Faithfulness (Fidelidad):",
             "   Mide si la respuesta se basa en los hechos del contexto.",
             "   1.0 = perfectamente fiel, 0.0 = no fiel",
+            "   ✅ NO requiere ground_truth",
             "",
             "🎯 Answer Relevancy (Relevancia de Respuesta):",
             "   Mide cuán relevante es la respuesta a la pregunta.",
             "   1.0 = perfectamente relevante, 0.0 = irrelevante",
+            "   ✅ NO requiere ground_truth",
             "",
             "🎯 Context Precision (Precisión de Contexto):",
             "   Mide si los contextos recuperados son precisos.",
             "   1.0 = todos los contextos son relevantes, 0.0 = ninguno relevante",
+            "   ⚠️  REQUIERE ground_truth",
             "",
             "🎯 Context Recall (Exhaustividad de Contexto):",
             "   Mide si se recuperó todo el contexto necesario.",
             "   1.0 = todo recuperado, 0.0 = nada recuperado",
-            "   (Requiere ground_truth)",
+            "   ⚠️  REQUIERE ground_truth",
             "",
             "=" * 70
         ])
+        
+        # Agregar nota sobre ground_truth si no está disponible
+        if not stats.get('has_ground_truth'):
+            report_lines.extend([
+                "",
+                "⚠️  NOTA: Algunas métricas avanzadas no están disponibles porque",
+                "   no se proporcionaron ground_truths (respuestas correctas).",
+                "   Para evaluación completa, proporciona ground_truths al evaluar.",
+                ""
+            ])
         
         report = "\n".join(report_lines)
         
@@ -235,6 +281,21 @@ class RAGEvaluator:
             logger.info(f"Reporte guardado en: {output_file}")
         
         return report
+    
+    def get_available_metrics(self, has_ground_truth: bool = False) -> List[str]:
+        """
+        Retorna lista de métricas disponibles según disponibilidad de ground_truth
+        
+        Args:
+            has_ground_truth: Si hay ground_truth disponible
+            
+        Returns:
+            Lista de nombres de métricas disponibles
+        """
+        if has_ground_truth:
+            return list(self.all_metrics.keys())
+        else:
+            return list(self.metrics_without_gt.keys())
 
 
 def create_evaluator() -> RAGEvaluator:
@@ -245,40 +306,4 @@ def create_evaluator() -> RAGEvaluator:
         Instancia de RAGEvaluator
     """
     return RAGEvaluator()
-
-
-if __name__ == "__main__":
-    # Ejemplo de uso
-    logging.basicConfig(level=logging.INFO)
-    
-    # Datos de ejemplo
-    questions = [
-        "¿Qué es una variable aleatoria?",
-        "¿Cuál es la fórmula de la varianza?"
-    ]
-    
-    answers = [
-        "Una variable aleatoria es una función que asigna valores numéricos a los resultados de un experimento aleatorio.",
-        "La varianza es V(X) = E[(X - μ)²]"
-    ]
-    
-    contexts = [
-        ["Una variable aleatoria es una función que mapea resultados de experimentos a números reales."],
-        ["La varianza se calcula como V(X) = E[(X - E[X])²] = E[X²] - (E[X])²"]
-    ]
-    
-    # Crear evaluador
-    evaluator = create_evaluator()
-    
-    # Evaluar
-    results = evaluator.evaluate_rag(
-        questions=questions,
-        answers=answers,
-        contexts=contexts
-    )
-    
-    # Generar reporte
-    if results['status'] == 'success':
-        report = evaluator.generate_report(results)
-        print(report)
 
