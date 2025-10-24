@@ -5,11 +5,12 @@ Un sistema inteligente que genera ejercicios académicos personalizados usando t
 ## ¿Qué hace este sistema?
 
 Este sistema puede:
+-  **Procesar PDFs con imágenes** usando BLIP (descripciones semánticas) + OCR (extracción de texto)
 -  **Generar ejercicios** de materias específicas (Probabilidad y estadística, Sistemas de IA)
 -  **Personalizar dificultad** (básico, intermedio, avanzado)
 -  **Crear diferentes tipos** de ejercicios (múltiple choice, desarrollo, prácticos, teóricos)
 -  **Exportar en múltiples formatos** (PDF, TXT, TEX)
--  **Buscar información** en documentos académicos
+-  **Buscar información** en documentos académicos procesados
 -  **Evaluar la calidad** de los ejercicios generados
 
 ##Instalación
@@ -63,10 +64,33 @@ OPENAI_API_KEY=tu_clave_de_openai_aqui
 
 ## Uso Básico
 
-### Primera vez: Inicializar la base de datos
+### Preprocesamiento de documentos (Primera vez)
+
+**Importante:** Para usar OCR con pytesseract es necesario tener instalado el motor de Google Tesseract OCR. Pasos de instalación aquí: https://pypi.org/project/pytesseract/
 
 ```bash
-# Poblar la base de datos con documentos académicos
+# Procesar todos los PDFs de docs/ a docstxt/ (extrae texto de imágenes con BLIP + OCR)
+python src/process_docs.py
+
+# Ver qué archivos se procesarían sin procesarlos
+python src/process_docs.py --summary
+```
+
+Este paso convierte:
+- **PDFs con imágenes** → **Texto procesado** (usando BLIP para descripciones + OCR para texto)
+- **Archivos .txt/.tex** → **Se copian directamente**
+
+### Inicializar la base de datos
+
+**Opción 1: Con procesamiento de imágenes (Recomendado)**
+```bash
+# Poblar la base de datos con documentos académicos procesados (desde docstxt/)
+python initialize_chroma_from_txt.py
+```
+
+**Opción 2: Sin procesamiento de imágenes (Más rápido)**
+```bash
+# Poblar la base de datos ignorando imágenes de los PDFs (desde docs/)
 python initialize_chroma.py
 ```
 
@@ -111,13 +135,30 @@ output/20250124_143022/
 
 ## Comandos Útiles
 
-### Verificar el estado de chromaDB
+### Procesamiento de documentos
 ```bash
+# Procesar PDFs con BLIP + OCR
+python src/process_docs.py
+
+# Ver resumen de archivos a procesar
+python src/process_docs.py --summary
+
+# Procesar con directorios personalizados
+python src/process_docs.py --docs-dir mi_docs --docstxt-dir mi_docstxt
+```
+
+### Gestión de base de datos
+```bash
+# Verificar el estado de chromaDB
 python check_chroma.py
 ```
 
 ### Recargar documentos (si actualizas archivos)
 ```bash
+# Recargar desde documentos procesados (con imágenes)
+python initialize_chroma_from_txt.py --force
+
+# O recargar desde documentos originales (ignora imágenes)
 python initialize_chroma.py --force
 ```
 
@@ -139,10 +180,11 @@ deep-learning-tp2/
 ├── 📄 config_example.json          # Configuración de ejemplo
 ├── 📄 env.example                  # Variables de entorno
 ├── 📁 src/                         # Código fuente
-├── 📁 docs/                        # Documentos académicos (PDFs)
-├── 📁 docstxt/                     # Documentos procesados (TXT)
+├── 📁 docs/                        # Documentos académicos (PDFs originales)
+├── 📁 docstxt/                     # Documentos procesados (TXT con texto extraído)
 ├── 📁 data/                        # Base de datos ChromaDB
 ├── 📁 output/                      # Ejercicios generados
+└── 📁 image_utils/                 # Utilidades para procesamiento de imágenes
 ```
 
 ## Evaluación del Sistema

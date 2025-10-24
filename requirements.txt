@@ -19,12 +19,15 @@ PyMuPDF>=1.26.0
 pytesseract>=0.3.13
 Pillow>=12.0.0
 
+# OCR and image processing dependencies
+sentencepiece>=0.2.0
+sacremoses>=0.1.1
+
+# Text encoding detection
+chardet>=5.0.0
+
 # Generación (OpenAI)
 openai>=1.0.0
-
-# Embeddings locales (opcional - requiere Python <=3.12)
-# NOTA: Python 3.13 no soporta PyTorch todavía
-# Si usas Python 3.13, usa embedding_model="openai" en lugar de sentence-transformers
 torch>=2.5.0; python_version < '3.13'
 sentence-transformers>=2.0.0; python_version < '3.13'
 transformers==4.41.2; python_version < '3.13'
