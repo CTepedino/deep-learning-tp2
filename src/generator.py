@@ -99,6 +99,7 @@ REGLAS IMPORTANTES:
 4. La respuesta debe ser en formato JSON válido
 5. Incluye soluciones detalladas y pistas útiles
 6. Asegúrate de que los ejercicios sean originales y no copias directas del material
+7. El contexto puede incluir imágenes (ej. `[descripcion imagen: ...]` o `[Transcripción imagen: ...]`). Trata el texto como fuente principal y las imágenes como fuente secundaria (pueden ser imprecisas). En caso de conflicto, el texto gana. Es válido crear ejercicios basados en las imágenes.
 
 TIPOS DE EJERCICIOS SOPORTADOS:
 - multiple_choice: Preguntas de opción múltiple (A, B, C, D)
